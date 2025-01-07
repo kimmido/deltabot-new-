@@ -11,10 +11,11 @@ const Main = styled.div`
     background: #f3f3f3
 `;
 
-const Greetings = styled.strong`
+const DisplayText = styled.strong`
     display: block;
-    margin: 30vh 0;
+    margin: 40vh 0;
     font-size: 66px;
+    line-height: 80px;
 `;
 
 
@@ -23,7 +24,7 @@ const MainPage = () => {
         <Main>
         <Header />
         <Slide />
-        <Greetings>델타봇은 로봇산업의 선두 주자로 발돋움해 나갈 것 입니다.</Greetings>
+        <DisplayText>델타봇은<br />로봇산업의 선두 주자로<br />발돋움해 나갈 것 입니다.</DisplayText>
         <BusinessSection />
         </Main>
      );
