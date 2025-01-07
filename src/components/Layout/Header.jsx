@@ -1,10 +1,17 @@
 import React from 'react';
 import logo from '/delta_logo1.png';
+import styled from 'styled-components';
+
 
 const Header = () => {
+    const Logo = styled.h1`
+        max-height: 24px;
+    `;
+
     return ( 
         <>
-            <h1><img src="/delta_logo1.png" alt="logo" /></h1>
+            <Logo><img src={logo} alt="" /></Logo>
+            
             <div>
                 <ul>
                     <li><a href="">사업소개</a></li>
