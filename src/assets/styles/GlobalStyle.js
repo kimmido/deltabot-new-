@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import { theme } from './theme'
+
 
 const GlobalStyles = createGlobalStyle`
     *{
@@ -8,11 +10,18 @@ const GlobalStyles = createGlobalStyle`
     }
 
     html, body{
+        max-width: 1280px;
+        padding: 24px;
         margin: 0 auto;
         -webkit-text-size-adjust : none; 
         -ms-text-size-adjust : none; 
         -moz-text-size-adjust : none; 
         -o-text-size-adjust : none;
+    }
+
+    html {
+        font-size: 17px;
+        color: 1d1d1d;
     }
 
     dl,
