@@ -11,7 +11,8 @@ import main_slide from '../../../assets/images/main_slide(1).jpg'
 import { respondTo } from '../../../assets/styles/responsive';
 
 const size = {
-    fontSize: 66,
+    displayFont_S: 25,
+    displayFont_L: 66,
     spacing: 24,
     buttonIcon: 15
 }
@@ -43,23 +44,31 @@ const StyledSwiper = styled(Swiper)`
     }
 
     .swiper-slide {
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
         
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 
     .swiper-pagination-fraction {
-        bottom: 172px; 
-        left: 24px;
+        bottom: 100px; 
+        left: 16px;
         width: auto;
         padding: 8px 20px;
         color: #fff;
-        font-size: 15px;
+        font-size: 13px;
         border-radius: 1000px;
         background-color: rgba(0, 0, 0, 0.5);
+        
+        ${respondTo('medium')} {
+            bottom: 172px; 
+            left: 24px;
+            font-size: 15px;
+        }
     }
 
     .swiper-button-next,
@@ -96,10 +105,14 @@ const SlideText = styled.strong`
     left: ${size.spacing}px;
     bottom: ${size.spacing}px;
     color: #fff;
-    font-size: ${size.fontSize}px;
-    line-height: 70px;
-
+    font-size: ${size.displayFont_S}px;
+    
     z-index: 100;
+    
+    ${respondTo('medium')} {
+        font-size: ${size.displayFont_L}px;
+        line-height: 70px;
+    }
 `;
 
 function Slide() {

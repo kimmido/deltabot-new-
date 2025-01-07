@@ -3,6 +3,7 @@ import Header from '../../components/Layout/Header';
 import Slide from './components/Slide';
 import styled from 'styled-components';
 import BusinessSection from './components/BusinessSection';
+import { respondTo } from '../../assets/styles/responsive';
 
 const Main = styled.div`
     margin: 0 auto;
@@ -14,9 +15,14 @@ const Main = styled.div`
 
 const DisplayText = styled.strong`
     display: block;
-    margin: 40vh 0;
-    font-size: 66px;
-    line-height: 80px;
+    margin: 30vh 0;
+    font-size: 32px;
+    
+    ${respondTo('medium')} {
+        margin: 40vh 0;
+        font-size: 66px;
+        line-height: 80px;
+    }
 `;
 
 
