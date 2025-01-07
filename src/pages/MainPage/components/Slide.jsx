@@ -18,15 +18,31 @@ function Slide() {
     }
 
     const StyledSwiper = styled(Swiper)`
-      width: 100%;
-      height: 805px;
+        width: 100%;
+        height: 805px;
+        border-radius: 30px;
+        
+
+        &::before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: block;
+            content: '';
+            background: linear-gradient(
+                to left,
+                rgba(20, 20, 20, 0) 40%,
+                rgba(20, 20, 20, 0.15) 70%,
+                rgba(20, 20, 20, 0.3) 100%
+            );
+
+            z-index: 2;
+        }
     
         .swiper-slide {
-            overflow: hidden;
             display: flex;
             align-items: center;
-            border-radius: 30px;
-    
+            
             img {
                 width: 100%;
             }
@@ -80,7 +96,7 @@ function Slide() {
         font-size: ${size.fontSize}px;
         line-height: 70px;
     
-        z-index: 1;
+        z-index: 100;
     `;
 
   return (
