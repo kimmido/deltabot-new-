@@ -9,96 +9,95 @@ import 'swiper/css/navigation';
 
 import main_slide from '../../../assets/images/main_slide(1).jpg'
 
+const size = {
+    fontSize: 66,
+    spacing: 24,
+    buttonIcon: 15
+}
 
-function Slide() {
-    const size = {
-        fontSize: 66,
-        bottom: 24,
-        spacing: 24
+const StyledSwiper = styled(Swiper)`
+    width: 100%;
+    height: 805px;
+    border-radius: 30px;
+    
+
+    &::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        content: '';
+        background: linear-gradient(
+            to left,
+            rgba(20, 20, 20, 0) 40%,
+            rgba(20, 20, 20, 0.15) 70%,
+            rgba(20, 20, 20, 0.3) 100%
+        );
+
+        z-index: 2;
     }
 
-    const StyledSwiper = styled(Swiper)`
-        width: 100%;
-        height: 805px;
-        border-radius: 30px;
+    .swiper-slide {
+        display: flex;
+        align-items: center;
         
-
-        &::before {
-            position: absolute;
+        img {
             width: 100%;
-            height: 100%;
-            display: block;
-            content: '';
-            background: linear-gradient(
-                to left,
-                rgba(20, 20, 20, 0) 40%,
-                rgba(20, 20, 20, 0.15) 70%,
-                rgba(20, 20, 20, 0.3) 100%
-            );
+        }
+    }
 
-            z-index: 2;
-        }
-    
-        .swiper-slide {
-            display: flex;
-            align-items: center;
-            
-            img {
-                width: 100%;
-            }
-        }
-    
-        .swiper-pagination-fraction {
-            bottom: 172px; 
-            left: 24px;
-            width: auto;
-            padding: 8px 20px;
-            color: #fff;
-            font-size: 15px;
-            border-radius: 1000px;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-    
-        .swiper-button-next,
-        .swiper-button-prev {
-            width: 40px;
-            height: 40px;
-            color: #fff;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 50%;
-    
-            transition: all .3s;
-            
-            &:hover {
-                background: rgba(0, 0, 0, 1);
-            }
-        }
-    
-        .swiper-button-next {
-            right: 10px;
-        }
-    
-        .swiper-button-prev {
-            left: 10px;
-        }
-    
-        .swiper-button-next::after,
-        .swiper-button-prev::after {
-            font-size: 16px;
-        }
-    `;
-    
-    const SlideText = styled.strong`
-        position: absolute;
-        left: ${size.spacing}px;
-        bottom: ${size.bottom}px;
+    .swiper-pagination-fraction {
+        bottom: 172px; 
+        left: 24px;
+        width: auto;
+        padding: 8px 20px;
         color: #fff;
-        font-size: ${size.fontSize}px;
-        line-height: 70px;
-    
-        z-index: 100;
-    `;
+        font-size: 15px;
+        border-radius: 1000px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+
+        transition: all .3s;
+        
+        &:hover {
+            background: rgba(0, 0, 0, .8);
+        }
+    }
+
+    .swiper-button-next {
+        right: 10px;
+    }
+
+    .swiper-button-prev {
+        left: 10px;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: ${size.buttonIcon}px;
+    }
+`;
+
+const SlideText = styled.strong`
+    position: absolute;
+    left: ${size.spacing}px;
+    bottom: ${size.spacing}px;
+    color: #fff;
+    font-size: ${size.fontSize}px;
+    line-height: 70px;
+
+    z-index: 100;
+`;
+
+function Slide() {
   return (
     <>
         <StyledSwiper
@@ -109,6 +108,7 @@ function Slide() {
             clickable: true,
         }}
         navigation={true}
+        speed={800}
         autoplay={{
             delay: 6000,
             disableOnInteraction: false,
