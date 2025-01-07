@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import main_slide from '../../../assets/images/main_slide(1).jpg'
+import { respondTo } from '../../../assets/styles/responsive';
 
 const size = {
     fontSize: 66,
@@ -17,8 +18,12 @@ const size = {
 
 const StyledSwiper = styled(Swiper)`
     width: 100%;
-    height: 805px;
+    height: 460px;
     border-radius: 30px;
+    
+    ${respondTo('medium')} {
+        height: 805px;
+    }
     
 
     &::before {

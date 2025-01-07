@@ -7,7 +7,8 @@ import BusinessSection from './components/BusinessSection';
 const Main = styled.div`
     margin: 0 auto;
     padding: 24px;
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     background: #f3f3f3
 `;
 
