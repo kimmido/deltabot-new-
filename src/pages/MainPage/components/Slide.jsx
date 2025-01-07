@@ -26,7 +26,6 @@ const StyledSwiper = styled(Swiper)`
         height: 805px;
     }
     
-
     &::before {
         position: absolute;
         width: 100%;
