@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { NavWrap, MenuItems, MenuItem, SubMenu, SubMenuItem, Dropdown, MobileMenuWrap, MobileMenu, MenuIcon, MobileMenuItem, MobileSubMenu, MobileSubMenuItem, MobileMenuDropdown, MobileMenuTitle, MobileSubMenuTitle } from "./Nav.styles";
 import iconHamburger from "../../assets/images/icon/icon_menu.svg"
-import iconArrow from "../../assets/images/icon/icon_keyboard_arrow_up.svg"
 import iconClose from "../../assets/images/icon/icon_close.svg"
 import { Container } from "../../assets/styles/GlobalStyle";
 
 const Nav = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState(null);
-    const [hasRendered, setHasRendered] = useState(false);
 
     const handleMouseEnter = (menu) => {
         if (window.innerWidth > 768) {
@@ -16,72 +14,68 @@ const Nav = () => {
         }
     };
 
-  const handleMouseLeave = () => {
-    if (window.innerWidth > 768) {
-      setActiveDropdown(null);
-    }
-  };
+    const handleMouseLeave = () => {
+        if (window.innerWidth > 768) {
+        setActiveDropdown(null);
+        }
+    };
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-  };
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!isMobileMenuOpen);
+    };
 
-  const toggleDropdown = (menu) => {
-    setActiveDropdown(activeDropdown === menu ? null : menu);
-  };
+    const toggleDropdown = (menu) => {
+        setActiveDropdown(activeDropdown === menu ? null : menu);
+    };
 
-  useEffect(() => {
-    setHasRendered(true); // 컴포넌트가 렌더링된 후 상태를 true로 설정
-  }, []);
+    const menuTitle = ["사업소개", "회사소개"]
 
-  const menuTitle = ["사업소개", "회사소개"]
-
-  const menuData = {
-      subMenu: ["자동화", "재활용", "의료", "IT"],
-      subCategories: {
+     const menuData = {
+        subMenu: ["자동화", "재활용", "의료", "IT"],
+        subCategories: {
         "자동화": ["델타로봇", "스카라", "협업로봇", "코봇", "머신비전", "열화상카메라"],
         "재활용": ["재활용시스템", "분광카메라", "조명"],
         "의료": ["PCR장비", "UV장비"],
         "IT": ["GPU서버", "Workstations", "Rack Mount Systems", "Military Systems", "Transportation Computers"],
-      },
+        },
     };
 
   return (
     <NavWrap>
       {/* PC 메뉴 */}
-      <MenuItems>
-        <Container>
-            <MenuItem
-                onMouseEnter={() => handleMouseEnter(menuData.title)}
-                onMouseLeave={handleMouseLeave}
-                >
-                <span>{menuTitle[0]}</span>
-                {menuData.subMenu.length > 0 && (
-                <SubMenu visible={activeDropdown === menuData.title}>
-                    {menuData.subMenu.map((sub) => (
-                    <SubMenuItem key={sub}>
-                        <span
-                        onClick={() =>
-                            window.innerWidth <= 768 && toggleDropdown(sub)
-                        }
-                        >
-                        {sub}
-                        </span>
-                        {menuData.subCategories[sub] && (
-                        <Dropdown visible={activeDropdown === sub}>
-                            {menuData.subCategories[sub].map((item) => (
-                            <div key={item}>{item}</div>
-                            ))}
-                        </Dropdown>
-                        )}
-                    </SubMenuItem>
-                    ))}
-                </SubMenu>
-                )}
-            </MenuItem>
-            <MenuItem><span>{menuTitle[1]}</span></MenuItem>
-        </Container>
-      </MenuItems>
+        {/* <Container> */}
+            <MenuItems>
+                <MenuItem
+                    onMouseEnter={() => handleMouseEnter(menuData.title)}
+                    onMouseLeave={handleMouseLeave}
+                    >
+                    <h4>{menuTitle[0]}</h4>
+                    {menuData.subMenu.length > 0 && (
+                    <SubMenu visible={activeDropdown === menuData.title}>
+                        {menuData.subMenu.map((sub) => (
+                        <SubMenuItem key={sub}>
+                            <h5
+                            onClick={() =>
+                                window.innerWidth <= 768 && toggleDropdown(sub)
+                            }
+                            >
+                            {sub}
+                            </h5>
+                            {menuData.subCategories[sub] && (
+                            <Dropdown>
+                                {menuData.subCategories[sub].map((item) => (
+                                <li key={item}>{item}</li>
+                                ))}
+                            </Dropdown>
+                            )}
+                        </SubMenuItem>
+                        ))}
+                    </SubMenu>
+                    )}
+                </MenuItem>
+                <MenuItem><h4>{menuTitle[1]}</h4></MenuItem>
+            </MenuItems>
+        {/* </Container> */}
 
 
       {/* 모바일 메뉴 */}

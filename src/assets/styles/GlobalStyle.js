@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import { respondTo } from './responsive';
 
 const GlobalStyles = createGlobalStyle`
     @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
@@ -72,8 +73,13 @@ const GlobalStyles = createGlobalStyle`
 export default GlobalStyles;
 
 export const Container = styled.div`
+    position: relative;
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 16px;
+
+    ${respondTo('large')} {
+        padding: 0 24px;
+    }
 `;
