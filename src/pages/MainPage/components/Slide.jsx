@@ -18,12 +18,13 @@ const size = {
 }
 
 const StyledSwiper = styled(Swiper)`
-    width: 100%;
     height: 460px;
+    margin: 2px 8px 0;
     border-radius: 30px;
     
     ${respondTo('medium')} {
         height: 805px;
+        margin: 2px 24px 0;
     }
     
     &::before {
@@ -43,9 +44,6 @@ const StyledSwiper = styled(Swiper)`
     }
 
     .swiper-slide {
-        // display: flex;
-        // align-items: center;
-        
         img {
             width: 100%;
             height: 100%;

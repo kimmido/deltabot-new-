@@ -4,13 +4,10 @@ import Slide from './components/Slide';
 import styled from 'styled-components';
 import BusinessSection from './components/BusinessSection';
 import { respondTo } from '../../assets/styles/responsive';
+import { Container } from '../../assets/styles/GlobalStyle';
 
 const Main = styled.div`
-    margin: 0 auto;
-    padding: 24px;
-    width: 100%;
-    max-width: 1440px;
-    background: #f3f3f3
+    // background: #f3f3f3
 `;
 
 const DisplayText = styled.strong`
@@ -29,10 +26,12 @@ const DisplayText = styled.strong`
 const MainPage = () => {
     return ( 
         <Main>
-        <Header />
-        <Slide />
-        <DisplayText>델타봇은<br />로봇산업의 선두 주자로<br />발돋움해 나갈 것 입니다.</DisplayText>
-        <BusinessSection />
+            <Header />
+            <Slide />
+            <Container>
+                <DisplayText>델타봇은<br />로봇산업의 선두 주자로<br />발돋움해 나갈 것 입니다.</DisplayText>
+                <BusinessSection />
+            </Container>
         </Main>
      );
 }
