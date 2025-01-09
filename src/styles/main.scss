@@ -1,11 +1,11 @@
 // main.scss
-@use './base/reset';
-@use './base/variables';
-@use './base/mixins';
+@import './base/variables';
+@import './base/mixins';
+@import './base/reset';
 // @use './base/typography';
 
-@use './layout/header';
-@use './layout/footer';
+@import './layout/header';
+@import './layout/footer';
 // @use './layout/grid';
 
 // @use './components/button';

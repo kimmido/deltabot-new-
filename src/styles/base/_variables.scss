@@ -1,3 +1,16 @@
+// breakpoints
+$breakpoints: (
+  xs: 480px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1200px,
+  xl: 1440px,
+);
+
+// Spacing
+$gutter-sm: 16px;
+$gutter-lg: 24px;
+
 // COLOR WHITE
 $color-white-000: #ffffff;
 $color-white-100: #ececec;
@@ -10,16 +23,16 @@ $color-white-700: #667085;
 
 // COLOR GRAY
 $color-gray-000: #fcfcfd;
-$color-gray-050: #f9fafb;
-$color-gray-100: #f2f4f7;
-$color-gray-200: #e4e7ec;
+$color-gray-050: #f8f8f8;
+$color-gray-100: #f0f0f0;
+$color-gray-200: #e4e4e4;
 $color-gray-300: #d0d5dd;
 $color-gray-400: #98a2b3;
 $color-gray-500: #667085;
 $color-gray-600: #475467;
 $color-gray-700: #344054;
 $color-gray-800: #1d2939;
-$color-gray-900: #101828;
+$color-gray-900: #1d1d1d;
 
 // COLOR ERROR
 $color-error-000: #fffbfa;
@@ -155,3 +168,6 @@ $color-pupple-900: #3e1c96;
 
 // COLOR BLACK
 $color-black-900: #000000;
+
+// COLOR SETTING
+$color-border: $color-gray-900;

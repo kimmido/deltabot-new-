@@ -65,3 +65,16 @@ a {
 address {
     font-style: normal;
 }
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 $gutter-sm;
+
+    @include respondTo(md) {
+        padding-left: $gutter-lg;
+        padding-right: $gutter-lg;
+    }
+}
