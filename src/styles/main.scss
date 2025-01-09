@@ -1,0 +1,24 @@
+// main.scss
+@use './base/reset';
+@use './base/variables';
+@use './base/mixins';
+// @use './base/typography';
+
+@use './layout/header';
+@use './layout/footer';
+// @use './layout/grid';
+
+// @use './components/button';
+// @use './components/card';
+// @use './components/modal';
+
+// @use './pages/home';
+// @use './pages/about';
+// @use './pages/automation';
+
+// @use './themes/light';
+// @use './themes/dark';
+
+// @use './utils/helpers';
+// @use './utils/z-index';
+// @use './utils/animations';

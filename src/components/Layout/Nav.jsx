@@ -52,8 +52,8 @@ const Nav = () => {
                     <h4>{menuTitle[0]}</h4>
                     {menuData.subMenu.length > 0 && (
                     <SubMenu visible={activeDropdown === menuData.title}>
-                        {menuData.subMenu.map((sub) => (
-                        <SubMenuItem key={sub}>
+                        {menuData.subMenu.map((sub, idx) => (
+                        <SubMenuItem key={sub} idx={idx}>
                             <h5
                             onClick={() =>
                                 window.innerWidth <= 768 && toggleDropdown(sub)
