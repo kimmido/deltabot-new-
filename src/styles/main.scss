@@ -1,17 +1,18 @@
 // main.scss
-@import './base/variables';
-@import './base/mixins';
-@import './base/reset';
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/reset";
 // @use './base/typography';
 
-@import './layout/header';
-@import './layout/footer';
+@import "./layout/header";
+@import "./layout/footer";
 // @use './layout/grid';
 
 // @use './components/button';
 // @use './components/card';
 // @use './components/modal';
 
+@import "./pages/home";
 // @use './pages/home';
 // @use './pages/about';
 // @use './pages/automation';

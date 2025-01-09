@@ -1,8 +1,9 @@
 import React from "react";
 import Header from "../../components/Layout/Header";
+import Footer from "../../components/Layout/Footer";
 import Slide from "./components/Slide";
 import styled from "styled-components";
-import BusinessSection from "./components/BusinessSection";
+import BusinessCard from "./components/BusinessCard";
 import { respondTo } from "../../assets/styles/responsive";
 
 const Main = styled.div`
@@ -33,14 +34,22 @@ const MainPage = () => {
       <Slide />
       <div className="container">
         <DisplayText>
-          델타봇은
-          <br />
-          로봇산업의 선두 주자로
-          <br />
-          발돋움해 나갈 것 입니다.
+          <p>델타봇은</p>
+          <p>로봇산업의 선두 주자로</p>
+          <p>발돋움해 나갈 것 입니다.</p>
         </DisplayText>
-        <BusinessSection />
+
+        <section className="business-section">
+          <h2>사업소개</h2>
+          <div className="business__card-grid">
+            <BusinessCard position={"pos1"} />
+            <BusinessCard position={"pos2"} />
+            <BusinessCard position={"pos3"} />
+            <BusinessCard position={"pos4"} />
+          </div>
+        </section>
       </div>
+      <Footer />
     </Main>
   );
 };
