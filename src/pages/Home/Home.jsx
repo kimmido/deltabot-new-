@@ -20,7 +20,7 @@ const Home = () => {
           start: "bottom 90%",
           end: "center 30%",
           scrub: 1, // 스크롤에 따라 부드럽게
-          markers: true,
+          markers: false,
         },
         backgroundSize: "100%",
         ease: "none",

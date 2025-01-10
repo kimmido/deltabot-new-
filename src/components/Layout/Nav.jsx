@@ -1,18 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import {
-  MobileMenuWrap,
-  MobileMenu,
-  MenuIcon,
   MobileMenuItem,
   MobileSubMenuItem,
   MobileMenuDropdown,
 } from "./Nav.styles";
 import iconHamburger from "../../assets/images/icon/icon_menu.svg";
 import iconClose from "../../assets/images/icon/icon_close.svg";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(useGSAP);
 
 const Nav = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const MobileMenuWrap = useRef(null);
+  const mobileMenu = useRef(null);
+  const { contextSafe } = useGSAP({ scope: MobileMenuWrap });
 
   const handleMouseEnter = (menu) => {
     if (window.innerWidth > 768) {
@@ -28,6 +31,10 @@ const Nav = () => {
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
+
+    contextSafe(() => {
+      gsap.to(mobileMenu.current, { xPercent: -100 });
+    });
   };
 
   const toggleDropdown = (menu) => {
@@ -35,7 +42,6 @@ const Nav = () => {
   };
 
   const menuTitle = ["사업소개", "회사소개"];
-
   const menuData = {
     subMenu: ["자동화", "재활용", "의료", "IT"],
     subCategories: {
@@ -58,7 +64,23 @@ const Nav = () => {
       ],
     },
   };
+  // useGSAP(
+  //   (context, contextSafe) => {
+  //     // ✅ safe, wrapped in contextSafe() function
+  //     const onClick = contextSafe(() => {
+  //       gsap.to(mobileMenu.current, { xPercent: -100 });
+  //     });
 
+  //     mobileMenu.current.addEventListener("click", onClick);
+
+  //     // 👍 we remove the event listener in the cleanup function below.
+  //     return () => {
+  //       // <-- cleanup
+  //       mobileMenu.current.removeEventListener("click", onClick);
+  //     };
+  //   },
+  //   { scope: gsapContainer }
+  // );
   return (
     <nav className="gnb">
       {/* PC 메뉴 */}
@@ -94,15 +116,15 @@ const Nav = () => {
       </div>
 
       {/* 모바일 메뉴 */}
-      <MobileMenuWrap>
-        <MenuIcon onClick={toggleMobileMenu}>
+      <div className="gnb__mobile-wrap" ref={MobileMenuWrap}>
+        <button className="menu-icon" onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? (
             <img src={iconClose} alt="메뉴 닫기 버튼" />
           ) : (
             <img src={iconHamburger} alt="메뉴 열기 버튼" />
           )}
-        </MenuIcon>
-        <MobileMenu isOpen={isMobileMenuOpen}>
+        </button>
+        <ul className="mobile-menu" ref={mobileMenu}>
           <MobileMenuItem>
             <h4>{menuTitle[0]}</h4>
             <ul>
@@ -123,8 +145,8 @@ const Nav = () => {
           <MobileMenuItem>
             <h4>{menuTitle[1]}</h4>
           </MobileMenuItem>
-        </MobileMenu>
-      </MobileMenuWrap>
+        </ul>
+      </div>
     </nav>
   );
 };
