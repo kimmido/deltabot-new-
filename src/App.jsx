@@ -1,5 +1,5 @@
 import React from "react";
-import MainPage from "./pages/MainPage/MainPage";
+import Home from "./pages/Home/Home";
 // import GlobalStyles from "./assets/styles/GlobalStyle";
 import "@styles/main.scss";
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       {/* <GlobalStyles /> */}
-      <MainPage />
+      <Home />
     </>
   );
 }

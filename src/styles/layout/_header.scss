@@ -1,10 +1,7 @@
-$HEADER_HEIGHT_SM: 64px;
-$HEADER_HEIGHT_MD: 88px;
-
 @mixin openPcSubMenu() {
   display: flex;
   opacity: 1;
-  // height: calc(630px + $HEADER_HEIGHT_MD);
+  // height: calc(630px + $header-md);
 }
 
 header {
@@ -12,7 +9,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: $HEADER_HEIGHT_SM;
+  height: $header-sm;
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -20,7 +17,7 @@ header {
   z-index: 1000;
 
   @include respondTo(md) {
-    height: $HEADER_HEIGHT_MD;
+    height: $header-md;
   }
 
   h1.logo {
@@ -57,8 +54,8 @@ header {
       }
 
       .gnb__link {
-        height: $HEADER_HEIGHT_MD;
-        line-height: $HEADER_HEIGHT_MD;
+        height: $header-md;
+        line-height: $header-md;
         padding-left: 16px;
         padding-right: 16px;
         font-size: 19px;

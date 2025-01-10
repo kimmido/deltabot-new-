@@ -1,21 +1,21 @@
-// breakpoints
-$breakpoints: (
-  xs: 480px,
-  sm: 768px,
-  md: 1024px,
-  lg: 1200px,
-  xl: 1440px,
-);
+//  SIZE
+$header-sm: 64px;
+$header-md: 88px;
 
 // FONTSIZE
 $font-size-xs: 13px;
 $font-size-sm: 15px;
 $font-size-md: 17px;
 $font-size-lg: 19px;
+
 $font-size-con-title-sm: 25px;
 $font-size-con-title-lg: 40px;
+
 $font-size-section-title-sm: 25px;
 $font-size-section-title-lg: 40px;
+
+$font-size-display-sm: 25px;
+$font-size-display-lg: 66px;
 
 // RADIUS
 $radius-sm: 8px;
@@ -23,6 +23,10 @@ $radius-md: 16px;
 $radius-lg: 30px;
 
 // Spacing
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+
 $gutter-sm: 16px;
 $gutter-lg: 24px;
 
@@ -42,13 +46,17 @@ $color-gray-300: #d0d5dd;
 $color-gray-400: #98a2b3;
 $color-gray-500: #667085;
 $color-gray-600: #475467;
-$color-gray-700: #344054;
-$color-gray-800: #1d2939;
+$color-gray-700: #555555;
+$color-gray-800: #2d2d2d;
 $color-gray-900: #1d1d1d;
 
 // COLOR BLACK
 $color-black-900: #000000;
 
 // COLOR SETTING
+$color-text-body: $color-gray-900;
+$color-text-title: $color-gray-900;
+$color-text-strong: $color-gray-900;
+
 $color-border: $color-gray-200;
 $color-main-card-01: #d9e4f1;
