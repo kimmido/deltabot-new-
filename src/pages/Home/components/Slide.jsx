@@ -23,6 +23,7 @@ function Slide() {
     });
 
     gsap.to(".home__swiper-wrap", {
+      scale: 0.92,
       scrollTrigger: {
         trigger: ".home__swiper-wrap",
         start: "top 80px", // 요소의 top이 viewport 중앙에 왔을 때
@@ -30,7 +31,6 @@ function Slide() {
         scrub: 1, // 스크롤에 따라 부드럽게
         markers: false,
       },
-      scale: 0.92,
     });
   });
 

@@ -21,6 +21,7 @@ $font-size-display-lg: 66px;
 $radius-sm: 8px;
 $radius-md: 16px;
 $radius-lg: 30px;
+$radius-card: $radius-lg;
 
 // Spacing
 $spacing-sm: 8px;
@@ -30,11 +31,27 @@ $spacing-lg: 24px;
 $gutter-sm: 16px;
 $gutter-lg: 24px;
 
+$spacing-layout-sm: 40px;
+$spacing-layout-md: 64px;
+$spacing-layout-lg: 80px;
+
+$spacing-content-sm: 8px;
+$spacing-content-sm: 24px;
+$spacing-content-md: 32px;
+$spacing-content-lg: 64px;
+$spacing-content-lg: 32px;
+
 // OVERLAY
-$overay-350: linear-gradient(
+$overay-black-350: linear-gradient(
   to right,
   rgba(0, 0, 0, 0.36) 0%,
   rgba(0, 0, 0, 0.36) 100%
+);
+
+$overay-white-350: linear-gradient(
+  to right,
+  rgba(255, 255, 255, 0.3) 0%,
+  rgba(255, 255, 255, 0.3) 100%
 );
 
 // COLOR GRAY

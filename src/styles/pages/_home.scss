@@ -106,7 +106,7 @@ $BUTTON_ICON: 15px;
   }
 }
 
-// ====== business ======
+// ====== decorative ======
 .decorative-area {
   display: block;
   margin: 30vh 0;
@@ -140,21 +140,6 @@ $BUTTON_ICON: 15px;
 
 // ====== business ======
 .business-section {
-  background-color: antiquewhite;
-
-  @include respondTo(md) {
-    padding: 40px 0;
-    font-size: $font-size-section-title-lg;
-  }
-
-  h2 {
-    font-size: $font-size-section-title-sm;
-
-    @include respondTo(md) {
-      font-size: $font-size-section-title-lg;
-    }
-  }
-
   .business__card-grid {
     margin-top: 24px;
     display: grid;

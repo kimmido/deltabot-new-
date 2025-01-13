@@ -100,16 +100,20 @@ header {
           border-radius: $radius-md;
 
           &:nth-child(1) {
-            background-image: $overay-350, url("@assets/images/sub_menu(1).jpg");
+            background-image: $overay-black-350,
+              url("@assets/images/sub_menu(1).jpg");
           }
           &:nth-child(2) {
-            background-image: $overay-350, url("@assets/images/sub_menu(2).jpg");
+            background-image: $overay-black-350,
+              url("@assets/images/sub_menu(2).jpg");
           }
           &:nth-child(3) {
-            background-image: $overay-350, url("@assets/images/sub_menu(3).png");
+            background-image: $overay-black-350,
+              url("@assets/images/sub_menu(3).png");
           }
           &:nth-child(4) {
-            background-image: $overay-350, url("@assets/images/sub_menu(4).png");
+            background-image: $overay-black-350,
+              url("@assets/images/sub_menu(4).png");
           }
 
           h5 {
