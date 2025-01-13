@@ -139,124 +139,110 @@ $BUTTON_ICON: 15px;
 }
 
 // ====== business ======
-.business-section {
-  .business__card-grid {
-    margin-top: 24px;
-    display: grid;
-    gap: $gutter-sm;
-    background-color: rgb(221, 250, 215);
+// .business-section {
+//   .business__card-grid {
+//     display: grid;
 
-    @include respondTo(md) {
-      margin-top: 40px;
-      gap: $gutter-lg;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 350px 480px;
-    }
-  }
+//   }
 
-  .business__card {
-    position: relative;
-    min-height: 400px;
-    height: 40vh;
-    border-radius: $radius-lg;
-    padding: 48px 36px;
-    display: flex;
-    flex-direction: column;
-    font-size: $font-size-xs;
-    background-color: $color-main-card-01;
-    cursor: pointer;
+//   .business__card {
+//     position: relative;
+//     min-height: 400px;
+//     height: 40vh;
+//     padding: 48px 36px;
+//     display: flex;
+//     flex-direction: column;
+//     font-size: $font-size-xs;
+//     background-color: $color-main-card-01;
+//     cursor: pointer;
 
-    &::after {
-      @include pseudoDefault();
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 55%;
-      border-radius: 0 0 $radius-lg $radius-lg;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: linear-gradient(
-          to bottom,
-          $color-main-card-01 2%,
-          rgba(0, 0, 0, 0) 70%
-        ),
-        url("@assets/images/business_section(1).jpg");
-    }
+//     &::after {
+//       @include pseudoDefault();
+//       right: 0;
+//       bottom: 0;
+//       width: 100%;
+//       height: 55%;
+//       border-radius: 0 0 $radius-lg $radius-lg;
+//       background-position: center;
+//       background-size: cover;
+//       background-repeat: no-repeat;
+//       background-image: linear-gradient(
+//           to bottom,
+//           $color-main-card-01 2%,
+//           rgba(0, 0, 0, 0) 70%
+//         ),
+//         url("@assets/images/business_section(1).jpg");
+//     }
 
-    @include respondTo(md) {
-      font-size: $font-size-md;
-      min-height: auto;
-      height: auto;
-      padding: 54px 50px;
+//     @include respondTo(md) {
+//       font-size: $font-size-md;
+//       min-height: auto;
+//       height: auto;
+//       padding: 54px 50px;
 
-      &.pos1 {
-        grid-column: 1;
-        grid-row: 1 / 3;
+//       &.pos1 {
+//         grid-column: 1;
+//         grid-row: 1 / 3;
 
-        &::after {
-          height: 65%;
-          background-image: linear-gradient(
-              to bottom,
-              $color-main-card-01 2%,
-              rgba(0, 0, 0, 0) 70%
-            ),
-            url("@assets/images/business_section(1).jpg");
-        }
-      }
+//         &::after {
+//           height: 65%;
+//           background-image: linear-gradient(
+//               to bottom,
+//               $color-main-card-01 2%,
+//               rgba(0, 0, 0, 0) 70%
+//             ),
+//             url("@assets/images/business_section(1).jpg");
+//         }
+//       }
 
-      &.pos2 {
-        grid-column: 2 / 4;
-        grid-row: 1;
+//       &.pos2 {
+//         grid-column: 2 / 4;
+//         grid-row: 1;
 
-        &::after {
-          width: 55%;
-          height: 100%;
-          border-radius: 0 $radius-lg $radius-lg 0;
-          background-image: linear-gradient(
-              to right,
-              $color-main-card-01 2%,
-              rgba(0, 0, 0, 0) 70%
-            ),
-            url("@assets/images/business_section(1).jpg");
-        }
-      }
+//         &::after {
+//           width: 55%;
+//           height: 100%;
+//           border-radius: 0 $radius-lg $radius-lg 0;
+//           background-image: linear-gradient(
+//               to right,
+//               $color-main-card-01 2%,
+//               rgba(0, 0, 0, 0) 70%
+//             ),
+//             url("@assets/images/business_section(1).jpg");
+//         }
+//       }
 
-      &.pos3 {
-        grid-column: 2;
-        grid-row: 2;
-      }
+//       &.pos3 {
+//         grid-column: 2;
+//         grid-row: 2;
+//       }
 
-      &.pos4 {
-        grid-column: 3;
-        grid-row: 2;
-      }
-    }
+//       &.pos4 {
+//         grid-column: 3;
+//         grid-row: 2;
+//       }
+//     }
 
-    h3.business__title {
-      position: relative;
-      font-size: $font-size-con-title-sm;
-      margin-bottom: 10px;
+//     h3.business__title {
+//       position: relative;
+//       margin-bottom: 10px;
 
-      @include respondTo(md) {
-        font-size: $font-size-con-title-lg;
-      }
-    }
+//     }
 
-    .business-description {
-      font-size: 1rem;
-      margin-bottom: 14px;
-    }
+//     .business-description {
+//       font-size: 1rem;
+//       margin-bottom: 14px;
+//     }
 
-    .business-button {
-      position: relative;
-      width: fit-content;
-      padding: 10px 20px;
-      background-color: $color-gray-000;
-      border-radius: 1000px;
-      color: $color-gray-900;
+//     .business-button {
+//       position: relative;
+//       width: fit-content;
+//       padding: 10px 20px;
+//       background-color: $color-gray-000;
+//       border-radius: 1000px;
+//       color: $color-gray-900;
 
-      z-index: 1;
-    }
-  }
-}
+//       z-index: 1;
+//     }
+//   }
+// }

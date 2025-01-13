@@ -1,0 +1,126 @@
+@use "@styles/base/variables.scss" as *;
+@use "@styles/base/_mixins.scss" as *;
+
+@mixin openPcSubMenu() {
+  display: block;
+  opacity: 1;
+  // height: calc(630px + $header-md);
+}
+
+// === nav.gnb ===
+nav.gnb {
+  display: flex;
+  justify-content: flex-end;
+
+  @include respondTo(md) {
+    justify-content: center;
+  }
+}
+
+// === pc ===
+.pc {
+  display: none;
+
+  @include respondTo(md) {
+    display: flex;
+    gap: calc(80px - 32px);
+  }
+
+  &__item {
+    position: relative;
+
+    .pc__link {
+      height: $header-md;
+      line-height: $header-md;
+      padding-left: 16px;
+      padding-right: 16px;
+
+      &:hover + .pc__sub__list {
+        @include openPcSubMenu();
+      }
+
+      &__title {
+        font-size: $font-size-nav-lg;
+      }
+    }
+  }
+
+  .pc__sub__list {
+    display: none;
+    position: absolute;
+    top: calc(100% - 4px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    padding: 6px 0;
+    background: #d5f0f8;
+    border-radius: $radius-sm;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+    transition: opacity 0.6s;
+
+    opacity: 0;
+    z-index: $z-index-pc-menu;
+
+    @include openPcSubMenu();
+    &:hover {
+    }
+
+    .pc__sub__item {
+      padding: 12px 30px;
+      font-size: $font-size-nav-lg;
+    }
+  }
+}
+
+// === mobile ===
+.mobile {
+  display: block;
+
+  @include respondTo(md) {
+    display: none;
+  }
+
+  &__btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-right: -8px;
+
+    z-index: calc($z-index-mobile-menu + 10);
+  }
+
+  ul.mobile__list {
+    @include fullPageLow();
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 64px $gutter-sm 16px;
+
+    z-index: $z-index-mobile-menu;
+
+    li.mobile__item {
+      margin-bottom: 10px;
+
+      h4 {
+        font-size: 32px;
+      }
+
+      ul.mobile__sub__list {
+        margin-top: 16px;
+
+        li.mobile__sub__item {
+          margin-bottom: 4px;
+
+          h5 {
+            position: relative;
+            padding: 12px 15px;
+            font-size: 24px;
+            background: #f9f9f9;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+} // .gnb__mobile-wrap

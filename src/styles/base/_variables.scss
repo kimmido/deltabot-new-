@@ -8,6 +8,9 @@ $font-size-sm: 15px;
 $font-size-md: 17px;
 $font-size-lg: 19px;
 
+$font-size-nav-sm: 25px;
+$font-size-nav-lg: $font-size-lg;
+
 $font-size-con-title-sm: 25px;
 $font-size-con-title-lg: 40px;
 
@@ -79,4 +82,7 @@ $color-border: $color-gray-200;
 $color-main-card-01: #d9e4f1;
 
 // Z-INDEX
-$z-index_low: 1000;
+$z-index-popup: 1000;
+$z-index-header: 900;
+$z-index-pc-menu: 800;
+$z-index-mobile-menu: 800;
