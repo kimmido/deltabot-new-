@@ -1,3 +1,4 @@
+// ========== SIZE ==========
 //  SIZE
 $header-sm: 64px;
 $header-md: 88px;
@@ -8,9 +9,6 @@ $font-size-sm: 15px;
 $font-size-md: 17px;
 $font-size-lg: 19px;
 
-$font-size-nav-sm: 25px;
-$font-size-nav-lg: $font-size-lg;
-
 $font-size-con-title-sm: 25px;
 $font-size-con-title-lg: 40px;
 
@@ -20,13 +18,13 @@ $font-size-section-title-lg: 40px;
 $font-size-display-sm: 25px;
 $font-size-display-lg: 66px;
 
-// RADIUS
-$radius-sm: 8px;
+// ========== RADIUS ==========
+$radius-xs: 8px;
 $radius-md: 16px;
 $radius-lg: 30px;
 $radius-card: $radius-lg;
 
-// Spacing
+// ========== Spacing ==========
 $spacing-sm: 8px;
 $spacing-md: 16px;
 $spacing-lg: 24px;
@@ -44,7 +42,8 @@ $spacing-content-md: 32px;
 $spacing-content-lg: 64px;
 $spacing-content-lg: 32px;
 
-// OVERLAY
+// ========== OVERLAY ==========
+// with background-image
 $overay-black-350: linear-gradient(
   to right,
   rgba(0, 0, 0, 0.36) 0%,
@@ -57,21 +56,30 @@ $overay-white-350: linear-gradient(
   rgba(255, 255, 255, 0.3) 100%
 );
 
+// ========== COLOR ==========
 // COLOR GRAY
-$color-gray-000: #fff;
 $color-gray-050: #f8f8f8;
 $color-gray-100: #f0f0f0;
 $color-gray-200: #e4e4e4;
-$color-gray-300: #d0d5dd;
-$color-gray-400: #98a2b3;
-$color-gray-500: #667085;
-$color-gray-600: #475467;
+$color-gray-300: #d8d8d8;
+$color-gray-400: #c6c6c6;
+$color-gray-500: #8e8e8e;
+$color-gray-600: #717171;
 $color-gray-700: #555555;
 $color-gray-800: #2d2d2d;
 $color-gray-900: #1d1d1d;
 
-// COLOR BLACK
-$color-black-900: #000000;
+// COLOR BLUE
+$color-blue-5: #eff5ff !default;
+$color-blue-10: #d3e1fb !default;
+$color-blue-20: #a7c4f7 !default;
+$color-blue-30: #7ca6f3 !default;
+$color-blue-40: #5089ef !default;
+$color-blue-50: #246beb !default;
+$color-blue-60: #1d56bc !default;
+$color-blue-70: #16408d !default;
+$color-blue-80: #0e2b5e !default;
+$color-blue-90: #07152f !default;
 
 // COLOR SETTING
 $color-text-body: $color-gray-900;
@@ -81,8 +89,9 @@ $color-text-strong: $color-gray-900;
 $color-border: $color-gray-200;
 $color-main-card-01: #d9e4f1;
 
-// Z-INDEX
+$color-white-000: #fff;
+$color-black-900: #000000;
+
+// ========== Z-INDEX ==========
 $z-index-popup: 1000;
 $z-index-header: 900;
-$z-index-pc-menu: 800;
-$z-index-mobile-menu: 800;

@@ -6,6 +6,24 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
+const MainLink = ({ className, text }) => {
+  return (
+    <div className={className}>
+      <h4 className={styles.title}>{text}</h4>
+    </div>
+  );
+};
+
+const SubLink = ({ className, text, key }) => {
+  return (
+    <li className={className} key={key}>
+      <a href="#" className={styles.sub__link}>
+        <h5 className={styles.sub__title}>{text}</h5>
+      </a>
+    </li>
+  );
+};
+
 const Nav = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -40,23 +58,15 @@ const Nav = () => {
       {/* PC 메뉴 */}
       <div className={styles.pc}>
         <div className={styles.pc__item}>
-          <div className={styles.pc__link}>
-            <h4 className={styles.pc__link__title}>{menuTitle[0]}</h4>
-          </div>
-          {menuData.subMenu.length > 0 && (
-            <ul className={styles.pc__sub__list}>
-              {menuData.subMenu.map((sub, idx) => (
-                <li className={styles.pc__sub__item} key={sub}>
-                  <h5>{sub}</h5>
-                </li>
-              ))}
-            </ul>
-          )}
+          <MainLink className={styles.pc__link} text={menuTitle[0]} />
+          <ul className={styles.pc__sub__list}>
+            {menuData.subMenu.map((sub) => (
+              <SubLink className={styles.pc__sub__item} text={sub} key={sub} />
+            ))}
+          </ul>
         </div>
         <div className={styles.pc__item}>
-          <div className={styles.pc__link}>
-            <h4 className={styles.pc__link__title}>{menuTitle[1]}</h4>
-          </div>
+          <MainLink className={styles.pc__link} text={menuTitle[1]} />
         </div>
       </div>
 
@@ -69,21 +79,23 @@ const Nav = () => {
             <img src={iconHamburger} alt="메뉴 열기 버튼" />
           )}
         </button>
-        <ul className={styles.mobile__list} ref={mobileMenu}>
-          <li className={styles.mobile__item}>
-            <h4>{menuTitle[0]}</h4>
+        <div className={styles.mobile__list} ref={mobileMenu}>
+          <div className={styles.mobile__item}>
+            <MainLink className={styles.mobile__link} text={menuTitle[0]} />
             <ul className={styles.mobile__sub__list}>
               {menuData.subMenu.map((sub) => (
-                <li className={styles.mobile__sub__item} key={sub}>
-                  <h5>{sub}</h5>
-                </li>
+                <SubLink
+                  className={styles.mobile__sub__item}
+                  text={sub}
+                  key={sub}
+                />
               ))}
             </ul>
-          </li>
-          <li className={styles.mobile__item}>
-            <h4>{menuTitle[1]}</h4>
-          </li>
-        </ul>
+          </div>
+          <div className={styles.mobile__item}>
+            <MainLink className={styles.mobile__link} text={menuTitle[1]} />
+          </div>
+        </div>
       </div>
     </nav>
   );

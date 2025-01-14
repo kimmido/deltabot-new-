@@ -12,9 +12,16 @@ header {
   height: $header-sm;
   display: flex;
   align-items: center;
-  background-color: #fff;
+  backdrop-filter: blur(4px);
+  background-color: #ffffff50;
+
+  transition: all 0.3s;
 
   z-index: $z-index-header;
+
+  &:hover {
+    background-color: #ffffff;
+  }
 
   @include respondTo(md) {
     height: $header-md;
@@ -36,94 +43,4 @@ header {
       height: 38px;
     }
   }
-
-  // ===== gnb =====
-  nav.gnb {
-    // === pc ===
-    .gnb__pc-wrap {
-      .gnb__link {
-        height: $header-md;
-        line-height: $header-md;
-        padding-left: 16px;
-        padding-right: 16px;
-        font-size: 19px;
-
-        &:hover + .submenu {
-          @include openPcSubMenu();
-        }
-      }
-
-      ul.submenu {
-        display: none;
-        position: fixed;
-        top: 88px;
-        left: 0;
-        justify-content: space-between;
-        gap: 24px;
-        padding: 30px 30px 24px;
-        width: 100%;
-        height: 630px;
-        background: #fff;
-        border-top: 1px solid #d3d3d3;
-        box-shadow: 0px 200px 50px 0 rgba(0, 0, 0, 0.4);
-        transition: opacity 0.6s;
-
-        opacity: 0;
-        z-index: $z-index-pc-menu;
-
-        &:hover {
-          @include openPcSubMenu();
-        }
-
-        li.submenu__item {
-          position: relative;
-          width: 100%;
-          height: 520px;
-          margin: 5px 0;
-          padding: 44px 40px;
-          color: white;
-          background-position: center;
-          background-size: auto 100%;
-          border-radius: $radius-md;
-
-          &:nth-child(1) {
-            background-image: $overay-black-350,
-              url("@assets/images/sub_menu(1).jpg");
-          }
-          &:nth-child(2) {
-            background-image: $overay-black-350,
-              url("@assets/images/sub_menu(2).jpg");
-          }
-          &:nth-child(3) {
-            background-image: $overay-black-350,
-              url("@assets/images/sub_menu(3).png");
-          }
-          &:nth-child(4) {
-            background-image: $overay-black-350,
-              url("@assets/images/sub_menu(4).png");
-          }
-
-          h5 {
-            display: inline-block;
-            font-size: 40px;
-            cursor: pointer;
-          }
-
-          .submenu_linkbox {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: 4px;
-            height: calc(100% - 80px);
-
-            .submenu__link {
-              margin-top: 18px;
-              font-size: 19px;
-              cursor: pointer;
-            }
-          }
-        }
-      } // ul.submenu
-    } // .gnb__pc-wrap
-  } // nav
 }
