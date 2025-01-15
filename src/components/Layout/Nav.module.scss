@@ -23,12 +23,6 @@ $Z-INDEX-mobile-menu: 800;
     }
   }
 }
-@mixin openPcSubMenu() {
-  display: block;
-  opacity: 1;
-  // height: calc(630px + $header-md);
-}
-
 // === nav.gnb ===
 nav.gnb {
   display: flex;
@@ -52,21 +46,24 @@ nav.gnb {
     position: relative;
 
     &::before {
-      @include pseudoDefault(#ffffffc5);
+      @include pseudoDefault(#ffffffdf);
       position: fixed;
+      height: 0;
       top: $header-md;
-      height: 300px;
-      // box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
-      border-top: 1px solid $color-border;
+      opacity: 0;
+      transition: all 0.4s;
     }
-    &--open {
-      &::before {
-        @include pseudoDefault(#ffffffc5);
-        position: fixed;
-        top: $header-md;
-        height: 300px;
-        // box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
-        border-top: 1px solid $color-border;
+
+    &:hover {
+      &.open {
+        &::before {
+          height: 260px;
+          border-top: 1px solid $color-border;
+          opacity: 1;
+        }
+        .pc__sub__list {
+          height: calc(260px - 12px);
+        }
       }
     }
 
@@ -76,12 +73,9 @@ nav.gnb {
       padding: 0 20px;
 
       transition: all 0.3s;
+
       &:hover {
         @include HOVER("link");
-
-        & + .pc__sub__list {
-          @include openPcSubMenu();
-        }
       }
 
       .title {
@@ -90,27 +84,22 @@ nav.gnb {
     }
 
     .pc__sub__list {
-      display: none;
       position: absolute;
-      top: calc(100% + 10px);
+      top: calc(100% + 12px);
       left: 50%;
-      transform: translateX(-50%);
       width: max-content;
-      transition: opacity 0.6s;
+      overflow: hidden;
+      transform: translateX(-50%);
+      height: 0;
 
-      opacity: 0;
+      transition: height 0.4s;
       z-index: $Z-INDEX-pc-menu;
-
-      &:hover {
-        @include openPcSubMenu();
-      }
 
       .pc__sub__item {
         .sub__link {
           text-align: center;
           width: 100%;
           padding: 14px 30px;
-          // background-color: rgb(167, 167, 226);
 
           &:hover {
             @include HOVER("link");

@@ -9,7 +9,9 @@ gsap.registerPlugin(useGSAP);
 const MainLink = ({ className, text }) => {
   return (
     <div className={className}>
-      <h4 className={styles.title}>{text}</h4>
+      <h4 className={styles.title} onMouseOver={(e) => console.log(e.target)}>
+        {text}
+      </h4>
     </div>
   );
 };
@@ -26,20 +28,28 @@ const SubLink = ({ className, text, key }) => {
 
 const Nav = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [openMenu, setOpenMenu] = useState(false);
   const mobileMenu = useRef(null);
 
-  // const handleMouseEnter = (menu) => {
-  //   if (window.innerWidth > 768) {
-  //     setActiveDropdown(menu);
-  //   }
-  // };
+  const menuData = [
+    {
+      main: "사업소개",
+      sub: ["자동화", "재활용", "의료", "IT"],
+    },
+    {
+      main: "회사소개",
+    },
+  ];
 
-  // const handleMouseLeave = () => {
-  //   if (window.innerWidth > 768) {
-  //     setActiveDropdown(null);
-  //   }
-  // };
+  const handleMouseEnter = (data) => {
+    if (data.sub && data.sub.length > 0) {
+      setOpenMenu(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setOpenMenu(false);
+  };
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -48,26 +58,34 @@ const Nav = () => {
     if (!isMobileMenuOpen) gsap.to(mobileMenu.current, { xPercent: -100 });
   };
 
-  const menuTitle = ["사업소개", "회사소개"];
-  const menuData = {
-    subMenu: ["자동화", "재활용", "의료", "IT"],
-  };
-
   return (
     <nav className={styles.gnb}>
       {/* PC 메뉴 */}
       <div className={styles.pc}>
-        <div className={styles.pc__item}>
-          <MainLink className={styles.pc__link} text={menuTitle[0]} />
-          <ul className={styles.pc__sub__list}>
-            {menuData.subMenu.map((sub) => (
-              <SubLink className={styles.pc__sub__item} text={sub} key={sub} />
-            ))}
-          </ul>
-        </div>
-        <div className={styles.pc__item}>
-          <MainLink className={styles.pc__link} text={menuTitle[1]} />
-        </div>
+        {menuData.map((data) => (
+          <div
+            className={`${styles.pc__item} ${openMenu ? styles.open : ""}`}
+            onMouseOver={(e) => handleMouseEnter(data)}
+            onMouseLeave={(e) => handleMouseLeave()}
+          >
+            <MainLink className={styles.pc__link} text={data.main} />
+            {data.sub && (
+              <ul
+                className={styles.pc__sub__list}
+                onMouseOver={(e) => handleMouseEnter(data)}
+                onMouseLeave={(e) => handleMouseLeave()}
+              >
+                {data.sub.map((sub) => (
+                  <SubLink
+                    className={styles.pc__sub__item}
+                    text={sub}
+                    key={sub}
+                  />
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
       </div>
 
       {/* 모바일 메뉴 */}
@@ -80,21 +98,22 @@ const Nav = () => {
           )}
         </button>
         <div className={styles.mobile__list} ref={mobileMenu}>
-          <div className={styles.mobile__item}>
-            <MainLink className={styles.mobile__link} text={menuTitle[0]} />
-            <ul className={styles.mobile__sub__list}>
-              {menuData.subMenu.map((sub) => (
-                <SubLink
-                  className={styles.mobile__sub__item}
-                  text={sub}
-                  key={sub}
-                />
-              ))}
-            </ul>
-          </div>
-          <div className={styles.mobile__item}>
-            <MainLink className={styles.mobile__link} text={menuTitle[1]} />
-          </div>
+          {menuData.map((data) => (
+            <div className={styles.mobile__item}>
+              <MainLink className={styles.mobile__link} text={data.main} />
+              {data.sub && (
+                <ul className={styles.mobile__sub__list}>
+                  {data.sub.map((sub) => (
+                    <SubLink
+                      className={styles.mobile__sub__item}
+                      text={sub}
+                      key={sub}
+                    />
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </nav>
