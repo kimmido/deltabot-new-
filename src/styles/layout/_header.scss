@@ -1,9 +1,3 @@
-@mixin openPcSubMenu() {
-  display: flex;
-  opacity: 1;
-  // height: calc(630px + $header-md);
-}
-
 header {
   position: fixed;
   top: 0;
@@ -34,13 +28,16 @@ header {
     transform: translateY(-50%);
     width: 94px;
     height: 24px;
-    background: no-repeat center/100% url(/delta_logo1.png);
     z-index: $z-index-header;
 
     @include respondTo(md) {
       left: 0;
       width: 148px;
       height: 38px;
+    }
+
+    img {
+      width: 100%;
     }
   }
 }

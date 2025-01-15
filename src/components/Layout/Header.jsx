@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <header>
       <div className="container">
-        <h1 className="logo"></h1>
+        <h1 className="logo">
+          <img src="/delta_logo1.png" alt="로고" />
+        </h1>
         <Nav />
       </div>
     </header>
