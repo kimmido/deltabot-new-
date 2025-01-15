@@ -4,24 +4,25 @@ import iconHamburger from "../../assets/images/icon/icon_menu.svg";
 import iconClose from "../../assets/images/icon/icon_close.svg";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 gsap.registerPlugin(useGSAP);
 
 const MainLink = ({ className, text }) => {
   return (
-    <div className={className}>
+    <Link to="/automation" className={className}>
       <h4 className={styles.title} onMouseOver={(e) => console.log(e.target)}>
         {text}
       </h4>
-    </div>
+    </Link>
   );
 };
 
-const SubLink = ({ className, text, key }) => {
+const SubLink = ({ className, text }) => {
   return (
-    <li className={className} key={key}>
-      <a href="#" className={styles.sub__link}>
+    <li className={className}>
+      <Link to="/automation" className={styles.sub__link}>
         <h5 className={styles.sub__title}>{text}</h5>
-      </a>
+      </Link>
     </li>
   );
 };
@@ -64,6 +65,7 @@ const Nav = () => {
       <div className={styles.pc}>
         {menuData.map((data) => (
           <div
+            key={data.main}
             className={`${styles.pc__item} ${openMenu ? styles.open : ""}`}
             onMouseOver={(e) => handleMouseEnter(data)}
             onMouseLeave={(e) => handleMouseLeave()}
@@ -75,11 +77,11 @@ const Nav = () => {
                 onMouseOver={(e) => handleMouseEnter(data)}
                 onMouseLeave={(e) => handleMouseLeave()}
               >
-                {data.sub.map((sub) => (
+                {data.sub.map((text) => (
                   <SubLink
                     className={styles.pc__sub__item}
-                    text={sub}
-                    key={sub}
+                    text={text}
+                    key={text}
                   />
                 ))}
               </ul>
@@ -99,15 +101,15 @@ const Nav = () => {
         </button>
         <div className={styles.mobile__list} ref={mobileMenu}>
           {menuData.map((data) => (
-            <div className={styles.mobile__item}>
+            <div className={styles.mobile__item} key={data.main}>
               <MainLink className={styles.mobile__link} text={data.main} />
               {data.sub && (
                 <ul className={styles.mobile__sub__list}>
-                  {data.sub.map((sub) => (
+                  {data.sub.map((text) => (
                     <SubLink
                       className={styles.mobile__sub__item}
-                      text={sub}
-                      key={sub}
+                      text={text}
+                      key={text}
                     />
                   ))}
                 </ul>

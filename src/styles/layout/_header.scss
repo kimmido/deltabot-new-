@@ -26,18 +26,29 @@ header {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    width: 94px;
-    height: 24px;
     z-index: $z-index-header;
 
     @include respondTo(md) {
       left: 0;
-      width: 148px;
-      height: 38px;
     }
 
-    img {
+    a {
       width: 100%;
+      padding: 6px 4px 2px 0;
+
+      @include respondTo(md) {
+        padding: 12px 6px 2px 0;
+      }
+
+      img {
+        width: 94px;
+        // height: 24px;
+
+        @include respondTo(md) {
+          width: 148px;
+          // height: 38px;
+        }
+      }
     }
   }
 }

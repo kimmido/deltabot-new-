@@ -1,5 +1,4 @@
 import React from "react";
-import BusinessCard from "./BusinessCard";
 import styles from "./BusinessSection.module.scss";
 
 function BusinessSection() {
