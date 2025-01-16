@@ -2,47 +2,50 @@ import React from "react";
 import Home from "./pages/Home/Home";
 // import GlobalStyles from "./assets/styles/GlobalStyle";
 import "@styles/main.scss";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import DefaultLayout from "./layouts/DefaultLayout";
 import BusinessLayout from "./layouts/BusinessLayout";
+import About from "./pages/About/About";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<DefaultLayout />}>
           <Route index element={<Home />} />
-          {/* <Route path="automation" element={<AutomationOverview />} />
-          <Route path="recycling" element={<RecyclingOverview />} />
-          <Route path="medical" element={<MedicalOverview />} />
-          <Route path="it" element={<ITOverview />} />
-          <Route path="about" element={<CompanyIntroduction />} /> */}
-          {/* <Route
-            path="/automation"
-            element={<Navigate to="/automation/deltarobot" />}
-
-          /> */}
-          <Route path="/automation" element={<BusinessLayout />} />
-          {/* <Route
-            path="/recycling"
-            element={<Navigate to="/recycling/system" />}
-          />
-          <Route path="/medical" element={<Navigate to="/medical/pcr" />} />
-          <Route path="/it" element={<Navigate to="/it/gpu" />} /> */}
+          <Route path="/about" element={<About />} />
+          <Route path="/*" element={<BusinessLayout />} />
+          <Route path="automation">
+            <Route index element={<Navigate to="deltarobot" replace />} />
+            <Route path="deltarobot" element={<BusinessLayout />} />
+            <Route path="scara" element={<BusinessLayout />} />
+            <Route path="collaborative" element={<BusinessLayout />} />
+            <Route path="cobot" element={<BusinessLayout />} />
+            <Route path="machine-vision" element={<BusinessLayout />} />
+            <Route path="thermal-camera" element={<BusinessLayout />} />
+          </Route>
+          <Route path="recycling">
+            <Route index element={<Navigate to="system" replace />} />
+            <Route path="system" element={<BusinessLayout />} />
+            <Route path="spectral-camera" element={<BusinessLayout />} />
+            <Route path="lighting" element={<BusinessLayout />} />
+          </Route>
+          <Route path="medical">
+            <Route index element={<Navigate to="pcr" replace />} />
+            <Route path="pcr" element={<BusinessLayout />} />
+            <Route path="suv" element={<BusinessLayout />} />
+          </Route>
+          <Route path="it">
+            <Route index element={<Navigate to="gpu-server" replace />} />
+            <Route path="gpu-server" element={<BusinessLayout />} />
+            <Route path="workstations" element={<BusinessLayout />} />
+            <Route path="rack-mount" element={<BusinessLayout />} />
+            <Route path="military" element={<BusinessLayout />} />
+            <Route path="transportation" element={<BusinessLayout />} />
+          </Route>
         </Route>
-
-        {/* <GlobalStyles /> */}
-        {/* 상세 레이아웃 적용 */}
-        {/* <Route path="automation/detail/:id" element={<DetailLayout />}>
-          <Route path=":id" element={<div>상세 페이지</div>} />
-          </Route> */}
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 

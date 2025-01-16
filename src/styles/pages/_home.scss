@@ -1,11 +1,3 @@
-.Home {
-  padding-top: 64px;
-
-  @include respondTo(md) {
-    padding-top: 88px;
-  }
-}
-
 // ====== swiper ======
 $BUTTON_ICON: 15px;
 

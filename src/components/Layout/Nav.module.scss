@@ -146,6 +146,7 @@ nav.gnb {
       .mobile__link {
         font-size: $FONT_SIZE_LG;
         padding: 12px 15px;
+        width: 100%;
         color: $color-blue-60;
         background: $color-blue-5;
         border-radius: $radius-xs;
@@ -168,6 +169,10 @@ nav.gnb {
 
         li.mobile__sub__item {
           margin-bottom: 4px;
+
+          .sub__link {
+            width: 100%;
+          }
 
           .sub__title {
             position: relative;
