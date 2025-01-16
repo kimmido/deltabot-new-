@@ -1,7 +1,15 @@
 import React from "react";
+import PageHeading from "../../components/Shared/PageHeading";
 
 function About() {
-  return <div>회사소개 페이지 입니다.</div>;
+  return (
+    <div className="About">
+      <div className="container">
+        <PageHeading title={회사소개} />
+        <h1>델타봇은 ~~~</h1>
+      </div>
+    </div>
+  );
 }
 
 export default About;

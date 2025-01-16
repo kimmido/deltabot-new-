@@ -1,7 +1,69 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
+import PageHeading from "../components/Shared/PageHeading";
+import { useLocation, useNavigate } from "react-router-dom";
+import { CategoryRoutesContext } from "../contexts/CategoryRoutesContext";
+import Business from "../pages/Business/Business";
 
-function BusinessLayout() {
-  return <div>BusinessLayout</div>;
+function BusinessLayout({ label }) {
+  const category = useContext(CategoryRoutesContext);
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const [routes, setRoutes] = useState({ items: [] });
+  const [currentCategory, setCurrentCategory] = useState("");
+  const [currentPath, setCurrentPath] = useState("");
+  const [productData, setProductData] = useState({});
+
+  useEffect(() => {
+    const pathSegments = pathname.split("/").filter((segment) => segment);
+    setRoutes(category[0].sub.find((sub) => sub.path == pathSegments[0]));
+    setCurrentCategory(pathSegments[0]);
+    setCurrentPath(pathSegments[1]);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!currentCategory) return;
+
+    fetch(`/product_${currentCategory}.json`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch data.json");
+        }
+        return response.json();
+      })
+      .then((jsonData) => {
+        setProductData(jsonData);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, [currentCategory]);
+
+  const handleTabChange = (currentCategory, path) => {
+    navigate(`/${currentCategory}/${path}`);
+  };
+
+  return (
+    <div>
+      <div className="container">
+        <PageHeading title={routes.label} img={currentPath} />
+
+        <div className="tab-menu">
+          {routes.items.map((route) => (
+            <button
+              key={route.path}
+              className={`tab-item ${
+                currentPath === route.path ? "active" : ""
+              }`}
+              onClick={() => handleTabChange(currentCategory, route.path)}
+            >
+              {route.label}
+            </button>
+          ))}
+        </div>
+        <Business currentPath={currentPath} productData={productData} />
+      </div>
+    </div>
+  );
 }
 
 export default BusinessLayout;

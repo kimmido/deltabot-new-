@@ -1,10 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import styles from "./Nav.module.scss";
 import iconHamburger from "../../assets/images/icon/icon_menu.svg";
 import iconClose from "../../assets/images/icon/icon_close.svg";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
+import { CategoryRoutesContext } from "../../contexts/CategoryRoutesContext";
 gsap.registerPlugin(useGSAP);
 
 const MainLink = ({
@@ -15,7 +16,7 @@ const MainLink = ({
   },
 }) => {
   return (
-    <Link to={main.path} className={className} onClick={toggleMobileMenu}>
+    <Link to={`/${main.path}`} className={className} onClick={toggleMobileMenu}>
       <h4 className={styles.title} onMouseOver={(e) => console.log(e.target)}>
         {main.label}
       </h4>
@@ -47,42 +48,10 @@ const Nav = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isPcMenuOpen, setPcMenuOpen] = useState(false);
   const mobileMenu = useRef(null);
+  const category = useContext(CategoryRoutesContext);
 
-  const menuData = [
-    {
-      main: {
-        label: "사업소개",
-        path: "/automation",
-      },
-      sub: [
-        {
-          label: "자동화",
-          path: "/automation",
-        },
-        {
-          label: "재활용",
-          path: "/recycling",
-        },
-        {
-          label: "의료",
-          path: "/medical",
-        },
-        {
-          label: "IT",
-          path: "/it",
-        },
-      ],
-    },
-    {
-      main: {
-        label: "회사소개",
-        path: "/about",
-      },
-    },
-  ];
-
-  const handleMouseEnter = (data) => {
-    if (data.sub && data.sub.length > 0) {
+  const handleMouseEnter = (category) => {
+    if (category.sub && category.sub.length > 0) {
       setPcMenuOpen(true);
     }
   };
@@ -102,21 +71,21 @@ const Nav = () => {
     <nav className={styles.gnb}>
       {/* PC 메뉴 */}
       <div className={styles.pc}>
-        {menuData.map((data) => (
+        {category.map((category) => (
           <div
-            key={data.main.label}
+            key={category.main.label}
             className={`${styles.pc__item} ${isPcMenuOpen ? styles.open : ""}`}
-            onMouseOver={(e) => handleMouseEnter(data)}
+            onMouseOver={(e) => handleMouseEnter(category)}
             onMouseLeave={(e) => handleMouseLeave()}
           >
-            <MainLink className={styles.pc__link} main={data.main} />
-            {data.sub && (
+            <MainLink className={styles.pc__link} main={category.main} />
+            {category.sub && (
               <ul
                 className={styles.pc__sub__list}
-                onMouseOver={(e) => handleMouseEnter(data)}
+                onMouseOver={(e) => handleMouseEnter(category)}
                 onMouseLeave={(e) => handleMouseLeave()}
               >
-                {data.sub.map((sub) => (
+                {category.sub.map((sub) => (
                   <SubLink
                     key={sub.label}
                     className={styles.pc__sub__item}
@@ -139,16 +108,16 @@ const Nav = () => {
           )}
         </button>
         <div className={styles.mobile__list} ref={mobileMenu}>
-          {menuData.map((data) => (
-            <div className={styles.mobile__item} key={data.main.label}>
+          {category.map((category) => (
+            <div className={styles.mobile__item} key={category.main.label}>
               <MainLink
                 className={styles.mobile__link}
-                main={data.main}
+                main={category.main}
                 toggleMobileMenu={toggleMobileMenu}
               />
-              {data.sub && (
+              {category.sub && (
                 <ul className={styles.mobile__sub__list}>
-                  {data.sub.map((sub) => (
+                  {category.sub.map((sub) => (
                     <SubLink
                       key={sub.label}
                       className={styles.mobile__sub__item}

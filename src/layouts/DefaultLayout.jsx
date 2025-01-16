@@ -8,7 +8,7 @@ function DefaultLayout() {
     <div>
       <Header />
       <main>
-        <Outlet /> {/* 라우팅되는 컴포넌트가 여기서 렌더링 */}
+        <Outlet />
       </main>
       <Footer />
     </div>

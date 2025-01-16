@@ -54,8 +54,8 @@ nav.gnb {
       transition: all 0.4s;
     }
 
-    &:hover {
-      &.open {
+    &.open {
+      &:hover {
         &::before {
           height: 260px;
           border-top: 1px solid $color-border;
