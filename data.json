@@ -1,17 +1,4 @@
 {
-  "product": {
-    "automation": {
-      "deltarobot": [
-        "DRF시리즈", "D3P시리즈", "D3PM", "D3W"
-      ],
-      "scara": [
-
-      ]
-    }
-  },
-
-
-
   "category": [
     {
       "main": {
