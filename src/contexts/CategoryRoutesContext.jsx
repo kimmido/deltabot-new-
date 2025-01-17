@@ -11,10 +11,10 @@ export const category = [
         label: "자동화",
         path: "automation",
         items: [
-          { path: "deltarobot", label: "델타로봇" },
-          { path: "scara", label: "스카라" },
           { path: "collaborative", label: "협업로봇" },
+          { path: "scara", label: "스카라" },
           { path: "cobot", label: "코봇" },
+          { path: "deltarobot", label: "델타로봇" },
           { path: "machine-vision", label: "머신비전" },
           { path: "thermal-camera", label: "열화상 카메라" },
         ],
