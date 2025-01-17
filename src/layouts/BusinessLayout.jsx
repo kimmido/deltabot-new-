@@ -5,7 +5,7 @@ import { CategoryRoutesContext } from "../contexts/CategoryRoutesContext";
 import Business from "../pages/Business/Business";
 import { fetchData } from "../utils/fetchData";
 
-function BusinessLayout({ label }) {
+function BusinessLayout() {
   const category = useContext(CategoryRoutesContext);
   const navigate = useNavigate();
   const { pathname } = useLocation();

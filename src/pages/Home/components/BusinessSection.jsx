@@ -1,42 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./BusinessSection.module.scss";
+import { CategoryRoutesContext } from "../../../contexts/CategoryRoutesContext";
+import { Link } from "react-router-dom";
 
 function BusinessSection() {
-  const categoryData = {
-    title: ["자동화", "재활용", "의료", "IT"],
-    sub: {
-      자동화: [
-        "협업로봇",
-        "스카라",
-        "코봇",
-        "델타로봇",
-        "머신비전",
-        "열화상카메라",
-      ],
-      재활용: ["재활용시스템", "분광카메라", "조명"],
-      의료: ["PCR장비", "UV장비"],
-      IT: [
-        "GPU서버",
-        "Workstations",
-        "Rack Mount Systems",
-        "Military Systems",
-        "Transportation Computers",
-      ],
-    },
-  };
+  const category = useContext(CategoryRoutesContext);
+  const routes = category[0].sub;
 
   return (
     <section className={styles.section}>
       <div className="container">
         <h2>사업소개</h2>
         <ul className={styles.category__list}>
-          {categoryData.title.map((title, idx) => (
-            <li className={styles.category__item} key={title}>
-              <h5 className={styles.category__title}>{title}</h5>
+          {routes.map((route) => (
+            <li className={styles.category__item} key={route.label}>
+              <h5 className={styles.category__title}>{route.label}</h5>
               <ul className={styles.category__sub__list}>
-                {categoryData.sub[title].map((item) => (
-                  <li className={styles.category__sub__item} key={item}>
-                    <a className={styles.category__sub__link}>{item}</a>
+                {route.items.map((item) => (
+                  <li className={styles.category__sub__item} key={item.path}>
+                    <Link
+                      to={`${route.path}/${item.path}`}
+                      className={styles.category__sub__link}
+                    >
+                      {item.label}
+                    </Link>
                   </li>
                 ))}
               </ul>

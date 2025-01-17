@@ -1,10 +1,10 @@
 @use "@styles/base/variables.scss" as *;
-@use "@styles/base/mixins.scss" as mixins;
+@use "@styles/base/mixins.scss" as *;
 
 .section {
   margin-top: $spacing-layout-sm;
 
-  @include mixins.respondTo(md) {
+  @include respondTo(md) {
     margin-top: $spacing-layout-lg;
     padding: 40px 0;
   }
@@ -12,7 +12,7 @@
   h2 {
     font-size: $font-size-section-title-sm;
 
-    @include mixins.respondTo(md) {
+    @include respondTo(md) {
       font-size: $font-size-section-title-lg;
     }
   }
@@ -24,7 +24,7 @@
     gap: $gutter-sm;
     margin-top: 24px;
 
-    @include mixins.respondTo(md) {
+    @include respondTo(md) {
       flex-direction: row;
       margin-top: 40px;
       gap: $gutter-lg;
@@ -39,7 +39,7 @@
 
       transition: all 0.3s;
 
-      @include mixins.respondTo(md) {
+      @include respondTo(md) {
         flex: 1;
         height: 600px;
         padding: 42px 42px 56px;
@@ -64,7 +64,7 @@
         margin-bottom: 32px;
         font-size: $font-size-con-title-sm;
 
-        @include mixins.respondTo(md) {
+        @include respondTo(md) {
           margin-bottom: 0;
           font-size: $font-size-con-title-lg;
         }
@@ -78,7 +78,7 @@
         height: calc(100% - $font-size-con-title-lg);
         transition: opacity 0.3s;
 
-        @include mixins.respondTo(md) {
+        @include respondTo(md) {
           opacity: 0;
           gap: 8px;
         }
@@ -97,7 +97,7 @@
           white-space: nowrap;
           transition: width 0.3s;
 
-          @include mixins.respondTo(md) {
+          @include respondTo(md) {
             padding: 14px 16px;
             overflow: hidden;
             width: 100px;
