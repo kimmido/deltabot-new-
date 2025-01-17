@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<DefaultLayout />}>
             <Route index element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="about" element={<About />} />
 
             <Route path="automation">
               <Route index element={<Navigate to="deltarobot" replace />} />

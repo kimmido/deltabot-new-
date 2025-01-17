@@ -3,6 +3,7 @@ import PageHeading from "../components/Shared/PageHeading";
 import { useLocation, useNavigate } from "react-router-dom";
 import { CategoryRoutesContext } from "../contexts/CategoryRoutesContext";
 import Business from "../pages/Business/Business";
+import { fetchData } from "../utils/fetchData";
 
 function BusinessLayout({ label }) {
   const category = useContext(CategoryRoutesContext);
@@ -23,19 +24,16 @@ function BusinessLayout({ label }) {
   useEffect(() => {
     if (!currentCategory) return;
 
-    fetch(`/product_${currentCategory}.json`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to fetch data.json");
-        }
-        return response.json();
-      })
-      .then((jsonData) => {
+    const getData = async () => {
+      try {
+        const jsonData = await fetchData(`/product_${currentCategory}.json`); // public 폴더의 JSON 경로
         setProductData(jsonData);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
+      } catch (error) {
+        console.error("Failed to load data:", error);
+      }
+    };
+
+    getData();
   }, [currentCategory]);
 
   const handleTabChange = (currentCategory, path) => {
@@ -60,7 +58,10 @@ function BusinessLayout({ label }) {
             </button>
           ))}
         </div>
-        <Business currentPath={currentPath} productData={productData} />
+        <Business
+          currentPath={currentPath}
+          productData={productData[currentPath]}
+        />
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 {
   "deltarobot": [
     {
-      "label": "DRF시리즈",
+      "name": "DRF시리즈",
       "code": "DRF시리즈",
-      "feature": [
+      "features": [
         "우수한 성능, 효율성 우선",
         "최고의 안전성, 포괄적인 보증",
         "유연한 배포, 사용 용이성",
@@ -12,16 +12,19 @@
       ]
     }, 
     {
-      "label": "D3P시리즈",
-      "code": "DRF시리즈"
+      "name": "D3P시리즈",
+      "code": "DRF시리즈",
+      "features": []
     },
     {
-      "label": "D3PM",
-      "code": "DRF시리즈"
+      "name": "D3PM",
+      "code": "DRF시리즈",
+      "features": []
     },
     {
-      "label": "D3W",
-      "code": "DRF시리즈"
+      "name": "D3W",
+      "code": "DRF시리즈",
+      "features": []
     }
   ],
   "scara": [

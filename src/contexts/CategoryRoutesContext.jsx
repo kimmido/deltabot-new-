@@ -52,7 +52,7 @@ export const category = [
   {
     main: {
       label: "회사소개",
-      path: "/about",
+      path: "about",
     },
   },
 ];

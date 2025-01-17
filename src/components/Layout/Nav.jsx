@@ -1,5 +1,4 @@
 import React, { useContext, useRef, useState } from "react";
-import styles from "./Nav.module.scss";
 import iconHamburger from "../../assets/images/icon/icon_menu.svg";
 import iconClose from "../../assets/images/icon/icon_close.svg";
 import gsap from "gsap";
@@ -17,7 +16,7 @@ const MainLink = ({
 }) => {
   return (
     <Link to={`/${main.path}`} className={className} onClick={toggleMobileMenu}>
-      <h4 className={styles.title} onMouseOver={(e) => console.log(e.target)}>
+      <h4 className="title" onMouseOver={(e) => console.log(e.target)}>
         {main.label}
       </h4>
     </Link>
@@ -33,12 +32,8 @@ const SubLink = ({
 }) => {
   return (
     <li className={className}>
-      <Link
-        to={sub.path}
-        className={styles.sub__link}
-        onClick={toggleMobileMenu}
-      >
-        <h5 className={styles.sub__title}>{sub.label}</h5>
+      <Link to={sub.path} className="sub__link" onClick={toggleMobileMenu}>
+        <h5 className="sub__title">{sub.label}</h5>
       </Link>
     </li>
   );
@@ -68,27 +63,27 @@ const Nav = () => {
   };
 
   return (
-    <nav className={styles.gnb}>
+    <nav className="gnb">
       {/* PC 메뉴 */}
-      <div className={styles.pc}>
+      <div className="pc">
         {category.map((category) => (
           <div
             key={category.main.label}
-            className={`${styles.pc__item} ${isPcMenuOpen ? styles.open : ""}`}
+            className={`pc__item ${isPcMenuOpen ? "open" : ""}`}
             onMouseOver={(e) => handleMouseEnter(category)}
             onMouseLeave={(e) => handleMouseLeave()}
           >
-            <MainLink className={styles.pc__link} main={category.main} />
+            <MainLink className="pc__link" main={category.main} />
             {category.sub && (
               <ul
-                className={styles.pc__sub__list}
+                className="pc__sub__list"
                 onMouseOver={(e) => handleMouseEnter(category)}
                 onMouseLeave={(e) => handleMouseLeave()}
               >
                 {category.sub.map((sub) => (
                   <SubLink
                     key={sub.label}
-                    className={styles.pc__sub__item}
+                    className="pc__sub__item"
                     sub={sub}
                   />
                 ))}
@@ -99,28 +94,28 @@ const Nav = () => {
       </div>
 
       {/* 모바일 메뉴 */}
-      <div className={styles.mobile}>
-        <button className={styles.mobile__btn} onClick={toggleMobileMenu}>
+      <div className="mobile">
+        <button className="mobile__btn" onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? (
             <img src={iconClose} alt="메뉴 닫기 버튼" />
           ) : (
             <img src={iconHamburger} alt="메뉴 열기 버튼" />
           )}
         </button>
-        <div className={styles.mobile__list} ref={mobileMenu}>
+        <div className="mobile__list" ref={mobileMenu}>
           {category.map((category) => (
-            <div className={styles.mobile__item} key={category.main.label}>
+            <div className="mobile__item" key={category.main.label}>
               <MainLink
-                className={styles.mobile__link}
+                className="mobile__link"
                 main={category.main}
                 toggleMobileMenu={toggleMobileMenu}
               />
               {category.sub && (
-                <ul className={styles.mobile__sub__list}>
+                <ul className="mobile__sub__list">
                   {category.sub.map((sub) => (
                     <SubLink
                       key={sub.label}
-                      className={styles.mobile__sub__item}
+                      className="mobile__sub__item"
                       sub={sub}
                       toggleMobileMenu={toggleMobileMenu}
                     />
