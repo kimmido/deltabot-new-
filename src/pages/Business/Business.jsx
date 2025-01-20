@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-function Business({ currentPath, productData = [] }) {
+function Business({ currentPath, productData = [{ items: [] }] }) {
   //   const [htmlContent, setHtmlContent] = useState("");
   //   const [filePath, setFilePath] = useState("excel_test.htm");
+  const [currentIdx, setCurrentIdx] = useState(0);
 
   //   useEffect(() => {
   //     fetch(filePath)
@@ -14,36 +15,52 @@ function Business({ currentPath, productData = [] }) {
     console.log(productData);
   }, [productData]);
 
+  const handleTabChange = (idx) => {
+    // navigate(`/${currentCategory}/${path}`);
+  };
+
   return (
     <div>
-      <div>
-        <p>데이터 원본</p>
+      <div className="tab-menu">
+        {productData.map((data, idx) => (
+          <button
+            key={idx}
+            className={`tab-item ${currentIdx === idx ? "active" : ""}`}
+            onClick={() => {
+              setCurrentIdx(idx);
+            }}
+          >
+            {data.title}
+          </button>
+        ))}
       </div>
       <div className="product">
         <h3>제품목록</h3>
         <ul>
-          {productData.map((d) => (
-            <li key={d.name}>
-              <img src="" alt={"제품이미지" + currentPath + d.code} />
-              <p>{d.name}</p>
+          {productData[currentIdx].items.map((item, idx) => (
+            <li key={idx}>
+              {console.log(item)}
+              <img src="" alt={"제품이미지" + currentPath + item.code} />
+              <p>{item.name}</p>
             </li>
           ))}
         </ul>
         <div>
-          {productData.map((d) => (
-            <div key={d.name}>
-              <img src="" alt={"제품이미지" + currentPath + d.code} />
-              <strong>{d.name}</strong>
+          {productData[currentIdx].items.map((item, idx) => (
+            <div key={idx}>
+              <img src="" alt={"제품이미지" + currentPath + item.code} />
+              <strong>{item.name}</strong>
               <ul>
-                {d.features.map((feature) => (
+                {item.features.map((feature) => (
                   <li>{feature}</li>
                 ))}
               </ul>
               <button>Specifications</button>
-              {/* <div dangerouslySetInnerHTML={{ __html: htmlContent }}>Specifications 표 들어올 자리</div> */}
+              {/* <div dangerouslySetInnerHTML={{ __html: htmlContent }}>
+                Specifications 표 들어올 자리
+              </div> */}
             </div>
           ))}
-          <div></div>
         </div>
       </div>
     </div>

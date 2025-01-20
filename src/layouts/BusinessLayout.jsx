@@ -58,6 +58,7 @@ function BusinessLayout() {
             </button>
           ))}
         </div>
+
         <Business
           currentPath={currentPath}
           productData={productData[currentPath]}

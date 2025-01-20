@@ -1,33 +1,36 @@
 {
-  "deltarobot": [
-    {
-      "name": "DRF시리즈",
-      "code": "DRF시리즈",
-      "features": [
-        "우수한 성능, 효율성 우선",
-        "최고의 안전성, 포괄적인 보증",
-        "유연한 배포, 사용 용이성",
-        "효율적인 보호, 탁월한 신뢰성",
-        "건전한 생태계, 완전한 권한 부여"
-      ]
-    }, 
-    {
-      "name": "D3P시리즈",
-      "code": "DRF시리즈",
-      "features": []
-    },
-    {
-      "name": "D3PM",
-      "code": "DRF시리즈",
-      "features": []
-    },
-    {
-      "name": "D3W",
-      "code": "DRF시리즈",
-      "features": []
-    }
-  ],
-  "scara": [
-
-  ]
+  "deltarobot": 
+    [
+      {
+        "title": "델타로봇 시리즈", 
+        "items": [
+          {
+            "name": "DRF시리즈",
+            "code": "DRF시리즈",
+            "features": [
+              "우수한 성능, 효율성 우선",
+              "최고의 안전성, 포괄적인 보증",
+              "유연한 배포, 사용 용이성",
+              "효율적인 보호, 탁월한 신뢰성",
+              "건전한 생태계, 완전한 권한 부여"
+            ]
+          }, 
+          {
+            "name": "D3P시리즈",
+            "code": "DRF시리즈",
+            "features": []
+          },
+          {
+            "name": "D3PM",
+            "code": "DRF시리즈",
+            "features": []
+          },
+          {
+            "name": "D3W",
+            "code": "DRF시리즈",
+            "features": []
+          }
+        ]
+      }
+    ]
 }
