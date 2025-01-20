@@ -105,4 +105,17 @@ $BUTTON_ICON: 15px;
   @include respondTo(md) {
     margin-top: 160px;
   }
+
+  .flex-box {
+    display: flex;
+    gap: 64px;
+  }
+
+  video {
+    border-radius: $radius-card;
+
+    @include respondTo(md) {
+      width: 880px;
+    }
+  }
 }
