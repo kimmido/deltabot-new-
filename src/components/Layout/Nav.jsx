@@ -1,11 +1,8 @@
 import React, { useContext, useRef, useState } from "react";
 import iconHamburger from "../../assets/images/icon/icon_menu.svg";
 import iconClose from "../../assets/images/icon/icon_close.svg";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
 import { CategoryRoutesContext } from "../../contexts/CategoryRoutesContext";
-gsap.registerPlugin(useGSAP);
 
 const MainLink = ({
   className,

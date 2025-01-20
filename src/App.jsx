@@ -1,11 +1,12 @@
 import React from "react";
-import Home from "./pages/Home/Home";
 import "@styles/main.scss";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import CategoryRoutesProvider from "./contexts/CategoryRoutesContext";
+
 import DefaultLayout from "./layouts/DefaultLayout";
 import BusinessLayout from "./layouts/BusinessLayout";
+import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import CategoryRoutesProvider from "./contexts/CategoryRoutesContext";
 
 function App() {
   return (

@@ -1,13 +1,6 @@
 import React, { useRef } from "react";
-import Header from "../../components/Layout/Header";
-import Footer from "../../components/Layout/Footer";
 import Slide from "./components/Slide";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/ScrollTrigger";
 import BusinessSection from "./components/BusinessSection";
-
-gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Home = () => {
   // const gsapContainer = useRef(null);
