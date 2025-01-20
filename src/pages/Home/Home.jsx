@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Slide from "./components/Slide";
 import BusinessSection from "./components/BusinessSection";
+import Videos from "./components/Videos";
 
 const Home = () => {
   // const gsapContainer = useRef(null);
@@ -32,6 +33,7 @@ const Home = () => {
           <p className="decorative-txt">발돋움해 나갈 것 입니다.</p>
         </div> */}
       <BusinessSection />
+      <Videos />
       {/* <Footer /> */}
     </div>
   );
