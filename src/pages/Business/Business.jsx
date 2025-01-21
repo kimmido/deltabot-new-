@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import AssetImage from "../../components/UI/AssetImage";
 
 function Business({ currentPath, productData = [{ items: [] }] }) {
   //   const [htmlContent, setHtmlContent] = useState("");
@@ -40,6 +41,9 @@ function Business({ currentPath, productData = [{ items: [] }] }) {
           {productData[currentIdx].items.map((item, idx) => (
             <li key={idx}>
               {console.log(item)}
+              <AssetImage
+                fileName={`product/${currentPath}/${item.name}.png`}
+              />
               <img src="" alt={"제품이미지" + currentPath + item.code} />
               <p>{item.name}</p>
             </li>

@@ -50,6 +50,7 @@ function Videos() {
               <SwiperSlide key={index}>
                 <video controls preload="metadata">
                   <source src={video.src} type="video/mp4" />
+                  브라우저가 video를 지원하지 않습니다.
                 </video>
               </SwiperSlide>
             ))}
