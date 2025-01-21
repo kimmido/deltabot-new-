@@ -26,7 +26,9 @@ function BusinessLayout() {
 
     const getData = async () => {
       try {
-        const jsonData = await fetchData(`/product_${currentCategory}.json`); // public 폴더의 JSON 경로
+        const jsonData = await fetchData(
+          `/json/product_${currentCategory}.json`
+        ); // public 폴더의 JSON 경로
         setProductData(jsonData);
       } catch (error) {
         console.error("Failed to load data:", error);
