@@ -12,6 +12,11 @@ body {
   -ms-text-size-adjust: none;
   -moz-text-size-adjust: none;
   -o-text-size-adjust: none;
+  word-break: keep-all;
+}
+
+html {
+  font-size: $font-size-base;
 }
 
 body {
@@ -24,7 +29,7 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   background-color: #fff;
 
-  @include respondTo(md) {
+  @include respondTo(sm) {
     font-size: $font-size-md;
   }
 }
@@ -73,4 +78,14 @@ a {
 
 address {
   font-style: normal;
+}
+
+.section_title {
+  font-size: $font-size-section-title-sm;
+  margin-bottom: 24px;
+
+  @include respondTo(md) {
+    font-size: $font-size-section-title-lg;
+    margin-bottom: 40px;
+  }
 }

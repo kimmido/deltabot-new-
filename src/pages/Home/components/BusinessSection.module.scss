@@ -9,24 +9,14 @@
     padding: 40px 0;
   }
 
-  h2 {
-    font-size: $font-size-section-title-sm;
-
-    @include respondTo(md) {
-      font-size: $font-size-section-title-lg;
-    }
-  }
-
   ul.category__list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: $gutter-sm;
-    margin-top: 24px;
 
     @include respondTo(md) {
       flex-direction: row;
-      margin-top: 40px;
       gap: $gutter-lg;
     }
 

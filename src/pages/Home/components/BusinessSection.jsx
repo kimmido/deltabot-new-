@@ -17,7 +17,7 @@ function BusinessSection() {
   return (
     <section className={styles.section}>
       <div className="container">
-        <h2>사업소개</h2>
+        <h2 className="section_title">사업소개</h2>
         <ul className={styles.category__list} ref={gsapContainerRef}>
           {routes.map((route) => (
             <li

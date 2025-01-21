@@ -3,20 +3,21 @@
 $header-sm: 64px;
 $header-md: 88px;
 
-// FONTSIZE
-$font-size-xs: 13px;
-$font-size-sm: 15px;
-$font-size-md: 17px;
-$font-size-lg: 19px;
+// ========== FONTSIZE ==========
+$font-size-base: 62.5% !default; //10px 1rem으로 설정
+$font-size-xs: 1.3rem;
+$font-size-sm: 1.5rem;
+$font-size-md: 1.7rem;
+$font-size-lg: 1.9rem;
 
-$font-size-con-title-sm: 25px;
-$font-size-con-title-lg: 40px;
+$font-size-con-title-sm: 2.5rem;
+$font-size-con-title-lg: 4rem;
 
-$font-size-section-title-sm: 25px;
-$font-size-section-title-lg: 40px;
+$font-size-section-title-sm: 2.5rem;
+$font-size-section-title-lg: 4rem;
 
-$font-size-display-sm: 25px;
-$font-size-display-lg: 66px;
+$font-size-display-sm: 2.5rem;
+$font-size-display-lg: 6.6rem;
 
 // ========== RADIUS ==========
 $radius-xs: 8px;
@@ -70,22 +71,25 @@ $color-gray-800: #2d2d2d;
 $color-gray-900: #1d1d1d;
 
 // COLOR BLUE
-$color-blue-5: #eff5ff !default;
-$color-blue-10: #d3e1fb !default;
-$color-blue-20: #a7c4f7 !default;
-$color-blue-30: #7ca6f3 !default;
-$color-blue-40: #5089ef !default;
-$color-blue-50: #246beb !default;
-$color-blue-60: #1d56bc !default;
-$color-blue-70: #16408d !default;
-$color-blue-80: #0e2b5e !default;
-$color-blue-90: #07152f !default;
+$color-blue-050: #eff5ff !default;
+$color-blue-100: #d3e1fb !default;
+$color-blue-200: #a7c4f7 !default;
+$color-blue-300: #7ca6f3 !default;
+$color-blue-400: #5089ef !default;
+$color-blue-500: #246beb !default;
+$color-blue-600: #1d56bc !default;
+$color-blue-700: #16408d !default;
+$color-blue-800: #0e2b5e !default;
+$color-blue-900: #07152f !default;
 
 // COLOR SETTING
 $color-text-body: $color-gray-900;
 $color-text-title: $color-gray-900;
 $color-text-strong: $color-gray-900;
-$color-text-disable: $color-gray-400;
+$color-text-disabled: $color-gray-400;
+$color-text-light: $color-gray-500;
+
+$color-active: $color-blue-600;
 
 $color-border: $color-gray-200;
 $color-main-card-01: #d9e4f1;
@@ -97,3 +101,4 @@ $color-black-900: #000000;
 $z-index-popup: 1000;
 $z-index-header: 900;
 $z-index-mobile-menu: 300;
+$z-index-swiper-up: 100;

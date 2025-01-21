@@ -24,7 +24,7 @@ function Footer() {
       </section>
       <section>
         <h2>로고</h2>
-        <img src="/delta_logo1.png" alt="로고" />
+        <img src="/images/delta_logo1.png" alt="로고" />
       </section>
     </footer>
   );

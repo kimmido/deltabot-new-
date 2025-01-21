@@ -7,10 +7,10 @@ nav.gnb {
   @mixin HOVER($target) {
     @if $target == "link" {
       position: relative;
-      color: $color-blue-60;
+      color: $color-active;
 
       &::after {
-        @include pseudoDefault($color-blue-60);
+        @include pseudoDefault($color-active);
         top: 80%;
         left: 50%;
         width: 50%;
@@ -140,8 +140,8 @@ nav.gnb {
           font-size: $FONT_SIZE_LG;
           padding: 12px 15px;
           width: 100%;
-          color: $color-blue-60;
-          background: $color-blue-5;
+          color: $color-active;
+          background: $color-blue-050;
           border-radius: $radius-xs;
         }
 
@@ -157,7 +157,7 @@ nav.gnb {
             transform: translateY(-50%);
             width: 1px;
             height: 84%;
-            background-color: $color-blue-50;
+            background-color: $color-active;
           }
 
           li.mobile__sub__item {

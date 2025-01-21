@@ -10,90 +10,90 @@ $BUTTON_ICON: 15px;
     padding: 2px 24px 24px;
     height: calc(100vh - $header-md);
   }
-}
 
-.home__swiper {
-  height: 100%;
-  border-radius: 30px;
-
-  @include respondTo(md) {
-    max-height: 805px;
-  }
-
-  &::before {
-    position: absolute;
-    width: 100%;
+  .home__swiper {
     height: 100%;
-    content: "";
-    background: linear-gradient(
-      to left,
-      rgba(20, 20, 20, 0) 40%,
-      rgba(20, 20, 20, 0.15) 70%,
-      rgba(20, 20, 20, 0.3) 100%
-    );
-    z-index: 2;
-  }
-
-  .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .swiper-pagination-fraction {
-    bottom: 100px;
-    left: 16px;
-    width: auto;
-    padding: 8px 20px;
-    color: #fff;
-    font-size: 13px;
-    border-radius: 1000px;
-    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
 
     @include respondTo(md) {
-      bottom: 172px;
-      left: 24px;
-      font-size: 15px;
-    }
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    transition: all 0.3s;
-
-    &:hover {
-      background: rgba(0, 0, 0, 0.8);
+      max-height: 805px;
     }
 
-    &::after {
-      font-size: $BUTTON_ICON;
+    &::before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background: linear-gradient(
+        to left,
+        rgba(20, 20, 20, 0) 40%,
+        rgba(20, 20, 20, 0.15) 70%,
+        rgba(20, 20, 20, 0.3) 100%
+      );
+      z-index: 2;
     }
-  }
 
-  .swiper-button-next {
-    right: 10px;
-  }
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-  .swiper-button-prev {
-    left: 10px;
-  }
+    .swiper-pagination-fraction {
+      bottom: 100px;
+      left: 16px;
+      width: auto;
+      padding: 8px 20px;
+      color: #fff;
+      font-size: 13px;
+      border-radius: 1000px;
+      background-color: rgba(0, 0, 0, 0.5);
 
-  .slide__text {
-    position: absolute;
-    left: $spacing-lg;
-    bottom: $spacing-lg;
-    color: #fff;
-    font-size: $font-size-display-sm;
-    z-index: 100;
+      @include respondTo(md) {
+        bottom: 172px;
+        left: 24px;
+        font-size: 15px;
+      }
+    }
 
-    @include respondTo(md) {
-      font-size: $font-size-display-lg;
-      line-height: 70px;
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 40px;
+      height: 40px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      transition: all 0.3s;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.8);
+      }
+
+      &::after {
+        font-size: $BUTTON_ICON;
+      }
+    }
+
+    .swiper-button-next {
+      right: 10px;
+    }
+
+    .swiper-button-prev {
+      left: 10px;
+    }
+
+    .slide__text {
+      position: absolute;
+      left: $spacing-lg;
+      bottom: $spacing-lg;
+      color: #fff;
+      font-size: $font-size-display-sm;
+      z-index: 100;
+
+      @include respondTo(md) {
+        font-size: $font-size-display-lg;
+        line-height: 70px;
+      }
     }
   }
 }
@@ -107,15 +107,161 @@ $BUTTON_ICON: 15px;
   }
 
   .flex-box {
-    display: flex;
-    gap: 64px;
-  }
-
-  video {
-    border-radius: $radius-card;
-
     @include respondTo(md) {
-      width: 880px;
+      display: flex;
+      gap: 64px;
+    }
+    .video__swiper {
+      @include respondTo(md) {
+        flex: 2;
+        // width: 880px;
+        background-color: rgb(240, 240, 255);
+      }
+      width: 100%;
+      border-radius: $radius-card;
+
+      video {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .video__text-wrap {
+      margin-top: $spacing-md;
+      // background-color: #ffadad;
+      align-content: center;
+
+      @include respondTo(md) {
+        flex: 1;
+        margin-top: 0;
+      }
+      .video__diplay-text {
+        display: none;
+
+        @include respondTo(md) {
+          display: block;
+          margin: 16px 0 40px;
+          font-weight: 600;
+
+          span {
+            font-size: $font-size-con-title-sm;
+            color: $color-text-light;
+          }
+          p {
+            font-size: $font-size-con-title-lg;
+          }
+        }
+      }
+
+      .video__pagination {
+        @include respondTo(md) {
+          // align-content: center;
+          font-size: $font-size-display-sm;
+        }
+
+        .swiper-pagination-bullet {
+          position: relative;
+          width: 100%;
+          height: fit-content;
+          margin: 0;
+          padding: 10px 0 10px 10px;
+          color: $color-text-disabled;
+          background: transparent;
+          cursor: pointer;
+          border-radius: 0;
+          // background-color: #ceffad;
+          opacity: 1;
+          z-index: $z-index-swiper-up;
+
+          @include respondTo(md) {
+            margin-top: 24px;
+          }
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          span {
+            position: relative;
+
+            &::after {
+              @include pseudoDefault($color-active);
+              top: 130%;
+              width: 0;
+              height: 1px;
+
+              transition: all 0.3s;
+
+              @include respondTo(md) {
+                top: 50%;
+                transform: translateX(calc(-100% - 16px));
+              }
+            }
+          }
+
+          &-active {
+            color: $color-active;
+            font-weight: 600;
+
+            &::before {
+              @include pseudoDefault();
+              width: 60px;
+              height: 60px;
+              left: calc(-100px - 38px);
+              top: 50%;
+              transform: translateY(-50%);
+              border: 1px dashed #fff;
+              border-radius: 50%;
+            }
+
+            span {
+              &::after {
+                width: 100%;
+
+                @include respondTo(md) {
+                  width: 100px;
+                }
+              }
+            }
+
+            .circle {
+              display: none;
+
+              @include respondTo(md) {
+                position: absolute;
+                left: calc(-100px - 38px);
+                top: 50%;
+                display: block;
+                width: 63px;
+                height: 63px;
+                animation: circle 6s linear infinite;
+
+                @keyframes circle {
+                  0% {
+                    transform: translateY(-50%) rotate(0);
+                  }
+                  100% {
+                    transform: translateY(-50%) rotate(360deg);
+                  }
+                }
+
+                &::after {
+                  @include pseudoDefault();
+                  border-radius: 50%;
+                  background-color: $color-active;
+                  width: 7px;
+                  height: 7px;
+                  top: 50%;
+                  left: 20px;
+                }
+              }
+            }
+          }
+        }
+
+        .swiper-pagination-bullet-active {
+        }
+      }
     }
   }
 }

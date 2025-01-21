@@ -6,13 +6,23 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import "swiper/scss";
+import "swiper/scss/pagination";
+import "swiper/scss/navigation";
 
-import main_slide from "../../../assets/images/main_slide(1).jpg";
+import main_slide1 from "../../../assets/images/main_slide(1).jpg";
+import main_slide2 from "../../../assets/images/main_slide(2).jpg";
+import main_slide3 from "../../../assets/images/main_slide(3).jpg";
+import main_slide4 from "../../../assets/images/main_slide(4).jpg";
 
 function Slide() {
+  const images = [
+    { src: main_slide1, alt: "메인배너1" },
+    { src: main_slide2, alt: "메인배너2" },
+    { src: main_slide3, alt: "메인배너3" },
+    { src: main_slide4, alt: "메인배너4" },
+  ];
+
   useGSAP(() => {
     gsap.from(".home__swiper", {
       duration: 0.8,
@@ -53,18 +63,11 @@ function Slide() {
         spaceBetween={0}
         slidesPerView={1}
       >
-        <SwiperSlide>
-          <img src={main_slide} alt="메인슬라이드1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={main_slide} alt="메인슬라이드2" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={main_slide} alt="메인슬라이드3" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={main_slide} alt="메인슬라이드4" />
-        </SwiperSlide>
+        {images.map((img) => (
+          <SwiperSlide key={img.alt}>
+            <img src={img.src} alt={img.alt} />
+          </SwiperSlide>
+        ))}
         <strong className="slide__text">
           Recycling robot system
           <br />& Automation

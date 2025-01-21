@@ -3,7 +3,7 @@ import iconHamburger from "../../assets/images/icon/icon_menu.svg";
 import iconClose from "../../assets/images/icon/icon_close.svg";
 import { Link } from "react-router-dom";
 import { CategoryRoutesContext } from "../../contexts/CategoryRoutesContext";
-
+import gsap from "gsap";
 const MainLink = ({
   className,
   main,
