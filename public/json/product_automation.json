@@ -7,44 +7,104 @@
           "name": "CR7",
           "code": "CR7",
           "features": [
-            "우수한 성능, 효율성 우선",
-            "최고의 안전성, 포괄적인 보증",
-            "유연한 배포, 사용 용이성",
-            "효율적인 보호, 탁월한 신뢰성",
-            "건전한 생태계, 완전한 권한 부여"
+            {
+              "title": "null",
+              "texts": [
+                "우수한 성능, 효율성 우선",
+                "최고의 안전성, 포괄적인 보증",
+                "유연한 배포, 사용 용이성",
+                "효율적인 보호, 탁월한 신뢰성",
+                "건전한 생태계, 완전한 권한 부여"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 7kg",
+                "Weight : About 27kg",
+                "DOF : 6",
+                "Reach : 850mm",
+                "Repeatablity : ＜±0.03mm"
+              ]
+            }
           ]
         }, 
         {
           "name": "CR12",
           "code": "CR12",
           "features": [
-            "우수한 성능, 효율성 우선",
-            "최고의 안전성, 포괄적인 보증",
-            "유연한 배포, 사용 용이성",
-            "효율적인 보호, 탁월한 신뢰성",
-            "건전한 생태계, 완전한 권한 부여"
+            {
+              "title": "null",
+              "texts": [
+                "우수한 성능, 효율성 우선",
+                "최고의 안전성, 포괄적인 보증",
+                "유연한 배포, 사용 용이성",
+                "효율적인 보호, 탁월한 신뢰성",
+                "건전한 생태계, 완전한 권한 부여"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 7kg",
+                "Weight : About 27kg",
+                "DOF : 6",
+                "Reach : 850mm",
+                "Repeatablity : ＜±0.03mm"
+              ]
+            }
           ]
         }, 
         {
           "name": "CR18",
           "code": "CR18",
           "features": [
-            "우수한 성능, 효율성 우선",
-            "최고의 안전성, 포괄적인 보증",
-            "유연한 배포, 사용 용이성",
-            "효율적인 보호, 탁월한 신뢰성",
-            "건전한 생태계, 완전한 권한 부여"
+            {
+              "title": "null",
+              "texts": [
+                "우수한 성능, 효율성 우선",
+                "최고의 안전성, 포괄적인 보증",
+                "유연한 배포, 사용 용이성",
+                "효율적인 보호, 탁월한 신뢰성",
+                "건전한 생태계, 완전한 권한 부여"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 7kg",
+                "Weight : About 27kg",
+                "DOF : 6",
+                "Reach : 850mm",
+                "Repeatablity : ＜±0.03mm"
+              ]
+            }
           ]
         }, 
         {
           "name": "CR20",
           "code": "CR20",
           "features": [
-            "우수한 성능, 효율성 우선",
-            "최고의 안전성, 포괄적인 보증",
-            "유연한 배포, 사용 용이성",
-            "효율적인 보호, 탁월한 신뢰성",
-            "건전한 생태계, 완전한 권한 부여"
+            {
+              "title": "null",
+              "texts": [
+                "우수한 성능, 효율성 우선",
+                "최고의 안전성, 포괄적인 보증",
+                "유연한 배포, 사용 용이성",
+                "효율적인 보호, 탁월한 신뢰성",
+                "건전한 생태계, 완전한 권한 부여"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 7kg",
+                "Weight : About 27kg",
+                "DOF : 6",
+                "Reach : 850mm",
+                "Repeatablity : ＜±0.03mm"
+              ]
+            }
           ]
         }
       ]
@@ -56,44 +116,104 @@
           "name": "ER3",
           "code": "ER3",
           "features": [
-            "규정 준수 향상",
-            "더욱 민첩해진",
-            "더 안전함",
-            "라이터",
-            "더욱 편리해졌습니다."
+            {
+              "title": "null",
+              "texts": [
+                "규정 준수 향상",
+                "더욱 민첩해진",
+                "더 안전함",
+                "라이터",
+                "더욱 편리해졌습니다."
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 3kg",
+                "Weight : About 21kg",
+                "DOF : 6",
+                "Reach : 760mm",
+                "Repeatablity : ±0.03mm"
+              ]
+            }
           ]
         }, 
         {
           "name": "ER3 Pro",
           "code": "ER3 Pro",
           "features": [
-            "규정 준수 향상",
-            "더욱 민첩해진",
-            "더 안전함",
-            "라이터",
-            "더욱 편리해졌습니다."
+            {
+              "title": "null",
+              "texts": [
+                "규정 준수 향상",
+                "더욱 민첩해진",
+                "더 안전함",
+                "라이터",
+                "더욱 편리해졌습니다."
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 3kg",
+                "Weight : About 22kg",
+                "DOF : 6",
+                "Reach : 760mm",
+                "Repeatablity : ±0.03mm"
+              ]
+            }
           ]
         }, 
         {
           "name": "ER7",
           "code": "ER7",
           "features": [
-            "규정 준수 향상",
-            "더욱 민첩해진",
-            "더 안전함",
-            "라이터",
-            "더욱 편리해졌습니다."
+            {
+              "title": "null",
+              "texts": [
+                "규정 준수 향상",
+                "더욱 민첩해진",
+                "더 안전함",
+                "라이터",
+                "더욱 편리해졌습니다."
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 7kg",
+                "Weight : About 27kg",
+                "DOF : 6",
+                "Reach : 850mm",
+                "Repeatablity : ±0.03mm"
+              ]
+            }
           ]
         }, 
         {
           "name": "ER7 Pro",
           "code": "ER7 Pro",
           "features": [
-            "규정 준수 향상",
-            "더욱 민첩해진",
-            "더 안전함",
-            "라이터",
-            "더욱 편리해졌습니다."
+            {
+              "title": "null",
+              "texts": [
+                "규정 준수 향상",
+                "더욱 민첩해진",
+                "더 안전함",
+                "라이터",
+                "더욱 편리해졌습니다."
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 7kg",
+                "Weight : About 29kg",
+                "DOF : 6",
+                "Reach : 850mm",
+                "Repeatablity : ±0.03mm"
+              ]
+            }
           ]
         }
       ]
@@ -105,22 +225,52 @@
           "name": "SR3",
           "code": "SR3",
           "features": [
-            "최고의 안전성, 포괄적인 보증",
-            "가볍고 유연하며 세련되고 친근함",
-            "탁월한 신뢰성, 견고한 파트너",
-            "뛰어난 접근성, 사용 편의성",
-            "건전한 생태계, 완전한 권한 부여"
+            {
+              "title": "null",
+              "texts": [
+                "최고의 안전성, 포괄적인 보증",
+                "가볍고 유연하며 세련되고 친근함",
+                "탁월한 신뢰성, 견고한 파트너",
+                "뛰어난 접근성, 사용 편의성",
+                "건전한 생태계, 완전한 권한 부여"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 3kg",
+                "Weight : About 15kg",
+                "DOF : 6",
+                "Reach : 580mm",
+                "Repeatablity : ±0.03mm"
+              ]
+            }
           ]
         }, 
         {
           "name": "SR4",
           "code": "SR4",
           "features": [
-            "최고의 안전성, 포괄적인 보증",
-            "가볍고 유연하며 세련되고 친근함",
-            "탁월한 신뢰성, 견고한 파트너",
-            "뛰어난 접근성, 사용 편의성",
-            "건전한 생태계, 완전한 권한 부여"
+            {
+              "title": "null",
+              "texts": [
+                "최고의 안전성, 포괄적인 보증",
+                "가볍고 유연하며 세련되고 친근함",
+                "탁월한 신뢰성, 견고한 파트너",
+                "뛰어난 접근성, 사용 편의성",
+                "건전한 생태계, 완전한 권한 부여"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 4kg",
+                "Weight : About 17.5kg",
+                "DOF : 6",
+                "Reach : 800mm",
+                "Repeatablity : ±0.05mm"
+              ]
+            }
           ]
         }
       ]
@@ -135,26 +285,52 @@
           "name": "DRF Series",
           "code": "DRF Series",
           "features": [
-            "광범위한 자동화 애플리케이션을 위한 혁신적이고 비용 효율적이며 유연한 솔루션을 제공하는 DRF Deltabot",
-            "Deltabot은 3축과 4축 암으로 구성되어 있으며 지능형 비전 시스템을 갖추고 있습니다.",
-            "로봇팔은 탄소파이프로 구성되어 분당 최대 180회에 달하는 빠른 속도를 가지고 있습니다.",
-            "Deltabot은 최소 400mm에서 최대 1,600mm에 이르는 작업 공간을 제공합니다."
+            {
+              "title": "null",
+              "texts": [
+                "광범위한 자동화 애플리케이션을 위한 혁신적이고 비용 효율적이며 유연한 솔루션을 제공하는 DRF Deltabot",
+                "Deltabot은 3축과 4축 암으로 구성되어 있으며 지능형 비전 시스템을 갖추고 있습니다.",
+                "로봇팔은 탄소파이프로 구성되어 분당 최대 180회에 달하는 빠른 속도를 가지고 있습니다.",
+                "Deltabot은 최소 400mm에서 최대 1,600mm에 이르는 작업 공간을 제공합니다."
+              ]
+            }
           ]
         }, 
         {
           "name": "D3P Series",
           "code": "D3P Series",
-          "features": []
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
         },
         {
           "name": "D3PM Series",
           "code": "D3PM Series",
-          "features": []
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
         },
         {
           "name": "D3W Series",
           "code": "D3W Series",
-          "features": []
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
         }
       ]
     }

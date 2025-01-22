@@ -31,10 +31,6 @@ function Business({ currentPath, productData = [] }) {
     setCurrentIdx(0);
   }, [currentPath]);
 
-  const handleScroll = (idx) => {
-    // navigate(`/${currentCategory}/${path}`);
-  };
-
   return (
     <div>
       <div className="tab-menu">
@@ -89,11 +85,18 @@ function Business({ currentPath, productData = [] }) {
                   alt={item.name}
                 />
                 <strong>{item.name}</strong>
-                <ul>
+                <div>
                   {item.features.map((feature, idx) => (
-                    <li key={idx}>{feature}</li>
+                    <div key={idx}>
+                      {feature.title == "null" || <p>{feature.title}</p>}
+                      <ul>
+                        {feature.texts.map((text) => (
+                          <li key={text}>{text}</li>
+                        ))}
+                      </ul>
+                    </div>
                   ))}
-                </ul>
+                </div>
                 <button>Specifications</button>
                 {/* <div dangerouslySetInnerHTML={{ __html: htmlContent }}>
                 Specifications 표 들어올 자리

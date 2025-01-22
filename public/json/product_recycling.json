@@ -1,0 +1,199 @@
+{
+  "spectral-camera": [
+    {
+      "title": "Spectral Camera",
+      "items": [
+        {
+          "name": "Pika L",
+          "code": "Pika_L",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Pika L 초분광 카메라는 비용 효율적이고 가벼운 소형 가시광선 + 근적외선 (VNIR) imager로 400-1000nm 스펙트럼 범위를 제공합니다.",
+                "Pika L은 무게가 0.6kg에 불과하여 드론 기반 원격 감지 등 활용 분야에 이상적인 제품입니다.",
+                "Pika L은 또한 실험실 측정을 위한 Benchtop 시스템과 지상 기반 outdoor 측정을 위한 field 시스템과 함께 사용할 수 있습니다.",
+                "Pika L을 포함한 모든 Resonon초분광 카메라는 pushbroom(라인 스캔) 촬영 방식을 사용합니다."
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Spectral Range: 400-1000nm",
+                "900 Spatial pixels Per Lin",
+                "281 Spectral Channels Per Line",
+                "High Speed(249 fps@full frame)",
+                "lightweight, Compact VNIR hyperspectral camera"
+              ]
+            }
+          ]
+        }, 
+        {
+          "name": "Pika XC2",
+          "code": "Pika_XC2",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }, 
+        {
+          "name": "Pika IR",
+          "code": "Pika_IR",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }, 
+        {
+          "name": "Pika IR+",
+          "code": "Pika_IR+",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pika UV",
+          "code": "Pika_UV",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pika IR-L",
+          "code": "Pika_IR-L",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pika IR-L+",
+          "code": "Pika_IR-L+",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "illumination": 
+  [
+    {
+      "title": "illumination", 
+      "items": [
+        {
+          "name": "MRC-920-029",
+          "code": "MRC-920-029",
+          "features": [
+            {
+              "title": "MSV Series Illumination 6″ Dual Line",
+              "texts": [
+                "각 라인과 외부 전원 공급 장치에 대해 4–20W 할로겐 전구를 갖춘 6인치 이중 라인 광원.",
+                "커넥터와 스위치가 포함된 12V/25A 300W 전원 공급 장치."
+              ]
+            }
+          ]
+        }, 
+        {
+          "name": "MRC-920-031",
+          "code": "MRC-920-031",
+          "features": [
+            {
+              "title": "MSV Series Illumination Dual 4",
+              "texts": [
+                "케이블 및 산업용 전원 공급 장치 모듈이 포함된 듀얼 4​​–35W 할로겐 광원."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MRC-920-027",
+          "code": "MRC-920-027",
+          "features": [
+            {
+              "title": "MSV Series Illumination Dual 8",
+              "texts": [
+                "케이블 및 산업용 전원 공급 장치 모듈이 포함된 듀얼 8–35W 할로겐 광원."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MRC-920-030",
+          "code": "MRC-920-030",
+          "features": [
+            {
+              "title": "MSV Series Illumination Single-Line",
+              "texts": [
+                "16–35W 단일 라인 할로겐 광원(케이블 및 산업용 전원 공급 장치 모듈 포함)."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
