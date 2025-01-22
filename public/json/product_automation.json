@@ -276,6 +276,44 @@
       ]
     }
   ],
+  "scara": [
+    {
+      "title": "데모 타이틀",
+      "items": [
+        {
+          "name": "스카라 제품",
+          "code": "code",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cobot": [
+    {
+      "title": "데모 타이틀",
+      "items": [
+        {
+          "name": "cobot 제품",
+          "code": "code",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "deltarobot": 
   [
     {
@@ -323,6 +361,80 @@
         {
           "name": "D3W Series",
           "code": "D3W Series",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "machine-vision": [
+    {
+      "title": "machine vision",
+      "items": [
+        {
+          "name": "4u Rackmount Vision Controller & camera",
+          "code": "4u-Rackmount-Vision",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "8th / 10th / 12th / 13th / 14th Gen Intel®",
+                "Intel® Q370 Express / Intel® W480E Express / Intel® R680E Express",
+                "LAN :4port",
+                "ATX Power",
+                "SW Support: - CUDA / TensorRT / TensorFlow / Python / cuDNN / euresys / EdgeSD"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Compact-Size Vision Controller & camera",
+          "code": "Compact-Size-Vision",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "8th / 10th / 12th / 13th / 14th Gen Intel®",
+                "Intel® Q370 Express / Intel® W480E Express / Intel® R680E Express",
+                "LAN :4port",
+                "ATX Power",
+                "SW Support: - CUDA / TensorRT / TensorFlow / Python / cuDNN / euresys / EdgeSD"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Outperform Fanless Vision Controller & camera",
+          "code": "Outperform-Fanless-Vision",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "8th / 10th / 12th / 13th / 14th Gen Intel®",
+                "Intel® Q370 Express / Intel® W480E Express / Intel® R680E Express",
+                "LAN :4port",
+                "ATX Power",
+                "SW Support: - CUDA / TensorRT / TensorFlow / Python / cuDNN / euresys / EdgeSD"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "thermal-camera": [
+    {
+      "title": "데모 타이틀",
+      "items": [
+        {
+          "name": "thermal-camera 제품",
+          "code": "code",
           "features": [
             {
               "title": "null",
