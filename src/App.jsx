@@ -18,11 +18,11 @@ function App() {
             <Route path="about" element={<About />} />
 
             <Route path="automation">
-              <Route index element={<Navigate to="deltarobot" replace />} />
-              <Route path="deltarobot" element={<BusinessLayout />} />
-              <Route path="scara" element={<BusinessLayout />} />
+              <Route index element={<Navigate to="collaborative" replace />} />
               <Route path="collaborative" element={<BusinessLayout />} />
+              <Route path="scara" element={<BusinessLayout />} />
               <Route path="cobot" element={<BusinessLayout />} />
+              <Route path="deltarobot" element={<BusinessLayout />} />
               <Route path="machine-vision" element={<BusinessLayout />} />
               <Route path="thermal-camera" element={<BusinessLayout />} />
             </Route>

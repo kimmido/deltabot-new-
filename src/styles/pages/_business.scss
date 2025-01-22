@@ -1,6 +1,14 @@
-.tab-item {
-  padding: 10px;
-  &.active {
-    color: blue;
+.BusinessLayout {
+  .tab-item {
+    padding: 10px;
+    &.active {
+      color: $color-active;
+    }
   }
+}
+
+.product-scroll {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }

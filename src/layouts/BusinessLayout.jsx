@@ -43,7 +43,7 @@ function BusinessLayout() {
   };
 
   return (
-    <div>
+    <div className="BusinessLayout">
       <div className="container">
         <PageHeading title={routes.label} img={currentPath} />
 

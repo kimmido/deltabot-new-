@@ -37,22 +37,24 @@ function Business({ currentPath, productData = [{ items: [] }] }) {
       </div>
       <div className="product">
         <h3>제품목록</h3>
-        <ul>
+        <div className="product-scroll">
           {productData[currentIdx].items.map((item, idx) => (
-            <li key={idx}>
-              {console.log(item)}
+            <button key={idx} className="product-scroll__button">
               <AssetImage
-                fileName={`product/${currentPath}/${item.name}.png`}
+                filePath={`product/${currentPath}/${item.name}.png`}
+                alt={item.name}
               />
-              <img src="" alt={"제품이미지" + currentPath + item.code} />
               <p>{item.name}</p>
-            </li>
+            </button>
           ))}
-        </ul>
+        </div>
         <div>
           {productData[currentIdx].items.map((item, idx) => (
             <div key={idx}>
-              <img src="" alt={"제품이미지" + currentPath + item.code} />
+              <AssetImage
+                filePath={`product/${currentPath}/${item.name}.png`}
+                alt={item.name}
+              />
               <strong>{item.name}</strong>
               <ul>
                 {item.features.map((feature) => (

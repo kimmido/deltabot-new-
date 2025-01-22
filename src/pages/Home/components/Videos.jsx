@@ -48,7 +48,8 @@ function Videos() {
           >
             {videos.map((video, index) => (
               <SwiperSlide key={index}>
-                <video controls preload="metadata">
+                {/* <video controls preload="metadata"> */}
+                <video controls preload="none">
                   <source src={video.src} type="video/mp4" />
                   브라우저가 video를 지원하지 않습니다.
                 </video>

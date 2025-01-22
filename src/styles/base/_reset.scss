@@ -67,6 +67,7 @@ button {
   padding: 0;
   vertical-align: middle;
   font-size: 100%;
+  font-family: inherit;
   cursor: pointer;
 }
 
@@ -78,6 +79,10 @@ a {
 
 address {
   font-style: normal;
+}
+
+img {
+  width: 100%;
 }
 
 .section_title {
