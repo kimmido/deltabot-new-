@@ -31,7 +31,7 @@ function App() {
               <Route index element={<Navigate to="system" replace />} />
               <Route path="system" element={<BusinessLayout />} />
               <Route path="spectral-camera" element={<BusinessLayout />} />
-              <Route path="lighting" element={<BusinessLayout />} />
+              <Route path="illumination" element={<BusinessLayout />} />
             </Route>
 
             <Route path="medical">

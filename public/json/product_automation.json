@@ -133,7 +133,7 @@
       "items": [
         {
           "name": "DRF Series",
-          "code": "DRFSeries",
+          "code": "DRF Series",
           "features": [
             "광범위한 자동화 애플리케이션을 위한 혁신적이고 비용 효율적이며 유연한 솔루션을 제공하는 DRF Deltabot",
             "Deltabot은 3축과 4축 암으로 구성되어 있으며 지능형 비전 시스템을 갖추고 있습니다.",
@@ -143,17 +143,17 @@
         }, 
         {
           "name": "D3P Series",
-          "code": "DRF시리즈",
+          "code": "D3P Series",
           "features": []
         },
         {
           "name": "D3PM Series",
-          "code": "DRF시리즈",
+          "code": "D3PM Series",
           "features": []
         },
         {
           "name": "D3W Series",
-          "code": "DRF시리즈",
+          "code": "D3W Series",
           "features": []
         }
       ]

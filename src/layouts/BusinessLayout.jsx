@@ -19,6 +19,7 @@ function BusinessLayout() {
     setRoutes(category[0].sub.find((sub) => sub.path == pathSegments[0]));
     setCurrentCategory(pathSegments[0]);
     setCurrentPath(pathSegments[1]);
+    console.log(pathSegments[1]);
   }, [pathname]);
 
   useEffect(() => {
@@ -60,7 +61,7 @@ function BusinessLayout() {
             </button>
           ))}
         </div>
-
+        {console.log(productData[currentPath])}
         <Business
           currentPath={currentPath}
           productData={productData[currentPath]}

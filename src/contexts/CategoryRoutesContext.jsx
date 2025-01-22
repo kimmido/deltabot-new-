@@ -25,7 +25,7 @@ export const category = [
         items: [
           { path: "system", label: "재활용시스템" },
           { path: "spectral-camera", label: "분광카메라" },
-          { path: "lighting", label: "조명" },
+          { path: "illumination", label: "조명" },
         ],
       },
       {

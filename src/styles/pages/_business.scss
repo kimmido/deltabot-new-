@@ -9,6 +9,16 @@
 
 .product-scroll {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $gutter-sm;
+
+  @include respondTo(md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: $gutter-lg;
+  }
+
+  &__button {
+    border: 1px solid $color-border;
+    border-radius: $radius-card;
+  }
 }
