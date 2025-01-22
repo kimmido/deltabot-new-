@@ -41,7 +41,11 @@
             {
               "title": "Featrue",
               "texts": [
-                ""
+                "Spectral Range: 400-1000nm",
+                "1600 Spatial pixels Per Line",
+                "447 Spectral Channels Per Line",
+                "High Speed(165 fps@full frame)",
+                "High-precision VNIR Hyperspectral Camera"
               ]
             }
           ]
@@ -59,7 +63,11 @@
             {
               "title": "Featrue",
               "texts": [
-                ""
+                "Spectral Range: 900-1700nm",
+                "320 Spatial pixels Per Line",
+                "164 Spectral Channels Per Line",
+                "High Speed(520 fps@full frame)",
+                "High-Speed Infrared hyperspectral camera"
               ]
             }
           ]
@@ -77,7 +85,11 @@
             {
               "title": "Featrue",
               "texts": [
-                ""
+                "Spectral Range: 900-1700nm",
+                "640 Spatial pixels Per Line",
+                "328 Spectral Channels Per Line",
+                "High Speed(249 fps@full frame)",
+                "High-precision Infrared hyperspectral camera"
               ]
             }
           ]
@@ -95,7 +107,11 @@
             {
               "title": "Featrue",
               "texts": [
-                ""
+                "Spectral Range: 330-800nm",
+                "1500 Spatial pixels Per Line",
+                "255 Spectral Channels Per Line",
+                "High Speed(142 fps@full frame)",
+                "ultraviolet hyperspectral camera"
               ]
             }
           ]
@@ -113,7 +129,10 @@
             {
               "title": "Featrue",
               "texts": [
-                ""
+                "Spectral Range: 925-1700 nm",
+                "320 Spatial Pixels Per Line",
+                "236 Spectral Channels Per Line",
+                "High Speed (364 fps max.)"
               ]
             }
           ]
@@ -131,7 +150,10 @@
             {
               "title": "Featrue",
               "texts": [
-                ""
+                "Spectral Range: 925-1700 nm",
+                "640 Spatial Pixels Per Line",
+                "470 Spectral Channels Per Line",
+                "3.8 nm Spectral Resolution (FWHM)"
               ]
             }
           ]
