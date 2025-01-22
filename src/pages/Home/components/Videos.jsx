@@ -30,9 +30,9 @@ function Videos() {
             pagination={{
               el: ".video__pagination",
               clickable: true,
-              renderBullet: (index, className) => `<p class="${className}">
-              <span class="circle"></span>
-            <span>${videos[index].title}</span></p>
+              renderBullet: (index, className) => `<button class="${className}">
+              <span class="dot-box"></span>
+            <span>${videos[index].title}</span></button>
           `,
             }}
             effect={"creative"}
@@ -48,8 +48,7 @@ function Videos() {
           >
             {videos.map((video, index) => (
               <SwiperSlide key={index}>
-                {/* <video controls preload="metadata"> */}
-                <video controls preload="none">
+                <video controls preload="metadata">
                   <source src={video.src} type="video/mp4" />
                   브라우저가 video를 지원하지 않습니다.
                 </video>

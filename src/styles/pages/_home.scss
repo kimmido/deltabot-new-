@@ -114,38 +114,37 @@ $BUTTON_ICON: 15px;
     .video__swiper {
       @include respondTo(md) {
         flex: 2;
-        // width: 880px;
-        background-color: rgb(240, 240, 255);
       }
       width: 100%;
-      border-radius: $radius-card;
 
       video {
+        border-radius: $radius-card;
         display: block;
         width: 100%;
         height: auto;
       }
     }
+
     .video__text-wrap {
       margin-top: $spacing-md;
-      // background-color: #ffadad;
       align-content: center;
 
       @include respondTo(md) {
         flex: 1;
         margin-top: 0;
       }
+
       .video__diplay-text {
         display: none;
 
         @include respondTo(md) {
           display: block;
-          margin: 16px 0 40px;
-          font-weight: 600;
+          margin: 16px 0 60px;
+          // font-weight: 600;
 
           span {
             font-size: $font-size-con-title-sm;
-            color: $color-text-light;
+            color: $color-active;
           }
           p {
             font-size: $font-size-con-title-lg;
@@ -166,6 +165,7 @@ $BUTTON_ICON: 15px;
           margin: 0;
           padding: 10px 0 10px 10px;
           color: $color-text-disabled;
+          text-align: left;
           background: transparent;
           cursor: pointer;
           border-radius: 0;
@@ -224,7 +224,7 @@ $BUTTON_ICON: 15px;
               }
             }
 
-            .circle {
+            .dot-box {
               display: none;
 
               @include respondTo(md) {
