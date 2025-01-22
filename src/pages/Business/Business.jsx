@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import AssetImage from "../../components/UI/AssetImage";
 
 function Business({ currentPath, productData = [] }) {
@@ -6,14 +6,29 @@ function Business({ currentPath, productData = [] }) {
   //   const [filePath, setFilePath] = useState("excel_test.htm");
   const [currentIdx, setCurrentIdx] = useState(0);
 
-  console.log("currentPath:" + currentPath);
-  console.log(productData);
-  // console.log(currentData);
-  console.log("currentIdx:" + currentIdx);
+  const itemsRef = useRef(null);
+  const [catList, setCatList] = useState(productData);
+
+  function scrollTo(el) {
+    const map = getMap();
+    const node = map.get(el);
+    node.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      // inline: "center",
+    });
+  }
+
+  function getMap() {
+    if (!itemsRef.current) {
+      // 처음 사용하는 경우, Map을 초기화합니다.
+      itemsRef.current = new Map();
+    }
+    return itemsRef.current;
+  }
 
   useEffect(() => {
     setCurrentIdx(0);
-    console.log(1);
   }, [currentPath]);
 
   const handleScroll = (idx) => {
@@ -22,11 +37,10 @@ function Business({ currentPath, productData = [] }) {
 
   return (
     <div>
-      {console.log("el")}
       <div className="tab-menu">
         {productData.map((data, idx) => (
           <button
-            key={idx}
+            key={data.title}
             className={`tab-item ${currentIdx === idx ? "active" : ""}`}
             onClick={() => {
               setCurrentIdx(idx);
@@ -41,7 +55,13 @@ function Business({ currentPath, productData = [] }) {
         <div className="product-scroll">
           {productData[currentIdx] &&
             productData[currentIdx].items.map((item, idx) => (
-              <button key={idx} className="product-scroll__button">
+              <button
+                key={item.code}
+                className="product-scroll__button"
+                onClick={() => {
+                  scrollTo(item);
+                }}
+              >
                 <AssetImage
                   filePath={`product/${currentPath}/${item.code}.png`}
                   alt={item.name}
@@ -53,7 +73,17 @@ function Business({ currentPath, productData = [] }) {
         <div>
           {productData[currentIdx] &&
             productData[currentIdx].items.map((item, idx) => (
-              <div key={idx}>
+              <div
+                key={item.code}
+                ref={(node) => {
+                  const map = getMap();
+                  if (node) {
+                    map.set(item, node); // Mount 시
+                  } else {
+                    map.delete(item); // Unmount 시
+                  }
+                }}
+              >
                 <AssetImage
                   filePath={`product/${currentPath}/${item.code}.png`}
                   alt={item.name}

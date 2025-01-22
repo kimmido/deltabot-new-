@@ -20,5 +20,9 @@
   &__button {
     border: 1px solid $color-border;
     border-radius: $radius-card;
+
+    &:hover {
+      color: $color-active;
+    }
   }
 }
