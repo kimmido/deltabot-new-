@@ -1,13 +1,13 @@
 import React from "react";
 
-function PageHeading({ title, img }) {
+function PageHeading({ title, backgroundImage }) {
   return (
     <div
       className="PageHeading"
-      // style={{backgroundImage: backgroundImage}}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <h2 style={{ fontSize: 66 }}>{title}</h2>
-      <p>이미지 경로: @assets/imagse/page_heading_{img}.jpg</p>
+      <h2>{title}</h2>
+      {/* <p>이미지 경로: @assets/imagse/page_heading_{img}.jpg</p> */}
     </div>
   );
 }

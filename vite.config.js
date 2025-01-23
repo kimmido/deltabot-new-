@@ -9,6 +9,6 @@ export default defineConfig({
       '@assets': '/src/assets',
       '@styles': '/src/styles'
     }
-  }
-  // base: '/deltabot-new-/',
+  },
+  base: '/',
 })

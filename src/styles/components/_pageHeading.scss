@@ -1,0 +1,31 @@
+.PageHeading {
+  border-radius: $radius-lg;
+  height: 175px;
+  text-align: center;
+  align-content: center;
+  // margin: 0 $gutter-sm;
+  background-size: cover;
+  background-position: center;
+
+  @include respondTo(sm) {
+    height: 450px;
+  }
+
+  @include respondTo(md) {
+    // margin: 0 $gutter-lg;
+    height: 500px;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: $font-size-display-sm;
+
+    @include respondTo(sm) {
+      font-size: $font-size-display-md;
+    }
+
+    @include respondTo(md) {
+      font-size: $font-size-display-lg;
+    }
+  }
+}

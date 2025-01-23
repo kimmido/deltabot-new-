@@ -2,9 +2,9 @@ import React from "react";
 
 function AssetImage({ className = "img", filePath, alt }) {
   const imagePath = `/src/assets/images/${filePath}`;
-  const image = new URL(imagePath, import.meta.url).href;
+  const src = new URL(imagePath, import.meta.url).href;
 
-  return <img className={className} src={image} alt={alt} />;
+  return <img className={className} src={src} alt={alt} />;
 }
 
 export default AssetImage;

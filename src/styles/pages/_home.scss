@@ -112,10 +112,11 @@ $BUTTON_ICON: 15px;
       gap: 64px;
     }
     .video__swiper {
+      width: 100%;
+
       @include respondTo(md) {
         flex: 2;
       }
-      width: 100%;
 
       video {
         border-radius: $radius-card;

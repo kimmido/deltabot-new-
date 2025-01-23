@@ -5,6 +5,8 @@ import { CategoryRoutesContext } from "../contexts/CategoryRoutesContext";
 import Business from "../pages/Business/Business";
 import { fetchData } from "../utils/fetchData";
 
+import headingImg from "../assets/images/heading/business_heading_collaborative.jpg";
+
 function BusinessLayout() {
   const category = useContext(CategoryRoutesContext);
   const navigate = useNavigate();
@@ -46,13 +48,16 @@ function BusinessLayout() {
   return (
     <div className="BusinessLayout">
       <div className="container">
-        <PageHeading title={routes.label} img={currentPath} />
-
-        <div className="tab-menu">
+        <PageHeading
+          title={routes.label}
+          img={currentPath}
+          backgroundImage={headingImg}
+        />
+        <div className="parent-tab">
           {routes.items.map((route) => (
             <button
               key={route.path}
-              className={`tab-item ${
+              className={`parent-tab__item ${
                 currentPath === route.path ? "active" : ""
               }`}
               onClick={() => handleTabChange(currentCategory, route.path)}

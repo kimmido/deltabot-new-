@@ -25,7 +25,6 @@ const Home = () => {
 
   return (
     <div className="Home">
-      {/* <Header /> */}
       <Slide />
       {/* <div className="decorative-area" ref={gsapContainer}>
           <p className="decorative-txt">델타봇은</p>
@@ -33,8 +32,7 @@ const Home = () => {
           <p className="decorative-txt">발돋움해 나갈 것 입니다.</p>
         </div> */}
       <BusinessSection />
-      <Videos />
-      {/* <Footer /> */}
+      {/* <Videos /> */}
     </div>
   );
 };
