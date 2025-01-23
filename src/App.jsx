@@ -7,11 +7,13 @@ import DefaultLayout from "./layouts/DefaultLayout";
 import BusinessLayout from "./layouts/BusinessLayout";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
+import ScrollToTop from "./utils/scrollToTop";
 
 function App() {
   return (
     <CategoryRoutesProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<DefaultLayout />}>
             <Route index element={<Home />} />
