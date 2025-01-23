@@ -23,13 +23,13 @@ header {
 
   h1.logo {
     position: absolute;
-    left: 16px;
+    left: $gutter-sm;
     top: 50%;
     transform: translateY(-50%);
     z-index: $z-index-header;
 
     @include respondTo(md) {
-      left: 0;
+      left: $gutter-lg;
     }
 
     a {
