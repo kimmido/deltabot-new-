@@ -2,25 +2,25 @@
   .parent-tab,
   .child-tab {
     display: flex;
-    gap: 6px;
     overflow-x: auto;
 
     &__item {
-      padding: 8px;
+      padding: 8px 12px;
     }
   }
 
   .parent-tab {
-    margin-top: 8px;
+    gap: 6px;
+    margin-top: 20px;
     padding: 4px;
     background-color: $color-background;
     border-radius: $radius-md;
 
     @include respondTo(sm) {
-      margin-top: 24px;
       gap: $gutter-lg;
-      padding: 6px $gutter-lg;
       justify-content: space-around;
+      margin-top: 24px;
+      padding: 6px $gutter-lg;
     }
 
     &__item {
@@ -41,72 +41,149 @@
   }
 
   .Business {
+    margin-top: 16px;
+
     @include respondTo(sm) {
-      margin-top: 24px;
+      margin-top: 20px;
     }
 
     @include respondTo(md) {
-      display: grid;
-      grid-template-areas:
-        "tab scroll"
-        "list list";
-      grid-template-columns: 20% 80%;
       margin-top: 100px;
     }
 
-    .child-tab {
-      @include respondTo(md) {
-        display: flex;
-        flex-direction: column;
-        gap: $gutter-lg;
-        grid-area: tab;
-        margin-top: 0;
-        padding: 0 24px;
-      }
-
-      &__item {
-        @include hover-active-underline($color-active);
-      }
-    }
-
-    .product-scroll {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: $gutter-sm;
-      margin-top: 40px;
-      // background-color: beige;
+    .flex-container {
+      flex-direction: column;
+      gap: 40px;
 
       @include respondTo(md) {
-        grid-area: scroll;
-        margin-top: 0;
-        grid-template-columns: repeat(3, 1fr);
-        gap: $gutter-lg;
+        flex-direction: row;
       }
 
-      &__button {
-        border: 1px solid $color-border;
-        border-radius: $radius-card;
+      @include respondTo(lg) {
+        gap: 60px;
+      }
 
-        &:hover {
-          color: $color-active;
+      .child-tab {
+        @include respondTo(md) {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: $gutter-lg;
+          margin-top: 0;
+        }
+
+        &__item {
+          @include hover-active-underline($color-active);
+
+          &::before {
+            @include pseudoDefault($color-border);
+            left: 0;
+            top: calc(100% - 1px);
+            width: 100%;
+            height: 1px;
+
+            @include respondTo(md) {
+              left: 10%;
+              width: 80%;
+            }
+          }
+
+          &::after {
+            left: 0;
+            width: 100%;
+
+            @include respondTo(md) {
+              left: 10%;
+              width: 80%;
+            }
+          }
         }
       }
 
-      @include respondTo(md) {
+      .product-scroll {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $gutter-sm;
+
+        @include respondTo(md) {
+          flex: 6;
+          grid-template-columns: repeat(4, 1fr);
+          gap: $gutter-lg;
+        }
+
+        &__button {
+          border: 1px solid $color-border;
+          border-radius: $radius-card;
+          padding: 20px 28px;
+
+          &:hover {
+            color: $color-active;
+
+            .subject span {
+              background-image: url("@assets/images/icon/icon_add_white.svg");
+              background-color: $color-active;
+              transform: rotate(90deg);
+              border: 1px solid $color-active;
+            }
+          }
+
+          .subject {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+
+            .sbtxt {
+              font-size: $font-size-sm;
+
+              @include respondTo(md) {
+                font-size: $font-size-md;
+              }
+
+              @include respondTo(lg) {
+                font-size: $font-size-lg;
+              }
+            }
+
+            span {
+              width: 2.8rem;
+              height: 2.8rem;
+              border-radius: 50%;
+              background-image: url("@assets/images/icon/icon_add_blue.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+              border: 1px solid $color-border;
+
+              transition: all 0.4s ease;
+
+              @include respondTo(sm) {
+                width: 3.2rem;
+                height: 3.2rem;
+              }
+            }
+          }
+        }
       }
     }
+
     .product__detail {
-      grid-area: list;
+      margin-top: 60px;
+
+      @include respondTo(md) {
+        margin-top: 200px;
+      }
 
       &-grid {
-        display: grid;
-        column-gap: 100px;
-        row-gap: 60px;
-        grid-template-columns: 40% 60%;
-        grid-template-areas:
-          "img title"
-          "img content"
-          "Specifications Specifications";
+        @include respondTo(sm) {
+          display: grid;
+          // column-gap: 100px;
+          row-gap: 60px;
+          grid-template-columns: 40% 60%;
+          grid-template-areas:
+            "img title"
+            "img content"
+            "Specifications Specifications";
+        }
 
         img {
           grid-area: img;
@@ -119,17 +196,26 @@
         .content {
           grid-area: content;
         }
-        background-color: darkblue;
+        // background-color: darkblue;
 
         .spec-container {
           grid-area: Specifications;
-          width: 100%;
           background-color: rgb(92, 206, 149);
 
           table {
-            // display: inline-block;
-            // width: 100% !important;
+            display: inline-block;
+            width: 100% !important;
+            // max-width: 100% !important;
             background-color: aqua;
+
+            tr {
+              // width: 100% !important;
+              // max-width: 100% !important;
+
+              td {
+                // width: 100% !important;
+              }
+            }
           }
         }
       } // grid

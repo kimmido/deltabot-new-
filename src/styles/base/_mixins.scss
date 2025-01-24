@@ -19,7 +19,7 @@ $breakpoints: (
   }
 }
 
-@mixin pseudoDefault($color: none) {
+@mixin pseudoDefault($color: #000) {
   position: absolute;
   left: 0;
   top: 0;

@@ -38,36 +38,43 @@ function Business({ currentPath, productData = [] }) {
 
   return (
     <div className="Business">
-      <div className="child-tab">
-        {productData.map((data, idx) => (
-          <button
-            key={data.title}
-            className={`child-tab__item ${currentIdx === idx ? "active" : ""}`}
-            onClick={() => {
-              setCurrentIdx(idx);
-            }}
-          >
-            {data.title}
-          </button>
-        ))}
-      </div>
-      <div className="product-scroll">
-        {productData[currentIdx] &&
-          productData[currentIdx].items.map((item, idx) => (
+      <div className="flex-container">
+        <div className="child-tab">
+          {productData.map((data, idx) => (
             <button
-              key={item.code}
-              className="product-scroll__button"
+              key={data.title}
+              className={`child-tab__item ${
+                currentIdx === idx ? "active" : ""
+              }`}
               onClick={() => {
-                scrollTo(item);
+                setCurrentIdx(idx);
               }}
             >
-              <img
-                src={`/images/product/${currentPath}/${item.code}.png`}
-                alt={item.name}
-              />
-              <p>{item.name}</p>
+              {data.title}
             </button>
           ))}
+        </div>
+        <div className="product-scroll">
+          {productData[currentIdx] &&
+            productData[currentIdx].items.map((item, idx) => (
+              <button
+                key={item.code}
+                className="product-scroll__button"
+                onClick={() => {
+                  scrollTo(item);
+                }}
+              >
+                <img
+                  src={`/images/product/${currentPath}/${item.code}.png`}
+                  alt={item.name}
+                />
+                <div className="subject">
+                  <p className="sbtxt">{item.name}</p>
+                  <span></span>
+                </div>
+              </button>
+            ))}
+        </div>
       </div>
       <div className="product__detail">
         {productData[currentIdx] &&

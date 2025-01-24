@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+}
+
+.section_title {
+  font-size: $font-size-section-title-sm;
+  margin-bottom: 24px;
+
+  @include respondTo(md) {
+    font-size: $font-size-section-title-lg;
+    margin-bottom: 40px;
+  }
+}
