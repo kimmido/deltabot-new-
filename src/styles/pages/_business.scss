@@ -69,7 +69,7 @@
           display: flex;
           flex-direction: column;
           gap: $gutter-lg;
-          margin-top: 0;
+          margin-top: 4px;
         }
 
         &__item {
@@ -118,22 +118,27 @@
 
           &:hover {
             color: $color-active;
+            border-color: $color-active;
 
             .subject span {
               background-image: url("@assets/images/icon/icon_add_white.svg");
               background-color: $color-active;
-              transform: rotate(90deg);
+              transform: rotate(180deg);
               border: 1px solid $color-active;
             }
           }
 
           .subject {
             display: flex;
+            gap: 8px;
             justify-content: space-between;
             align-items: center;
             margin-top: 20px;
 
             .sbtxt {
+              flex: 1;
+              width: fit-content;
+              text-align: left;
               font-size: $font-size-sm;
 
               @include respondTo(md) {
@@ -146,6 +151,7 @@
             }
 
             span {
+              display: block;
               width: 2.8rem;
               height: 2.8rem;
               border-radius: 50%;
@@ -178,7 +184,7 @@
           display: grid;
           // column-gap: 100px;
           row-gap: 60px;
-          grid-template-columns: 40% 60%;
+          grid-template-columns: 50% 50%;
           grid-template-areas:
             "img title"
             "img content"
@@ -196,27 +202,10 @@
         .content {
           grid-area: content;
         }
-        // background-color: darkblue;
 
         .spec-container {
+          overflow-x: auto;
           grid-area: Specifications;
-          background-color: rgb(92, 206, 149);
-
-          table {
-            display: inline-block;
-            width: 100% !important;
-            // max-width: 100% !important;
-            background-color: aqua;
-
-            tr {
-              // width: 100% !important;
-              // max-width: 100% !important;
-
-              td {
-                // width: 100% !important;
-              }
-            }
-          }
         }
       } // grid
     }

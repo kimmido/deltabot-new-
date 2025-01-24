@@ -3,16 +3,16 @@ import AssetImage from "../../components/UI/AssetImage";
 
 function Business({ currentPath, productData = [] }) {
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [htmlContent, setHtmlContent] = useState("");
-  const [filePath, setFilePath] = useState("/spec/excel_test.htm");
+  // const [htmlContent, setHtmlContent] = useState("");
+  // const [filePath, setFilePath] = useState("/spec/테스트02.htm");
 
   const itemsRef = useRef(null);
 
-  useEffect(() => {
-    fetch(filePath)
-      .then((response) => response.text())
-      .then((data) => setHtmlContent(data));
-  }, [filePath]);
+  // useEffect(() => {
+  //   fetch(filePath)
+  //     .then((response) => response.text())
+  //     .then((data) => setHtmlContent(data));
+  // }, [filePath]);
 
   function scrollTo(el) {
     const map = getMap();
@@ -111,7 +111,7 @@ function Business({ currentPath, productData = [] }) {
               </div>
               <div
                 className="spec-container"
-                dangerouslySetInnerHTML={{ __html: htmlContent }}
+                // dangerouslySetInnerHTML={{ __html: htmlContent }}
               ></div>
             </div>
           ))}
