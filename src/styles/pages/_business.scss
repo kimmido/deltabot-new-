@@ -27,12 +27,17 @@
       white-space: nowrap;
       border-radius: $radius-md;
 
+      transition: all 0.3s;
+
       @include respondTo(sm) {
         flex: 1;
         padding: 12px 20px;
       }
 
-      &:hover,
+      &:hover {
+        color: $color-active;
+      }
+
       &.active {
         color: #fff;
         background-color: $color-active;
@@ -115,6 +120,7 @@
           border: 1px solid $color-border;
           border-radius: $radius-card;
           padding: 20px 28px;
+          transition: all 0.3s ease;
 
           &:hover {
             color: $color-active;
@@ -173,39 +179,112 @@
     }
 
     .product__detail {
-      margin-top: 60px;
+      margin-top: 80px;
 
       @include respondTo(md) {
         margin-top: 200px;
       }
 
-      &-grid {
-        @include respondTo(sm) {
-          display: grid;
-          // column-gap: 100px;
-          row-gap: 60px;
-          grid-template-columns: 50% 50%;
-          grid-template-areas:
-            "img title"
-            "img content"
-            "Specifications Specifications";
-        }
+      &-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        background-color: rgb(250, 250, 66);
 
-        img {
-          grid-area: img;
-        }
+        .pd_flex {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          background-color: beige;
 
-        strong {
-          grid-area: title;
-        }
+          @include respondTo(sm) {
+            flex-direction: row;
+            justify-content: center;
+          }
 
-        .content {
-          grid-area: content;
+          .pd_left {
+            flex: 1;
+            background-color: rgb(124, 218, 131);
+            padding: 16px;
+
+            @include respondTo(sm) {
+              padding: 0;
+            }
+          }
+
+          .pd_right {
+            flex: 1;
+            align-content: center;
+
+            .prod_name {
+              font-size: $font-size-con-title-md;
+
+              @include respondTo(sm) {
+                font-size: $font-size-con-title-lg;
+              }
+            }
+
+            .prod_desc {
+              background-color: aqua;
+
+              &__inner {
+                margin-top: 12px;
+
+                .prod_desc__title {
+                  font-weight: 600;
+                  color: $color-point;
+                  font-size: calc(1em + 2px);
+                }
+
+                li {
+                  position: relative;
+                  padding-left: 12px;
+                  line-height: 150%;
+
+                  &::before {
+                    @include pseudoDefault($color-text-body);
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 50%;
+                  }
+                }
+              }
+
+              button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: $gutter-sm;
+                width: 100%;
+                padding: 10px 12px;
+                border-radius: 1000px;
+                background-color: $color-point;
+
+                .text {
+                  color: #fff;
+                }
+
+                .icon {
+                  display: block;
+                  background-image: url("@assets/images/icon/icon_arrow_down_blue.svg");
+                  background-size: contain;
+                  background-position: center;
+                  background-color: #fff;
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                }
+              }
+            }
+          }
         }
 
         .spec-container {
           overflow-x: auto;
-          grid-area: Specifications;
+          @include respondTo(sm) {
+          }
         }
       } // grid
     }

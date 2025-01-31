@@ -81,7 +81,7 @@ function Business({ currentPath, productData = [] }) {
           productData[currentIdx].items.map((item, idx) => (
             <div
               key={item.code}
-              className="product__detail-grid"
+              className="product__detail-inner"
               ref={(node) => {
                 const map = getMap();
                 if (node) {
@@ -91,23 +91,33 @@ function Business({ currentPath, productData = [] }) {
                 }
               }}
             >
-              <img
-                src={`/images/product/${currentPath}/${item.code}.png`}
-                alt={item.name}
-              />
-              <strong>{item.name}</strong>
-              <div className="content">
-                {item.features.map((feature, idx) => (
-                  <div key={idx}>
-                    {feature.title == "null" || <p>{feature.title}</p>}
-                    <ul>
-                      {feature.texts.map((text) => (
-                        <li key={text}>{text}</li>
-                      ))}
-                    </ul>
+              <div className="pd_flex">
+                <img
+                  className="pd_left"
+                  src={`/images/product/${currentPath}/${item.code}.png`}
+                  alt={item.name}
+                />
+                <div className="pd_right">
+                  <strong className="prod_name">{item.name}</strong>
+                  <div className="prod_desc">
+                    {item.features.map((feature, idx) => (
+                      <div key={idx} className="prod_desc__inner">
+                        {feature.title == "null" || (
+                          <p className="prod_desc__title">{feature.title}</p>
+                        )}
+                        <ul>
+                          {feature.texts.map((text) => (
+                            <li key={text}>{text}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                    <button>
+                      <span className="text">Specifications</span>
+                      <span className="icon"></span>
+                    </button>
                   </div>
-                ))}
-                <button>Specifications</button>
+                </div>
               </div>
               <div
                 className="spec-container"
