@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .BusinessLayout {
   .parent-tab,
   .child-tab {
@@ -182,7 +184,7 @@
       margin-top: 80px;
 
       @include respondTo(md) {
-        margin-top: 200px;
+        margin-top: 280px;
       }
 
       &-inner {
@@ -190,9 +192,9 @@
         flex-direction: column;
         gap: 40px;
         margin-top: 40px;
-        // background-color: rgb(250, 250, 66);
 
         @include respondTo(sm) {
+          gap: 80px;
           margin-top: 80px;
         }
 
@@ -201,21 +203,23 @@
           flex-direction: column;
           gap: 40px;
           justify-content: space-between;
-          // background-color: beige;
 
           @include respondTo(sm) {
+            gap: 60px;
             flex-direction: row;
             justify-content: center;
           }
 
           .pd_left {
-            flex: 1 1 48%;
+            flex: 1 1 49%;
             text-align: center;
             align-content: center;
-            // background-color: rgb(124, 218, 131);
+            padding: 48px;
+            background-color: $color-blue-050;
+            border-radius: $radius-card;
 
             @include respondTo(md) {
-              // padding: 60px;
+              padding: 60px;
             }
 
             img {
@@ -224,7 +228,7 @@
           }
 
           .pd_right {
-            flex: 1 1 52%;
+            flex: 1 1 51%;
             align-content: center;
 
             .prod_name {
@@ -271,27 +275,45 @@
                 justify-content: center;
                 align-items: center;
                 gap: $gutter-sm;
+                position: relative;
+                overflow: hidden;
                 margin-top: 16px;
                 width: 100%;
                 padding: 10px 12px;
                 border-radius: 1000px;
                 background-color: $color-point;
+                border: 1px solid $color-point;
+                transition: all 0.3s;
 
                 @include respondTo(sm) {
-                  margin-top: 24px;
+                  margin-top: 30px;
                   padding: 16px 40px;
                   width: auto;
                   font-size: calc(1em + 2px);
                 }
 
+                &:hover,
+                &.active {
+                  .text {
+                    color: $color-point;
+                  }
+                  .effect {
+                    width: 225%;
+                    height: 562.5px;
+                  }
+                }
+
                 &.active {
                   .icon {
-                    transform: rotateZ(-180deg);
+                    transform: rotateZ(-180deg) scale(1.1);
                   }
                 }
 
                 .text {
                   color: #fff;
+                  font-weight: $weight-mdium;
+                  z-index: 10;
+                  transition: all 0.4s ease-in-out;
 
                   @include respondTo(md) {
                     font-size: calc(1em + 2px);
@@ -301,14 +323,29 @@
                 .icon {
                   display: block;
                   background-image: url("@assets/images/icon/icon_arrow_down_blue.svg");
-                  background-size: contain;
-                  background-position: center;
+                  background-size: 32px;
+                  background-repeat: no-repeat;
+                  background-position: 50% -10%;
                   background-color: #fff;
                   width: 30px;
                   height: 30px;
                   border-radius: 50%;
 
+                  z-index: 10;
                   transition: all 0.3s;
+                }
+
+                .effect {
+                  position: absolute;
+                  top: 0;
+                  left: 50%;
+                  display: block;
+                  width: 0;
+                  height: 0;
+                  border-radius: 50%;
+                  background-color: #fff;
+                  transform: translate(-50%, -50%);
+                  transition: all 0.4s ease-in-out;
                 }
               }
             }
@@ -316,8 +353,29 @@
         }
 
         .spec-container {
-          overflow-x: auto;
+          text-align: center;
           @include respondTo(sm) {
+          }
+
+          p {
+            margin: 0 auto;
+            max-width: 1240px;
+            text-align: left;
+            font-size: $font-size-con-title-sm;
+            font-weight: 600;
+
+            @include respondTo(md) {
+              font-size: $font-size-con-title-lg;
+            }
+          }
+
+          img {
+            margin-top: 12px;
+            max-width: fit-content;
+
+            @include respondTo(md) {
+              margin-top: 16px;
+            }
           }
         }
       } // grid

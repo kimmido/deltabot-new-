@@ -3,25 +3,16 @@ import AssetImage from "../../components/UI/AssetImage";
 
 function Business({ currentPath, productData = [] }) {
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [specOpen, setSpecOpen] = useState(false);
-  // const [htmlContent, setHtmlContent] = useState("");
-  // const [filePath, setFilePath] = useState("/spec/테스트02.htm");
+  const [specOpen, setSpecOpen] = useState(null);
 
   const itemsRef = useRef(null);
-
-  // useEffect(() => {
-  //   fetch(filePath)
-  //     .then((response) => response.text())
-  //     .then((data) => setHtmlContent(data));
-  // }, [filePath]);
 
   function scrollTo(el) {
     const map = getMap();
     const node = map.get(el);
     node.scrollIntoView({
       behavior: "smooth",
-      block: "center",
-      // inline: "center",
+      block: "start",
     });
   }
 
@@ -35,10 +26,11 @@ function Business({ currentPath, productData = [] }) {
 
   useEffect(() => {
     setCurrentIdx(0);
+    setSpecOpen(null);
   }, [currentPath]);
 
-  const openSpec = () => {
-    setSpecOpen(!specOpen);
+  const openSpec = (id) => {
+    setSpecOpen((prev) => (prev === id ? null : id));
   };
 
   return (
@@ -53,6 +45,7 @@ function Business({ currentPath, productData = [] }) {
               }`}
               onClick={() => {
                 setCurrentIdx(idx);
+                setSpecOpen(null);
               }}
             >
               {data.title}
@@ -118,22 +111,26 @@ function Business({ currentPath, productData = [] }) {
                         </ul>
                       </div>
                     ))}
-                    <button className="active" onClick={openSpec}>
-                      <span className="text">Specifications</span>
+                    <button
+                      className={specOpen === idx && "active"}
+                      onClick={() => openSpec(idx)}
+                    >
+                      <span className="text">SPECIFICATION</span>
                       <span className="icon"></span>
+                      <span className="effect"></span>
                     </button>
                   </div>
                 </div>
               </div>
-              <div
-                className="spec-container"
-                // dangerouslySetInnerHTML={{ __html: htmlContent }}
-              >
-                {specOpen && (
-                  <img
-                    src={`/images/product/${currentPath}/${item.code}_info.png`}
-                    alt={item.code}
-                  />
+              <div className="spec-container">
+                {specOpen === idx && (
+                  <div>
+                    <p>SPECIFICATION</p>
+                    <img
+                      src={`/images/product/${currentPath}/${item.code}_info.jpg`}
+                      alt={item.code}
+                    />
+                  </div>
                 )}
               </div>
             </div>

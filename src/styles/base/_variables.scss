@@ -21,6 +21,17 @@ $font-size-display-sm: 2.5rem;
 $font-size-display-md: 4rem;
 $font-size-display-lg: 6.6rem;
 
+// ========== FONTWEIGHT ==========
+$weight-thin: 100;
+$weight-extraLight: 200;
+$weight-light: 300;
+$weight-Regular: 400;
+$weight-mdium: 500;
+$weight-semiBold: 600;
+$weight-bold: 700;
+$weight-extraBold: 800;
+$weight-black: 900;
+
 // ========== RADIUS ==========
 $radius-xs: 8px;
 $radius-md: 16px;
@@ -73,7 +84,7 @@ $color-gray-800: #2d2d2d;
 $color-gray-900: #1d1d1d;
 
 // COLOR BLUE
-$color-blue-050: #eff5ff !default;
+$color-blue-050: #f2f7ff !default;
 $color-blue-100: #d3e1fb !default;
 $color-blue-200: #a7c4f7 !default;
 $color-blue-300: #7ca6f3 !default;

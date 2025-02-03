@@ -1,10 +1,64 @@
 footer {
   margin: 120px 16px 16px;
-  height: 300px;
-  background-color: $color-gray-200;
+  padding: 40px 32px;
+  background-color: $color-gray-050;
   border-radius: $radius-lg;
+
+  @include respondTo(sm) {
+    padding-top: 50px;
+  }
 
   @include respondTo(md) {
     margin: 240px 24px 24px;
+    padding: 80px 60px;
   }
+
+  .footer__inner {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    width: 100%;
+
+    @include respondTo(md) {
+      flex-direction: row;
+      gap: 8.8rem;
+    }
+
+    @include respondTo(lg) {
+      gap: 10rem;
+    }
+
+    .logo {
+      width: 130px;
+
+      @include respondTo(md) {
+        padding-top: 0.4rem;
+        width: 230px;
+      }
+
+      @include respondTo(lg) {
+        width: 260px;
+      }
+    }
+
+    .company-info {
+      p {
+        font-size: $font-size-xs;
+        line-height: 200%;
+
+        @include respondTo(sm) {
+          font-size: $font-size-sm;
+        }
+
+        @include respondTo(lg) {
+          font-size: $font-size-md;
+        }
+
+        .head {
+          margin-right: 12px;
+          font-weight: $weight-semiBold;
+        }
+      }
+    }
+  } // __inner
 }
