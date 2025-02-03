@@ -3,6 +3,7 @@ import AssetImage from "../../components/UI/AssetImage";
 
 function Business({ currentPath, productData = [] }) {
   const [currentIdx, setCurrentIdx] = useState(0);
+  const [specOpen, setSpecOpen] = useState(false);
   // const [htmlContent, setHtmlContent] = useState("");
   // const [filePath, setFilePath] = useState("/spec/테스트02.htm");
 
@@ -35,6 +36,10 @@ function Business({ currentPath, productData = [] }) {
   useEffect(() => {
     setCurrentIdx(0);
   }, [currentPath]);
+
+  const openSpec = () => {
+    setSpecOpen(!specOpen);
+  };
 
   return (
     <div className="Business">
@@ -92,11 +97,12 @@ function Business({ currentPath, productData = [] }) {
               }}
             >
               <div className="pd_flex">
-                <img
-                  className="pd_left"
-                  src={`/images/product/${currentPath}/${item.code}.png`}
-                  alt={item.name}
-                />
+                <div className="pd_left">
+                  <img
+                    src={`/images/product/${currentPath}/${item.code}.png`}
+                    alt={item.name}
+                  />
+                </div>
                 <div className="pd_right">
                   <strong className="prod_name">{item.name}</strong>
                   <div className="prod_desc">
@@ -112,7 +118,7 @@ function Business({ currentPath, productData = [] }) {
                         </ul>
                       </div>
                     ))}
-                    <button>
+                    <button className="active" onClick={openSpec}>
                       <span className="text">Specifications</span>
                       <span className="icon"></span>
                     </button>
@@ -122,7 +128,14 @@ function Business({ currentPath, productData = [] }) {
               <div
                 className="spec-container"
                 // dangerouslySetInnerHTML={{ __html: htmlContent }}
-              ></div>
+              >
+                {specOpen && (
+                  <img
+                    src={`/images/product/${currentPath}/${item.code}_info.png`}
+                    alt={item.code}
+                  />
+                )}
+              </div>
             </div>
           ))}
       </div>

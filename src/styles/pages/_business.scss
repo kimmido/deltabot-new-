@@ -189,13 +189,19 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        background-color: rgb(250, 250, 66);
+        margin-top: 40px;
+        // background-color: rgb(250, 250, 66);
+
+        @include respondTo(sm) {
+          margin-top: 80px;
+        }
 
         .pd_flex {
           display: flex;
           flex-direction: column;
           gap: 40px;
-          background-color: beige;
+          justify-content: space-between;
+          // background-color: beige;
 
           @include respondTo(sm) {
             flex-direction: row;
@@ -203,32 +209,41 @@
           }
 
           .pd_left {
-            flex: 1;
-            background-color: rgb(124, 218, 131);
-            padding: 16px;
+            flex: 1 1 48%;
+            text-align: center;
+            align-content: center;
+            // background-color: rgb(124, 218, 131);
 
-            @include respondTo(sm) {
-              padding: 0;
+            @include respondTo(md) {
+              // padding: 60px;
+            }
+
+            img {
+              max-width: 480px;
             }
           }
 
           .pd_right {
-            flex: 1;
+            flex: 1 1 52%;
             align-content: center;
 
             .prod_name {
+              display: block;
               font-size: $font-size-con-title-md;
 
               @include respondTo(sm) {
+                max-width: 520px;
                 font-size: $font-size-con-title-lg;
               }
             }
 
             .prod_desc {
-              background-color: aqua;
-
               &__inner {
-                margin-top: 12px;
+                margin-top: 16px;
+
+                @include respondTo(md) {
+                  margin-top: 24px;
+                }
 
                 .prod_desc__title {
                   font-weight: 600;
@@ -243,8 +258,7 @@
 
                   &::before {
                     @include pseudoDefault($color-text-body);
-                    top: 50%;
-                    transform: translateY(-50%);
+                    top: 0.7em;
                     width: 3px;
                     height: 3px;
                     border-radius: 50%;
@@ -257,13 +271,31 @@
                 justify-content: center;
                 align-items: center;
                 gap: $gutter-sm;
+                margin-top: 16px;
                 width: 100%;
                 padding: 10px 12px;
                 border-radius: 1000px;
                 background-color: $color-point;
 
+                @include respondTo(sm) {
+                  margin-top: 24px;
+                  padding: 16px 40px;
+                  width: auto;
+                  font-size: calc(1em + 2px);
+                }
+
+                &.active {
+                  .icon {
+                    transform: rotateZ(-180deg);
+                  }
+                }
+
                 .text {
                   color: #fff;
+
+                  @include respondTo(md) {
+                    font-size: calc(1em + 2px);
+                  }
                 }
 
                 .icon {
@@ -275,6 +307,8 @@
                   width: 30px;
                   height: 30px;
                   border-radius: 50%;
+
+                  transition: all 0.3s;
                 }
               }
             }
