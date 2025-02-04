@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from "react";
-import AssetImage from "../../components/UI/AssetImage";
 
 function Business({ currentPath, productData = [] }) {
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -112,7 +111,7 @@ function Business({ currentPath, productData = [] }) {
                       </div>
                     ))}
                     <button
-                      className={specOpen === idx && "active"}
+                      className={specOpen === idx ? "active" : ""}
                       onClick={() => openSpec(idx)}
                     >
                       <span className="text">SPECIFICATION</span>

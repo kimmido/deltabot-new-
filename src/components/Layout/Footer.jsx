@@ -19,12 +19,10 @@ function Footer() {
             <span className="head">E-mail</span>
             <span>sales@daltabot.co.kr</span>
           </p>
-          <p>
-            <address className="flex-container">
-              <span className="head">주소</span>
-              <span>경기도 부천양지로 229, 골든IT타워 730호~733호(옥길동)</span>
-            </address>
-          </p>
+          <address className="flex-container">
+            <span className="head">주소</span>
+            <span>경기도 부천양지로 229, 골든IT타워 730호~733호(옥길동)</span>
+          </address>
           <p className="flex-container">
             <span className="head">사업자등록번호</span>
             <span>113-86-85861</span>

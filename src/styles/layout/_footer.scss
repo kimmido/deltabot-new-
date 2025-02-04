@@ -42,7 +42,8 @@ footer {
     }
 
     .company-info {
-      p {
+      p,
+      address {
         font-size: $font-size-xs;
         line-height: 200%;
 
@@ -53,11 +54,10 @@ footer {
         @include respondTo(lg) {
           font-size: $font-size-md;
         }
-
-        .head {
-          margin-right: 12px;
-          font-weight: $weight-semiBold;
-        }
+      }
+      .head {
+        margin-right: 12px;
+        font-weight: $weight-semiBold;
       }
     }
   } // __inner
