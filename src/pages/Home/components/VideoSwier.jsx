@@ -4,10 +4,9 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 // import "./VideoSlide.css"; // 스타일을 별도로 정의합니다.
 import { Pagination, EffectCreative } from "swiper/modules";
+import VideoSlide from "./VideoSlide";
 
-function Videos() {
-  const paginationRef = useRef(null);
-
+function VideoSwier() {
   const videos = [
     {
       src: "/videos/video1.mp4",
@@ -18,7 +17,7 @@ function Videos() {
   ];
 
   return (
-    <section className="Videos">
+    <section className="VideoSwier">
       <div className="container">
         <h2 className="section_title">Our Video</h2>
         <div className="flex-box">
@@ -48,10 +47,9 @@ function Videos() {
           >
             {videos.map((video, index) => (
               <SwiperSlide key={index}>
-                <video controls preload="metadata">
-                  <source src={video.src} type="video/mp4" />
-                  브라우저가 video를 지원하지 않습니다.
-                </video>
+                {({ isActive }) => (
+                  <VideoSlide video={video} isActive={isActive} />
+                )}
               </SwiperSlide>
             ))}
           </Swiper>
@@ -68,4 +66,4 @@ function Videos() {
   );
 }
 
-export default Videos;
+export default VideoSwier;
