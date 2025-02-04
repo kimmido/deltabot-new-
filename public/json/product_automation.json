@@ -320,21 +320,6 @@
       "title": "DELTAROBOT Series", 
       "items": [
         {
-          "name": "DRF Series",
-          "code": "DRF Series",
-          "features": [
-            {
-              "title": "null",
-              "texts": [
-                "광범위한 자동화 애플리케이션을 위한 혁신적이고 비용 효율적이며 유연한 솔루션을 제공하는 DRF Deltabot",
-                "Deltabot은 3축과 4축 암으로 구성되어 있으며 지능형 비전 시스템을 갖추고 있습니다.",
-                "로봇팔은 탄소파이프로 구성되어 분당 최대 180회에 달하는 빠른 속도를 가지고 있습니다.",
-                "Deltabot은 최소 400mm에서 최대 1,600mm에 이르는 작업 공간을 제공합니다."
-              ]
-            }
-          ]
-        }, 
-        {
           "name": "D3P Series",
           "code": "D3P Series",
           "features": [
@@ -366,6 +351,21 @@
               "title": "null",
               "texts": [
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DRF Series",
+          "code": "DRF Series",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "광범위한 자동화 애플리케이션을 위한 혁신적이고 비용 효율적이며 유연한 솔루션을 제공하는 DRF Deltabot",
+                "Deltabot은 3축과 4축 암으로 구성되어 있으며 지능형 비전 시스템을 갖추고 있습니다.",
+                "로봇팔은 탄소파이프로 구성되어 분당 최대 180회에 달하는 빠른 속도를 가지고 있습니다.",
+                "Deltabot은 최소 400mm에서 최대 1,600mm에 이르는 작업 공간을 제공합니다."
               ]
             }
           ]
