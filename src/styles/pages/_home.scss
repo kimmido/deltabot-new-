@@ -7,7 +7,7 @@ $BUTTON_ICON: 15px;
   height: calc(460px + 18px);
 
   @include respondTo(md) {
-    padding: 2px 24px 24px;
+    padding: 2px 8x 24px;
     height: calc(100vh - $header-md);
   }
 

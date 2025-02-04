@@ -6,7 +6,7 @@ import "swiper/scss/pagination";
 import { Pagination, EffectCreative } from "swiper/modules";
 import VideoSlide from "./VideoSlide";
 
-function VideoSwier() {
+function VideoSwiper() {
   const videos = [
     {
       src: "/videos/video1.mp4",
@@ -17,7 +17,7 @@ function VideoSwier() {
   ];
 
   return (
-    <section className="VideoSwier">
+    <section className="VideoSwiper">
       <div className="container">
         <h2 className="section_title">Our Video</h2>
         <div className="flex-box">
@@ -66,4 +66,4 @@ function VideoSwier() {
   );
 }
 
-export default VideoSwier;
+export default VideoSwiper;

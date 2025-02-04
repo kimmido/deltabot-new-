@@ -1,14 +1,14 @@
 import React, { useRef } from "react";
 import Slide from "./components/Slide";
 import BusinessSection from "./components/BusinessSection";
-import VideoSwier from "./components/VideoSwier";
+import VideoSwiper from "./components/VideoSwiper";
 
 const Home = () => {
   return (
     <div className="Home">
       <Slide />
       <BusinessSection />
-      <VideoSwier />
+      <VideoSwiper />
     </div>
   );
 };
