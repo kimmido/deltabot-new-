@@ -278,11 +278,177 @@
   ],
   "scara": [
     {
-      "title": "데모 타이틀",
+      "title": "임시타이틀-ST",
       "items": [
         {
-          "name": "스카라 제품",
-          "code": "code",
+          "name": "ST-500-A-A",
+          "code": "ST-500-A-A",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ST-500-A-B",
+          "code": "ST-500-A-B",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ST-620-A-A",
+          "code": "ST-620-A-A",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ST-620-A-B",
+          "code": "ST-620-A-B",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ST-800-A-A",
+          "code": "ST-800-A-A",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ST-800-A-B",
+          "code": "ST-800-A-B",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "임시타이틀-MBD",
+      "items": [
+        {
+          "name": "M04BD",
+          "code": "M04BD",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "M05BD",
+          "code": "M05BD",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "M06BD",
+          "code": "M06BD",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "M07BD",
+          "code": "M07BD",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "임시타이틀-MGD",
+      "items": [
+        {
+          "name": "M07GD",
+          "code": "M07GD",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "M08GD",
+          "code": "M08GD",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "M09GD",
+          "code": "M09GD",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "M10GD",
+          "code": "M10GD",
           "features": [
             {
               "title": "null",
