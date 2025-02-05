@@ -193,11 +193,15 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        margin-top: 40px;
+        padding-top: $header-sm;
 
         @include respondTo(sm) {
           gap: 80px;
-          margin-top: 80px;
+          padding-top: $header-md;
+        }
+
+        &:first-child {
+          padding-top: 0;
         }
 
         .pd_flex {
@@ -355,8 +359,14 @@
         }
 
         .spec-container {
+          overflow: hidden;
+          max-height: 0;
           text-align: center;
-          @include respondTo(sm) {
+
+          transition: all 0.8s;
+
+          &.open {
+            max-height: 1000px;
           }
 
           p {

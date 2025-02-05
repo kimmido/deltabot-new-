@@ -7,10 +7,18 @@ import SeriesTabMenu from "./components/SeriesTabMenu";
 
 function Business({ currentPath, productData = [] }) {
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [specOpen, setSpecOpen] = useState(null);
+  const [prodIdx, setProdIdx] = useState(null);
 
   const itemsRef = useRef(null);
   const gsapContainerRef = useRef(null);
+
+  useEffect(() => {
+    setCurrentIdx(0);
+  }, [currentPath]);
+
+  useEffect(() => {
+    setProdIdx(null);
+  }, [currentPath, currentIdx]);
 
   useGSAP(
     () => {
@@ -48,23 +56,17 @@ function Business({ currentPath, productData = [] }) {
     return itemsRef.current;
   }
 
-  useEffect(() => {
-    setCurrentIdx(0);
-    setSpecOpen(null);
-  }, [currentPath]);
-
   const openSpec = (id) => {
-    setSpecOpen((prev) => (prev === id ? null : id));
+    setProdIdx((prev) => (prev === id ? null : id));
   };
 
   return (
     <div className="Business">
       <div className="flex-container" ref={gsapContainerRef}>
         <SeriesTabMenu
-          productData={productData}
+          items={productData}
           currentIdx={currentIdx}
           setCurrentIdx={setCurrentIdx}
-          setSpecOpen={setSpecOpen}
         />
         <div className="product-scroll">
           {productData[currentIdx] &&
@@ -73,7 +75,7 @@ function Business({ currentPath, productData = [] }) {
                 key={item.code}
                 className="product-scroll__button"
                 onClick={() => {
-                  scrollTo(item);
+                  scrollTo(item.code);
                 }}
               >
                 <img
@@ -97,7 +99,7 @@ function Business({ currentPath, productData = [] }) {
               ref={(node) => {
                 const map = getMap();
                 if (node) {
-                  map.set(item, node); // Mount 시
+                  map.set(item.code, node); // Mount 시
                 } else {
                   map.delete(item); // Unmount 시
                 }
@@ -126,7 +128,7 @@ function Business({ currentPath, productData = [] }) {
                       </div>
                     ))}
                     <button
-                      className={specOpen === idx ? "active" : ""}
+                      className={prodIdx === idx ? "active" : ""}
                       onClick={() => openSpec(idx)}
                     >
                       <span className="text">SPECIFICATION</span>
@@ -136,17 +138,17 @@ function Business({ currentPath, productData = [] }) {
                   </div>
                 </div>
               </div>
-              <div className="spec-container">
-                {specOpen === idx && (
-                  <div>
-                    <p>SPECIFICATION</p>
-                    <img
-                      src={`/images/product/${currentPath}/${item.code}_info.jpg`}
-                      alt={item.code}
-                    />
-                  </div>
-                )}
+              {/* {prodIdx === idx && ( */}
+              <div
+                className={`spec-container ${prodIdx === idx ? "open" : ""}`}
+              >
+                <p>SPECIFICATION</p>
+                <img
+                  src={`/images/product/${currentPath}/${item.code}_info.jpg`}
+                  alt={item.code}
+                />
               </div>
+              {/* )} */}
             </div>
           ))}
       </div>
