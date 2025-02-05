@@ -15,12 +15,32 @@ import main_slide2 from "../../../assets/images/home/main_slide(2).jpg";
 import main_slide3 from "../../../assets/images/home/main_slide(3).jpg";
 import main_slide4 from "../../../assets/images/home/main_slide(4).jpg";
 
-function Slide() {
-  const images = [
-    { src: main_slide1, alt: "메인배너1" },
-    { src: main_slide2, alt: "메인배너2" },
-    { src: main_slide3, alt: "메인배너3" },
-    { src: main_slide4, alt: "메인배너4" },
+function BannerSwiper() {
+  const slideData = [
+    {
+      src: main_slide1,
+      alt: "메인배너1",
+      text1: "Recycling robot system",
+      text2: "& Automation",
+    },
+    {
+      src: main_slide2,
+      alt: "메인배너2",
+      text1: "Recycling robot system",
+      text2: "& Automation",
+    },
+    {
+      src: main_slide3,
+      alt: "메인배너3",
+      text1: "Recycling robot system",
+      text2: "& Automation",
+    },
+    {
+      src: main_slide4,
+      alt: "메인배너4",
+      text1: "Recycling robot system",
+      text2: "& Automation",
+    },
   ];
 
   useGSAP(() => {
@@ -32,10 +52,10 @@ function Slide() {
       ease: "power2.out",
     });
 
-    gsap.to(".home__swiper-wrap", {
+    gsap.to(".BannerSwiper", {
       scale: 0.92,
       scrollTrigger: {
-        trigger: ".home__swiper-wrap",
+        trigger: ".BannerSwiper",
         start: "top 80px", // 요소의 top이 viewport 중앙에 왔을 때
         end: "bottom 50%",
         scrub: 1, // 스크롤에 따라 부드럽게
@@ -45,9 +65,9 @@ function Slide() {
   });
 
   return (
-    <div className="home__swiper-wrap">
+    <div className="BannerSwiper">
       <Swiper
-        className="home__swiper"
+        className="BannerSwiper__swiper"
         modules={[Autoplay, Pagination, Navigation]}
         loop={true}
         pagination={{
@@ -63,18 +83,18 @@ function Slide() {
         spaceBetween={0}
         slidesPerView={1}
       >
-        {images.map((img) => (
-          <SwiperSlide key={img.alt}>
-            <img src={img.src} alt={img.alt} />
+        {slideData.map((item) => (
+          <SwiperSlide key={item.alt}>
+            <strong className="slide__text">
+              {item.text1}
+              <br />
+              {item.text2}
+            </strong>
           </SwiperSlide>
         ))}
-        <strong className="slide__text">
-          Recycling robot system
-          <br />& Automation
-        </strong>
       </Swiper>
     </div>
   );
 }
 
-export default Slide;
+export default BannerSwiper;

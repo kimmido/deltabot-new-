@@ -1,12 +1,12 @@
-import React, { useRef } from "react";
-import Slide from "./components/Slide";
+import React from "react";
+import BannerSwiper from "./components/bannerSwiper";
 import BusinessSection from "./components/BusinessSection";
 import VideoSwiper from "./components/VideoSwiper";
 
 const Home = () => {
   return (
     <div className="Home">
-      <Slide />
+      <BannerSwiper />
       <BusinessSection />
       <VideoSwiper />
     </div>
