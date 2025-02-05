@@ -3,6 +3,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
+import SeriesTabMenu from "./components/SeriesTabMenu";
+
 function Business({ currentPath, productData = [] }) {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [specOpen, setSpecOpen] = useState(null);
@@ -12,19 +14,6 @@ function Business({ currentPath, productData = [] }) {
 
   useGSAP(
     () => {
-      gsap.fromTo(
-        ".child-tab__text",
-        {
-          y: 50,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          ease: "sine.out",
-        }
-      );
       gsap.fromTo(
         ".product-scroll",
         {
@@ -39,7 +28,7 @@ function Business({ currentPath, productData = [] }) {
         }
       );
     },
-    { dependencies: [currentPath, productData], scope: gsapContainerRef }
+    { dependencies: [currentPath], scope: gsapContainerRef }
   );
 
   function scrollTo(el) {
@@ -71,26 +60,13 @@ function Business({ currentPath, productData = [] }) {
   return (
     <div className="Business">
       <div className="flex-container" ref={gsapContainerRef}>
-        <div className="child-tab">
-          {productData.map((data, idx) => (
-            <button
-              key={data.title}
-              className={`child-tab__item overflow_hidden
-                 ${currentIdx === idx ? "active" : ""}`}
-              onClick={() => {
-                setCurrentIdx(idx);
-                setSpecOpen(null);
-              }}
-            >
-              <span className="child-tab__text">{data.title}</span>
-            </button>
-          ))}
-        </div>
-        <div
-          className="product-scroll"
-          // data-aos="fade-up"
-          // data-aos-duration="1000"
-        >
+        <SeriesTabMenu
+          productData={productData}
+          currentIdx={currentIdx}
+          setCurrentIdx={setCurrentIdx}
+          setSpecOpen={setSpecOpen}
+        />
+        <div className="product-scroll">
           {productData[currentIdx] &&
             productData[currentIdx].items.map((item, idx) => (
               <button

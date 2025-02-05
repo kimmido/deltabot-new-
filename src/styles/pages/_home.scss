@@ -32,21 +32,6 @@
         url("@assets/images/home/main_slide(1).jpg");
       background-size: cover;
       background-position: center;
-      // &::before {
-      //   @include pseudoDefault();
-      //   background: linear-gradient(
-      //     to left,
-      //     rgba(20, 20, 20, 0) 40%,
-      //     rgba(20, 20, 20, 0.15) 70%,
-      //     rgba(20, 20, 20, 0.3) 100%
-      //   );
-      // }
-
-      // img {
-      //   width: 100%;
-      //   height: 100%;
-      //   object-fit: cover;
-      // }
 
       .slide__text {
         position: absolute;

@@ -67,7 +67,7 @@
         gap: 60px;
       }
 
-      .child-tab {
+      .SeriesTabMenu {
         @include respondTo(md) {
           flex: 1;
           display: flex;
@@ -102,7 +102,7 @@
             }
           }
 
-          .child-tab__text {
+          .SeriesTabMenu__text {
             display: block;
             padding: 8px 12px;
           }
