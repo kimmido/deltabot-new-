@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "@styles/main.scss";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import CategoryRoutesProvider from "./contexts/CategoryRoutesContext";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import DefaultLayout from "./layouts/DefaultLayout";
 import BusinessLayout from "./layouts/BusinessLayout";
@@ -10,6 +12,10 @@ import About from "./pages/About/About";
 import ScrollToTop from "./utils/scrollToTop";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <CategoryRoutesProvider>
       <BrowserRouter>

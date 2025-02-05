@@ -46,7 +46,7 @@ $breakpoints: (
 ) {
   position: relative;
   color: inherit;
-  transition: color 0.3s ease;
+  transition: color 0.5s ease;
 
   &:hover,
   &.active {
@@ -67,6 +67,6 @@ $breakpoints: (
     height: $underline-width;
     transform: scaleX(0); // 초기 상태: 밑줄 숨김
     transform-origin: left;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
   }
 }

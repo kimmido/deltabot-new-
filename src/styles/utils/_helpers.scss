@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.overflow_hidden {
+  overflow: hidden;
+}
+
 .section_title {
   font-size: $font-size-section-title-sm;
   margin-bottom: 24px;

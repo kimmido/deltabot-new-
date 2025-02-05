@@ -5,8 +5,6 @@ import { CategoryRoutesContext } from "../contexts/CategoryRoutesContext";
 import Business from "../pages/Business/Business";
 import { fetchData } from "../utils/fetchData";
 
-import headingImg from "../assets/images/heading/business_heading_collaborative.jpg";
-
 function BusinessLayout() {
   const category = useContext(CategoryRoutesContext);
   const navigate = useNavigate();
@@ -48,23 +46,25 @@ function BusinessLayout() {
   return (
     <div className="BusinessLayout">
       <div className="container">
-        <PageHeading
-          title={routes.label}
-          img={currentPath}
-          backgroundImage={headingImg}
-        />
-        <div className="parent-tab">
-          {routes.items.map((route) => (
-            <button
-              key={route.path}
-              className={`parent-tab__item ${
-                currentPath === route.path ? "active" : ""
-              }`}
-              onClick={() => handleTabChange(currentCategory, route.path)}
-            >
-              {route.label}
-            </button>
-          ))}
+        <PageHeading title={routes.label} currentPath={currentPath} />
+        <div className="overflow_hidden">
+          <div
+            className="parent-tab"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            {routes.items.map((route) => (
+              <button
+                key={route.path}
+                className={`parent-tab__item ${
+                  currentPath === route.path ? "active" : ""
+                }`}
+                onClick={() => handleTabChange(currentCategory, route.path)}
+              >
+                {route.label}
+              </button>
+            ))}
+          </div>
         </div>
         {console.log(productData[currentPath])}
         <Business

@@ -2,17 +2,11 @@ import React, { useContext, useEffect, useRef } from "react";
 import styles from "./BusinessSection.module.scss";
 import { CategoryRoutesContext } from "../../../contexts/CategoryRoutesContext";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function BusinessSection() {
   const category = useContext(CategoryRoutesContext);
   const routes = category[0].sub;
   const gsapContainerRef = useRef(null);
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <section className={styles.section}>

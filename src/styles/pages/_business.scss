@@ -5,10 +5,6 @@
   .child-tab {
     display: flex;
     overflow-x: auto;
-
-    &__item {
-      padding: 8px 12px;
-    }
   }
 
   .parent-tab {
@@ -28,6 +24,7 @@
     &__item {
       white-space: nowrap;
       border-radius: $radius-md;
+      padding: 8px 12px;
 
       transition: all 0.3s;
 
@@ -104,6 +101,11 @@
               width: 80%;
             }
           }
+
+          .child-tab__text {
+            display: block;
+            padding: 8px 12px;
+          }
         }
       }
 
@@ -120,7 +122,7 @@
 
         &__button {
           border: 1px solid $color-border;
-          border-radius: $radius-card;
+          border-radius: $radius-md;
           padding: 20px 28px;
           transition: all 0.3s ease;
 

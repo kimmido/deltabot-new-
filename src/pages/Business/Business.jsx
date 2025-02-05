@@ -1,10 +1,46 @@
 import React, { useEffect, useState, useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(useGSAP);
 
 function Business({ currentPath, productData = [] }) {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [specOpen, setSpecOpen] = useState(null);
 
   const itemsRef = useRef(null);
+  const gsapContainerRef = useRef(null);
+
+  useGSAP(
+    () => {
+      gsap.fromTo(
+        ".child-tab__text",
+        {
+          y: 50,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          ease: "sine.out",
+        }
+      );
+      gsap.fromTo(
+        ".product-scroll",
+        {
+          y: 100,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "sine.out",
+        }
+      );
+    },
+    { dependencies: [currentPath, productData], scope: gsapContainerRef }
+  );
 
   function scrollTo(el) {
     const map = getMap();
@@ -34,24 +70,27 @@ function Business({ currentPath, productData = [] }) {
 
   return (
     <div className="Business">
-      <div className="flex-container">
+      <div className="flex-container" ref={gsapContainerRef}>
         <div className="child-tab">
           {productData.map((data, idx) => (
             <button
               key={data.title}
-              className={`child-tab__item ${
-                currentIdx === idx ? "active" : ""
-              }`}
+              className={`child-tab__item overflow_hidden
+                 ${currentIdx === idx ? "active" : ""}`}
               onClick={() => {
                 setCurrentIdx(idx);
                 setSpecOpen(null);
               }}
             >
-              {data.title}
+              <span className="child-tab__text">{data.title}</span>
             </button>
           ))}
         </div>
-        <div className="product-scroll">
+        <div
+          className="product-scroll"
+          // data-aos="fade-up"
+          // data-aos-duration="1000"
+        >
           {productData[currentIdx] &&
             productData[currentIdx].items.map((item, idx) => (
               <button
