@@ -10,10 +10,10 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
 
-import main_slide1 from "../../../assets/images/main_slide(1).jpg";
-import main_slide2 from "../../../assets/images/main_slide(2).jpg";
-import main_slide3 from "../../../assets/images/main_slide(3).jpg";
-import main_slide4 from "../../../assets/images/main_slide(4).jpg";
+import main_slide1 from "../../../assets/images/home/main_slide(1).jpg";
+import main_slide2 from "../../../assets/images/home/main_slide(2).jpg";
+import main_slide3 from "../../../assets/images/home/main_slide(3).jpg";
+import main_slide4 from "../../../assets/images/home/main_slide(4).jpg";
 
 function Slide() {
   const images = [

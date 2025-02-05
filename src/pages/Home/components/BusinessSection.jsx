@@ -15,10 +15,11 @@ function BusinessSection() {
         <ul className={styles.category__list} ref={gsapContainerRef}>
           {routes.map((route) => (
             <li
+              key={route.label}
+              className={`trigger ${styles.category__item}`}
               data-aos="fade-up"
               data-aos-anchor-placement="top-center"
-              className={`trigger ${styles.category__item}`}
-              key={route.label}
+              data-aos-duration="1000"
             >
               <h5 className={styles.category__title}>{route.label}</h5>
               <ul className={styles.category__sub__list}>

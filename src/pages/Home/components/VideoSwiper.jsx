@@ -20,7 +20,12 @@ function VideoSwiper() {
     <section className="VideoSwiper">
       <div className="container">
         <h2 className="section_title">Our Video</h2>
-        <div className="flex-box">
+        <div
+          className="flex-box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-duration="9000"
+        >
           <Swiper
             className="video__swiper"
             spaceBetween={0}
