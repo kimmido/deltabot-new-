@@ -10,36 +10,37 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
 
-import main_slide1 from "../../../assets/images/home/main_slide(1).jpg";
-import main_slide2 from "../../../assets/images/home/main_slide(2).jpg";
-import main_slide3 from "../../../assets/images/home/main_slide(3).jpg";
-import main_slide4 from "../../../assets/images/home/main_slide(4).jpg";
+// import main_slide1 from "../../../assets/images/home/main_slide(1).jpg";
+// import main_slide2 from "../../../assets/images/home/main_slide(2).jpg";
+// import main_slide3 from "../../../assets/images/home/main_slide(3).jpg";
+// import main_slide4 from "../../../assets/images/home/main_slide(4).jpg";
 
 function BannerSwiper() {
+  // const slide = [main_slide1, main_slide2, main_slide3, main_slide4];
   const slideData = [
     {
-      src: main_slide1,
+      // src: main_slide1,
       alt: "메인배너1",
-      text1: "Recycling robot system",
-      text2: "& Automation",
+      text1: "자동화",
+      text2: "",
     },
     {
-      src: main_slide2,
+      // src: main_slide2,
       alt: "메인배너2",
-      text1: "Recycling robot system",
-      text2: "& Automation",
+      text1: "재활용",
+      text2: "",
     },
     {
-      src: main_slide3,
+      // src: main_slide3,
       alt: "메인배너3",
-      text1: "Recycling robot system",
-      text2: "& Automation",
+      text1: "의료",
+      text2: "",
     },
     {
-      src: main_slide4,
+      // src: main_slide4,
       alt: "메인배너4",
-      text1: "Recycling robot system",
-      text2: "& Automation",
+      text1: "IT",
+      text2: "",
     },
   ];
 
@@ -83,13 +84,15 @@ function BannerSwiper() {
         spaceBetween={0}
         slidesPerView={1}
       >
-        {slideData.map((item) => (
+        {slideData.map((item, idx) => (
           <SwiperSlide key={item.alt}>
-            <strong className="slide__text">
-              {item.text1}
-              <br />
-              {item.text2}
-            </strong>
+            <div className={`slide slide--${idx}`}>
+              <strong className="slide__text">
+                {item.text1}
+                <br />
+                {item.text2}
+              </strong>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

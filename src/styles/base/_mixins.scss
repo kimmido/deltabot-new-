@@ -19,6 +19,9 @@ $breakpoints: (
   }
 }
 
+@mixin changeColorTheme($color: blue) {
+}
+
 @mixin pseudoDefault($color: #000) {
   position: absolute;
   left: 0;
@@ -38,7 +41,7 @@ $breakpoints: (
   height: 100vh;
 }
 
-// ==== hover시 밑줄"
+// ==== hover시 밑줄 ====
 @mixin hover-active-underline(
   $color: #000,
   $underline-width: 1px,
