@@ -4,7 +4,7 @@
 .section {
   margin-top: $spacing-layout-sm;
 
-  @include respondTo(md) {
+  @include respondTo(lg) {
     margin-top: $spacing-layout-lg;
     padding: 40px 0;
   }
@@ -12,68 +12,98 @@
   ul.category__list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: $gutter-sm;
 
-    @include respondTo(md) {
-      flex-direction: row;
-      gap: $gutter-lg;
+    @include respondTo(sm) {
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    @include respondTo(lg) {
+      flex-flow: row nowrap;
+      gap: 10px;
     }
 
     li.category__item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 36px;
       padding: 32px;
       border-radius: $radius-card;
       background-size: cover;
       background-position: left;
       background-repeat: no-repeat;
 
-      transition: all 0.3s;
+      transition: flex 0.3s;
 
       &:nth-child(1) {
-        background-image: $overay-white-350,
-          url("@assets/images/home/business_section(1).jpg");
+        background-image: url("@assets/images/home/business_section(1).jpg");
       }
       &:nth-child(2) {
-        background-image: $overay-white-350,
-          url("@assets/images/home/business_section(2).jpg");
+        background-image: url("@assets/images/home/business_section(2).jpg");
       }
       &:nth-child(3) {
-        background-image: $overay-white-350,
-          url("@assets/images/home/business_section(3).jpg");
+        background-image: url("@assets/images/home/business_section(3).jpg");
       }
       &:nth-child(4) {
-        background-image: $overay-white-350,
-          url("@assets/images/home/business_section(4).jpg");
+        background-image: url("@assets/images/home/business_section(4).jpg");
+      }
+      &:nth-child(5) {
+        background-image: url("@assets/images/home/business_section(4).jpg");
+      }
+
+      @include respondTo(sm) {
+        flex: 1 1;
+        background-position: left top;
       }
 
       @include respondTo(md) {
-        flex: 1;
+        padding: 32px 34px 34px;
+      }
+
+      @include respondTo(lg) {
         height: 600px;
-        padding: 42px 42px 56px;
+        padding: 38px 34px 56px;
 
         &:hover {
-          flex: 2.2;
+          flex: 2.4 1;
+
+          &::before {
+            background-color: transparent;
+          }
 
           ul.category__sub__list {
-            // display: flex;
             opacity: 1;
 
             .category__sub__link {
-              width: 240px;
+              width: 80%;
             }
           }
         }
       }
 
+      &::before {
+        @include pseudoDefault(#ffffff40);
+        border-radius: $radius-card;
+        z-index: -1;
+        transition: background-color 0.3s;
+      }
+
       .category__title {
+        width: 216px;
         color: #fff;
         font-weight: 800;
-        margin-bottom: 32px;
         font-size: $font-size-con-title-sm;
 
-        @include respondTo(md) {
-          margin-bottom: 0;
-          font-size: $font-size-con-title-lg;
+        @include respondTo(lg) {
+          width: min-content;
+          font-size: 2.8rem;
+        }
+
+        @include respondTo(xl) {
+          font-size: $font-size-con-title-md;
         }
       }
 
@@ -82,10 +112,10 @@
         flex-direction: column;
         justify-content: end;
         gap: 4px;
-        height: calc(100% - $font-size-con-title-lg);
+        // height: calc(100% - $font-size-con-title-md);
         transition: opacity 0.3s;
 
-        @include respondTo(md) {
+        @include respondTo(lg) {
           opacity: 0;
           gap: 8px;
         }
@@ -99,11 +129,11 @@
           white-space: nowrap;
           transition: width 0.3s;
 
-          @include respondTo(sm) {
-            width: 240px;
+          @include respondTo(md) {
+            width: 226px;
           }
 
-          @include respondTo(md) {
+          @include respondTo(lg) {
             padding: 14px 16px;
             overflow: hidden;
             width: 100px;

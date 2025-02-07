@@ -6,15 +6,15 @@ header {
   height: $header-sm;
   display: flex;
   align-items: center;
-  backdrop-filter: blur(4px);
-  background-color: #ffffff50;
+  backdrop-filter: blur(6px);
+  background-color: #f1f1f170;
 
   transition: all 0.3s;
 
   z-index: $z-index-header;
 
   &:hover {
-    background-color: #ffffff;
+    background-color: #f1f1f1;
   }
 
   @include respondTo(md) {

@@ -8,28 +8,37 @@ export const category = [
     },
     sub: [
       {
-        label: "자동화",
+        label: "Robot automation",
         path: "automation",
         items: [
           { path: "collaborative", label: "협업로봇" },
           { path: "scara", label: "스카라" },
           { path: "cobot", label: "코봇" },
           { path: "deltarobot", label: "델타로봇" },
-          { path: "machine-vision", label: "머신비전" },
-          { path: "thermal-camera", label: "열화상 카메라" },
+          { path: "case-paker", label: "Case Paker" },
         ],
       },
       {
-        label: "재활용",
-        path: "recycling",
+        label: "Vision system",
+        path: "automation",
         items: [
-          { path: "system", label: "재활용시스템" },
+          { path: "machine-vision", label: "머신비전 카메라" },
+          { path: "thermal-camera", label: "열화상 카메라" },
           { path: "spectral-camera", label: "분광카메라" },
           { path: "illumination", label: "조명" },
+          { path: "vision-controller", label: "비전 컨트롤러" },
         ],
       },
       {
-        label: "의료",
+        label: "recycling",
+        path: "recycling",
+        items: [
+          { path: "single-robot", label: "Single Robot System" },
+          { path: "tandem-Robot-system", label: "Tandem Robot System" },
+        ],
+      },
+      {
+        label: "Medical",
         path: "medical",
         items: [
           { path: "pcr", label: "PCR장비" },
@@ -41,10 +50,10 @@ export const category = [
         path: "it",
         items: [
           { path: "gpu-server", label: "GPU서버" },
-          { path: "workstations", label: "Workstations" },
-          { path: "rack-mount", label: "Rack Mount Systems" },
-          { path: "military", label: "Military Systems" },
-          { path: "transportation", label: "Transportation Computers" },
+          { path: "workstations", label: "워크스테이션" },
+          { path: "rack-mount", label: "랙 마운트 시스템" },
+          { path: "military", label: "군사 시스템" },
+          { path: "transportation", label: "운송 컴퓨터" },
         ],
       },
     ],

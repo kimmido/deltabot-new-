@@ -18,7 +18,7 @@ function BusinessSection() {
               key={route.label}
               className={`trigger ${styles.category__item}`}
               data-aos="fade-up"
-              data-aos-anchor-placement="top-center"
+              data-aos-anchor-placement="center-bottom"
               data-aos-duration="1000"
             >
               <h5 className={styles.category__title}>{route.label}</h5>

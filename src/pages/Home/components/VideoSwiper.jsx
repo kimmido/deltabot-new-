@@ -23,7 +23,7 @@ function VideoSwiper() {
         <div
           className="flex-box"
           data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
+          data-aos-anchor-placement="center-bottom"
           data-aos-duration="9000"
         >
           <Swiper
