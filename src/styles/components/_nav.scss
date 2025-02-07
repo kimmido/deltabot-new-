@@ -1,9 +1,5 @@
 // === nav.gnb ===
 nav.gnb {
-  $FONT_SIZE_SM: 17px;
-  $FONT_SIZE_MD: 19px;
-  $FONT_SIZE_LG: 25px;
-
   @mixin HOVER($target) {
     @if $target == "link" {
       position: relative;
@@ -24,7 +20,7 @@ nav.gnb {
   justify-content: flex-end;
 
   @include respondTo(md) {
-    justify-content: center;
+    // justify-content: center;
   }
 
   // === pc ===
@@ -69,11 +65,13 @@ nav.gnb {
         transition: all 0.3s;
 
         &:hover {
-          @include HOVER("link");
+          @include hover-active-underline($color-active)
+            // @include HOVER("link");
+;
         }
 
         .title {
-          font-size: $FONT_SIZE_MD;
+          font-size: $font-size-lg;
         }
       }
 
@@ -100,7 +98,7 @@ nav.gnb {
 
             .sub__title {
               font-weight: 500;
-              font-size: $FONT_SIZE_MD;
+              font-size: $font-size-lg;
             }
           }
         }
@@ -138,7 +136,7 @@ nav.gnb {
         margin-bottom: 12px;
 
         .mobile__link {
-          font-size: $FONT_SIZE_LG;
+          font-size: $font-size-xl;
           padding: 12px 15px;
           width: 100%;
           color: $color-active;
@@ -171,7 +169,7 @@ nav.gnb {
             .sub__title {
               position: relative;
               padding: 8px 20px;
-              font-size: $FONT_SIZE_MD;
+              font-size: $font-size-lg;
               font-weight: 500;
             }
           }

@@ -4,12 +4,12 @@ export const category = [
   {
     main: {
       label: "사업소개",
-      path: "automation",
+      path: "robot-automation",
     },
     sub: [
       {
         label: "Robot automation",
-        path: "automation",
+        path: "robot-automation",
         items: [
           { path: "collaborative", label: "협업로봇" },
           { path: "scara", label: "스카라" },
@@ -20,7 +20,7 @@ export const category = [
       },
       {
         label: "Vision system",
-        path: "automation",
+        path: "vision-system",
         items: [
           { path: "machine-vision", label: "머신비전 카메라" },
           { path: "thermal-camera", label: "열화상 카메라" },
@@ -30,11 +30,11 @@ export const category = [
         ],
       },
       {
-        label: "recycling",
-        path: "recycling",
+        label: "Recycling system",
+        path: "recycling-system",
         items: [
           { path: "single-robot", label: "Single Robot System" },
-          { path: "tandem-Robot-system", label: "Tandem Robot System" },
+          { path: "tandem-Robot", label: "Tandem Robot System" },
         ],
       },
       {
@@ -57,6 +57,22 @@ export const category = [
         ],
       },
     ],
+  },
+  {
+    main: {
+      label: "솔루션",
+      path: "automation",
+      sub: [
+        {
+          label: "Automation",
+          path: "automation",
+        },
+        {
+          label: "Recycling",
+          path: "recycling",
+        },
+      ],
+    },
   },
   {
     main: {

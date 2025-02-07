@@ -25,21 +25,28 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
 
-            <Route path="automation">
+            <Route path="robot-automation">
               <Route index element={<Navigate to="collaborative" replace />} />
               <Route path="collaborative" element={<BusinessLayout />} />
               <Route path="scara" element={<BusinessLayout />} />
               <Route path="cobot" element={<BusinessLayout />} />
               <Route path="deltarobot" element={<BusinessLayout />} />
-              <Route path="machine-vision" element={<BusinessLayout />} />
-              <Route path="thermal-camera" element={<BusinessLayout />} />
+              <Route path="case-paker" element={<BusinessLayout />} />
             </Route>
 
-            <Route path="recycling">
-              <Route index element={<Navigate to="system" replace />} />
-              <Route path="system" element={<BusinessLayout />} />
+            <Route path="vision-system">
+              <Route index element={<Navigate to="machine-vision" replace />} />
+              <Route path="machine-vision" element={<BusinessLayout />} />
+              <Route path="thermal-camera" element={<BusinessLayout />} />
               <Route path="spectral-camera" element={<BusinessLayout />} />
               <Route path="illumination" element={<BusinessLayout />} />
+              <Route path="vision-controller" element={<BusinessLayout />} />
+            </Route>
+
+            <Route path="recycling-system">
+              <Route index element={<Navigate to="single-robot" replace />} />
+              <Route path="single-robot" element={<BusinessLayout />} />
+              <Route path="tandem-robot" element={<BusinessLayout />} />
             </Route>
 
             <Route path="medical">
@@ -55,6 +62,12 @@ function App() {
               <Route path="rack-mount" element={<BusinessLayout />} />
               <Route path="military" element={<BusinessLayout />} />
               <Route path="transportation" element={<BusinessLayout />} />
+            </Route>
+
+            <Route path="solution">
+              <Route index element={<Navigate to="automation" replace />} />
+              <Route path="automation" element={<BusinessLayout />} />
+              <Route path="recycling" element={<BusinessLayout />} />
             </Route>
           </Route>
         </Routes>

@@ -3,8 +3,10 @@
 // 중단점 - $breakpoints
 $breakpoints: (
   xs: 481px,
+  // tablet
   sm: 769px,
   md: 1025px,
+  // pc
   lg: 1281px,
   xl: 1440px,
 );
@@ -17,9 +19,6 @@ $breakpoints: (
   } @else {
     @error "Breakpoint '#{$breakpoint}' does not exist in the \$breakpoints map.";
   }
-}
-
-@mixin changeColorTheme($color: blue) {
 }
 
 @mixin pseudoDefault($color: #000) {

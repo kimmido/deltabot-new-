@@ -6,20 +6,19 @@ import { Link } from "react-router-dom";
 function BusinessSection() {
   const category = useContext(CategoryRoutesContext);
   const routes = category[0].sub;
-  const gsapContainerRef = useRef(null);
 
   return (
     <section className={styles.section}>
       <div className="container">
         <h2 className="section_title">사업소개</h2>
-        <ul className={styles.category__list} ref={gsapContainerRef}>
+        <ul className={styles.category__list}>
           {routes.map((route) => (
             <li
               key={route.label}
               className={`trigger ${styles.category__item}`}
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
-              data-aos-duration="1000"
+              data-aos-duration="9000"
             >
               <h5 className={styles.category__title}>{route.label}</h5>
               <ul className={styles.category__sub__list}>
