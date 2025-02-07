@@ -10,6 +10,7 @@ import BusinessLayout from "./layouts/BusinessLayout";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import ScrollToTop from "./utils/scrollToTop";
+import SolutionLayout from "./layouts/SolutionLayout";
 
 function App() {
   useEffect(() => {
@@ -23,7 +24,6 @@ function App() {
         <Routes>
           <Route path="/" element={<DefaultLayout />}>
             <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
 
             <Route path="robot-automation">
               <Route index element={<Navigate to="collaborative" replace />} />
@@ -66,9 +66,10 @@ function App() {
 
             <Route path="solution">
               <Route index element={<Navigate to="automation" replace />} />
-              <Route path="automation" element={<BusinessLayout />} />
-              <Route path="recycling" element={<BusinessLayout />} />
+              <Route path="automation" element={<SolutionLayout />} />
+              <Route path="recycling" element={<SolutionLayout />} />
             </Route>
+            <Route path="about" element={<About />} />
           </Route>
         </Routes>
       </BrowserRouter>

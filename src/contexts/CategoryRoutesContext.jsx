@@ -61,7 +61,7 @@ export const category = [
   {
     main: {
       label: "솔루션",
-      path: "automation",
+      path: "solution",
       sub: [
         {
           label: "Automation",
