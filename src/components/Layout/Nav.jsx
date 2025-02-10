@@ -29,7 +29,8 @@ const MainLink = ({
 
 const SubLink = ({
   className,
-  sub,
+  path,
+  label,
   onClick = () => {
     return;
   },
@@ -40,12 +41,12 @@ const SubLink = ({
   return (
     <li className={className}>
       <Link
-        to={sub.path}
+        to={path}
         className="sub__link"
         onClick={onClick}
         onMouseOver={mouseOver}
       >
-        <h5 className="sub__title">{sub.label}</h5>
+        <h5 className="sub__title">{label}</h5>
       </Link>
     </li>
   );
@@ -99,7 +100,8 @@ const Nav = () => {
                       <SubLink
                         key={sub.label}
                         className="pc__sub__item"
-                        sub={sub}
+                        path={sub.path}
+                        label={sub.label}
                         onClick={() => setPcMenuIdx(null)}
                       />
                     ))}
@@ -133,7 +135,8 @@ const Nav = () => {
                     <SubLink
                       key={sub.label}
                       className="mobile__sub__item"
-                      sub={sub}
+                      path={sub.path}
+                      label={sub.label}
                       onClick={toggleMobileMenu}
                     />
                   ))}

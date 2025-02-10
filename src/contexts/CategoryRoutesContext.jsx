@@ -12,6 +12,7 @@ export const category = [
         path: "robot-automation",
         items: [
           { path: "collaborative", label: "협업로봇" },
+          { path: "vertical-articulated-robot", label: "수직다관절 로봇" },
           { path: "scara", label: "스카라" },
           { path: "cobot", label: "코봇" },
           { path: "deltarobot", label: "델타로봇" },
@@ -46,7 +47,7 @@ export const category = [
         ],
       },
       {
-        label: "IT",
+        label: "IT-서비스",
         path: "it",
         items: [
           { path: "gpu-server", label: "GPU서버" },
@@ -61,16 +62,16 @@ export const category = [
   {
     main: {
       label: "솔루션",
-      path: "solution",
+      path: "automation-solution",
     },
     sub: [
       {
         label: "Automation",
-        path: "automation",
+        path: "automation-solution",
       },
       {
         label: "Recycling",
-        path: "recycling",
+        path: "recycling-solution",
       },
     ],
   },

@@ -28,6 +28,10 @@ function App() {
             <Route path="robot-automation">
               <Route index element={<Navigate to="collaborative" replace />} />
               <Route path="collaborative" element={<BusinessLayout />} />
+              <Route
+                path="vertical-articulated-robot"
+                element={<BusinessLayout />}
+              />
               <Route path="scara" element={<BusinessLayout />} />
               <Route path="cobot" element={<BusinessLayout />} />
               <Route path="deltarobot" element={<BusinessLayout />} />
@@ -64,11 +68,9 @@ function App() {
               <Route path="transportation" element={<BusinessLayout />} />
             </Route>
 
-            <Route path="solution">
-              <Route index element={<Navigate to="automation" replace />} />
-              <Route path="automation" element={<SolutionLayout />} />
-              <Route path="recycling" element={<SolutionLayout />} />
-            </Route>
+            <Route index element={<Navigate to="automation" replace />} />
+            <Route path="automation-solution" element={<SolutionLayout />} />
+            <Route path="recycling-solution" element={<SolutionLayout />} />
             <Route path="about" element={<About />} />
           </Route>
         </Routes>
