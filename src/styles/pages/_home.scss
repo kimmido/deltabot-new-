@@ -1,7 +1,8 @@
 .BannerSwiper {
   $BUTTON_ICON: 15px;
-  $SWIER_PADDING_SM: 16px;
-  $SWIER_PADDING_LG: 44px;
+  $SWIPER_PADDING_SM: 16px;
+  $SWIPER_PADDING_LG: 44px;
+  $SWIPER_BUTTON: 40px;
 
   padding: 2px 8px 16px;
   height: calc(460px + 18px);
@@ -54,16 +55,16 @@
 
       .slide__text {
         position: absolute;
-        left: $SWIER_PADDING_SM;
-        bottom: $SWIER_PADDING_SM;
+        left: calc($SWIPER_PADDING_SM + 4px);
+        bottom: 40px;
         color: #fff;
         font-size: $font-size-display-sm;
         text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.5);
 
         @include respondTo(md) {
-          left: $SWIER_PADDING_LG;
-          // bottom: $SWIER_PADDING_LG;
-          bottom: 110px;
+          left: calc($SWIPER_PADDING_LG + $SWIPER_BUTTON);
+          // bottom: $SWIPER_PADDING_LG;
+          bottom: 80px;
           font-size: $font-size-display-lg;
           line-height: 70px;
         }
@@ -72,7 +73,7 @@
 
     .swiper-pagination-fraction {
       bottom: 80px;
-      left: $SWIER_PADDING_SM;
+      left: $SWIPER_PADDING_SM;
       width: auto;
       padding: 8px 20px;
       color: #fff;
@@ -81,8 +82,9 @@
       background-color: rgba(0, 0, 0, 0.5);
 
       @include respondTo(md) {
-        bottom: 20rem;
-        left: $SWIER_PADDING_LG;
+        bottom: 17rem;
+        left: $SWIPER_PADDING_LG;
+        left: calc($SWIPER_PADDING_LG + $SWIPER_BUTTON);
         font-size: 15px;
       }
     }
@@ -90,8 +92,8 @@
     .swiper-button {
       &-next,
       &-prev {
-        width: 40px;
-        height: 40px;
+        width: $SWIPER_BUTTON;
+        height: $SWIPER_BUTTON;
         color: #fff;
         background: rgba(0, 0, 0, 0.5);
         border-radius: 50%;

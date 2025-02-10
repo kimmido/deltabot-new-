@@ -18,28 +18,20 @@ import "swiper/scss/navigation";
 function BannerSwiper() {
   const slideData = [
     {
-      // src: main_slide1,
       alt: "메인배너1",
       text1: "자동화",
-      text2: "",
     },
     {
-      // src: main_slide2,
       alt: "메인배너2",
       text1: "재활용",
-      text2: "",
     },
     {
-      // src: main_slide3,
       alt: "메인배너3",
       text1: "의료",
-      text2: "",
     },
     {
-      // src: main_slide4,
       alt: "메인배너4",
       text1: "IT",
-      text2: "",
     },
   ];
 
