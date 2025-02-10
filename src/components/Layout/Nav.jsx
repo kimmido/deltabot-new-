@@ -92,6 +92,7 @@ const Nav = () => {
                     key={category.main.label}
                     className="pc__link"
                     main={category.main}
+                    onClick={() => setPcMenuIdx(null)}
                   />
                   <ul>
                     {category.sub.map((sub) => (

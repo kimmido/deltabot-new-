@@ -75,7 +75,7 @@ nav.gnb {
         .pc__sub__item {
           .sub__link {
             padding: 10px 0;
-            @include hover-active-underline(#ff2929);
+            @include hover-active-underline($color-red);
             color: $color-gray-300;
 
             .sub__title {
