@@ -4,18 +4,25 @@ import iconClose from "../../assets/images/icon/icon_close.svg";
 import { Link } from "react-router-dom";
 import { CategoryRoutesContext } from "../../contexts/CategoryRoutesContext";
 import gsap from "gsap";
+
 const MainLink = ({
   className,
   main,
-  toggleMobileMenu = () => {
+  onClick = () => {
+    return;
+  },
+  mouseOver = () => {
     return;
   },
 }) => {
   return (
-    <Link to={`/${main.path}`} className={className} onClick={toggleMobileMenu}>
-      <h4 className="title" onMouseOver={(e) => console.log(e.target)}>
-        {main.label}
-      </h4>
+    <Link
+      to={`/${main.path}`}
+      className={className}
+      onClick={onClick}
+      onMouseOver={mouseOver}
+    >
+      <h4 className="title">{main.label}</h4>
     </Link>
   );
 };
@@ -23,13 +30,21 @@ const MainLink = ({
 const SubLink = ({
   className,
   sub,
-  toggleMobileMenu = () => {
+  onClick = () => {
+    return;
+  },
+  mouseOver = () => {
     return;
   },
 }) => {
   return (
     <li className={className}>
-      <Link to={sub.path} className="sub__link" onClick={toggleMobileMenu}>
+      <Link
+        to={sub.path}
+        className="sub__link"
+        onClick={onClick}
+        onMouseOver={mouseOver}
+      >
         <h5 className="sub__title">{sub.label}</h5>
       </Link>
     </li>
@@ -38,19 +53,9 @@ const SubLink = ({
 
 const Nav = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isPcMenuOpen, setPcMenuOpen] = useState(false);
+  const [isPcMenuIdx, setPcMenuIdx] = useState(null);
   const mobileMenu = useRef(null);
   const category = useContext(CategoryRoutesContext);
-
-  const handleMouseEnter = (category) => {
-    if (category.sub && category.sub.length > 0) {
-      setPcMenuOpen(true);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    setPcMenuOpen(false);
-  };
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -62,32 +67,46 @@ const Nav = () => {
   return (
     <nav className="gnb">
       {/* PC 메뉴 */}
-      <div className="pc">
-        {category.map((category) => (
-          <div
-            key={category.main.label}
-            className={`pc__item ${isPcMenuOpen ? "open" : ""}`}
-            onMouseOver={(e) => handleMouseEnter(category)}
-            onMouseLeave={(e) => handleMouseLeave()}
-          >
-            <MainLink className="pc__link" main={category.main} />
-            {category.sub && (
-              <ul
-                className="pc__sub__list"
-                onMouseOver={(e) => handleMouseEnter(category)}
-                onMouseLeave={(e) => handleMouseLeave()}
-              >
-                {category.sub.map((sub) => (
-                  <SubLink
-                    key={sub.label}
-                    className="pc__sub__item"
-                    sub={sub}
+      <div className="pc" onMouseLeave={() => setPcMenuIdx(null)}>
+        <div className="pc__link-wrap">
+          {category.map((category, idx) => (
+            <MainLink
+              key={category.main.label}
+              className={`pc__link ${isPcMenuIdx == idx ? "active" : ""}`}
+              main={category.main}
+              mouseOver={() => setPcMenuIdx(idx)}
+            />
+          ))}
+        </div>
+        <ul className={`pc__sub-wrap ${isPcMenuIdx == null ? "" : "open"}`}>
+          {category.map(
+            (category, idx) =>
+              category.sub && (
+                <li
+                  key={category.main.label}
+                  className={`pc__sub__list ${
+                    isPcMenuIdx == idx ? "active" : ""
+                  }`}
+                >
+                  <MainLink
+                    key={category.main.label}
+                    className="pc__link"
+                    main={category.main}
                   />
-                ))}
-              </ul>
-            )}
-          </div>
-        ))}
+                  <ul>
+                    {category.sub.map((sub) => (
+                      <SubLink
+                        key={sub.label}
+                        className="pc__sub__item"
+                        sub={sub}
+                        onClick={() => setPcMenuIdx(null)}
+                      />
+                    ))}
+                  </ul>
+                </li>
+              )
+          )}
+        </ul>
       </div>
 
       {/* 모바일 메뉴 */}
@@ -105,7 +124,7 @@ const Nav = () => {
               <MainLink
                 className="mobile__link"
                 main={category.main}
-                toggleMobileMenu={toggleMobileMenu}
+                onClick={toggleMobileMenu}
               />
               {category.sub && (
                 <ul className="mobile__sub__list">
@@ -114,7 +133,7 @@ const Nav = () => {
                       key={sub.label}
                       className="mobile__sub__item"
                       sub={sub}
-                      toggleMobileMenu={toggleMobileMenu}
+                      onClick={toggleMobileMenu}
                     />
                   ))}
                 </ul>

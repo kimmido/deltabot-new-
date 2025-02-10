@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header>
-      <div className="container">
+      <div className="header__container">
         <h1 className="logo">
           <Link to="/">
             <img src="/images/delta_logo1.png" alt="로고" />

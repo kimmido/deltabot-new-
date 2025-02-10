@@ -6,47 +6,48 @@ header {
   height: $header-sm;
   display: flex;
   align-items: center;
-  // backdrop-filter: blur(4px);
   background-color: #ffffff;
 
-  transition: all 0.3s;
-
   z-index: $z-index-header;
-
-  // &:hover {
-  //   background-color: #ffffff;
-  // }
 
   @include respondTo(md) {
     height: $header-md;
   }
 
-  h1.logo {
-    position: absolute;
-    left: $gutter-sm;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: $z-index-header;
+  .header__container {
+    position: relative;
+    width: 100%;
+    padding: 0 $gutter-sm;
 
     @include respondTo(md) {
-      left: $gutter-lg;
+      padding: 0 $gutter-lg;
     }
 
-    a {
-      width: 100%;
-      padding: 6px 4px 2px 0;
+    h1.logo {
+      position: absolute;
+      left: $gutter-sm;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: $z-index-header;
 
       @include respondTo(md) {
-        padding: 12px 6px 2px 0;
+        left: $gutter-lg;
       }
 
-      img {
-        width: 94px;
-        // height: 24px;
+      a {
+        width: 100%;
+        padding: 6px 4px 2px 0;
 
         @include respondTo(md) {
-          width: 148px;
-          // height: 38px;
+          padding: 12px 6px 2px 0;
+        }
+
+        img {
+          width: 94px;
+
+          @include respondTo(md) {
+            width: 148px;
+          }
         }
       }
     }

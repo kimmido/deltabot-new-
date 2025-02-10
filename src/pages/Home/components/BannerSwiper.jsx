@@ -16,7 +16,6 @@ import "swiper/scss/navigation";
 // import main_slide4 from "../../../assets/images/home/main_slide(4).jpg";
 
 function BannerSwiper() {
-  // const slide = [main_slide1, main_slide2, main_slide3, main_slide4];
   const slideData = [
     {
       // src: main_slide1,
@@ -49,7 +48,6 @@ function BannerSwiper() {
       duration: 0.8,
       yPercent: 110, // 시작 위치를 아래에서 시작
       scale: 0.5,
-      // opacity: 0,
       ease: "power2.out",
     });
 
@@ -58,7 +56,7 @@ function BannerSwiper() {
       scrollTrigger: {
         trigger: ".BannerSwiper",
         start: "top 80px", // 요소의 top이 viewport 중앙에 왔을 때
-        end: "bottom 50%",
+        end: "bottom 30%",
         scrub: 1, // 스크롤에 따라 부드럽게
         markers: false,
       },
