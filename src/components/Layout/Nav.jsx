@@ -86,7 +86,7 @@ const Nav = () => {
                 <li
                   key={category.main.label}
                   className={`pc__sub__list ${
-                    isPcMenuIdx == idx ? "active" : ""
+                    isPcMenuIdx == idx ? "active" : "inactive"
                   }`}
                 >
                   <MainLink
