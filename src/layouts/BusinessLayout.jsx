@@ -46,7 +46,11 @@ function BusinessLayout() {
   return (
     <div className="BusinessLayout">
       <div className="container">
-        <PageHeading title={routes.label} currentPath={currentPath} />
+        <PageHeading
+          title={routes.label}
+          currentPath={currentPath}
+          video={true}
+        />
         <div className="overflow_hidden">
           <div
             className="parent-tab"
@@ -66,7 +70,6 @@ function BusinessLayout() {
             ))}
           </div>
         </div>
-        {console.log(productData[currentPath])}
         <Business
           currentPath={currentPath}
           productData={productData[currentPath]}

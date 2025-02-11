@@ -35,7 +35,7 @@ export const category = [
         path: "recycling-system",
         items: [
           { path: "single-robot", label: "Single Robot System" },
-          { path: "tandem-Robot", label: "Tandem Robot System" },
+          { path: "tandem-robot", label: "Tandem Robot System" },
         ],
       },
       {

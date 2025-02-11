@@ -59,7 +59,7 @@
         bottom: 40px;
         color: #fff;
         font-size: $font-size-display-sm;
-        text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.5);
+        text-shadow: $text-shadow;
 
         @include respondTo(md) {
           left: calc($SWIPER_PADDING_LG + $SWIPER_BUTTON);

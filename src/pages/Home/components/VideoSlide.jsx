@@ -17,7 +17,12 @@ function VideoSlide({ video, isActive }) {
   }, [isActive]);
 
   return (
-    <video ref={videoRef} controls preload={isActive ? "metadata" : "none"}>
+    <video
+      ref={videoRef}
+      controls
+      playsInline
+      preload={isActive ? "metadata" : "none"}
+    >
       <source src={video.src} type="video/mp4" />
       브라우저가 video를 지원하지 않습니다.
     </video>
