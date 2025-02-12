@@ -360,20 +360,8 @@
         }
 
         .spec-container {
-          overflow: hidden;
-          max-height: 0;
-          text-align: center;
-
-          transition: all 0.8s;
-
-          &.open {
-            max-height: 10000px;
-          }
-
           p {
             margin: 0 auto;
-            max-width: 1240px;
-            text-align: left;
             font-size: $font-size-con-title-sm;
             font-weight: 600;
 
@@ -384,7 +372,6 @@
 
           img {
             margin-top: 12px;
-            max-width: fit-content;
 
             @include respondTo(md) {
               margin-top: 16px;

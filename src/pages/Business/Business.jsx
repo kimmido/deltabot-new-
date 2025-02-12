@@ -138,17 +138,15 @@ function Business({ currentPath, productData = [] }) {
                   </div>
                 </div>
               </div>
-              {/* {prodIdx === idx && ( */}
-              <div
-                className={`spec-container ${prodIdx === idx ? "open" : ""}`}
-              >
-                <p>SPECIFICATION</p>
-                <img
-                  src={`/images/product/${currentPath}/${item.code}_info.jpg`}
-                  alt={item.code}
-                />
-              </div>
-              {/* )} */}
+              {prodIdx === idx && (
+                <div className="spec-container">
+                  <p>SPECIFICATION</p>
+                  <img
+                    src={`/images/product/${currentPath}/${item.code}_info.svg`}
+                    alt={item.code}
+                  />
+                </div>
+              )}
             </div>
           ))}
       </div>
