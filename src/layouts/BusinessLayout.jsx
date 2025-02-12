@@ -46,11 +46,7 @@ function BusinessLayout() {
   return (
     <div className="BusinessLayout">
       <div className="container">
-        <PageHeading
-          title={routes.label}
-          currentPath={currentPath}
-          video={true}
-        />
+        <PageHeading currentPath={currentPath} video={true} />
         <div className="overflow_hidden">
           <div
             className="parent-tab"
