@@ -16,6 +16,24 @@
   }
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: $z-index-popup;
+}
+
+.radius-card-lg {
+  border-radius: $radius-card-lg;
+}
+
 .font-Thin {
   font-weight: 100;
 }

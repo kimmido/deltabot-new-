@@ -36,7 +36,7 @@ function BannerSwiper() {
   ];
 
   useGSAP(() => {
-    gsap.from(".home__swiper", {
+    gsap.from(".BannerSwiper__swiper", {
       duration: 0.8,
       yPercent: 110, // 시작 위치를 아래에서 시작
       scale: 0.5,

@@ -4,6 +4,7 @@ import BusinessSection from "./components/BusinessSection";
 import VideoSwiper from "./components/VideoSwiper";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import VideoSection from "./components/VideoSection";
 gsap.registerPlugin(useGSAP);
 
 const Home = () => {
@@ -37,7 +38,8 @@ const Home = () => {
         </div>
       </div>
       <BusinessSection />
-      <VideoSwiper />
+      <VideoSection />
+      {/* <VideoSwiper /> */}
     </div>
   );
 };

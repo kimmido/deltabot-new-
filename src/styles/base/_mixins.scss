@@ -21,6 +21,35 @@ $breakpoints: (
   }
 }
 
+@mixin flexBox(
+  $direction: row,
+  $gap: 0,
+  $align: stretch,
+  $justify: flex-start,
+  $wrap: nowrap
+) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin flexDirectionResponsive($m-direction, $pc-direction) {
+  display: flex;
+  flex-direction: $m-direction;
+
+  @include respondTo(md) {
+    flex-direction: $pc-direction;
+  }
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
 @mixin pseudoDefault($color: #000, $size: 100%) {
   position: absolute;
   left: 0;
@@ -38,6 +67,13 @@ $breakpoints: (
   top: 0;
   width: 100%;
   height: 100vh;
+}
+
+@mixin positionCenter($justify: flex-start, $align: stretch, $wrap: nowrap) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 // ==== hover시 밑줄 ====

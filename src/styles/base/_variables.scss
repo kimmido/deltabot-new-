@@ -11,7 +11,7 @@ $font-size-md: 1.7rem;
 $font-size-lg: 1.9rem;
 $font-size-xl: 2.5rem;
 
-$font-size-con-title-sm: 2.5rem;
+$font-size-con-title-sm: 2.2rem;
 $font-size-con-title-md: 3.2rem;
 $font-size-con-title-lg: 4rem;
 
@@ -37,7 +37,9 @@ $weight-black: 900;
 $radius-xs: 8px;
 $radius-md: 16px;
 $radius-lg: 30px;
-$radius-card: $radius-lg;
+$radius-xl: 30px;
+$radius-card: $radius-xl;
+$radius-card-lg: $radius-xl;
 
 // ========== Spacing ==========
 $spacing-sm: 8px;
@@ -51,7 +53,7 @@ $spacing-layout-sm: 40px;
 $spacing-layout-md: 64px;
 $spacing-layout-lg: 80px;
 
-$spacing-content-sm: 8px;
+$spacing-content-xs: 8px;
 $spacing-content-sm: 24px;
 $spacing-content-md: 32px;
 $spacing-content-lg: 64px;
