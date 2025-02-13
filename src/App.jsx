@@ -28,10 +28,7 @@ function App() {
             <Route path="robot-automation">
               <Route index element={<Navigate to="collaborative" replace />} />
               <Route path="collaborative" element={<BusinessLayout />} />
-              <Route
-                path="vertical-articulated-robot"
-                element={<BusinessLayout />}
-              />
+              <Route path="serial-robot" element={<BusinessLayout />} />
               <Route path="scara" element={<BusinessLayout />} />
               <Route path="cobot" element={<BusinessLayout />} />
               <Route path="deltarobot" element={<BusinessLayout />} />

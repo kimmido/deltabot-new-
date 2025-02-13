@@ -6,31 +6,40 @@ gsap.registerPlugin(useGSAP);
 function PageHeading({ currentPath, video = false }) {
   const backgroundRef = useRef(null);
   const titleRef = useRef(null);
-  const stitleRef = useRef(null);
   const [isVideoLoad, setVideoLoad] = useState(true);
+  const [isTitle, setTitle] = useState("");
 
-  // useGSAP(() => {
-  //   if (video) {
+  useGSAP(() => {
+    if (!isVideoLoad) {
+      gsap.fromTo(
+        backgroundRef.current,
+        {
+          scale: 1.08,
+        },
+        {
+          scale: 1,
+          duration: 6,
+          ease: "none",
+        }
+      );
+    }
+  }, [isVideoLoad]);
 
-  //   }
-  //   gsap.fromTo(
-  //     backgroundRef.current,
-  //     {
-  //       scale: 1.08,
-  //     },
-  //     {
-  //       scale: 1,
-  //       duration: 6,
-  //       ease: "none",
-  //     }
-  //   );
+  const formatWord = (word) => {
+    return word
+      .replace(/-/g, " ") // '-'를 ' '로 변경
+      .replace(/\b\w/g, (char) => char.toUpperCase()); // 각 단어의 첫 글자를 대문자로 변환
+  };
 
-  // }, [currentPath]);
+  useEffect(() => {
+    setVideoLoad(true);
+    setTitle(formatWord(currentPath));
+  }, [currentPath]);
 
   return (
     <div className="PageHeading">
       <div className="PageHeading__background">
-        {video ? (
+        {isVideoLoad ? (
           <video
             key={currentPath}
             muted
@@ -38,8 +47,8 @@ function PageHeading({ currentPath, video = false }) {
             autoPlay
             playsInline
             className="background-video"
-            onLoadedData={() => console.log("Video loaded!")}
-            onError={() => console.error("Video failed to load")}
+            onLoadedData={() => console.log("완료")}
+            onError={() => setVideoLoad(false)}
           >
             <source
               src={`/videos/heading/${currentPath}.mp4`}
@@ -58,12 +67,13 @@ function PageHeading({ currentPath, video = false }) {
       </div>
       <div className="overflow_hidden">
         <h2
+          key={isTitle}
           ref={titleRef}
           className="page_title"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          {currentPath}
+          {isTitle}
         </h2>
       </div>
       {/* <p>이미지 경로: @assets/imagse/page_heading_{img}.jpg</p> */}
