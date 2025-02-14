@@ -276,6 +276,422 @@
       ]
     }
   ],
+  "serial-robot": [
+    {
+      "title": "Handling Robot",
+      "items": [
+        {
+          "name": "ES06",
+          "code": "ES06",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EZ03",
+          "code": "EZ03",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MC10S",
+          "code": "MC10S",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MC12S",
+          "code": "MC12S",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MC20/MC10L",
+          "code": "MC20_MC10L",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MC35/50/70",
+          "code": "MC35_50_70",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MR20/20L",
+          "code": "MR20_20L",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MR35/50",
+          "code": "MR35_50",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MZ04/MZ04E",
+          "code": "MZ04_MZ04E",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MZ07",
+          "code": "MZ07",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MZ12",
+          "code": "MZ12",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ST210TP",
+          "code": "ST210TP",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Heavy Duty Robot",
+      "items": [
+        {
+          "name": "MC350/MC280L/MC470P",
+          "code": "MC350_280L_470P",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MC400L",
+          "code": "MC400L",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MC600",
+          "code": "MC600",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SC700",
+          "code": "SC700",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Palletizing Robot",
+      "items": [
+        {
+          "name": "LP130/180/210-01",
+          "code": "LP130_180_210-01",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "LP130F",
+          "code": "LP130F",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MC470P",
+          "code": "MC470P",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MC500P",
+          "code": "MC500P",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Arc Welding Robot",
+      "items": [
+        {
+          "name": "NB04/NB04L-02",
+          "code": "NB04_NB04L-02",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NV06/NV06L-02",
+          "code": "NV06_NV06L-02",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spot Welding Robot",
+      "items": [
+        {
+          "name": "SRA100/166/210/166L/120EL",
+          "code": "SRA100_166_210_166L_120EL",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SRA100B/100J",
+          "code": "SRA100B_100J",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SRA100H/SRA133HL",
+          "code": "SRA100H_SRA133HL",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SRA100HS/SRA100HB",
+          "code": "SRA100HS_SRA100HB",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SRA133H/SRA166H/SRA210H",
+          "code": "SRA133H_SRA166H_SRA210H",
+          "features": [ 
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SRA166/210-01A",
+          "code": "SRA166_210-01A",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cleanroom Robot",
+      "items": [
+        {
+          "name": "SC400LC",
+          "code": "SC400LC",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SJ80C-18D/24D",
+          "code": "SJ80C-18D_24D",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SJ120C-28D/28S",
+          "code": "SJ120C-28D_28S",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ST133CF/166CF/210CF-01",
+          "code": "ST133CF_166CF_210CF-01",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "scara": [
     {
       "title": "임시타이틀-ST",
