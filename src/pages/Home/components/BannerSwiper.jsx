@@ -19,15 +19,15 @@ function BannerSwiper() {
   const slideData = [
     {
       alt: "메인배너1",
-      text1: "자동화",
+      text1: "ROBOT AUTOMATION",
     },
     {
       alt: "메인배너2",
-      text1: "재활용",
+      text1: "RECYCLING SYSTEM",
     },
     {
       alt: "메인배너3",
-      text1: "의료",
+      text1: "MEDICAL",
     },
     {
       alt: "메인배너4",

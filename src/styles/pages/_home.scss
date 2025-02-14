@@ -167,65 +167,57 @@
       gap: 9rem;
     }
 
-    .content-box {
+    .VideoItem {
       @include respondTo(md) {
         @include flexBox(row, 4.8rem, center);
       }
 
       &:nth-child(even) {
         @include respondTo(md) {
-          .media-box {
+          .video-box {
             order: 2;
           }
         }
       }
 
-      .media-box,
-      .text-box {
-        @include respondTo(md) {
-          flex: 1;
-        }
-      }
-
-      .media-box {
-        background-color: darkblue;
-        border-radius: $radius-card;
+      .video-box {
         overflow: hidden;
+        border-radius: $radius-card;
         aspect-ratio: 16 / 9;
+        cursor: pointer;
 
-        &__poster {
+        &.mobile {
+          width: 100%;
+        }
+
+        &.pc {
+          width: 50%;
+        }
+
+        @include respondTo(md) {
           position: relative;
+        }
+
+        &.expanded {
+          cursor: auto;
+          // width: 80%;
+        }
+
+        video {
           height: 100%;
-          cursor: pointer;
+        }
+
+        .close-btn {
+          position: absolute;
+          right: 16px;
+          top: 16px;
+          @include square(3.2rem);
+          border-radius: 50%;
+          background-color: #ffffff;
 
           &:hover {
-            .poster {
-              transform: scale(1.1);
-            }
-          }
-
-          .poster {
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s;
-          }
-
-          svg {
-            @include square(8.2rem);
-            @include positionCenter();
-
-            @include respondTo(sm) {
-              @include square(10rem);
-            }
-          }
-        }
-
-        &__video {
-          height: 100%;
-          video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            color: #fff;
+            background-color: #ffffff70;
           }
         }
       }

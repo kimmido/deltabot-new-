@@ -40,6 +40,7 @@ const Home = () => {
       <BusinessSection />
       <VideoSection />
       {/* <VideoSwiper /> */}
+      {/* <VideoList /> */}
     </div>
   );
 };

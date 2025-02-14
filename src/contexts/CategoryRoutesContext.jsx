@@ -47,7 +47,7 @@ export const category = [
         ],
       },
       {
-        label: "IT-서비스",
+        label: "IT",
         path: "it",
         items: [
           { path: "gpu-server", label: "GPU서버" },
