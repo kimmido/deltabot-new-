@@ -12,7 +12,7 @@ export const category = [
         path: "robot-automation",
         items: [
           { path: "collaborative", label: "협업로봇" },
-          { path: "vertical-articulated-robot", label: "수직다관절 로봇" },
+          { path: "serial-robot", label: "수직다관절 로봇" },
           { path: "scara", label: "스카라" },
           { path: "cobot", label: "코봇" },
           { path: "deltarobot", label: "델타로봇" },
