@@ -430,8 +430,8 @@
       "title": "Heavy Duty Robot",
       "items": [
         {
-          "name": "ES06",
-          "code": "ES06",
+          "name": "MC350/MC280L/MC470P",
+          "code": "MC350_280L_470P",
           "features": [
             {
               "title": "null",
@@ -442,8 +442,32 @@
           ]
         },
         {
-          "name": "EZ03",
-          "code": "EZ03",
+          "name": "MC400L",
+          "code": "MC400L",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MC600",
+          "code": "MC600",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SC700",
+          "code": "SC700",
           "features": [
             {
               "title": "null",
@@ -459,8 +483,8 @@
       "title": "Palletizing Robot",
       "items": [
         {
-          "name": "ES06",
-          "code": "ES06",
+          "name": "LP130/180/210-01",
+          "code": "LP130_180_210-01",
           "features": [
             {
               "title": "null",
@@ -471,8 +495,32 @@
           ]
         },
         {
-          "name": "EZ03",
-          "code": "EZ03",
+          "name": "LP130F",
+          "code": "LP130F",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MC470P",
+          "code": "MC470P",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MC500P",
+          "code": "MC500P",
           "features": [
             {
               "title": "null",
@@ -488,8 +536,8 @@
       "title": "Arc Welding Robot",
       "items": [
         {
-          "name": "ES06",
-          "code": "ES06",
+          "name": "NB04/NB04L-02",
+          "code": "NB04_NB04L-02",
           "features": [
             {
               "title": "null",
@@ -500,8 +548,8 @@
           ]
         },
         {
-          "name": "EZ03",
-          "code": "EZ03",
+          "name": "NV06/NV06L-02",
+          "code": "NV06_NV06L-02",
           "features": [
             {
               "title": "null",
@@ -517,8 +565,8 @@
       "title": "Spot Welding Robot",
       "items": [
         {
-          "name": "ES06",
-          "code": "ES06",
+          "name": "SRA100/166/210/166L/120EL",
+          "code": "SRA100_166_210_166L_120EL",
           "features": [
             {
               "title": "null",
@@ -529,8 +577,56 @@
           ]
         },
         {
-          "name": "EZ03",
-          "code": "EZ03",
+          "name": "SRA100B/100J",
+          "code": "SRA100B_100J",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SRA100H/SRA133HL",
+          "code": "SRA100H_SRA133HL",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SRA100HS/SRA100HB",
+          "code": "SRA100HS_SRA100HB",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SRA133H/SRA166H/SRA210H",
+          "code": "SRA133H_SRA166H_SRA210H",
+          "features": [ 
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SRA166/210-01A",
+          "code": "SRA166_210-01A",
           "features": [
             {
               "title": "null",
@@ -546,8 +642,8 @@
       "title": "Cleanroom Robot",
       "items": [
         {
-          "name": "ES06",
-          "code": "ES06",
+          "name": "SC400LC",
+          "code": "SC400LC",
           "features": [
             {
               "title": "null",
@@ -558,8 +654,32 @@
           ]
         },
         {
-          "name": "EZ03",
-          "code": "EZ03",
+          "name": "SJ80C-18D/24D",
+          "code": "SJ80C-18D_24D",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SJ120C-28D/28S",
+          "code": "SJ120C-28D_28S",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ST133CF/166CF/210CF-01",
+          "code": "ST133CF_166CF_210CF-01",
           "features": [
             {
               "title": "null",
