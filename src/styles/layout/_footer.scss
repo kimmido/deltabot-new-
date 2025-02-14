@@ -64,15 +64,6 @@ footer {
         @include respondTo(md) {
           margin-top: 2rem;
           padding: 1.6rem 6rem 1.6rem 2.2rem;
-
-          &:hover {
-            transform: scale(1.1);
-            background-color: $color-active;
-
-            &::after {
-              background-image: url("@assets/images/icon/icon_call_blue.svg");
-            }
-          }
         }
 
         &::after {
