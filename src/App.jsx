@@ -26,8 +26,8 @@ function App() {
             <Route index element={<Home />} />
 
             <Route path="robot-automation">
-              <Route index element={<Navigate to="collaborative" replace />} />
-              <Route path="collaborative" element={<BusinessLayout />} />
+              <Route index element={<Navigate to="collaboration" replace />} />
+              <Route path="collaboration" element={<BusinessLayout />} />
               <Route path="serial-robot" element={<BusinessLayout />} />
               <Route path="scara" element={<BusinessLayout />} />
               <Route path="cobot" element={<BusinessLayout />} />
@@ -56,13 +56,13 @@ function App() {
               <Route path="uv" element={<BusinessLayout />} />
             </Route>
 
-            <Route path="it">
+            <Route path="information-technology">
               <Route index element={<Navigate to="gpu-server" replace />} />
               <Route path="gpu-server" element={<BusinessLayout />} />
               <Route path="workstations" element={<BusinessLayout />} />
               <Route path="rack-mount" element={<BusinessLayout />} />
               <Route path="military" element={<BusinessLayout />} />
-              <Route path="transportation" element={<BusinessLayout />} />
+              <Route path="vehicle" element={<BusinessLayout />} />
             </Route>
 
             <Route index element={<Navigate to="automation" replace />} />
