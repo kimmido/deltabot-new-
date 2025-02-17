@@ -279,10 +279,7 @@
               }
 
               button {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: $gutter-sm;
+                @include flexBox(row, $gutter-sm, center);
                 position: relative;
                 overflow: hidden;
                 margin-top: 16px;
@@ -344,14 +341,10 @@
                 }
 
                 .effect {
-                  position: absolute;
-                  top: 0;
+                  @include pseudoDefault(#fff);
                   left: 50%;
-                  display: block;
-                  width: 0;
-                  height: 0;
+                  @include square(0);
                   border-radius: 50%;
-                  background-color: #fff;
                   transform: translate(-50%, -50%);
                   transition: all 0.4s ease-in-out;
                 }

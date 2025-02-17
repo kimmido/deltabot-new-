@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Layout/Header";
 import { Outlet } from "react-router-dom";
 import Footer from "../components/Layout/Footer";
+import ScrollTopBtn from "../components/Shared/ScrollTopBtn";
 
 function DefaultLayout() {
   return (
@@ -10,6 +11,7 @@ function DefaultLayout() {
       <main>
         <Outlet />
       </main>
+      <ScrollTopBtn />
       <Footer />
     </div>
   );

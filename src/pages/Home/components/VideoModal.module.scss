@@ -1,10 +1,11 @@
 @use "@styles/base/variables.scss" as *;
 @use "@styles/base/mixins.scss" as *;
+@use "sass:map";
 
 .modal_content {
   position: relative;
   width: 96%;
-  max-width: map-get($breakpoints, xl);
+  max-width: map.get($breakpoints, xl);
   padding: 20px;
   border-radius: 10px;
   border: 2px solid #fff;
