@@ -80,10 +80,12 @@ nav.gnb {
             }
           }
 
-          animation-delay: 0.58s;
-          animation-duration: 0s;
-          animation-name: hidden;
-          animation-fill-mode: forwards;
+          & {
+            animation-delay: 0.58s;
+            animation-duration: 0s;
+            animation-name: hidden;
+            animation-fill-mode: forwards;
+          }
         }
 
         .pc__link {
