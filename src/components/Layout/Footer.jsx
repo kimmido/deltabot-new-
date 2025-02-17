@@ -23,7 +23,7 @@ function Footer() {
           </p>
           <p className="flex-container">
             <span className="dt">E-mail</span>
-            <span className="dd">sales@daltabot.co.kr</span>
+            <span className="dd">sales@deltabot.co.kr</span>
           </p>
           <address className="flex-container">
             <span className="dt">주소</span>
