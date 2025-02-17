@@ -42,21 +42,29 @@
     }
   }
 
-  .page_title {
+  .page__text-box {
     position: absolute;
-    left: 3.6rem;
-    bottom: 3.4rem;
-    color: #fff;
-    font-size: $font-size-display-sm;
-    text-shadow: $text-shadow;
-
-    @include respondTo(sm) {
-      font-size: $font-size-display-md;
-    }
+    left: 3.4rem;
+    bottom: 2.8rem;
 
     @include respondTo(md) {
-      // font-size: $font-size-display-lg;
-      font-size: 8rem;
+      left: 4.4rem;
+      bottom: 3.6rem;
+    }
+
+    .page__title {
+      color: #fff;
+      font-size: $font-size-display-sm;
+      text-shadow: $text-shadow;
+
+      @include respondTo(sm) {
+        font-size: $font-size-display-md;
+      }
+
+      @include respondTo(md) {
+        font-size: $font-size-display-lg;
+        // font-size: 8rem;
+      }
     }
   }
 }

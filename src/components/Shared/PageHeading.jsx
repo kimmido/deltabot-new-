@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
-function PageHeading({ currentPath, video = false }) {
+function PageHeading({ title, currentPath }) {
   const backgroundRef = useRef(null);
   const titleRef = useRef(null);
   const [isVideoLoad, setVideoLoad] = useState(true);
@@ -33,8 +33,11 @@ function PageHeading({ currentPath, video = false }) {
 
   useEffect(() => {
     setVideoLoad(true);
-    setTitle(formatWord(currentPath));
   }, [currentPath]);
+
+  useEffect(() => {
+    setTitle(formatWord(title));
+  }, [title]);
 
   return (
     <div className="PageHeading">
@@ -65,11 +68,11 @@ function PageHeading({ currentPath, video = false }) {
           ></div>
         )}
       </div>
-      <div className="overflow_hidden">
+      <div className="page__text-box overflow_hidden">
         <h2
-          key={isTitle}
+          key={currentPath}
           ref={titleRef}
-          className="page_title"
+          className="page__title"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
