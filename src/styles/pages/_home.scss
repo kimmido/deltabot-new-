@@ -181,30 +181,19 @@
       }
 
       .video-box {
+        position: relative;
         overflow: hidden;
         border-radius: $radius-card;
         aspect-ratio: 16 / 9;
         cursor: pointer;
 
-        &.mobile {
-          width: 100%;
-        }
-
-        &.pc {
-          width: 50%;
-        }
-
-        @include respondTo(md) {
-          position: relative;
-        }
-
-        &.expanded {
-          cursor: auto;
-          // width: 80%;
-        }
-
         video {
           height: 100%;
+        }
+
+        svg {
+          @include square(8.2rem);
+          @include positionCenter();
         }
 
         .close-btn {
