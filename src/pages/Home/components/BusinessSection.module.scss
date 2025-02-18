@@ -38,20 +38,10 @@
 
       transition: all 0.3s;
 
-      &:nth-child(1) {
-        background-image: url("@assets/images/home/business_section(1).jpg");
-      }
-      &:nth-child(2) {
-        background-image: url("@assets/images/home/business_section(2).jpg");
-      }
-      &:nth-child(3) {
-        background-image: url("@assets/images/home/business_section(3).jpg");
-      }
-      &:nth-child(4) {
-        background-image: url("@assets/images/home/business_section(4).jpg");
-      }
-      &:nth-child(5) {
-        background-image: url("@assets/images/home/business_section(5).jpg");
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          background-image: url("@assets/images/home/business_section(#{$i}).jpg");
+        }
       }
 
       @include respondTo(sm) {
@@ -79,6 +69,11 @@
 
             .category__sub__link {
               width: 80%;
+
+              &:hover {
+                color: #fff;
+                background-color: #1d57bcd0;
+              }
             }
           }
         }

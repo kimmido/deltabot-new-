@@ -12,6 +12,7 @@ function BusinessSection() {
     <section className={styles.section}>
       <div className="container">
         <h2 className="section_title">사업소개</h2>
+
         <ul className={styles.category__list}>
           {subRoutes.map((sub) => (
             <li
@@ -24,6 +25,7 @@ function BusinessSection() {
               <Link to={`${sub.path}/${sub.items[0].path}`}>
                 <h5 className={styles.category__title}>{sub.label}</h5>
               </Link>
+
               <ul className={styles.category__sub__list}>
                 {sub.items.map((item) => (
                   <li className={styles.category__sub__item} key={item.path}>
