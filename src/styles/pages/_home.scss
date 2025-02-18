@@ -153,6 +153,29 @@
 }
 
 // ====== VideoSection ======
+.BusinessSection {
+  margin-top: $spacing-layout-sm;
+
+  @include respondTo(lg) {
+    margin-top: $spacing-layout-lg;
+    padding: 40px 0;
+  }
+
+  .business__list {
+    @include flexBox(column, $gutter-sm);
+
+    @include respondTo(sm) {
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    @include respondTo(lg) {
+      gap: 10px;
+    }
+  }
+}
+
+// ====== VideoSection ======
 .VideoSection {
   margin-top: 12rem;
 
@@ -238,169 +261,6 @@
 
           .desc__p {
             line-height: 150%;
-          }
-        }
-      }
-    }
-  }
-}
-
-// ====== VideoSwiper ======
-.VideoSwiper {
-  margin-top: 80px;
-
-  @include respondTo(md) {
-    margin-top: 160px;
-  }
-
-  .flex-box {
-    @include respondTo(md) {
-      display: flex;
-      gap: 64px;
-    }
-    .video__swiper {
-      width: 100%;
-
-      @include respondTo(md) {
-        flex: 2;
-      }
-
-      video {
-        border-radius: $radius-card;
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    .video__text-wrap {
-      margin-top: $spacing-md;
-      align-content: center;
-
-      @include respondTo(md) {
-        flex: 1;
-        margin-top: 0;
-      }
-
-      .video__diplay-text {
-        display: none;
-
-        @include respondTo(md) {
-          display: block;
-          margin: 16px 0 60px;
-
-          span {
-            font-size: $font-size-con-title-sm;
-            color: $color-active;
-          }
-          p {
-            font-size: $font-size-con-title-lg;
-          }
-        }
-      }
-
-      .video__pagination {
-        @include respondTo(md) {
-          font-size: $font-size-display-sm;
-        }
-
-        .swiper-pagination-bullet {
-          position: relative;
-          width: 100%;
-          height: fit-content;
-          margin: 0;
-          padding: 10px 0 10px 10px;
-          color: $color-text-disabled;
-          text-align: left;
-          background: transparent;
-          cursor: pointer;
-          border-radius: 0;
-          opacity: 1;
-          z-index: $z-index-swiper-up;
-
-          @include respondTo(md) {
-            margin-top: 24px;
-          }
-
-          &:first-child {
-            margin-top: 0;
-          }
-
-          span {
-            position: relative;
-
-            &::after {
-              @include pseudoDefault($color-active);
-              top: 130%;
-              width: 0;
-              height: 1px;
-
-              transition: all 0.3s;
-
-              @include respondTo(md) {
-                top: 50%;
-                transform: translateX(calc(-100% - 16px));
-              }
-            }
-          }
-
-          &-active {
-            color: $color-active;
-            font-weight: 600;
-
-            &::before {
-              @include pseudoDefault(transparent);
-              width: 60px;
-              height: 60px;
-              left: calc(-100px - 38px);
-              top: 50%;
-              transform: translateY(-50%);
-              border: 1px dashed #fff;
-              border-radius: 50%;
-            }
-
-            span {
-              &::after {
-                width: 100%;
-
-                @include respondTo(md) {
-                  width: 100px;
-                }
-              }
-            }
-
-            .dot-box {
-              display: none;
-
-              @include respondTo(md) {
-                position: absolute;
-                left: calc(-100px - 38px);
-                top: 50%;
-                display: block;
-                width: 63px;
-                height: 63px;
-                animation: circle 6s linear infinite;
-
-                @keyframes circle {
-                  0% {
-                    transform: translateY(-50%) rotate(0);
-                  }
-                  100% {
-                    transform: translateY(-50%) rotate(360deg);
-                  }
-                }
-
-                &::after {
-                  @include pseudoDefault();
-                  border-radius: 50%;
-                  background-color: $color-active;
-                  width: 7px;
-                  height: 7px;
-                  top: 50%;
-                  left: 20px;
-                }
-              }
-            }
           }
         }
       }
