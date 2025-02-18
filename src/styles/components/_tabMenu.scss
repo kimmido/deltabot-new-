@@ -1,0 +1,59 @@
+.TabMenu {
+  margin-top: 20px;
+  @include respondTo(sm) {
+    margin-top: 24px;
+  }
+
+  .TabMenu__box {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    padding: 4px;
+    background-color: $color-background;
+    border-radius: $radius-md;
+
+    @include respondTo(sm) {
+      gap: $gutter-lg;
+      justify-content: space-around;
+      padding: 6px $gutter-lg;
+    }
+
+    .TabMenu__item {
+      white-space: nowrap;
+      border-radius: $radius-md;
+      padding: 8px 12px;
+
+      transition: all 0.3s;
+
+      @include respondTo(sm) {
+        flex: 1;
+        padding: 12px 20px;
+      }
+
+      &:hover {
+        background-color: #ffffff90;
+        .TabMenu__label {
+          transform: scale(1.3);
+          color: $color-active;
+          font-weight: $weight-semiBold;
+        }
+      }
+
+      &.active {
+        background-color: $color-active;
+
+        .TabMenu__label,
+        .TabMenu__label:hover {
+          color: #fff;
+          transform: scale(1);
+          font-weight: inherit;
+        }
+      }
+
+      .TabMenu__label {
+        display: inline-block;
+        transition: all 0.3s;
+      }
+    }
+  }
+}

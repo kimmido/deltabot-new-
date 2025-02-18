@@ -10,16 +10,16 @@ function TabMenu({ routes, currentCategory, currentPath }) {
 
   return (
     <div className="TabMenu overflow_hidden">
-      <div className="parent-tab" data-aos="fade-up" data-aos-duration="1000">
+      <div className="TabMenu__box" data-aos="fade-up" data-aos-duration="1000">
         {routes.items.map((route) => (
           <button
             key={route.path}
-            className={`parent-tab__item ${
+            className={`TabMenu__item ${
               currentPath === route.path ? "active" : ""
             }`}
             onClick={() => handleTabChange(currentCategory, route.path)}
           >
-            {route.label}
+            <span className="TabMenu__label">{route.label}</span>
           </button>
         ))}
       </div>

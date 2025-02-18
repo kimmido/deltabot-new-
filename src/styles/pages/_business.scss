@@ -1,49 +1,6 @@
 @use "sass:color";
 
 .BusinessLayout {
-  .parent-tab,
-  .child-tab {
-    display: flex;
-    overflow-x: auto;
-  }
-
-  .parent-tab {
-    gap: 6px;
-    margin-top: 20px;
-    padding: 4px;
-    background-color: $color-background;
-    border-radius: $radius-md;
-
-    @include respondTo(sm) {
-      gap: $gutter-lg;
-      justify-content: space-around;
-      margin-top: 24px;
-      padding: 6px $gutter-lg;
-    }
-
-    &__item {
-      white-space: nowrap;
-      border-radius: $radius-md;
-      padding: 8px 12px;
-
-      transition: all 0.3s;
-
-      @include respondTo(sm) {
-        flex: 1;
-        padding: 12px 20px;
-      }
-
-      &:hover {
-        color: $color-active;
-      }
-
-      &.active {
-        color: #fff;
-        background-color: $color-active;
-      }
-    }
-  }
-
   .Business {
     margin-top: 16px;
 
