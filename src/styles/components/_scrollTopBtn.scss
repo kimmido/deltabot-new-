@@ -17,10 +17,11 @@
     position: relative;
     overflow: hidden;
     padding: 1.2rem;
-    transition: all 0.3s;
-
     background-color: $COLOR;
     border: 1px solid $COLOR;
+    box-shadow: $floating-shadow;
+
+    transition: all 0.3s;
 
     @include respondTo(sm) {
       gap: 1.2rem;
