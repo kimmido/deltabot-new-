@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-// import styles from "./BusinessSection.module.scss";
 import { CategoryRoutesContext } from "../../../contexts/CategoryRoutesContext";
 import BusinessItem from "./BusinessItem";
 

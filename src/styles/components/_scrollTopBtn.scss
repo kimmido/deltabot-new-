@@ -23,16 +23,13 @@
     border: 1px solid $COLOR;
 
     @include respondTo(sm) {
-      gap: 1.6rem;
-      padding: 2rem 16px;
+      gap: 1.2rem;
+      padding: 2rem 1.4rem;
     }
 
     &:hover,
     &.active {
-      svg {
-        fill: $COLOR;
-      }
-
+      svg,
       .text {
         color: $COLOR;
       }
@@ -53,7 +50,8 @@
     }
 
     svg {
-      fill: #fff;
+      @include square(1em);
+      color: #fff;
     }
 
     .text {
@@ -63,7 +61,7 @@
       color: #fff;
 
       @include respondTo(sm) {
-        font-size: 1em;
+        // font-size: 1em;
       }
     }
 

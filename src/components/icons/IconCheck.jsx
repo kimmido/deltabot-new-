@@ -1,4 +1,8 @@
-const IconCheck = ({ size = 24, color = "black", className = "" }) => {
+const IconCheck = ({
+  size = "100%",
+  color = "currentColor",
+  className = "",
+}) => {
   return (
     <svg
       width={size}
