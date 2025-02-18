@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { fadeUP } from "../../../utils/fadeUp";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 

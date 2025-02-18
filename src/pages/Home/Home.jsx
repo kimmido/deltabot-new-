@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import BannerSwiper from "./components/BannerSwiper";
 import BusinessSection from "./components/BusinessSection";
-import VideoSwiper from "./components/VideoSwiper";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import VideoSection from "./components/VideoSection";
@@ -39,8 +38,6 @@ const Home = () => {
       </div>
       <BusinessSection />
       <VideoSection />
-      {/* <VideoSwiper /> */}
-      {/* <VideoList /> */}
     </div>
   );
 };

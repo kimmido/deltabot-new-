@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import VideoModal from "./VideoModal";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import VideoItem from "./VideoItem";
