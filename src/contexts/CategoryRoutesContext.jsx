@@ -25,7 +25,7 @@ export const category = [
         items: [
           { path: "machine-vision", label: "머신비전 카메라" },
           { path: "thermal-camera", label: "열화상 카메라" },
-          { path: "spectral-camera", label: "분광카메라" },
+          { path: "spectral-camera", label: "초분광카메라" },
           { path: "illumination", label: "조명" },
           { path: "vision-controller", label: "비전 컨트롤러" },
         ],
