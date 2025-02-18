@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { CategoryRoutesContext } from "../contexts/CategoryRoutesContext";
 import Business from "../pages/Business/Business";
 import { fetchData } from "../utils/fetchData";
+import TabMenu from "../pages/Business/components/TabMenu";
 
 function BusinessLayout() {
   const category = useContext(CategoryRoutesContext);
@@ -47,25 +48,11 @@ function BusinessLayout() {
     <div className="BusinessLayout">
       <div className="container">
         <PageHeading title={currentCategory} currentPath={currentPath} />
-        <div className="overflow_hidden">
-          <div
-            className="parent-tab"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            {routes.items.map((route) => (
-              <button
-                key={route.path}
-                className={`parent-tab__item ${
-                  currentPath === route.path ? "active" : ""
-                }`}
-                onClick={() => handleTabChange(currentCategory, route.path)}
-              >
-                {route.label}
-              </button>
-            ))}
-          </div>
-        </div>
+        <TabMenu
+          routes={routes}
+          currentCategory={currentCategory}
+          currentPath={currentPath}
+        />
         <Business
           currentPath={currentPath}
           productData={productData[currentPath]}
