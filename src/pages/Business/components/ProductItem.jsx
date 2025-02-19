@@ -5,7 +5,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 gsap.registerPlugin(useGSAP, ScrollToPlugin);
 
-function ProductItem({ item, idx, currentPath, prodIdx, getMap }) {
+function ProductItem({ item, currentPath, getMap }) {
   const specRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
 
