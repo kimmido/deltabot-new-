@@ -1,6 +1,6 @@
 .PageHeading {
   position: relative;
-  height: 220px;
+  height: 200px;
 
   @include respondTo(sm) {
     height: 400px;

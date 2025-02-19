@@ -32,7 +32,7 @@ function App() {
               <Route path="scara" element={<BusinessLayout />} />
               <Route path="cobot" element={<BusinessLayout />} />
               <Route path="deltarobot" element={<BusinessLayout />} />
-              <Route path="case-paker" element={<BusinessLayout />} />
+              <Route path="case-packer" element={<BusinessLayout />} />
             </Route>
 
             <Route path="vision-system">

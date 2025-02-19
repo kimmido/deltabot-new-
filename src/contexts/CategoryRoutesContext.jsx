@@ -16,7 +16,7 @@ export const category = [
           { path: "scara", label: "스카라" },
           { path: "cobot", label: "코봇" },
           { path: "deltarobot", label: "델타로봇" },
-          { path: "case-paker", label: "Case Paker" },
+          { path: "case-packer", label: "Case Paker" },
         ],
       },
       {
