@@ -71,7 +71,7 @@ function BannerSwiper() {
           delay: 6000,
           disableOnInteraction: false,
         }}
-        spaceBetween={0}
+        spaceBetween={24}
         slidesPerView={1}
       >
         {slideData.map((item, idx) => (
