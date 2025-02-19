@@ -879,14 +879,110 @@
   ],
   "cobot": [
     {
-      "title": "데모 타이틀",
+      "title": "Cobot Palletizer",
       "items": [
         {
-          "name": "cobot 제품",
-          "code": "code",
+          "name": "MD20G",
+          "code": "MD20G",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD20S",
+          "code": "MD20S",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD20SS",
+          "code": "MD20SS",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD30G",
+          "code": "MD30G",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD30S",
+          "code": "MD30S",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD30SS",
+          "code": "MD30SS",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD40G",
+          "code": "MD40G",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD40S",
+          "code": "MD40S",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD40SS",
+          "code": "MD40SS",
+          "features": [
+            {
+              "title": "INTRODUCTION",
               "texts": [
                 ""
               ]
@@ -956,7 +1052,7 @@
   ],
   "case-packer": [
     {
-      "title": "데모 타이틀",
+      "title": "case packer",
       "items": [
         {
           "name": "cobot 제품",
