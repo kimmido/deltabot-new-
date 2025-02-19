@@ -4,10 +4,10 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
 import SeriesTabMenu from "./components/SeriesTabMenu";
+import ProductItem from "./components/ProductItem";
 
 function Business({ currentPath, productData = [] }) {
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [prodIdx, setProdIdx] = useState(null);
 
   const itemsRef = useRef(null);
   const gsapContainerRef = useRef(null);
@@ -15,10 +15,6 @@ function Business({ currentPath, productData = [] }) {
   useEffect(() => {
     setCurrentIdx(0);
   }, [currentPath]);
-
-  useEffect(() => {
-    setProdIdx(null);
-  }, [currentPath, currentIdx]);
 
   useGSAP(
     () => {
@@ -56,10 +52,6 @@ function Business({ currentPath, productData = [] }) {
     return itemsRef.current;
   }
 
-  const openSpec = (id) => {
-    setProdIdx((prev) => (prev === id ? null : id));
-  };
-
   return (
     <div className="Business">
       <div className="flex-container" ref={gsapContainerRef}>
@@ -90,64 +82,15 @@ function Business({ currentPath, productData = [] }) {
             ))}
         </div>
       </div>
-      <div className="product__detail">
+      <div className="product-list">
         {productData[currentIdx] &&
-          productData[currentIdx].items.map((item, idx) => (
-            <div
+          productData[currentIdx].items.map((item) => (
+            <ProductItem
               key={item.code}
-              className="product__detail-inner"
-              ref={(node) => {
-                const map = getMap();
-                if (node) {
-                  map.set(item.code, node); // Mount 시
-                } else {
-                  map.delete(item); // Unmount 시
-                }
-              }}
-            >
-              <div className="pd_flex">
-                <div className="pd_left">
-                  <img
-                    src={`/images/product/${currentPath}/${item.code}.png`}
-                    alt={item.name}
-                  />
-                </div>
-                <div className="pd_right">
-                  <strong className="prod_name">{item.name}</strong>
-                  <div className="prod_desc">
-                    {item.features.map((feature, idx) => (
-                      <div key={idx} className="prod_desc__inner">
-                        {feature.title == "null" || (
-                          <p className="prod_desc__title">{feature.title}</p>
-                        )}
-                        <ul>
-                          {feature.texts.map((text) => (
-                            <li key={text}>{text}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                    <button
-                      className={prodIdx === idx ? "active" : ""}
-                      onClick={() => openSpec(idx)}
-                    >
-                      <span className="text">SPECIFICATION</span>
-                      <span className="icon"></span>
-                      <span className="effect"></span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              {prodIdx === idx && (
-                <div className="spec-container">
-                  <p>SPECIFICATION</p>
-                  <img
-                    src={`/images/product/${currentPath}/${item.code}_info.svg`}
-                    alt={item.code}
-                  />
-                </div>
-              )}
-            </div>
+              item={item}
+              currentPath={currentPath}
+              getMap={getMap}
+            />
           ))}
       </div>
     </div>

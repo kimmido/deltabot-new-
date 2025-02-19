@@ -25,6 +25,14 @@ function SeriesTabMenu({ items, currentIdx, setCurrentIdx }) {
     { dependencies: [items], scope: gsapContainerRef }
   );
 
+  const moveFocus = () => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: gsapContainerRef.current, offsetY: 140 },
+      ease: "power2.out",
+    });
+  };
+
   return (
     <div ref={gsapContainerRef} className="SeriesTabMenu">
       {items.map((item, idx) => (
@@ -34,6 +42,7 @@ function SeriesTabMenu({ items, currentIdx, setCurrentIdx }) {
            ${currentIdx === idx ? "active" : ""}`}
           onClick={() => {
             setCurrentIdx(idx);
+            moveFocus();
           }}
         >
           <span className="SeriesTabMenu__text">{item.title}</span>

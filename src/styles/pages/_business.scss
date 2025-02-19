@@ -140,26 +140,18 @@
       }
     }
 
-    .product__detail {
+    .product-list {
       margin-top: 80px;
 
       @include respondTo(md) {
         margin-top: 280px;
       }
 
-      &-inner {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
+      .ProductItem {
         padding-top: $header-sm;
 
         @include respondTo(sm) {
-          gap: 80px;
           padding-top: $header-md;
-        }
-
-        &:first-child {
-          padding-top: 0;
         }
 
         .pd_flex {
@@ -236,7 +228,7 @@
               }
 
               button {
-                @include flexBox(row, $gutter-sm, center);
+                @include flexBox(row, $gutter-sm, center, center);
                 position: relative;
                 overflow: hidden;
                 margin-top: 16px;
@@ -311,10 +303,16 @@
         }
 
         .spec-container {
+          width: 100%;
           max-width: 1280px;
+          padding-top: $header-sm;
+          margin: 0 auto;
+
+          @include respondTo(sm) {
+            padding-top: $header-md;
+          }
 
           p {
-            margin: 0 auto;
             font-size: $font-size-con-title-sm;
             font-weight: 600;
 
