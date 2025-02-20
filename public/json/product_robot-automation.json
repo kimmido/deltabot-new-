@@ -701,15 +701,12 @@
           "code": "ST-500-A-A",
           "features": [
             {
-              "title": "소개",
+              "title": "null",
               "texts": [
-                "ST 시리즈 SCARA는 Atomrobot에서 고속 및 고정밀 분류를 위해 개발한 평면 조인트 로봇입니다. 3개 방향, 즉 XYZ 이동과 Z축을 중심으로 한 회전에 대해 4개의 자유도를 갖습니다."
-              ]
-            },
-            {
-              "title": "특징",
-              "texts": [
-                "로봇 암과 감속기는 통합 설계와 고유한 이빨 모양을 채택합니다. 큰 하중과 고속 지원을 제공하는 동시에 로봇 암의 크기를 크게 줄입니다. 고속 모터를 사용하면 속도가 최대 240ppm에 도달할 수 있으며 반복 정확도는 ±0.02mm입니다. 로봇 본체는 내부 배선, 강력한 통합을 채택하고 보호 수준은 최대 IP65에 도달할 수 있습니다."
+                "Work space：500mm",
+                "Max payload：9kg",
+                "Axis：4",
+                "Max speed：240pp/min"
               ]
             }
           ]
@@ -721,7 +718,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：500mm",
+                "Max payload：9kg",
+                "Axis：4",
+                "Max speed：240pp/min"
               ]
             }
           ]
@@ -733,7 +733,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：620mm",
+                "Max payload：9kg",
+                "Axis：4",
+                "Max speed：220pp/min"
               ]
             }
           ]
@@ -745,7 +748,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：620mm",
+                "Max payload：9kg",
+                "Axis：4",
+                "Max speed：220pp/min"
               ]
             }
           ]
@@ -757,7 +763,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：800mm",
+                "Max payload：9kg",
+                "Axis：4",
+                "Max speed：180pp/min"
               ]
             }
           ]
@@ -769,7 +778,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：800mm",
+                "Max payload：9kg",
+                "Axis：4",
+                "Max speed：180pp/min"
               ]
             }
           ]
@@ -786,7 +798,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：400mm",
+                "Max payload：4kg",
+                "Axis：4",
+                "Standard cycle time：0.40 sec"
               ]
             }
           ]
@@ -798,7 +813,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：510mm",
+                "Max payload：10kg",
+                "Axis：4",
+                "Standard cycle time：0.36 sec"
               ]
             }
           ]
@@ -810,7 +828,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：610mm",
+                "Max payload：10kg",
+                "Axis：4",
+                "Standard cycle time：0.36 sec"
               ]
             }
           ]
@@ -822,7 +843,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：710mm",
+                "Max payload：10kg",
+                "Axis：4",
+                "Standard cycle time：0.36 sec"
               ]
             }
           ]
@@ -839,7 +863,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：700mm",
+                "Max payload：20kg",
+                "Axis：4",
+                "Standard cycle time：0.42 sec"
               ]
             }
           ]
@@ -851,7 +878,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：800mm",
+                "Max payload：20kg",
+                "Axis：4",
+                "Standard cycle time：0.42 sec"
               ]
             }
           ]
@@ -863,7 +893,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：900mm",
+                "Max payload：20kg",
+                "Axis：4",
+                "Standard cycle time：0.42 sec"
               ]
             }
           ]
@@ -875,7 +908,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：1000mm",
+                "Max payload：20kg",
+                "Axis：4",
+                "Standard cycle time：0.42 sec"
               ]
             }
           ]
@@ -892,9 +928,11 @@
           "code": "MD20G",
           "features": [
             {
-              "title": "INTRODUCTION",
+              "title": "null",
               "texts": [
-                ""
+                "Version：fixed version",
+                "Payload：20kg",
+                "Working space radius：1600mm"
               ]
             }
           ]
@@ -904,9 +942,11 @@
           "code": "MD20S",
           "features": [
             {
-              "title": "INTRODUCTION",
+              "title": "null",
               "texts": [
-                ""
+                "Version：lifting version",
+                "Payload：20kg",
+                "Working space radius：2100mm"
               ]
             }
           ]
@@ -916,9 +956,11 @@
           "code": "MD20SS",
           "features": [
             {
-              "title": "INTRODUCTION",
+              "title": "null",
               "texts": [
-                ""
+                "Version：lifting version",
+                "Payload：20kg",
+                "Working space radius：2300mm"
               ]
             }
           ]
@@ -928,9 +970,11 @@
           "code": "MD30G",
           "features": [
             {
-              "title": "INTRODUCTION",
+              "title": "null",
               "texts": [
-                ""
+                "Version：fixed version",
+                "Payload：30kg",
+                "Working space radius：1600mm"
               ]
             }
           ]
@@ -940,9 +984,11 @@
           "code": "MD30S",
           "features": [
             {
-              "title": "INTRODUCTION",
+              "title": "null",
               "texts": [
-                ""
+                "Version：lifting version",
+                "Payload：30kg",
+                "Working space radius：2100mm"
               ]
             }
           ]
@@ -952,9 +998,11 @@
           "code": "MD30SS",
           "features": [
             {
-              "title": "INTRODUCTION",
+              "title": "null",
               "texts": [
-                ""
+                "Version：lifting version",
+                "Payload：30kg",
+                "Working space radius：2300mm"
               ]
             }
           ]
@@ -964,9 +1012,11 @@
           "code": "MD40G",
           "features": [
             {
-              "title": "INTRODUCTION",
+              "title": "null",
               "texts": [
-                ""
+                "Version：fixed version",
+                "Payload：40kg",
+                "Working space radius：1600mm"
               ]
             }
           ]
@@ -976,9 +1026,11 @@
           "code": "MD40S",
           "features": [
             {
-              "title": "INTRODUCTION",
+              "title": "null",
               "texts": [
-                ""
+                "Version：lifting version",
+                "Payload：40kg",
+                "Working space radius：2100mm"
               ]
             }
           ]
@@ -988,9 +1040,11 @@
           "code": "MD40SS",
           "features": [
             {
-              "title": "INTRODUCTION",
+              "title": "null",
               "texts": [
-                ""
+                "Version：lifting version",
+                "Payload：40kg",
+                "Working space radius：2300mm"
               ]
             }
           ]
