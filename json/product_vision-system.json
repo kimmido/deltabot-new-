@@ -4,8 +4,8 @@
       "title": "Vision Camera",
       "items": [
         {
-          "name": "AtomVision-2D-L-130GM-8-H",
-          "code": "AtomVision-2D-L-130GM-8-H",
+          "name": "2D-L-130GM-8-H",
+          "code": "2D-L-130GM-8-H",
           "features": [
             {
               "title": "null",
@@ -19,8 +19,8 @@
           ]
         },
         {
-          "name": "AtomVision-2D-L-160GM-8-D",
-          "code": "AtomVision-2D-L-160GM-8-D",
+          "name": "2D-L-160GM-8-D",
+          "code": "2D-L-160GM-8-D",
           "features": [
             {
               "title": "null",
@@ -34,8 +34,8 @@
           ]
         },
         {
-          "name": "AtomVision-2D-L-200GC-16-H",
-          "code": "AtomVision-2D-L-200GC-16-H",
+          "name": "2D-L-200GC-16-H",
+          "code": "2D-L-200GC-16-H",
           "features": [
             {
               "title": "null",
@@ -49,8 +49,8 @@
           ]
         },
         {
-          "name": "AtomVision-2D-L-320GM-8-D",
-          "code": "AtomVision-2D-L-320GM-8-D",
+          "name": "2D-L-320GM-8-D",
+          "code": "2D-L-320GM-8-D",
           "features": [
             {
               "title": "null",
@@ -64,8 +64,8 @@
           ]
         },
         {
-          "name": "AtomVision-2D-L-500GC-8-H",
-          "code": "AtomVision-2D-L-500GC-8-H",
+          "name": "2D-L-500GC-8-H",
+          "code": "2D-L-500GC-8-H",
           "features": [
             {
               "title": "null",
@@ -79,8 +79,8 @@
           ]
         },
         {
-          "name": "AtomVision-2D-L-200GM-8-H",
-          "code": "AtomVision-2D-L-200GM-8-H",
+          "name": "2D-L-200GM-8-H",
+          "code": "2D-L-200GM-8-H",
           "features": [
             {
               "title": "null",
@@ -94,8 +94,8 @@
           ]
         },
         {
-          "name": "AtomVision-SD-S-200GC-8-H",
-          "code": "AtomVision-SD-S-200GC-8-H",
+          "name": "SD-S-200GC-8-H",
+          "code": "SD-S-200GC-8-H",
           "features": [
             {
               "title": "null",
@@ -109,8 +109,8 @@
           ]
         },
         {
-          "name": "AtomVision-SD-S-320GC-8-H",
-          "code": "AtomVision-SD-S-320GC-8-H",
+          "name": "SD-S-320GC-8-H",
+          "code": "SD-S-320GC-8-H",
           "features": [
             {
               "title": "null",
@@ -124,8 +124,8 @@
           ]
         },
         {
-          "name": "AtomVision-3D-S-TY",
-          "code": "AtomVision-3D-S-TY",
+          "name": "3D-S-TY",
+          "code": "3D-S-TY",
           "features": [
             {
               "title": "null",
