@@ -431,7 +431,7 @@
       "items": [
         {
           "name": "MC350/MC280L/MC470P",
-          "code": "MC350_280L_470P",
+          "code": "MC350_MC280L_MC470P",
           "features": [
             {
               "title": "null",
@@ -703,7 +703,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：500mm",
+                "Max payload：9kg",
+                "Axis：4",
+                "Max speed：240pp/min"
               ]
             }
           ]
@@ -715,7 +718,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：500mm",
+                "Max payload：9kg",
+                "Axis：4",
+                "Max speed：240pp/min"
               ]
             }
           ]
@@ -727,7 +733,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：620mm",
+                "Max payload：9kg",
+                "Axis：4",
+                "Max speed：220pp/min"
               ]
             }
           ]
@@ -739,7 +748,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：620mm",
+                "Max payload：9kg",
+                "Axis：4",
+                "Max speed：220pp/min"
               ]
             }
           ]
@@ -751,7 +763,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：800mm",
+                "Max payload：9kg",
+                "Axis：4",
+                "Max speed：180pp/min"
               ]
             }
           ]
@@ -763,7 +778,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：800mm",
+                "Max payload：9kg",
+                "Axis：4",
+                "Max speed：180pp/min"
               ]
             }
           ]
@@ -780,7 +798,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：400mm",
+                "Max payload：4kg",
+                "Axis：4",
+                "Standard cycle time：0.40 sec"
               ]
             }
           ]
@@ -792,7 +813,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：510mm",
+                "Max payload：10kg",
+                "Axis：4",
+                "Standard cycle time：0.36 sec"
               ]
             }
           ]
@@ -804,7 +828,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：610mm",
+                "Max payload：10kg",
+                "Axis：4",
+                "Standard cycle time：0.36 sec"
               ]
             }
           ]
@@ -816,7 +843,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：710mm",
+                "Max payload：10kg",
+                "Axis：4",
+                "Standard cycle time：0.36 sec"
               ]
             }
           ]
@@ -833,7 +863,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：700mm",
+                "Max payload：20kg",
+                "Axis：4",
+                "Standard cycle time：0.42 sec"
               ]
             }
           ]
@@ -845,7 +878,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：800mm",
+                "Max payload：20kg",
+                "Axis：4",
+                "Standard cycle time：0.42 sec"
               ]
             }
           ]
@@ -857,7 +893,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：900mm",
+                "Max payload：20kg",
+                "Axis：4",
+                "Standard cycle time：0.42 sec"
               ]
             }
           ]
@@ -869,7 +908,10 @@
             {
               "title": "null",
               "texts": [
-                ""
+                "Work space：1000mm",
+                "Max payload：20kg",
+                "Axis：4",
+                "Standard cycle time：0.42 sec"
               ]
             }
           ]
@@ -879,16 +921,130 @@
   ],
   "cobot": [
     {
-      "title": "데모 타이틀",
+      "title": "Cobot Palletizer",
       "items": [
         {
-          "name": "cobot 제품",
-          "code": "code",
+          "name": "MD20G",
+          "code": "MD20G",
           "features": [
             {
               "title": "null",
               "texts": [
-                ""
+                "Version：fixed version",
+                "Payload：20kg",
+                "Working space radius：1600mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD20S",
+          "code": "MD20S",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Version：lifting version",
+                "Payload：20kg",
+                "Working space radius：2100mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD20SS",
+          "code": "MD20SS",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Version：lifting version",
+                "Payload：20kg",
+                "Working space radius：2300mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD30G",
+          "code": "MD30G",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Version：fixed version",
+                "Payload：30kg",
+                "Working space radius：1600mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD30S",
+          "code": "MD30S",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Version：lifting version",
+                "Payload：30kg",
+                "Working space radius：2100mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD30SS",
+          "code": "MD30SS",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Version：lifting version",
+                "Payload：30kg",
+                "Working space radius：2300mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD40G",
+          "code": "MD40G",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Version：fixed version",
+                "Payload：40kg",
+                "Working space radius：1600mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD40S",
+          "code": "MD40S",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Version：lifting version",
+                "Payload：40kg",
+                "Working space radius：2100mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MD40SS",
+          "code": "MD40SS",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Version：lifting version",
+                "Payload：40kg",
+                "Working space radius：2300mm"
               ]
             }
           ]
@@ -954,9 +1110,9 @@
       ]
     }
   ],
-  "case-paker": [
+  "case-packer": [
     {
-      "title": "데모 타이틀",
+      "title": "case packer",
       "items": [
         {
           "name": "cobot 제품",

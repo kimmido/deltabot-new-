@@ -1,4 +1,146 @@
 {
+  "machine-vision": [
+    {
+      "title": "Vision Camera",
+      "items": [
+        {
+          "name": "AtomVision-2D-L-130GM-8-H",
+          "code": "AtomVision-2D-L-130GM-8-H",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Recognition type：2D",
+                "Resolution ratio：1280*1024",
+                "Color ：black-and-white",
+                "Focal length：8mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AtomVision-2D-L-160GM-8-D",
+          "code": "AtomVision-2D-L-160GM-8-D",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Recognition type：2D",
+                "Resolution ratio：1440*1080",
+                "Color ：black-and-white",
+                "Focal length：8mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AtomVision-2D-L-200GC-16-H",
+          "code": "AtomVision-2D-L-200GC-16-H",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Recognition type：2D",
+                "Resolution ratio：1920*1200",
+                "Color：colored",
+                "Focal length：16mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AtomVision-2D-L-320GM-8-D",
+          "code": "AtomVision-2D-L-320GM-8-D",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Recognition type：2D",
+                "Resolution ratio：2048*1536",
+                "Color ：black-and-white",
+                "Focal length：8mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AtomVision-2D-L-500GC-8-H",
+          "code": "AtomVision-2D-L-500GC-8-H",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Recognition type：2D",
+                "Resolution ratio：2448*2048",
+                "Color：colored",
+                "Focal length：8mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AtomVision-2D-L-200GM-8-H",
+          "code": "AtomVision-2D-L-200GM-8-H",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Recognition type：2D",
+                "Resolution ratio：1624*1240",
+                "Color ：black-and-white",
+                "Focal length：8mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AtomVision-SD-S-200GC-8-H",
+          "code": "AtomVision-SD-S-200GC-8-H",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Recognition type：deep learning",
+                "Resolution ratio：1920*1200",
+                "Color：colored",
+                "Focal length：8mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AtomVision-SD-S-320GC-8-H",
+          "code": "AtomVision-SD-S-320GC-8-H",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Recognition type：deep learning",
+                "Resolution ratio：2048*1536",
+                "Color：colored",
+                "Focal length：8mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AtomVision-3D-S-TY",
+          "code": "AtomVision-3D-S-TY",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Recognition type：3D",
+                "Depth resolution ratio：1280*960",
+                "RGB resolution ratio：1280*960",
+                "Work range：700-8000mm"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "spectral-camera": [
     {
       "title": "Spectral Camera",
