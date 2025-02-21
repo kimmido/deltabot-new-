@@ -8,10 +8,10 @@ export const category = [
     },
     sub: [
       {
-        label: "Robot automation",
+        label: "Robot Automation",
         path: "robot-automation",
         items: [
-          { path: "collaboration", label: "협업로봇" },
+          { path: "collaboration", label: "협동로봇" },
           { path: "serial-robot", label: "수직다관절 로봇" },
           { path: "scara", label: "스카라" },
           { path: "cobot", label: "코봇" },
@@ -20,7 +20,7 @@ export const category = [
         ],
       },
       {
-        label: "Vision system",
+        label: "Vision System",
         path: "vision-system",
         items: [
           { path: "machine-vision", label: "머신비전 카메라" },
@@ -31,7 +31,7 @@ export const category = [
         ],
       },
       {
-        label: "Recycling system",
+        label: "Recycling System",
         path: "recycling-system",
         items: [
           { path: "single-robot", label: "Single Robot System" },
@@ -47,7 +47,7 @@ export const category = [
         ],
       },
       {
-        label: "Information technology",
+        label: "Information Technology",
         path: "information-technology",
         items: [
           { path: "gpu-server", label: "GPU server" },
