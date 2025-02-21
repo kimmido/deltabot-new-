@@ -715,7 +715,7 @@
   ],
   "scara": [
     {
-      "title": "임시타이틀-ST",
+      "title": "ST series",
       "items": [
         {
           "name": "ST-500-A-A",
@@ -810,7 +810,7 @@
       ]
     },
     {
-      "title": "임시타이틀-MBD",
+      "title": "M-BD series",
       "items": [
         {
           "name": "M04BD",
@@ -875,7 +875,7 @@
       ]
     },
     {
-      "title": "임시타이틀-MGD",
+      "title": "M-GD series",
       "items": [
         {
           "name": "M07GD",
