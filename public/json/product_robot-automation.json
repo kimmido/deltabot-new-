@@ -942,7 +942,7 @@
   ],
   "cobot": [
     {
-      "title": "Cobot Palletizer",
+      "title": "ATM-MD20 series",
       "items": [
         {
           "name": "MD20G",
@@ -985,7 +985,12 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "ATM-MD30 series",
+      "items": [
         {
           "name": "MD30G",
           "code": "MD30G",
@@ -1027,7 +1032,12 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "ATM-MD40 series",
+      "items": [
         {
           "name": "MD40G",
           "code": "MD40G",
