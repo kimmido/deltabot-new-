@@ -4,8 +4,8 @@
       "title": "CR Series",
       "items": [
         {
-          "name": "CR7",
-          "code": "CR7",
+          "name": "CR7-7",
+          "code": "CR7-7",
           "features": [
             {
               "title": "null",
@@ -21,17 +21,43 @@
               "title": "Featrue",
               "texts": [
                 "Payload : 7kg",
-                "Weight : About 27kg",
+                "Weight : About 25kg",
                 "DOF : 6",
-                "Reach : 850mm",
+                "Reach : 988mm",
+                "Repeatablity : ＜±0.02mm"
+              ]
+            }
+          ]
+        }, 
+        {
+          "name": "CR12-12",
+          "code": "CR12-12",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "우수한 성능, 효율성 우선",
+                "최고의 안전성, 포괄적인 보증",
+                "유연한 배포, 사용 용이성",
+                "효율적인 보호, 탁월한 신뢰성",
+                "건전한 생태계, 완전한 권한 부여"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 12kg",
+                "Weight : About 41kg",
+                "DOF : 6",
+                "Reach : 1434mm",
                 "Repeatablity : ＜±0.03mm"
               ]
             }
           ]
         }, 
         {
-          "name": "CR12",
-          "code": "CR12",
+          "name": "CR12-20",
+          "code": "CR12-20",
           "features": [
             {
               "title": "null",
@@ -46,18 +72,18 @@
             {
               "title": "Featrue",
               "texts": [
-                "Payload : 7kg",
-                "Weight : About 27kg",
+                "Payload : 20kg",
+                "Weight : About 41kg",
                 "DOF : 6",
-                "Reach : 850mm",
+                "Reach : 1434mm",
                 "Repeatablity : ＜±0.03mm"
               ]
             }
           ]
         }, 
         {
-          "name": "CR18",
-          "code": "CR18",
+          "name": "CR18-18",
+          "code": "CR18-18",
           "features": [
             {
               "title": "null",
@@ -72,18 +98,18 @@
             {
               "title": "Featrue",
               "texts": [
-                "Payload : 7kg",
-                "Weight : About 27kg",
+                "Payload : 18kg",
+                "Weight : About 38kg",
                 "DOF : 6",
-                "Reach : 850mm",
+                "Reach : 1062mm",
                 "Repeatablity : ＜±0.03mm"
               ]
             }
           ]
         }, 
         {
-          "name": "CR20",
-          "code": "CR20",
+          "name": "CR20-20",
+          "code": "CR20-20",
           "features": [
             {
               "title": "null",
@@ -98,11 +124,89 @@
             {
               "title": "Featrue",
               "texts": [
-                "Payload : 7kg",
-                "Weight : About 27kg",
+                "Payload : 20kg",
+                "Weight : About 71kg",
                 "DOF : 6",
-                "Reach : 850mm",
-                "Repeatablity : ＜±0.03mm"
+                "Reach : 1798mm",
+                "Repeatablity : ＜±0.05mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CR20-25",
+          "code": "CR20-25",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "우수한 성능, 효율성 우선",
+                "최고의 안전성, 포괄적인 보증",
+                "유연한 배포, 사용 용이성",
+                "효율적인 보호, 탁월한 신뢰성",
+                "건전한 생태계, 완전한 권한 부여"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 25kg",
+                "Weight : About 69kg",
+                "DOF : 5",
+                "Reach : 1798mm",
+                "Repeatablity : ＜±0.05mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CR35-35",
+          "code": "CR35-35",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "우수한 성능, 효율성 우선",
+                "최고의 안전성, 포괄적인 보증",
+                "유연한 배포, 사용 용이성",
+                "효율적인 보호, 탁월한 신뢰성",
+                "건전한 생태계, 완전한 권한 부여"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 35kg",
+                "Weight : About 165kg",
+                "DOF : 6",
+                "Reach : 2246mm",
+                "Repeatablity : ＜±0.05mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CR35-45",
+          "code": "CR35-45",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "우수한 성능, 효율성 우선",
+                "최고의 안전성, 포괄적인 보증",
+                "유연한 배포, 사용 용이성",
+                "효율적인 보호, 탁월한 신뢰성",
+                "건전한 생태계, 완전한 권한 부여"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 45kg",
+                "Weight : About 161kg",
+                "DOF : 6",
+                "Reach : 1947mm",
+                "Repeatablity : ＜±0.05mm"
               ]
             }
           ]
@@ -113,8 +217,8 @@
       "title": "SR Series",
       "items": [
         {
-          "name": "SR3",
-          "code": "SR3",
+          "name": "SR3-3",
+          "code": "SR3-3",
           "features": [
             {
               "title": "null",
@@ -130,17 +234,17 @@
               "title": "Featrue",
               "texts": [
                 "Payload : 3kg",
-                "Weight : About 15kg",
+                "Weight : About 13.8kg",
                 "DOF : 6",
-                "Reach : 580mm",
+                "Reach : 705mm",
                 "Repeatablity : ±0.03mm"
               ]
             }
           ]
         }, 
         {
-          "name": "SR4",
-          "code": "SR4",
+          "name": "SR4-4",
+          "code": "SR4-4",
           "features": [
             {
               "title": "null",
@@ -156,10 +260,36 @@
               "title": "Featrue",
               "texts": [
                 "Payload : 4kg",
-                "Weight : About 17.5kg",
+                "Weight : About 16.5kg",
                 "DOF : 6",
-                "Reach : 800mm",
-                "Repeatablity : ±0.05mm"
+                "Reach : 919mm",
+                "Repeatablity : ±0.03mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SR4-5",
+          "code": "SR4-5",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "최고의 안전성, 포괄적인 보증",
+                "가볍고 유연하며 세련되고 친근함",
+                "탁월한 신뢰성, 견고한 파트너",
+                "뛰어난 접근성, 사용 편의성",
+                "건전한 생태계, 완전한 권한 부여"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Payload : 5kg",
+                "Weight : About 16.5kg",
+                "DOF : 6",
+                "Reach : 919mm",
+                "Repeatablity : ±0.03mm"
               ]
             }
           ]
