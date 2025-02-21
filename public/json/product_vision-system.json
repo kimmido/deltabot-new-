@@ -49,6 +49,21 @@
           ]
         },
         {
+          "name": "2D-L-200GM-8-H",
+          "code": "2D-L-200GM-8-H",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Recognition type：2D",
+                "Resolution ratio：1624*1240",
+                "Color ：black-and-white",
+                "Focal length：8mm"
+              ]
+            }
+          ]
+        },
+        {
           "name": "2D-L-320GM-8-D",
           "code": "2D-L-320GM-8-D",
           "features": [
@@ -73,21 +88,6 @@
                 "Recognition type：2D",
                 "Resolution ratio：2448*2048",
                 "Color：colored",
-                "Focal length：8mm"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "2D-L-200GM-8-H",
-          "code": "2D-L-200GM-8-H",
-          "features": [
-            {
-              "title": "null",
-              "texts": [
-                "Recognition type：2D",
-                "Resolution ratio：1624*1240",
-                "Color ：black-and-white",
                 "Focal length：8mm"
               ]
             }
@@ -304,6 +304,50 @@
                 "470 Spectral Channels Per Line",
                 "3.8 nm Spectral Resolution (FWHM)"
               ]
+            }
+          ]
+        },
+        {
+          "name": "Pika L-F",
+          "code": "Pika_L-F",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Pika L-F는 가시광선 + 근적외선(VNIR) 스펙트럼 범위를 커버하는 고속(초당 최대 585 프레임) 하이퍼 스펙트럼 카메라입니다. 속도가 중요한 머신 비전 애플리케이션을 위해 설계되었습니다.",
+                "Pika L-F는 머신 비전 시스템에 이상적이지만 실험실 및 실외 초분광 시스템에서도 사용할 수 있으며, 프로그래밍 지침 문서와 함께 단독으로 사용하거나 시스템에 통합할 수도 있습니다."
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Spectral Range: 420-980 nm",
+                "720 Spatial Pixels Per Line",
+                "224 Spectral Channels Per Line",
+                "High Speed (585 fps max.)"
+              ] 
+            }
+          ]
+        },
+        {
+          "name": "Pika Swir",
+          "code": "Pika_Swir",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "Pika SWIR은 단파 적외선(SWIR) 스펙트럼 범위(1000 – 2500 nm)를 위한 초분광 카메라로, 광물 탐사, 제약 검사, 토양 특성화 및 폐기물 재활용을 포함한 광범위한 응용 분야를 가능하게 합니다.",
+                "Pika SWIR은 실험실과 실외 초분광 시스템에서 사용할 수 있습니다. Resonon의 벤치탑 및 실외 시스템과 호환됩니다."
+              ]
+            },
+            {
+              "title": "Featrue",
+              "texts": [
+                "Spectral Range: 1000-2500 nm",
+                "640 Spatial Pixels Per Line",
+                "245 Spectral Channels Per Line",
+                "11.0 nm Spectral Resolution (FWHM)"
+              ] 
             }
           ]
         }
