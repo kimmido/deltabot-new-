@@ -302,8 +302,8 @@
       "title": "Handling Robot",
       "items": [
         {
-          "name": "ES06",
-          "code": "ES06",
+          "name": "MZ12",
+          "code": "MZ12",
           "features": [
             {
               "title": "null",
@@ -314,8 +314,8 @@
           ]
         },
         {
-          "name": "EZ03",
-          "code": "EZ03",
+          "name": "MZ07",
+          "code": "MZ07",
           "features": [
             {
               "title": "null",
@@ -326,8 +326,8 @@
           ]
         },
         {
-          "name": "MC10S",
-          "code": "MC10S",
+          "name": "MZ04/MZ04E",
+          "code": "MZ04_MZ04E",
           "features": [
             {
               "title": "null",
@@ -340,6 +340,18 @@
         {
           "name": "MC12S",
           "code": "MC12S",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MC10S",
+          "code": "MC10S",
           "features": [
             {
               "title": "null",
@@ -398,44 +410,32 @@
           ]
         },
         {
-          "name": "MZ04/MZ04E",
-          "code": "MZ04_MZ04E",
-          "features": [
-            {
-              "title": "null",
-              "texts": [
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "name": "MZ07",
-          "code": "MZ07",
-          "features": [
-            {
-              "title": "null",
-              "texts": [
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "name": "MZ12",
-          "code": "MZ12",
-          "features": [
-            {
-              "title": "null",
-              "texts": [
-                ""
-              ]
-            }
-          ]
-        },
-        {
           "name": "ST210TP",
           "code": "ST210TP",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ES06",
+          "code": "ES06",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EZ03",
+          "code": "EZ03",
           "features": [
             {
               "title": "null",
@@ -504,20 +504,8 @@
       "title": "Palletizing Robot",
       "items": [
         {
-          "name": "LP130/180/210-01",
-          "code": "LP130_180_210-01",
-          "features": [
-            {
-              "title": "null",
-              "texts": [
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "name": "LP130F",
-          "code": "LP130F",
+          "name": "MC500P",
+          "code": "MC500P",
           "features": [
             {
               "title": "null",
@@ -540,8 +528,20 @@
           ]
         },
         {
-          "name": "MC500P",
-          "code": "MC500P",
+          "name": "LP130/180/210-01",
+          "code": "LP130_180_210-01",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "LP130F",
+          "code": "LP130F",
           "features": [
             {
               "title": "null",
@@ -586,42 +586,6 @@
       "title": "Spot Welding Robot",
       "items": [
         {
-          "name": "SRA100/166/210/166L/120EL",
-          "code": "SRA100_166_210_166L_120EL",
-          "features": [
-            {
-              "title": "null",
-              "texts": [
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "name": "SRA100B/100J",
-          "code": "SRA100B_100J",
-          "features": [
-            {
-              "title": "null",
-              "texts": [
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "name": "SRA100H/SRA133HL",
-          "code": "SRA100H_SRA133HL",
-          "features": [
-            {
-              "title": "null",
-              "texts": [
-                ""
-              ]
-            }
-          ]
-        },
-        {
           "name": "SRA100HS/SRA100HB",
           "code": "SRA100HS_SRA100HB",
           "features": [
@@ -646,8 +610,44 @@
           ]
         },
         {
+          "name": "SRA100H/SRA133HL",
+          "code": "SRA100H_SRA133HL",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SRA100B/100J",
+          "code": "SRA100B_100J",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
           "name": "SRA166/210-01A",
           "code": "SRA166_210-01A",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SRA100/166/210/166L/120EL",
+          "code": "SRA100_166_210_166L_120EL",
           "features": [
             {
               "title": "null",
@@ -662,18 +662,6 @@
     {
       "title": "Cleanroom Robot",
       "items": [
-        {
-          "name": "SC400LC",
-          "code": "SC400LC",
-          "features": [
-            {
-              "title": "null",
-              "texts": [
-                ""
-              ]
-            }
-          ]
-        },
         {
           "name": "SJ80C-18D/24D",
           "code": "SJ80C-18D_24D",
@@ -701,6 +689,18 @@
         {
           "name": "ST133CF/166CF/210CF-01",
           "code": "ST133CF_166CF_210CF-01",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SC400LC",
+          "code": "SC400LC",
           "features": [
             {
               "title": "null",
