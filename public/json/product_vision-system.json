@@ -360,7 +360,7 @@
       "items": [
         {
           "name": "MRC-920-029",
-          "code": "MRC-920-029",
+          "code": "mrc-920-029",
           "features": [
             {
               "title": "MSV Series Illumination 6″ Dual Line",
@@ -373,7 +373,7 @@
         }, 
         {
           "name": "MRC-920-031",
-          "code": "MRC-920-031",
+          "code": "mrc-920-031",
           "features": [
             {
               "title": "MSV Series Illumination Dual 4",
@@ -385,7 +385,7 @@
         },
         {
           "name": "MRC-920-027",
-          "code": "MRC-920-027",
+          "code": "mrc-920-027",
           "features": [
             {
               "title": "MSV Series Illumination Dual 8",
@@ -397,7 +397,7 @@
         },
         {
           "name": "MRC-920-030",
-          "code": "MRC-920-030",
+          "code": "mrc-920-030",
           "features": [
             {
               "title": "MSV Series Illumination Single-Line",
