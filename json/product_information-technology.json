@@ -1,0 +1,197 @@
+{
+  "gpu-server": [
+    {
+      "title": "GPU server",
+      "items": [
+        {
+          "name": "Server ARS-111GL-NHR",
+          "code": "ARS-111GL-NHR",
+          "features": [
+            {
+              "title": "Featrue",
+              "texts": [
+                "High density 1U GPU system with Integrated NVIDIA® H100 GPU",
+                "NVIDIA Grace Hopper™ Superchip (Grace CPU and H100 GPU)",
+                "NVLink® Chip-2-Chip (C2C) high-bandwidth, low-latency interconnect between CPU and GPU at 900GB/s"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Server SYS-421GE-TNRT",
+          "code": "SYS-421GE-TNRT",
+          "features": [
+            {
+              "title": "Featrue",
+              "texts": [
+                "5th/4th Gen Intel®  Xeon® Scalable processor support",
+                "32 DIMM slots Up to 8TB: 32x 256 GB DRAM Memory Type: 5600MTs ECC DDR5",
+                "AIOM/OCP 3.0 Support"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "workstations": [
+    {
+      "title": "Workstations",
+      "items": [
+        {
+          "name": "KWS 3000-CML",
+          "code": "KWS-3000-CML",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "컴팩트하고 견고한 미디타워 형태의 고성능 산업용 워크스테이션"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CG2300 Server",
+          "code": "CG2300",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "NEBS-3 인증을 충족하도록 설계된 컴팩트 2U, 20인치 딥 캐리어 그레이드 랙마운트 서버 사양"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CG2400 Server",
+          "code": "CG2400",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "통신사 본사 및 AI 엣지 솔루션을 위한 장수명 캐리어급 서버"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CG2500 Server",
+          "code": "CG2500",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "20인치 짧은 깊이와 19인치 섀시를 갖춘 내구성이 뛰어난 2RU"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rack-mount": [
+    {
+      "title": "Rack mount",
+      "items": [
+        {
+          "name": "1U",
+          "code": "1U",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "컴팩트하고 견고한 미디타워 형태의 고성능 산업용 워크스테이션"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "military": [
+    {
+      "title": "Military",
+      "items": [
+        {
+          "name": "Ace Flight™ 4608",
+          "code": "Ace-Flight-4608",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "고성능 항공전자 서버"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ace Flight™ 4609",
+          "code": "Ace-Flight-4609",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "고성능 항공전자 서버"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HARAKAN-F",
+          "code": "HARAKAN-F",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "VPX 견고한 컴팩트 미션 컴퓨터"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DARC™ VX208",
+          "code": "DARC-VX208",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "데이터 처리, 비디오, 그래픽 및 AI를 위한 VPX 기반 견고한 미션 컴퓨터"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "vehicle": [
+    {
+      "title": "Vehicle",
+      "items": [
+        {
+          "name": "S1901 EvoTRAC",
+          "code": "s1901-evotrac",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "중장비용 지능형 고성능 플랫폼"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EvoTRAC-G103",
+          "code": "evotrac-g103",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "견고한 게이트웨이 | 셀룰러 및 WiFi"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

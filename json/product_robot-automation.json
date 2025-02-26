@@ -1143,16 +1143,60 @@
   ],
   "case-packer": [
     {
-      "title": "case packer",
+      "title": "Case Paker",
       "items": [
         {
-          "name": "cobot 제품",
-          "code": "code",
+          "name": "PM-01",
+          "code": "PM-01",
           "features": [
             {
-              "title": "null",
+              "title": "Featrue",
               "texts": [
-                ""
+                "Max carton size(mm)：430*320*290",
+                "Max payload：2kg",
+                "Capacity：60 bags/min"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PM-02",
+          "code": "PM-02",
+          "features": [
+            {
+              "title": "Featrue",
+              "texts": [
+                "Max carton size(mm)：430*430*305",
+                "Max payload：3kg",
+                "Capacity：45 bags/min"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PM-03",
+          "code": "PM-03",
+          "features": [
+            {
+              "title": "Featrue",
+              "texts": [
+                "Max carton size(mm)：500*400*400",
+                "Max payload：5kg",
+                "Capacity：40 bags/min"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PM-05",
+          "code": "PM-05",
+          "features": [
+            {
+              "title": "Featrue",
+              "texts": [
+                "Max carton size(mm)：368*224*115",
+                "Max payload：3kg",
+                "Capacity：60 bags/min"
               ]
             }
           ]
