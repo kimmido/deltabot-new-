@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { useOutletContext } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
@@ -7,7 +8,8 @@ import SeriesTabMenu from "./components/SeriesTabMenu";
 import ProductItem from "./components/ProductItem";
 import ProductScrollBtn from "./components/ProductScrollBtn";
 
-function Business({ currentPath, productData = [] }) {
+function Business() {
+  const { currentTab, productData = [] } = useOutletContext();
   const [currentIdx, setCurrentIdx] = useState(0);
 
   const itemsRef = useRef(null);
@@ -15,7 +17,7 @@ function Business({ currentPath, productData = [] }) {
 
   useEffect(() => {
     setCurrentIdx(0);
-  }, [currentPath]);
+  }, [currentTab]);
 
   useGSAP(
     () => {
@@ -33,7 +35,7 @@ function Business({ currentPath, productData = [] }) {
         }
       );
     },
-    { dependencies: [currentPath], scope: gsapContainerRef }
+    { dependencies: [currentTab], scope: gsapContainerRef }
   );
 
   function scrollTo(el) {
@@ -65,7 +67,7 @@ function Business({ currentPath, productData = [] }) {
           {productData[currentIdx] &&
             productData[currentIdx].items.map((item) => (
               <ProductScrollBtn
-                currentPath={currentPath}
+                currentTab={currentTab}
                 item={item}
                 scrollTo={scrollTo}
               />
@@ -78,7 +80,7 @@ function Business({ currentPath, productData = [] }) {
             <ProductItem
               key={item.code}
               item={item}
-              currentPath={currentPath}
+              currentTab={currentTab}
               getMap={getMap}
             />
           ))}

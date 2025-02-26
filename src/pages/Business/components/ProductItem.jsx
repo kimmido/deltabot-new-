@@ -5,7 +5,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 gsap.registerPlugin(useGSAP, ScrollToPlugin);
 
-function ProductItem({ item, currentPath, getMap }) {
+function ProductItem({ item, currentTab, getMap }) {
   const specRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -35,7 +35,7 @@ function ProductItem({ item, currentPath, getMap }) {
       <div className="pd_flex">
         <div className="pd_left">
           <img
-            src={`/images/product/${currentPath}/${item.code}.png`}
+            src={`/images/product/${currentTab}/${item.code}.png`}
             alt={item.name}
           />
         </div>
@@ -69,7 +69,7 @@ function ProductItem({ item, currentPath, getMap }) {
         <div className="spec-container" ref={specRef}>
           <p>SPECIFICATION</p>
           <img
-            src={`/images/product/${currentPath}/${item.code}_info.svg`}
+            src={`/images/product/${currentTab}/${item.code}_info.svg`}
             alt={item.code}
           />
         </div>

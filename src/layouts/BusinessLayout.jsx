@@ -1,26 +1,23 @@
 import React, { useContext, useEffect, useState } from "react";
 import PageHeading from "../components/Shared/PageHeading";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { CategoryRoutesContext } from "../contexts/CategoryRoutesContext";
-import Business from "../pages/Business/Business";
 import { fetchData } from "../utils/fetchData";
-import TabMenu from "../pages/Business/components/TabMenu";
+import TabMenu from "../components/Layout/TabMenu";
 
 function BusinessLayout() {
   const category = useContext(CategoryRoutesContext);
-  const navigate = useNavigate();
   const { pathname } = useLocation();
   const [routes, setRoutes] = useState({ items: [] });
   const [currentCategory, setCurrentCategory] = useState("");
-  const [currentPath, setCurrentPath] = useState("");
+  const [currentTab, setCurrentTab] = useState("");
   const [productData, setProductData] = useState({});
 
   useEffect(() => {
     const pathSegments = pathname.split("/").filter((segment) => segment);
     setRoutes(category[0].sub.find((sub) => sub.path == pathSegments[0]));
     setCurrentCategory(pathSegments[0]);
-    setCurrentPath(pathSegments[1]);
-    console.log(pathSegments[1]);
+    setCurrentTab(pathSegments[1]);
   }, [pathname]);
 
   useEffect(() => {
@@ -40,22 +37,17 @@ function BusinessLayout() {
     getData();
   }, [currentCategory]);
 
-  const handleTabChange = (currentCategory, path) => {
-    navigate(`/${currentCategory}/${path}`);
-  };
-
   return (
     <div className="BusinessLayout">
       <div className="container">
-        <PageHeading title={currentCategory} currentPath={currentPath} />
+        <PageHeading title={currentCategory} currentPath={currentTab} />
         <TabMenu
           routes={routes}
           currentCategory={currentCategory}
-          currentPath={currentPath}
+          currentPath={currentTab}
         />
-        <Business
-          currentPath={currentPath}
-          productData={productData[currentPath]}
+        <Outlet
+          context={{ currentTab, productData: productData[currentTab] }}
         />
       </div>
     </div>

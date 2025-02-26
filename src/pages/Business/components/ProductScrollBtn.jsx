@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProductScrollBtn({ currentPath, item, scrollTo }) {
+function ProductScrollBtn({ currentTab, item, scrollTo }) {
   return (
     <button
       key={item.code}
@@ -10,7 +10,7 @@ function ProductScrollBtn({ currentPath, item, scrollTo }) {
       }}
     >
       <img
-        src={`/images/product/${currentPath}/${item.code}.png`}
+        src={`/images/product/${currentTab}/${item.code}.png`}
         alt={item.name}
       />
       <div className="subject">
