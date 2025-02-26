@@ -5,6 +5,7 @@ gsap.registerPlugin(useGSAP);
 
 import SeriesTabMenu from "./components/SeriesTabMenu";
 import ProductItem from "./components/ProductItem";
+import ProductScrollBtn from "./components/ProductScrollBtn";
 
 function Business({ currentPath, productData = [] }) {
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -62,23 +63,12 @@ function Business({ currentPath, productData = [] }) {
         />
         <div className="product-scroll">
           {productData[currentIdx] &&
-            productData[currentIdx].items.map((item, idx) => (
-              <button
-                key={item.code}
-                className="product-scroll__button"
-                onClick={() => {
-                  scrollTo(item.code);
-                }}
-              >
-                <img
-                  src={`/images/product/${currentPath}/${item.code}.png`}
-                  alt={item.name}
-                />
-                <div className="subject">
-                  <p className="sbtxt">{item.name}</p>
-                  <span></span>
-                </div>
-              </button>
+            productData[currentIdx].items.map((item) => (
+              <ProductScrollBtn
+                currentPath={currentPath}
+                item={item}
+                scrollTo={scrollTo}
+              />
             ))}
         </div>
       </div>
