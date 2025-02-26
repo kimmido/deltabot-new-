@@ -15,7 +15,7 @@ const Home = () => {
         scrollTrigger: {
           trigger: ".decorative-txt",
           start: "bottom 90%",
-          end: "center 30%",
+          end: "center 48%",
           scrub: 1, // 스크롤에 따라 부드럽게
           markers: false,
         },
