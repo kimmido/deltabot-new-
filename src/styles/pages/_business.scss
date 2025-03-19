@@ -335,6 +335,7 @@
         }
 
         .spec-container {
+          position: relative;
           width: 100%;
           max-width: 1280px;
           padding-top: $header-sm;
@@ -351,6 +352,21 @@
             @include respondTo(md) {
               font-size: $font-size-con-title-lg;
             }
+          }
+
+          span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
           }
 
           img {

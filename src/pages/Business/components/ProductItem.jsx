@@ -68,10 +68,17 @@ function ProductItem({ item, currentTab, getMap }) {
       {isOpen && (
         <div className="spec-container" ref={specRef}>
           <p>SPECIFICATION</p>
-          <img
-            src={`/images/product/${currentTab}/${item.code}_info.jpg`}
-            alt={item.code}
-          />
+          <span
+            onContextMenu={(e) => {
+              e.preventDefault();
+            }}
+          ></span>
+          <div className="cnt">
+            <img
+              src={`/images/product/${currentTab}/${item.code}_info.jpg`}
+              alt={item.code}
+            />
+          </div>
         </div>
       )}
     </div>
