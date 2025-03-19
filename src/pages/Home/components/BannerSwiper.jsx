@@ -23,14 +23,18 @@ function BannerSwiper() {
     },
     {
       alt: "메인배너2",
-      text1: "RECYCLING SYSTEM",
+      text1: "VISION SYSTEM",
     },
     {
       alt: "메인배너3",
-      text1: "MEDICAL",
+      text1: "RECYCLING SYSTEM",
     },
     {
       alt: "메인배너4",
+      text1: "MEDICAL",
+    },
+    {
+      alt: "메인배너5",
       text1: "IT",
     },
   ];
@@ -77,11 +81,7 @@ function BannerSwiper() {
         {slideData.map((item, idx) => (
           <SwiperSlide key={item.alt}>
             <div className={`slide slide--${idx}`}>
-              <strong className="slide__text">
-                {item.text1}
-                <br />
-                {item.text2}
-              </strong>
+              <strong className="slide__text">{item.text1}</strong>
             </div>
           </SwiperSlide>
         ))}

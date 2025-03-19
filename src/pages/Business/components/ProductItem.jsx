@@ -69,7 +69,7 @@ function ProductItem({ item, currentTab, getMap }) {
         <div className="spec-container" ref={specRef}>
           <p>SPECIFICATION</p>
           <img
-            src={`/images/product/${currentTab}/${item.code}_info.svg`}
+            src={`/images/product/${currentTab}/${item.code}_info.jpg`}
             alt={item.code}
           />
         </div>

@@ -28,7 +28,7 @@ function Footer() {
           <address className="flex-container">
             <span className="dt">주소</span>
             <span className="dd">
-              경기도 부천양지로 229, 골든IT타워 730호-733호(옥길동)
+              경기도 부천시 소사구 양지로 229, 골든IT타워 730호-733호(옥길동)
             </span>
           </address>
           <p className="flex-container">

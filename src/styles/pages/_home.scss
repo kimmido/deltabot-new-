@@ -52,6 +52,10 @@
         background-image: $GRADIENT,
           url("@assets/images/home/main_slide(4).jpg");
       }
+      &--4 {
+        background-image: $GRADIENT,
+          url("@assets/images/home/main_slide(5).jpg");
+      }
 
       .slide__text {
         position: absolute;
