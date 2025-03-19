@@ -67,6 +67,7 @@ function Business() {
           {productData[currentIdx] &&
             productData[currentIdx].items.map((item) => (
               <ProductScrollBtn
+                key={item.code}
                 currentTab={currentTab}
                 item={item}
                 scrollTo={scrollTo}

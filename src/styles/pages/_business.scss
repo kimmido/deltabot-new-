@@ -218,6 +218,7 @@
           .pd_right {
             flex: 1 1 51%;
             align-content: center;
+            padding: 2rem 0;
 
             .prod_name {
               display: block;
@@ -231,10 +232,10 @@
 
             .prod_desc {
               &__inner {
-                margin-top: 16px;
+                margin-top: 2rem;
 
                 @include respondTo(md) {
-                  margin-top: 24px;
+                  margin-top: 3rem;
                 }
 
                 .prod_desc__title {
@@ -243,11 +244,19 @@
                   font-size: calc(1em + 2px);
                 }
 
+                p,
+                li {
+                  margin-top: 1rem;
+                }
+
+                p {
+                  line-height: 1.5;
+                }
+
                 li {
                   position: relative;
                   padding-left: 12px;
-                  line-height: 130%;
-                  margin-top: 1rem;
+                  line-height: 1.2;
 
                   &::before {
                     @include pseudoDefault($color-text-body);
@@ -263,7 +272,7 @@
                 @include flexBox(row, $gutter-sm, center, center);
                 position: relative;
                 overflow: hidden;
-                margin-top: 16px;
+                margin-top: 2rem;
                 width: 100%;
                 padding: 10px 12px;
                 border-radius: 1000px;
@@ -272,7 +281,7 @@
                 transition: all 0.3s;
 
                 @include respondTo(sm) {
-                  margin-top: 30px;
+                  margin-top: 3.6rem;
                   padding: 16px 40px;
                   width: auto;
                   font-size: calc(1em + 2px);

@@ -40,18 +40,23 @@ function ProductItem({ item, currentTab, getMap }) {
           />
         </div>
         <div className="pd_right">
-          <strong className="prod_name">{item.name}</strong>
+          <h3 className="prod_name">{item.name}</h3>
           <div className="prod_desc">
             {item.features.map((feature, idx) => (
               <div key={idx} className="prod_desc__inner">
                 {feature.title == "null" || (
-                  <p className="prod_desc__title">{feature.title}</p>
+                  <h4 className="prod_desc__title">{feature.title}</h4>
                 )}
-                <ul>
-                  {feature.texts.map((text) => (
-                    <li key={text}>{text}</li>
-                  ))}
-                </ul>
+                {feature.texts?.map((text, idx) => (
+                  <p key={idx}>{text}</p>
+                ))}
+                {feature.bullets && (
+                  <ul>
+                    {feature.bullets.map((bullet, idx) => (
+                      <li key={idx}>{bullet}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
             <button

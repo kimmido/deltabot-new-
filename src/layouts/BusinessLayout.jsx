@@ -26,7 +26,7 @@ function BusinessLayout() {
     const getData = async () => {
       try {
         const jsonData = await fetchData(
-          `/json/product_${currentCategory}.json`
+          `/json/product-${currentCategory}.json`
         ); // public 폴더의 JSON 경로
         setProductData(jsonData);
       } catch (error) {
@@ -39,6 +39,7 @@ function BusinessLayout() {
 
   return (
     <div className="BusinessLayout">
+      {console.log("BusinessLayout 렌더링")}
       <div className="container">
         <PageHeading title={currentCategory} currentPath={currentTab} />
         <TabMenu
