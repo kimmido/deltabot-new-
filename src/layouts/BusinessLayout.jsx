@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useMemo, useState } from "react";
 import PageHeading from "../components/Shared/PageHeading";
 import { Outlet, useLocation } from "react-router-dom";
 import { CategoryRoutesContext } from "../contexts/CategoryRoutesContext";
@@ -15,6 +15,7 @@ function BusinessLayout() {
 
   useEffect(() => {
     const pathSegments = pathname.split("/").filter((segment) => segment);
+    console.log("패스변경");
     setRoutes(category[0].sub.find((sub) => sub.path == pathSegments[0]));
     setCurrentCategory(pathSegments[0]);
     setCurrentTab(pathSegments[1]);
@@ -37,6 +38,10 @@ function BusinessLayout() {
     getData();
   }, [currentCategory]);
 
+  const outletContext = useMemo(() => {
+    return { currentTab, productData: productData[currentTab] };
+  }, [currentTab, productData]);
+
   return (
     <div className="BusinessLayout">
       {console.log("BusinessLayout 렌더링")}
@@ -47,9 +52,7 @@ function BusinessLayout() {
           currentCategory={currentCategory}
           currentPath={currentTab}
         />
-        <Outlet
-          context={{ currentTab, productData: productData[currentTab] }}
-        />
+        <Outlet context={outletContext} />
       </div>
     </div>
   );

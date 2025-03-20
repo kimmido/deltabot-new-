@@ -41,6 +41,7 @@ function PageHeading({ title, currentPath }) {
 
   return (
     <div className="PageHeading">
+      {console.log("페이지 헤딩")}
       <div className="PageHeading__background">
         {isVideoLoad ? (
           <video

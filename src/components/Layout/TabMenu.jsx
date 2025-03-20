@@ -10,6 +10,7 @@ function TabMenu({ routes, currentCategory, currentPath }) {
 
   return (
     <div className="TabMenu overflow_hidden">
+      {console.log("탭메뉴")}
       <div className="TabMenu__box" data-aos="fade-up" data-aos-duration="1000">
         {routes.items.map((route) => (
           <button

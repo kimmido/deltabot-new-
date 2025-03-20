@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+import React, { useCallback, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
-function SeriesTabMenu({ items, currentIdx, setCurrentIdx }) {
+function SeriesTabMenu({ items, currentIdx, setCurrentIdx, setSearchParams }) {
   const gsapContainerRef = useRef(null);
 
   useGSAP(
@@ -33,16 +33,23 @@ function SeriesTabMenu({ items, currentIdx, setCurrentIdx }) {
     });
   };
 
+  const ChageTab = (index) => {
+    setCurrentIdx(index);
+    setSearchParams({ tab: index }); // 모든 파라미터를 지우고 새롭게 설정
+    moveFocus();
+    console.log("탭변경");
+  };
+
   return (
     <div ref={gsapContainerRef} className="SeriesTabMenu">
+      {console.log("사이드탭 렌더링")}
       {items.map((item, idx) => (
         <button
           key={item.title}
           className={`SeriesTabMenu__item overflow_hidden
            ${currentIdx === idx ? "active" : ""}`}
           onClick={() => {
-            setCurrentIdx(idx);
-            moveFocus();
+            ChageTab(idx);
           }}
         >
           <span className="SeriesTabMenu__text">{item.title}</span>

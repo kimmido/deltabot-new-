@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, useSearchParams } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
@@ -11,13 +11,19 @@ import ProductScrollBtn from "./components/ProductScrollBtn";
 function Business() {
   const { currentTab, productData = [] } = useOutletContext();
   const [currentIdx, setCurrentIdx] = useState(0);
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const itemsRef = useRef(null);
   const gsapContainerRef = useRef(null);
 
   useEffect(() => {
-    setCurrentIdx(0);
-  }, [currentTab]);
+    const tabParam = searchParams.get("tab");
+    if (tabParam) {
+      setCurrentIdx(Number(tabParam));
+    } else {
+      setCurrentIdx(0);
+    }
+  }, [searchParams, currentTab]);
 
   useGSAP(
     () => {
@@ -57,11 +63,13 @@ function Business() {
 
   return (
     <div className="Business">
+      {console.log("비즈니스 렌더링")}
       <div className="flex-container" ref={gsapContainerRef}>
         <SeriesTabMenu
           items={productData}
           currentIdx={currentIdx}
           setCurrentIdx={setCurrentIdx}
+          setSearchParams={setSearchParams}
         />
         <div className="product-scroll">
           {productData[currentIdx] &&
@@ -90,4 +98,4 @@ function Business() {
   );
 }
 
-export default Business;
+export default React.memo(Business);

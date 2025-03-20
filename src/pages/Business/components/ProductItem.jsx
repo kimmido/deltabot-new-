@@ -32,6 +32,7 @@ function ProductItem({ item, currentTab, getMap }) {
         }
       }}
     >
+      {console.log("아이템 렌더링")}
       <div className="pd_flex">
         <div className="pd_left">
           <img
