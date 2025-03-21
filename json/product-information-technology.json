@@ -8,11 +8,23 @@
           "code": "ARS-111GL-NHR",
           "features": [
             {
+              "title": "Applications",
+              "bullets": [
+                "고성능 연산",
+                "AI/딥러닝 트레이닝 및 추론",
+                "대형 언어 모델(LLM) 및 생성적 AI"
+              ]
+            },
+            {
               "title": "Featrue",
-              "texts": [
-                "High density 1U GPU system with Integrated NVIDIA® H100 GPU",
-                "NVIDIA Grace Hopper™ Superchip (Grace CPU and H100 GPU)",
-                "NVLink® Chip-2-Chip (C2C) high-bandwidth, low-latency interconnect between CPU and GPU at 900GB/s"
+              "bullets": [
+                "통합 NVIDIA® H100 GPU를 갖춘 고밀도 1U GPU 시스템",
+                "NVIDIA Grace Hopper™ 슈퍼칩 (Grace CPU와 H100 GPU)",
+                "NVLink® Chip-2-Chip (C2C) 고대역폭, 저지연 인터커넥트로 CPU와 GPU 간 900GB/s 속도 지원",
+                "노드당 최대 576GB의 코히어런트 메모리(480GB LPDDR5X 및 LLM 애플리케이션을 위한 96GB HBM3 포함)",
+                "2x PCIe 5.0 x16 슬롯 (NVIDIA BlueField®-3 또는 ConnectX®-7 지원)",
+                "최적의 팬 속도 제어 기능이 있는 9개의 핫스왑 헤비듀티 팬",
+                "이 시스템은 프로세서에서 직접 두 개의 E1.S 드라이브만 지원합니다."
               ]
             }
           ]
@@ -22,11 +34,27 @@
           "code": "SYS-421GE-TNRT",
           "features": [
             {
+              "title": "Applications",
+              "bullets": [
+                "고성능 연산",
+                "VDI",
+                "AI/딥러닝 교육",
+                "클라우드 게이밍",
+                "미디어/비디오 스트리밍",
+                "3D 렌더링"
+              ]
+            },
+            {
               "title": "Featrue",
-              "texts": [
-                "5th/4th Gen Intel®  Xeon® Scalable processor support",
-                "32 DIMM slots Up to 8TB: 32x 256 GB DRAM Memory Type: 5600MTs ECC DDR5",
-                "AIOM/OCP 3.0 Support"
+              "bullets": [
+                "5세대/4세대 Intel® Xeon® 확장 가능 프로세서 지원",
+                "32 DIMM 슬롯, 최대 8TB: 32x 256 GB DRAM, 메모리 유형: 5600MTs ECC DDR5",
+                "AIOM/OCP 3.0 지원",
+                "3개의 PCIe Gen 5.0 X16 FHFL 슬롯",
+                "8x 핫스왑 2.5인치 SATA/SAS (AOC 필요)",
+                "8x 2.5인치 핫스왑 SATA 드라이브 베이",
+                "8x2.5인치 핫스왑 NVMe 드라이브 베이",
+                "최적의 팬 속도 제어가 적용된 8 핫스왑 헤비 듀티 팬"
               ]
             }
           ]
@@ -47,6 +75,16 @@
               "texts": [
                 "컴팩트하고 견고한 미디타워 형태의 고성능 산업용 워크스테이션"
               ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "머신러닝, AI 워크플로우 및 그래픽 성능을 요하는 응용 프로그램을 위한 강력한 워크스테이션",
+                "산업용 등급: 충격/진동 저항, 24시간 연중무휴, 장기 공급 보장",
+                "자유롭게 선택 가능한 그래픽 카드 및 GPU",
+                "확장 가능한 프로세서 성능, 손쉬운 커스터마이징",
+                "컴팩트 사이즈: 380 x 190 x 380 mm (H x W x D)"
+              ]
             }
           ]
         },
@@ -58,6 +96,14 @@
               "title": "null",
               "texts": [
                 "NEBS-3 인증을 충족하도록 설계된 컴팩트 2U, 20인치 딥 캐리어 그레이드 랙마운트 서버 사양"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "듀얼 Intel® Xeon® 16코어 프로세서 E5-2600 V3 패밀리",
+                "대용량 메모리, 유연한 I/O 및 스토리지 옵션",
+                "듀얼 이중화 AC 또는 DC 전원 옵션"
               ]
             }
           ]
@@ -71,6 +117,15 @@
               "texts": [
                 "통신사 본사 및 AI 엣지 솔루션을 위한 장수명 캐리어급 서버"
               ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "듀얼 소켓 1세대/2세대 Intel® Xeon® 확장 가능 프로세서",
+                "NEBS-3/ETSI 인증을 충족하도록 설계",
+                "6개의 핫스왑, 툴리스, 2.5인치 SAS HDD / SATA SSD",
+                "유연한 I/O 가속을 위한 최대 7개의 PCIe 슬롯"
+              ]
             }
           ]
         },
@@ -82,6 +137,16 @@
               "title": "null",
               "texts": [
                 "20인치 짧은 깊이와 19인치 섀시를 갖춘 내구성이 뛰어난 2RU"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "싱글 소켓 4세대/5세대 Intel® Xeon® SP & AMD EPYC 9004/9005 프로세서",
+                "6x 핫스왑, 툴리스, U2/U3 SATA/NVMe SSDs",
+                "최대 7x PCIe 슬롯으로 유연한 I/O 가속 지원",
+                "NEBS/ETSI MIL-STD 810/167/461 인증 충족 설계",
+                "긴 수명"
               ]
             }
           ]
@@ -113,6 +178,29 @@
       "title": "Military",
       "items": [
         {
+          "name": "Ace Flight™ 4609",
+          "code": "Ace-Flight-4609",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "고성능 항공전자 서버"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "ARINC 600 4MCU, 전면 이동식 스토리지가 있는 에어플로우 스루",
+                "Intel® i7-1370PRE, 64GB DDR5 IBECC RAM이 있는 14코어",
+                "L2+ 관리형 이더넷 스위치",
+                "글로벌 커버리지를 위한 5G/LTE 셀룰러 모뎀",
+                "DO-160G 인증 및 OEM Line-Fit 준비 완료",
+                "이전 세대 Ace Flight™ 서버와 역호환"
+              ]
+            }
+          ]
+        },
+        {
           "name": "Ace Flight™ 4608",
           "code": "Ace-Flight-4608",
           "features": [
@@ -121,17 +209,15 @@
               "texts": [
                 "고성능 항공전자 서버"
               ]
-            }
-          ]
-        },
-        {
-          "name": "Ace Flight™ 4609",
-          "code": "Ace-Flight-4609",
-          "features": [
+            },
             {
-              "title": "null",
-              "texts": [
-                "고성능 항공전자 서버"
+              "title": "Featrue",
+              "bullets": [
+                "ARINC 600 4MCU, 전면 이동식 스토리지가 있는 공기 흐름형",
+                "Intel® D-1539, 32GB DDR4 ECC RAM이 있는 8코어 프로세서",
+                "L2/L3 관리형 이더넷 스위치",
+                "듀얼 4G/LTE 모뎀",
+                "DO-160G 인증 및 FAA PMA 승인"
               ]
             }
           ]
@@ -145,6 +231,16 @@
               "texts": [
                 "VPX 견고한 컴팩트 미션 컴퓨터"
               ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "SWaP 최적화된 임베디드 컴퓨터",
+                "SOSA 3U VPX 플러그인 카드",
+                "최신 실리콘 세대 Intel® Core™ 또는 Intel® Xeon® D CPU",
+                "무풍량 전도 냉각, 혹독한 환경에 적합",
+                "ITAR/BAFA 무료"
+              ]
             }
           ]
         },
@@ -156,6 +252,16 @@
               "title": "null",
               "texts": [
                 "데이터 처리, 비디오, 그래픽 및 AI를 위한 VPX 기반 견고한 미션 컴퓨터"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "견고하고 확장된 온도, SWaP-C 최적화 컴퓨터",
+                "소형 폼 팩터 272mm x 202mm x 100mm(하우징만 해당)",
+                "Intel® Core™ i7-1185GRE 쿼드코어 CPU, 32GByte 솔더링 DDR4, ECC",
+                "2개의 10GbE LAN 포트, 듀얼 DVI 포트, 옵션 GPU/GPGPU 카드",
+                "프랑스에서 제조, ITAR 무료"
               ]
             }
           ]
@@ -176,6 +282,15 @@
               "texts": [
                 "중장비용 지능형 고성능 플랫폼"
               ]
+            },
+            {
+              "title": "",
+              "bullets": [
+                "ComExpress Intel® 고성능 프로세서",
+                "다중 GPU, FPGA 가속기 또는 비디오 모듈을 위한 확장 슬롯",
+                "다중 I/O 고속 인터페이스 및 대용량 스토리지 옵션","셀룰러 및 Wi-Fi를 위한 무선 연결 옵션",
+                "차량 내 배치를 위한 견고하고 모듈식 플랫폼"
+              ]
             }
           ]
         },
@@ -186,7 +301,18 @@
             {
               "title": "null",
               "texts": [
-                "견고한 게이트웨이 | 셀룰러 및 WiFi"
+                "차량용 견고한 셀룰러 게이트웨이 & WiFi"
+              ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "견고하고, 팬리스, IP67, 차량용 애플리케이션용 게이트웨이 컴퓨팅 플랫폼",
+                "Intel® Atom™ E3845 프로세서와 스토리지 확장 옵션이 있는 64GB eMMC",
+                "듀얼 GbE 포트 및 듀얼 CANBus 2.0 A/B",
+                "통합 안테나가 탑재된 802.11ac/bgn WiFi 액세스 포인트",
+                "2개의 RF 연결 및 듀얼 SIM이 있는 4G LTE+",
+                "서지 보호 및 필터링 기능이 있는 9-36 VDC 차량 전원 입력"
               ]
             }
           ]
