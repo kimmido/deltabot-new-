@@ -52,7 +52,7 @@ function ProductItem({ item, currentTab, getMap }) {
                   <p key={idx}>{text}</p>
                 ))}
                 {feature.bullets && (
-                  <ul>
+                  <ul className="bullets">
                     {feature.bullets.map((bullet, idx) => (
                       <li key={idx}>{bullet}</li>
                     ))}
