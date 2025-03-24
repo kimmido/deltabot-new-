@@ -1,9 +1,10 @@
 .PageHeading {
   position: relative;
-  height: 200px;
+  aspect-ratio: 16 / 9;
 
   @include respondTo(sm) {
     height: 400px;
+    aspect-ratio: auto;
   }
 
   @include respondTo(md) {
