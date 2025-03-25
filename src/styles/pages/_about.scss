@@ -1,5 +1,5 @@
 .About {
-  .values-section,
+  .ValuesSection,
   .intro-section,
   .LoopSwiper,
   .contact-section {
@@ -13,61 +13,82 @@
       }
     }
   }
-  .values-section {
-    position: relative;
-    aspect-ratio: 1 / 1;
-    background-color: aqua;
+
+  .ValuesSection {
+    margin-top: 2.4rem;
+    background-color: beige;
+
+    .ValuesSection__inner {
+      position: relative;
+      width: 86%;
+      aspect-ratio: 1 / 1;
+      margin: 0 auto;
+      align-content: center;
+      background-color: aqua;
+    }
+
     @include respondTo(sm) {
       margin-top: 20rem;
     }
 
     h3 {
       text-align: center;
-      align-content: center;
+      background-color: #eb8d8d;
     }
 
-    ul {
-      margin-top: $spacing-layout-sm;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    // .circle-box {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   // transform: translateX(-50%);
+    //   background-color: #ddd;
 
-      @include respondTo(sm) {
-        flex-direction: row;
-        margin-top: $spacing-content-xl;
+    //   &--inner {
+    //     position: relative;
+    //   }
+    // }
+
+    .circle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      aspect-ratio: 1 /1;
+      // border: 1px solid $color-border;
+      border: 1px solid $color-text-body;
+      border-radius: 50%;
+      text-align: center;
+      align-content: center;
+
+      &--1,
+      &--2 {
+        opacity: 0;
+        // margin-top: -16%;
       }
 
-      li {
-        width: 96%;
-        aspect-ratio: 1 /1;
-        border: 1px solid $color-border;
-        border: 1px solid $color-text-body;
-        border-radius: 50%;
-        text-align: center;
-        align-content: center;
+      @include respondTo(sm) {
+        // &:nth-child(n + 2) {
+        //   margin-top: 0;
+        // }
+        // &:nth-child(1) {
+        //   transform: translateX(10%);
+        // }
+        // &:nth-child(3) {
+        //   transform: translateX(-10%);
+        // }
+      }
+
+      .text {
+        opacity: 0;
         padding: 2rem;
 
-        &:nth-child(n + 2) {
-          margin-top: -16%;
-        }
-
         @include respondTo(xs) {
-          width: 76%;
           padding: 10%;
         }
 
         @include respondTo(sm) {
           padding: 5rem;
-
-          &:nth-child(n + 2) {
-            margin-top: 0;
-          }
-          &:nth-child(1) {
-            transform: translateX(10%);
-          }
-          &:nth-child(3) {
-            transform: translateX(-10%);
-          }
         }
 
         h4 {
@@ -79,7 +100,8 @@
         }
       }
     }
-  }
+  } // ValuesSection
+
   .intro-section {
     @include respondTo(sm) {
       width: 86%;
