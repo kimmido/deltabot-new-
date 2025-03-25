@@ -1,24 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import PageHeading from "../../components/Shared/PageHeading";
-import { CategoryRoutesContext } from "../../contexts/CategoryRoutesContext";
 
-import businessImg1 from "../../assets/images/home/business_section(1).jpg";
 import mapImg from "../../assets/images/map.png";
-import LoopItem from "./components/LoopItem";
+import RollingSwiper from "./components/RollingSwiper";
 
 function About() {
-  const category = useContext(CategoryRoutesContext);
-  const routeBusiness = category.find((item) => item.main.label == "사업소개");
-  const businessSub = routeBusiness.sub;
-
-  const businessImg = [
-    businessImg1,
-    businessImg1,
-    businessImg1,
-    businessImg1,
-    businessImg1,
-  ];
-
   const values = [
     {
       title: "혁신",
@@ -76,18 +62,11 @@ function About() {
             다하겠습니다. 감사합니다.
           </p>
         </section>
+      </div>
 
-        <ul className="loop-list">
-          {businessSub.map((item, idx) => (
-            <LoopItem
-              key={item.label}
-              src={businessImg[idx]}
-              alt={item.label}
-              caption={item.label}
-            />
-          ))}
-        </ul>
+      <RollingSwiper />
 
+      <div className="container">
         <section className="contact-section">
           <div className="flex-box">
             <h3 className="flex-l">Contact Us</h3>

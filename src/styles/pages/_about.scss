@@ -1,7 +1,7 @@
 .About {
   .values-section,
   .intro-section,
-  .loop-list,
+  .LoopSwiper,
   .contact-section {
     margin-top: $spacing-layout-md;
 
@@ -83,7 +83,7 @@
   .intro-section {
     @include respondTo(sm) {
       width: 86%;
-      margin: 20rem auto;
+      margin: 20rem auto 0;
     }
 
     @include respondTo(lg) {
@@ -105,21 +105,23 @@
     }
   }
 
-  .loop-list {
-    // display: flex;
-    // gap: 1rem;
+  .LoopSwiper {
+    @include respondTo(sm) {
+      margin-top: 20rem;
+    }
 
-    li {
-      display: inline-block;
-      width: 200px;
+    .swiper-wrapper {
+      transition-timing-function: linear;
+    }
 
+    .swiper-slide {
       @include respondTo(sm) {
         width: calc((476px / 1392px) * 100%);
       }
 
       figure {
         .img-box {
-          aspect-ratio: 16 / 9;
+          aspect-ratio: 10 / 7;
           background-color: #ddd;
           border-radius: $radius-card-md;
           overflow: hidden;
@@ -127,19 +129,19 @@
           @include respondTo(sm) {
             border-radius: $radius-card-lg;
           }
-
-          img {
-            // object-fit: cover;
-          }
         }
 
         figcaption {
           color: $color-text-light;
           font-size: $font-size-caption;
           font-weight: 600;
+          padding-left: 3%;
 
+          @include respondTo(xs) {
+            font-size: 1em;
+          }
           @include respondTo(sm) {
-            font-size: $font-size-con-title-sm;
+            font-size: 1em;
           }
         }
       }
