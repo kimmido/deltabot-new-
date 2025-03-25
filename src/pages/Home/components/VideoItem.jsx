@@ -106,7 +106,7 @@ function VideoItem({ title, id, desc }) {
       >
         <video
           preload="none"
-          poster="/images/video_poster/poster1.jpg"
+          poster={`/images/video_poster/main${id}.jpg`}
           playsInline
           controls={isExpanded}
           ref={videoRef}
