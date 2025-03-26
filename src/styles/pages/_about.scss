@@ -1,5 +1,4 @@
 .About {
-  .ValuesSection,
   .intro-section,
   .LoopSwiper,
   .contact-section {
@@ -16,7 +15,16 @@
 
   .ValuesSection {
     margin-top: 2.4rem;
-    background-color: beige;
+    padding-bottom: calc(86% * 2.4);
+    // background-color: beige;
+
+    @include respondTo(xs) {
+      padding-bottom: calc(50% * 2.4);
+    }
+    @include respondTo(sm) {
+      margin-top: 6rem;
+      padding-bottom: calc(35% * 0.4);
+    }
 
     .ValuesSection__inner {
       position: relative;
@@ -24,79 +32,76 @@
       aspect-ratio: 1 / 1;
       margin: 0 auto;
       align-content: center;
-      background-color: aqua;
-    }
+      // background-color: aqua;
 
-    @include respondTo(sm) {
-      margin-top: 20rem;
-    }
-
-    h3 {
-      text-align: center;
-      background-color: #eb8d8d;
-    }
-
-    // .circle-box {
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   // transform: translateX(-50%);
-    //   background-color: #ddd;
-
-    //   &--inner {
-    //     position: relative;
-    //   }
-    // }
-
-    .circle {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      aspect-ratio: 1 /1;
-      // border: 1px solid $color-border;
-      border: 1px solid $color-text-body;
-      border-radius: 50%;
-      text-align: center;
-      align-content: center;
-
-      &--1,
-      &--2 {
-        opacity: 0;
-        // margin-top: -16%;
+      @include respondTo(xs) {
+        width: 50%;
       }
-
       @include respondTo(sm) {
-        // &:nth-child(n + 2) {
-        //   margin-top: 0;
-        // }
-        // &:nth-child(1) {
-        //   transform: translateX(10%);
-        // }
-        // &:nth-child(3) {
-        //   transform: translateX(-10%);
-        // }
+        width: 35%;
       }
 
-      .text {
-        opacity: 0;
-        padding: 2rem;
+      h3 {
+        text-align: center;
+        font-size: $font-size-section-title-sm;
 
-        @include respondTo(xs) {
-          padding: 10%;
+        @include respondTo(sm) {
+          font-size: $font-size-section-title-md;
+        }
+      }
+
+      .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        aspect-ratio: 1 /1;
+        border: 1px solid $color-text-body;
+        border-radius: 50%;
+        text-align: center;
+        align-content: center;
+
+        &--0 {
+          top: 70%;
+        }
+        &--1 {
+          top: 155%;
+        }
+        &--2 {
+          top: 240%;
         }
 
         @include respondTo(sm) {
-          padding: 5rem;
+          top: 0;
+          top: 40%;
+
+          &--1 {
+            left: -90%;
+          }
+          &--2 {
+            left: 90%;
+          }
         }
 
-        h4 {
-          font-size: $font-size-lg;
-        }
+        .text {
+          padding: 10%;
 
-        p {
-          margin-top: 1.2rem;
+          @include respondTo(sm) {
+            padding: 15%;
+          }
+
+          h4 {
+            font-size: $font-size-lg;
+          }
+
+          p {
+            margin-top: 1.2rem;
+            font-size: calc(1em - 2px);
+
+            @include respondTo(sm) {
+              font-size: 1em;
+            }
+          }
         }
       }
     }

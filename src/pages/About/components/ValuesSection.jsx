@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -6,6 +6,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 function ValuesSection() {
+  const gsapContainer = useRef();
   const values = [
     {
       title: "혁신",
@@ -21,35 +22,102 @@ function ValuesSection() {
     },
   ];
 
-  useGSAP(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".ValuesSection__inner", // 대상 요소
-          start: "top 20%", // 시작 위치 (요소의 상단이 뷰포트 상단과 만날 때)
-          end: "center 20%", // 500px 스크롤 후 sticky 해제
-          //   pin: true, // 요소를 고정
-          markers: true, // 테스트용 마커 표시 (실제 적용시 제거 가능)
-          scrub: 1, // 스크롤과 애니메이션 싱크 (부드러운 전환)
-          ease: "linear",
-        },
-      })
-      .to(".circle", {
-        top: "70%",
+  useGSAP(
+    () => {
+      let mm = gsap.matchMedia();
+
+      mm.add("(max-width: 768px", () => {
+        gsap
+          .timeline(
+            {
+              scrollTrigger: {
+                trigger: gsapContainer.current,
+                start: "top 20%",
+                end: "bottom 70%",
+                // markers: true,
+                scrub: 1,
+              },
+            },
+            { defaults: { ease: "linear" } }
+          )
+          .from(".circle--0", {
+            top: "0",
+          })
+          .from(".circle--0 .text", {
+            opacity: 0,
+          })
+          .from(".circle--1", {
+            opacity: 0,
+            top: "70%",
+          })
+          .from(".circle--1 .text", {
+            opacity: 0,
+          })
+          .from(
+            ".circle--2",
+            {
+              opacity: 0,
+              top: "155%",
+            },
+            "+=1%"
+          )
+          .from(".circle--2 .text", {
+            opacity: 0,
+          });
       });
-    //   .to(".circle--1", {
-    //     top: "142%",
-    //   })
-    //   .to(".circle--2", {
-    //     top: "218%",
-    //   })
-    //   .to(".text", {
-    //     opacity: 1,
-    //   });
-  });
+      mm.add("(min-width: 769px", () => {
+        gsap
+          .timeline(
+            {
+              scrollTrigger: {
+                trigger: gsapContainer.current,
+                start: "top 88",
+                end: "+=1800",
+                pin: true,
+                // markers: true,
+                scrub: 1,
+              },
+            },
+            { defaults: { ease: "linear" } }
+          )
+          .from(".circle", {
+            top: "0",
+          })
+          .to("h3", {
+            yPercent: "-400",
+          })
+          .from(
+            ".circle--1",
+            {
+              opacity: 0,
+              left: "0",
+            },
+            "+=0.1"
+          )
+          .from(
+            ".circle--2",
+            {
+              opacity: 0,
+              left: "0%",
+            },
+            "<"
+          )
+          .from(
+            ".circle .text",
+            {
+              opacity: 0,
+            },
+            "+=1%"
+          );
+      });
+
+      // return () => mm.revert();
+    },
+    { scope: gsapContainer }
+  );
 
   return (
-    <section className="ValuesSection">
+    <section className="ValuesSection" ref={gsapContainer}>
       <div className="ValuesSection__inner">
         <h3>델타봇의 핵심가치</h3>
         {values.map((value, index) => (
