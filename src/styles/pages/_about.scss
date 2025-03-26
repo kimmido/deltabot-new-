@@ -221,10 +221,19 @@
     }
 
     .map-wrap {
+      overflow: hidden;
       margin-top: 1.6rem;
+      border-radius: $radius-card-lg;
 
       @include respondTo(sm) {
         margin-top: $spacing-content-lg;
+      }
+
+      .Map {
+        height: 310px;
+        @include respondTo(sm) {
+          height: 500px;
+        }
       }
     } // .map-wrap
   } // .contact-section

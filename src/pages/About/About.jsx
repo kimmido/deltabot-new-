@@ -4,12 +4,14 @@ import ValuesSection from "./components/ValuesSection";
 import RollingSwiper from "./components/RollingSwiper";
 
 import mapImg from "../../assets/images/map.png";
+import Map from "./components/Map";
 
 function About() {
   return (
     <div className="About">
       <div className="container">
         <PageHeading title="회사소개" currentPath="about" />
+
         <ValuesSection />
 
         <section className="intro-section">
@@ -64,7 +66,8 @@ function About() {
           </div>
 
           <div className="map-wrap">
-            <img src={mapImg} alt="지도" />
+            <Map />
+            {/* <img src={mapImg} alt="지도" /> */}
           </div>
         </section>
       </div>
