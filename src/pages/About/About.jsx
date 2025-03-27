@@ -14,7 +14,12 @@ function About() {
 
         <ValuesSection />
 
-        <section className="intro-section">
+        <section
+          className="intro-section"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-center"
+          data-aos-duration="9000"
+        >
           <p>
             델타봇은 로봇 자동화, 비전 시스템, 재활용 시스템, 의료, IT 등{" "}
             <br className="pc-break" />
@@ -47,7 +52,12 @@ function About() {
 
       <div className="container">
         <section className="contact-section">
-          <div className="flex-box">
+          <div
+            className="flex-box"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-center"
+            data-aos-duration="9000"
+          >
             <h3 className="flex-l">Contact Us</h3>
             <ul className="flex-r">
               <li>
@@ -65,7 +75,12 @@ function About() {
             </ul>
           </div>
 
-          <div className="map-wrap">
+          <div
+            className="map-wrap"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-center"
+            data-aos-duration="9000"
+          >
             <Map />
             {/* <img src={mapImg} alt="지도" /> */}
           </div>
