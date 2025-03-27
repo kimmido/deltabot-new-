@@ -70,7 +70,7 @@ function ValuesSection() {
             scrollTrigger: {
               trigger: gsapContainer.current,
               start: "top 88",
-              end: "+=1800",
+              end: "+=1300",
               pin: true,
               // markers: true,
               scrub: 1,
