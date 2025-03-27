@@ -34,17 +34,18 @@ function ValuesSection() {
                 trigger: gsapContainer.current,
                 start: "top 20%",
                 end: "bottom 70%",
-                // markers: true,
+                markers: true,
                 scrub: 1,
               },
             },
-            { defaults: { ease: "linear" } }
+            { defaults: { ease: "linear", duration: 2 } }
           )
           .from(".circle--0", {
             top: "0",
           })
           .from(".circle--0 .text", {
             opacity: 0,
+            duration: 1,
           })
           .from(".circle--1", {
             opacity: 0,
@@ -52,48 +53,51 @@ function ValuesSection() {
           })
           .from(".circle--1 .text", {
             opacity: 0,
+            duration: 1,
           })
-          .from(
-            ".circle--2",
-            {
-              opacity: 0,
-              top: "155%",
-            },
-            "+=1%"
-          )
+          .from(".circle--2", {
+            opacity: 0,
+            top: "155%",
+          })
           .from(".circle--2 .text", {
             opacity: 0,
+            duration: 1,
           });
       });
       mm.add("(min-width: 769px", () => {
         gsap
-          .timeline(
-            {
-              scrollTrigger: {
-                trigger: gsapContainer.current,
-                start: "top 88",
-                end: "+=1800",
-                pin: true,
-                // markers: true,
-                scrub: 1,
+          .timeline({
+            scrollTrigger: {
+              trigger: gsapContainer.current,
+              start: "top 88",
+              end: "+=1800",
+              pin: true,
+              // markers: true,
+              scrub: 1,
+              snap: {
+                snapTo: "labels",
+                duration: { min: 0.2, max: 1 },
+                delay: 0.2,
+                ease: "linear",
               },
             },
-            { defaults: { ease: "linear" } }
-          )
+          })
+          .addLabel("down")
           .from(".circle", {
             top: "0",
           })
-          .to("h3", {
-            yPercent: "-400",
-          })
-          .from(
-            ".circle--1",
+          .to(
+            "h3",
             {
-              opacity: 0,
-              left: "0",
+              yPercent: "-400",
             },
-            "+=0.1"
+            "<"
           )
+          .addLabel("side")
+          .from(".circle--1", {
+            opacity: 0,
+            left: "0",
+          })
           .from(
             ".circle--2",
             {
@@ -102,13 +106,10 @@ function ValuesSection() {
             },
             "<"
           )
-          .from(
-            ".circle .text",
-            {
-              opacity: 0,
-            },
-            "+=1%"
-          );
+          .addLabel("text")
+          .from(".circle .text", {
+            opacity: 0,
+          });
       });
 
       // return () => mm.revert();
