@@ -3,7 +3,7 @@ import PageHeading from "../../components/Shared/PageHeading";
 import ValuesSection from "./components/ValuesSection";
 import RollingSwiper from "./components/RollingSwiper";
 
-import mapImg from "../../assets/images/map.png";
+// import mapImg from "../../assets/images/map.png";
 import Map from "./components/Map";
 
 function About() {
@@ -17,7 +17,7 @@ function About() {
         <section
           className="intro-section"
           data-aos="fade-up"
-          data-aos-anchor-placement="bottom-center"
+          data-aos-anchor-placement="top-center"
           data-aos-duration="9000"
         >
           <p>
@@ -51,13 +51,13 @@ function About() {
       <RollingSwiper />
 
       <div className="container">
-        <section className="contact-section">
-          <div
-            className="flex-box"
-            data-aos="fade-up"
-            data-aos-anchor-placement="bottom-center"
-            data-aos-duration="9000"
-          >
+        <section
+          className="contact-section"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="9000"
+        >
+          <div className="flex-box">
             <h3 className="flex-l">Contact Us</h3>
             <ul className="flex-r">
               <li>
@@ -75,12 +75,7 @@ function About() {
             </ul>
           </div>
 
-          <div
-            className="map-wrap"
-            data-aos="fade-up"
-            data-aos-anchor-placement="bottom-center"
-            data-aos-duration="9000"
-          >
+          <div className="map-wrap">
             <Map />
             {/* <img src={mapImg} alt="지도" /> */}
           </div>

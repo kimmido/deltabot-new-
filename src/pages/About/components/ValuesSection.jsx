@@ -2,6 +2,12 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import AOS from "aos";
+import {
+  IconSafety,
+  IconLightBulb,
+  IconReport,
+} from "../../../components/icons";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -10,14 +16,17 @@ function ValuesSection() {
   const values = [
     {
       title: "혁신",
+      icon: <IconLightBulb color="#246beb" />,
       text: "최첨단 자동화 기술과 IT 솔루션을 결합하여 생산성과 효율성을 극대화합니다.",
     },
     {
       title: "안전 및 품질",
+      icon: <IconSafety color="#246beb" />,
       text: "당사와 고객을 위해 최고 수준의 안전과 품질을 보증합니다.",
     },
     {
       title: "고객 중심",
+      icon: <IconReport color="#246beb" />,
       text: "고객의 의견을 경청하여, 고객의 요구 사항을 진심으로 이해하고 성공을 보장하는 고유한 솔루션을 제공합니다.",
     },
   ];
@@ -36,6 +45,9 @@ function ValuesSection() {
                 end: "bottom 70%",
                 markers: true,
                 scrub: 1,
+                onEnter: () => {
+                  AOS.refresh();
+                },
               },
             },
             { defaults: { ease: "linear", duration: 2 } }
@@ -43,7 +55,7 @@ function ValuesSection() {
           .from(".circle--0", {
             top: "0",
           })
-          .from(".circle--0 .text", {
+          .from(".circle--0 .circle__inner", {
             opacity: 0,
             duration: 1,
           })
@@ -51,7 +63,7 @@ function ValuesSection() {
             opacity: 0,
             top: "70%",
           })
-          .from(".circle--1 .text", {
+          .from(".circle--1 .circle__inner", {
             opacity: 0,
             duration: 1,
           })
@@ -59,7 +71,7 @@ function ValuesSection() {
             opacity: 0,
             top: "155%",
           })
-          .from(".circle--2 .text", {
+          .from(".circle--2 .circle__inner", {
             opacity: 0,
             duration: 1,
           });
@@ -72,17 +84,12 @@ function ValuesSection() {
               start: "top 88",
               end: "+=1300",
               pin: true,
-              // markers: true,
               scrub: 1,
-              snap: {
-                snapTo: "labels",
-                duration: { min: 0.2, max: 1 },
-                delay: 0.2,
-                ease: "linear",
+              onEnter: () => {
+                AOS.refresh();
               },
             },
           })
-          .addLabel("down")
           .from(".circle", {
             top: "0",
           })
@@ -93,7 +100,6 @@ function ValuesSection() {
             },
             "<"
           )
-          .addLabel("side")
           .from(".circle--1", {
             opacity: 0,
             left: "0",
@@ -106,13 +112,10 @@ function ValuesSection() {
             },
             "<"
           )
-          .addLabel("text")
-          .from(".circle .text", {
+          .from(".circle .circle__inner", {
             opacity: 0,
           });
       });
-
-      // return () => mm.revert();
     },
     { scope: gsapContainer }
   );
@@ -123,7 +126,8 @@ function ValuesSection() {
         <h3>델타봇의 핵심가치</h3>
         {values.map((value, index) => (
           <div key={value.title} className={`circle circle--${index}`}>
-            <div className="text">
+            <div className="circle__inner">
+              <div className="icon">{value.icon}</div>
               <h4>{value.title}</h4>
               <p>{value.text}</p>
             </div>
