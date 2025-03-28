@@ -27,7 +27,7 @@ function Map() {
   ];
 
   return (
-    <MapContainer className="Map" center={position} zoom={15}>
+    <MapContainer className="Map" center={position} zoom={16}>
       {/* 지도 스타일 (타일 레이어) */}
       <TileLayer url="https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}.png" />
       {/* <SVGOverlay attributes={{ stroke: "black" }} bounds={bounds}>
