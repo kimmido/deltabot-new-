@@ -42,7 +42,7 @@ function Footer() {
         </div>
         <h2 className="logo">
           <Link to="/">
-            <img src="/images/delta_logo1.png" alt="로고" />
+            <img src="/images/logo.svg" alt="로고" />
           </Link>
         </h2>
         <p className="copyright">COPYRIGHT(C) DELTABOT. ALL RIGHTS RESERVED</p>
