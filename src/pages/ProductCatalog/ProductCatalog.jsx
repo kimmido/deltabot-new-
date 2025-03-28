@@ -8,7 +8,7 @@ import SeriesTabMenu from "./components/SeriesTabMenu";
 import ProductItem from "./components/ProductItem";
 import ProductScrollBtn from "./components/ProductScrollBtn";
 
-function Business() {
+function ProductCatalog() {
   const { currentTab, productData = [] } = useOutletContext();
   const [currentIdx, setCurrentIdx] = useState(0);
   const [searchParams, setSearchParams] = useSearchParams();
@@ -62,7 +62,7 @@ function Business() {
   }
 
   return (
-    <div className="Business">
+    <div className="ProductCatalog">
       {console.log("비즈니스 렌더링")}
       <div className="flex-container" ref={gsapContainerRef}>
         <SeriesTabMenu
@@ -98,4 +98,4 @@ function Business() {
   );
 }
 
-export default React.memo(Business);
+export default React.memo(ProductCatalog);

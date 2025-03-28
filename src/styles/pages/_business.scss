@@ -1,7 +1,7 @@
 @use "sass:color";
 
 .BusinessLayout {
-  .Business {
+  .ProductCatalog {
     margin-top: 16px;
 
     @include respondTo(sm) {

@@ -11,7 +11,8 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import ScrollToTop from "./utils/scrollToTop";
 import SolutionLayout from "./layouts/SolutionLayout";
-import Business from "./pages/Business/Business";
+import ProductCatalog from "./pages/ProductCatalog/ProductCatalog";
+import ProductShowcase from "./pages/ProductShowcase/ProductShowcase";
 import { HelmetProvider } from "react-helmet-async";
 
 function App() {
@@ -33,12 +34,12 @@ function App() {
                   index
                   element={<Navigate to="collaboration" replace />}
                 />
-                <Route path="collaboration" element={<Business />} />
-                <Route path="serial-robot" element={<Business />} />
-                <Route path="scara" element={<Business />} />
-                <Route path="cobot" element={<Business />} />
-                <Route path="deltarobot" element={<Business />} />
-                <Route path="case-packer" element={<Business />} />
+                <Route path="collaboration" element={<ProductCatalog />} />
+                <Route path="serial-robot" element={<ProductCatalog />} />
+                <Route path="scara" element={<ProductCatalog />} />
+                <Route path="cobot" element={<ProductCatalog />} />
+                <Route path="deltarobot" element={<ProductCatalog />} />
+                <Route path="case-packer" element={<ProductCatalog />} />
               </Route>
 
               <Route path="vision-system" element={<BusinessLayout />}>
@@ -46,32 +47,32 @@ function App() {
                   index
                   element={<Navigate to="machine-vision" replace />}
                 />
-                <Route path="machine-vision" element={<Business />} />
-                <Route path="thermal-camera" element={<Business />} />
-                <Route path="spectral-camera" element={<Business />} />
-                <Route path="illumination" element={<Business />} />
-                <Route path="vision-controller" element={<Business />} />
+                <Route path="machine-vision" element={<ProductCatalog />} />
+                <Route path="thermal-camera" element={<ProductCatalog />} />
+                <Route path="spectral-camera" element={<ProductCatalog />} />
+                <Route path="illumination" element={<ProductCatalog />} />
+                <Route path="vision-controller" element={<ProductCatalog />} />
               </Route>
 
               <Route path="recycling-system" element={<BusinessLayout />}>
                 <Route index element={<Navigate to="single-robot" replace />} />
-                <Route path="single-robot" element={<Business />} />
-                <Route path="tandem-robot" element={<Business />} />
+                <Route path="single-robot" element={<ProductShowcase />} />
+                <Route path="tandem-robot" element={<ProductShowcase />} />
               </Route>
 
               <Route path="medical" element={<BusinessLayout />}>
                 <Route index element={<Navigate to="pcr" replace />} />
-                <Route path="pcr" element={<Business />} />
-                <Route path="uv" element={<Business />} />
+                <Route path="pcr" element={<ProductShowcase />} />
+                <Route path="uv" element={<ProductShowcase />} />
               </Route>
 
               <Route path="information-technology" element={<BusinessLayout />}>
                 <Route index element={<Navigate to="gpu-server" replace />} />
-                <Route path="gpu-server" element={<Business />} />
-                <Route path="workstations" element={<Business />} />
-                <Route path="rack-mount" element={<Business />} />
-                <Route path="military" element={<Business />} />
-                <Route path="vehicle" element={<Business />} />
+                <Route path="gpu-server" element={<ProductCatalog />} />
+                <Route path="workstations" element={<ProductCatalog />} />
+                <Route path="rack-mount" element={<ProductCatalog />} />
+                <Route path="military" element={<ProductCatalog />} />
+                <Route path="vehicle" element={<ProductCatalog />} />
               </Route>
 
               <Route path="automation-solution" element={<SolutionLayout />} />
