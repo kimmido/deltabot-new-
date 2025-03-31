@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useMemo, useState } from "react";
-import PageHeading from "../components/Shared/PageHeading";
+import PageHeading from "../components/UI/PageHeading";
 import { Outlet, useLocation } from "react-router-dom";
 import { CategoryRoutesContext } from "../contexts/CategoryRoutesContext";
 import { fetchData } from "../utils/fetchData";
-import TabMenu from "../components/Layout/TabMenu";
+import TabMenu from "../components/UI/TabMenu";
 
 function BusinessLayout() {
   const category = useContext(CategoryRoutesContext);
@@ -39,7 +39,8 @@ function BusinessLayout() {
   }, [currentCategory]);
 
   const outletContext = useMemo(() => {
-    return { currentTab, productData: productData[currentTab] };
+    const data = productData[currentTab];
+    return { currentTab, productData: data };
   }, [currentTab, productData]);
 
   return (

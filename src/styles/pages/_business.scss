@@ -1,6 +1,221 @@
 @use "sass:color";
 
 .BusinessLayout {
+  .ProductItem {
+    padding-top: $header-sm;
+
+    @include respondTo(sm) {
+      padding-top: calc($header-md + 1.2rem);
+    }
+
+    .pd_flex {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      justify-content: space-between;
+
+      @include respondTo(sm) {
+        gap: 60px;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .pd_left {
+        flex: 1 1 49%;
+        text-align: center;
+        align-content: center;
+        padding: 48px;
+        background-color: $color-blue-050;
+        border-radius: $radius-card;
+
+        @include respondTo(md) {
+          padding: 60px;
+        }
+
+        img {
+          max-width: 480px;
+        }
+      }
+
+      .pd_right {
+        flex: 1 1 51%;
+        align-content: center;
+        padding: 2rem 0;
+
+        .prod_name {
+          display: block;
+          font-size: $font-size-con-title-md;
+
+          @include respondTo(sm) {
+            max-width: 520px;
+            font-size: $font-size-con-title-lg;
+          }
+        }
+
+        .prod_desc {
+          .prod_desc__inner {
+            margin-top: 2rem;
+
+            @include respondTo(md) {
+              margin-top: 2.8rem;
+            }
+
+            .prod_desc__title {
+              font-weight: 800;
+              color: $color-point;
+              font-size: calc(1em + 0.4rem);
+              margin-bottom: 1.2rem;
+            }
+
+            p,
+            li {
+              word-break: break-all;
+              text-align: justify;
+            }
+
+            p {
+              line-height: 1.5;
+            }
+
+            .bullets {
+              li {
+                position: relative;
+                padding-left: 12px;
+                line-height: 1.2;
+                margin-top: 1rem;
+                margin-left: 0.3rem;
+
+                &::before {
+                  @include pseudoDefault($color-text-body);
+                  top: 0.7em;
+                  width: 3px;
+                  height: 3px;
+                  border-radius: 50%;
+                }
+              }
+            }
+          }
+        }
+
+        button {
+          @include flexBox(row, $gutter-sm, center, center);
+          position: relative;
+          overflow: hidden;
+          margin-top: 2rem;
+          width: 100%;
+          padding: 10px 12px;
+          border-radius: 1000px;
+          background-color: $color-point;
+          border: 1px solid $color-point;
+          transition: all 0.3s;
+
+          @include respondTo(sm) {
+            margin-top: 3.6rem;
+            padding: 16px 40px;
+            width: auto;
+            font-size: calc(1em + 2px);
+          }
+
+          &:hover,
+          &.active {
+            .text {
+              color: $color-point;
+            }
+            .effect {
+              width: 225%;
+              height: 562.5px;
+            }
+          }
+
+          &.active {
+            .icon {
+              transform: rotateZ(-180deg) scale(1.1);
+            }
+          }
+
+          .text {
+            color: #fff;
+            font-weight: $weight-mdium;
+            z-index: 10;
+            transition: all 0.4s ease-in-out;
+
+            @include respondTo(md) {
+              font-size: calc(1em + 2px);
+            }
+          }
+
+          .icon {
+            display: block;
+            background-image: url("@assets/images/icon/icon_arrow_down_blue.svg");
+            background-size: 32px;
+            background-repeat: no-repeat;
+            background-position: 50% -10%;
+            background-color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+
+            z-index: 10;
+            transition: all 0.3s;
+          }
+
+          .effect {
+            @include pseudoDefault(#fff);
+            left: 50%;
+            @include square(0);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.4s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .spec-container {
+      position: relative;
+      width: 100%;
+      max-width: 1280px;
+      padding-top: $header-sm;
+      margin: 0 auto;
+
+      @include respondTo(sm) {
+        padding-top: $header-md;
+      }
+
+      p {
+        font-size: $font-size-con-title-sm;
+        font-weight: 600;
+
+        @include respondTo(md) {
+          font-size: $font-size-con-title-lg;
+        }
+      }
+
+      span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+      }
+
+      img {
+        margin-top: 12px;
+
+        @include respondTo(md) {
+          margin-top: 16px;
+        }
+      }
+    }
+  } // ProductItem
+
   .ProductCatalog {
     margin-top: 16px;
 
@@ -24,49 +239,7 @@
         gap: 60px;
       }
 
-      .SeriesTabMenu {
-        @include respondTo(md) {
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          gap: $gutter-lg;
-          margin-top: 4px;
-        }
-
-        &__item {
-          @include hover-active-underline($color-active);
-
-          &::before {
-            @include pseudoDefault($color-border);
-            left: 0;
-            top: calc(100% - 1px);
-            width: 100%;
-            height: 1px;
-
-            @include respondTo(md) {
-              left: 10%;
-              width: 80%;
-            }
-          }
-
-          &::after {
-            left: 0;
-            width: 100%;
-
-            @include respondTo(md) {
-              left: 10%;
-              width: 80%;
-            }
-          }
-
-          .SeriesTabMenu__text {
-            display: block;
-            padding: 8px 12px;
-          }
-        }
-      }
-
-      .product-scroll {
+      .scroll-btn-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: $gutter-sm;
@@ -77,7 +250,7 @@
           gap: $gutter-lg;
         }
 
-        .ProductScrollBtn {
+        .CatalogScrollBtn {
           position: relative;
           padding: 14px 16px;
           border: 1px solid $color-border;
@@ -113,6 +286,7 @@
               width: fit-content;
               text-align: left;
               font-size: $font-size-sm;
+              font-weight: inherit;
 
               @include respondTo(md) {
                 font-size: $font-size-md;
@@ -144,228 +318,27 @@
         }
       }
     }
-
     .product-list {
       margin-top: 80px;
 
       @include respondTo(md) {
         margin-top: 280px;
       }
-
-      .ProductItem {
-        padding-top: $header-sm;
-
-        @include respondTo(sm) {
-          padding-top: calc($header-md + 1.2rem);
-        }
-
-        .pd_flex {
-          display: flex;
-          flex-direction: column;
-          gap: 40px;
-          justify-content: space-between;
-
-          @include respondTo(sm) {
-            gap: 60px;
-            flex-direction: row;
-            justify-content: center;
-          }
-
-          .pd_left {
-            flex: 1 1 49%;
-            text-align: center;
-            align-content: center;
-            padding: 48px;
-            background-color: $color-blue-050;
-            border-radius: $radius-card;
-
-            @include respondTo(md) {
-              padding: 60px;
-            }
-
-            img {
-              max-width: 480px;
-            }
-          }
-
-          .pd_right {
-            flex: 1 1 51%;
-            align-content: center;
-            padding: 2rem 0;
-
-            .prod_name {
-              display: block;
-              font-size: $font-size-con-title-md;
-
-              @include respondTo(sm) {
-                max-width: 520px;
-                font-size: $font-size-con-title-lg;
-              }
-            }
-
-            .prod_desc {
-              .prod_desc__inner {
-                margin-top: 2rem;
-
-                @include respondTo(md) {
-                  margin-top: 2.8rem;
-                }
-
-                .prod_desc__title {
-                  font-weight: 800;
-                  color: $color-point;
-                  font-size: calc(1em + 0.4rem);
-                  margin-bottom: 1.2rem;
-                }
-
-                p,
-                li {
-                  word-break: break-all;
-                  text-align: justify;
-                }
-
-                p {
-                  line-height: 1.5;
-                }
-
-                .bullets {
-                  li {
-                    position: relative;
-                    padding-left: 12px;
-                    line-height: 1.2;
-                    margin-top: 1rem;
-                    margin-left: 0.3rem;
-
-                    &::before {
-                      @include pseudoDefault($color-text-body);
-                      top: 0.7em;
-                      width: 3px;
-                      height: 3px;
-                      border-radius: 50%;
-                    }
-                  }
-                }
-              }
-
-              button {
-                @include flexBox(row, $gutter-sm, center, center);
-                position: relative;
-                overflow: hidden;
-                margin-top: 2rem;
-                width: 100%;
-                padding: 10px 12px;
-                border-radius: 1000px;
-                background-color: $color-point;
-                border: 1px solid $color-point;
-                transition: all 0.3s;
-
-                @include respondTo(sm) {
-                  margin-top: 3.6rem;
-                  padding: 16px 40px;
-                  width: auto;
-                  font-size: calc(1em + 2px);
-                }
-
-                &:hover,
-                &.active {
-                  .text {
-                    color: $color-point;
-                  }
-                  .effect {
-                    width: 225%;
-                    height: 562.5px;
-                  }
-                }
-
-                &.active {
-                  .icon {
-                    transform: rotateZ(-180deg) scale(1.1);
-                  }
-                }
-
-                .text {
-                  color: #fff;
-                  font-weight: $weight-mdium;
-                  z-index: 10;
-                  transition: all 0.4s ease-in-out;
-
-                  @include respondTo(md) {
-                    font-size: calc(1em + 2px);
-                  }
-                }
-
-                .icon {
-                  display: block;
-                  background-image: url("@assets/images/icon/icon_arrow_down_blue.svg");
-                  background-size: 32px;
-                  background-repeat: no-repeat;
-                  background-position: 50% -10%;
-                  background-color: #fff;
-                  width: 30px;
-                  height: 30px;
-                  border-radius: 50%;
-
-                  z-index: 10;
-                  transition: all 0.3s;
-                }
-
-                .effect {
-                  @include pseudoDefault(#fff);
-                  left: 50%;
-                  @include square(0);
-                  border-radius: 50%;
-                  transform: translate(-50%, -50%);
-                  transition: all 0.4s ease-in-out;
-                }
-              }
-            }
-          }
-        }
-
-        .spec-container {
-          position: relative;
-          width: 100%;
-          max-width: 1280px;
-          padding-top: $header-sm;
-          margin: 0 auto;
-
-          @include respondTo(sm) {
-            padding-top: $header-md;
-          }
-
-          p {
-            font-size: $font-size-con-title-sm;
-            font-weight: 600;
-
-            @include respondTo(md) {
-              font-size: $font-size-con-title-lg;
-            }
-          }
-
-          span {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: transparent;
-
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            -webkit-touch-callout: none;
-          }
-
-          img {
-            margin-top: 12px;
-
-            @include respondTo(md) {
-              margin-top: 16px;
-            }
-          }
-        }
-      } // grid
     }
-  } // Business
+  } // ProductCatalog
+
+  .ProductShowcase {
+    .SubTabMenu {
+      @include respondTo(md) {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 3rem;
+      }
+    }
+
+    .detail {
+      max-width: 800px;
+      margin: 10rem auto;
+    }
+  } //ProductShowcase
 } // BusinessLayout

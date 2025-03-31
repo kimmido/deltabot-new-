@@ -1,5 +1,5 @@
 import React from "react";
-import PageHeading from "../../components/Shared/PageHeading";
+import PageHeading from "../../components/UI/PageHeading";
 import ValuesSection from "./components/ValuesSection";
 import RollingSwiper from "./components/RollingSwiper";
 

@@ -3,13 +3,13 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
-function SeriesTabMenu({ items, currentIdx, setCurrentIdx, setSearchParams }) {
+function SubTabMenu({ items, currentIdx, setCurrentIdx, setSearchParams }) {
   const gsapContainerRef = useRef(null);
 
   useGSAP(
     () => {
       gsap.fromTo(
-        ".SeriesTabMenu__text",
+        ".SubTabMenu__text",
         {
           y: 50,
           opacity: 0,
@@ -41,22 +41,22 @@ function SeriesTabMenu({ items, currentIdx, setCurrentIdx, setSearchParams }) {
   };
 
   return (
-    <div ref={gsapContainerRef} className="SeriesTabMenu">
+    <div ref={gsapContainerRef} className="SubTabMenu">
       {console.log("사이드탭 렌더링")}
       {items.map((item, idx) => (
         <button
           key={item.title}
-          className={`SeriesTabMenu__item overflow_hidden
+          className={`SubTabMenu__item overflow_hidden
            ${currentIdx === idx ? "active" : ""}`}
           onClick={() => {
             ChageTab(idx);
           }}
         >
-          <span className="SeriesTabMenu__text">{item.title}</span>
+          <h4 className="SubTabMenu__title">{item.title}</h4>
         </button>
       ))}
     </div>
   );
 }
 
-export default SeriesTabMenu;
+export default SubTabMenu;

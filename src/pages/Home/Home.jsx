@@ -4,7 +4,7 @@ import BusinessSection from "./components/BusinessSection";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import VideoSection from "./components/VideoSection";
-import MetaTag from "../../components/Shared/MetaTag";
+import MetaTag from "../../components/Layout/MetaTag";
 gsap.registerPlugin(useGSAP);
 
 const Home = () => {

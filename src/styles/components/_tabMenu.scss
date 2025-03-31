@@ -44,8 +44,8 @@
         background-color: $color-active;
 
         .TabMenu__label {
-          color: #fff;
           transform: scale(1);
+          color: #fff;
           font-weight: inherit;
         }
       }
@@ -53,6 +53,8 @@
       .TabMenu__label {
         display: inline-block;
         transition: all 0.3s;
+        font-size: 1em;
+        font-weight: inherit;
       }
     }
   }

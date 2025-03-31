@@ -1,10 +1,10 @@
 import React from "react";
 
-function ProductScrollBtn({ currentTab, item, scrollTo }) {
+function CatalogScrollBtn({ currentTab, item, scrollTo }) {
   return (
     <button
       key={item.code}
-      className="ProductScrollBtn product-scroll__button"
+      className="CatalogScrollBtn product-scroll__button"
       onClick={() => {
         scrollTo(item.code);
       }}
@@ -14,15 +14,11 @@ function ProductScrollBtn({ currentTab, item, scrollTo }) {
         alt={item.name}
       />
       <div className="subject">
-        <p className="sb-txt">{item.name}</p>
+        <h5 className="sb-txt">{item.name}</h5>
         <span className="sb-icon"></span>
       </div>
-      {/* <div className="feature">
-        <p>Work space：500mm</p>
-        <p>Max payload：9kg</p>
-      </div> */}
     </button>
   );
 }
 
-export default ProductScrollBtn;
+export default CatalogScrollBtn;

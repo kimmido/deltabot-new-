@@ -20,7 +20,7 @@ function TabMenu({ routes, currentCategory, currentPath }) {
             }`}
             onClick={() => handleTabChange(currentCategory, route.path)}
           >
-            <span className="TabMenu__label">{route.label}</span>
+            <h3 className="TabMenu__label">{route.label}</h3>
           </button>
         ))}
       </div>
