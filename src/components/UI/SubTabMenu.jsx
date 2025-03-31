@@ -1,10 +1,22 @@
-import React, { useCallback, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useSearchParams } from "react-router-dom";
 gsap.registerPlugin(useGSAP);
 
-function SubTabMenu({ items, currentIdx, setCurrentIdx, setSearchParams }) {
+function SubTabMenu({ items, currentIdx, setCurrentIdx }) {
   const gsapContainerRef = useRef(null);
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  // 서브 탭메뉴
+  useEffect(() => {
+    const tabParam = searchParams.get("tab");
+    if (tabParam) {
+      setCurrentIdx(Number(tabParam));
+    } else {
+      setCurrentIdx(0);
+    }
+  }, [searchParams]);
 
   useGSAP(
     () => {

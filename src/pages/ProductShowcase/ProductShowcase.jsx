@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useOutletContext, useSearchParams } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 
 import BasicProductItem from "./components/BasicProductItem";
 import SubTabMenu from "../../components/UI/SubTabMenu";
@@ -7,7 +7,6 @@ import SubTabMenu from "../../components/UI/SubTabMenu";
 function ProductShowcase() {
   const { currentTab, productData = [] } = useOutletContext();
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [searchParams, setSearchParams] = useSearchParams();
 
   return (
     <div className="ProductShowcase">
@@ -15,7 +14,6 @@ function ProductShowcase() {
         items={productData}
         currentIdx={currentIdx}
         setCurrentIdx={setCurrentIdx}
-        setSearchParams={setSearchParams}
       />
       {productData[currentIdx] &&
         productData[currentIdx].items.map((item) => (

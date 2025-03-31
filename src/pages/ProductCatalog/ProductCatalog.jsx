@@ -11,20 +11,9 @@ import CatalogScrollBtn from "./components/CatalogScrollBtn";
 function ProductCatalog() {
   const { currentTab, productData = [] } = useOutletContext();
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [searchParams, setSearchParams] = useSearchParams();
 
   const itemsRef = useRef(null);
   const gsapContainerRef = useRef(null);
-
-  // 서브 탭메뉴
-  useEffect(() => {
-    const tabParam = searchParams.get("tab");
-    if (tabParam) {
-      setCurrentIdx(Number(tabParam));
-    } else {
-      setCurrentIdx(0);
-    }
-  }, [searchParams, currentTab]);
 
   // 페이지 변경시 등장 요소 애니메이션
   useGSAP(
@@ -72,7 +61,6 @@ function ProductCatalog() {
           items={productData}
           currentIdx={currentIdx}
           setCurrentIdx={setCurrentIdx}
-          setSearchParams={setSearchParams}
         />
         <div className="scroll-btn-list">
           {productData[currentIdx] &&
@@ -90,6 +78,7 @@ function ProductCatalog() {
         {productData[currentIdx] &&
           productData[currentIdx].items.map((item) => (
             <div
+              key={item.code}
               ref={(node) => {
                 const map = getMap();
                 if (node) {
@@ -99,11 +88,7 @@ function ProductCatalog() {
                 }
               }}
             >
-              <SpecProductItem
-                key={item.code}
-                item={item}
-                currentTab={currentTab}
-              />
+              <SpecProductItem item={item} currentTab={currentTab} />
             </div>
           ))}
       </div>
