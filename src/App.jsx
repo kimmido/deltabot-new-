@@ -7,12 +7,12 @@ import "aos/dist/aos.css";
 
 import DefaultLayout from "./layouts/DefaultLayout";
 import BusinessLayout from "./layouts/BusinessLayout";
-import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
+import Home from "./pages/Home/Home.page";
+import About from "./pages/About/About.page";
 import ScrollToTop from "./utils/scrollToTop";
 import SolutionLayout from "./layouts/SolutionLayout";
-import ProductCatalog from "./pages/ProductCatalog/ProductCatalog";
-import ProductShowcase from "./pages/ProductShowcase/ProductShowcase";
+import ProductCatalog from "./pages/ProductCatalog/ProductCatalog.page";
+import ProductShowcase from "./pages/ProductShowcase/ProductShowcase.page";
 import { HelmetProvider } from "react-helmet-async";
 
 function App() {
