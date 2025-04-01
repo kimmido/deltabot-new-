@@ -1,17 +1,12 @@
 import { Helmet } from "react-helmet-async";
 
-function MetaTag(props) {
-  const metaDefault = {
-    title: "deltabot | 델타봇",
-    description:
-      "델타봇은 로봇 자동화, 비전 시스템, 재활용 시스템, 의료, IT 등 다양한 산업에 적용 가능한 제품군을 보유하여 고객 맞춤형 자동화 시스템을 설계합니다.",
-    keywords: "델타봇, 로봇, 자동화, 비전시스템, 재활용시스템",
-    imgsrc: "https://icpmalldata.mycafe24.com/images/logo.svg",
-    url: "https://icpmalldata.mycafe24.com/",
-  };
-  const meta = { ...metaDefault, ...props };
-  const { title, description, keywords, imgsrc, url } = meta;
-
+function MetaTag({
+  title = "deltabot | 델타봇",
+  description = "델타봇은 로봇 자동화, 비전 시스템, 재활용 시스템, 의료, IT 등 다양한 산업에 적용 가능한 제품군을 보유하여 고객 맞춤형 자동화 시스템을 설계합니다.",
+  keywords = "델타봇, 로봇, 자동화, 비전시스템, 재활용시스템",
+  imgsrc = "https://icpmalldata.mycafe24.com/images/branding/og.jpg",
+  url = "https://icpmalldata.mycafe24.com/",
+}) {
   return (
     <Helmet>
       <title>{title}</title>

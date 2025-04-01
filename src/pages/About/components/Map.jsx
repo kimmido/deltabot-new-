@@ -13,7 +13,7 @@ import RecenterMap from "./RecenterMap";
 
 // 마커 아이콘 설정
 const customIcon = new L.Icon({
-  iconUrl: "/images/marker-map.png", // 로고 이미지 (public 폴더에 logo.png 추가)
+  iconUrl: "/images/branding/marker-map.png", // 로고 이미지 (public 폴더에 logo.png 추가)
   iconSize: [40, 51], // 아이콘 크기
   iconAnchor: [20, 50], // 아이콘 기준점
   popupAnchor: [0, -50], // 팝업 위치 조정
