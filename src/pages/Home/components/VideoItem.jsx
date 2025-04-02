@@ -58,7 +58,7 @@ function VideoItem({ title, id, desc }) {
       gsap.fromTo(
         videoBoxRef.current,
         {
-          width: "50%",
+          width: "40%",
         },
         {
           width: "90%",
@@ -77,7 +77,7 @@ function VideoItem({ title, id, desc }) {
       videoAction("pause");
 
       gsap.to(videoBoxRef.current, {
-        width: "50%",
+        width: "40%",
         duration: 0.5,
       });
     }

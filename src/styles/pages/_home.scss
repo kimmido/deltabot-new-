@@ -156,7 +156,7 @@
   }
 }
 
-// ====== VideoSection ======
+// ====== BusinessSection ======
 .BusinessSection {
   margin-top: $spacing-layout-sm;
 
@@ -249,6 +249,7 @@
         @include respondTo(md) {
           gap: 3rem;
           margin-top: 22px;
+          width: calc(60% - 4.8rem);
         }
 
         .title {
