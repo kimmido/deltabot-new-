@@ -75,6 +75,10 @@
 
             p {
               line-height: 1.5;
+
+              &:nth-of-type(n + 2) {
+                margin-top: 0.4rem;
+              }
             }
 
             .bullets {
