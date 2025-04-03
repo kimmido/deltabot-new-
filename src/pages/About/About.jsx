@@ -3,12 +3,36 @@ import PageHeading from "../../components/UI/PageHeading";
 import ValuesSection from "./components/ValuesSection";
 import RollingSwiper from "./components/RollingSwiper";
 
-// import mapImg from "../../assets/images/map.png";
 import Map from "./components/Map";
+import { Helmet } from "react-helmet-async";
 
 function About() {
   return (
     <div className="About">
+      <Helmet>
+        <title>deltabot | 델타봇</title>
+        <meta
+          name="description"
+          content="산업용 자동화 기기를 제조 및 판매하며, 고객 맞춤형 자동화 시스템을 설계합니다."
+        />
+        <meta
+          name="keywords"
+          content="델타봇, 로봇, 자동화, 비전시스템, 재활용시스템"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="deltabot | 델타봇" />
+        <meta property="og:site_name" content="deltabot | 델타봇" />
+        <meta
+          property="og:description"
+          content="산업용 자동화 기기를 제조 및 판매하며, 고객 맞춤형 자동화 시스템을 설계합니다."
+        />
+        <meta
+          property="og:image"
+          content="https://icpmalldata.mycafe24.com/images/branding/og.jpg"
+        />
+        <meta property="og:url" content="https://icpmalldata.mycafe24.com/" />
+        <link rel="canonical" href="https://icpmalldata.mycafe24.com/" />
+      </Helmet>
       <div className="container">
         <PageHeading title="회사소개" currentPath="about" />
 
@@ -77,7 +101,6 @@ function About() {
 
           <div className="map-wrap">
             <Map />
-            {/* <img src={mapImg} alt="지도" /> */}
           </div>
         </section>
       </div>
