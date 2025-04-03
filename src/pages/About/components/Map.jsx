@@ -29,7 +29,7 @@ function Map() {
   return (
     <MapContainer className="Map" center={position} zoom={16}>
       {/* 지도 스타일 (타일 레이어) */}
-      <TileLayer url="https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}.png" />
+      <TileLayer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {/* <SVGOverlay attributes={{ stroke: "black" }} bounds={bounds}>
         <rect x="0" y="0" width="100%" height="100%" fill="white" />
         <text x="50%" y="50%" stroke="black">
