@@ -25,7 +25,7 @@ function VideoItem({ title, id, desc }) {
 
   useEffect(() => {
     videoAction("pause");
-    videoBoxRef.current.style.width = isMobile ? "100%" : "50%";
+    videoBoxRef.current.style.width = isMobile ? "100%" : "45%";
   }, [isMobile]);
 
   useGSAP(() => {
@@ -58,7 +58,7 @@ function VideoItem({ title, id, desc }) {
       gsap.fromTo(
         videoBoxRef.current,
         {
-          width: "40%",
+          width: "45%",
         },
         {
           width: "90%",
@@ -77,7 +77,7 @@ function VideoItem({ title, id, desc }) {
       videoAction("pause");
 
       gsap.to(videoBoxRef.current, {
-        width: "40%",
+        width: "45%",
         duration: 0.5,
       });
     }

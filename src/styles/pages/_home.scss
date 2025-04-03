@@ -213,6 +213,7 @@
         border-radius: $radius-card;
         aspect-ratio: 16 / 9;
         cursor: pointer;
+        width: 45%;
 
         video {
           height: 100%;
@@ -249,7 +250,7 @@
         @include respondTo(md) {
           gap: 3rem;
           margin-top: 22px;
-          width: calc(60% - 4.8rem);
+          width: calc(55% - 4.8rem);
         }
 
         .title {
