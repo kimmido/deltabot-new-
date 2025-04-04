@@ -17,15 +17,20 @@ function ProductShowcase() {
       />
       {productData[currentIdx] &&
         productData[currentIdx].items.map((item) => (
-          <BasicProductItem
-            key={item.code}
-            item={item}
-            currentTab={currentTab}
-          />
+          <>
+            <BasicProductItem
+              key={item.code}
+              item={item}
+              currentTab={currentTab}
+            />
+            <div className="detail">
+              <img
+                src={`/images/product/${currentTab}/${item.code}-details.jpg`}
+                alt=""
+              />
+            </div>
+          </>
         ))}
-      <div className="detail">
-        <img src="/images/product/uv/uv제품-details.jpg" alt="" />
-      </div>
     </div>
   );
 }

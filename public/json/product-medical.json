@@ -1,11 +1,11 @@
 {
   "pcr": [
     {
-      "title": "2D-L-130GM-8-H",
+      "title": "Q-GEN-5",
       "items": [
         {
-          "name": "2D-L-130GM-8-H",
-          "code": "2D-L-130GM-8-H",
+          "name": "Q-GEN-5",
+          "code": "Q-GEN-5",
           "features": [
             {
               "title": "INTRODUCTION",
@@ -30,11 +30,11 @@
       ]
     },
     {
-      "title": "MD20S",
+      "title": "Q-GEN-4",
       "items": [
         {
-          "name": "MD20S",
-          "code": "MD20S",
+          "name": "Q-GEN-4",
+          "code": "Q-GEN-4",
           "features": [
             {
               "title": "INTRODUCTION",
