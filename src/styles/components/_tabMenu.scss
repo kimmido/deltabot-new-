@@ -6,6 +6,7 @@
 
   .TabMenu__box {
     display: flex;
+    flex-wrap: wrap;
     gap: 6px;
     overflow-x: auto;
     padding: 4px;
@@ -18,16 +19,25 @@
       padding: 6px $gutter-lg;
     }
 
+    @include respondTo(md) {
+      flex-wrap: nowrap;
+    }
+
     .TabMenu__item {
       white-space: nowrap;
       border-radius: $radius-md;
       padding: 8px 12px;
+      flex: 20%;
 
       transition: all 0.3s;
 
       @include respondTo(sm) {
-        flex: 1;
+        // flex: 25%;
         padding: 12px 20px;
+      }
+
+      @include respondTo(md) {
+        flex: 1;
       }
 
       &:hover {
