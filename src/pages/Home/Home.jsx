@@ -40,9 +40,12 @@ const Home = () => {
         <BannerSwiper />
         <div className="container">
           <div className="decorative-area" ref={gsapContainer}>
-            <p className="decorative-txt">델타봇은</p>
-            <p className="decorative-txt">로봇산업의 선두 주자로</p>
-            <p className="decorative-txt">발돋움해 나갈 것 입니다.</p>
+            {/* <p className="decorative-txt">산업을 혁신하는</p>
+            <p className="decorative-txt">지능형 솔루션.</p> */}
+            <p className="decorative-txt">산업을 혁신하는</p>
+            <p className="decorative-txt">지능형 솔루션을 설계합니다.</p>
+            {/* <p className="decorative-txt">산업을 혁신하는</p>
+            <p className="decorative-txt">델타봇의 지능형 솔루션.</p> */}
           </div>
         </div>
         <BusinessSection />

@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-function VideoItem({ title, id, desc }) {
+function VideoItem({ title, id, keywords, desc }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(
     window.matchMedia("(max-width: 768px)").matches
@@ -138,12 +138,20 @@ function VideoItem({ title, id, desc }) {
       </div>
       <div className="text-box">
         <strong className="title">{title}</strong>
+
         <div className="desc">
-          {desc.map((p, idx) => (
-            <p key={idx} className="desc__p">
-              {p}
-            </p>
-          ))}
+          {desc.map((p, idx) => {
+            // const highlight = '';
+            // keywords.forEach(keyword => {
+            //   if (p.include(keyword))
+            // })
+
+            return (
+              <p key={idx} className="desc__p">
+                {p}
+              </p>
+            );
+          })}
         </div>
       </div>
     </div>
