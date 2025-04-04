@@ -11,7 +11,7 @@
   background: left center / cover no-repeat;
   transition: flex 0.6s, height 0.6s ease-in-out;
 
-  @for $i from 1 through 5 {
+  @for $i from 1 through 6 {
     &:nth-child(#{$i}) {
       background-image: url("@assets/images/home/business_section(#{$i}).jpg");
     }
@@ -29,11 +29,12 @@
   }
 
   @include respondTo(lg) {
-    height: 600px;
+    height: 540px;
     padding: 38px 34px 56px;
+    flex: 26%;
 
     &:hover {
-      flex: 2.4 1;
+      flex: 38%;
 
       &::before {
         background-color: transparent;
@@ -43,7 +44,7 @@
         opacity: 1;
 
         .category__sub__link {
-          width: 80%;
+          width: 90%;
 
           &:hover {
             color: #fff;
@@ -61,7 +62,7 @@
   }
 
   &.active {
-    height: 402px;
+    height: 42.6rem;
 
     .icon_plus {
       transform: rotateZ(135deg);
@@ -110,6 +111,8 @@
       opacity: 0;
       gap: 8px;
       transition: opacity 0.3s;
+      flex-wrap: wrap;
+      height: 60%;
     }
 
     .category__sub__link {
@@ -119,7 +122,7 @@
       background-color: #fff;
       font-weight: 600;
       white-space: nowrap;
-      transition: width 0.3s;
+      transition: width 0.5s;
 
       @include respondTo(md) {
         width: 226px;
@@ -129,6 +132,7 @@
         padding: 14px 16px;
         overflow: hidden;
         width: 100px;
+        max-width: 260px;
       }
     }
   }

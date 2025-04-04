@@ -40,6 +40,7 @@ function App() {
                 <Route path="cobot" element={<ProductCatalog />} />
                 <Route path="deltarobot" element={<ProductCatalog />} />
                 <Route path="case-packer" element={<ProductCatalog />} />
+                <Route path="amr" element={<ProductCatalog />} />
               </Route>
 
               <Route path="vision-system" element={<BusinessLayout />}>
@@ -73,6 +74,12 @@ function App() {
                 <Route path="rack-mount" element={<ProductCatalog />} />
                 <Route path="military" element={<ProductCatalog />} />
                 <Route path="vehicle" element={<ProductCatalog />} />
+              </Route>
+
+              <Route path="humanoid" element={<BusinessLayout />}>
+                <Route index element={<Navigate to="humanoid1" replace />} />
+                <Route path="humanoid1" element={<ProductCatalog />} />
+                <Route path="humanoid2" element={<ProductCatalog />} />
               </Route>
 
               <Route path="automation-solution" element={<SolutionLayout />} />

@@ -17,6 +17,7 @@ export const category = [
           { path: "cobot", label: "코봇" },
           { path: "deltarobot", label: "델타로봇" },
           { path: "case-packer", label: "Case Packer" },
+          { path: "amr", label: "AMR" },
         ],
       },
       {
@@ -55,6 +56,14 @@ export const category = [
           { path: "rack-mount", label: "Rack mount" },
           { path: "military", label: "Military" },
           { path: "vehicle", label: "Vehicle" },
+        ],
+      },
+      {
+        label: "Humanoid",
+        path: "humanoid",
+        items: [
+          { path: "humanoid1", label: "humanoid1" },
+          { path: "humanoid2", label: "humanoid2" },
         ],
       },
     ],
