@@ -10,11 +10,6 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
 
-// import main_slide1 from "../../../assets/images/home/main_slide(1).jpg";
-// import main_slide2 from "../../../assets/images/home/main_slide(2).jpg";
-// import main_slide3 from "../../../assets/images/home/main_slide(3).jpg";
-// import main_slide4 from "../../../assets/images/home/main_slide(4).jpg";
-
 function BannerSwiper() {
   const slideData = [
     {
@@ -80,6 +75,11 @@ function BannerSwiper() {
       >
         {slideData.map((item, idx) => (
           <SwiperSlide key={item.alt}>
+            <strong className="BannerSwiper__title">
+              사람과 AI 기술이
+              <br />
+              함께하는 미래
+            </strong>
             <div className={`slide slide--${idx}`}>
               <strong className="slide__text">{item.text1}</strong>
             </div>

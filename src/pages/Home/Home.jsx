@@ -40,10 +40,10 @@ const Home = () => {
         <BannerSwiper />
         <div className="container">
           <div className="decorative-area" ref={gsapContainer}>
+            <p className="decorative-txt">산업을 혁신하는 지능형 솔루션.</p>
+            {/* <p className="decorative-txt"></p> */}
             {/* <p className="decorative-txt">산업을 혁신하는</p>
-            <p className="decorative-txt">지능형 솔루션.</p> */}
-            <p className="decorative-txt">산업을 혁신하는</p>
-            <p className="decorative-txt">지능형 솔루션을 설계합니다.</p>
+            <p className="decorative-txt">지능형 솔루션을 설계합니다.</p> */}
             {/* <p className="decorative-txt">산업을 혁신하는</p>
             <p className="decorative-txt">델타봇의 지능형 솔루션.</p> */}
           </div>

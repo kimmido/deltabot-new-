@@ -12,6 +12,25 @@
     height: calc(100vh - $header-md);
   }
 
+  .BannerSwiper__title {
+    position: absolute;
+    top: 1.6rem;
+    left: $SWIPER_PADDING_SM;
+    font-size: $font-size-display-sm;
+    color: #fff;
+    text-shadow: $text-shadow;
+
+    z-index: $z-index-swiper-up;
+
+    @include respondTo(xs) {
+      font-size: $font-size-display-md;
+    }
+    @include respondTo(md) {
+      left: calc($SWIPER_BUTTON);
+      font-size: min(10rem, 6vw);
+    }
+  }
+
   .BannerSwiper__swiper {
     height: 100%;
 
@@ -60,23 +79,26 @@
       .slide__text {
         position: absolute;
         left: calc($SWIPER_PADDING_SM + 4px);
-        bottom: 40px;
+        bottom: 3rem;
         color: #fff;
         font-size: $font-size-display-sm;
         text-shadow: $text-shadow;
 
         @include respondTo(md) {
+          left: calc($SWIPER_PADDING_SM + $SWIPER_BUTTON);
+          bottom: 6rem;
+          font-size: $font-size-display-md;
+        }
+        @include respondTo(lg) {
           left: calc($SWIPER_PADDING_LG + $SWIPER_BUTTON);
-          // bottom: $SWIPER_PADDING_LG;
           bottom: 80px;
-          font-size: $font-size-display-lg;
-          line-height: 70px;
+          font-size: calc($font-size-display-lg - 0.4rem);
         }
       }
     }
 
     .swiper-pagination-fraction {
-      bottom: 80px;
+      bottom: 7rem;
       left: $SWIPER_PADDING_SM;
       width: auto;
       padding: 8px 20px;
@@ -86,10 +108,13 @@
       background-color: rgba(0, 0, 0, 0.5);
 
       @include respondTo(md) {
-        bottom: 17rem;
-        left: $SWIPER_PADDING_LG;
-        left: calc($SWIPER_PADDING_LG + $SWIPER_BUTTON);
+        bottom: 12rem;
+        left: calc($SWIPER_PADDING_SM + $SWIPER_BUTTON);
         font-size: 15px;
+      }
+      @include respondTo(lg) {
+        bottom: 17rem;
+        left: calc($SWIPER_PADDING_LG + $SWIPER_BUTTON);
       }
     }
 
@@ -131,12 +156,12 @@
 // ====== decorative ======
 .decorative-area {
   display: block;
-  margin: 26vh 0 22vh;
+  margin: 10vh 0 10vh;
   font-weight: 700;
   font-size: 32px;
 
   @include respondTo(md) {
-    margin: 26vh 0 26vh;
+    margin: 16vh 0;
     font-size: 66px;
     line-height: 80px;
   }
@@ -145,14 +170,17 @@
     position: relative;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.2);
-    // position: relative;
-    width: max-content;
+    max-width: 66%;
     background: linear-gradient(to right, $color-text-title, $color-text-title)
       no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 0%;
     // transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+
+    @include respondTo(xs) {
+      width: max-content;
+    }
   }
 }
 
