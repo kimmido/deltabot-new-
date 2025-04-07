@@ -84,6 +84,8 @@ function App() {
 
               <Route path="automation-solution" element={<SolutionLayout />} />
               <Route path="recycling-solution" element={<SolutionLayout />} />
+              <Route path="pcr-solution" element={<SolutionLayout />} />
+              <Route path="uv-solution" element={<SolutionLayout />} />
               <Route path="about" element={<About />} />
             </Route>
           </Routes>

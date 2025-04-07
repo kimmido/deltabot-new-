@@ -82,6 +82,14 @@ export const category = [
         label: "Recycling",
         path: "recycling-solution",
       },
+      {
+        label: "PCR",
+        path: "pcr-solution",
+      },
+      {
+        label: "공기 살균기",
+        path: "uv-solution",
+      },
     ],
   },
   {
