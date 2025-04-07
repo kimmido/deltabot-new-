@@ -1,0 +1,69 @@
+.Modal {
+  padding: 2vh 2px;
+
+  .Modal__content-container {
+    height: 100%;
+    max-width: 1440px;
+    padding-top: 1.6rem;
+    padding-bottom: 10rem;
+    background-color: #fff;
+    border-radius: $radius-card-md;
+
+    .Modal__content {
+      overflow-y: scroll;
+      height: 100%;
+
+      .ProductItem {
+        padding-top: 0;
+      }
+      .spec-container {
+        position: relative;
+        width: 100%;
+        max-width: 1280px;
+        padding-top: $header-sm;
+        margin: 0 auto;
+
+        @include respondTo(sm) {
+          padding-top: $header-md;
+        }
+
+        p {
+          font-size: $font-size-con-title-sm;
+          font-weight: 600;
+
+          @include respondTo(md) {
+            font-size: $font-size-con-title-lg;
+          }
+        }
+
+        span {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-touch-callout: none;
+        }
+
+        img {
+          margin-top: 12px;
+
+          @include respondTo(md) {
+            margin-top: 16px;
+          }
+        }
+      }
+    } // Modal__content
+    .Modal__close {
+      margin: 1.6rem auto;
+      display: block;
+      box-shadow: $floating-shadow;
+    }
+  } // .Modal__content-container
+} // Modal

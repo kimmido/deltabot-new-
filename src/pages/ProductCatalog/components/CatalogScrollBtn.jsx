@@ -1,12 +1,13 @@
 import React from "react";
 
-function CatalogScrollBtn({ currentTab, item, scrollTo }) {
+function CatalogScrollBtn({ currentTab, item, setModalOpen }) {
   return (
     <button
       key={item.code}
       className="CatalogScrollBtn product-scroll__button"
       onClick={() => {
-        scrollTo(item.code);
+        setModalOpen(true);
+        // scrollTo(item.code);
       }}
     >
       <img
