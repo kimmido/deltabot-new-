@@ -87,7 +87,7 @@ export const category = [
         path: "pcr-solution",
       },
       {
-        label: "공기 살균기",
+        label: "UV 공기 살균기",
         path: "uv-solution",
       },
     ],
