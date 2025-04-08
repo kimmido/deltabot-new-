@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { CategoryRoutesContext } from "../../../contexts/CategoryRoutesContext";
 import BusinessItem from "./BusinessItem";
 
@@ -6,6 +6,7 @@ function BusinessSection() {
   const category = useContext(CategoryRoutesContext);
   const route = category.find((item) => item.main.label == "사업소개");
   const subRoutes = route.sub;
+  const [isExpanded, setExpanded] = useState(1000);
 
   return (
     <section className="BusinessSection">
@@ -27,9 +28,34 @@ function BusinessSection() {
           // data-aos-anchor-placement="top-bottom"
           data-aos-duration="30000"
         >
-          {subRoutes.map((sub) => (
-            <BusinessItem key={sub.label} sub={sub} />
-          ))}
+          <div className="flex-box">
+            {subRoutes.map(
+              (sub, idx) =>
+                idx < 3 && (
+                  <BusinessItem
+                    key={sub.label}
+                    sub={sub}
+                    idx={idx}
+                    isExpanded={isExpanded}
+                    setExpanded={setExpanded}
+                  />
+                )
+            )}
+          </div>
+          <div className="flex-box">
+            {subRoutes.map(
+              (sub, idx) =>
+                idx >= 3 && (
+                  <BusinessItem
+                    key={sub.label}
+                    sub={sub}
+                    idx={idx}
+                    isExpanded={isExpanded}
+                    setExpanded={setExpanded}
+                  />
+                )
+            )}
+          </div>
         </div>
       </div>
     </section>

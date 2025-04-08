@@ -6,53 +6,22 @@
   @include flexBox(column, 36px, stretch, space-between);
   padding: 32px;
   height: 96px;
+  min-height: 96px;
   overflow: hidden;
   border-radius: $radius-card;
   background: left center / cover no-repeat;
-  transition: flex 0.6s, height 0.6s ease-in-out;
-
-  @for $i from 1 through 6 {
-    &:nth-child(#{$i}) {
-      background-image: url("@assets/images/home/business_section(#{$i}).jpg");
-    }
-  }
+  transition: flex 0.6s, min-height 0.6s ease-in-out;
 
   @include respondTo(sm) {
-    flex: 1 1;
-    height: auto;
+    flex: 26%;
+    height: 38rem;
     overflow: visible;
     background-position: left top;
-  }
-
-  @include respondTo(md) {
-    padding: 32px 34px 34px;
   }
 
   @include respondTo(lg) {
     height: 540px;
     padding: 38px 34px 56px;
-    flex: 26%;
-
-    &:hover {
-      flex: 38%;
-
-      &::before {
-        background-color: transparent;
-      }
-
-      ul.category__sub__list {
-        opacity: 1;
-
-        .category__sub__link {
-          width: 90%;
-
-          &:hover {
-            color: #fff;
-            background-color: #1d57bcd0;
-          }
-        }
-      }
-    }
   }
 
   &::before {
@@ -61,11 +30,59 @@
     transition: background-color 0.3s;
   }
 
+  &::after {
+    @include pseudoDefault(transparent);
+    top: 50%;
+    height: 50%;
+    border-radius: 0 0 $radius-card $radius-card;
+    transition: background-color 0.3s;
+
+    @include respondTo(lg) {
+      background-color: transparent;
+    }
+  }
+
   &.active {
-    height: 42.6rem;
+    min-height: 30rem;
 
     .icon_plus {
       transform: rotateZ(135deg);
+    }
+
+    p,
+    .btn {
+      opacity: 1;
+    }
+
+    &::before {
+      background-color: transparent;
+    }
+
+    &::after {
+      background-color: #00000070;
+    }
+
+    @include respondTo(sm) {
+      flex: 80%;
+    }
+  }
+
+  &:hover {
+    @include respondTo(lg) {
+      flex: 80%;
+
+      &::before {
+        background-color: transparent;
+      }
+
+      &::after {
+        background-color: #00000070;
+      }
+
+      p,
+      .btn {
+        opacity: 1;
+      }
     }
   }
 
@@ -101,39 +118,38 @@
     }
   }
 
-  .category__sub__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    gap: 4px;
+  p,
+  .btn {
+    z-index: 1;
+    opacity: 0;
+
+    transition: all 0.5s;
+  }
+
+  p {
+    position: absolute;
+    top: calc(50% + 1.2em);
+    left: 0;
+    color: #fff;
+    font-size: $font-size-sm;
+    padding: 0 32px;
+
+    @include respondTo(xs) {
+      font-size: $font-size-md;
+    }
+
+    @include respondTo(md) {
+      font-size: $font-size-lg;
+    }
 
     @include respondTo(lg) {
-      opacity: 0;
-      gap: 8px;
-      transition: opacity 0.3s;
-      flex-wrap: wrap;
-      height: 60%;
+      font-size: $font-size-xl;
+      padding: 0 34px;
     }
+  }
 
-    .category__sub__link {
-      width: 216px;
-      padding: 12px 16px;
-      border-radius: $radius-xs;
-      background-color: #fff;
-      font-weight: 600;
-      white-space: nowrap;
-      transition: width 0.5s;
-
-      @include respondTo(md) {
-        width: 226px;
-      }
-
-      @include respondTo(lg) {
-        padding: 14px 16px;
-        overflow: hidden;
-        width: 100px;
-        max-width: 260px;
-      }
-    }
+  .btn {
+    z-index: 1;
+    text-align: right;
   }
 }

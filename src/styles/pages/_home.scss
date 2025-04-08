@@ -193,15 +193,19 @@
   }
 
   .business__list {
-    @include flexBox(column, $gutter-sm);
+    .flex-box {
+      @include flexBox(column, $gutter-sm);
+      margin-top: $gutter-sm;
 
-    @include respondTo(sm) {
-      flex-flow: row wrap;
-      justify-content: space-between;
-    }
+      @include respondTo(sm) {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+      }
 
-    @include respondTo(lg) {
-      gap: 10px;
+      @include respondTo(lg) {
+        gap: 10px;
+        margin-top: 10px;
+      }
     }
   }
 }
