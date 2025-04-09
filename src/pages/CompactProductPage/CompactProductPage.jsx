@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { useOutletContext } from "react-router-dom";
 
-import BasicProductItem from "./components/BasicProductItem";
 import SubTabMenu from "../../components/UI/SubTabMenu";
+import ProductDetailView from "../ProductCatalog/components/ProductDetailView";
 
-function ProductShowcase() {
+function CompactProductPage() {
   const { currentTab, productData = [] } = useOutletContext();
   const [currentIdx, setCurrentIdx] = useState(0);
 
   return (
-    <div className="ProductShowcase">
+    <div className="CompactProductPage">
       <SubTabMenu
         items={productData}
         currentIdx={currentIdx}
@@ -18,21 +18,15 @@ function ProductShowcase() {
       {productData[currentIdx] &&
         productData[currentIdx].items.map((item) => (
           <>
-            <BasicProductItem
+            <ProductDetailView
               key={item.code}
               item={item}
               currentTab={currentTab}
             />
-            <div className="detail">
-              <img
-                src={`/images/product/${currentTab}/${item.code}-details.jpg`}
-                alt=""
-              />
-            </div>
           </>
         ))}
     </div>
   );
 }
 
-export default React.memo(ProductShowcase);
+export default React.memo(CompactProductPage);

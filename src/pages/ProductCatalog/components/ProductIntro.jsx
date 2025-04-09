@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProductInfo({ item }) {
+function ProductIntro({ item }) {
   return (
     <>
       <h5 className="prod_name">{item.name}</h5>
@@ -8,7 +8,7 @@ function ProductInfo({ item }) {
         {item.features.map((feature, idx) => (
           <div key={idx} className="prod_desc__inner">
             {feature.title == "null" || (
-              <h4 className="prod_desc__title">{feature.title}</h4>
+              <h6 className="prod_desc__title">{feature.title}</h6>
             )}
             {feature.texts?.map((text, idx) => (
               <p key={idx}>{text}</p>
@@ -27,4 +27,4 @@ function ProductInfo({ item }) {
   );
 }
 
-export default ProductInfo;
+export default ProductIntro;

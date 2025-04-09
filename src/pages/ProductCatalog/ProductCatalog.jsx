@@ -5,25 +5,16 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
 import SubTabMenu from "../../components/UI/SubTabMenu";
-import SpecProductItem from "./components/SpecProductItem";
-import CatalogScrollBtn from "./components/CatalogScrollBtn";
+import ProductDetailView from "./components/ProductDetailView";
+import ProductListItem from "./components/ProductListItem";
 import Modal from "../../components/UI/Modal";
-import BasicProductItem from "../ProductShowcase/components/BasicProductItem";
 
 function ProductCatalog() {
   const { currentTab, productData = [] } = useOutletContext();
   const [currentIdx, setCurrentIdx] = useState(0);
+  const [prodIdx, setProdIdx] = useState(0);
   const [isModalOpen, setModalOpen] = useState(false);
-
-  const itemsRef = useRef(null);
   const gsapContainerRef = useRef(null);
-
-  useEffect(() => {
-    console.log("ProductCatalog 마운트됨");
-    return () => {
-      console.log("ProductCatalog 언마운트됨");
-    };
-  }, []);
 
   // 페이지 변경시 등장 요소 애니메이션
   useGSAP(
@@ -45,23 +36,10 @@ function ProductCatalog() {
     { dependencies: [currentTab], scope: gsapContainerRef }
   );
 
-  // 해당 제품으로 스크롤 이동
-  function scrollTo(key) {
-    // const map = getMap();
-    // const node = map.get(key);
-    // node.scrollIntoView({
-    //   behavior: "smooth",
-    //   block: "start",
-    // });
-  }
-
-  // 노드 저장
-  function getMap() {
-    if (!itemsRef.current) {
-      itemsRef.current = new Map(); // 처음 사용하는 경우, Map을 초기화합니다.
-    }
-    return itemsRef.current;
-  }
+  const openModal = (num) => {
+    setModalOpen(true);
+    setProdIdx(num);
+  };
 
   return (
     <div className="ProductCatalog">
@@ -72,78 +50,30 @@ function ProductCatalog() {
           currentIdx={currentIdx}
           setCurrentIdx={setCurrentIdx}
         />
-        <div className="scroll-btn-list">
+        <div className="product-list">
           {productData[currentIdx] &&
-            productData[currentIdx].items.map((item) => (
-              <CatalogScrollBtn
+            productData[currentIdx].items.map((item, idx) => (
+              <ProductListItem
                 key={item.code}
                 currentTab={currentTab}
                 item={item}
-                // scrollTo={scrollTo}
-                setModalOpen={setModalOpen}
+                idx={idx}
+                openModal={openModal}
               />
             ))}
         </div>
       </div>
 
-      {console.log(isModalOpen)}
       {productData[currentIdx] && isModalOpen && (
         <Modal setModalOpen={setModalOpen}>
-          <BasicProductItem
-            item={productData[currentIdx].items[0]}
+          <ProductDetailView
+            item={productData[currentIdx].items[prodIdx]}
             currentTab={currentTab}
           />
-          <SpecContainer
-            item={productData[currentIdx].items[0]}
-            currentTab={currentTab}
-          />
-          {/* <div className="detail">
-            <img
-              src={`/images/product/${currentTab}/${productData[currentIdx].items[0].code}_info.jpg`}
-              alt=""
-            />
-          </div> */}
         </Modal>
       )}
-      {/* <div className="product-list">
-        {productData[currentIdx] &&
-          productData[currentIdx].items.map((item) => (
-            <div
-              key={item.code}
-              ref={(node) => {
-                const map = getMap();
-                if (node) {
-                  map.set(item.code, node); // Mount 시
-                } else {
-                  map.delete(item); // Unmount 시
-                }
-              }}
-            >
-              <SpecProductItem item={item} currentTab={currentTab} />
-            </div>
-          ))}
-      </div> */}
     </div>
   );
 }
 
 export default React.memo(ProductCatalog);
-
-function SpecContainer({ item, currentTab }) {
-  return (
-    <div className="spec-container">
-      <p>SPECIFICATION</p>
-      <span
-        onContextMenu={(e) => {
-          e.preventDefault();
-        }}
-      ></span>
-      <div className="cnt">
-        <img
-          src={`/images/product/${currentTab}/${item.code}_info.jpg`}
-          alt={item.code}
-        />
-      </div>
-    </div>
-  );
-}

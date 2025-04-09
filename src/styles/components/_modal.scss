@@ -1,69 +1,58 @@
 .Modal {
-  padding: 2vh 2px;
+  padding: 4vh 4px;
 
-  .Modal__content-container {
+  @include respondTo(md) {
+    padding-bottom: 5vh;
+  }
+
+  .Modal__content-wrap {
+    $PADDING_SM: 1rem;
+    $PADDING_MD: 1.6rem;
+
+    position: relative;
     height: 100%;
     max-width: 1440px;
-    padding-top: 1.6rem;
-    padding-bottom: 10rem;
     background-color: #fff;
     border-radius: $radius-card-md;
+    overflow: hidden;
 
     .Modal__content {
       overflow-y: scroll;
       height: 100%;
+      padding: $PADDING_SM $PADDING_SM 6.4rem;
 
-      .ProductItem {
-        padding-top: 0;
+      @include respondTo(md) {
+        padding: $PADDING_MD $PADDING_MD 8.2rem;
       }
-      .spec-container {
-        position: relative;
-        width: 100%;
-        max-width: 1280px;
-        padding-top: $header-sm;
-        margin: 0 auto;
+    }
 
-        @include respondTo(sm) {
-          padding-top: $header-md;
-        }
-
-        p {
-          font-size: $font-size-con-title-sm;
-          font-weight: 600;
-
-          @include respondTo(md) {
-            font-size: $font-size-con-title-lg;
-          }
-        }
-
-        span {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          background-color: transparent;
-
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-          -webkit-touch-callout: none;
-        }
-
-        img {
-          margin-top: 12px;
-
-          @include respondTo(md) {
-            margin-top: 16px;
-          }
-        }
-      }
-    } // Modal__content
     .Modal__close {
-      margin: 1.6rem auto;
-      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: $PADDING_SM;
+      transform: translateX(-50%);
+      width: calc(100% - $PADDING_SM * 2);
+      line-height: 4.4rem;
+      border-radius: $radius-md;
+      border: 1px solid $color-active;
       box-shadow: $floating-shadow;
+
+      transition: all 0.3s;
+
+      @include respondTo(sm) {
+        line-height: 5rem;
+      }
+
+      @include respondTo(md) {
+        bottom: $PADDING_MD;
+        width: calc(100% - $PADDING_MD * 2);
+      }
+
+      &:hover {
+        color: $color-red;
+        border-color: $color-red;
+        background-color: #fff;
+      }
     }
   } // .Modal__content-container
 } // Modal

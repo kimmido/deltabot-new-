@@ -1,3 +1,11 @@
+.copy-prevent {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
 .flex-container {
   display: flex;
 }
@@ -54,12 +62,17 @@
 
   &-point {
     color: #fff;
+    font-weight: 600;
     background-color: $color-point;
   }
 
   &-pill {
-    padding: calc(1em - 0.4rem) 1.4em;
     border-radius: 1000px;
+    padding: calc(1em - 0.4rem) 1.4em;
+
+    @include respondTo(lg) {
+      padding: calc(1em - 0.2rem) 1.4em;
+    }
   }
 
   &-border {

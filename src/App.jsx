@@ -12,7 +12,7 @@ import About from "./pages/About/About";
 import ScrollToTop from "./utils/scrollToTop";
 import SolutionLayout from "./layouts/SolutionLayout";
 import ProductCatalog from "./pages/ProductCatalog/ProductCatalog";
-import ProductShowcase from "./pages/ProductShowcase/ProductShowcase";
+import CompactProductPage from "./pages/CompactProductPage/CompactProductPage";
 import { HelmetProvider } from "react-helmet-async";
 
 function App() {
@@ -57,14 +57,14 @@ function App() {
 
               <Route path="recycling-system" element={<BusinessLayout />}>
                 <Route index element={<Navigate to="single-robot" replace />} />
-                <Route path="single-robot" element={<ProductShowcase />} />
-                <Route path="tandem-robot" element={<ProductShowcase />} />
+                <Route path="single-robot" element={<CompactProductPage />} />
+                <Route path="tandem-robot" element={<CompactProductPage />} />
               </Route>
 
               <Route path="medical" element={<BusinessLayout />}>
                 <Route index element={<Navigate to="pcr" replace />} />
-                <Route path="pcr" element={<ProductShowcase />} />
-                <Route path="uv" element={<ProductShowcase />} />
+                <Route path="pcr" element={<CompactProductPage />} />
+                <Route path="uv" element={<CompactProductPage />} />
               </Route>
 
               <Route path="information-technology" element={<BusinessLayout />}>

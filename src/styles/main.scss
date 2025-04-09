@@ -13,14 +13,12 @@
 @import "./components/scrollTopBtn";
 @import "./components/tabMenu";
 @import "./components/subTabMenu";
+@import "./components/modal";
 
 @import "./pages/home";
 @import "./pages/business";
+@import "./pages/solution";
 @import "./pages/about";
-// @use './pages/about';
-// @use './pages/automation';
-
-// @use './themes/light';
 
 @import "./utils/helpers";
 @import "./utils/theme";
