@@ -12,25 +12,6 @@
     height: calc(100vh - $header-md);
   }
 
-  .BannerSwiper__title {
-    position: absolute;
-    top: 1.6rem;
-    left: $SWIPER_PADDING_SM;
-    font-size: $font-size-display-sm;
-    color: #fff;
-    text-shadow: $text-shadow;
-
-    z-index: $z-index-swiper-up;
-
-    @include respondTo(xs) {
-      font-size: $font-size-display-md;
-    }
-    @include respondTo(md) {
-      left: calc($SWIPER_BUTTON);
-      font-size: min(10rem, 6vw);
-    }
-  }
-
   .BannerSwiper__swiper {
     height: 100%;
 
@@ -81,24 +62,57 @@
         left: calc($SWIPER_PADDING_SM + 4px);
         bottom: 3rem;
         color: #fff;
-        font-size: $font-size-display-sm;
         text-shadow: $text-shadow;
+        line-height: 1;
 
         @include respondTo(md) {
           left: calc($SWIPER_PADDING_SM + $SWIPER_BUTTON);
           bottom: 6rem;
-          font-size: $font-size-display-md;
         }
         @include respondTo(lg) {
           left: calc($SWIPER_PADDING_LG + $SWIPER_BUTTON);
           bottom: 80px;
-          font-size: calc($font-size-display-lg - 0.4rem);
+        }
+
+        strong {
+          font-weight: 600;
+          font-size: calc($font-size-display-sm - 0.2rem);
+
+          @include respondTo(xs) {
+            font-size: $font-size-display-sm;
+          }
+
+          @include respondTo(sm) {
+            font-size: $font-size-display-md;
+          }
+
+          @include respondTo(md) {
+            font-size: $font-size-display-lg;
+          }
+          @include respondTo(lg) {
+            font-size: calc($font-size-display-lg + 0.8rem);
+          }
+        }
+
+        p {
+          font-size: calc($font-size-display-sm - 0.8rem);
+
+          @include respondTo(sm) {
+            font-size: $font-size-display-sm;
+          }
+
+          @include respondTo(md) {
+            font-size: $font-size-display-md;
+          }
+          @include respondTo(lg) {
+            font-size: calc($font-size-display-md + 0.8rem);
+          }
         }
       }
     }
 
     .swiper-pagination-fraction {
-      bottom: 7rem;
+      bottom: 8rem;
       left: $SWIPER_PADDING_SM;
       width: auto;
       padding: 8px 20px;
@@ -107,13 +121,16 @@
       border-radius: 1000px;
       background-color: rgba(0, 0, 0, 0.5);
 
+      @include respondTo(sm) {
+        bottom: 11rem;
+      }
       @include respondTo(md) {
-        bottom: 12rem;
+        bottom: 18.5rem;
         left: calc($SWIPER_PADDING_SM + $SWIPER_BUTTON);
         font-size: 15px;
       }
       @include respondTo(lg) {
-        bottom: 17rem;
+        bottom: 22.6rem;
         left: calc($SWIPER_PADDING_LG + $SWIPER_BUTTON);
       }
     }

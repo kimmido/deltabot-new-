@@ -30,7 +30,7 @@ function BannerSwiper() {
     },
     {
       alt: "메인배너5",
-      text1: "IT",
+      text1: "INFORMATION TECHNOLOGY",
     },
   ];
 
@@ -75,13 +75,11 @@ function BannerSwiper() {
       >
         {slideData.map((item, idx) => (
           <SwiperSlide key={item.alt}>
-            <strong className="BannerSwiper__title">
-              사람과 AI 기술이
-              <br />
-              함께하는 미래
-            </strong>
             <div className={`slide slide--${idx}`}>
-              <strong className="slide__text">{item.text1}</strong>
+              <div className="slide__text">
+                <p className="text">{item.text1}</p>
+                <strong className="text">사람과 AI 기술이 함께하는 미래</strong>
+              </div>
             </div>
           </SwiperSlide>
         ))}
