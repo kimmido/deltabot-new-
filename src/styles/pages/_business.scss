@@ -9,9 +9,12 @@
       justify-content: space-between;
 
       @include respondTo(sm) {
-        gap: 60px;
         flex-direction: row;
         justify-content: center;
+      }
+
+      @include respondTo(md) {
+        gap: 60px;
       }
 
       .pd_left {
@@ -34,6 +37,10 @@
       .pd_right {
         flex: 1 1 51%;
         align-content: center;
+
+        @include respondTo(sm) {
+          padding: 5rem 0 2rem; // 모달창 닫기 버튼과 컨텐츠의 겹침 방지
+        }
 
         .prod_name {
           font-size: $font-size-con-title-md;
@@ -105,13 +112,11 @@
 
       @include respondTo(md) {
         margin-top: 5.4rem;
-        // padding-top: $header-md;
       }
 
       h6 {
         font-size: $font-size-con-title-sm;
         font-weight: 600;
-        // color: $color-text-light;
 
         @include respondTo(sm) {
           font-size: $font-size-con-title-md;
@@ -187,7 +192,8 @@
             padding: 20px 28px;
           }
 
-          &:hover {
+          &:hover,
+          &:focus {
             color: $color-active;
             border-color: $color-active;
 
@@ -197,6 +203,11 @@
               transform: rotate(180deg);
               border: 1px solid $color-active;
             }
+          }
+
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 0 1px $color-active;
           }
 
           .subject {

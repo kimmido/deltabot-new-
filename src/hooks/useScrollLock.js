@@ -6,8 +6,7 @@ export default function useScrollLock(lock = true) {
 
     const scrollY = window.scrollY;
     const body = document.body;
-    console.log(scrollY);
-
+    
     // 스크롤 위치 고정
     body.style.position = "fixed";
     body.style.top = `-${scrollY}px`;
