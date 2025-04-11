@@ -1,6 +1,229 @@
 @use "sass:color";
 
 .BusinessLayout {
+  .BusinessIntroSection,
+  .desc,
+  .intro-img:nth-of-type(1),
+  .applications {
+    margin-top: $spacing-layout-sm;
+
+    @include respondTo(tablet-l) {
+      margin-top: $spacing-layout-xl;
+    }
+  }
+
+  .BusinessIntroSection {
+    .title-area {
+      text-align: center;
+    }
+    .title {
+      position: relative;
+      max-width: 66%;
+      font-size: $font-size-display-sm;
+      color: rgba(0, 0, 0, 0.2);
+      background: linear-gradient(
+          to right,
+          $color-text-title,
+          $color-text-title
+        )
+        no-repeat;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 0%;
+
+      @include respondTo(tablet-l) {
+        font-size: $font-size-display-lg;
+      }
+    }
+
+    .desc {
+      text-align: center;
+      // font-size: $font-size-display-sm;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include respondTo(tablet-l) {
+        font-size: $font-size-display-sm;
+      }
+    }
+
+    .intro-img {
+      display: block;
+      &:nth-of-type(2) {
+        border-radius: $radius-card-lg;
+        border: 4px dotted $color-point;
+      }
+
+      &.small {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .applications {
+      @include flexBox(row, 2.4rem, stretch, space-between, wrap);
+      row-gap: 4rem;
+
+      .appItem {
+        flex: 30%;
+        text-align: center;
+
+        .img-box {
+          overflow: hidden;
+          // border: 1px solid $color-border;
+          border-radius: $radius-card-lg;
+
+          img {
+            display: block;
+          }
+        }
+
+        strong {
+          font-size: $font-size-con-title-sm;
+        }
+      }
+    }
+  } // BusinessIntroSection
+
+  .ProductCatalog {
+    margin-top: 16px;
+
+    @include respondTo(tablet-s) {
+      margin-top: 20px;
+    }
+
+    @include respondTo(tablet-l) {
+      margin-top: 100px;
+    }
+
+    .catalog__title {
+      font-size: $font-size-con-title-sm;
+      text-align: center;
+      background-color: beige;
+
+      @include respondTo(tablet-l) {
+        font-size: $font-size-con-title-lg;
+        padding: 8rem 0;
+      }
+    }
+
+    .flex-container {
+      flex-direction: column;
+      gap: 40px;
+
+      @include respondTo(tablet-l) {
+        flex-direction: row;
+      }
+
+      @include respondTo(pc-s) {
+        gap: 60px;
+      }
+
+      .product-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $gutter-sm;
+
+        @include respondTo(tablet-l) {
+          flex: 6;
+          grid-template-columns: repeat(4, 1fr);
+          gap: $gutter-lg;
+        }
+
+        .ProductListItem {
+          position: relative;
+          padding: 14px 16px;
+          border: 1px solid $color-border;
+          border-radius: $radius-card-md;
+          word-break: break-all;
+          transition: all 0.3s ease;
+
+          @include respondTo(tablet-s) {
+            padding: 20px 28px;
+          }
+
+          &:hover,
+          &:focus {
+            color: $color-active;
+            border-color: $color-active;
+
+            .subject span {
+              background-image: url("@assets/images/icon/icon_add_white.svg");
+              background-color: $color-active;
+              transform: rotate(180deg);
+              border: 1px solid $color-active;
+            }
+          }
+
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 0 1px $color-active;
+          }
+
+          .subject {
+            display: flex;
+            gap: 8px;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+
+            .sb-txt {
+              flex: 1;
+              width: fit-content;
+              text-align: left;
+              font-size: $font-size-sm;
+              font-weight: inherit;
+
+              @include respondTo(tablet-l) {
+                font-size: $font-size-md;
+              }
+
+              @include respondTo(pc-s) {
+                font-size: $font-size-lg;
+              }
+            }
+
+            .sb-icon {
+              display: block;
+              width: 2.8rem;
+              height: 2.8rem;
+              border-radius: 50%;
+              background-image: url("@assets/images/icon/icon_add_blue.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+              border: 1px solid $color-border;
+
+              transition: all 0.4s ease;
+
+              @include respondTo(tablet-s) {
+                width: 3.2rem;
+                height: 3.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  } // ProductCatalog
+
+  .CompactProductPage {
+    .SubTabMenu {
+      margin-bottom: 4rem;
+      @include respondTo(tablet-s) {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+      }
+      @include respondTo(tablet-l) {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 7.2rem;
+      }
+    }
+  } //CompactProductPage
+
   .ProductDetailView {
     .pd_flex {
       display: flex;
@@ -145,130 +368,4 @@
       }
     }
   } // ProductDetailView
-
-  .ProductCatalog {
-    margin-top: 16px;
-
-    @include respondTo(tablet-s) {
-      margin-top: 20px;
-    }
-
-    @include respondTo(tablet-l) {
-      margin-top: 100px;
-    }
-
-    .flex-container {
-      flex-direction: column;
-      gap: 40px;
-
-      @include respondTo(tablet-l) {
-        flex-direction: row;
-      }
-
-      @include respondTo(pc-s) {
-        gap: 60px;
-      }
-
-      .product-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: $gutter-sm;
-
-        @include respondTo(tablet-l) {
-          flex: 6;
-          grid-template-columns: repeat(4, 1fr);
-          gap: $gutter-lg;
-        }
-
-        .ProductListItem {
-          position: relative;
-          padding: 14px 16px;
-          border: 1px solid $color-border;
-          border-radius: $radius-card-md;
-          word-break: break-all;
-          transition: all 0.3s ease;
-
-          @include respondTo(tablet-s) {
-            padding: 20px 28px;
-          }
-
-          &:hover,
-          &:focus {
-            color: $color-active;
-            border-color: $color-active;
-
-            .subject span {
-              background-image: url("@assets/images/icon/icon_add_white.svg");
-              background-color: $color-active;
-              transform: rotate(180deg);
-              border: 1px solid $color-active;
-            }
-          }
-
-          &:focus {
-            outline: none;
-            box-shadow: 0 0 0 1px $color-active;
-          }
-
-          .subject {
-            display: flex;
-            gap: 8px;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 20px;
-
-            .sb-txt {
-              flex: 1;
-              width: fit-content;
-              text-align: left;
-              font-size: $font-size-sm;
-              font-weight: inherit;
-
-              @include respondTo(tablet-l) {
-                font-size: $font-size-md;
-              }
-
-              @include respondTo(pc-s) {
-                font-size: $font-size-lg;
-              }
-            }
-
-            .sb-icon {
-              display: block;
-              width: 2.8rem;
-              height: 2.8rem;
-              border-radius: 50%;
-              background-image: url("@assets/images/icon/icon_add_blue.svg");
-              background-repeat: no-repeat;
-              background-position: center;
-              border: 1px solid $color-border;
-
-              transition: all 0.4s ease;
-
-              @include respondTo(tablet-s) {
-                width: 3.2rem;
-                height: 3.2rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  } // ProductCatalog
-
-  .CompactProductPage {
-    .SubTabMenu {
-      margin-bottom: 4rem;
-      @include respondTo(tablet-s) {
-        margin-top: 2rem;
-        margin-bottom: 5rem;
-      }
-      @include respondTo(tablet-l) {
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 3rem;
-        margin-bottom: 7.2rem;
-      }
-    }
-  } //CompactProductPage
 } // BusinessLayout

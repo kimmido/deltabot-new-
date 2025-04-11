@@ -1,16 +1,14 @@
-import React, { useEffect, useState, useRef } from "react";
-import { useOutletContext, useSearchParams } from "react-router-dom";
+import React, { memo, useState, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
-import SubTabMenu from "../../components/UI/SubTabMenu";
-import ProductDetailView from "./components/ProductDetailView";
-import ProductListItem from "./components/ProductListItem";
-import Modal from "../../components/UI/Modal";
+import SubTabMenu from "../../../components/UI/SubTabMenu";
+import ProductDetailView from "./ProductDetailView";
+import ProductListItem from "./ProductListItem";
+import Modal from "../../../components/UI/Modal";
 
-function ProductCatalog() {
-  const { currentTab, productData = [] } = useOutletContext();
+function ProductCatalog({ currentTab, productData = [] }) {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [prodIdx, setProdIdx] = useState(0);
   const [isModalOpen, setModalOpen] = useState(false);
@@ -42,8 +40,9 @@ function ProductCatalog() {
   };
 
   return (
-    <div className="ProductCatalog">
-      {console.log("비즈니스 렌더링")}
+    <section className="ProductCatalog">
+      <h4 className="catalog__title">Products</h4>
+
       <div className="flex-container" ref={gsapContainerRef}>
         <SubTabMenu
           items={productData}
@@ -72,8 +71,8 @@ function ProductCatalog() {
           />
         </Modal>
       )}
-    </div>
+    </section>
   );
 }
 
-export default React.memo(ProductCatalog);
+export default memo(ProductCatalog);

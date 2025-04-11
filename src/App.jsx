@@ -11,8 +11,8 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import ScrollToTop from "./utils/scrollToTop";
 import SolutionLayout from "./layouts/SolutionLayout";
-import ProductCatalog from "./pages/ProductCatalog/ProductCatalog";
-import CompactProductPage from "./pages/CompactProductPage/CompactProductPage";
+import Business from "./pages/ProductCatalog/Business";
+import CompactProductPage from "./pages/ProductCatalog/CompactProductPage";
 import { HelmetProvider } from "react-helmet-async";
 
 function App() {
@@ -34,13 +34,13 @@ function App() {
                   index
                   element={<Navigate to="collaboration" replace />}
                 />
-                <Route path="collaboration" element={<ProductCatalog />} />
-                <Route path="serial-robot" element={<ProductCatalog />} />
-                <Route path="scara" element={<ProductCatalog />} />
-                <Route path="cobot" element={<ProductCatalog />} />
-                <Route path="deltarobot" element={<ProductCatalog />} />
-                <Route path="case-packer" element={<ProductCatalog />} />
-                <Route path="amr" element={<ProductCatalog />} />
+                <Route path="collaboration" element={<Business />} />
+                <Route path="serial-robot" element={<Business />} />
+                <Route path="scara" element={<Business />} />
+                <Route path="cobot" element={<Business />} />
+                <Route path="deltarobot" element={<Business />} />
+                <Route path="case-packer" element={<Business />} />
+                <Route path="amr" element={<Business />} />
               </Route>
 
               <Route path="vision-system" element={<BusinessLayout />}>
@@ -48,11 +48,11 @@ function App() {
                   index
                   element={<Navigate to="machine-vision" replace />}
                 />
-                <Route path="machine-vision" element={<ProductCatalog />} />
-                <Route path="thermal-camera" element={<ProductCatalog />} />
-                <Route path="spectral-camera" element={<ProductCatalog />} />
-                <Route path="illumination" element={<ProductCatalog />} />
-                <Route path="vision-controller" element={<ProductCatalog />} />
+                <Route path="machine-vision" element={<Business />} />
+                <Route path="thermal-camera" element={<Business />} />
+                <Route path="spectral-camera" element={<Business />} />
+                <Route path="illumination" element={<Business />} />
+                <Route path="vision-controller" element={<Business />} />
               </Route>
 
               <Route path="recycling-system" element={<BusinessLayout />}>
@@ -69,17 +69,17 @@ function App() {
 
               <Route path="information-technology" element={<BusinessLayout />}>
                 <Route index element={<Navigate to="gpu-server" replace />} />
-                <Route path="gpu-server" element={<ProductCatalog />} />
-                <Route path="workstations" element={<ProductCatalog />} />
-                <Route path="rack-mount" element={<ProductCatalog />} />
-                <Route path="military" element={<ProductCatalog />} />
-                <Route path="vehicle" element={<ProductCatalog />} />
+                <Route path="gpu-server" element={<Business />} />
+                <Route path="workstations" element={<Business />} />
+                <Route path="rack-mount" element={<Business />} />
+                <Route path="military" element={<Business />} />
+                <Route path="vehicle" element={<Business />} />
               </Route>
 
               <Route path="humanoid" element={<BusinessLayout />}>
                 <Route index element={<Navigate to="humanoid1" replace />} />
-                <Route path="humanoid1" element={<ProductCatalog />} />
-                <Route path="humanoid2" element={<ProductCatalog />} />
+                <Route path="humanoid1" element={<Business />} />
+                <Route path="humanoid2" element={<Business />} />
               </Route>
 
               <Route path="automation-solution" element={<SolutionLayout />} />

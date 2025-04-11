@@ -55,7 +55,7 @@
 
     .page__title {
       color: #fff;
-      font-size: $font-size-display-sm;
+      font-size: $font-size-display-xs;
       text-shadow: $text-shadow;
 
       @include respondTo(tablet-s) {

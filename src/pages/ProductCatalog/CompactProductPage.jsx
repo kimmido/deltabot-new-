@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useOutletContext } from "react-router-dom";
 
 import SubTabMenu from "../../components/UI/SubTabMenu";
-import ProductDetailView from "../ProductCatalog/components/ProductDetailView";
+import ProductDetailView from "./components/ProductDetailView";
 
 function CompactProductPage() {
   const { currentTab, productData = [] } = useOutletContext();

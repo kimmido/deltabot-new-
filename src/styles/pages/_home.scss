@@ -76,10 +76,10 @@
 
         strong {
           font-weight: 600;
-          font-size: calc($font-size-display-sm - 0.2rem);
+          font-size: calc($font-size-display-xs - 0.2rem);
 
           @include respondTo(mobile-l) {
-            font-size: $font-size-display-sm;
+            font-size: $font-size-display-xs;
           }
 
           @include respondTo(tablet-s) {
@@ -95,10 +95,10 @@
         }
 
         p {
-          font-size: calc($font-size-display-sm - 0.8rem);
+          font-size: calc($font-size-display-xs - 0.8rem);
 
           @include respondTo(tablet-s) {
-            font-size: $font-size-display-sm;
+            font-size: $font-size-display-xs;
           }
 
           @include respondTo(tablet-l) {
@@ -175,12 +175,12 @@
   display: block;
   margin: 10vh 0 10vh;
   font-weight: 700;
-  font-size: 32px;
+  font-size: $font-size-display-sm;
 
   @include respondTo(tablet-l) {
     margin: 16vh 0;
-    font-size: 66px;
     line-height: 80px;
+    font-size: $font-size-display-lg;
   }
 
   .decorative-txt {
