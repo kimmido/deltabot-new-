@@ -8,12 +8,12 @@
       gap: 40px;
       justify-content: space-between;
 
-      @include respondTo(sm) {
+      @include respondTo(tablet-s) {
         flex-direction: row;
         justify-content: center;
       }
 
-      @include respondTo(md) {
+      @include respondTo(tablet-l) {
         gap: 60px;
       }
 
@@ -25,7 +25,7 @@
         background-color: $color-blue-050;
         border-radius: $radius-card;
 
-        @include respondTo(md) {
+        @include respondTo(tablet-l) {
           padding: 60px;
         }
 
@@ -38,14 +38,14 @@
         flex: 1 1 51%;
         align-content: center;
 
-        @include respondTo(sm) {
+        @include respondTo(tablet-s) {
           padding: 5rem 0 2rem; // 모달창 닫기 버튼과 컨텐츠의 겹침 방지
         }
 
         .prod_name {
           font-size: $font-size-con-title-md;
 
-          @include respondTo(sm) {
+          @include respondTo(tablet-s) {
             max-width: 520px;
             font-size: $font-size-con-title-lg;
           }
@@ -55,7 +55,7 @@
           .prod_desc__inner {
             margin-top: 2rem;
 
-            @include respondTo(md) {
+            @include respondTo(tablet-l) {
               margin-top: 2.8rem;
             }
 
@@ -110,7 +110,7 @@
         max-width: 860px;
       }
 
-      @include respondTo(md) {
+      @include respondTo(tablet-l) {
         margin-top: 5.4rem;
       }
 
@@ -118,11 +118,11 @@
         font-size: $font-size-con-title-sm;
         font-weight: 600;
 
-        @include respondTo(sm) {
+        @include respondTo(tablet-s) {
           font-size: $font-size-con-title-md;
         }
 
-        @include respondTo(md) {
+        @include respondTo(tablet-l) {
           font-size: $font-size-con-title-lg;
         }
       }
@@ -139,7 +139,7 @@
       img {
         margin-top: 12px;
 
-        @include respondTo(md) {
+        @include respondTo(tablet-l) {
           margin-top: 16px;
         }
       }
@@ -149,11 +149,11 @@
   .ProductCatalog {
     margin-top: 16px;
 
-    @include respondTo(sm) {
+    @include respondTo(tablet-s) {
       margin-top: 20px;
     }
 
-    @include respondTo(md) {
+    @include respondTo(tablet-l) {
       margin-top: 100px;
     }
 
@@ -161,11 +161,11 @@
       flex-direction: column;
       gap: 40px;
 
-      @include respondTo(md) {
+      @include respondTo(tablet-l) {
         flex-direction: row;
       }
 
-      @include respondTo(lg) {
+      @include respondTo(pc-s) {
         gap: 60px;
       }
 
@@ -174,7 +174,7 @@
         grid-template-columns: repeat(2, 1fr);
         gap: $gutter-sm;
 
-        @include respondTo(md) {
+        @include respondTo(tablet-l) {
           flex: 6;
           grid-template-columns: repeat(4, 1fr);
           gap: $gutter-lg;
@@ -188,7 +188,7 @@
           word-break: break-all;
           transition: all 0.3s ease;
 
-          @include respondTo(sm) {
+          @include respondTo(tablet-s) {
             padding: 20px 28px;
           }
 
@@ -224,11 +224,11 @@
               font-size: $font-size-sm;
               font-weight: inherit;
 
-              @include respondTo(md) {
+              @include respondTo(tablet-l) {
                 font-size: $font-size-md;
               }
 
-              @include respondTo(lg) {
+              @include respondTo(pc-s) {
                 font-size: $font-size-lg;
               }
             }
@@ -245,7 +245,7 @@
 
               transition: all 0.4s ease;
 
-              @include respondTo(sm) {
+              @include respondTo(tablet-s) {
                 width: 3.2rem;
                 height: 3.2rem;
               }
@@ -259,11 +259,11 @@
   .CompactProductPage {
     .SubTabMenu {
       margin-bottom: 4rem;
-      @include respondTo(sm) {
+      @include respondTo(tablet-s) {
         margin-top: 2rem;
         margin-bottom: 5rem;
       }
-      @include respondTo(md) {
+      @include respondTo(tablet-l) {
         flex-direction: row;
         justify-content: center;
         margin-top: 3rem;

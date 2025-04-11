@@ -2,12 +2,12 @@
   position: relative;
   aspect-ratio: 16 / 9;
 
-  @include respondTo(sm) {
+  @include respondTo(tablet-s) {
     height: 400px;
     aspect-ratio: auto;
   }
 
-  @include respondTo(md) {
+  @include respondTo(tablet-l) {
     height: 520px;
   }
 
@@ -48,7 +48,7 @@
     left: 3.4rem;
     bottom: 2.8rem;
 
-    @include respondTo(md) {
+    @include respondTo(tablet-l) {
       left: 4.4rem;
       bottom: 3.6rem;
     }
@@ -58,11 +58,11 @@
       font-size: $font-size-display-sm;
       text-shadow: $text-shadow;
 
-      @include respondTo(sm) {
+      @include respondTo(tablet-s) {
         font-size: $font-size-display-md;
       }
 
-      @include respondTo(md) {
+      @include respondTo(tablet-l) {
         font-size: $font-size-display-lg;
         // font-size: 8rem;
       }

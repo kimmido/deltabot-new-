@@ -18,7 +18,7 @@
   font-size: $font-size-section-title-sm;
   margin-bottom: 24px;
 
-  @include respondTo(md) {
+  @include respondTo(tablet-l) {
     font-size: $font-size-section-title-lg;
     margin-bottom: 40px;
   }
@@ -70,7 +70,7 @@
     border-radius: 1000px;
     padding: calc(1em - 0.4rem) 1.4em;
 
-    @include respondTo(lg) {
+    @include respondTo(pc-s) {
       padding: calc(1em - 0.2rem) 1.4em;
     }
   }

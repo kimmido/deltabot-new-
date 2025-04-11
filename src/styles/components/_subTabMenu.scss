@@ -3,7 +3,7 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  @include respondTo(md) {
+  @include respondTo(tablet-l) {
     flex: 1;
     flex-direction: column;
     justify-content: start;
@@ -21,7 +21,7 @@
       width: 100%;
       height: 1px;
 
-      @include respondTo(md) {
+      @include respondTo(tablet-l) {
         left: 10%;
         width: 80%;
       }
@@ -31,7 +31,7 @@
       left: 0;
       width: 100%;
 
-      @include respondTo(md) {
+      @include respondTo(tablet-l) {
         left: 10%;
         width: 80%;
       }

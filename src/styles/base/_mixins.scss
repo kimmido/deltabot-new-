@@ -2,13 +2,13 @@
 
 // 중단점 - $breakpoints
 $breakpoints: (
-  xs: 481px,
+  mobile-l: 481px,
   // tablet
-  sm: 769px,
-  md: 1025px,
+  tablet-s: 769px,
+  tablet-l: 1025px,
   // pc
-  lg: 1281px,
-  xl: 1440px,
+  pc-s: 1281px,
+  pc-l: 1440px,
 );
 
 @mixin respondTo($breakpoint) {
@@ -40,7 +40,7 @@ $breakpoints: (
   display: flex;
   flex-direction: $m-direction;
 
-  @include respondTo(md) {
+  @include respondTo(tablet-l) {
     flex-direction: $pc-direction;
   }
 }

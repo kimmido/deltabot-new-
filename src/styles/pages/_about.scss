@@ -7,7 +7,7 @@
     h3 {
       font-size: $font-size-section-title-sm;
 
-      @include respondTo(sm) {
+      @include respondTo(tablet-s) {
         font-size: $font-size-section-title-lg;
       }
     }
@@ -17,10 +17,10 @@
     margin-top: 2.4rem;
     padding-bottom: calc(86% * 2.4);
 
-    @include respondTo(xs) {
+    @include respondTo(mobile-l) {
       padding-bottom: calc(50% * 2.4);
     }
-    @include respondTo(sm) {
+    @include respondTo(tablet-s) {
       margin-top: 6rem;
       padding-bottom: calc((35% * 0.4));
     }
@@ -32,10 +32,10 @@
       margin: 0 auto;
       align-content: center;
 
-      @include respondTo(xs) {
+      @include respondTo(mobile-l) {
         width: 50%;
       }
-      @include respondTo(sm) {
+      @include respondTo(tablet-s) {
         width: 35%;
       }
 
@@ -43,7 +43,7 @@
         text-align: center;
         font-size: $font-size-section-title-sm;
 
-        @include respondTo(sm) {
+        @include respondTo(tablet-s) {
           font-size: $font-size-section-title-md;
         }
       }
@@ -69,7 +69,7 @@
           top: 240%;
         }
 
-        @include respondTo(sm) {
+        @include respondTo(tablet-s) {
           top: 40%;
 
           &--1 {
@@ -80,28 +80,28 @@
           }
         }
 
-        @include respondTo(md) {
+        @include respondTo(tablet-l) {
           align-content: normal;
         }
 
         .circle__inner {
           padding: 10%;
 
-          @include respondTo(sm) {
+          @include respondTo(tablet-s) {
             padding: 15%;
           }
 
-          @include respondTo(md) {
+          @include respondTo(tablet-l) {
             padding: 23% 15% 0;
           }
 
-          @include respondTo(lg) {
+          @include respondTo(pc-s) {
             padding: 26% 20%;
           }
 
           .icon {
             display: none;
-            @include respondTo(md) {
+            @include respondTo(tablet-l) {
               display: inline-block;
               width: 30%;
             }
@@ -116,7 +116,7 @@
             margin-top: 1.2rem;
             font-size: calc(1em - 2px);
 
-            @include respondTo(sm) {
+            @include respondTo(tablet-s) {
               font-size: 1em;
             }
           }
@@ -126,12 +126,12 @@
   } // ValuesSection
 
   .intro-section {
-    @include respondTo(sm) {
+    @include respondTo(tablet-s) {
       width: 86%;
       margin: 20rem auto 0;
     }
 
-    @include respondTo(lg) {
+    @include respondTo(pc-s) {
       width: 81.1rem;
       margin-left: calc((118px / 1392px) * 100%);
     }
@@ -143,7 +143,7 @@
       br.pc-break {
         display: none;
 
-        @include respondTo(md) {
+        @include respondTo(tablet-l) {
           display: inline;
         }
       }
@@ -151,7 +151,7 @@
   }
 
   .LoopSwiper {
-    @include respondTo(sm) {
+    @include respondTo(tablet-s) {
       margin-top: 20rem;
     }
 
@@ -160,7 +160,7 @@
     }
 
     .swiper-slide {
-      @include respondTo(sm) {
+      @include respondTo(tablet-s) {
         width: calc((476px / 1392px) * 100%);
       }
 
@@ -171,7 +171,7 @@
           border-radius: $radius-card-md;
           overflow: hidden;
 
-          @include respondTo(sm) {
+          @include respondTo(tablet-s) {
             border-radius: $radius-card-lg;
           }
         }
@@ -182,10 +182,10 @@
           font-weight: 600;
           padding-left: 3%;
 
-          @include respondTo(xs) {
+          @include respondTo(mobile-l) {
             font-size: 1em;
           }
-          @include respondTo(sm) {
+          @include respondTo(tablet-s) {
             font-size: 1em;
           }
         }
@@ -194,7 +194,7 @@
   }
 
   .contact-section {
-    @include respondTo(sm) {
+    @include respondTo(tablet-s) {
       margin-top: 16rem;
     }
 
@@ -203,7 +203,7 @@
       justify-content: space-between;
       gap: 2.6rem;
 
-      @include respondTo(sm) {
+      @include respondTo(tablet-s) {
         gap: 0;
         justify-content: center;
       }
@@ -213,7 +213,7 @@
         text-align: center;
         align-content: center;
 
-        @include respondTo(sm) {
+        @include respondTo(tablet-s) {
           flex: 50%;
           padding-right: 10rem;
           text-align: right;
@@ -223,7 +223,7 @@
       .flex-r {
         flex: 3;
 
-        @include respondTo(sm) {
+        @include respondTo(tablet-s) {
           flex: 50%;
         }
 
@@ -243,13 +243,13 @@
       margin-top: 1.6rem;
       border-radius: $radius-card-lg;
 
-      @include respondTo(sm) {
+      @include respondTo(tablet-s) {
         margin-top: $spacing-content-lg;
       }
 
       .Map {
         height: 310px;
-        @include respondTo(sm) {
+        @include respondTo(tablet-s) {
           height: 500px;
         }
       }

@@ -7,7 +7,7 @@
   padding: 2px 8px 16px;
   height: calc(460px + 18px);
 
-  @include respondTo(md) {
+  @include respondTo(tablet-l) {
     padding: 2px 24px 24px;
     height: calc(100vh - $header-md);
   }
@@ -15,7 +15,7 @@
   .BannerSwiper__swiper {
     height: 100%;
 
-    @include respondTo(md) {
+    @include respondTo(tablet-l) {
       max-height: 805px;
     }
 
@@ -65,11 +65,11 @@
         text-shadow: $text-shadow;
         line-height: 1;
 
-        @include respondTo(md) {
+        @include respondTo(tablet-l) {
           left: calc($SWIPER_PADDING_SM + $SWIPER_BUTTON);
           bottom: 6rem;
         }
-        @include respondTo(lg) {
+        @include respondTo(pc-s) {
           left: calc($SWIPER_PADDING_LG + $SWIPER_BUTTON);
           bottom: 80px;
         }
@@ -78,18 +78,18 @@
           font-weight: 600;
           font-size: calc($font-size-display-sm - 0.2rem);
 
-          @include respondTo(xs) {
+          @include respondTo(mobile-l) {
             font-size: $font-size-display-sm;
           }
 
-          @include respondTo(sm) {
+          @include respondTo(tablet-s) {
             font-size: $font-size-display-md;
           }
 
-          @include respondTo(md) {
+          @include respondTo(tablet-l) {
             font-size: $font-size-display-lg;
           }
-          @include respondTo(lg) {
+          @include respondTo(pc-s) {
             font-size: calc($font-size-display-lg + 0.8rem);
           }
         }
@@ -97,14 +97,14 @@
         p {
           font-size: calc($font-size-display-sm - 0.8rem);
 
-          @include respondTo(sm) {
+          @include respondTo(tablet-s) {
             font-size: $font-size-display-sm;
           }
 
-          @include respondTo(md) {
+          @include respondTo(tablet-l) {
             font-size: $font-size-display-md;
           }
-          @include respondTo(lg) {
+          @include respondTo(pc-s) {
             font-size: calc($font-size-display-md + 0.8rem);
           }
         }
@@ -121,15 +121,15 @@
       border-radius: 1000px;
       background-color: rgba(0, 0, 0, 0.5);
 
-      @include respondTo(sm) {
+      @include respondTo(tablet-s) {
         bottom: 11rem;
       }
-      @include respondTo(md) {
+      @include respondTo(tablet-l) {
         bottom: 18.5rem;
         left: calc($SWIPER_PADDING_SM + $SWIPER_BUTTON);
         font-size: 15px;
       }
-      @include respondTo(lg) {
+      @include respondTo(pc-s) {
         bottom: 22.6rem;
         left: calc($SWIPER_PADDING_LG + $SWIPER_BUTTON);
       }
@@ -156,13 +156,13 @@
 
       &-next {
         right: 10px;
-        @include respondTo(md) {
+        @include respondTo(tablet-l) {
           right: 24px;
         }
       }
       &-prev {
         left: 10px;
-        @include respondTo(md) {
+        @include respondTo(tablet-l) {
           left: 24px;
         }
       }
@@ -177,7 +177,7 @@
   font-weight: 700;
   font-size: 32px;
 
-  @include respondTo(md) {
+  @include respondTo(tablet-l) {
     margin: 16vh 0;
     font-size: 66px;
     line-height: 80px;
@@ -195,7 +195,7 @@
     background-size: 0%;
     // transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
 
-    @include respondTo(xs) {
+    @include respondTo(mobile-l) {
       width: max-content;
     }
   }
@@ -205,7 +205,7 @@
 .BusinessSection {
   margin-top: $spacing-layout-sm;
 
-  @include respondTo(lg) {
+  @include respondTo(pc-s) {
     // padding: 40px 0;
   }
 
@@ -214,14 +214,157 @@
       @include flexBox(column, $gutter-sm);
       margin-top: $gutter-sm;
 
-      @include respondTo(sm) {
+      @include respondTo(tablet-s) {
         flex-flow: row nowrap;
         justify-content: space-between;
       }
 
-      @include respondTo(lg) {
+      @include respondTo(pc-s) {
         gap: 10px;
         margin-top: 10px;
+      }
+    }
+  }
+}
+
+// ====== SolutionSection ======
+.SolutionSection {
+  margin-top: $spacing-layout-sm;
+
+  @include respondTo(tablet-l) {
+    margin-top: $spacing-layout-lg;
+  }
+
+  .item {
+    position: relative;
+    @include flexBox(column, 36px, stretch, space-between);
+    padding: 32px;
+    // height: 96px;
+    // min-height: 96px;
+    // overflow: hidden;
+    border-radius: $radius-card;
+    background: left center / cover no-repeat;
+    transition: flex 0.6s, min-height 0.6s ease-in-out;
+
+    background-color: beige;
+
+    @include respondTo(tablet-s) {
+      // flex: 26%;
+      height: 38rem;
+      // overflow: visible;
+      background-position: left top;
+    }
+
+    @include respondTo(pc-s) {
+      // height: 540px;
+      padding: 38px 34px 56px;
+    }
+
+    // &::before {
+    //   @include pseudoDefault(#ffffff40);
+    //   border-radius: $radius-card;
+    //   transition: background-color 0.3s;
+    // }
+
+    &::after {
+      @include pseudoDefault(transparent);
+      top: 50%;
+      height: 50%;
+      border-radius: 0 0 $radius-card $radius-card;
+      transition: background-color 0.3s;
+
+      @include respondTo(pc-s) {
+        background-color: transparent;
+      }
+    }
+
+    // &.active {
+    //   min-height: 30rem;
+
+    //   p,
+    //   .btn {
+    //     opacity: 1;
+    //   }
+
+    //   &::before {
+    //     background-color: transparent;
+    //   }
+
+    //   &::after {
+    //     background-color: #00000070;
+    //   }
+
+    //   @include respondTo(tablet-s) {
+    //     flex: 80%;
+    //   }
+    // }
+
+    &:hover {
+      @include respondTo(pc-s) {
+        // &::before {
+        //   background-color: transparent;
+        // }
+
+        &::after {
+          background-color: #00000070;
+        }
+
+        p,
+        .btn-box {
+          opacity: 1;
+        }
+      }
+    }
+
+    .title_box {
+      // @include flexBox(row, 0, center, space-between);
+      z-index: 1;
+
+      .title {
+        // color: #fff;
+        font-weight: $weight-extraBold;
+        font-size: $font-size-con-title-sm;
+
+        @include respondTo(pc-s) {
+          // width: min-content;
+          font-size: 2.8rem;
+        }
+
+        @include respondTo(pc-l) {
+          font-size: $font-size-con-title-md;
+        }
+      }
+    }
+
+    p,
+    .btn-box {
+      z-index: 1;
+      opacity: 0;
+      text-align: center;
+
+      transition: all 0.5s;
+    }
+
+    p {
+      position: absolute;
+      top: calc(50% + 1.2em);
+      left: 0;
+      width: 100%;
+      color: #fff;
+      font-size: $font-size-sm;
+      padding: 0 32px;
+
+      @include respondTo(mobile-l) {
+        font-size: $font-size-md;
+      }
+
+      @include respondTo(tablet-l) {
+        font-size: $font-size-lg;
+      }
+
+      @include respondTo(pc-s) {
+        font-size: $font-size-xl;
+        padding: 0 34px;
       }
     }
   }
@@ -231,24 +374,24 @@
 .VideoSection {
   margin-top: 12rem;
 
-  @include respondTo(lg) {
+  @include respondTo(pc-s) {
     margin-top: 22rem;
   }
 
   &__inner {
     @include flexBox(column, 4.2rem);
 
-    @include respondTo(lg) {
+    @include respondTo(pc-s) {
       gap: 9rem;
     }
 
     .VideoItem {
-      @include respondTo(md) {
+      @include respondTo(tablet-l) {
         @include flexBox(row, 4.8rem, center);
       }
 
       &:nth-child(even) {
-        @include respondTo(md) {
+        @include respondTo(tablet-l) {
           .video-box {
             order: 2;
           }
@@ -291,11 +434,11 @@
         @include flexBox(column, $gutter-sm);
         margin: $gutter-sm 8px 0;
 
-        @include respondTo(sm) {
+        @include respondTo(tablet-s) {
           margin-top: 22px;
         }
 
-        @include respondTo(md) {
+        @include respondTo(tablet-l) {
           gap: 3rem;
           margin-top: 22px;
           width: calc(55% - 4.8rem);
@@ -305,7 +448,7 @@
           display: inline-block;
           font-size: $font-size-con-title-sm;
 
-          @include respondTo(md) {
+          @include respondTo(tablet-l) {
             font-size: $font-size-con-title-md;
           }
         }

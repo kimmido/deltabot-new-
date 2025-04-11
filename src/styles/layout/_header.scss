@@ -10,7 +10,7 @@ header {
 
   z-index: $z-index-header;
 
-  @include respondTo(md) {
+  @include respondTo(tablet-l) {
     height: $header-md;
   }
 
@@ -19,7 +19,7 @@ header {
     width: 100%;
     padding: 0 $gutter-sm;
 
-    @include respondTo(md) {
+    @include respondTo(tablet-l) {
       padding: 0 $gutter-lg;
     }
 
@@ -30,7 +30,7 @@ header {
       transform: translateY(-50%);
       z-index: $z-index-header;
 
-      @include respondTo(md) {
+      @include respondTo(tablet-l) {
         left: $gutter-lg;
       }
 
@@ -38,14 +38,14 @@ header {
         width: 100%;
         padding: 6px 4px 2px 0;
 
-        @include respondTo(md) {
+        @include respondTo(tablet-l) {
           padding: 12px 6px 2px 0;
         }
 
         img {
           width: 94px;
 
-          @include respondTo(md) {
+          @include respondTo(tablet-l) {
             width: 148px;
           }
         }

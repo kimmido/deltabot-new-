@@ -1,6 +1,7 @@
 .TabMenu {
   margin-top: 20px;
-  @include respondTo(sm) {
+
+  @include respondTo(tablet-l) {
     margin-top: 24px;
   }
 
@@ -13,13 +14,13 @@
     background-color: $color-background;
     border-radius: $radius-md;
 
-    @include respondTo(sm) {
+    @include respondTo(tablet-s) {
       gap: $gutter-lg;
       justify-content: space-around;
       padding: 6px $gutter-lg;
     }
 
-    @include respondTo(md) {
+    @include respondTo(tablet-l) {
       flex-wrap: nowrap;
     }
 
@@ -31,16 +32,16 @@
 
       transition: all 0.3s;
 
-      @include respondTo(sm) {
-        // flex: 25%;
+      @include respondTo(tablet-s) {
         padding: 12px 20px;
       }
 
-      @include respondTo(md) {
+      @include respondTo(tablet-l) {
         flex: 1;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: #ffffff90;
 
         .TabMenu__label {

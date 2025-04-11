@@ -1,7 +1,7 @@
 main {
   padding-top: $header-sm;
 
-  @include respondTo(md) {
+  @include respondTo(tablet-l) {
     padding-top: $header-md;
   }
 }
@@ -13,7 +13,7 @@ main {
   margin: 0 auto;
   padding: 0 $gutter-sm;
 
-  @include respondTo(md) {
+  @include respondTo(tablet-l) {
     padding: 0 $gutter-lg;
   }
 }

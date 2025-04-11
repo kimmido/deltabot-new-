@@ -2,7 +2,7 @@
   padding: 5vh 4px;
   backdrop-filter: blur(4px);
 
-  @include respondTo(md) {
+  @include respondTo(tablet-l) {
     padding-top: 4vh;
     padding-bottom: 5vh;
   }
@@ -24,7 +24,7 @@
       // padding: $PADDING_SM $PADDING_SM 6.4rem;
       padding: $PADDING_SM;
 
-      @include respondTo(md) {
+      @include respondTo(tablet-l) {
         // padding: $PADDING_MD $PADDING_MD 8.2rem;
         padding: $PADDING_MD;
       }
@@ -43,7 +43,7 @@
 
       transition: all 0.3s;
 
-      @include respondTo(sm) {
+      @include respondTo(tablet-s) {
         left: auto;
         bottom: auto;
         transform: none;

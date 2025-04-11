@@ -7,7 +7,7 @@
   right: 1.6rem;
   z-index: $z-index-floating;
 
-  @include respondTo(md) {
+  @include respondTo(tablet-l) {
     bottom: 3.6rem;
     right: 2.4rem;
   }
@@ -23,7 +23,7 @@
 
     transition: all 0.3s;
 
-    @include respondTo(sm) {
+    @include respondTo(tablet-s) {
       gap: 1.2rem;
       padding: 2rem 1.4rem;
     }
@@ -61,7 +61,7 @@
       font-size: $font-size-xs;
       color: #fff;
 
-      @include respondTo(sm) {
+      @include respondTo(tablet-s) {
         // font-size: 1em;
       }
     }

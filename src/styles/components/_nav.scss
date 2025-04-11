@@ -8,7 +8,7 @@ nav.gnb {
     position: relative;
     display: none;
 
-    @include respondTo(md) {
+    @include respondTo(tablet-l) {
       display: block;
     }
 
@@ -120,7 +120,7 @@ nav.gnb {
   .mobile {
     display: block;
 
-    @include respondTo(md) {
+    @include respondTo(tablet-l) {
       display: none;
     }
 
