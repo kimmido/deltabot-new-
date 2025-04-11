@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import VideoSection from "./components/VideoSection";
 import MetaTag from "../../components/Layout/MetaTag";
+import SolutionSection from "./components/SolutionSection";
 gsap.registerPlugin(useGSAP);
 
 const Home = () => {
@@ -49,6 +50,7 @@ const Home = () => {
           </div>
         </div>
         <BusinessSection />
+        <SolutionSection />
         <VideoSection />
       </div>
     </>

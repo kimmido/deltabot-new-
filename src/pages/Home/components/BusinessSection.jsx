@@ -31,7 +31,7 @@ function BusinessSection() {
           <div className="flex-box">
             {subRoutes.map(
               (sub, idx) =>
-                idx < 3 && (
+                idx < 3 && ( // 3개씩 flex-box로 묶음
                   <BusinessItem
                     key={sub.label}
                     sub={sub}
@@ -45,7 +45,7 @@ function BusinessSection() {
           <div className="flex-box">
             {subRoutes.map(
               (sub, idx) =>
-                idx >= 3 && (
+                idx >= 3 && ( // 3개씩 flex-box로 묶음
                   <BusinessItem
                     key={sub.label}
                     sub={sub}

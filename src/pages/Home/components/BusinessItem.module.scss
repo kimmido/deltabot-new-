@@ -1,0 +1,147 @@
+@use "@styles/base/variables.scss" as *;
+@use "@styles/base/mixins.scss" as *;
+
+.BusinessItem {
+  position: relative;
+  @include flexBox(column, 36px, stretch, space-between);
+  padding: 32px;
+  height: 96px;
+  min-height: 96px; // 모바일 transition용 기본값
+  overflow: hidden;
+  border-radius: $radius-card;
+  background: left center / cover no-repeat;
+  transition: flex 0.6s, min-height 0.6s ease-in-out;
+
+  @include respondTo(tablet-l) {
+    flex: 26%; // 태블릿 이상 transition용 기본값
+    height: 45rem;
+    overflow: visible;
+    background-position: left top;
+  }
+
+  @include respondTo(pc-s) {
+    height: 54rem;
+    padding: 38px 34px 56px;
+  }
+
+  &::before {
+    @include pseudoDefault(#ffffff40);
+    border-radius: $radius-card;
+    transition: background-color 0.3s;
+    z-index: 1;
+  }
+
+  .title_box {
+    @include flexBox(row, 0, center, space-between);
+    z-index: 1;
+
+    .title {
+      color: #fff;
+      font-weight: $weight-extraBold;
+      font-size: $font-size-con-title-sm;
+
+      @include respondTo(pc-s) {
+        width: min-content;
+        font-size: 2.8rem;
+      }
+
+      @include respondTo(pc-l) {
+        font-size: $font-size-con-title-md;
+      }
+    }
+
+    .icon_plus {
+      padding: 4px;
+      border-radius: 50%;
+      background-color: #ffffffcc;
+
+      transition: transform 0.5s;
+    }
+  }
+
+  .category__sub__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    @include respondTo(tablet-l) {
+      // 두줄로 보이기
+      flex-wrap: wrap;
+      row-gap: 8px;
+      column-gap: 24px;
+      width: 90%;
+      max-width: 54.4rem;
+      height: 60%;
+    }
+
+    .category__sub__link {
+      max-width: 216px;
+      padding: 12px 16px;
+      border-radius: $radius-xs;
+      background-color: #fff;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: width 0.5s;
+
+      @include respondTo(tablet-l) {
+        width: 10px; // transitiond용 기본값
+        max-width: 226px;
+      }
+
+      @include respondTo(pc-s) {
+        max-width: 260px;
+        padding: 14px 16px;
+        // overflow: hidden;
+        // width: 100px;
+      }
+    }
+  }
+
+  &:hover,
+  &.active {
+    &::before {
+      background-color: transparent;
+    }
+    .category__sub__list {
+      .category__sub__link {
+        &:hover {
+          color: #fff;
+          background-color: #1d57bcd0;
+        }
+      }
+    }
+  }
+
+  @mixin activeItem() {
+    ul.category__sub__list {
+      opacity: 1;
+      z-index: 1;
+
+      .category__sub__link {
+        width: 100%;
+      }
+    }
+  }
+
+  &.active {
+    min-height: 42.6rem; // 모바일 trasition용 높이
+    @include activeItem();
+
+    @include respondTo(tablet-l) {
+      flex: 80%;
+    }
+    .icon_plus {
+      transform: rotateZ(135deg);
+    }
+  }
+
+  &:hover {
+    @include respondTo(pc-s) {
+      flex: 80%;
+      @include activeItem();
+    }
+  }
+}

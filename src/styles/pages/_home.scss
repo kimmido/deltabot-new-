@@ -214,7 +214,7 @@
       @include flexBox(column, $gutter-sm);
       margin-top: $gutter-sm;
 
-      @include respondTo(tablet-s) {
+      @include respondTo(tablet-l) {
         flex-flow: row nowrap;
         justify-content: space-between;
       }
