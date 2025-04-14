@@ -11,6 +11,7 @@ import businessImg2 from "../../../assets/images/about/slide(2).jpg";
 import businessImg3 from "../../../assets/images/about/slide(3).jpg";
 import businessImg4 from "../../../assets/images/about/slide(4).jpg";
 import businessImg5 from "../../../assets/images/about/slide(5).jpg";
+import businessImg6 from "../../../assets/images/about/slide(6).jpg";
 
 function LoopSwiper() {
   const category = useContext(CategoryRoutesContext);
@@ -23,6 +24,7 @@ function LoopSwiper() {
     businessImg3,
     businessImg4,
     businessImg5,
+    businessImg6,
   ];
 
   return (
