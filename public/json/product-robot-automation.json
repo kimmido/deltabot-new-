@@ -317,6 +317,467 @@
       ]
     }
   ],
+  "serial-robot": [
+    {
+      "title": "NB4 series",
+      "items": [
+        {
+          "name": "NB4h-4",
+          "code": "NB4h-4",
+          "thumb": "NB4h-4-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "NB4는 더욱 컴팩트하고 가벼우며, 전자 공장이나 공작 기계처럼 공간 제약이 심한 환경에 더 적합합니다.",
+                "더욱 빠른 작동 속도와 짧은 택트 타임, 업계 최고 수준의 반복 정밀도를 결합하여 NB4는 고효율 및 고정밀 작업을 보장합니다.",
+                "NB4 시리즈는 전체 IP67 방진·방수 등급을 갖추고 있어, 가장 까다로운 환경에서도 장기적인 안정성과 신뢰성을 제공합니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：4kg",
+                "Weight : About 22kg",
+                "DOF : 6",
+                "Reach：580mm",
+                "Repeatablity : ＜±0.02mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NB4-4",
+          "code": "NB4-4",
+          "thumb": "NB4-4-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "NB4는 더욱 컴팩트하고 가벼우며, 전자 공장이나 공작 기계처럼 공간 제약이 심한 환경에 더 적합합니다.",
+                "더욱 빠른 작동 속도와 짧은 택트 타임, 업계 최고 수준의 반복 정밀도를 결합하여 NB4는 고효율 및 고정밀 작업을 보장합니다.",
+                "NB4 시리즈는 전체 IP67 방진·방수 등급을 갖추고 있어, 가장 까다로운 환경에서도 장기적인 안정성과 신뢰성을 제공합니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：4kg",
+                "Weight : About 21kg",
+                "DOF : 6",
+                "Reach：475mm",
+                "Repeatablity : ＜±0.02mm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "XB7 series",
+      "items": [
+        {
+          "name": "XB7L",
+          "code": "XB7L",
+          "thumb": "XB7L-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "XB7 시리즈는 두 가지 리치(작업 반경) 옵션을 제공합니다. 그 중 707mm 리치를 가진 모델은 중공형 손목(hollow wrist) 설계를 채택하여 설치가 간편하고 공간 활용이 뛰어납니다.",
+                "뛰어난 안정성과 업계 최고 수준의 모션 제어 기술 덕분에, XB7은 품질과 택트 타임에 대한 모든 요구를 충족시킵니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：7kg",
+                "Weight : About 52kg",
+                "DOF : 6",
+                "Reach：906mm",
+                "Repeatablity : ＜±0.03mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "XB7",
+          "code": "XB7",
+          "thumb": "XB7-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "XB7 시리즈는 두 가지 리치(작업 반경) 옵션을 제공합니다. 그 중 707mm 리치를 가진 모델은 중공형 손목(hollow wrist) 설계를 채택하여 설치가 간편하고 공간 활용이 뛰어납니다.",
+                "뛰어난 안정성과 업계 최고 수준의 모션 제어 기술 덕분에, XB7은 품질과 택트 타임에 대한 모든 요구를 충족시킵니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：7kg",
+                "Weight : About 50kg",
+                "DOF : 6",
+                "Reach：707mm",
+                "Repeatablity : ＜±0.02mm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "NB12 series",
+      "items": [
+        {
+          "name": "NB12-10",
+          "code": "NB12-10",
+          "thumb": "NB12-10-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "NB12 시리즈는 동급 제품 대비 약 20% 가벼운 전면 알루미늄 주조 바디를 특징으로 합니다.",
+                "본체는 IP67 등급, 컨트롤러 캐비닛은 IP54 등급의 이중 순환 냉각 방식을 갖추고 있어, 가장 까다로운 환경에서도 안정적인 보호를 제공합니다.",
+                "작업 속도는 20% 향상되었고, 반복 정밀도는 ±0.03mm로 고정밀 작업과 고속 생산 요구에 효과적으로 대응합니다.",
+                "모터와 케이블이 내장된 더 컴팩트한 디자인으로 공간 효율성이 뛰어납니다.",
+                "설치 면적은 250×250mm로, 동급 제품 대비 47% 작아 좁은 공간에서도 유연한 설치가 가능하며, 설치 편의성이 크게 향상됩니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：10kg",
+                "Weight : About 117kg",
+                "DOF : 6",
+                "Reach：1602mm",
+                "Repeatablity : ＜±0.03mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NB12-12",
+          "code": "NB12-12",
+          "thumb": "NB12-12-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "NB12 시리즈는 동급 제품 대비 약 20% 가벼운 전면 알루미늄 주조 바디를 특징으로 합니다.",
+                "본체는 IP67 등급, 컨트롤러 캐비닛은 IP54 등급의 이중 순환 냉각 방식을 갖추고 있어, 가장 까다로운 환경에서도 안정적인 보호를 제공합니다.",
+                "작업 속도는 20% 향상되었고, 반복 정밀도는 ±0.03mm로 고정밀 작업과 고속 생산 요구에 효과적으로 대응합니다.",
+                "모터와 케이블이 내장된 더 컴팩트한 디자인으로 공간 효율성이 뛰어납니다.",
+                "설치 면적은 250×250mm로, 동급 제품 대비 47% 작아 좁은 공간에서도 유연한 설치가 가능하며, 설치 편의성이 크게 향상됩니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：12kg",
+                "Weight : About 115kg",
+                "DOF : 6",
+                "Reach：1442mm",
+                "Repeatablity : ＜±0.03mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NB12-16",
+          "code": "NB12-16",
+          "thumb": "NB12-16-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "NB12 시리즈는 동급 제품 대비 약 20% 가벼운 전면 알루미늄 주조 바디를 특징으로 합니다.",
+                "본체는 IP67 등급, 컨트롤러 캐비닛은 IP54 등급의 이중 순환 냉각 방식을 갖추고 있어, 가장 까다로운 환경에서도 안정적인 보호를 제공합니다.",
+                "작업 속도는 20% 향상되었고, 반복 정밀도는 ±0.03mm로 고정밀 작업과 고속 생산 요구에 효과적으로 대응합니다.",
+                "모터와 케이블이 내장된 더 컴팩트한 디자인으로 공간 효율성이 뛰어납니다.",
+                "설치 면적은 250×250mm로, 동급 제품 대비 47% 작아 좁은 공간에서도 유연한 설치가 가능하며, 설치 편의성이 크게 향상됩니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：16kg",
+                "Weight : About 112kg",
+                "DOF : 6",
+                "Reach：1102mm",
+                "Repeatablity : ＜±0.03mm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "NB25 series",
+      "items": [
+        {
+          "name": "NB25-12",
+          "code": "NB25-12",
+          "thumb": "NB25-12-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "NB25 시리즈 로봇은 이전 세대 대비 페이로드(하중) 용량이 25% 증가하여 더 무거운 작업도 안정적으로 처리할 수 있습니다.",
+                "고관성 모션 특z성을 바탕으로, 큰 관성과 빠른 택트 타임이 요구되는 작업 환경에 특히 적합합니다.",
+                "손목 부분은 IP67 등급의 높은 방진·방수 성능을 갖추고 있으며, 새롭게 최적화된 씰링 설계 덕분에 극한의 환경에서도 안정적인 작동이 가능합니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：12kg",
+                "Weight : About 262kg",
+                "DOF : 6",
+                "Reach：2110mm",
+                "Repeatablity : ＜±0.05mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NB25-20",
+          "code": "NB25-20",
+          "thumb": "NB25-20-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "NB25 시리즈 로봇은 이전 세대 대비 페이로드(하중) 용량이 25% 증가하여 더 무거운 작업도 안정적으로 처리할 수 있습니다.",
+                "고관성 모션 특z성을 바탕으로, 큰 관성과 빠른 택트 타임이 요구되는 작업 환경에 특히 적합합니다.",
+                "손목 부분은 IP67 등급의 높은 방진·방수 성능을 갖추고 있으며, 새롭게 최적화된 씰링 설계 덕분에 극한의 환경에서도 안정적인 작동이 가능합니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：20kg",
+                "Weight : About 264kg",
+                "DOF : 6",
+                "Reach：2013mm",
+                "Repeatablity : ＜±0.05mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NB25-25",
+          "code": "NB25-25",
+          "thumb": "NB25-25-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "NB25 시리즈 로봇은 이전 세대 대비 페이로드(하중) 용량이 25% 증가하여 더 무거운 작업도 안정적으로 처리할 수 있습니다.",
+                "고관성 모션 특z성을 바탕으로, 큰 관성과 빠른 택트 타임이 요구되는 작업 환경에 특히 적합합니다.",
+                "손목 부분은 IP67 등급의 높은 방진·방수 성능을 갖추고 있으며, 새롭게 최적화된 씰링 설계 덕분에 극한의 환경에서도 안정적인 작동이 가능합니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：25kg",
+                "Weight : About 256kg",
+                "DOF : 6",
+                "Reach：1813mm",
+                "Repeatablity : ＜±0.05mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NB25-30",
+          "code": "NB25-30",
+          "thumb": "NB25-30-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "NB25 시리즈 로봇은 이전 세대 대비 페이로드(하중) 용량이 25% 증가하여 더 무거운 작업도 안정적으로 처리할 수 있습니다.",
+                "고관성 모션 특z성을 바탕으로, 큰 관성과 빠른 택트 타임이 요구되는 작업 환경에 특히 적합합니다.",
+                "손목 부분은 IP67 등급의 높은 방진·방수 성능을 갖추고 있으며, 새롭게 최적화된 씰링 설계 덕분에 극한의 환경에서도 안정적인 작동이 가능합니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：30kg",
+                "Weight : About 252kg",
+                "DOF : 6",
+                "Reach：1617mm",
+                "Repeatablity : ＜±0.05mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NB25-35",
+          "code": "NB25-35",
+          "thumb": "NB25-35-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "NB25 시리즈 로봇은 이전 세대 대비 페이로드(하중) 용량이 25% 증가하여 더 무거운 작업도 안정적으로 처리할 수 있습니다.",
+                "고관성 모션 특z성을 바탕으로, 큰 관성과 빠른 택트 타임이 요구되는 작업 환경에 특히 적합합니다.",
+                "손목 부분은 IP67 등급의 높은 방진·방수 성능을 갖추고 있으며, 새롭게 최적화된 씰링 설계 덕분에 극한의 환경에서도 안정적인 작동이 가능합니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：35kg",
+                "Weight : About 256kg",
+                "DOF : 6",
+                "Reach：1813mm",
+                "Repeatablity : ＜±0.05mm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "NB80 series",
+      "items": [
+        {
+          "name": "NB80-80",
+          "code": "NB80-80",
+          "thumb": "NB80-80-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "NB80 시리즈 로봇은 동급 로봇 중 가장 높은 페이로드 용량과 동작 범위를 자랑하며, 다양한 지능형 작업 요구를 충족할 수 있습니다.",
+                "고관성 모션 특성을 갖추고 있어, 큰 관성이 요구되는 작업 환경에 최적화되어 있습니다.",
+                "NB80 시리즈는 높은 보호 등급(IP 등급)을 갖추고 있어, 거친 작업 환경에서도 안정적으로 대응할 수 있습니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：80kg",
+                "Weight : About 635kg",
+                "DOF : 6",
+                "Reach：2200mm",
+                "Repeatablity : ＜±0.06mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NB80-50",
+          "code": "NB80-50",
+          "thumb": "NB80-50-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "NB80 시리즈 로봇은 동급 로봇 중 가장 높은 페이로드 용량과 동작 범위를 자랑하며, 다양한 지능형 작업 요구를 충족할 수 있습니다.",
+                "고관성 모션 특성을 갖추고 있어, 큰 관성이 요구되는 작업 환경에 최적화되어 있습니다.",
+                "NB80 시리즈는 높은 보호 등급(IP 등급)을 갖추고 있어, 거친 작업 환경에서도 안정적으로 대응할 수 있습니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：50kg",
+                "Weight : About 645kg",
+                "DOF : 6",
+                "Reach：2598mm",
+                "Repeatablity : ＜±0.08mm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "NB220 series",
+      "items": [
+        {
+          "name": "NB220-150",
+          "code": "NB220-150",
+          "thumb": "NB220-150-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "220kg의 페이로드를 제공하여 동일한 작업 조건에서도 더 뛰어난 작업 처리 능력을 발휘합니다.",
+                "3200mm의 리치(작동 거리)로 더 다양한 응용 요구에 유연하게 대응할 수 있습니다.",
+                "전체 장비는 IP65, 손목은 IP67 보호 등급을 갖추고 있어, 거친 작업 환경에서도 문제없이 작동합니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：150kg",
+                "Weight : About 1165kg",
+                "DOF : 6",
+                "Reach：3201mm",
+                "Repeatablity : ＜±0.08mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NB220-170",
+          "code": "NB220-170",
+          "thumb": "NB220-170-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "220kg의 페이로드를 제공하여 동일한 작업 조건에서도 더 뛰어난 작업 처리 능력을 발휘합니다.",
+                "3200mm의 리치(작동 거리)로 더 다양한 응용 요구에 유연하게 대응할 수 있습니다.",
+                "전체 장비는 IP65, 손목은 IP67 보호 등급을 갖추고 있어, 거친 작업 환경에서도 문제없이 작동합니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：170kg",
+                "Weight : About 1138kg",
+                "DOF : 6",
+                "Reach：2705mm",
+                "Repeatablity : ＜±0.07mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NB220-220",
+          "code": "NB220-220",
+          "thumb": "NB220-220-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "220kg의 페이로드를 제공하여 동일한 작업 조건에서도 더 뛰어난 작업 처리 능력을 발휘합니다.",
+                "3200mm의 리치(작동 거리)로 더 다양한 응용 요구에 유연하게 대응할 수 있습니다.",
+                "전체 장비는 IP65, 손목은 IP67 보호 등급을 갖추고 있어, 거친 작업 환경에서도 문제없이 작동합니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：220kg",
+                "Weight : About 1138kg",
+                "DOF : 6",
+                "Reach：2705mm",
+                "Repeatablity : ＜±0.07mm"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "scara": [
     {
       "title": "ST series",
