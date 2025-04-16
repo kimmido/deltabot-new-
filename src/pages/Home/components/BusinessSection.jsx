@@ -1,9 +1,8 @@
-import React, { useContext, useState } from "react";
-import { CategoryRoutesContext } from "../../../contexts/CategoryRoutesContext";
+import React, { useState } from "react";
 import BusinessItem from "./BusinessItem";
+import { category } from "../../../data/category";
 
 function BusinessSection() {
-  const category = useContext(CategoryRoutesContext);
   const route = category.find((item) => item.main.label == "사업소개");
   const subRoutes = route.sub;
   const [isExpanded, setExpanded] = useState(1000);

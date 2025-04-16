@@ -1,12 +1,11 @@
-import React, { useContext, useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import PageHeading from "../components/UI/PageHeading";
 import { Outlet, useLocation } from "react-router-dom";
-import { CategoryRoutesContext } from "../contexts/CategoryRoutesContext";
 import { fetchData } from "../utils/fetchData";
 import TabMenu from "../components/UI/TabMenu";
+import { category } from "../data/category";
 
 function BusinessLayout() {
-  const category = useContext(CategoryRoutesContext);
   const { pathname } = useLocation();
   const [routes, setRoutes] = useState({ items: [] });
   const [currentCategory, setCurrentCategory] = useState("");

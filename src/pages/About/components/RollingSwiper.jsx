@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { CategoryRoutesContext } from "../../../contexts/CategoryRoutesContext";
+import { category } from "../../../data/category";
 import RollingSlideItem from "./RollingSlideItem";
 
 import "swiper/scss";
@@ -14,7 +14,6 @@ import businessImg5 from "../../../assets/images/about/slide(5).jpg";
 import businessImg6 from "../../../assets/images/about/slide(6).jpg";
 
 function LoopSwiper() {
-  const category = useContext(CategoryRoutesContext);
   const routeBusiness = category.find((item) => item.main.label == "사업소개");
   const businessSub = routeBusiness.sub;
 

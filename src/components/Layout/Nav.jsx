@@ -1,8 +1,8 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import iconHamburger from "../../assets/images/icon/icon_menu.svg";
 import iconClose from "../../assets/images/icon/icon_close.svg";
 import { Link } from "react-router-dom";
-import { CategoryRoutesContext } from "../../contexts/CategoryRoutesContext";
+import { category } from "../../data/category";
 import gsap from "gsap";
 
 const MainLink = ({
@@ -56,7 +56,6 @@ const Nav = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isPcMenuIdx, setPcMenuIdx] = useState(null);
   const mobileMenu = useRef(null);
-  const category = useContext(CategoryRoutesContext);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
