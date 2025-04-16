@@ -40,8 +40,8 @@ function BusinessLayout() {
 
   const outletContext = useMemo(() => {
     const data = productData[currentTab];
-    return { currentTab, productData: data };
-  }, [currentTab, productData]);
+    return { currentTab, productData: data, routes };
+  }, [currentTab, productData, routes]);
 
   return (
     <div className="BusinessLayout">

@@ -4,11 +4,15 @@ import ProductCatalog from "./components/ProductCatalog";
 import { useOutletContext } from "react-router-dom";
 
 function Business() {
-  const { currentTab, productData = [] } = useOutletContext();
+  const { currentTab, productData = [], routes } = useOutletContext();
   return (
     <div className="Business">
       <BusinessIntroSection currentTab={currentTab} />
-      <ProductCatalog currentTab={currentTab} productData={productData} />
+      <ProductCatalog
+        currentTab={currentTab}
+        productData={productData}
+        routes={routes}
+      />
     </div>
   );
 }

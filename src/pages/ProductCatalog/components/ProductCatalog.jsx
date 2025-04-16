@@ -1,4 +1,4 @@
-import React, { memo, useState, useRef } from "react";
+import React, { memo, useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
@@ -8,11 +8,18 @@ import ProductDetailView from "./ProductDetailView";
 import ProductListItem from "./ProductListItem";
 import Modal from "../../../components/UI/Modal";
 
-function ProductCatalog({ currentTab, productData = [] }) {
+function ProductCatalog({ currentTab, productData = [], routes }) {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [prodIdx, setProdIdx] = useState(0);
   const [isModalOpen, setModalOpen] = useState(false);
+  const [route, setRoute] = useState({ label: "" });
   const gsapContainerRef = useRef(null);
+
+  useEffect(() => {
+    if (routes.items.length == 0) return;
+    if (!currentTab) return;
+    setRoute(routes.items.find((item) => item.path == currentTab));
+  }, [routes, currentTab]);
 
   // 페이지 변경시 등장 요소 애니메이션
   useGSAP(
@@ -41,7 +48,20 @@ function ProductCatalog({ currentTab, productData = [] }) {
 
   return (
     <section className="ProductCatalog">
-      <h4 className="catalog__title">Products</h4>
+      {console.log(route)}
+      <div className="catalog__title-box">
+        <div className="container">
+          <h3
+            className="catalog__title"
+            style={{
+              backgroundImage: `url(/images/business/${currentTab}-product.png)`,
+            }}
+          >
+            <span className="l">Product</span>
+            <span className="s">{route.label}</span>
+          </h3>
+        </div>
+      </div>
 
       <div className="flex-container" ref={gsapContainerRef}>
         <SubTabMenu
