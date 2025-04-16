@@ -646,31 +646,6 @@
       "title": "NB80 series",
       "items": [
         {
-          "name": "NB80-80",
-          "code": "NB80-80",
-          "thumb": "NB80-80-thumb",
-          "features": [
-            {
-              "title": "INTRODUCTION",
-              "texts": [
-                "NB80 시리즈 로봇은 동급 로봇 중 가장 높은 페이로드 용량과 동작 범위를 자랑하며, 다양한 지능형 작업 요구를 충족할 수 있습니다.",
-                "고관성 모션 특성을 갖추고 있어, 큰 관성이 요구되는 작업 환경에 최적화되어 있습니다.",
-                "NB80 시리즈는 높은 보호 등급(IP 등급)을 갖추고 있어, 거친 작업 환경에서도 안정적으로 대응할 수 있습니다."
-              ]
-            },
-            {
-              "title": "FEATURE",
-              "bullets": [
-                "payload：80kg",
-                "Weight : About 635kg",
-                "DOF : 6",
-                "Reach：2200mm",
-                "Repeatablity : ＜±0.06mm"
-              ]
-            }
-          ]
-        },
-        {
           "name": "NB80-50",
           "code": "NB80-50",
           "thumb": "NB80-50-thumb",
@@ -691,6 +666,31 @@
                 "DOF : 6",
                 "Reach：2598mm",
                 "Repeatablity : ＜±0.08mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NB80-80",
+          "code": "NB80-80",
+          "thumb": "NB80-80-thumb",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "NB80 시리즈 로봇은 동급 로봇 중 가장 높은 페이로드 용량과 동작 범위를 자랑하며, 다양한 지능형 작업 요구를 충족할 수 있습니다.",
+                "고관성 모션 특성을 갖추고 있어, 큰 관성이 요구되는 작업 환경에 최적화되어 있습니다.",
+                "NB80 시리즈는 높은 보호 등급(IP 등급)을 갖추고 있어, 거친 작업 환경에서도 안정적으로 대응할 수 있습니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "payload：80kg",
+                "Weight : About 635kg",
+                "DOF : 6",
+                "Reach：2200mm",
+                "Repeatablity : ＜±0.06mm"
               ]
             }
           ]

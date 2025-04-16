@@ -10,7 +10,7 @@ function ProductListItem({ currentTab, item, idx, openModal }) {
       }}
     >
       <img
-        src={`/images/product/${currentTab}/${item.code}.png`}
+        src={`/images/product/${currentTab}/${item.thumb || item.code}.png`}
         alt={item.name}
       />
       <div className="subject">
