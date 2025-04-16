@@ -38,11 +38,11 @@ footer {
       }
 
       p {
-        font-size: $font-size-display-sm;
+        font-size: $font-size-display-xs;
         font-weight: $weight-bold;
         line-height: 140%;
         @include respondTo(tablet-s) {
-          font-size: calc($font-size-display-sm + 0.4rem);
+          font-size: calc($font-size-display-xs + 0.4rem);
         }
 
         @include respondTo(tablet-l) {
