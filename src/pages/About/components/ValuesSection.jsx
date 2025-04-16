@@ -45,7 +45,6 @@ function ValuesSection() {
                 trigger: gsapContainer.current,
                 start: "top 20%",
                 end: "bottom 70%",
-                markers: true,
                 scrub: 1,
                 onEnter: () => {
                   AOS.refresh();
