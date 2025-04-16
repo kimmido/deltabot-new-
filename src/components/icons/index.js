@@ -5,9 +5,9 @@ export { default as IconSafety } from "./IconSafety";
 export { default as IconLightBulb } from "./IconLightBulb";
 export { default as IconReport } from "./IconReport";
 
-export { default as icon_gpuServer1 } from './icon_gpuServer(1).svg?react';
-export { default as icon_gpuServer2 } from './icon_gpuServer(2).svg?react';
-export { default as icon_gpuServer3 } from './icon_gpuServer(3).svg?react';
-export { default as icon_gpuServer4 } from './icon_gpuServer(4).svg?react';
-export { default as icon_gpuServer5 } from './icon_gpuServer(5).svg?react';
-export { default as icon_gpuServer6 } from './icon_gpuServer(6).svg?react';
+export { default as icon_cpu } from './icon_cpu.svg?react';
+export { default as icon_computer_graphics } from './icon_computer_graphics.svg?react';
+export { default as icon_io_interface } from './icon_io_interface.svg?react';
+export { default as icon_data_center } from './icon_data_center.svg?react';
+export { default as icon_puzzle } from './icon_puzzle.svg?react';
+export { default as icon_network_transfer } from './icon_network_transfer.svg?react';
