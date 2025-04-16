@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import businessIntroData from "../../../data/businessIntroData";
+import SvgrComponent from "../../../components/icons/svgrComponent";
 gsap.registerPlugin(useGSAP);
 
 function BusinessIntroSection({ currentTab }) {
@@ -30,7 +31,7 @@ function BusinessIntroSection({ currentTab }) {
   return (
     <section className="BusinessIntroSection">
       <div className="title-area" ref={gsapContainer}>
-        <strong className="title">{data.title}</strong>
+        <strong className="title">&ldquo;{data.title}&rdquo;</strong>
       </div>
       {/* <strong className="title">{data.title}</strong> */}
       <p className="desc">{data.description}</p>
@@ -44,19 +45,37 @@ function BusinessIntroSection({ currentTab }) {
         />
       ))}
 
-      {data.extraText && <p>{data.extraText}</p>}
+      {data.extraText && <p className="desc">{data.extraText}</p>}
 
-      <ul className="applications">
-        {data.applications.map((app, idx) => (
-          <li key={idx} className="appItem">
-            <div className="img-box">
-              <img src={`/images/business/${app.image}`} alt="응용분야" />
+      {data.features && (
+        <div className="features-list">
+          {data.features.map((ft) => (
+            <div key={ft.icon} className="features-item">
+              <div className="icon-box">
+                <SvgrComponent name={ft.icon} />
+              </div>
+              <p>{ft.text}</p>
             </div>
-            <strong>{app.title}</strong>
-            <p>{app.description}</p>
-          </li>
-        ))}
-      </ul>
+          ))}
+        </div>
+      )}
+
+      <div className="applications">
+        <strong>응용분야</strong>
+        <ul className="applications-list">
+          {data.applications.map((app, idx) => (
+            <li key={idx} className="appItem">
+              <div className="img-box">
+                <img src={`/images/business/${app.image}`} alt="응용분야" />
+              </div>
+              <div className="text-box">
+                <strong>{app.title}</strong>
+                <p>{app.description}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }

@@ -1,11 +1,17 @@
 @use "sass:color";
 
 .BusinessLayout {
+  // 넓은 margin
   .BusinessIntroSection,
   .desc,
-  .intro-img:nth-of-type(1),
-  .applications {
+  // .intro-img:nth-of-type(1),
+  .applications,
+  .ProductCatalog {
     margin-top: $spacing-layout-sm;
+
+    @include respondTo(tablet-s) {
+      margin-top: $spacing-layout-md;
+    }
 
     @include respondTo(tablet-l) {
       margin-top: $spacing-layout-xl;
@@ -13,9 +19,10 @@
   }
 
   .BusinessIntroSection {
+    text-align: center;
     .title-area {
-      text-align: center;
     }
+
     .title {
       position: relative;
       max-width: 66%;
@@ -37,81 +44,196 @@
     }
 
     .desc {
-      text-align: center;
-      // font-size: $font-size-display-sm;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
+      font-size: 1.7rem;
 
       @include respondTo(tablet-l) {
-        font-size: $font-size-display-sm;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2.5rem;
+        line-height: 1.5;
       }
     }
 
     .intro-img {
       display: block;
-      &:nth-of-type(2) {
-        border-radius: $radius-card-lg;
-        border: 4px dotted $color-point;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: $radius-card-lg;
+
+      @include respondTo(pc-l) {
+        width: auto;
+      }
+      &.intro-img:nth-of-type(1) {
+        margin-top: $spacing-md;
       }
 
+      // &.border-dot {
+      //   border-radius: $radius-card-lg;
+      //   border: 4px dotted $color-point;
+      // }
+
       &.small {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        max-width: 900px;
       }
     }
 
-    .applications {
-      @include flexBox(row, 2.4rem, stretch, space-between, wrap);
-      row-gap: 4rem;
+    // 특징 아이콘 리스트
+    .features-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: $spacing-content-sm;
+      margin: 20px 40px;
+
+      @include respondTo(tablet-s) {
+        grid-template-columns: repeat(6, 1fr);
+      }
+      @include respondTo(tablet-l) {
+        margin: $spacing-content-xl 102px;
+        gap: 4.5rem;
+      }
+
+      .features-item {
+        // width: 200px;
+
+        .icon-box {
+          aspect-ratio: 1;
+          background-color: $color-blue-050;
+          border-radius: 50%;
+          align-content: center;
+
+          svg {
+            width: 80%;
+            height: 80%;
+          }
+        }
+        p {
+          margin-top: $spacing-content-sm;
+          @include respondTo(tablet-l) {
+            font-size: $font-size-lg;
+          }
+        }
+      }
+    }
+
+    // 응용분야
+    .applications-list {
+      // @include flexBox(row, 2.4rem, stretch, space-between, wrap);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 4rem;
 
       .appItem {
-        flex: 30%;
         text-align: center;
+        border: 1px solid $color-border;
+        border-radius: $radius-card-lg;
+        overflow: hidden;
 
         .img-box {
+          border-bottom: 1px solid $color-border;
           overflow: hidden;
-          // border: 1px solid $color-border;
-          border-radius: $radius-card-lg;
+          aspect-ratio: 16 / 9;
 
           img {
             display: block;
           }
         }
 
-        strong {
-          font-size: $font-size-con-title-sm;
+        .text-box {
+          padding: $spacing-content-sm;
+
+          strong {
+            font-size: $font-size-con-title-sm;
+            @include respondTo(pc-s) {
+            }
+          }
+
+          p {
+            margin-top: $spacing-content-xs;
+          }
         }
       }
     }
   } // BusinessIntroSection
 
   .ProductCatalog {
-    margin-top: 16px;
+    position: relative;
+    // &::before {
+    //   @include fullContent();
+    //   top: 18rem;
+    //   content: "";
+    //   height: 100%;
+    //   background-color: $color-gray-050;
+    // }
+    // margin-top: $spacing-layout-sm;
 
-    @include respondTo(tablet-s) {
-      margin-top: 20px;
-    }
+    // @include respondTo(tablet-s) {
+    //   margin-top: 20px;
+    // }
 
-    @include respondTo(tablet-l) {
-      margin-top: 100px;
-    }
+    // @include respondTo(tablet-l) {
+    //   margin-top: $spacing-layout-xl;
+    // }
 
-    .catalog__title {
-      font-size: $font-size-con-title-sm;
-      text-align: center;
-      background-color: beige;
+    .catalog__title-box {
+      position: relative;
+      // border-radius: $radius-card-lg;
+      // border: 1px solid $color-border;
+      // background-color: $color-blue-050;
 
-      @include respondTo(tablet-l) {
-        font-size: $font-size-con-title-lg;
-        padding: 8rem 0;
+      &::before {
+        @include pseudoDefault();
+        background: linear-gradient(
+          to right,
+          rgba(64, 153, 255, 0.3) 0%,
+          rgba(4, 153, 255, 0.3) 50%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        @include fullContent();
+        width: 100vw;
+        z-index: 0;
+      }
+
+      .catalog__title {
+        padding: 7rem 1rem 1rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 10;
+
+        @include respondTo(tablet-l) {
+          padding: 6rem 3rem;
+        }
+
+        span {
+          display: block;
+          font-size: $font-size-con-title-sm;
+          &.s {
+            color: $color-text-light;
+            font-size: $font-size-section-title-lg;
+          }
+
+          @include respondTo(tablet-s) {
+            font-size: $font-size-section-title-md;
+          }
+
+          @include respondTo(tablet-l) {
+            &.s {
+              font-size: $font-size-section-title-md;
+            }
+            &.l {
+              font-size: $font-size-section-title-xl;
+            }
+          }
+        }
       }
     }
 
     .flex-container {
       flex-direction: column;
       gap: 40px;
+      margin-top: $spacing-layout-sm;
 
       @include respondTo(tablet-l) {
         flex-direction: row;
@@ -139,6 +261,7 @@
           border-radius: $radius-card-md;
           word-break: break-all;
           transition: all 0.3s ease;
+          // background-color: #fff;
 
           @include respondTo(tablet-s) {
             padding: 20px 28px;
