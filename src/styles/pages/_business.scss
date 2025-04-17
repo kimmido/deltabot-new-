@@ -1,17 +1,11 @@
 @use "sass:color";
 
 .BusinessLayout {
-  // 넓은 margin
   .BusinessIntroSection,
   .desc,
-  // .intro-img:nth-of-type(1),
   .applications,
   .ProductCatalog {
     margin-top: $spacing-layout-sm;
-
-    @include respondTo(tablet-s) {
-      margin-top: $spacing-layout-md;
-    }
 
     @include respondTo(tablet-l) {
       margin-top: $spacing-layout-xl;
@@ -20,36 +14,64 @@
 
   .BusinessIntroSection {
     text-align: center;
-    .title-area {
-    }
-
-    .title {
-      position: relative;
-      max-width: 66%;
-      font-size: $font-size-display-sm;
-      color: rgba(0, 0, 0, 0.2);
-      background: linear-gradient(
-          to right,
-          $color-text-title,
-          $color-text-title
-        )
-        no-repeat;
-      -webkit-background-clip: text;
-      background-clip: text;
-      background-size: 0%;
+    .quote-area {
+      margin: $spacing-layout-md 10% 0;
 
       @include respondTo(tablet-l) {
-        font-size: $font-size-display-lg;
+        margin-top: 160px;
+      }
+      font-size: $font-size-display-sm;
+
+      .quote-text {
+        position: relative;
+        display: inline-block;
+        color: rgba(0, 0, 0, 0.2);
+        background: linear-gradient(
+            to right,
+            $color-text-title,
+            $color-text-title
+          )
+          no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-size: 0%;
+
+        @include respondTo(tablet-s) {
+          font-size: $font-size-display-md;
+        }
+        @include respondTo(tablet-l) {
+          font-size: $font-size-display-lg;
+        }
+
+        &::before,
+        &::after {
+          position: absolute;
+          top: 0;
+        }
+        &::before {
+          content: "“";
+          right: 102%;
+        }
+        &::after {
+          content: "”";
+          left: 102%;
+        }
       }
     }
 
     .desc {
       font-size: 1.7rem;
+      margin-bottom: $spacing-md;
 
-      @include respondTo(tablet-l) {
-        max-width: 900px;
+      @include respondTo(tablet-s) {
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 24px;
+      }
+      @include respondTo(tablet-l) {
+        max-width: 900px;
+        margin-bottom: $spacing-layout-md;
         font-size: 2.5rem;
         line-height: 1.5;
       }
@@ -63,9 +85,6 @@
 
       @include respondTo(pc-l) {
         width: auto;
-      }
-      &.intro-img:nth-of-type(1) {
-        margin-top: $spacing-md;
       }
 
       // &.border-dot {
@@ -83,20 +102,22 @@
     .features-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: $spacing-content-sm;
-      margin: 20px 40px;
+      gap: 10%;
+      margin: 20px 30px;
 
       @include respondTo(tablet-s) {
         grid-template-columns: repeat(6, 1fr);
+        gap: 4%;
       }
       @include respondTo(tablet-l) {
+        margin: $spacing-content-md;
+      }
+      @include respondTo(pc-l) {
         margin: $spacing-content-xl 102px;
-        gap: 4.5rem;
+        gap: 45px;
       }
 
       .features-item {
-        // width: 200px;
-
         .icon-box {
           aspect-ratio: 1;
           background-color: $color-blue-050;
@@ -109,8 +130,9 @@
           }
         }
         p {
-          margin-top: $spacing-content-sm;
+          margin-top: $spacing-content-xs;
           @include respondTo(tablet-l) {
+            margin-top: $spacing-content-sm;
             font-size: $font-size-lg;
           }
         }
@@ -118,45 +140,71 @@
     }
 
     // 응용분야
-    .applications-list {
-      // @include flexBox(row, 2.4rem, stretch, space-between, wrap);
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 4rem;
-
-      .appItem {
-        text-align: center;
-        border: 1px solid $color-border;
-        border-radius: $radius-card-lg;
-        overflow: hidden;
-
-        .img-box {
-          border-bottom: 1px solid $color-border;
-          overflow: hidden;
-          aspect-ratio: 16 / 9;
-
-          img {
-            display: block;
-          }
+    .applications {
+      .sec-title {
+        display: block;
+        font-size: $font-size-section-title-sm;
+        margin-bottom: $spacing-content-sm;
+        @include respondTo(tablet-s) {
+          font-size: $font-size-section-title-md;
+          margin-bottom: $spacing-content-md;
         }
 
-        .text-box {
-          padding: $spacing-content-sm;
+        @include respondTo(pc-s) {
+          font-size: $font-size-section-title-lg;
+          margin-bottom: $spacing-content-lg;
+        }
+      }
 
-          strong {
-            font-size: $font-size-con-title-sm;
-            @include respondTo(pc-s) {
+      .app-list {
+        // @include flexBox(row, 2.4rem, stretch, space-between, wrap);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.6rem;
+
+        @include respondTo(tablet-s) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        @include respondTo(pc-s) {
+          gap: 4rem;
+        }
+
+        .app-item {
+          text-align: center;
+          border: 1px solid $color-border;
+          border-radius: $radius-card-lg;
+          overflow: hidden;
+
+          .img-box {
+            border-bottom: 1px solid $color-border;
+            overflow: hidden;
+            aspect-ratio: 1.618 / 1;
+
+            img {
+              display: block;
             }
           }
 
-          p {
-            margin-top: $spacing-content-xs;
+          .text-box {
+            padding: $spacing-content-sm;
+
+            strong {
+              font-size: $font-size-con-title-xs;
+              @include respondTo(tablet-l) {
+                font-size: $font-size-con-title-sm;
+              }
+            }
+
+            p {
+              margin-top: $spacing-content-xs;
+            }
           }
         }
       }
-    }
+    } // 응용분야
   } // BusinessIntroSection
 
+  // 제품 리스트
   .ProductCatalog {
     position: relative;
     // &::before {

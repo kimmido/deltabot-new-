@@ -1,4 +1,5 @@
 const businessIntroData = {
+    // 머신비전 카메라
     "machine-vision": {
       title: '지능형 머신 비전',
       description:
@@ -23,6 +24,7 @@ const businessIntroData = {
       ],
     },
     
+    // 열화상 카메라
     "thermal-camera": {
       title: '온도 감지부터 이상 징후 예측까지',
       description:
@@ -72,10 +74,34 @@ const businessIntroData = {
       ],
     },
   
+    // 조명
+    "illumination": {
+      title: 'AI 정밀 분석을 위한,고성능 머신비전 조명',
+      description: '산업용 머신비전 검사용 고정밀 LED 조명 으로, 균일한 밝기와 다양한 파장 옵션을 제공하여 정밀 영상 획득을 지원합니다.',
+      images: ['default'],
+      applications: [
+        {
+          image: 'illumination-application(1).jpg',
+          title: '반도체전자 부품 검사',
+          description: '', 
+        },
+        {
+          image: 'illumination-application(2).jpg',
+          title: '의약품 외관 검사',
+          description: '',
+        },
+        {
+          image: 'illumination-application(3).jpg',
+          title: '물류 패키지 인식 및 코드 스캔 지원',
+          description: '',
+        },
+      ],
+    },
+  
     // 비전 컨트롤러
     "vision-controller": {
-      title: '“스마트 제조를 위한 핵심 비전 처리 장치”',
-      description: '산업용 머신비전 검사용 고정밀 LED 조명 으로, 균일한 밝기와 다양한 파장 옵션을 제공하여 정밀 영상 획득을 지원합니다.',
+      title: '스마트 제조를 위한 핵심 비전 처리 장치',
+      description: '고성능 머신비전 솔루션을 위한 통합형 비전 컨트롤러로, 카메라, 조명, AI 분석, I/O 제어 기능을 하나의 장비에서 처리할 수 있는 올인원 플랫폼입니다.산업용 현장에서 고속 생산 라인의 정밀 검사, 분류, 제어 작업에 최적화되어 있습니다.',
       images: ['default'],
       extraText: '머신비전 시스템의 중앙 제어장치로, 영상 입력 → 처리 → 결과 출력까지 통합 관리',
       applications: [
@@ -104,7 +130,7 @@ const businessIntroData = {
 
     // GPU 서버
     "gpu-server": {
-      title: '“다양한 AI/HPC 고성능 GPU”',
+      title: '다양한 AI/HPC 고성능 GPU',
       description: 'AI 인프라 통합 구축, 고성능 연구/분석 환경, 또는 기업용 AI 서비스 플랫폼의 기반으로 매우 적합합니다.',
       images: ['default'],
       features: [
@@ -147,6 +173,56 @@ const businessIntroData = {
         {
           image: 'vision-application(1).jpg',
           title: '제조 이상탐지 및 품질 분석',
+          description: '',
+        },
+      ],
+    },
+
+    // 워크스테이션
+    "workstations": {
+      title: '고성능 워크스테이션 & 서버',
+      description: 'AI, HPC, CAD/CAE, 머신비전, 시뮬레이션을 위한 최적화된 성능을 제공하는 고성능 워크스테이션 및 서버. 다양한 폼팩터와 최신 프로세서, 고성능 GPU, 고속 인터페이스, 원격 관리 기능을 통해 뛰어난 처리 능력과 효율성을 구현합니다.',
+      images: ['default'],
+      features: [
+        {
+          icon: 'icon_cpu',
+          text: '고성능 연산처리'
+        },
+        {
+          icon: 'icon_data_center',
+          text: '서버급 안정성'
+        },
+        {
+          icon: 'icon_io_interface',
+          text: '고속 인터페이스'
+        },
+        {
+          icon: 'icon_puzzle',
+          text: '탁월한 확장성'
+        },
+        {
+          icon: 'icon_symbol_ice',
+          text: '고급 냉각 시스템'
+        },
+        {
+          icon: 'icon_computer_security',
+          text: '보안 & 원격 관리'
+        },
+      ],
+      applications: [
+        {
+          image: 'workstations-application(1).jpg',
+          title: 'AI 및 고성능 연산(AI & HPC)',
+          description: '',
+        },
+        {
+          image: 'workstations-application(2).jpg',
+          title: '산업용 영상 분석 및 자동화 (Vision & Automation)',
+          description: '',
+        },
+        {
+          image: 'workstations-application(3).jpg',
+          title: '설계 및 시뮬레이션 (Design & Simulation)',
           description: '',
         },
       ],

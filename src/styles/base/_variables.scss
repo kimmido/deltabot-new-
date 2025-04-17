@@ -13,6 +13,7 @@ $font-size-xl: 2.5rem;
 
 $font-size-caption: 1.3rem;
 
+$font-size-con-title-xs: 1.9rem;
 $font-size-con-title-sm: 2.2rem;
 $font-size-con-title-md: 3.2rem;
 $font-size-con-title-lg: 4rem;
@@ -59,13 +60,25 @@ $gutter-lg: 24px;
 $spacing-layout-sm: 40px;
 $spacing-layout-md: 64px;
 $spacing-layout-lg: 80px;
-$spacing-layout-xl: 120px;
+$spacing-layout-xl: 140px;
 
 $spacing-content-xs: 8px;
 $spacing-content-sm: 24px;
 $spacing-content-md: 32px;
 $spacing-content-lg: 64px;
 $spacing-content-xl: 96px;
+
+$gap-mobile-layout-title-body-xs: 180px;
+$gap-mobile-layout-title-body-sm: 180px;
+$gap-mobile-layout-title-body-md: 180px;
+$gap-mobile-layout-title-body-lg: 45px;
+$gap-mobile-layout-title-body-xl: 140px;
+
+$gap-pc-layout-title-body-xs: 180px;
+$gap-pc-layout-title-body-sm: 180px;
+$gap-pc-layout-title-body-md: 180px;
+$gap-pc-layout-title-body-lg: 180px;
+$gap-pc-layout-title-body-xl: 140px;
 
 // ========== OVERLAY ==========
 // with background-image

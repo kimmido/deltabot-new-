@@ -13,9 +13,9 @@ function BusinessIntroSection({ currentTab }) {
 
   useGSAP(
     () => {
-      gsap.to(".title", {
+      gsap.to(".quote-text", {
         scrollTrigger: {
-          trigger: ".title",
+          trigger: ".quote-text",
           start: "bottom 86%",
           end: "bottom 48%",
           scrub: 1, // 스크롤에 따라 부드럽게
@@ -30,10 +30,9 @@ function BusinessIntroSection({ currentTab }) {
 
   return (
     <section className="BusinessIntroSection">
-      <div className="title-area" ref={gsapContainer}>
-        <strong className="title">&ldquo;{data.title}&rdquo;</strong>
+      <div className="quote-area" ref={gsapContainer}>
+        <strong className="quote-text">{data.title}</strong>
       </div>
-      {/* <strong className="title">{data.title}</strong> */}
       <p className="desc">{data.description}</p>
 
       {data.images.map((img, index) => (
@@ -61,12 +60,15 @@ function BusinessIntroSection({ currentTab }) {
       )}
 
       <div className="applications">
-        <strong>응용분야</strong>
-        <ul className="applications-list">
+        <strong className="sec-title">응용 분야</strong>
+        <ul className="app-list">
           {data.applications.map((app, idx) => (
-            <li key={idx} className="appItem">
+            <li key={idx} className="app-item">
               <div className="img-box">
-                <img src={`/images/business/${app.image}`} alt="응용분야" />
+                <img
+                  src={`/images/business/${app.image}`}
+                  alt={`응용분야-${app.title}`}
+                />
               </div>
               <div className="text-box">
                 <strong>{app.title}</strong>
