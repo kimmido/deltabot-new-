@@ -496,7 +496,7 @@
       "title": "Vision Controller",
       "items": [
         {
-          "name": "4u Rackmount Vision Controller & camera",
+          "name": "4u Rackmount Vision Controller",
           "code": "4u-Rackmount-Vision",
           "features": [
             {
@@ -517,7 +517,7 @@
           ]
         },
         {
-          "name": "Compact-Size Vision Controller & camera",
+          "name": "Compact-Size Vision Controller",
           "code": "Compact-Size-Vision",
           "features": [
             {
@@ -555,7 +555,7 @@
           ]
         },
         {
-          "name": "Outperform Fanless Vision Controller & camera",
+          "name": "Outperform Fanless Vision Controller",
           "code": "Outperform-Fanless-Vision",
           "features": [
             {
