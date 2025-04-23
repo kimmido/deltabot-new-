@@ -33,7 +33,13 @@ function BusinessIntroSection({ currentTab }) {
       <div className="quote-area" ref={gsapContainer}>
         <strong className="quote-text">{data.title}</strong>
       </div>
-      <p className="desc">{data.description}</p>
+      <div className="desc-box">
+        {data.description.map((txt, idx) => (
+          <p key={idx} className="desc">
+            {txt}
+          </p>
+        ))}
+      </div>
 
       {data.images.map((img, index) => (
         <img
@@ -44,7 +50,11 @@ function BusinessIntroSection({ currentTab }) {
         />
       ))}
 
-      {data.extraText && <p className="desc">{data.extraText}</p>}
+      {data.extraText && (
+        <div className="desc-box">
+          <p className="desc">{data.extraText}</p>
+        </div>
+      )}
 
       {data.features && (
         <div className="features-list">
@@ -72,7 +82,6 @@ function BusinessIntroSection({ currentTab }) {
               </div>
               <div className="text-box">
                 <strong>{app.title}</strong>
-                <p>{app.description}</p>
               </div>
             </li>
           ))}

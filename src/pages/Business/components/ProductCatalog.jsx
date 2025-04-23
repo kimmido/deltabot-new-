@@ -48,7 +48,6 @@ function ProductCatalog({ currentTab, productData = [], routes }) {
 
   return (
     <section className="ProductCatalog">
-      {console.log(route)}
       <div className="catalog__title-box">
         <div className="container">
           <h3
