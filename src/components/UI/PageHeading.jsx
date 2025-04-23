@@ -6,11 +6,12 @@ gsap.registerPlugin(useGSAP);
 function PageHeading({ title, currentPath }) {
   const backgroundRef = useRef(null);
   const titleRef = useRef(null);
-  const [isVideoLoad, setVideoLoad] = useState(true);
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [isVideo, setVideo] = useState(true);
   const [isTitle, setTitle] = useState("");
 
   useGSAP(() => {
-    if (!isVideoLoad) {
+    if (!videoLoaded) {
       gsap.fromTo(
         backgroundRef.current,
         {
@@ -23,7 +24,7 @@ function PageHeading({ title, currentPath }) {
         }
       );
     }
-  }, [isVideoLoad]);
+  }, [videoLoaded]);
 
   const formatWord = (word) => {
     return word
@@ -32,7 +33,7 @@ function PageHeading({ title, currentPath }) {
   };
 
   useEffect(() => {
-    setVideoLoad(true);
+    setVideoLoaded(false);
   }, [currentPath]);
 
   useEffect(() => {
@@ -41,33 +42,36 @@ function PageHeading({ title, currentPath }) {
 
   return (
     <div className="PageHeading">
-      {console.log("페이지 헤딩")}
-      <div className="PageHeading__background">
-        {isVideoLoad ? (
+      {/* {console.log("페이지 헤딩")} */}
+      <div className="background">
+        <div
+          ref={backgroundRef}
+          className={`background__img`}
+          style={{
+            backgroundImage: `url(/images/heading/heading_${currentPath}.jpg)`,
+          }}
+        ></div>
+        {isVideo && (
           <video
             key={currentPath}
             muted
             loop
             autoPlay
             playsInline
-            className="background-video"
-            onLoadedData={() => console.log("완료")}
-            onError={() => setVideoLoad(false)}
+            className={`background__video ${
+              videoLoaded ? "visible" : "hidden"
+            }`}
+            onLoadedData={() => setVideoLoaded(true)}
           >
             <source
               src={`/videos/heading/${currentPath}.mp4`}
               type="video/mp4"
             />
           </video>
-        ) : (
-          <div
-            ref={backgroundRef}
-            className="background-img"
-            style={{
-              backgroundImage: `url(/images/heading/heading_${currentPath}.jpg)`,
-            }}
-          ></div>
         )}
+        {/* {isVideoLoad ? (
+        ) : (
+        )} */}
       </div>
       <div className="page__text-box overflow_hidden">
         <h2
