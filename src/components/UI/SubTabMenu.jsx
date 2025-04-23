@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { memo, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useSearchParams } from "react-router-dom";
@@ -7,11 +7,14 @@ gsap.registerPlugin(useGSAP);
 function SubTabMenu({ items, currentIdx, setCurrentIdx }) {
   const gsapContainerRef = useRef(null);
   const [searchParams, setSearchParams] = useSearchParams();
+  console.log(searchParams);
 
   // 서브 탭메뉴
   useEffect(() => {
     const tabParam = searchParams.get("tab");
+    console.log("searchParams 변경");
     if (tabParam) {
+      console.log("tabParam 있음");
       setCurrentIdx(Number(tabParam));
     } else {
       setCurrentIdx(0);
@@ -21,7 +24,7 @@ function SubTabMenu({ items, currentIdx, setCurrentIdx }) {
   useGSAP(
     () => {
       gsap.fromTo(
-        ".SubTabMenu__text",
+        ".SubTabMenu__title",
         {
           y: 50,
           opacity: 0,
@@ -37,24 +40,14 @@ function SubTabMenu({ items, currentIdx, setCurrentIdx }) {
     { dependencies: [items], scope: gsapContainerRef }
   );
 
-  const moveFocus = () => {
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: { y: gsapContainerRef.current, offsetY: 140 },
-      ease: "power2.out",
-    });
-  };
-
   const ChageTab = (index) => {
-    setCurrentIdx(index);
     setSearchParams({ tab: index }); // 모든 파라미터를 지우고 새롭게 설정
-    moveFocus();
-    console.log("탭변경");
+    setCurrentIdx(index);
   };
 
   return (
     <div ref={gsapContainerRef} className="SubTabMenu">
-      {console.log("사이드탭 렌더링")}
+      {/* {console.log("사이드탭 렌더링")} */}
       {items.map((item, idx) => (
         <button
           key={item.title}
