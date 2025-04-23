@@ -1,0 +1,45 @@
+{
+    "humanoid1": [
+    {
+      "title": "로봇",
+      "items": [
+        {
+          "name": "로봇1",
+          "code": "로봇1",
+          "features": [
+            {
+              "title": "",
+              "texts": [
+                ""
+              ]
+            },
+            {
+              "title": "Applications",
+              "bullets": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "로봇2",
+          "code": "로봇2",
+          "features": [
+            {
+              "title": "4",
+              "texts": [
+                ""
+              ]
+            },
+            {
+              "title": "Applications",
+              "bullets": [
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
