@@ -36,15 +36,6 @@ $breakpoints: (
   flex-wrap: $wrap;
 }
 
-@mixin flexDirectionResponsive($m-direction, $pc-direction) {
-  display: flex;
-  flex-direction: $m-direction;
-
-  @include respondTo(tablet-l) {
-    flex-direction: $pc-direction;
-  }
-}
-
 @mixin square($size) {
   width: $size;
   height: $size;
