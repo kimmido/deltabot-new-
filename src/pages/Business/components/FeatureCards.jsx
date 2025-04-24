@@ -8,7 +8,7 @@ function FeatureCards({ data }) {
         data.features.map((ft) => (
           <div key={ft.icon} className="features-item card">
             <div className="icon-box card">
-              <img src={`/images/icon/${ft.icon}`} alt="" />
+              <img src={`/images/icon/${ft.icon}`} alt={ft.title} />
               <p>{ft.title}</p>
             </div>
             <ul className="txt-list bullets">
