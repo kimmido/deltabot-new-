@@ -1,0 +1,33 @@
+import React, { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(useGSAP);
+
+function QuoteArea({ data }) {
+  const gsapContainer = useRef(null);
+
+  useGSAP(
+    () => {
+      gsap.to(".quote-text", {
+        scrollTrigger: {
+          trigger: ".quote-text",
+          start: "bottom 86%",
+          end: "bottom 48%",
+          scrub: 1, // 스크롤에 따라 부드럽게
+          markers: true,
+        },
+        backgroundSize: "100%",
+        ease: "none",
+      });
+    },
+    { scope: gsapContainer }
+  );
+
+  return (
+    <div className="QuoteArea" ref={gsapContainer}>
+      <strong className="quote-text">{data.title}</strong>
+    </div>
+  );
+}
+
+export default QuoteArea;

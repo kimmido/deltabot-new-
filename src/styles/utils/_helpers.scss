@@ -38,7 +38,7 @@
   z-index: $z-index-popup;
 }
 
-.radius-card-lg {
+.card {
   border-radius: $radius-card-lg;
 }
 
@@ -80,30 +80,18 @@
   }
 }
 
-.font-Thin {
-  font-weight: 100;
-}
-.font-ExtraLight {
-  font-weight: 200;
-}
-.font-Light {
-  font-weight: 300;
-}
-.font-Regular {
-  font-weight: 400;
-}
-.font-Medium {
-  font-weight: 500;
-}
-.font-SemiBold {
-  font-weight: 600;
-}
-.font-Bold {
-  font-weight: 700;
-}
-.font-ExtraBold {
-  font-weight: 800;
-}
-.font-Black {
-  font-weight: 900;
+.bullets {
+  li {
+    position: relative;
+    padding-left: 12px;
+    margin-left: 0.3rem;
+
+    &::before {
+      @include pseudoDefault($color-text-body);
+      top: 0.5em;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+    }
+  }
 }

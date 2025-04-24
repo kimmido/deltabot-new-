@@ -5,18 +5,18 @@ import { useOutletContext } from "react-router-dom";
 import businessIntroData from "../../data/businessIntroData";
 import BusinessApplications from "./components/BusinessApplications";
 import QuoteArea from "./components/QuoteArea";
-import CircleIconList from "./components/CircleIconList";
+import FeatureCards from "./components/FeatureCards";
 
-function Business() {
+function AutomationPage() {
   const { currentTab, productData = [], routes } = useOutletContext();
   const data = businessIntroData[currentTab];
   if (!data) return null;
 
   return (
-    <div className="Business">
+    <div className="Business" data-theme={data.theme}>
       <QuoteArea data={data} />
       <BusinessIntroSection data={data} currentTab={currentTab} />
-      <CircleIconList data={data} />
+      <FeatureCards data={data} />
       <BusinessApplications data={data} />
       <ProductCatalog
         currentTab={currentTab}
@@ -27,4 +27,4 @@ function Business() {
   );
 }
 
-export default Business;
+export default AutomationPage;

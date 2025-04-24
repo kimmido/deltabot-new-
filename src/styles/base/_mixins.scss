@@ -50,6 +50,30 @@ $breakpoints: (
   height: $size;
 }
 
+@mixin triangle($color: #000, $size: 30px, $direction: "top") {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+
+  @if $direction == "top" {
+    border-width: 0px $size calc($size * 1.732) $size;
+    border-color: transparent transparent $color transparent;
+  }
+  @if $direction == "bottom" {
+    border-width: calc($size * 1.732) $size 0 $size;
+    border-color: $color transparent transparent transparent;
+  }
+  @if $direction == "left" {
+    border-width: $size calc($size * 1.732) $size 0;
+    border-color: transparent $color transparent transparent;
+  }
+  @if $direction == "right" {
+    border-width: $size 0 $size calc($size * 1.732);
+    border-color: transparent transparent transparent $color;
+  }
+}
+
 @mixin pseudoDefault($color: #000, $size: 100%) {
   position: absolute;
   left: 0;

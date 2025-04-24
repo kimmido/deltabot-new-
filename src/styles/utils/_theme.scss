@@ -1,0 +1,28 @@
+// src/styles/theme.scss
+:root {
+  --color-point: #1d56bc;
+  --color-highlight: #16408d;
+  --color-active: #1d56bc;
+  --color-point-background: #f2f7ff;
+}
+
+/* 자동화 페이지 테마 */
+.Business[data-theme="lightBlue"] {
+  --color-point-01: #19b0fb;
+  --color-highlight: #19b0fb;
+  --color-point-02: #19b0fb;
+  --color-active: $color-blue-600;
+}
+
+/* 재활용 페이지 테마 */
+.Business[data-theme="recycling"] {
+  --color-point: $color-blue-600;
+  --color-active: $color-blue-600;
+}
+
+/* 보라 테마 */
+.Business[data-theme="purple"] {
+  --color-point: #8448a0;
+  --color-active: #8448a0;
+  --color-point-background: #e0c4ec;
+}
