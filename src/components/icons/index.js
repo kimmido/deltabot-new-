@@ -13,3 +13,5 @@ export { default as icon_puzzle } from './icon_puzzle.svg?react';
 export { default as icon_network_transfer } from './icon_network_transfer.svg?react';
 export { default as icon_computer_security } from './icon_computer_security.svg?react';
 export { default as icon_symbol_ice } from './icon_symbol_ice.svg?react';
+export { default as icon_central_network } from './icon_central_network.svg?react';
+export { default as icon_auto_management } from './icon_auto_management.svg?react';
