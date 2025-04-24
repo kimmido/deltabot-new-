@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { IconPlayBtn } from "../../../components/icons";
+import VideoDefault from "../../../components/UI/VideoDefault";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -105,16 +106,12 @@ function VideoItem({ title, id, keywords, desc }) {
         ref={videoBoxRef}
         onClick={() => handlePlay(isMobile, isExpanded)}
       >
-        <video
-          preload="none"
+        <VideoDefault
+          src={`/videos/main/main${id}.mp4`}
           poster={`/images/video_poster/main${id}.jpg`}
-          playsInline
           controls={isExpanded}
-          ref={videoRef}
-        >
-          <source src={`/videos/main/main${id}.mp4`} type="video/mp4" />
-          브라우저가 비디오 태그를 지원하지 않습니다.
-        </video>
+          videoRef={videoRef}
+        />
         {!isExpanded && <IconPlayBtn color="#fff" />}
         {isExpanded && !isMobile && (
           <button ref={closeRef} className="close-btn" onClick={handleClose}>

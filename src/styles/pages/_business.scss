@@ -255,59 +255,69 @@
       grid-template-columns: 1fr;
       gap: 1.6rem;
 
-      @include respondTo(tablet-s) {
-        grid-template-columns: repeat(3, 1fr);
-      }
       @include respondTo(pc-s) {
         gap: 4rem;
       }
 
       .app-item {
-        text-align: center;
-        border: 1px solid $color-border;
-        border-radius: $radius-card-lg;
-        overflow: hidden;
-
-        .img-box {
-          // border-bottom: 1px solid $color-border;
+        .media-box {
           overflow: hidden;
-          aspect-ratio: 1.618 / 1;
-
-          // overflow: hidden;
-          // border-radius: $radius-card-lg;
-
-          img {
-            display: block;
-          }
         }
-
         .text-box {
-          position: relative;
-          // margin-top: $spacing-lg;
           padding: $spacing-content-sm;
-          border-radius: $radius-card-lg;
-          // background-color: #8448a0;
-
-          // &::before {
-          //   position: absolute;
-          //   content: "";
-          //   bottom: 100%;
-          //   left: 50%;
-          //   width: 0;
-          //   height: 0;
-          //   transform: translateX(-50%);
-          //   border-style: solid;
-          //   border-width: 0px 15px 25.98px 15px;
-          //   border-color: transparent transparent #8448a0 transparent;
-          // }
 
           strong {
             font-size: $font-size-con-title-xs;
-            // font-weight: 600;
-            // color: #fff;
+
             @include respondTo(tablet-l) {
               font-size: $font-size-con-title-sm;
             }
+          }
+        }
+      }
+
+      &.image {
+        @include respondTo(tablet-s) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .app-item {
+          overflow: hidden;
+          display: flex;
+          border: 1px solid $color-border;
+          border-radius: $radius-card-lg;
+
+          @include respondTo(tablet-s) {
+            display: block;
+          }
+          .media-box,
+          .text-box {
+            flex: 50%;
+          }
+
+          .media-box {
+            aspect-ratio: 1.618 / 1;
+          }
+
+          .text-box {
+            border-radius: $radius-card-lg;
+            align-content: center;
+          }
+        }
+      }
+
+      &.video {
+        @include respondTo(tablet-s) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .media-box {
+          border-radius: $radius-card-lg;
+          aspect-ratio: 16 / 9;
+
+          video {
+            width: 100%;
+            height: 100%;
           }
         }
       }

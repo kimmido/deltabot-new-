@@ -53,11 +53,13 @@ const businessIntroData = {
       ],
       applications: [
         {
-          image: 'machine-vision-application(1).jpg',
-          title: '기어박스  정밀 조립',
+          video: 'collaboration-application(1).mp4',
+          poster: 'collaboration-application(1).jpg',
+          title: '기어박스 정밀 조립',
         },
         {
-          image: 'machine-vision-application(2).jpg',
+          video: 'collaboration-application(2).mp4',
+          poster: 'collaboration-application(2).jpg',
           title: '종양 생검 내비게이션 및 위치 지정 로봇',
         },
       ],
