@@ -60,8 +60,8 @@
           ]
         },
         {
-          "name": "S2205",
-          "code": "s2205",
+          "name": "S2205-01",
+          "code": "S2205-01",
           "features": [
             {
               "title": "4U 8-GPU Intel Xeon Compute 서버 플랫폼",
@@ -73,18 +73,36 @@
             {
               "title": "Applications",
               "bullets": [
-                "비디오 제작 및 방송 애플리케이션",
-                "애니메이션 & 모델링",
-                "3D 렌더링 도면",
-                "시각화 & 디자인",
-                "AI 교육"
+                "클라우드 컴퓨팅 서비스",
+                "콘텐츠 전송 네트워크 (CDN)",
+                "네트워크 기능 가상화 (NFV)",
+                "5G 코어 및 엣지 통신 마이크로 데이터 센터",
+                "AI 추론 및 머신러닝"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "S2205-04",
+          "code": "S2205-04",
+          "features": [
+            {
+              "title": "",
+              "texts": [
+                "."
+              ]
+            },
+            {
+              "title": "Applications",
+              "bullets": [
+                ""
               ]
             }
           ]
         },
         {
           "name": "G4201",
-          "code": "g4201",
+          "code": "G4201",
           "features": [
             {
               "title": "4U 8-GPU Intel Xeon Compute 서버 플랫폼",
