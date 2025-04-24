@@ -14,6 +14,7 @@ import ScrollToTop from "./utils/scrollToTop";
 const Home = lazy(() => import("./pages/Home/Home"));
 const About = lazy(() => import("./pages/About/About"));
 const Business = lazy(() => import("./pages/Business/Business"));
+const AutomationPage = lazy(() => import("./pages/Business/AutomationPage"));
 const CompactProductPage = lazy(() =>
   import("./pages/Business/CompactProductPage")
 );
@@ -41,13 +42,13 @@ function App() {
                       index
                       element={<Navigate to="collaboration" replace />}
                     />
-                    <Route path="collaboration" element={<Business />} />
-                    <Route path="serial-robot" element={<Business />} />
-                    <Route path="scara" element={<Business />} />
-                    <Route path="cobot" element={<Business />} />
-                    <Route path="deltarobot" element={<Business />} />
-                    <Route path="case-packer" element={<Business />} />
-                    <Route path="amr" element={<Business />} />
+                    <Route path="collaboration" element={<AutomationPage />} />
+                    <Route path="serial-robot" element={<AutomationPage />} />
+                    <Route path="scara" element={<AutomationPage />} />
+                    <Route path="cobot" element={<AutomationPage />} />
+                    <Route path="deltarobot" element={<AutomationPage />} />
+                    <Route path="case-packer" element={<AutomationPage />} />
+                    <Route path="amr" element={<AutomationPage />} />
                   </Route>
                 </Route>
 
