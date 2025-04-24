@@ -4,6 +4,7 @@ export { default as IconArrow } from "./IconArrow";
 export { default as IconSafety } from "./IconSafety";
 export { default as IconLightBulb } from "./IconLightBulb";
 export { default as IconReport } from "./IconReport";
+export { default as IconPlayBtn } from "./IconPlayBtn";
 
 export { default as icon_cpu } from './icon_cpu.svg?react';
 export { default as icon_computer_graphics } from './icon_computer_graphics.svg?react';
