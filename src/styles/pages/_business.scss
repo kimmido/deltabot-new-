@@ -445,10 +445,13 @@
             border-color: var(--color-active);
 
             .subject span {
-              background-image: url("@assets/images/icon/icon_add_white.svg");
               background-color: var(--color-active);
               transform: rotate(180deg);
               border: 1px solid var(--color-active);
+
+              &::before {
+                background-color: #fff;
+              }
             }
           }
 
@@ -481,16 +484,23 @@
             }
 
             .sb-icon {
+              position: relative;
               display: block;
               width: 2.8rem;
               height: 2.8rem;
               border-radius: 50%;
-              background-image: url("@assets/images/icon/icon_add_blue.svg");
-              background-repeat: no-repeat;
-              background-position: center;
               border: 1px solid $color-border;
 
               transition: all 0.4s ease;
+
+              &::before {
+                @include pseudoDefault();
+                @include maskImageDefault(
+                  "@components/icons/icon_add.svg",
+                  $color-point
+                );
+                transition: inherit;
+              }
 
               @include respondTo(tablet-s) {
                 width: 3.2rem;

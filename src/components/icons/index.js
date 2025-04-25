@@ -20,3 +20,7 @@ export { default as icon_car_autonomous } from './icon_car_autonomous.svg?react'
 export { default as icon_infinity } from './icon_infinity.svg?react';
 export { default as icon_certificate } from './icon_certificate.svg?react';
 export { default as icon_shield } from './icon_shield.svg?react';
+export { default as icon_add } from './icon_add.svg?react';
+export { default as icon_call } from './icon_call.svg?react';
+export { default as icon_close } from './icon_close.svg?react';
+export { default as icon_menu_hamburger } from './icon_menu_hamburger.svg?react';

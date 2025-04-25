@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
-import iconHamburger from "../../assets/images/icon/icon_menu.svg";
-import iconClose from "../../assets/images/icon/icon_close.svg";
+import SvgrComponents from "../icons/SvgrComponent";
 import { Link } from "react-router-dom";
 import { category } from "../../data/category";
 import gsap from "gsap";
@@ -115,9 +114,9 @@ const Nav = () => {
       <div className="mobile">
         <button className="mobile__btn" onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? (
-            <img src={iconClose} alt="메뉴 닫기 버튼" />
+            <SvgrComponents name="icon_close" />
           ) : (
-            <img src={iconHamburger} alt="메뉴 열기 버튼" />
+            <SvgrComponents name="icon_menu_hamburger" />
           )}
         </button>
         <div className="mobile__list" ref={mobileMenu}>

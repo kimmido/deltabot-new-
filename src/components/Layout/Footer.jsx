@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SvgrComponents from "../icons/SvgrComponent";
 
 function Footer() {
   return (
@@ -12,6 +13,7 @@ function Footer() {
           </p>
           <a href="tel:07087088108">
             <span>문의하기</span>
+            <span className="call-icon"></span>
           </a>
         </div>
         <div className="ft-info">

@@ -132,6 +132,11 @@ nav.gnb {
       margin-right: -8px;
 
       z-index: calc($z-index-mobile-menu + 10);
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
     }
 
     .mobile__list {
