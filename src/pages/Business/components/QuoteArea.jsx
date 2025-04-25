@@ -14,7 +14,7 @@ function QuoteArea({ data }) {
           start: "bottom 86%",
           end: "bottom 48%",
           scrub: 1, // 스크롤에 따라 부드럽게
-          markers: true,
+          markers: false,
         },
         backgroundSize: "100%",
         ease: "none",

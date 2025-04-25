@@ -12,54 +12,6 @@
     }
   }
 
-  .BusinessIntroSection {
-    text-align: center;
-
-    .desc-box {
-      margin-bottom: $spacing-sm;
-
-      @include respondTo(tablet-s) {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 24px;
-      }
-
-      @include respondTo(tablet-l) {
-        max-width: 1180px;
-        margin-bottom: $spacing-layout-md;
-      }
-    }
-    .desc {
-      font-size: 1.7rem;
-      // margin-top: 0.8em;
-
-      @include respondTo(tablet-l) {
-        font-size: 2.5rem;
-        line-height: 1.5;
-      }
-    }
-
-    .intro-img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: $radius-card-lg;
-      width: auto;
-      max-width: 100%;
-
-      // &.border-dot {
-      //   border-radius: $radius-card-lg;
-      //   border: 4px dotted $color-point;
-      // }
-
-      &.small {
-        width: 100%;
-        max-width: 900px;
-      }
-    }
-  } // BusinessIntroSection
-
   // 강조 문구
   .QuoteArea {
     text-align: center;
@@ -107,11 +59,59 @@
     }
   }
 
+  .BusinessIntroSection {
+    text-align: center;
+
+    .desc-box {
+      margin-bottom: $spacing-sm;
+
+      @include respondTo(tablet-s) {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+      }
+
+      @include respondTo(tablet-l) {
+        max-width: 1180px;
+        margin-bottom: $spacing-layout-md;
+      }
+    }
+    .desc {
+      font-size: 1.7rem;
+      margin-top: 0.8em;
+
+      @include respondTo(tablet-l) {
+        font-size: 2.5rem;
+        line-height: 1.5;
+      }
+    }
+
+    .intro-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: $radius-card-lg;
+      width: auto;
+      max-width: 100%;
+
+      // &.border-dot {
+      //   border-radius: $radius-card-lg;
+      //   border: 4px dotted $color-point;
+      // }
+
+      &.small {
+        width: 100%;
+        max-width: 900px;
+      }
+    }
+  } // BusinessIntroSection
+
   // 특징 아이콘 리스트
   .CircleIconList {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10%;
+    gap: 6vw;
     margin: 20px 30px;
 
     @include respondTo(tablet-s) {
@@ -127,12 +127,13 @@
     }
 
     .features-item {
+      text-align: center;
+
       .icon-box {
         aspect-ratio: 1;
         background-color: var(--color-point-background);
         border-radius: 50%;
         align-content: center;
-        text-align: center;
 
         svg {
           width: 80%;
@@ -140,9 +141,10 @@
         }
       }
       p {
-        margin-top: $spacing-content-xs;
+        margin: $spacing-content-xs 1em 0;
+
         @include respondTo(tablet-l) {
-          margin-top: $spacing-content-sm;
+          margin: $spacing-content-sm 1.3em 0;
           font-size: $font-size-lg;
         }
       }
@@ -263,8 +265,10 @@
         .media-box {
           overflow: hidden;
         }
+
         .text-box {
           padding: $spacing-content-sm;
+          text-align: center;
 
           strong {
             font-size: $font-size-con-title-xs;
@@ -437,20 +441,20 @@
 
           &:hover,
           &:focus {
-            color: $color-active;
-            border-color: $color-active;
+            color: var(--color-active);
+            border-color: var(--color-active);
 
             .subject span {
               background-image: url("@assets/images/icon/icon_add_white.svg");
-              background-color: $color-active;
+              background-color: var(--color-active);
               transform: rotate(180deg);
-              border: 1px solid $color-active;
+              border: 1px solid var(--color-active);
             }
           }
 
           &:focus {
             outline: none;
-            box-shadow: 0 0 0 1px $color-active;
+            box-shadow: 0 0 0 1px var(--color-active);
           }
 
           .subject {

@@ -16,3 +16,4 @@ export { default as icon_computer_security } from './icon_computer_security.svg?
 export { default as icon_symbol_ice } from './icon_symbol_ice.svg?react';
 export { default as icon_central_network } from './icon_central_network.svg?react';
 export { default as icon_auto_management } from './icon_auto_management.svg?react';
+export { default as icon_car_autonomous } from './icon_car_autonomous.svg?react';

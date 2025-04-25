@@ -5,8 +5,7 @@ const businessIntroData = {
       title: '사람과 함께 일하는 스마트 로봇',
       description:
         [
-          '사람과 같은 작업 공간에서 #직접 협력하며 작업할 수 있도록 설계된 산업용 로봇# 입니다.',
-          '기존 산업용 로봇과는 달리, #로봇과 인간이 동시에 하나의 작업을 수행할 수 있는 환경을# 목표로 하며, #안전성, 유연성, 사용성을# 중점으로 설계되었습니다.'
+          '사람과 같은 작업 공간에서 #직접 협력하며 작업할 수 있도록 설계된 산업용 로봇# 입니다. 기존 산업용 로봇과는 달리, #로봇과 인간이 동시에 하나의 작업을 수행할 수 있는 환경을# 목표로 하며, #안전성, 유연성, 사용성을# 중점으로 설계되었습니다.'
         ],
       images: [`default`],
       features: [
@@ -67,27 +66,68 @@ const businessIntroData = {
     
     // 수직다관절
     "serial-robot": {
-      theme: 'default',
+      theme: 'cyan',
       title: '모든 산업 현장에, 가장 유연한 파트너.',
       description:
-        ['산업용 로봇의 매 순간과 모든 동작은 제조 전반에 걸쳐 중요하며, 다양한 작업 범위와 하중 용량, 그리고 고정밀과 고속의 완벽한 조합 덕분에 로딩 및 언로딩, 디버링, 테스트, 접착, 분류, 조립, 핸들링 등 모든 종류의 생산 공정에 널리 사용되어 왔으며 모든 산업 분야에서 탁월한 성능을 발휘 합니다.'],
+        ['산업용 로봇의 매 순간과 모든 동작은 제조 전반에 걸쳐 중요하며, 다양한 작업 범위와 하중 용량, 그리고 고정밀과 고속의 완벽한 조합 덕분에 #로로딩 및 언로딩, 디버링, 테스트, 접착, 분류, 조립, 핸들링 등 모든 종류의 생산 공정에 널리 사용#되어 왔으며 #모든 산업 분야에서 탁월한 성능을 발휘# 합니다.'],
       images: [`default`],
+      features: [
+        {
+          icon: 'icon_chart_rocket-cyan.png',
+          title: '고속 동작',
+          texts: [
+            "고속 서보 모터 탑재",
+            "반복 동작을 빠르게 수행",
+            "빠른 사이클 타임, 높은 생산성",
+            "24시간 안정 운용 가능"
+          ]
+        },
+        {
+          icon: 'icon_aiming-cyan.png',
+          title: '정밀 제어',
+          texts: [
+            "고해상도 제어 기술 적용",
+            "±0.02mm의 미세한 움직임",
+            "정밀 조립·검사에 최적",
+            "불량률 최소화, 품질 향상"
+          ]
+        },
+        {
+          icon: 'icon_computer_programming-cyan.png',
+          title: '쉬운 프로그래밍',
+          texts: [
+            "직관적인 티칭 펜던트 UI",
+            "누구나 쉽게, 빠르게 제어",
+            "드래그 앤 드롭 경로 설정",
+            "오프라인 시뮬레이션 지원"
+          ]
+        },
+        {
+          icon: '.png',
+          title: '뛰어난 확장성',
+          texts: [
+            "다양한 장비와 완벽 호환",
+            "표준 통신 프로토콜 지원",
+            "기존 설비와의 손쉬운 연동",
+            "맞춤형 자동화 시스템 구성"
+          ]
+        },
+      ],
       applications: [
         {
-          image: 'machine-vision-application(1).jpg',
-          title: '',
+          video: 'serial-robot-application(1).mp4',
+          poster: 'serial-robot-application(1).jpg',
+          title: '피스톤 연삭  및 디버링 생산 라인',
         },
         {
-          image: 'machine-vision-application(2).jpg',
-          title: '',
-        },
-        {
-          image: 'machine-vision-application(3).jpg',
-          title: '',
+          video: 'serial-robot-application(2).mp4',
+          poster: 'serial-robot-application(2).jpg',
+          title: '배터리 냉각 플레이트 샌딩',
         },
       ],
     },
     
+    // =========== 비전 시스템 =========== 
     // 머신비전 카메라
     "machine-vision": {
       theme: 'default',
@@ -119,13 +159,13 @@ const businessIntroData = {
       theme: 'default',
       title: '온도 감지부터 이상 징후 예측까지',
       description:
-        ['열화상카메라는 적외선 기반 비접촉식 온도 감지로 실시간 모니터링을 제공하며, AI 비전 기술과 결합해 자동화·안전·효율성을 높입니다.'],
+        ['열화상카메라는 적외선 기반의 비접촉식 온도 감지 기술을 활용하여 사람이나 설비의 온도를 실시간으로 측정하고 모니터링할 수 있습니다. 특히 공항, 병원, 공장 등 다중 이용 시설에서 체온 이상 감지를 통해 감염병 확산을 사전에 차단하는 데 효과적으로 활용되고 있습니다. 최근에는 AI 비전 기술과 결합되어 자동으로 고온 이상 징후를 탐지하고, 위험 요인을 신속하게 경고함으로써 안전성과 효율성을 동시에 향상시키고 있습니다.', '설비 과열, 전기 누전, 기계 고장 등 산업 현장에서의 온도 기반 이상 징후도 사전에 감지하여 사고를 예방할 수 있습니다. 이러한 비접촉식 열 감지 기술은 예방 진단은 물론, 스마트 안전 관리 체계 구축에도 기여하며 다양한 분야에 폭넓게 활용되고 있습니다.'],
       images: [`default`],
       extraText: '설비 과열, 누전, 체온 이상 등 온도 기반 이상 탐지 비접촉식 열 감지로 예방 진단 및 안전 모니터링 실현',
       applications: [
         {
           image: 'thermal-camera-application(1).jpg',
-          title: '제조 라인 온도 이상감지',
+          title: '체온 이상 감지로 감염 예방',
         },
         {
           image: 'thermal-camera-application(2).jpg',
@@ -138,6 +178,7 @@ const businessIntroData = {
       ],
     },
     
+    // 초분광 카메라
     "spectral-camera": {
       theme: 'default',
       title: '초분광 영상 기술',
@@ -221,11 +262,11 @@ const businessIntroData = {
       images: ['default'],
       features: [
         {
-          icon: 'icon_cpu',
+          icon: 'icon_computer_graphics',
           text: '고성능 GPU 지원'
         },
         {
-          icon: 'icon_computer_graphics',
+          icon: 'icon_cpu',
           text: '멀티코어 서버 CPU'
         },
         {
@@ -251,16 +292,17 @@ const businessIntroData = {
           title: '지능형 비전 분석 시스템',
         },
         {
-          image: 'gpu-server-application(1).jpg',
+          image: 'gpu-server-application(2).jpg',
           title: '의료 영상 진단 보조 시스템',
         },
         {
-          image: 'gpu-server-application(1).jpg',
+          image: 'gpu-server-application(3).jpg',
           title: '제조 이상탐지 및 품질 분석',
         },
       ],
     },
 
+    // =========== IT ==========
     // 워크스테이션
     "workstations": {
       theme: 'default',
@@ -358,6 +400,109 @@ const businessIntroData = {
         {
           image: 'rack-mount-application(3).jpg',
           title: '클라우드 서비스 인프라 구축',
+        },
+      ],
+    },
+
+    // 밀리터리
+    "military": {
+      theme: 'default',
+      title: '고신뢰성 미션 컴퓨팅 서버',
+      description: [
+        '혹독한 환경에서도 흔들림 없이 작동하는 서버, 그것이 바로 밀리터리 서버입니다. ','고성능 프로세싱 파워는 물론, 열과 충격, 진동에 강한 산업용 등급의 내구성, 군사 수준의 보안 아키텍처까지 갖춘 이 서버는 군 통신망, 전장 상황실, 감시 시스템, 산업 자동화 설비 등 고신뢰 환경에서 최적의 성능을 발휘합니다.','전장처럼 예측 불가능한 상황에서도 데이터를 지키고, 시스템을 유지하는 것이 곧 경쟁력입니다. 무결점 작동을 위한 선택, 밀리터리 서버로 미래의 임무를 준비하십시오.'
+      ],
+      images: ['default'],
+      features: [
+        {
+          icon: 'icon_cpu',
+          text: '고성능 연산 처리'
+        },
+        {
+          icon: 'icon_data_center',
+          text: '실시간 데이터 수집'
+        },
+        {
+          icon: 'icon_infinity',
+          text: '24/7 연속 운용'
+        },
+        {
+          icon: 'icon_certificate',
+          text: '군용/항공 인증'
+        },
+        {
+          icon: 'icon_shield',
+          text: 'Rugged 설계'
+        },
+        {
+          icon: 'icon_computer_security',
+          text: '보안/신뢰성 강화'
+        },
+      ],
+      extraText: "고신뢰성 미션 컴퓨팅 서버 솔루션은 차세대 항공전자 시스템과 방위산업 분야에서 요구되는 극한의 작전 환경에서도 안정적이고 지속 가능한 고성능 연산 및 실시간 데이터 처리 기능을 제공하는 임무 중심형(Server-class) 컴퓨팅 플랫폼입니다.",
+      applications: [
+        {
+          image: 'military-application(1).jpg',
+          title: '무인 항공기(UAV) 탑재',
+        },
+        {
+          image: 'military-application(2).jpg',
+          title: '전술 지상 차량(Tactical Ground Vehicle)',
+        },
+        {
+          image: 'military-application(3).jpg',
+          title: '항공기 탑재 임무 컴퓨터',
+        },
+      ],
+    },
+
+    // 비히클
+    "vehicle": {
+      theme: 'default',
+      title: '차량의 두뇌를 진화시키다.',
+      description: [
+        '자율주행과 차량통신(V2X)을 위한 고신뢰 비히클 서버로, 미래 모빌리티 환경에 최적화된 솔루션을 제공합니다. 고성능 프로세싱, 뛰어난 안정성, 유연한 확장성을 바탕으로 한 차원 높은 인텔리전스를 구현하며, 스마트 모빌리티의 중심에서 핵심 역할을 수행합니다.',
+        '‘비히클(Vehicle)’은 단순히 자동차만을 의미하지 않습니다. 사람이나 화물을 이동시키기 위해 설계된 모든 이동 수단(자전거, 기차, 비행기, 선박 등)을 포괄하며, 각기 다른 기능과 목적을 가지고 다양한 산업 및 사회적 맥락에서 사용됩니다.',
+        '오늘날 비히클은 단순한 교통수단을 넘어 경제, 물류, 관광, 환경 등 여러 분야에서 필수적인 인프라로 자리 잡고 있으며, 특히 전기차(EV) 및 친환경 이동 수단의 부상과 함께 더욱 주목받고 있습니다. S1901 EvoTRAC는 이러한 흐름 속에서, 미래 지향적이고 지속 가능한 모빌리티 생태계를 위한 기술적 기반을 제공합니다.'
+      ],
+      images: ['default'],
+      features: [
+        {
+          icon: 'icon_cpu',
+          text: '고성능 CPU'
+        },
+        {
+          icon: 'icon_data_center',
+          text: '모듈형 구조 유연한 구성'
+        },
+        {
+          icon: 'icon_network_transfer',
+          text: '통신 호환성'
+        },
+        {
+          icon: 'icon_car_autonomous',
+          text: '미래 확장성 대응'
+        },
+        {
+          icon: 'icon_symbol_ice',
+          text: '산업환경 대응'
+        },
+        {
+          icon: 'icon_computer_security',
+          text: '보안 인증'
+        },
+      ],
+      applications: [
+        {
+          image: 'vehicle-application(1).jpg',
+          title: '자율주행차량 제어 서버',
+        },
+        {
+          image: 'vehicle-application(2).jpg',
+          title: 'V2X 기반 도로 인프라 연동 시스템',
+        },
+        {
+          image: 'vehicle-application(3).jpg',
+          title: '스마트 물류 및 차량 모니터링 시스템',
         },
       ],
     },
