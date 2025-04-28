@@ -12,7 +12,7 @@
   }
 
   &__item {
-    @include hover-active-underline($color-active);
+    @include hover-active-underline(var(--color-active));
 
     &::before {
       @include pseudoDefault($color-border);

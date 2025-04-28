@@ -127,6 +127,288 @@ const businessIntroData = {
       ],
     },
     
+    // 스카라
+    "scara": {
+      theme: 'cherry-pink',
+      title: '고속 · 고정밀 자동화의 최적 솔루션, SCARA 로봇',
+      description:
+        ['스카라 로봇은 컴팩트한 설계와 고정밀, 고속 성능을 결합하여 제한된 공간에서도 최적의 생산성을 실현할 수 있는 자동화 솔루션입니다 . 수평 다관절 구조를 기반으로 한 #정밀한 동작과 짧은 사이클 타임은 고속 조립 및 이송 공정에 최적화되어# 있으며, #설치 유연성과 유지보수 용이성 또한 탁월#합니다.',
+          '고도화된 스마트 팩토리 환경에서 요구되는 속도, 정확성, 공간 효율을 모두 만족시키는 #스카라 로봇은 제조업의 경쟁력을 높이는 핵심 파트너입니다.#'
+        ],
+      images: [`default`],
+      features: [
+        {
+          icon: 'icon_chart_gear-cherry-pink.png',
+          title: '고속·고정밀  성능',
+          texts: [
+            "빠른 사이클 타임으로 생산성 극대화",
+            "반복 작업에 최적화된 고속 동작 구조",
+            "±0.01mm의 정밀 제어로 품질 안전",
+            "전자·정밀 조립 공정에 최적화",
+          ]
+        },
+        {
+          icon: 'icon_install-cherry-pink.png',
+          title: '컴팩트 & 유연한 설치',
+          texts: [
+            "좁은 공간에도 쉽게 설치 가능한 설계",
+            "수평 동작 기반의 슬림한 구조",
+            "설비와의 연동 및 배치 유연성 확보",
+            "소형 라인부터 대형 공정까지 적용 가능",
+          ]
+        },
+        {
+          icon: 'icon_gear_shiny-cherry-pink.png',
+          title: '간단한 구조, 쉬운 유지보수',
+          texts: [
+            "4축 기반의 단순 설계로 고장률 최소화",
+            "정비가 쉽고 유지보수 부담이 낮음",
+            "빠른 부품 교체와 운영 효율성 제공",
+            "다운타임 감소로 안정적인 생산 가능",
+          ]
+        },
+        {
+          icon: 'icon_money-cherry-pink.png',
+          title: '높은 비용 효율, 쉬운 도입',
+          texts: [
+            "합리적인 초기 투자 비용",
+            "유지·관리 비용 절감으로 비용 효율 향상",
+            "빠른 설치와 운용으로 도입 장벽 낮음",
+            "다양한 산업군에서 폭넓게 활용 가능",
+          ]
+        },
+      ],
+      applications: [
+        {
+          image: 'scara-application(1).jpg',
+          title: '경량 부품 조립',
+        },
+        {
+          image: 'scara-application(2).jpg',
+          title: '앰플정렬',
+        },
+        {
+          image: 'scara-application(3).jpg',
+          title: '혼합된 여러 작업 흐름',
+        },
+      ],
+    }, // 스카라   
+
+    // 코봇
+    "cobot": {
+      theme: 'cyan',
+      title: '',
+      description:
+        [''],
+      images: [`default`],
+      features: [
+        {
+          icon: '.png',
+          title: '',
+          texts: [
+            "",
+            "",
+            "",
+            "",
+          ]
+        },
+        {
+          icon: '.png',
+          title: '',
+          texts: [
+            "",
+            "",
+            "",
+            "",
+          ]
+        },
+      ],
+      applications: [
+        {
+          video: 'robot-application(1).mp4',
+          poster: 'robot-application(1).jpg',
+          title: '',
+        },
+        {
+          video: 'robot-application(2).mp4',
+          poster: 'robot-application(2).jpg',
+          title: '',
+        },
+      ],
+    },
+    
+    // 델타로봇
+    "deltarobot": {
+      theme: 'royal-blue',
+      title: '고속·고정밀 병렬 메커니즘의 정수, 델타 로봇',
+      description:
+        ['델타 로봇(Delta Robot)은 병렬 링크 메커니즘(Parallel Kinematic Mechanism)을 기반으로 설계된 고속 고정밀 산업용 로봇입니다. 3개의 경량 링크가 삼각형 형태의 상단 프레임에 연결되어 있으며, 각각 독립적인 서보 모터에 의해 구동됩니다. 이 링크들은 공통된 플랫폼(엔드 이펙터)을 지지하며, 로봇의 공간 좌표를 고정밀하게 제어할 수 있도록 해줍니다. 델타 구조는 일반적인 직렬 구조 로봇에 비해 훨씬 빠른 응답성과 낮은 관성을 제공하므로, #초당 수백 회의 픽앤플레이스 작업을 요구하는 고속 생산 라인#라인에 특히 적합합니다. 이러한 구조적 이점 덕분에 #델타 로봇은 식음료, 제약, 전자부품, 화장품, 포장 산업 등 다양한 분야에서 널리 활용#되고 있습니다.', '#클린룸 인증(IP65 이상) 제품도 지원 가능#하므로, 위생 기준이 엄격한 환경에서도 안정적으로 작동하며, 생산 품질 향상 및 생산성 극대화에 기여할 수 있는 핵심 자동화 장비로 자리매김하고 있습니다.'],
+      images: [`default`],
+      features: [
+        {
+          icon: 'icon_chart_gear-royal-blue.png',
+          title: '고속·고정밀 작업 성능',
+          texts: [
+            "병렬 구조 기반의 초고속 동작 성능",
+            "가벼운 설계로 반응 속도 향상",
+            "고속 생산 라인에 최적화된 퍼포먼스",
+            "비전 연동으로 정밀 작업 자동화 강화",
+          ]
+        },
+        {
+          icon: 'icon_install-royal-blue.png',
+          title: '컴팩트한 설치 구조',
+          texts: [
+            "상단 고정형으로 공간 절약",
+            "경량 구조로 설비 부담 감소",
+            "기존 설비 라인에 손쉬운 통합",
+            "협소한 작업 환경에서도 최적의 효율",
+          ]
+        },
+        {
+          icon: 'icon_drop_gear-royal-blue.png',
+          title: '위생 환경 대응력',
+          texts: [
+            "위생 환경에 최적화된 밀폐형 구조",
+            "외부 노출이 적어 먼지·오염에 강함",
+            "식품·제약 등 고위생 산업군에 이상적",
+            "클린룸 인증(IP65 이상) 적용 가능",
+          ]
+        },
+        {
+          icon: 'icon_robot_serial-royal-blue.png',
+          title: '유연한 커스터마이징',
+          texts: [
+            "다양한 작업 환경에  최적 설계 가능",
+            "비전 , 회전축 등 옵션으로 기능 확장",
+            "멀티 제품 처리에 유리한 다용도 로봇",
+            "지능형 자동화 작업도 수행 가능",
+          ]
+        },
+      ],
+      applications: [
+        {
+          video: 'robot-application(1).mp4',
+          poster: 'robot-application(1).jpg',
+          title: '',
+        },
+        {
+          video: 'robot-application(2).mp4',
+          poster: 'robot-application(2).jpg',
+          title: '',
+        },
+      ],
+    },
+    
+    // 케이스패커
+    "case-packer": {
+      theme: 'blue-purple',
+      title: '차세대 포장 자동화의 완성형 솔루션',
+      description:
+        ['지능형로봇시스템(Intelligent Robotic System) 은 모듈형 설계 철학을 바탕으로 다양한 포장 및 병입 제품의 자동화된 포장 프로세스를 실현하는 차세대 로봇 솔루션입니다.',
+          '특히 본 시스템은 #프레임형 컨베이어가 통합된 스마트 자동분류시스템으로# 표준화된 프로세스 링크를 깊이 있게 통합하고, 고속성과 높은 유연성을 지닌 병렬 로봇을 중심으로 구성되어 있습니다. 비전 시스템, 그리퍼, 제품 및 카톤 운반 모듈, 로봇 보호장치 등 전 구성요소가 유기적으로 연결되어 있어, 제품의 종류나 형상에 따라 #신속한 교체, 유연한 조정, 높은 작동 효율성을 제공#합니다.',
+          '이러한 지능형 시스템은 포장 자동화의 모든 단계를 통합하여 정밀하고 빠른 분류 및 이송, 생산라인의 유연한 대응, 그리고 최적의 작업 효율성을 실현합니다.'
+        ],
+      images: [`default`],
+      features: [
+        {
+          icon: 'icon_robot_arm-blue-purple.png',
+          title: '모듈형 유연성',
+          texts: [
+            "구성품 교체 용이, 다양한 제품 대응",
+            "공정 변경 시 빠른 조정 가능",
+            "라인 확장·변경이 간편",
+            "다품종 소량 생산에 최적화",
+          ]
+        },
+        {
+          icon: 'icon_chart_gear-blue-purple.png',
+          title: '고속·정밀 작업',
+          texts: [
+            "병렬로봇으로 빠른 작업 처리",
+            "짧은 사이클 타임으로 생산성 향상",
+            "정밀 제어로 높은 포장 정확도 확보",
+            "고속 생산라인에 최적화된 성능",
+          ]
+        },
+        {
+          icon: 'icon_vision-blue-purple.png',
+          title: '스마트 비전 분류',
+          texts: [
+            "비전으로 제품 위치·형상 인식",
+            "자동 분류 및 이송 작업 지원",
+            "다양한 제품에도 정확한 대응",
+            "품질 향상 및 오류 감소",
+          ]
+        },
+        {
+          icon: 'icon_gear_shiny-blue-purple.png',
+          title: '신속 교체·효율 운영',
+          texts: [
+            "셋업 및 툴 전환이 간편",
+            "공정 전환이 빠르고 설정이 간편",
+            "유지보수가 쉬워 다운타임 최소화",
+            "무인 자동화로 안정적인 운영 가능",
+          ]
+        },
+      ],
+      applications: [
+        {
+          video: 'robot-application(1).mp4',
+          poster: 'robot-application(1).jpg',
+          title: '',
+        },
+        {
+          video: 'robot-application(2).mp4',
+          poster: 'robot-application(2).jpg',
+          title: '',
+        },
+      ],
+    },
+    
+    // amr
+    "amr": {
+      theme: 'cyan',
+      title: '',
+      description:
+        [''],
+      images: [`default`],
+      features: [
+        {
+          icon: '.png',
+          title: '',
+          texts: [
+            "",
+            "",
+            "",
+            "",
+          ]
+        },
+        {
+          icon: '.png',
+          title: '',
+          texts: [
+            "",
+            "",
+            "",
+            "",
+          ]
+        },
+      ],
+      applications: [
+        {
+          video: 'robot-application(1).mp4',
+          poster: 'robot-application(1).jpg',
+          title: '',
+        },
+        {
+          video: 'robot-application(2).mp4',
+          poster: 'robot-application(2).jpg',
+          title: '',
+        },
+      ],
+    },
+    
     // =========== 비전 시스템 =========== 
     // 머신비전 카메라
     "machine-vision": {

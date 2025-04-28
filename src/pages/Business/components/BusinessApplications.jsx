@@ -6,7 +6,7 @@ function BusinessApplications({ data }) {
 
   return (
     <div className="BusinessApplications">
-      <strong className="sec-title">응용 분야</strong>
+      <strong className="sec-title">Applications</strong>
       <ul className={`app-list ${type}`}>
         {data.applications.map((app, idx) => (
           <li key={idx} className="app-item">

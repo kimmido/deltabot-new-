@@ -8,18 +8,37 @@
 
 /* 자동화 페이지 테마 */
 .Business[data-theme="lightBlue"] {
-  --color-point-01: #19b0fb;
-  --color-point-02: #19b0fb;
+  --color-point: #19b0fb;
   --color-highlight: #19b0fb;
   --color-active: #1d56bc;
 }
 
-/* 재활용 페이지 테마 */
+/* 청록 페이지 테마 */
 .Business[data-theme="cyan"] {
-  --color-point-01: #0099cc;
   --color-highlight: #0099cc;
   --color-point: #0099cc;
   --color-active: #0099cc;
+}
+
+/* 체리핑크 테마 */
+.Business[data-theme="cherry-pink"] {
+  --color-active: #fc3a64;
+  --color-point: #fc3a64;
+  --color-highlight: #fc3a64;
+}
+
+/* 로얄블루 테마 */
+.Business[data-theme="royal-blue"] {
+  --color-active: #0052f2;
+  --color-point: #0052f2;
+  --color-highlight: #0052f2;
+}
+
+/* 체리핑크 테마 */
+.Business[data-theme="blue-purple"] {
+  --color-active: #3e30f4;
+  --color-point: #3e30f4;
+  --color-highlight: #3e30f4;
 }
 
 /* 보라 테마 */
