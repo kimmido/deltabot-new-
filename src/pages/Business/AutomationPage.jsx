@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BusinessIntroSection from "./components/BusinessIntroSection";
 import ProductCatalog from "./components/ProductCatalog";
 import { useOutletContext } from "react-router-dom";
@@ -9,7 +9,11 @@ import FeatureCards from "./components/FeatureCards";
 
 function AutomationPage() {
   const { currentTab, productData = [], routes } = useOutletContext();
-  const data = businessIntroData[currentTab];
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    setData(businessIntroData[currentTab]);
+  }, [currentTab]);
   if (!data) return null;
 
   return (

@@ -6,6 +6,7 @@
         {
           "name": "CR7-7",
           "code": "CR7-7",
+          "thumb": "CR7-7-thumb",
           "features": [
             {
               "title": "INTRODUCTION",
@@ -29,6 +30,7 @@
         {
           "name": "CR12-12",
           "code": "CR12-12",
+          "thumb": "CR12-12-thumb",
           "features": [
             {
               "title": "null",
@@ -55,6 +57,7 @@
         {
           "name": "CR12-20",
           "code": "CR12-20",
+          "thumb": "CR12-20-thumb",
           "features": [
             {
               "title": "null",
@@ -81,6 +84,7 @@
         {
           "name": "CR18-18",
           "code": "CR18-18",
+          "thumb": "CR18-18-thumb",
           "features": [
             {
               "title": "null",
@@ -107,6 +111,7 @@
         {
           "name": "CR20-17",
           "code": "CR20-17",
+          "thumb": "CR20-17-thumb",
           "features": [
             {
               "title": "null",
@@ -121,10 +126,10 @@
             {
               "title": "Featrue",
               "bullets": [
-                "Payload : 20kg",
+                "Payload : 17kg",
                 "Weight : About 71kg",
-                "DOF : 6",
-                "Reach : 1798mm",
+                "DOF : 5",
+                "Reach : 2047mm",
                 "Repeatablity : ＜±0.05mm"
               ]
             }
@@ -133,6 +138,7 @@
         {
           "name": "CR20-20",
           "code": "CR20-20",
+          "thumb": "CR20-20-thumb",
           "features": [
             {
               "title": "null",
@@ -159,6 +165,7 @@
         {
           "name": "CR20-25",
           "code": "CR20-25",
+          "thumb": "CR20-25-thumb",
           "features": [
             {
               "title": "null",
@@ -185,6 +192,7 @@
         {
           "name": "CR35-35",
           "code": "CR35-35",
+          "thumb": "CR35-35-thumb",
           "features": [
             {
               "title": "null",
@@ -211,6 +219,7 @@
         {
           "name": "CR35-45",
           "code": "CR35-45",
+          "thumb": "CR35-45-thumb",
           "features": [
             {
               "title": "null",
@@ -242,6 +251,7 @@
         {
           "name": "SR3-3",
           "code": "SR3-3",
+          "thumb": "-thumb",
           "features": [
             {
               "title": "INTRODUCTION",
@@ -265,6 +275,7 @@
         {
           "name": "SR4-4",
           "code": "SR4-4",
+          "thumb": "-thumb",
           "features": [
             {
               "title": "null",
@@ -291,6 +302,7 @@
         {
           "name": "SR4-5",
           "code": "SR4-5",
+          "thumb": "-thumb",
           "features": [
             {
               "title": "null",
@@ -1613,6 +1625,25 @@
                 "Max carton size(mm)：368*224*115",
                 "Max payload：3kg",
                 "Capacity：60 bags/min"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "amr": [
+    {
+      "title": "Amr",
+      "items": [
+        {
+          "name": "CMR Series",
+          "code": "CMR-series",
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "CMR Series 모바일 매니퓰레이터는 손, 눈, 발, 그리고 두뇌의 유연한 협응을 통해 움직임, 인식, 파악 등 다양한 기능을 구현합니다. 자재 흐름, CNC 적재 및 하역, 육안 검사, 장비 제어 등 다양한 상황에서 폭넓게 활용될 수 있으며, 생산 및 제조 공정의 여러 작업장 간에 복잡하고 다양한 작업을 효율적으로 수행하여 지능적이고 유연한 생산 공정을 구축합니다."
               ]
             }
           ]

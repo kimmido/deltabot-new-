@@ -14,7 +14,7 @@
 }
 
 /* 청록 페이지 테마 */
-.Business[data-theme="cyan"] {
+.Business[data-theme="vivid-cyan"] {
   --color-highlight: #0099cc;
   --color-point: #0099cc;
   --color-active: #0099cc;
@@ -39,6 +39,13 @@
   --color-active: #3e30f4;
   --color-point: #3e30f4;
   --color-highlight: #3e30f4;
+}
+
+/* 체리핑크 테마 */
+.Business[data-theme="teal-blue"] {
+  --color-active: #49919d;
+  --color-point: #49919d;
+  --color-highlight: #49919d;
 }
 
 /* 보라 테마 */

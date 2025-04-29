@@ -66,14 +66,14 @@ const businessIntroData = {
     
     // 수직다관절
     "serial-robot": {
-      theme: 'cyan',
+      theme: 'vivid-cyan',
       title: '모든 산업 현장에, 가장 유연한 파트너.',
       description:
         ['산업용 로봇의 매 순간과 모든 동작은 제조 전반에 걸쳐 중요하며, 다양한 작업 범위와 하중 용량, 그리고 고정밀과 고속의 완벽한 조합 덕분에 #로로딩 및 언로딩, 디버링, 테스트, 접착, 분류, 조립, 핸들링 등 모든 종류의 생산 공정에 널리 사용#되어 왔으며 #모든 산업 분야에서 탁월한 성능을 발휘# 합니다.'],
       images: [`default`],
       features: [
         {
-          icon: 'icon_chart_rocket-cyan.png',
+          icon: 'icon_chart_rocket-vivid-cyan.png',
           title: '고속 동작',
           texts: [
             "고속 서보 모터 탑재",
@@ -83,7 +83,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_aiming-cyan.png',
+          icon: 'icon_aiming-vivid-cyan.png',
           title: '정밀 제어',
           texts: [
             "고해상도 제어 기술 적용",
@@ -93,7 +93,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_computer_programming-cyan.png',
+          icon: 'icon_computer_programming-vivid-cyan.png',
           title: '쉬운 프로그래밍',
           texts: [
             "직관적인 티칭 펜던트 UI",
@@ -196,7 +196,7 @@ const businessIntroData = {
 
     // 코봇
     "cobot": {
-      theme: 'cyan',
+      theme: 'vivid-cyan',
       title: '',
       description:
         [''],
@@ -276,7 +276,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_robot_serial-royal-blue.png',
+          icon: 'icon_robot_arm-royal-blue.png',
           title: '유연한 커스터마이징',
           texts: [
             "다양한 작업 환경에  최적 설계 가능",
@@ -368,47 +368,70 @@ const businessIntroData = {
     
     // amr
     "amr": {
-      theme: 'cyan',
-      title: '',
+      theme: 'teal-blue',
+      title: 'AI 기반 자율주행 로봇, AMR로 스마트하게',
       description:
-        [''],
+        ["#AMR 시리즈 모바일 매니퓰레이터는 '손, 눈, 발, 두뇌'가 유기적으로 협응하는 자율주행 이동 로봇 시스템으로, 인간의 작업 방식을 모사하며 생산 현장의 다양한 요구에 유연하게 대응합니다.#",
+          '이러한 시스템은 단순 반복 작업부터 고정밀 조작까지 다양한 작업 환경에 적용할 수 있습니다. #자재의 흐름 관리, CNC 머신의 자동 적재 및 하역, 육안 검사(비전 검사), 장비 상태 감지 및 제어#와 같은 고도화된 작업도 무인으로 수행할 수 있습니다. 또한 다양한 작업장을 오가며 사람과 협업하거나 복잡한 공정을 하나의 로봇이 연속적으로 수행할 수 있기 때문에, #생산 효율 향상, 품질 안정화, 유연 생산 체계의 구현이 가능#합니다.',
+          'AMR 시리즈는 기존 자동화 설비의 한계를 극복하고, #스마트 팩토리와 하이믹스(HI-MIX) 생산 환경에 최적화된 솔루션#으로 자리 잡고 있습니다.'
+        ],
       images: [`default`],
       features: [
         {
-          icon: '.png',
-          title: '',
+          icon: 'icon_robot_iot-teal-blue.png',
+          title: '유연한 자율 주행',
           texts: [
-            "",
-            "",
-            "",
-            "",
+            "SLAM, LiDAR 기반의 정밀 맵핑",
+            "별도 마커/라인 없는 유연한 주행",
+            "장애물 회피 및 실시간 경로 변경",
+            "복잡한 환경에서도 안정적 운용",
           ]
         },
         {
-          icon: '.png',
-          title: '',
+          icon: 'icon_robot_arm-teal-blue.png',
+          title: '다기능 작업 수행',
           texts: [
-            "",
-            "",
-            "",
-            "",
+            "자재 운송, 적재/하역, 비전 검사 가능",
+            "로봇팔 + AMR + 센서 통합 시스템",
+            "다양한 툴체인지 및 그리퍼 적용 가능",
+            "현장 맞춤형 커스터마이징 지원",
+          ]
+        },
+        {
+          icon: 'icon_chart_good-teal-blue.png',
+          title: '생산성 향상 & 비용 절감',
+          texts: [
+            "24시간 무인 자동 작업 가능",
+            "반복 작업 자동화로 인건비 절감",
+            "작업 정확도 향상으로 품질 안정화",
+            "빠른 투자 회수(ROI) 실현",
+          ]
+        },
+        {
+          icon: 'icon_robot_hub-teal-blue.png',
+          title: '스마트확장성과 협업',
+          texts: [
+            "Fleet 시스템으로 AMR 다중 제어",
+            "실시간 데이터 수집 및 공정 최적화",
+            "MES/ERP 등과의 연동 확장 가능",
+            "충돌 감지 기반의 안전한 협업 가능",
           ]
         },
       ],
       applications: [
         {
-          video: 'robot-application(1).mp4',
-          poster: 'robot-application(1).jpg',
-          title: '',
+          video: 'amr-application(1).mp4',
+          poster: 'amr-application(1).jpg',
+          title: '복합 로봇 3D 프린팅 스마트 팩토리 자동화',
         },
         {
-          video: 'robot-application(2).mp4',
-          poster: 'robot-application(2).jpg',
-          title: '',
+          video: 'amr-application(2).mp4',
+          poster: 'amr-application(2).jpg',
+          title: '스마트하고 적응 가능한 생산을 위한 솔루션',
         },
       ],
-    },
-    
+    }, // amr
+     
     // =========== 비전 시스템 =========== 
     // 머신비전 카메라
     "machine-vision": {
