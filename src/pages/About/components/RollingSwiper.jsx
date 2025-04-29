@@ -48,6 +48,7 @@ function LoopSwiper() {
             spaceBetween: 24,
           },
         }}
+        allowTouchMove={false}
       >
         {businessSub.map((item, idx) => (
           <SwiperSlide key={item.label}>
