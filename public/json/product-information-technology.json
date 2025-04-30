@@ -64,10 +64,9 @@
           "code": "S2205-01",
           "features": [
             {
-              "title": "4U 8-GPU Intel Xeon Compute 서버 플랫폼",
+              "title": "null",
               "texts": [
-                "이 GPU 컴퓨팅 플랫폼은 비스위치(direct attach) 방식의 GPU 토폴로지를 특징으로 하며, 4U 섀시 내에서 8개의 GPU 가속기를 지원합니다.",
-                "4세대/5세대 Intel® Xeon® Scalable 프로세서 두 개를 장착할 수 있으며, 각 GPU는 PCIe 스위치를 거치지 않고 CPU 소켓의 루트 포트 컴플렉스에 직접 연결됩니다. 이를 통해 최대의 CPU-to-GPU 대역폭을 제공합니다."
+                "MSI S2205는 24개의 드라이브 베이와 듀얼 소켓 5세대 Intel Xeon Scalable 프로세서를 탑재한 강력한 2U 서버 플랫폼입니다. 32개의 DDR5 DIMM 슬롯과 최대 7개의 PCIe 4.0 x16 슬롯을 통해 클라우드 컴퓨팅에 탁월한 성능을 제공합니다."
               ]
             },
             {
@@ -87,15 +86,19 @@
           "code": "S2205-04",
           "features": [
             {
-              "title": "",
+              "title": "null",
               "texts": [
-                "."
+                "MSI S2205는 24개의 드라이브 베이와 듀얼 소켓 5세대 Intel Xeon Scalable 프로세서를 탑재한 강력한 2U 서버 플랫폼입니다. 32개의 DDR5 DIMM 슬롯과 최대 7개의 PCIe 4.0 x16 슬롯을 통해 클라우드 컴퓨팅에 탁월한 성능을 제공합니다."
               ]
             },
             {
               "title": "Applications",
               "bullets": [
-                ""
+                "클라우드 컴퓨팅 서비스",
+                "콘텐츠 전송 네트워크 (CDN)",
+                "네트워크 기능 가상화 (NFV)",
+                "5G 코어 및 엣지 통신 마이크로 데이터 센터",
+                "AI 추론 및 머신러닝"
               ]
             }
           ]
@@ -105,10 +108,9 @@
           "code": "G4201",
           "features": [
             {
-              "title": "4U 8-GPU Intel Xeon Compute 서버 플랫폼",
+              "title": "null",
               "texts": [
-                "이 GPU 컴퓨팅 플랫폼은 비스위치(direct attach) 방식의 GPU 토폴로지를 특징으로 하며, 4U 섀시 내에서 8개의 GPU 가속기를 지원합니다.",
-                "4세대/5세대 Intel® Xeon® Scalable 프로세서 두 개를 장착할 수 있으며, 각 GPU는 PCIe 스위치를 거치지 않고 CPU 소켓의 루트 포트 컴플렉스에 직접 연결됩니다. 이를 통해 최대의 CPU-to-GPU 대역폭을 제공합니다."
+                "MSI G4201은 8개의 GPU, 12개의 드라이브 베이, 그리고 듀얼 5세대 인텔 스케일러블 프로세서를 탑재한 강력한 4U 서버 플랫폼입니다. 32개의 DDR5 DIMM 슬롯과 최대 8개의 PCIe 5.0 x16 슬롯을 통해 AI 학습에 탁월한 성능을 제공합니다."
               ]
             },
             {
