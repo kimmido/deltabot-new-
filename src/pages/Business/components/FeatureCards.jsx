@@ -4,7 +4,6 @@ function FeatureCards({ data }) {
   if (!data.features || data.features[0].title === "") return;
   return (
     <div className="FeatureCards">
-      {console.log(data.features)}
       {data.features.map((ft) => (
         <div key={ft.icon} className="features-item card">
           <div className="icon-box card">
@@ -12,9 +11,7 @@ function FeatureCards({ data }) {
             <p>{ft.title}</p>
           </div>
           <ul className="txt-list bullets">
-            {ft.texts.map((txt) => (
-              <li>{txt}</li>
-            ))}
+            {ft.texts && ft.texts.map((txt) => <li>{txt}</li>)}
           </ul>
         </div>
       ))}
