@@ -6,12 +6,12 @@ import RollingSlideItem from "./RollingSlideItem";
 
 import "swiper/scss";
 import "swiper/scss/autoplay";
-import businessImg1 from "../../../assets/images/about/slide(1).jpg";
-import businessImg2 from "../../../assets/images/about/slide(2).jpg";
-import businessImg3 from "../../../assets/images/about/slide(3).jpg";
-import businessImg4 from "../../../assets/images/about/slide(4).jpg";
-import businessImg5 from "../../../assets/images/about/slide(5).jpg";
-import businessImg6 from "../../../assets/images/about/slide(6).jpg";
+import businessImg1 from "../../../assets/images/page/business(1).jpg";
+import businessImg2 from "../../../assets/images/page/business(2).jpg";
+import businessImg3 from "../../../assets/images/page/business(3).jpg";
+import businessImg4 from "../../../assets/images/page/business(4).jpg";
+import businessImg5 from "../../../assets/images/page/business(5).jpg";
+import businessImg6 from "../../../assets/images/page/business(6).jpg";
 
 function LoopSwiper() {
   const routeBusiness = category.find((item) => item.main.label == "사업소개");
