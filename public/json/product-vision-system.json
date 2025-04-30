@@ -222,6 +222,380 @@
       ]
     }
   ],
+  "thermal-camera": [
+    {
+      "title": "열화상 카메라",
+      "items": [
+        {
+          "name": "MAG91",
+          "code": "MAG91",
+          "features": [
+            {
+              "title": "null",
+              "bullets": [
+                "MAG91 온라인 열화상 카메라는 1280×1024 비냉각 평면 초점 열 센서를 사용하여 고품질의 적외선 영상을 출력합니다.",
+                "1000M 이상의 이더넷을 통해 30Hz의 온도 데이터를 출력하며, 로컬 네트워크 내에서 사용 가능하고, 설치가 간편하며 유연하고 경제적입니다.",
+                "하이크비전, 다화 등 일반적인 NVR과 호환되며, NVR을 통해 영상 재생, 클라우드 제어 및 포커싱 조절이 가능합니다.",
+                "고정 비트스트림, 순수 비디오 스트림, 혼합 스트림의 세 가지 스트리밍 모드를 제공하여 다양한 애플리케이션 및 네트워크 조건에 적합합니다.",
+                "기록된 고정 비트스트림 데이터는 완벽하게 과거 장면을 재현할 수 있으며, 초고해상도 이미지를 출력할 수 있습니다.",
+                "산업용 응용 프로그램, SDK, 이미지 전송 소프트웨어를 제공합니다.",
+                "SDK는 100개 이상의 명령을 포함하며, 열화상 카메라 제어, 이미지 처리 및 온도 측정을 완벽하게 구현할 수 있어 개발자가 쉽게 사용할 수 있습니다.",
+                "인터페이스가 풍부하며 통합이 용이합니다."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MAG-AI",
+          "code": "MAG-AI",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "MAG-AI 시리즈 스마트 열화상 카메라는 스마트 인식을 통합하여 개발이 용이하며, 정밀한 온도 측정을 하나로 통합한 제품입니다. 동시에, Juge Technology는 개발자를 위해 클라우드 서비스, 빅데이터 분석 플랫폼 및 머신러닝 등의 알고리즘 지원도 제공합니다."
+              ]
+            },
+            {
+              "title": "null",
+              "bullets": [
+                "내장된 2T 연산 능력의 사용자 프로그래밍 가능한 엣지 네트워크 가속기를 통해 더욱 복잡한 영상 인식 작업을 수행할 수 있습니다.",
+                "전문적인 정밀 온도 측정을 위해 설계되었으며, 온도 측정 정확도가 높습니다.",
+                "내장된 1080P 가시광 카메라는 통합도가 높습니다.",
+                "적외선 및 가시광 카메라의 정렬 정확도가 높아, 정밀한 위치 보정 계산이 가능합니다."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MAG-RT",
+          "code": "MAG-RT",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "MAG-RT 시리즈 스마트 듀얼 스펙트럼 적외선 열화상 카메라는 적외선과 가시광을 고정밀도로 통합 설계한 제품으로, 안면 인식 알고리즘 및 고성능 소프트웨어 시스템을 탑재하여 얼굴을 정밀하게 식별하고 온도 측정 정확도를 높입니다. 이는 인체 온도 측정, 체온 감지 등 응용에 적합합니다."
+              ]
+            },
+            {
+              "title": "null",
+              "bullets": [
+                "인체 온도 측정을 위한 전용 설계로, 측정 정확도가 높습니다.",
+                "비접촉 외부 온도 센서 없이, 간편한 설치.",
+                "내장 가시광 카메라로 통합도 높음.",
+                "전용 클라이언트 소프트웨어가 함께 제공되며, AI 안면 인식, 인원 수 통계 및 데이터베이스 등의 부가 기능을 포함합니다."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MAG-DTEX",
+          "code": "MAG-DTEX",
+          "features": [
+            {
+              "title": "null",
+              "bullets": [
+                "MAG-DTEX 방폭형 열화상 카메라는 비냉각 평면 초점 적외선 탐지기를 채택하여 고품질 적외선 영상을 출력합니다.",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ZAFR6202-AG",
+          "code": "ZAFR6202-AG",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DT-Usx",
+          "code": "DT-Usx",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DT-S Series",
+          "code": "DT-S-series",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "중파 및 단파 적외선카메라",
+      "items": [
+        {
+          "name": "MAG-F9B 과학용 중파 냉각형 (열화상 카메라)",
+          "code": "MAG-F9B",
+          "thumb": "MAG-F9B-thumb",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MAG-F7XM(L) 공중 냉각형 (열화상 카메라)",
+          "code": "MAG-F7XM(L)",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MAG-F7(E) 과학용 중파 냉각형 (과학등급 중파 냉각형 열화상 카메라)",
+          "code": "MAG-F7(E)",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MW320(640) 중파 비냉각형 (중파 비냉각형 열화상 카메라)",
+          "code": "MW320(640)",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SW640 단파 적외선 카메라",
+          "code": "SW640",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SW640T  단파장 온도 측정 적외선 열화상카메라",
+          "code": "SW640T",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SW320 단파장 온도 측정 적외선 열화상카메라",
+          "code": "SW320",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SW1024L 단파 적외선 카메라 ",
+          "code": "SW1024L",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HT60 고온 열화상 카메라",
+          "code": "HT60",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                "" 
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PS300 적외선 온도계",
+          "code": "PS300",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "레이저빔 프로파일러",
+      "items": [
+        {
+          "name": "MAG-RAY",
+          "code": "MAG-RAY",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "가스 이미징 카메라",
+      "items": [
+        {
+          "name": "GAS41",
+          "code": "GAS41",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GAS31",
+          "code": "GAS31",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MAG-G3",
+          "code": "MAG-G3",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "",
+                ""
+              ]
+            },
+            {
+              "title": "Featrue",
+              "bullets": [
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "spectral-camera": [
     {
       "title": "Spectral Camera",
