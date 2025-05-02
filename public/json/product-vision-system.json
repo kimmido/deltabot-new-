@@ -231,7 +231,7 @@
           "code": "MAG91",
           "features": [
             {
-              "title": "null",
+              "title": "FEATURE",
               "bullets": [
                 "MAG91 온라인 열화상 카메라는 1280×1024 비냉각 평면 초점 열 센서를 사용하여 고품질의 적외선 영상을 출력합니다.",
                 "1000M 이상의 이더넷을 통해 30Hz의 온도 데이터를 출력하며, 로컬 네트워크 내에서 사용 가능하고, 설치가 간편하며 유연하고 경제적입니다.",
@@ -250,13 +250,13 @@
           "code": "MAG-AI",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
                 "MAG-AI 시리즈 스마트 열화상 카메라는 스마트 인식을 통합하여 개발이 용이하며, 정밀한 온도 측정을 하나로 통합한 제품입니다. 동시에, Juge Technology는 개발자를 위해 클라우드 서비스, 빅데이터 분석 플랫폼 및 머신러닝 등의 알고리즘 지원도 제공합니다."
               ]
             },
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "bullets": [
                 "내장된 2T 연산 능력의 사용자 프로그래밍 가능한 엣지 네트워크 가속기를 통해 더욱 복잡한 영상 인식 작업을 수행할 수 있습니다.",
                 "전문적인 정밀 온도 측정을 위해 설계되었으며, 온도 측정 정확도가 높습니다.",
@@ -271,13 +271,13 @@
           "code": "MAG-RT",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
                 "MAG-RT 시리즈 스마트 듀얼 스펙트럼 적외선 열화상 카메라는 적외선과 가시광을 고정밀도로 통합 설계한 제품으로, 안면 인식 알고리즘 및 고성능 소프트웨어 시스템을 탑재하여 얼굴을 정밀하게 식별하고 온도 측정 정확도를 높입니다. 이는 인체 온도 측정, 체온 감지 등 응용에 적합합니다."
               ]
             },
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "bullets": [
                 "인체 온도 측정을 위한 전용 설계로, 측정 정확도가 높습니다.",
                 "비접촉 외부 온도 센서 없이, 간편한 설치.",
@@ -292,10 +292,16 @@
           "code": "MAG-DTEX",
           "features": [
             {
-              "title": "null",
+              "title": "FEATURE",
               "bullets": [
                 "MAG-DTEX 방폭형 열화상 카메라는 비냉각 평면 초점 적외선 탐지기를 채택하여 고품질 적외선 영상을 출력합니다.",
-                ""
+                "저전력 TEC(열전소자) 히터리스 설계를 채택하여 전원을 켜자마자 바로 측정 가능하며, 온도 측정이 더 정밀합니다.",
+                "1000M 이상 대역폭의 네트워크 전송을 사용하여 단일 영역 또는 영역 간 전송이 가능하고, 네트워크 구성에 유연하고 경제적입니다.",
+                "온도 스트림, 순수 비디오 스트림, 혼합 스트림 등 세 가지 전송 방식을 제공하여 다양한 응용 및 네트워크 조건에 적응합니다.",
+                "기록된 온도 데이터 스트림을 재생할 수 있으며, 이력을 완벽하게 복원합니다.",
+                "인터넷/로컬 네트워크를 통해 클라우드 연결을 지원하며, 웹 페이지, 모니터링 센터, 모바일 앱 등에서 즉시 원격 제어가 가능하고, 사설 서버 구축 및 VPN을 통해 내부 모니터링도 실현할 수 있습니다.","이미지 조직 및 압축을 지원하며, 여러 장의 고정밀 온도 측정 디지털 이미지를 동시에 획득할 수 있습니다.",
+                "전문 이미지 응용 프로그램, SDK, 이미지 무선 전송 소프트웨어를 제공합니다.",
+                "SDK는 100개 이상의 함수가 내장되어 있어 열화상 카메라 제어, 이미지 처리 및 온도 측정을 완전하게 실현할 수 있어 개발자가 손쉽게 사용할 수 있습니다."
               ]
             }
           ]
@@ -305,17 +311,23 @@
           "code": "ZAFR6202-AG",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
-                "",
-                ""
+                "ZAFR6202-AG 방폭형 시리즈 온라인 열화상 카메라는 비냉각 평면 초점 적외선 탐지기를 채택하여 고품질 적외선 영상을 출력합니다. TEC(열전소자) 히터리스 설계와 저전력으로 작동하여 전원을 전원을 켠 후 빠르게 시작되고, 온도 측정이 더 정밀합니다."
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
-                "",
-                ""
+                "1000M 이상의 네트워크 전송을 통해 단일 영역, 로컬 네트워크 내에서도 사용할 수 있어 네트워크 구성에 유연하고 경제적입니다.",
+                "하이크비전, 다화 등의 일반적인 NVR과 호환되어, NVR을 통해 영상 재생과 제어, 포커싱이 가능합니다.",
+                "온도 스트림, 순수 비디오 스트림, 혼합 스트림 등 3가지 모드를 제공하여 다양한 용도 및 네트워크 조건에 적응합니다.",
+                "기록된 온도 데이터 스트림을 재생할 수 있어 과거 장면을 복원할 수 있습니다.",
+                "인터넷/로컬망을 통해 클라우드 연결을 지원하며, 모니터링 센터, 모바일 앱 등으로 실시간 모니터링이 가능하고, 사설 서버 구축 및 VPN을 통한 내부 모니터링도 지원합니다.",
+                "이미지 조합 및 스티칭을 지원하며, 다중 이미지로부터 고정밀 온도 정보가 포함된 디지털 이미지를 생성할 수 있습니다.",
+                "전문 이미지 응용 프로그램, SDK, 이미지 분석 소프트웨어를 제공합니다.",
+                "SDK는 60개 이상의 함수가 내장되어 있어 열화상 카메라 제어, 이미지 처리 및 온도 측정을 완전하게 지원하여 개발자가 손쉽게 사용할 수 있습니다.",
+                "인터페이스가 다양하여 통합이 쉽습니다."
               ]
             }
           ]
@@ -325,17 +337,18 @@
           "code": "DT-Usx",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
-                "",
-                ""
+                "DT-USx 시리즈 이중 대역 적외선 온도 측정 열화상 카메라 모듈은 개발이 용이하고, 정밀한 온도 측정을 하나로 통합한 제품입니다. , 개발자를 위해 클라우드 서비스, 빅데이터 분석 플랫폼, 머신러닝 등 알고리즘 지원도 제공합니다."
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
-                "",
-                ""
+                "320×240 / 384×288 비냉각 적외선 탐지기, 1080P 저조도 가시광 센서, 25배 광학 줌을 탑재하여 다양한 환경에 적합",
+                "소형 설계로 통합이 용이함",
+                "하이크비전, 다화 등의 일반적인 NVR과 호환",
+                "전문 애플리케이션, SDK, 이미지 분석 소프트웨어 제공"
               ]
             }
           ]
@@ -345,17 +358,18 @@
           "code": "DT-S-series",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
-                "",
-                ""
+                "DT-S 시리즈 적외선+가시광 이중 대역 온도 측정 시스템은 160×120 / 320×240 / 384×288 비냉각 평면 탐지기를 사용하며, 온도 측정 정밀도는 ±1.5도 또는 ±1.5%에 달합니다."
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
-                "",
-                ""
+                "1080P 저조도 가시광 센서를 채택하였고, 20배 광학 줌을 지원하여 다양한 환경에 적합함.",
+                "내장된 인공지능 알고리즘을 통해, 대상 분류 및 행동 분석 기능을 수행할 수 있음.",
+                "하이크비전, 다화 등 일반적인 NVR과 호환 가능.",
+                "전문 애플리케이션, SDK, 이미지 분석 소프트웨어 제공."
               ]
             }
           ]
@@ -366,19 +380,19 @@
       "title": "중파 및 단파 적외선카메라",
       "items": [
         {
-          "name": "MAG-F9B 과학용 중파 냉각형 (열화상 카메라)",
+          "name": "MAG-F9B (과학용)",
           "code": "MAG-F9B",
           "thumb": "MAG-F9B-thumb",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
                 "",
                 ""
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "",
                 ""
@@ -387,11 +401,12 @@
           ]
         },
         {
-          "name": "MAG-F7XM(L) 공중 냉각형 (열화상 카메라)",
+          "name": "MAG-F7XM(L) (공중)",
           "code": "MAG-F7XM(L)",
+          "thumb": "MAG-F7XM(L)-thumb",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
                 "",
                 ""
@@ -400,11 +415,12 @@
           ]
         },
         {
-          "name": "MAG-F7(E) 과학용 중파 냉각형 (과학등급 중파 냉각형 열화상 카메라)",
+          "name": "MAG-F7(E) (과학용)",
           "code": "MAG-F7(E)",
+          "thumb": "MAG-F7(E)-thumb",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
                 "",
                 ""
@@ -413,11 +429,12 @@
           ]
         },
         {
-          "name": "MW320(640) 중파 비냉각형 (중파 비냉각형 열화상 카메라)",
+          "name": "MW320(640)",
           "code": "MW320(640)",
+          "thumb": "MW320(640)-thumb",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
                 "",
                 ""
@@ -428,9 +445,10 @@
         {
           "name": "SW640 단파 적외선 카메라",
           "code": "SW640",
+          "thumb": "SW640-thumb",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
                 "",
                 ""
@@ -441,9 +459,10 @@
         {
           "name": "SW640T  단파장 온도 측정 적외선 열화상카메라",
           "code": "SW640T",
+          "thumb": "SW640T-thumb",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
                 "",
                 ""
@@ -454,9 +473,10 @@
         {
           "name": "SW320 단파장 온도 측정 적외선 열화상카메라",
           "code": "SW320",
+          "thumb": "SW320-thumb",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
                 "",
                 ""
@@ -467,9 +487,10 @@
         {
           "name": "SW1024L 단파 적외선 카메라 ",
           "code": "SW1024L",
+          "thumb": "SW1024L-thumb",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
                 "",
                 ""
@@ -480,9 +501,10 @@
         {
           "name": "HT60 고온 열화상 카메라",
           "code": "HT60",
+          "thumb": "HT60-thumb",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
                 "",
                 "" 
@@ -495,7 +517,7 @@
           "code": "PS300",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
                 "",
                 ""
@@ -513,17 +535,20 @@
           "code": "MAG-RAY",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
-                "",
-                ""
+                "레이저 스펙트럼 분석기 MAGRay는 중장파 적외선 레이저의 빔 사이즈, 2D/3D 에너지 분포, 발산각, 타원률, 빔의 방향 안정성, 웨이스트 위치 및 크기, 그리고 빔 품질 인자 등을 측정할 수 있습니다."
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
-                "",
-                ""
+                "레이저 스펙트럼 분석기 MAGRay는 다양한 반응 파장 대역을 선택 가능함.",
+                "고다이내믹 범위.",
+                "연속 및 펄스 레이저 모두와 호환 가능.",
+                "렌즈 선택 가능, 원거리 및 근거리 광점 모두 측정 가능.",
+                "실시간으로 광질량 품질의 여러 지표를 측정하며, 데이터 및 영상 출력 지원.",
+                "전문 광질량 분석 소프트웨어 및 다양한 플랫폼용 SDK 제공."
               ]
             }
           ]
@@ -538,17 +563,19 @@
           "code": "GAS41",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
-                "",
-                ""
+                "GAS41 휴대용 가스 화상 영상 장비는 비냉각형 적외선 열화상 기술을 사용하여 빠르게 작동합니다. 피탐지 가스를 검출할 때 보조광이 필요하지 않습니다. 비접촉식 가스 검출이 가능하며, 전기 설비의 전원을 차단하지 않고도 검출할 수 있습니다.",
+                "원거리에서 누출 위치를 정확히 확인할 수 있으며, 가스 검출과 온도 측정을 동시에 수행할 수 있어 기능이 풍부합니다."
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
-                "",
-                ""
+                "비접촉식 가스 탐지, 먼 거리에서도 직접적으로 누출 상황을 보여줄 수 있어 효율이 높습니다.",
+                "수동식 가스 탐지, 보조 광원이 필요 없습니다.",
+                "가스 탐지와 온도 측정 기능을 겸비하여, 다양한 환경에서 사용할 수 있습니다.",
+                "비냉각 기술을 채택, 부피가 작고, 무게가 가볍고, 비용이 저렴하며, 빠른 시동이 가능합니다."
               ]
             }
           ]
@@ -558,14 +585,13 @@
           "code": "GAS31",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
-                "",
-                ""
+                "GAS31 가스 열화상 장비는 비냉각식 적외선 열화상 기술을 채택하였으며, 비접촉식 가스 검출이 가능하고, 전기 장비의 전원을 차단하지 않아도 됩니다. 원거리에서 누출 위치를 정확하게 확인할 수 있습니다."
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "",
                 ""
@@ -578,14 +604,14 @@
           "code": "MAG-G3",
           "features": [
             {
-              "title": "null",
+              "title": "INTRODUCTION",
               "texts": [
                 "",
                 ""
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "",
                 ""
@@ -613,7 +639,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "Spectral Range: 400-1000nm",
                 "900 Spatial pixels Per Lin",
@@ -637,7 +663,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "Spectral Range: 400-1000nm",
                 "1600 Spatial pixels Per Line",
@@ -660,7 +686,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "Spectral Range: 900-1700nm",
                 "320 Spatial pixels Per Line",
@@ -684,7 +710,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "Spectral Range: 900-1700nm",
                 "640 Spatial pixels Per Line",
@@ -707,7 +733,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "Spectral Range: 330-800nm",
                 "1500 Spatial pixels Per Line",
@@ -730,7 +756,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "Spectral Range: 925-1700 nm",
                 "320 Spatial Pixels Per Line",
@@ -752,7 +778,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "Spectral Range: 925-1700 nm",
                 "640 Spatial Pixels Per Line",
@@ -774,7 +800,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "Spectral Range: 420-980 nm",
                 "720 Spatial Pixels Per Line",
@@ -796,7 +822,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "Spectral Range: 1000-2500 nm",
                 "640 Spatial Pixels Per Line",

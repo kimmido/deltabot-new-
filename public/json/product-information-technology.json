@@ -16,7 +16,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "통합 NVIDIA® H100 GPU를 갖춘 고밀도 1U GPU 시스템",
                 "NVIDIA Grace Hopper™ 슈퍼칩 (Grace CPU와 H100 GPU)",
@@ -45,7 +45,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "5세대/4세대 Intel® Xeon® 확장 가능 프로세서 지원",
                 "32 DIMM 슬롯, 최대 8TB: 32x 256 GB DRAM, 메모리 유형: 5600MTs ECC DDR5",
@@ -143,7 +143,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "머신러닝, AI 워크플로우 및 그래픽 성능을 요하는 응용 프로그램을 위한 강력한 워크스테이션",
                 "산업용 등급: 충격/진동 저항, 24시간 연중무휴, 장기 공급 보장",
@@ -165,7 +165,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "듀얼 Intel® Xeon® 16코어 프로세서 E5-2600 V3 패밀리",
                 "대용량 메모리, 유연한 I/O 및 스토리지 옵션",
@@ -185,7 +185,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "듀얼 소켓 1세대/2세대 Intel® Xeon® 확장 가능 프로세서",
                 "NEBS-3/ETSI 인증을 충족하도록 설계",
@@ -206,7 +206,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "싱글 소켓 4세대/5세대 Intel® Xeon® SP & AMD EPYC 9004/9005 프로세서",
                 "6x 핫스왑, 툴리스, U2/U3 SATA/NVMe SSDs",
@@ -256,7 +256,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "ARINC 600 4MCU, 전면 이동식 스토리지가 있는 에어플로우 스루",
                 "Intel® i7-1370PRE, 64GB DDR5 IBECC RAM이 있는 14코어",
@@ -292,7 +292,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "ARINC 600 4MCU, 전면 이동식 스토리지가 있는 공기 흐름형",
                 "Intel® D-1539, 32GB DDR4 ECC RAM이 있는 8코어 프로세서",
@@ -327,7 +327,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "SWaP 최적화된 임베디드 컴퓨터",
                 "SOSA 3U VPX 플러그인 카드",
@@ -361,7 +361,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "견고하고 확장된 온도, SWaP-C 최적화 컴퓨터",
                 "소형 폼 팩터 272mm x 202mm x 100mm(하우징만 해당)",
@@ -411,7 +411,7 @@
               ]
             },
             {
-              "title": "Featrue",
+              "title": "FEATURE",
               "bullets": [
                 "견고하고, 팬리스, IP67, 차량용 애플리케이션용 게이트웨이 컴퓨팅 플랫폼",
                 "Intel® Atom™ E3845 프로세서와 스토리지 확장 옵션이 있는 64GB eMMC",
