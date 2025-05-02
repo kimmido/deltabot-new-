@@ -4,53 +4,88 @@
   --color-highlight: #16408d;
   --color-active: #1d56bc;
   --color-point-background: #f2f7ff;
+  --gradient: linear-gradient(
+    to right,
+    rgba(124, 166, 243, 0.3) 0%,
+    rgba(124, 166, 243, 0.2) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
-/* 자동화 페이지 테마 */
-.Business[data-theme="lightBlue"] {
+/* 스카이 블루 테마 */
+.Business[data-theme="sky-blue"] {
   --color-point: #19b0fb;
-  --color-highlight: #19b0fb;
-  --color-active: #1d56bc;
+  --color-highlight: rgb(25, 176, 251);
+  --color-active: rgb(25, 176, 251);
+  --gradient: linear-gradient(
+    to right,
+    rgba(25, 176, 251, 0.3) 0%,
+    rgba(25, 176, 251, 0.2) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 /* 청록 페이지 테마 */
 .Business[data-theme="vivid-cyan"] {
   --color-highlight: #0099cc;
-  --color-point: #0099cc;
-  --color-active: #0099cc;
+  --color-point: rgb(0, 153, 204);
+  --color-active: rgb(0, 153, 204);
+  --gradient: linear-gradient(
+    to right,
+    rgba(0, 153, 204, 0.3) 0%,
+    rgba(0, 153, 204, 0.2) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 /* 체리핑크 테마 */
 .Business[data-theme="cherry-pink"] {
   --color-active: #fc3a64;
   --color-point: #fc3a64;
-  --color-highlight: #fc3a64;
+  --color-highlight: rgb(252, 58, 100);
+  --gradient: linear-gradient(
+    to right,
+    rgba(252, 58, 100, 0.3) 0%,
+    rgba(252, 58, 100, 0.2) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 /* 로얄블루 테마 */
 .Business[data-theme="royal-blue"] {
   --color-active: #0052f2;
   --color-point: #0052f2;
-  --color-highlight: #0052f2;
+  --color-highlight: rgb(0, 82, 242);
+  --gradient: linear-gradient(
+    to right,
+    rgba(0, 82, 242, 0.3) 0%,
+    rgba(0, 82, 242, 0.2) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 /* 체리핑크 테마 */
 .Business[data-theme="blue-purple"] {
   --color-active: #3e30f4;
   --color-point: #3e30f4;
-  --color-highlight: #3e30f4;
+  --color-highlight: rgb(62, 48, 244);
+  --gradient: linear-gradient(
+    to right,
+    rgba(62, 48, 244, 0.3) 0%,
+    rgba(62, 48, 244, 0.2) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 /* 체리핑크 테마 */
 .Business[data-theme="teal-blue"] {
   --color-active: #49919d;
   --color-point: #49919d;
-  --color-highlight: #49919d;
-}
-
-/* 보라 테마 */
-.Business[data-theme="purple"] {
-  --color-point: #8448a0;
-  --color-active: #8448a0;
-  --color-point-background: #e0c4ec;
+  --color-highlight: rgb(73, 145, 157);
+  --gradient: linear-gradient(
+    to right,
+    rgba(73, 145, 157, 0.3) 0%,
+    rgba(73, 145, 157, 0.2) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }

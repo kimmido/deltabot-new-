@@ -356,34 +356,41 @@
 
       &::before {
         @include pseudoDefault();
-        background: linear-gradient(
-          to right,
-          rgba(64, 153, 255, 0.3) 0%,
-          rgba(4, 153, 255, 0.3) 50%,
-          rgba(0, 0, 0, 0) 100%
-        );
+        background: var(--gradient);
         @include fullContent();
         width: 100vw;
         z-index: 0;
       }
 
       .catalog__title {
-        padding: 7rem 1rem 1rem;
-        background-size: contain;
+        position: relative;
+        padding: 2rem 1rem 25vw;
+        background-size: 70%;
         background-repeat: no-repeat;
-        background-position: bottom right;
-        z-index: 10;
+        background-position: bottom center;
+        text-align: center;
+
+        @include respondTo(tablet-s) {
+          padding: 4rem 1rem 5rem;
+          background-size: contain;
+          background-position: bottom right;
+          text-align: left;
+        }
 
         @include respondTo(tablet-l) {
-          padding: 6rem 3rem;
+          padding: 6rem 0;
         }
 
         span {
           display: block;
           font-size: $font-size-con-title-sm;
+
           &.s {
-            color: $color-text-light;
-            font-size: $font-size-section-title-lg;
+            // color: $color-text-light;
+            opacity: 50%;
+            font-size: $font-size-con-title-xs;
+            font-size: max(1.5rem, 2.2vw);
+            font-weight: 400;
           }
 
           @include respondTo(tablet-s) {
@@ -391,6 +398,15 @@
           }
 
           @include respondTo(tablet-l) {
+            &.s {
+              font-size: $font-size-section-title-sm;
+            }
+            &.l {
+              font-size: $font-size-section-title-lg;
+            }
+          }
+
+          @include respondTo(pc-s) {
             &.s {
               font-size: $font-size-section-title-md;
             }
