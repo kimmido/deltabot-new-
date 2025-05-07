@@ -21,8 +21,8 @@
     .Modal__content {
       overflow-y: scroll;
       height: 100%;
-      // padding: $PADDING_SM $PADDING_SM 6.4rem;
-      padding: $PADDING_SM;
+      padding: $PADDING_SM $PADDING_SM 6.4rem;
+      // padding: $PADDING_SM;
 
       @include respondTo(tablet-l) {
         // padding: $PADDING_MD $PADDING_MD 8.2rem;
