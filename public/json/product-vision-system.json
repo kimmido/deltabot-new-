@@ -443,7 +443,7 @@
           ]
         },
         {
-          "name": "SW640 단파 적외선 카메라",
+          "name": "SW640",
           "code": "SW640",
           "thumb": "SW640-thumb",
           "features": [
@@ -457,7 +457,7 @@
           ]
         },
         {
-          "name": "SW640T  단파장 온도 측정 적외선 열화상카메라",
+          "name": "SW640T",
           "code": "SW640T",
           "thumb": "SW640T-thumb",
           "features": [
@@ -471,7 +471,7 @@
           ]
         },
         {
-          "name": "SW320 단파장 온도 측정 적외선 열화상카메라",
+          "name": "SW320",
           "code": "SW320",
           "thumb": "SW320-thumb",
           "features": [
@@ -485,7 +485,7 @@
           ]
         },
         {
-          "name": "SW1024L 단파 적외선 카메라 ",
+          "name": "SW1024L",
           "code": "SW1024L",
           "thumb": "SW1024L-thumb",
           "features": [
@@ -499,7 +499,7 @@
           ]
         },
         {
-          "name": "HT60 고온 열화상 카메라",
+          "name": "HT60",
           "code": "HT60",
           "thumb": "HT60-thumb",
           "features": [
@@ -515,6 +515,7 @@
         {
           "name": "PS300 적외선 온도계",
           "code": "PS300",
+          "thumb": "PS300-thumb",
           "features": [
             {
               "title": "INTRODUCTION",
