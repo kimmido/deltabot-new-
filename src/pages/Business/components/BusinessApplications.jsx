@@ -18,6 +18,7 @@ function BusinessApplications({ data }) {
                 />
               ) : (
                 <VideoDefault
+                  key={app.video}
                   src={`/videos/sub/${app.video}`}
                   poster={`/images/video_poster/${app.poster}`}
                 />
