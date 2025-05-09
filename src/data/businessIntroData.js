@@ -10,7 +10,7 @@ const businessIntroData = {
       images: [`default`],
       features: [
         {
-          icon: 'icon_shield.png',
+          icon: 'icon_shield-sky-blue.png',
           title: '안전한 작업 환경',
           texts: [
             "충돌 감지 및 자동 정지",
@@ -20,7 +20,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_computer_gear.png',
+          icon: 'icon_dashboard_ui-sky-blue.png',
           title: '쉬운 사용성과 빠른 투입',
           texts: [
             "간단한 드래그 앤 드롭 방식",
@@ -30,7 +30,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_install.png',
+          icon: 'icon_install-sky-blue.png',
           title: '유연한 설치 & 공간 활용',
           texts: [
             "경량 컴팩트 구조",
@@ -40,7 +40,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_money.png',
+          icon: 'icon_money-sky-blue.png',
           title: '비용 절감 & 고효율 투자',
           texts: [
             "단순 반복 작업 자동화",
@@ -103,7 +103,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: '.png',
+          icon: 'icon_robot_arm-vivid-cyan.png',
           title: '뛰어난 확장성',
           texts: [
             "다양한 장비와 완벽 호환",
