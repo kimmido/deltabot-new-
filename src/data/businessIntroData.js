@@ -288,19 +288,19 @@ const businessIntroData = {
       ],
       applications: [
         {
-          video: 'robot-application(1).mp4',
-          poster: 'robot-application(1).jpg',
-          title: '',
+          video: 'deltarobot-application(1).mp4',
+          poster: 'deltarobot-application(1).jpg',
+          title: '물티슈 뚜껑 부착기',
         },
         {
-          video: 'robot-application(2).mp4',
-          poster: 'robot-application(2).jpg',
-          title: '',
+          video: 'deltarobot-application(2).mp4',
+          poster: 'deltarobot-application(2).jpg',
+          title: '초코파이 자동 적재 솔루션',
         },
       ],
     },
     
-    // 케이스패커
+    // 케이스 패커 -> 지능형 로봇
     "case-packer": {
       theme: 'blue-purple',
       title: '차세대 포장 자동화의 완성형 솔루션',
@@ -354,14 +354,14 @@ const businessIntroData = {
       ],
       applications: [
         {
-          video: 'robot-application(1).mp4',
-          poster: 'robot-application(1).jpg',
-          title: '',
+          video: 'case-packer-application(1).mp4',
+          poster: 'case-packer-application(1).jpg',
+          title: '보존 야채 케이스 포장',
         },
         {
-          video: 'robot-application(2).mp4',
-          poster: 'robot-application(2).jpg',
-          title: '',
+          video: 'case-packer-application(2).mp4',
+          poster: 'case-packer-application(2).jpg',
+          title: 'PCB 보드 수집 및 적재 워크스테이션',
         },
       ],
     },
