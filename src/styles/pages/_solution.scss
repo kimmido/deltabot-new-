@@ -1,11 +1,50 @@
 @use "sass:color";
 
 .Automation {
-  .cnt--img {
+  .cnt-emph,
+  .cnt-desc,
+  .sec__title {
+    text-align: center;
+  }
+
+  .cnt-emph {
     display: block;
-    margin: 0 auto;
-    width: auto;
-    max-width: 100%;
+    margin-top: min(10vw, 130px);
+    font-size: $font-size-display-xs;
+
+    @include respondTo(tablet-l) {
+      font-size: $font-size-display-md;
+    }
+  }
+
+  .cnt-desc {
+    font-size: 1.7rem;
+    margin: min(9.4vw, 60px) auto 0;
+    max-width: 1100px;
+
+    @include respondTo(tablet-l) {
+      font-size: 2.3rem;
+      line-height: 1.5;
+    }
+  }
+
+  section {
+    margin-top: min(10vw, 130px);
+
+    .sec__title {
+      margin-bottom: min(9.4vw, 60px);
+      font-size: $font-size-section-title-sm;
+      @include respondTo(tablet-l) {
+        font-size: $font-size-section-title-md;
+      }
+    }
+
+    .sec-img {
+      display: block;
+      margin: 0 auto;
+      width: auto;
+      max-width: 100%;
+    }
   }
 }
 
@@ -72,171 +111,175 @@
   }
 }
 
-.artBtm .short {
-  display: flex;
-  justify-content: space-between;
-  gap: min(2rem, 80px);
-  padding: min(2rem, 80px) 0 1.2rem;
+.AutomationVideos {
+  .short {
+    @include flexBox(column, min(2rem, 80px), stretch, space-between);
+    padding: min(2rem, 80px) 0 1.2rem;
 
-  .short_l,
-  .short_r {
-    flex: 1 1 50%;
-    align-content: center;
-  }
-
-  .short_l {
-    .video {
-      overflow: hidden;
-      aspect-ratio: 16 / 9;
-      width: 100%;
-      // border-radius: $radius-card-lg;
-    }
-  }
-
-  .short_r {
-    .texts {
-      h3 {
-        position: relative;
-        margin-bottom: 13px;
-        padding: 12px 18px;
-        font-size: $font-size-con-title-xs;
-        font-weight: 700;
-        color: #333;
-        border-bottom: 1px solid $color-border;
-
-        @include respondTo(tablet-l) {
-          font-size: 2.5rem;
-        }
-
-        &::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 50%;
-          width: 3px;
-          height: min(2.2em, 21px);
-          margin-top: calc(min(1.1em, 10.5px) * -1);
-          background-color: $color-point;
-        }
-      }
-
-      p {
-        margin-bottom: min(1.2rem, 40px);
-        padding: 0 6px;
-        color: $color-gray-700;
-        font-size: var(--font-responsive-17to13);
-        line-height: 1.8;
-      }
+    @include respondTo(tablet-s) {
+      flex-direction: row;
     }
 
-    .effect-list,
-    .step-list {
-      display: flex;
-      gap: min(0.4rem, 8px);
-      text-align: center;
-      font-size: var(--font-responsive-15to12);
+    .short_l,
+    .short_r {
+      flex: 1 1 50%;
+      align-content: center;
     }
 
-    .effect-list {
-      justify-content: space-between;
-      margin-bottom: 14px;
-
-      li {
-        flex: 1;
-        padding: 0 5px;
-        margin-bottom: 15px;
-        word-break: keep-all;
-      }
-
-      .icon {
-        margin-bottom: 8px;
-        display: inline-block;
-        width: 1.5rem;
-        height: 1.5rem;
+    .short_l {
+      .video {
         overflow: hidden;
-      }
-
-      h5 {
-        color: #333;
-        font-weight: 400;
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        // border-radius: $radius-card-lg;
       }
     }
 
-    .step-list {
-      justify-content: center;
-
-      li {
-        width: 19%;
-        position: relative;
-        display: inline-block;
-
-        &::before {
-          margin-left: -15px;
-          content: "";
-          position: absolute;
-          left: calc(100% + 6px);
-          top: 23px;
-          width: 25px;
-          height: 18px;
-          background: url(@assets/images/solution/next12.png) center center
-            no-repeat;
-          -webkit-background-size: cover;
-          background-size: cover;
-        }
-
-        &:last-child::before {
-          display: none;
-        }
-
-        .step__icon-box {
+    .short_r {
+      .texts {
+        h3 {
           position: relative;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 65px;
-          height: 65px;
-          margin: 0 auto;
+          margin-bottom: 13px;
+          padding: 12px 18px;
+          font-size: $font-size-con-title-xs;
+          font-weight: 700;
+          color: #333;
+          border-bottom: 1px solid $color-border;
+
+          @include respondTo(tablet-l) {
+            font-size: 2.5rem;
+          }
 
           &::before {
             content: "";
             position: absolute;
-            left: 2px;
-            top: 2px;
-            right: 2px;
-            bottom: 2px;
-            border: 1px solid $color-blue-500;
-            border-radius: 50%;
-          }
-
-          img {
-            width: 30px;
-            height: 30px;
-          }
-
-          p {
-            color: $color-gray-200;
-            font-weight: 700;
+            left: 0;
+            top: 50%;
+            width: 3px;
+            height: min(2.2em, 21px);
+            margin-top: calc(min(1.1em, 10.5px) * -1);
+            background-color: $color-point;
           }
         }
 
-        .step__title {
-          color: #000000;
-          margin-top: 10px;
-          padding-bottom: 5px;
-
-          &::after {
-            @include pseudoDefault($color-blue-500);
-            left: 50%;
-            top: 100%;
-            width: 20px;
-            height: 1px;
-            margin-left: -10px;
-          }
+        p {
+          margin-bottom: min(1.2rem, 40px);
+          padding: 0 6px;
+          color: $color-gray-700;
+          font-size: var(--font-responsive-17to13);
+          line-height: 1.8;
         }
       }
-    } // step-list
-  } // short_r
+
+      .effect-list,
+      .step-list {
+        display: flex;
+        gap: min(0.4rem, 8px);
+        text-align: center;
+        font-size: var(--font-responsive-15to12);
+      }
+
+      .effect-list {
+        justify-content: space-between;
+        margin-bottom: 14px;
+
+        li {
+          flex: 1;
+          padding: 0 5px;
+          margin-bottom: 15px;
+          word-break: keep-all;
+        }
+
+        .icon-box {
+          margin-bottom: 8px;
+          display: inline-block;
+          width: min(10vw, 64px);
+          aspect-ratio: 1 / 1;
+          overflow: hidden;
+        }
+
+        h5 {
+          color: #333;
+          font-weight: 400;
+        }
+      }
+
+      .step-list {
+        justify-content: center;
+
+        li {
+          width: 19%;
+          position: relative;
+          display: inline-block;
+
+          &::before {
+            margin-left: -15px;
+            content: "";
+            position: absolute;
+            left: calc(100% + 6px);
+            top: 23px;
+            width: 25px;
+            height: 18px;
+            background: url(@assets/images/solution/next12.png) center center
+              no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+          }
+
+          &:last-child::before {
+            display: none;
+          }
+
+          .step__icon-box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 65px;
+            height: 65px;
+            margin: 0 auto;
+
+            &::before {
+              content: "";
+              position: absolute;
+              left: 2px;
+              top: 2px;
+              right: 2px;
+              bottom: 2px;
+              border: 1px solid $color-blue-500;
+              border-radius: 50%;
+            }
+
+            img {
+              width: 30px;
+              height: 30px;
+            }
+
+            p {
+              color: $color-gray-200;
+              font-weight: 700;
+            }
+          }
+
+          .step__title {
+            color: #000000;
+            margin-top: 10px;
+            padding-bottom: 5px;
+
+            &::after {
+              @include pseudoDefault($color-blue-500);
+              left: 50%;
+              top: 100%;
+              width: 20px;
+              height: 1px;
+              margin-left: -10px;
+            }
+          }
+        }
+      } // step-list
+    } // short_r
+  }
 }
 
 .Applications {

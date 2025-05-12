@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function StepFlow() {
   return (
     <section className="StepFlow">
-      <h3>자동화 공정</h3>
+      <h3 className="sec__title">자동화 공정</h3>
       <div className="flow-wrapper">
         <div className="step">
           <i className="fas fa-box-open"></i>
