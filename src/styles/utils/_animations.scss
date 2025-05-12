@@ -1,0 +1,62 @@
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(6px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.3;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// aos 커스텀 애니메이션
+[data-aos="fade-up-custom"] {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 60%, 0);
+  -ms-transform: translate3d(0, 60%, 0);
+  transform: translate3d(0, 60%, 0);
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+[data-aos="zoom-out-custom"] {
+  opacity: 0;
+  -webkit-transform: scale3d(1.5, 1.5, 1.5);
+  -ms-transform: scale3d(1.5, 1.5, 1.5);
+  transform: scale3d(1.5, 1.5, 1.5);
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
