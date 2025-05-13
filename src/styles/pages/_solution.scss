@@ -69,8 +69,9 @@
     position: relative;
 
     svg {
-      font-size: 48px;
-      color: #2b6cb0;
+      width: 60px;
+      height: 60px;
+      fill: #2b6cb0;
       animation: pulse 2s infinite;
     }
     .step-title {
@@ -115,8 +116,10 @@
   .short {
     @include flexBox(column, min(2rem, 80px), stretch, space-between);
     padding: min(2rem, 80px) 0 1.2rem;
+    margin-top: min(10vw, 74px);
 
     @include respondTo(tablet-s) {
+      margin-top: min(8vw, 74px);
       flex-direction: row;
     }
 

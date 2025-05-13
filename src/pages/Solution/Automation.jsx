@@ -9,6 +9,40 @@ import StepFlow from "./components/StepFlow";
 import Applications from "./components/Applications";
 
 function Automation() {
+  const data = {
+    steps: [
+      {
+        iconName: "icon_conveyor",
+        title: "원자재 투입",
+        text: "컨베어 이송",
+      },
+      {
+        iconName: "icon_robot_face",
+        title: "AMR / AGV",
+        text: "바퀴 달린 로봇 이송",
+      },
+      {
+        iconName: "icon_robot_arm",
+        title: "로봇작업",
+        text: "협동 로봇 Pick & Place",
+      },
+      {
+        iconName: "icon_gears_two",
+        title: "조립 / 작업",
+        text: "다관절 및 협동 로봇",
+      },
+      {
+        iconName: "icon_eye_solid",
+        title: "비전 검사",
+        text: "제품 상태 판정",
+      },
+      {
+        iconName: "icon_industry",
+        title: "출고",
+        text: "팔레타이징 다관절 로봇",
+      },
+    ],
+  };
   return (
     <div className="Automation">
       <div className="container">
@@ -40,7 +74,7 @@ function Automation() {
           <h3 className="sec__title">로봇 자동화 프로세스</h3>
           <img className="sec-img" src={img3} alt="로봇 자동화의 이점" />
         </section>
-        <StepFlow />
+        <StepFlow steps={data.steps} />
         <AutomationVideos />
         <Applications />
       </div>
