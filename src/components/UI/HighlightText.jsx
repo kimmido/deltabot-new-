@@ -6,9 +6,9 @@ export const HighlightText = ({ text, keyChar }) => {
     <>
       {parts.map((part, index) =>
         index % 2 !== 0 ? (
-          <strong key={index} className="highlight">
+          <span key={index} className="highlight">
             {part}
-          </strong>
+          </span>
         ) : (
           part
         )
