@@ -1,10 +1,10 @@
 import React from "react";
 import SvgrComponent from "../../../components/icons/SvgrComponent";
 
-function StepFlow({ steps }) {
+function StepFlow({ title, steps }) {
   return (
     <section className="StepFlow">
-      <h3 className="sec__title">자동화 공정</h3>
+      <h3 className="sec__title">{title}</h3>
       <div className="flow-wrapper">
         {steps.map((step, idx) => (
           <React.Fragment key={step.title}>

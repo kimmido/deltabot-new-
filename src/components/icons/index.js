@@ -29,3 +29,7 @@ export { default as icon_robot_face } from './icon_robot_face.svg?react';
 export { default as icon_eye_solid } from './icon_eye_solid.svg?react';
 export { default as icon_gears_two } from './icon_gears_two.svg?react';
 export { default as icon_industry } from './icon_industry.svg?react';
+export { default as icon_camera_solid } from './icon_camera_solid.svg?react';
+export { default as icon_lightbulb_solid } from './icon_lightbulb_solid.svg?react';
+export { default as icon_microchip_solid } from './icon_microchip_solid.svg?react';
+export { default as icon_brain_solid } from './icon_brain_solid.svg?react';

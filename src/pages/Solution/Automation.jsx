@@ -75,7 +75,7 @@ function Automation() {
           <h3 className="sec__title">로봇 자동화 프로세스</h3>
           <img className="sec-img" src={img3} alt="로봇 자동화의 이점" />
         </section>
-        <StepFlow steps={data.steps} />
+        <StepFlow title="자동화 공정" steps={data.steps} />
         <AutomationVideos />
         <Applications />
       </div>
