@@ -42,7 +42,7 @@ function VideoSection() {
     <section className="VideoSection">
       <div className="container">
         <h2 className="section_title">작동 중! 델타봇의 현장 스케치</h2>
-        <ExpandableVideoBlock key={idx} videos={videos} />
+        <ExpandableVideoBlock videos={videos} />
       </div>
     </section>
   );

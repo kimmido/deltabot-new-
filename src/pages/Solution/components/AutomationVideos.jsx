@@ -5,7 +5,7 @@ function AutomationVideos() {
   return (
     <section className="AutomationVideos">
       {videos.map((item) => (
-        <article className="short">
+        <article className="short" key={item.title}>
           <div className="short_l i1">
             <VideoDefault src={item.videoSrc} />
             {/* <iframe
@@ -36,7 +36,7 @@ function AutomationVideos() {
             </ul>
             <ul className="step-list">
               {item.steps.map((step, idx) => (
-                <li>
+                <li key={step.title}>
                   <div className="step__icon-box">
                     <img
                       src={`/images/icon/${step.iconName}.png`}
@@ -44,7 +44,7 @@ function AutomationVideos() {
                     />
                     <p>0{idx + 1}</p>
                   </div>
-                  <p class="step__title">{step.title}</p>
+                  <p className="step__title">{step.title}</p>
                 </li>
               ))}
             </ul>
