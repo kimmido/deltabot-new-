@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import img1 from "../../../assets/images/solution/automation-app(1).jpg";
 import img2 from "../../../assets/images/solution/automation-app(2).jpg";
 import img3 from "../../../assets/images/solution/automation-app(3).jpg";
@@ -9,9 +9,35 @@ import img7 from "../../../assets/images/solution/automation-app(7).jpg";
 import img8 from "../../../assets/images/solution/automation-app(8).jpg";
 
 function Applications() {
+  const targetRef = useRef(null);
+
+  useEffect(() => {
+    const target = targetRef.current;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          root.style.setProperty("--bg-color", "#e4e4e4");
+        } else {
+          root.style.setProperty("--bg-color", "#fff");
+        }
+      },
+      {
+        root: null, // viewport
+        threshold: 0.1, // 얼마나 보이면 감지? 0.1 == 10%
+      }
+    );
+
+    if (target) observer.observe(target); // target을 감시해.
+
+    return () => {
+      if (target) observer.unobserve(target); // 감시 해제.
+    };
+  });
+
   return (
-    <section className="Applications">
-      <h3 className="sec__title">Applications</h3>
+    <section className="Applications" ref={targetRef}>
+      <h3 className="sec__title">APPLICATIONS</h3>
       <ul>
         {data.map((data) => (
           <li key={data.title} className="app__item">
@@ -23,7 +49,7 @@ function Applications() {
                 data-aos-duration="800"
                 data-aos-delay="200"
                 data-aos-easing="linear"
-                data-aos-anchor-placement="center-bottom"
+                data-aos-anchor-placement="top-center"
               />
             </div>
             <div
@@ -32,7 +58,7 @@ function Applications() {
               data-aos-duration="800"
               data-aos-delay="190"
               data-aos-easing="linear"
-              data-aos-anchor-placement="center-bottom"
+              data-aos-anchor-placement="top-center"
             >
               <h4>
                 <span>{data.title}</span>

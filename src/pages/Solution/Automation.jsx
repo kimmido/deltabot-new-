@@ -1,12 +1,12 @@
 import React from "react";
 import PageHeading from "../../components/UI/PageHeading";
 import AutomationVideos from "./components/AutomationVideos";
+import StepFlow from "./components/StepFlow";
+import Applications from "./components/Applications";
 
 import img1 from "../../assets/images/solution/automation(1).svg";
 import img2 from "../../assets/images/solution/automation(2).svg";
 import img3 from "../../assets/images/solution/automation(3).jpg";
-import StepFlow from "./components/StepFlow";
-import Applications from "./components/Applications";
 
 function Automation() {
   const data = {
@@ -43,8 +43,9 @@ function Automation() {
       },
     ],
   };
+
   return (
-    <div className="Automation">
+    <div className="Automation solution-wrapper">
       <div className="container">
         <PageHeading title="automation" currentPath="automation" />
         <strong className="cnt-emph">공정에 최적화된 로봇 자동화 솔루션</strong>
