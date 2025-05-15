@@ -6,6 +6,7 @@ export { default as IconLightBulb } from "./IconLightBulb";
 export { default as IconReport } from "./IconReport";
 export { default as IconPlayBtn } from "./IconPlayBtn";
 
+export { default as icon_menu_bars } from './icon_menu_bars.svg?react';
 export { default as icon_cpu } from './icon_cpu.svg?react';
 export { default as icon_computer_graphics } from './icon_computer_graphics.svg?react';
 export { default as icon_io_interface } from './icon_io_interface.svg?react';
@@ -33,3 +34,7 @@ export { default as icon_camera_solid } from './icon_camera_solid.svg?react';
 export { default as icon_lightbulb_solid } from './icon_lightbulb_solid.svg?react';
 export { default as icon_microchip_solid } from './icon_microchip_solid.svg?react';
 export { default as icon_brain_solid } from './icon_brain_solid.svg?react';
+export { default as icon_thermometer } from './icon_thermometer.svg?react';
+export { default as icon_sunglasses } from './icon_sunglasses.svg?react';
+export { default as icon_lightning } from './icon_lightning.svg?react';
+export { default as icon_extinguisher } from './icon_extinguisher.svg?react';

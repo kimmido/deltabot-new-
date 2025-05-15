@@ -65,7 +65,7 @@ function ThermalImagingSection() {
 
       <h3>열화상카메라의 종류</h3>
 
-      <section>
+      <section className="container">
         <h4 className="sec__title">1.중파 및 단파 열화상카메라</h4>
         <div className="flex-box">
           <img className="sec-img" src={img3_1} alt="열화상 카메라 종류" />
@@ -73,7 +73,7 @@ function ThermalImagingSection() {
         </div>
       </section>
 
-      <section>
+      <section className="container-m">
         <h4 className="sec__title">2.레이저 열화상카메라</h4>
         <img className="sec-img" src={img4} alt="열화상 카메라 종류" />
       </section>

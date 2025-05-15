@@ -116,7 +116,7 @@ const Nav = () => {
           {isMobileMenuOpen ? (
             <SvgrComponents name="icon_close" />
           ) : (
-            <SvgrComponents name="icon_menu_hamburger" />
+            <SvgrComponents name="icon_menu_bars" />
           )}
         </button>
         <div className="mobile__list" ref={mobileMenu}>

@@ -1,5 +1,6 @@
 @use "sass:color";
 
+// 솔루션 공통 요소 스타일
 .solution-wrapper {
   .cnt-emph,
   // .cnt-desc,
@@ -50,8 +51,7 @@
     .sec-img {
       display: block;
       margin: 0 auto;
-      // width: auto;
-      max-width: 900px;
+      // max-width: 900px;
     }
   }
 
@@ -120,6 +120,7 @@
     }
   }
 
+  // 자동화 솔루션 페이지
   &.Automation {
     .AutomationVideos {
       .short {
@@ -367,9 +368,23 @@
     }
   }
 
+  // 비전 솔루션 페이지
   &.Vision {
+    // 머신비전 카메라
     .MachineVisionSection {
       background-color: $color-gray-100;
+    }
+
+    // 열화상 카메라
+    .ThermalImagingSection {
+      .flex-box {
+        display: flex;
+        flex-direction: column;
+
+        @include respondTo(tablet-l) {
+          flex-direction: row;
+        }
+      }
     }
   }
 }
