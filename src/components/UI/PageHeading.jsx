@@ -27,9 +27,7 @@ function PageHeading({ title, currentPath }) {
   }, [videoLoaded]);
 
   const formatWord = (word) => {
-    return word
-      .replace(/-/g, " ") // '-'를 ' '로 변경
-      .replace(/\b\w/g, (char) => char.toUpperCase()); // 각 단어의 첫 글자를 대문자로 변환
+    return word.replace(/\b\w/g, (char) => char.toUpperCase()); // 각 단어의 첫 글자를 대문자로 변환
   };
 
   useEffect(() => {
