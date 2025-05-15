@@ -107,50 +107,6 @@
     }
   } // BusinessIntroSection
 
-  // 특징 아이콘 리스트
-  .CircleIconList {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6vw;
-    margin: 20px 30px;
-
-    @include respondTo(tablet-s) {
-      grid-template-columns: repeat(6, 1fr);
-      gap: 4%;
-    }
-    @include respondTo(tablet-l) {
-      margin: $spacing-content-md;
-    }
-    @include respondTo(pc-l) {
-      margin: $spacing-content-xl 102px;
-      gap: 45px;
-    }
-
-    .features-item {
-      text-align: center;
-
-      .icon-box {
-        aspect-ratio: 1;
-        background-color: var(--color-point-background);
-        border-radius: 50%;
-        align-content: center;
-
-        svg {
-          width: 80%;
-          height: 80%;
-        }
-      }
-      p {
-        margin: $spacing-content-xs 1em 0;
-
-        @include respondTo(tablet-l) {
-          margin: $spacing-content-sm 1.3em 0;
-          font-size: $font-size-lg;
-        }
-      }
-    }
-  }
-
   // 특징 카드리스트
   .FeatureCards {
     display: grid;

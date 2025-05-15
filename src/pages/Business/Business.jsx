@@ -16,7 +16,7 @@ function Business() {
     <div className="Business">
       <QuoteArea data={data} />
       <BusinessIntroSection data={data} currentTab={currentTab} />
-      <CircleIconList data={data} />
+      <CircleIconList features={data.features} />
       <BusinessApplications data={data} />
       <ProductCatalog
         currentTab={currentTab}

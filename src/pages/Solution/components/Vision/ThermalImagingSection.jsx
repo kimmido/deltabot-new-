@@ -4,8 +4,32 @@ import img2 from "../../../../assets/images/solution/thermal-cnt2.jpg";
 import img3_1 from "../../../../assets/images/solution/thermal-cnt3-1.svg";
 import img3_2 from "../../../../assets/images/solution/thermal-cnt3-2.svg";
 import img4 from "../../../../assets/images/solution/thermal-cnt4.svg";
+import CircleIconList from "../../../Business/components/CircleIconList";
 
 function ThermalImagingSection() {
+  const features = [
+    {
+      icon: "icon_thermometer",
+      text: "온도감지 기능",
+    },
+    {
+      icon: "icon_sunglasses",
+      text: "어두운곳 시야확보",
+    },
+    {
+      icon: "icon_lightning",
+      text: "설비 고장 예측 및 예방",
+    },
+    {
+      icon: "icon_extinguisher",
+      text: "화재 전조 파악",
+    },
+    {
+      icon: "icon_camera_solid",
+      text: "실시간 모니터링",
+    },
+  ];
+
   return (
     <div className="ThermalImagingSection">
       <section className="container-s">
@@ -27,6 +51,9 @@ function ThermalImagingSection() {
           </span>
         </p>
       </section>
+      <div className="container">
+        <CircleIconList features={features} />
+      </div>
 
       <section className="container-s">
         <h3 className="sec__title">
@@ -39,7 +66,7 @@ function ThermalImagingSection() {
       <h3>열화상카메라의 종류</h3>
 
       <section>
-        <h4 className="sec__title">중파 및 단파 열화상카메라</h4>
+        <h4 className="sec__title">1.중파 및 단파 열화상카메라</h4>
         <div className="flex-box">
           <img className="sec-img" src={img3_1} alt="열화상 카메라 종류" />
           <img className="sec-img" src={img3_2} alt="열화상 카메라 종류" />
@@ -47,7 +74,7 @@ function ThermalImagingSection() {
       </section>
 
       <section>
-        <h4 className="sec__title">중파 및 단파 열화상카메라</h4>
+        <h4 className="sec__title">2.레이저 열화상카메라</h4>
         <img className="sec-img" src={img4} alt="열화상 카메라 종류" />
       </section>
     </div>

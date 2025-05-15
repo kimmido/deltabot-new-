@@ -1,11 +1,11 @@
 import React from "react";
-import SvgrComponent from "../../../components/icons/svgrComponent";
+import SvgrComponent from "../../../components/icons/SvgrComponent";
 
-function CircleIconList({ data }) {
+function CircleIconList({ features }) {
   return (
-    data.features && (
+    features && (
       <div className="CircleIconList">
-        {data.features.map((ft) => (
+        {features.map((ft) => (
           <div key={ft.icon} className="features-item">
             <div className="icon-box">
               <SvgrComponent name={ft.icon} />
