@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import BusinessItem from "./BusinessItem";
 import { category } from "../../../data/category";
 
-function BusinessSection() {
+function BusinessSection({ aosProps }) {
   const route = category.find((item) => item.main.label == "사업소개");
   const subRoutes = route.sub;
   const [isExpanded, setExpanded] = useState(1000);
@@ -14,19 +14,12 @@ function BusinessSection() {
           id="BusinessSectionTItle"
           className="section_title"
           data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom"
-          data-aos-duration="9000"
+          {...aosProps}
         >
           사업소개
         </h2>
 
-        <div
-          className={"business__list"}
-          data-aos="fade-up"
-          data-aos-anchor="#BusinessSectionTItle"
-          // data-aos-anchor-placement="top-bottom"
-          data-aos-duration="30000"
-        >
+        <div className={"business__list"}>
           <div className="flex-box">
             {subRoutes.map(
               (sub, idx) =>
@@ -49,6 +42,7 @@ function BusinessSection() {
                     key={sub.label}
                     sub={sub}
                     idx={idx}
+                    aosProps={aosProps}
                     isExpanded={isExpanded}
                     setExpanded={setExpanded}
                   />

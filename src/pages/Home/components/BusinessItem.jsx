@@ -11,10 +11,18 @@ import backImg4 from "../../../assets/images/page/business(4).jpg";
 import backImg5 from "../../../assets/images/page/business(5).jpg";
 import backImg6 from "../../../assets/images/page/business(6).jpg";
 
-export default function BusinessItem({ sub, idx, isExpanded, setExpanded }) {
+export default function BusinessItem({
+  sub,
+  idx,
+  aosProps,
+  isExpanded,
+  setExpanded,
+}) {
   const isMobile = useMediaQuery("(max-width: 768px)");
   const isPC = useMediaQuery("(min-width: 1280px)");
   const img = [backImg1, backImg2, backImg3, backImg4, backImg5, backImg6];
+
+  const aosList = ["fade-right", "fade-up", "fade-left"];
 
   useEffect(() => {
     if (isPC) {
@@ -36,7 +44,11 @@ export default function BusinessItem({ sub, idx, isExpanded, setExpanded }) {
         }
       }}
     >
-      <div className={styles.title_box}>
+      <div
+        className={styles.title_box}
+        data-aos={aosList[idx % 3]}
+        {...aosProps}
+      >
         <h5 className={styles.title}>{sub.label}</h5>
         {isPC ? "" : <IconPlus size={32} className={styles.icon_plus} />}
       </div>

@@ -77,7 +77,7 @@ export const category = [
           path: "automation-solution",
         },
         {
-          label: "Recycling",
+          label: "Eco-AI",
           path: "recycling-solution",
         },
         {
