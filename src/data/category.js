@@ -61,7 +61,6 @@ export const category = [
           path: "humanoid",
           items: [
             { path: "humanoid1", label: "humanoid1" },
-            { path: "humanoid2", label: "humanoid2" },
           ],
         },
       ],

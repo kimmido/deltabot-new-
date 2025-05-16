@@ -8,6 +8,7 @@ import { HelmetProvider } from "react-helmet-async";
 
 import DefaultLayout from "./layouts/DefaultLayout";
 import ScrollToTop from "./utils/scrollToTop";
+import ComingSoon from "./pages/Business/ComingSoon";
 // import { ProductDataProvider } from "./contexts/ProductDataContext";
 
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -119,8 +120,7 @@ function App() {
                       index
                       element={<Navigate to="humanoid1" replace />}
                     />
-                    <Route path="humanoid1" element={<Business />} />
-                    <Route path="humanoid2" element={<Business />} />
+                    <Route path="humanoid1" element={<ComingSoon />} />
                   </Route>
                 </Route>
 
