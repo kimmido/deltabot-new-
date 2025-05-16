@@ -32,6 +32,7 @@ function Applications() {
 
     return () => {
       if (target) observer.unobserve(target); // 감시 해제.
+      root.style.setProperty("--bg-color", "#fff");
     };
   });
 
