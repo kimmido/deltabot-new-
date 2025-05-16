@@ -38,6 +38,14 @@ body {
   transition: background-color 0.5s;
 }
 
+main {
+  padding-top: $header-sm;
+
+  @include respondTo(tablet-l) {
+    padding-top: $header-md;
+  }
+}
+
 dl,
 ul,
 ol,

@@ -377,14 +377,33 @@
 
     // 열화상 카메라
     .ThermalImagingSection {
-      .flex-box {
-        display: flex;
-        flex-direction: column;
+      .cnt03 {
+        .flex-box {
+          position: relative;
+          @include flexBox(column, 42px);
 
-        @include respondTo(tablet-l) {
-          flex-direction: row;
+          @include respondTo(tablet-l) {
+            flex-direction: row;
+
+            &::after {
+              @include pseudoDefault($color-border);
+              width: 1px;
+              left: 50%;
+            }
+          }
+
+          img {
+            @include respondTo(tablet-l) {
+              width: 10%;
+              flex: 1;
+            }
+          }
         }
       }
+    }
+
+    .HyperspectralSection {
+      background-color: $color-gray-100;
     }
   }
 }

@@ -32,7 +32,7 @@ function ThermalImagingSection() {
 
   return (
     <div className="ThermalImagingSection">
-      <section className="container-s">
+      <section className="cnt01 container-s">
         <h3 className="sec__title">열화상 비전</h3>
         <img className="sec-img" src={img1} alt="머신비전" />
 
@@ -55,7 +55,7 @@ function ThermalImagingSection() {
         <CircleIconList features={features} />
       </div>
 
-      <section className="container-s">
+      <section className="cnt02 container-s">
         <h3 className="sec__title">
           "모든 파장을 아우르는 열화상 솔루션 산업, 연구, 방위 분야까지 최적의
           선택을 제공합니다."
@@ -65,7 +65,7 @@ function ThermalImagingSection() {
 
       <h3>열화상카메라의 종류</h3>
 
-      <section className="container">
+      <section className="cnt03 container">
         <h4 className="sec__title">1.중파 및 단파 열화상카메라</h4>
         <div className="flex-box">
           <img className="sec-img" src={img3_1} alt="열화상 카메라 종류" />

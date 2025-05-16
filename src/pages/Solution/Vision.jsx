@@ -6,6 +6,7 @@ import Applications from "./components/Applications";
 import MachineVisionSection from "./components/Vision/MachineVisionSection";
 import VisionIntro from "./components/Vision/VisionIntro";
 import ThermalImagingSection from "./components/Vision/ThermalImagingSection";
+import HyperspectralSection from "./components/Vision/HyperspectralSection";
 
 function Recycling() {
   const data = {
@@ -48,6 +49,7 @@ function Recycling() {
 
       <MachineVisionSection />
       <ThermalImagingSection />
+      <HyperspectralSection />
       <section>
         <h3 className="sec__title"></h3>
         {/* <img className="sec-img" src={img3} alt="로봇 자동화의 이점" /> */}
