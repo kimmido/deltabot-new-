@@ -1,0 +1,7 @@
+.ExpandableVideoList {
+  @include flexBox(column, 4.2rem);
+
+  @include respondTo(pc-s) {
+    gap: 9rem;
+  }
+}

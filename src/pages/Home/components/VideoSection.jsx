@@ -1,7 +1,8 @@
 import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import ExpandableVideoBlock from "../../../components/UI/ExpandableVideoBlock";
+import ExpandableVideoList from "../../../components/UI/ExpandableVideoList";
+
 gsap.registerPlugin(useGSAP);
 
 function VideoSection() {
@@ -42,7 +43,7 @@ function VideoSection() {
     <section className="VideoSection">
       <div className="container">
         <h2 className="section_title">작동 중! 델타봇의 현장 스케치</h2>
-        <ExpandableVideoBlock videos={videos} />
+        <ExpandableVideoList videos={videos} />
       </div>
     </section>
   );

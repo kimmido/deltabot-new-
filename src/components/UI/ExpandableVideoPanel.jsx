@@ -7,7 +7,7 @@ import VideoDefault from "./VideoDefault";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-function VideoItem({ videos }) {
+function ExpandableVideoPanel({ title, src, poster, desc, bullets }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(
     window.matchMedia("(max-width: 768px)").matches
@@ -100,50 +100,41 @@ function VideoItem({ videos }) {
   }
 
   return (
-    <div className="ExpandableVideoBlock">
-      {videos.map(({ title, src, poster, desc, bullets }) => (
-        <div key={title} className="videoItem" ref={containerRef}>
-          <div
-            className={`video-box ${isMobile ? "mobile" : "pc"}`}
-            ref={videoBoxRef}
-            onClick={() => handlePlay(isMobile, isExpanded)}
-          >
-            <VideoDefault
-              src={src}
-              poster={poster}
-              controls={isExpanded}
-              videoRef={videoRef}
-            />
-            {!isExpanded && <IconPlayBtn color="#fff" />}
-            {isExpanded && !isMobile && (
-              <button
-                ref={closeRef}
-                className="close-btn"
-                onClick={handleClose}
-              >
-                X
-              </button>
-            )}
-          </div>
+    <div className="ExpandableVideoPanel" ref={containerRef}>
+      <div
+        className={`video-box ${isMobile ? "mobile" : "pc"}`}
+        ref={videoBoxRef}
+        onClick={() => handlePlay(isMobile, isExpanded)}
+      >
+        <VideoDefault
+          src={src}
+          poster={poster}
+          controls={isExpanded}
+          videoRef={videoRef}
+        />
+        {!isExpanded && <IconPlayBtn color="#fff" />}
+        {isExpanded && !isMobile && (
+          <button ref={closeRef} className="close-btn" onClick={handleClose}>
+            X
+          </button>
+        )}
+      </div>
 
-          <div className="text-box">
-            <strong className="title">{title}</strong>
-            <div className="desc">
-              {desc.map((p, idx) => (
-                <p key={idx} className="desc__p">
-                  {p}
-                </p>
-              ))}
-            </div>
-            <div className="bullets">
-              {bullets &&
-                bullets.map((bullet, idx) => <li key={idx}>{bullet}</li>)}
-            </div>
-          </div>
+      <div className="text-box">
+        <strong className="title">{title}</strong>
+        <div className="desc">
+          {desc.map((p, idx) => (
+            <p key={idx} className="desc__p">
+              {p}
+            </p>
+          ))}
         </div>
-      ))}
+        <div className="bullets">
+          {bullets && bullets.map((bullet, idx) => <li key={idx}>{bullet}</li>)}
+        </div>
+      </div>
     </div>
   );
 }
 
-export default VideoItem;
+export default ExpandableVideoPanel;

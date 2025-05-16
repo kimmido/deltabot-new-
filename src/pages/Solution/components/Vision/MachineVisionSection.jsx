@@ -1,5 +1,5 @@
 import React from "react";
-import VideoItem from "../../../../components/UI/ExpandableVideoBlock";
+import ExpandableVideoList from "../../../../components/UI/ExpandableVideoList";
 import img1 from "../../../../assets/images/solution/machine-cnt1.jpg";
 
 function MachineVisionSection() {
@@ -72,7 +72,7 @@ function MachineVisionSection() {
         </section>
 
         <section className="VideoSection">
-          <VideoItem videos={videos} />
+          <ExpandableVideoList videos={videos} />
         </section>
       </div>
     </section>
