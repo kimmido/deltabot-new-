@@ -1372,34 +1372,8 @@
       "title": "DELTAROBOT Series", 
       "items": [
         {
-          "name": "DRF-D2 Series",
-          "code": "DRF-D2-series",
-          "features": [
-            {
-              "title": "INTRODUCTION",
-              "texts": [
-                "2-DOF 고속 병렬 로봇은 가벼운 재료의 평면 핸들링 및 조립에 맞게 제작되었습니다. 비전이 필요하지 않으며 센서 위치 지정에 의존하여 평면 작업을 완료합니다."
-              ]
-            },
-            {
-              "title": "FEATURE",
-              "texts": [
-                "1. 표준 사이클 타임은 0.4 - 0.66초 미만으로 최대 속도와 저비용에 대한 요구를 충족합니다.",
-                "2. 특수 평면 병렬 메커니즘 설계로 저비용으로 평면 고속 모션을 실현합니다.",
-                "3. 식품, 의학 및 기타 산업의 고속 생산 작업에 매우 적합하며 주로 소형 재료의 조립, 취급, 분류 등에 사용됩니다."
-              ],
-              "bullets": [
-                "Working Range：1000 - 1300mm",
-                "Payload：5 - 15kg",
-                "Axis：2",
-                "Speed：300 - 350pp/min"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "DRF-2D2 Series",
-          "code": "DRF-2D2-series",
+          "name": "DRF-M2D Series",
+          "code": "DRF-M2D-series",
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1424,60 +1398,23 @@
           ]
         },
         {
-          "name": "DRF-D3S-1300",
-          "code": "DRF-D3S-1300",
+          "name": "DRF-M4 Series",
+          "code": "DRF-M4-series",
           "features": [
             {
               "title": "INTRODUCTION",
-              "texts": [
-                  "고전적인 고속 병렬 로봇 구성은 3차원 공간에서 XYZ 축을 따라 이동하고 Z 축을 중심으로 회전하는 기능적 특성을 가지고 있습니다. 고정밀 머신 비전 시스템과 일치하여 식품, 의학 및 기타 산업의 고속 생산 작업에 적합합니다. 주로 가볍고 작은 분산 재료의 조립, 취급 및 분류에 사용됩니다."
-              ]
-            },
-            {
-              "title": "FEATURE",
-              "texts": [
-                  "1. 표준 사이클 시간은 0.4초 미만으로 고속, 최소 물량에 대한 요구사항을 충족합니다.",
-                  "2. 특수 팔로워 ​​암 압축 스프링 설계는 팔로워 암의 서비스 수명을 보장하고 분해 및 조립이 쉽습니다.",
-                  "3. 식품, 의학 및 기타 산업의 고속 생산 작업에 매우 적합하며 주로 무거운 재료의 조립, 취급, 분류 등에 사용됩니다."
-              ],
               "bullets": [
-                  "Working Range：1300mm",
-                  "Payload：5kg",
-                  "Axis：3",
-                  "Speed：200pp/min"
+                "DRF Series는 다양한 자동화 애플리케이션에 혁신적이고 경제적이며 유연한 솔루션을 제공합니다.",
+                "3축 및 4축 팔로 구성되어 있으며, 지능형 비전 시스템이 장착되어 있습니다.",
+                "로봇 팔은 탄소 파이프로 제작되어 있으며, 분당 최대 180회의 고속 동작이 가능합니다.",
+                "DRF Series의 작업 공간은 최소 400mm에서 최대 1,600mm까지 확장될 수 있습니다."
               ]
             }
           ]
         },
         {
-          "name": "DRF-D4 Series",
-          "code": "DRF-D4-series",
-          "features": [
-            {
-              "title": "INTRODUCTION",
-              "texts": [
-                "고전적인 고속 병렬 로봇 구성은 3차원 공간에서 XYZ 축을 따라 이동하고 Z 축을 중심으로 회전하는 기능적 특성을 가지고 있습니다. 고정밀 머신 비전 시스템과 일치하여 식품, 의학 및 기타 산업의 고속 생산 작업에 적합합니다. 주로 가볍고 작은 분산 재료의 조립, 취급 및 분류에 사용됩니다."
-              ]
-            },
-            {
-                "title": "FEATURE",
-                "texts": [
-                    "1. 표준 사이클 시간은 0.4 - 0.67초 미만으로 고속, 최소 물량에 대한 요구사항을 충족합니다.",
-                    "2. 특수 팔로워 ​​암 압축 스프링 설계는 팔로워 암의 서비스 수명을 보장하고 분해 및 조립이 쉽습니다.",
-                    "3. 식품, 의학 및 기타 산업의 고속 생산 작업에 매우 적합하며 주로 무거운 재료의 조립, 취급, 분류 등에 사용됩니다."
-                ],
-                "bullets": [
-                    "Working Range：450 - 2800mm",
-                    "Payload：3 - 25kg",
-                    "Axis：3+1",
-                    "Speed：150 - 500pp/min"
-                ]
-            }
-          ]
-        },
-        {
-          "name": "DRF-D5 Series",
-          "code": "DRF-D5-series",
+          "name": "DRF-M5 Series",
+          "code": "DRF-M5-series",
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1498,46 +1435,6 @@
                   "Payload：2 - 25kg",
                   "Axis：3+2",
                   "Speed：180 - 400pp/min"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "DRF-D6 Series",
-          "code": "DRF-D6-series",
-          "features": [
-            {
-              "title": "INTRODUCTION",
-              "texts": [
-                "클래식한 STEWART 병렬 메커니즘은 50 - 3000kg의 하중으로 공간에서 6-DOF 모션을 쉽게 실현하여 최고의 정밀도와 최대 하중에 대한 요구를 충족합니다. 실험실, 항공우주 및 기타 산업 분야의 고정밀 테스트 작업에 매우 적합하며 주로 다양한 재료의 조립 및 모션 시뮬레이션에 사용됩니다."
-              ]
-            },
-            {
-              "title": "FEATURE",
-              "texts": [
-                  "1. 공간에서 6도의 자유도를 쉽게 달성할 수 있는 클래식한 STEWART 병렬 메커니즘",
-                  "2. 주로 다양한 재료 등의 조립 및 모션 시뮬레이션에 사용되는 실험실, 항공 우주 및 기타 산업의 고정밀 테스트 작업에 매우 적합합니다."
-              ],
-              "bullets": [
-                  "Maximum load: 50 - 3000kg",
-                  "Number of axes: 6",
-                  "Maximum movement speed: 100 - 300mm/s",
-                  "Main body weight: 260 - 3730kg"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "DRF Series",
-          "code": "DRF-series",
-          "features": [
-            {
-              "title": "INTRODUCTION",
-              "bullets": [
-                "DRF Series는 다양한 자동화 애플리케이션에 혁신적이고 경제적이며 유연한 솔루션을 제공합니다.",
-                "3축 및 4축 팔로 구성되어 있으며, 지능형 비전 시스템이 장착되어 있습니다.",
-                "로봇 팔은 탄소 파이프로 제작되어 있으며, 분당 최대 180회의 고속 동작이 가능합니다.",
-                "DRF Series의 작업 공간은 최소 400mm에서 최대 1,600mm까지 확장될 수 있습니다."
               ]
             }
           ]
