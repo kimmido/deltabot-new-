@@ -607,6 +607,54 @@ const businessIntroData = {
       ],
     },
 
+    // =========== 메디컬 =========== 
+    // pcr
+    "pcr": {
+      theme: 'default',
+      title: 'PCR',
+      description: [
+        ''
+      ],
+      images: ['default'],
+      applications: [
+        {
+          image: 'pcr-application(1).jpg',
+          title: '',
+        },
+        {
+          image: 'pcr-application(2).jpg',
+          title: '',
+        },
+        {
+          image: 'pcr-application(3).jpg',
+          title: '',
+        },
+      ],
+    },
+    // uv
+    "uv": {
+      theme: 'default',
+      title: 'UV',
+      description: [
+        ''
+      ],
+      images: ['default'],
+      applications: [
+        {
+          image: 'pcr-application(1).jpg',
+          title: '',
+        },
+        {
+          image: 'pcr-application(2).jpg',
+          title: '',
+        },
+        {
+          image: 'pcr-application(3).jpg',
+          title: '',
+        },
+      ],
+    },
+
     // =========== IT ==========
     // 워크스테이션
     "workstations": {

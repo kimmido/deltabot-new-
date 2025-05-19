@@ -95,8 +95,8 @@ function App() {
                 <Route path="medical">
                   <Route element={<BusinessLayout />}>
                     <Route index element={<Navigate to="pcr" replace />} />
-                    <Route path="pcr" element={<CompactProductPage />} />
-                    <Route path="uv" element={<CompactProductPage />} />
+                    <Route path="pcr" element={<Business />} />
+                    <Route path="uv" element={<Business />} />
                   </Route>
                 </Route>
 

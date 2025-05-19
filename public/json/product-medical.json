@@ -1,7 +1,7 @@
 {
   "pcr": [
     {
-      "title": "Q-GEN-5",
+      "title": "Q-GEN Series",
       "items": [
         {
           "name": "Q-GEN-5",
@@ -23,12 +23,7 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "Q-GEN-4",
-      "items": [
+        },
         {
           "name": "Q-GEN-4",
           "code": "Q-GEN-4",
