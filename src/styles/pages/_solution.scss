@@ -400,6 +400,51 @@
           }
         }
       }
+
+      .cnt05 {
+        table {
+          table-layout: fixed;
+          width: 100%;
+          border-spacing: 0.6em;
+
+          caption {
+            font-size: min(2vw, 23px);
+            font-weight: 700;
+            color: $color-gray-800;
+            margin-bottom: min(2vw, 38px);
+          }
+
+          th,
+          td {
+            border-radius: $radius-card-md;
+            padding: 1.2em 0.2em;
+          }
+          thead {
+            th {
+              background-color: $color-gray-050;
+              &:nth-of-type(1) {
+                background-color: #fff2e5;
+                // border: 1px solid $color-gray-500;
+              }
+            }
+          }
+
+          tbody {
+            th {
+              background-color: #fff2e5;
+              // border: 1px solid #de8431;
+            }
+            td {
+              text-align: center;
+              background-color: #faf0ff;
+            }
+          }
+        }
+
+        img {
+          margin-top: min(2.2vw, 44px);
+        }
+      }
     }
 
     .HyperspectralSection {

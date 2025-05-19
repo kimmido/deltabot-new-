@@ -9,22 +9,29 @@ function TabMenu({ routes, currentCategory, currentPath }) {
   };
 
   return (
-    <div className="TabMenu overflow_hidden">
-      {/* {console.log("탭메뉴")} */}
-      <div className="TabMenu__box" data-aos="fade-up" data-aos-duration="1000">
-        {routes.items.map((route) => (
-          <button
-            key={route.path}
-            className={`TabMenu__item ${
-              currentPath === route.path ? "active" : ""
-            }`}
-            onClick={() => handleTabChange(currentCategory, route.path)}
+    <>
+      {routes.items.length > 1 && (
+        <div className="TabMenu overflow_hidden">
+          <div
+            className="TabMenu__box"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           >
-            <strong className="TabMenu__label">{route.label}</strong>
-          </button>
-        ))}
-      </div>
-    </div>
+            {routes.items.map((route) => (
+              <button
+                key={route.path}
+                className={`TabMenu__item ${
+                  currentPath === route.path ? "active" : ""
+                }`}
+                onClick={() => handleTabChange(currentCategory, route.path)}
+              >
+                <strong className="TabMenu__label">{route.label}</strong>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 

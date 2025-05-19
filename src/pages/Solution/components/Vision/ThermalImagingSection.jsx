@@ -3,6 +3,7 @@ import img1 from "../../../../assets/images/solution/thermal-cnt1.jpg";
 import img2 from "../../../../assets/images/solution/thermal-cnt2.jpg";
 import img3_1 from "../../../../assets/images/solution/thermal-cnt3-1.svg";
 import img3_2 from "../../../../assets/images/solution/thermal-cnt3-2.svg";
+import img5_2 from "../../../../assets/images/solution/thermal-cnt5-2.svg";
 import img4 from "../../../../assets/images/solution/thermal-cnt4.svg";
 import CircleIconList from "../../../Business/components/CircleIconList";
 
@@ -73,9 +74,43 @@ function ThermalImagingSection() {
         </div>
       </section>
 
-      <section className="container-m">
+      <section className="cnt04 container-m">
         <h4 className="sec__title">2.레이저 열화상카메라</h4>
         <img className="sec-img" src={img4} alt="열화상 카메라 종류" />
+      </section>
+
+      <section className="cnt05 container-m">
+        <h4 className="sec__title">3.가스 이미징 열화상카메라</h4>
+        <table
+          role="table"
+          aria-label="적외선 감지를 통한 가스 감지 가능성 비교 표"
+        >
+          <caption>적외선 감지를 통한 가스 감지 가능성 비교</caption>
+          <thead>
+            <tr>
+              <th scope="col">특성</th>
+              <th scope="col">메탄 (CH₄)</th>
+              <th scope="col">프로판 (C₃H₈)</th>
+              <th scope="col">육불화황 (SF₆)</th>
+              <th scope="col">휘발성 유기 화합물 (VOCs)</th>
+              <th scope="col">기타 탄화수소류</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">파장</th>
+              <td colspan="5">
+                중파장 적외선 (MWIR) 또는 장파장 적외선 (LWIR)
+              </td>
+            </tr>
+            <tr scope="row">
+              <th>감지 가능성</th>
+              <td colspan="5">카메라 의존적</td>
+            </tr>
+          </tbody>
+        </table>
+        <img className="sec-img" src={img5_2} alt="열화상 카메라 종류" />
       </section>
     </div>
   );
