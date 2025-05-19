@@ -607,6 +607,54 @@ const businessIntroData = {
       ],
     },
 
+    // =========== 에코 프렌들리 =========== 
+    // 리싸이클링
+    "recycling-robot": {
+      theme: 'default',
+      title: 'PCR',
+      description: [
+        ''
+      ],
+      images: ['default'],
+      applications: [
+        {
+          image: 'pcr-application(1).jpg',
+          title: '',
+        },
+        {
+          image: 'pcr-application(2).jpg',
+          title: '',
+        },
+        {
+          image: 'pcr-application(3).jpg',
+          title: '',
+        },
+      ],
+    },
+    // 클리닝 로봇
+    "cleaning-robot": {
+      theme: 'default',
+      title: '지속가능한 수면 환경을 위한 스마트 워터 로보틱스 솔루션',
+      description: [
+        '도심 하천, 저수지, 인공 수로, 공원 수변 공간 등 다양한 수상 환경에서의 수질 개선과 생태계 보호를 위한 차세대 수면 관리 로봇 솔루션을 제공합니다. 수면 위의 부유 쓰레기 수거와 수중 수초 제거를 위한 각기 다른 기능의 첨단 로봇들은, 작업 효율성과 운용 안전성을 극대화하도록 설계되어 있습니다.','인력 접근이 어려운 구역에서도 정밀한 작업이 가능하며, 24시간 무인 운영, 넓은 작업 반경, 자동화된 데이터 수집 및 모니터링 기능을 통해 환경 관리의 새로운 기준을 제시합니다. 각 제품의 특화된 임무 수행 능력으로, 지속 가능한 수자원 관리, 생태계 복원, 그리고 유지보수 비용 절감이라는 핵심 가치를 실현합니다'
+      ],
+      images: ['default', 'default'],
+      applications: [
+        {
+          image: 'cleaning-robot-application(1).jpg',
+          title: '도시 수역 유지관리',
+        },
+        {
+          image: 'cleaning-robot-application(2).jpg',
+          title: '스마트시티 기반 환경 모니터링',
+        },
+        {
+          image: 'cleaning-robot-application(3).jpg',
+          title: '지속가능 생태계 복원 사업',
+        },
+      ],
+    },
+
     // =========== 메디컬 =========== 
     // pcr
     "pcr": {
@@ -691,15 +739,15 @@ const businessIntroData = {
       applications: [
         {
           image: 'workstations-application(1).jpg',
-          title: 'AI 및 고성능 연산(AI & HPC)',
+          title: 'AI 및 고성능 연산',
         },
         {
           image: 'workstations-application(2).jpg',
-          title: '산업용 영상 분석 및 자동화 (Vision & Automation)',
+          title: '산업용 영상 분석 및 자동화',
         },
         {
           image: 'workstations-application(3).jpg',
-          title: '설계 및 시뮬레이션 (Design & Simulation)',
+          title: '설계 및 시뮬레이션',
         },
       ],
     },

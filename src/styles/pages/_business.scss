@@ -89,21 +89,12 @@
 
     .intro-img {
       display: block;
+      margin-top: 1.2em;
       margin-left: auto;
       margin-right: auto;
       border-radius: $radius-card-lg;
       width: auto;
       max-width: 100%;
-
-      // &.border-dot {
-      //   border-radius: $radius-card-lg;
-      //   border: 4px dotted $color-point;
-      // }
-
-      &.small {
-        width: 100%;
-        max-width: 900px;
-      }
     }
   } // BusinessIntroSection
 
@@ -535,7 +526,7 @@
         }
 
         img {
-          max-width: 480px;
+          max-width: 500px;
         }
       }
 
