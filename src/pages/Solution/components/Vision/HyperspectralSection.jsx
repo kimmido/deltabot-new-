@@ -3,7 +3,7 @@ import React from "react";
 function HyperspectralSection() {
   return (
     <div className="HyperspectralSection">
-      <section className="container-s">
+      <section className="container container--s">
         <h3 className="sec__title">초분광 비전</h3>
         {/* <img className="sec-img" src={img1} alt="머신비전" /> */}
 

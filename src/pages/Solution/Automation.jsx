@@ -56,12 +56,12 @@ function Automation() {
         솔루션을 제공합니다.
       </p>
 
-      <section className="container-s">
+      <section className="container container--s">
         <h3 className="sec__title">공장 자동화 라인 구축 절차</h3>
         <img className="sec-img" src={img1} alt="공장 자동화 라인 구축 절차" />
       </section>
 
-      <section className="container-s">
+      <section className="container container--s">
         <h3 className="sec__title">로봇 자동화 프로세스</h3>
         <img className="sec-img" src={img2} alt="로봇 자동화 프로세스" />
       </section>
@@ -70,8 +70,8 @@ function Automation() {
         구축 및, 정밀한 분석과 검증된 설계로 공장의 스마트 팩토리를 완성합니다.
       </p>
 
-      <section className="container-s">
-        <h3 className="sec__title">로봇 자동화 프로세스</h3>
+      <section className="container container--s">
+        <h3 className="sec__title">로봇 자동화의 이점</h3>
         <img className="sec-img" src={img3} alt="로봇 자동화의 이점" />
       </section>
 

@@ -56,7 +56,7 @@ function MachineVisionSection() {
   return (
     <section className="MachineVisionSection">
       <div className="container">
-        <section className="container-s">
+        <section className="container container--s">
           <h3 className="sec__title">머신비전</h3>
           <img className="sec-img" src={img1} alt="머신비전" />
 
