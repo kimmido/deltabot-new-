@@ -14,7 +14,7 @@ export const category = [
             // { path: "scara", label: "스카라" },
             // { path: "cobot", label: "코봇" },
             { path: "deltarobot", label: "델타로봇" },
-            { path: "case-packer", label: "지능형 로봇 시스템" },
+            // { path: "case-packer", label: "지능형 로봇 시스템" },
             { path: "amr", label: "AMR" },
           ],
         },
@@ -54,6 +54,7 @@ export const category = [
             { path: "rack-mount", label: "Rack mount" },
             { path: "military", label: "Military" },
             { path: "vehicle", label: "Vehicle" },
+            { path: "edge-ai", label: "Edge-AI" },
           ],
         },
         {
@@ -77,7 +78,7 @@ export const category = [
         },
         {
           label: "Eco-AI",
-          path: "recycling-solution",
+          path: "eco-ai-solution",
         },
         {
           label: "Vision",
