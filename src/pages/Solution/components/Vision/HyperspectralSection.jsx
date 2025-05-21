@@ -3,7 +3,7 @@ import React from "react";
 function HyperspectralSection() {
   return (
     <div className="HyperspectralSection">
-      <section className="container container--s">
+      <div className="container container--s">
         <h3 className="sec__title">초분광 비전</h3>
         {/* <img className="sec-img" src={img1} alt="머신비전" /> */}
 
@@ -19,7 +19,7 @@ function HyperspectralSection() {
             수 없는 물질 특성까지 정밀하게 분석할 수 있습니다.
           </span>
         </p>
-      </section>
+      </div>
     </div>
   );
 }

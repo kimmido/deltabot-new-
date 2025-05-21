@@ -12,6 +12,18 @@
     border-radius: $radius-card-lg;
   }
 
+  .heading {
+    margin: 0 16px;
+
+    @include respondTo(tablet-l) {
+      margin: 0 24px;
+    }
+
+    // .PageHeading {
+    //   height: calc(100vh - $header-md - 24px);
+    // }
+  }
+
   .cnt-emph {
     display: block;
     margin-top: min(10vw, 130px);
@@ -370,9 +382,114 @@
 
   // 비전 솔루션 페이지
   &.Vision {
+    .VisionIntro {
+      .cnt02 {
+        .flex-container {
+          justify-content: center;
+          flex-wrap: wrap;
+          row-gap: 2.5em;
+
+          @include respondTo(tablet-s) {
+            flex-wrap: nowrap;
+          }
+        }
+
+        .item {
+          flex: 50% 0 0;
+          height: auto;
+
+          @include respondTo(tablet-s) {
+            flex: 1;
+          }
+
+          svg {
+            fill: #4e88e7;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1.2176470588235293;
+          }
+
+          p {
+            margin-top: 1em;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #4e88e7;
+          }
+
+          @for $i from 1 to 6 {
+            &:nth-child(#{$i}) {
+              .img-box {
+                background: url("@assets/images/solution/vision-cnt2-#{$i}.png")
+                  center
+                  32% /
+                  60%
+                  no-repeat;
+
+                svg {
+                  filter: brightness(70% + (10% * $i));
+                }
+              }
+
+              p {
+                filter: brightness(70% + (10% * $i));
+              }
+            }
+          }
+
+          ul {
+            margin-top: 1em;
+            padding: 0 0.4em 0 0.8em;
+
+            li:last-child {
+              margin-top: 0.5em;
+            }
+          }
+        }
+      }
+    }
+
+    .MachineVisionSection,
+    .ThermalImagingSection,
+    .HyperspectralSection {
+      padding: $spacing-content-lg 0;
+    }
+
+    .MachineVisionSection,
+    .HyperspectralSection {
+      background-color: $color-gray-400;
+    }
+
     // 머신비전 카메라
     .MachineVisionSection {
-      background-color: $color-gray-100;
+      .cnt02,
+      .cnt03 {
+        margin-top: min(13vw, 160px);
+      }
+
+      .cnt02 {
+        .flex-container {
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 1vw;
+
+          @include respondTo(tablet-s) {
+            flex-wrap: nowrap;
+          }
+
+          div {
+            flex: calc(50% - 1em) 0 1;
+
+            @include respondTo(tablet-s) {
+              flex: 1;
+            }
+
+            img {
+              border-radius: 0;
+            }
+          }
+        }
+      }
     }
 
     // 열화상 카메라
@@ -381,6 +498,7 @@
         .flex-box {
           position: relative;
           @include flexBox(column, 42px);
+          align-items: flex-start;
 
           @include respondTo(tablet-l) {
             flex-direction: row;
@@ -445,10 +563,47 @@
           margin-top: min(2.2vw, 44px);
         }
       }
-    }
+
+      .cnt06 {
+        .title {
+          margin: 15px 0;
+          text-align: center;
+        }
+
+        .list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          margin-top: 15px;
+
+          @include respondTo(tablet-l) {
+            margin-top: 50px;
+          }
+
+          .item {
+            text-align: center;
+            width: 49%;
+
+            @include respondTo(tablet-l) {
+              width: 25%;
+            }
+
+            img {
+              width: auto;
+              max-width: 99%;
+            }
+
+            p {
+              margin: 15px 0;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    } // 열화상 카메라
 
     .HyperspectralSection {
-      background-color: $color-gray-100;
     }
   }
 }

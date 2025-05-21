@@ -1,50 +1,25 @@
 import React from "react";
 import PageHeading from "../../components/UI/PageHeading";
-import StepFlow from "./components/StepFlow";
-import Applications from "./components/Applications";
 
 import MachineVisionSection from "./components/Vision/MachineVisionSection";
 import VisionIntro from "./components/Vision/VisionIntro";
 import ThermalImagingSection from "./components/Vision/ThermalImagingSection";
 import HyperspectralSection from "./components/Vision/HyperspectralSection";
+import TabMenu from "../../components/UI/TabMenu";
+import SolutionHeading from "./components/SolutionHeading";
 
-function Recycling() {
-  const data = {
-    steps: [
-      {
-        iconName: "icon_lightbulb_solid",
-        title: "조명",
-        text: "제품 인식 정확도 향상을 위한 광원",
-      },
-      {
-        iconName: "icon_camera_solid",
-        title: "카메라 + 렌즈",
-        text: "제품 이미지 촬영 및 초점 조정",
-      },
-      {
-        iconName: "icon_microchip_solid",
-        title: "영상처리기",
-        text: "이미지 분석 및 특징 인식",
-      },
-      {
-        iconName: "icon_brain_solid",
-        title: "판단 결과",
-        text: "OK/NG 판정 또는 정보 추출",
-      },
-      {
-        iconName: "icon_robot_face",
-        title: "로봇 / PLC 제어",
-        text: "로봇이 피킹, 리젝트 등 수행",
-      },
-    ],
-  };
-
+function Vision() {
   return (
     <div className="Vision solution-wrapper">
+      <div className="heading">
+        <SolutionHeading
+          title="Vision"
+          text="스마트 자동화를 위한 AI 기반 비전 시스템"
+          currentPath="vision-solution"
+        />
+      </div>
       <div className="container">
-        <PageHeading title="vision" currentPath="vision-solution" />
         <VisionIntro />
-        <StepFlow title="비전시스템 흐름 구성도" steps={data.steps} />
       </div>
 
       <MachineVisionSection />
@@ -58,4 +33,4 @@ function Recycling() {
   );
 }
 
-export default Recycling;
+export default Vision;

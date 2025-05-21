@@ -1,36 +1,22 @@
 import React from "react";
+import CircleIconList from "../../../Business/components/CircleIconList";
+
 import img1 from "../../../../assets/images/solution/thermal-cnt1.jpg";
 import img2 from "../../../../assets/images/solution/thermal-cnt2.jpg";
 import img3_1 from "../../../../assets/images/solution/thermal-cnt3-1.svg";
 import img3_2 from "../../../../assets/images/solution/thermal-cnt3-2.svg";
-import img5_2 from "../../../../assets/images/solution/thermal-cnt5-2.svg";
 import img4 from "../../../../assets/images/solution/thermal-cnt4.svg";
-import CircleIconList from "../../../Business/components/CircleIconList";
+import img5_2 from "../../../../assets/images/solution/thermal-cnt5-2.svg";
+import img6_1 from "../../../../assets/images/solution/thermal-cnt6-1.jpg";
+import img6_2 from "../../../../assets/images/solution/thermal-cnt6-2.jpg";
+import img6_3 from "../../../../assets/images/solution/thermal-cnt6-3.jpg";
+import img6_4 from "../../../../assets/images/solution/thermal-cnt6-4.jpg";
+import img6_5 from "../../../../assets/images/solution/thermal-cnt6-5.jpg";
+import img6_6 from "../../../../assets/images/solution/thermal-cnt6-6.jpg";
+import img6_7 from "../../../../assets/images/solution/thermal-cnt6-7.jpg";
+import img6_8 from "../../../../assets/images/solution/thermal-cnt6-8.jpg";
 
 function ThermalImagingSection() {
-  const features = [
-    {
-      icon: "icon_thermometer",
-      text: "온도감지 기능",
-    },
-    {
-      icon: "icon_sunglasses",
-      text: "어두운곳 시야확보",
-    },
-    {
-      icon: "icon_lightning",
-      text: "설비 고장 예측 및 예방",
-    },
-    {
-      icon: "icon_extinguisher",
-      text: "화재 전조 파악",
-    },
-    {
-      icon: "icon_camera_solid",
-      text: "실시간 모니터링",
-    },
-  ];
-
   return (
     <div className="ThermalImagingSection">
       <section className="cnt01 container container--s">
@@ -52,8 +38,8 @@ function ThermalImagingSection() {
           </span>
         </p>
       </section>
-      <div className="container">
-        <CircleIconList features={features} />
+      <div className="cnt01 container">
+        <CircleIconList features={cnt01} />
       </div>
 
       <section className="cnt02 container container--s">
@@ -63,8 +49,6 @@ function ThermalImagingSection() {
         </h3>
         <img className="sec-img" src={img2} alt="열화상 카메라 종류" />
       </section>
-
-      <h3>열화상카메라의 종류</h3>
 
       <section className="cnt03 container">
         <h4 className="sec__title">1.중파 및 단파 열화상카메라</h4>
@@ -100,20 +84,106 @@ function ThermalImagingSection() {
           <tbody>
             <tr>
               <th scope="row">파장</th>
-              <td colspan="5">
+              <td colSpan="5">
                 중파장 적외선 (MWIR) 또는 장파장 적외선 (LWIR)
               </td>
             </tr>
             <tr scope="row">
               <th>감지 가능성</th>
-              <td colspan="5">카메라 의존적</td>
+              <td colSpan="5">카메라 의존적</td>
             </tr>
           </tbody>
         </table>
         <img className="sec-img" src={img5_2} alt="열화상 카메라 종류" />
       </section>
+
+      <section className="cnt06 container container--l">
+        <h3 className="sec__title">산업 응용 분야</h3>
+        <p className="title">
+          <font>
+            <font>
+              적외선 열화상 카메라, 근적외선 분광기, 중파 및 단파 적외선 카메라,
+              가스 이미징, 레이저 빔 분석
+            </font>
+          </font>
+        </p>
+        <div className="list">
+          {cnt06.map((item) => (
+            <div
+              key={item.text}
+              className="item"
+              data-swiper-column="0"
+              data-swiper-row="0"
+            >
+              <img src={item.img} />
+              <p className="ch">
+                <font>
+                  <font>{item.text}</font>
+                </font>
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
+const cnt01 = [
+  {
+    icon: "icon_thermometer",
+    text: "온도감지 기능",
+  },
+  {
+    icon: "icon_sunglasses",
+    text: "어두운곳 시야확보",
+  },
+  {
+    icon: "icon_lightning",
+    text: "설비 고장 예측 및 예방",
+  },
+  {
+    icon: "icon_extinguisher",
+    text: "화재 전조 파악",
+  },
+  {
+    icon: "icon_camera_solid",
+    text: "실시간 모니터링",
+  },
+];
+
+const cnt06 = [
+  {
+    img: img6_1,
+    text: "전기 | 새로운 에너지",
+  },
+  {
+    img: img6_2,
+    text: "광석 | 야금학 | 가마",
+  },
+  {
+    img: img6_3,
+    text: "섬유 | 석유화학 | 환경 보호",
+  },
+  {
+    img: img6_4,
+    text: "철도 교통 | 자동차",
+  },
+  {
+    img: img6_5,
+    text: "레이저 | 반도체",
+  },
+  {
+    img: img6_6,
+    text: "곡물과 기름 | 의학 | 번식",
+  },
+  {
+    img: img6_7,
+    text: "과학적 연구 | 생물학 | 재료",
+  },
+  {
+    img: img6_8,
+    text: "온라인 테스트 | 정렬 | 오토메이션",
+  },
+];
 
 export default ThermalImagingSection;
