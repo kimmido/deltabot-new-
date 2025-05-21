@@ -6,6 +6,7 @@
         {
           "name": "Q-GEN-5",
           "code": "Q-GEN-5",
+          "has": ["null"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -27,6 +28,7 @@
         {
           "name": "Q-GEN-4",
           "code": "Q-GEN-4",
+          "has": ["null"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -55,6 +57,7 @@
         {
           "name": "uv제품",
           "code": "uv제품",
+          "has": ["nullnull"],
           "features": [
             {
               "title": "INTRODUCTION",

@@ -7,6 +7,7 @@
           "name": "CR7-7",
           "code": "CR7-7",
           "thumb": "CR7-7-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -31,6 +32,7 @@
           "name": "CR12-12",
           "code": "CR12-12",
           "thumb": "CR12-12-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -58,6 +60,7 @@
           "name": "CR12-20",
           "code": "CR12-20",
           "thumb": "CR12-20-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -85,6 +88,7 @@
           "name": "CR18-18",
           "code": "CR18-18",
           "thumb": "CR18-18-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -112,6 +116,7 @@
           "name": "CR20-17",
           "code": "CR20-17",
           "thumb": "CR20-17-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -139,6 +144,7 @@
           "name": "CR20-20",
           "code": "CR20-20",
           "thumb": "CR20-20-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -166,6 +172,7 @@
           "name": "CR20-25",
           "code": "CR20-25",
           "thumb": "CR20-25-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -193,6 +200,7 @@
           "name": "CR35-35",
           "code": "CR35-35",
           "thumb": "CR35-35-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -220,6 +228,7 @@
           "name": "CR35-45",
           "code": "CR35-45",
           "thumb": "CR35-45-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -252,6 +261,7 @@
           "name": "SR3-3",
           "code": "SR3-3",
           "thumb": "SR3-3-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -276,6 +286,7 @@
           "name": "SR4-4",
           "code": "SR4-4",
           "thumb": "SR4-4-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -303,6 +314,7 @@
           "name": "SR4-5",
           "code": "SR4-5",
           "thumb": "SR4-5-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -337,6 +349,7 @@
           "name": "NB4h-4",
           "code": "NB4h-4",
           "thumb": "NB4h-4-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -362,6 +375,7 @@
           "name": "NB4-4",
           "code": "NB4-4",
           "thumb": "NB4-4-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -392,6 +406,7 @@
           "name": "XB7L",
           "code": "XB7L",
           "thumb": "XB7L-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -416,6 +431,7 @@
           "name": "XB7",
           "code": "XB7",
           "thumb": "XB7-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -445,6 +461,7 @@
           "name": "NB12-10",
           "code": "NB12-10",
           "thumb": "NB12-10-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -472,6 +489,7 @@
           "name": "NB12-12",
           "code": "NB12-12",
           "thumb": "NB12-12-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -499,6 +517,7 @@
           "name": "NB12-16",
           "code": "NB12-16",
           "thumb": "NB12-16-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -531,6 +550,7 @@
           "name": "NB25-12",
           "code": "NB25-12",
           "thumb": "NB25-12-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -556,6 +576,7 @@
           "name": "NB25-20",
           "code": "NB25-20",
           "thumb": "NB25-20-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -581,6 +602,7 @@
           "name": "NB25-25",
           "code": "NB25-25",
           "thumb": "NB25-25-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -606,6 +628,7 @@
           "name": "NB25-30",
           "code": "NB25-30",
           "thumb": "NB25-30-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -631,6 +654,7 @@
           "name": "NB25-35",
           "code": "NB25-35",
           "thumb": "NB25-35-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -661,6 +685,7 @@
           "name": "NB80-50",
           "code": "NB80-50",
           "thumb": "NB80-50-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -686,6 +711,7 @@
           "name": "NB80-80",
           "code": "NB80-80",
           "thumb": "NB80-80-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -716,6 +742,7 @@
           "name": "NB220-150",
           "code": "NB220-150",
           "thumb": "NB220-150-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -741,6 +768,7 @@
           "name": "NB220-170",
           "code": "NB220-170",
           "thumb": "NB220-170-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -766,6 +794,7 @@
           "name": "NB220-220",
           "code": "NB220-220",
           "thumb": "NB220-220-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -797,6 +826,7 @@
         {
           "name": "ST-500-A-A",
           "code": "ST-500-A-A",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -821,6 +851,7 @@
         {
           "name": "ST-500-A-B",
           "code": "ST-500-A-B",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -845,6 +876,7 @@
         {
           "name": "ST-620-A-A",
           "code": "ST-620-A-A",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -869,6 +901,7 @@
         {
           "name": "ST-620-A-B",
           "code": "ST-620-A-B",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -893,6 +926,7 @@
         {
           "name": "ST-800-A-A",
           "code": "ST-800-A-A",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -917,6 +951,7 @@
         {
           "name": "ST-800-A-B",
           "code": "ST-800-A-B",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -946,6 +981,7 @@
         {
           "name": "M04BD",
           "code": "M04BD",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -970,6 +1006,7 @@
         {
           "name": "M05BD",
           "code": "M05BD",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -994,6 +1031,7 @@
         {
           "name": "M06BD",
           "code": "M06BD",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1018,6 +1056,7 @@
         {
           "name": "M07BD",
           "code": "M07BD",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1047,6 +1086,7 @@
         {
           "name": "M07GD",
           "code": "M07GD",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1071,6 +1111,7 @@
         {
           "name": "M08GD",
           "code": "M08GD",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1095,6 +1136,7 @@
         {
           "name": "M09GD",
           "code": "M09GD",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1119,6 +1161,7 @@
         {
           "name": "M10GD",
           "code": "M10GD",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1150,6 +1193,7 @@
         {
           "name": "MD20G",
           "code": "MD20G",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1173,6 +1217,7 @@
         {
           "name": "MD20S",
           "code": "MD20S",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1196,6 +1241,7 @@
         {
           "name": "MD20SS",
           "code": "MD20SS",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1224,6 +1270,7 @@
         {
           "name": "MD30G",
           "code": "MD30G",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1247,6 +1294,7 @@
         {
           "name": "MD30S",
           "code": "MD30S",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1270,6 +1318,7 @@
         {
           "name": "MD30SS",
           "code": "MD30SS",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1298,6 +1347,7 @@
         {
           "name": "MD40G",
           "code": "MD40G",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1321,6 +1371,7 @@
         {
           "name": "MD40S",
           "code": "MD40S",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1344,6 +1395,7 @@
         {
           "name": "MD40SS",
           "code": "MD40SS",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1374,6 +1426,7 @@
         {
           "name": "DRF-M2D Series",
           "code": "DRF-M2D-series",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1400,6 +1453,7 @@
         {
           "name": "DRF-M4 Series",
           "code": "DRF-M4-series",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1415,6 +1469,7 @@
         {
           "name": "DRF-M5 Series",
           "code": "DRF-M5-series",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1449,6 +1504,7 @@
         {
           "name": "PM-01",
           "code": "PM-01",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1469,6 +1525,7 @@
         {
           "name": "PM-02",
           "code": "PM-02",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1489,6 +1546,7 @@
         {
           "name": "PM-03",
           "code": "PM-03",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1509,6 +1567,7 @@
         {
           "name": "PM-05",
           "code": "PM-05",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -1536,6 +1595,7 @@
         {
           "name": "AMR Series",
           "code": "AMR-series",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",

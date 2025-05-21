@@ -6,6 +6,7 @@
         {
           "name": "2D-L-130GM-8-H",
           "code": "2D-L-130GM-8-H",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -30,6 +31,7 @@
         {
           "name": "2D-L-160GM-8-D",
           "code": "2D-L-160GM-8-D",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -54,6 +56,7 @@
         {
           "name": "2D-L-200GC-16-H",
           "code": "2D-L-200GC-16-H",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -78,6 +81,7 @@
         {
           "name": "2D-L-200GM-8-H",
           "code": "2D-L-200GM-8-H",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -102,6 +106,7 @@
         {
           "name": "2D-L-320GM-8-D",
           "code": "2D-L-320GM-8-D",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -126,6 +131,7 @@
         {
           "name": "2D-L-500GC-8-H",
           "code": "2D-L-500GC-8-H",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -150,6 +156,7 @@
         {
           "name": "SD-S-200GC-8-H",
           "code": "SD-S-200GC-8-H",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -174,6 +181,7 @@
         {
           "name": "SD-S-320GC-8-H",
           "code": "SD-S-320GC-8-H",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -198,6 +206,7 @@
         {
           "name": "3D-S-TY",
           "code": "3D-S-TY",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -229,6 +238,7 @@
         {
           "name": "MAG91",
           "code": "MAG91",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -253,6 +263,7 @@
         {
           "name": "MAG-AI",
           "code": "MAG-AI",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -274,6 +285,7 @@
         {
           "name": "MAG-RT",
           "code": "MAG-RT",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -295,6 +307,7 @@
         {
           "name": "MAG-DTEX",
           "code": "MAG-DTEX",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -319,6 +332,7 @@
         {
           "name": "ZAFR6202-AG",
           "code": "ZAFR6202-AG",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -345,6 +359,7 @@
         {
           "name": "DT-Usx",
           "code": "DT-Usx",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -366,6 +381,7 @@
         {
           "name": "DT-S Series",
           "code": "DT-S-series",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -393,6 +409,7 @@
           "name": "MAG-F9B (과학용)",
           "code": "MAG-F9B",
           "thumb": "MAG-F9B-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -416,6 +433,7 @@
           "name": "MAG-F7XM(L) (공중)",
           "code": "MAG-F7XM(L)",
           "thumb": "MAG-F7XM(L)-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -437,6 +455,7 @@
           "name": "MAG-F7(E) (과학용)",
           "code": "MAG-F7(E)",
           "thumb": "MAG-F7(E)-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -462,6 +481,7 @@
           "name": "MW320(640)",
           "code": "MW320(640)",
           "thumb": "MW320(640)-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -486,6 +506,7 @@
           "name": "SW640",
           "code": "SW640",
           "thumb": "SW640-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -499,6 +520,7 @@
           "name": "SW640T",
           "code": "SW640T",
           "thumb": "SW640T-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -512,6 +534,7 @@
           "name": "SW320",
           "code": "SW320",
           "thumb": "SW320-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -537,6 +560,7 @@
           "name": "SW1024L",
           "code": "SW1024L",
           "thumb": "SW1024L-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "FEATURE",
@@ -554,6 +578,7 @@
           "name": "HT60",
           "code": "HT60",
           "thumb": "HT60-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "FEATURE",
@@ -571,6 +596,7 @@
           "name": "PS300 적외선 온도계",
           "code": "PS300",
           "thumb": "PS300-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -591,6 +617,7 @@
         {
           "name": "MAG-RAY",
           "code": "MAG-RAY",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -619,6 +646,7 @@
         {
           "name": "GAS41 (휴대형)",
           "code": "GAS41",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -640,6 +668,7 @@
         {
           "name": "GAS31 (온라인)",
           "code": "GAS31",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -663,6 +692,7 @@
           "name": "MAG-G3 (냉장)",
           "code": "MAG-G3",
           "thumb": "MAG-G3-thumb",
+          "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
@@ -693,6 +723,7 @@
         {
           "name": "Pika L",
           "code": "Pika_L",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -717,6 +748,7 @@
         {
           "name": "Pika XC2",
           "code": "Pika_XC2",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -741,6 +773,7 @@
         {
           "name": "Pika IR",
           "code": "Pika_IR",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -764,6 +797,7 @@
         {
           "name": "Pika IR+",
           "code": "Pika_IR+",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -788,6 +822,7 @@
         {
           "name": "Pika UV",
           "code": "Pika_UV",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -811,6 +846,7 @@
         {
           "name": "Pika IR-L",
           "code": "Pika_IR-L",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -833,6 +869,7 @@
         {
           "name": "Pika IR-L+",
           "code": "Pika_IR-L+",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -855,6 +892,7 @@
         {
           "name": "Pika L-F",
           "code": "Pika_L-F",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -877,6 +915,7 @@
         {
           "name": "Pika Swir",
           "code": "Pika_Swir",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -906,6 +945,7 @@
         {
           "name": "MRC-920-029",
           "code": "mrc-920-029",
+          "has": ["spec"],
           "features": [
             {
               "title": "MSV Series Illumination 6″ Dual Line",
@@ -919,6 +959,7 @@
         {
           "name": "MRC-920-031",
           "code": "mrc-920-031",
+          "has": ["spec"],
           "features": [
             {
               "title": "MSV Series Illumination Dual 4",
@@ -931,6 +972,7 @@
         {
           "name": "MRC-920-027",
           "code": "mrc-920-027",
+          "has": ["spec"],
           "features": [
             {
               "title": "MSV Series Illumination Dual 8",
@@ -943,6 +985,7 @@
         {
           "name": "MRC-920-030",
           "code": "mrc-920-030",
+          "has": ["spec"],
           "features": [
             {
               "title": "MSV Series Illumination Single-Line",
@@ -962,6 +1005,7 @@
         {
           "name": "4u Rackmount Vision Controller",
           "code": "4u-Rackmount-Vision",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -983,6 +1027,7 @@
         {
           "name": "Compact-Size Vision Controller",
           "code": "Compact-Size-Vision",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -1021,6 +1066,7 @@
         {
           "name": "Outperform Fanless Vision Controller",
           "code": "Outperform-Fanless-Vision",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",

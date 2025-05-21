@@ -6,6 +6,7 @@
         {
           "name": "로봇1",
           "code": "로봇1",
+          "has": ["spec"],
           "features": [
             {
               "title": "",
@@ -24,6 +25,7 @@
         {
           "name": "로봇2",
           "code": "로봇2",
+          "has": ["spec"],
           "features": [
             {
               "title": "4",

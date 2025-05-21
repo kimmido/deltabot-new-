@@ -6,6 +6,7 @@
         {
           "name": "Server ARS-111GL-NHR",
           "code": "ARS-111GL-NHR",
+          "has": ["detail", "spec"],
           "features": [
             {
               "title": "Applications",
@@ -32,6 +33,7 @@
         {
           "name": "Server SYS-421GE-TNRT",
           "code": "SYS-421GE-TNRT",
+          "has": ["detail", "spec"],
           "features": [
             {
               "title": "Applications",
@@ -62,6 +64,7 @@
         {
           "name": "S2205-01",
           "code": "S2205-01",
+          "has": ["detail", "spec"],
           "features": [
             {
               "title": "null",
@@ -84,6 +87,7 @@
         {
           "name": "S2205-04",
           "code": "S2205-04",
+          "has": ["detail", "spec"],
           "features": [
             {
               "title": "null",
@@ -106,6 +110,7 @@
         {
           "name": "G4201",
           "code": "G4201",
+          "has": ["detail", "spec"],
           "features": [
             {
               "title": "null",
@@ -135,6 +140,7 @@
         {
           "name": "KWS 3000-CML",
           "code": "KWS-3000-CML",
+          "has": ["detail", "spec"],
           "features": [
             {
               "title": "null",
@@ -157,6 +163,7 @@
         {
           "name": "CG2300 Server",
           "code": "CG2300",
+          "has": ["detail", "spec"],
           "features": [
             {
               "title": "null",
@@ -177,6 +184,7 @@
         {
           "name": "CG2400 Server",
           "code": "CG2400",
+          "has": ["detail", "spec"],
           "features": [
             {
               "title": "null",
@@ -198,6 +206,7 @@
         {
           "name": "CG2500 Server",
           "code": "CG2500",
+          "has": ["detail", "spec"],
           "features": [
             {
               "title": "null",
@@ -227,6 +236,7 @@
         {
           "name": "1U",
           "code": "1U",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -246,6 +256,7 @@
         {
           "name": "Ace Flight™ 4609",
           "code": "Ace-Flight-4609",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -282,6 +293,7 @@
         {
           "name": "Ace Flight™ 4608",
           "code": "Ace-Flight-4608",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -317,6 +329,7 @@
         {
           "name": "HARAKAN-F",
           "code": "HARAKAN-F",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -352,6 +365,7 @@
         {
           "name": "DARC™ VX208",
           "code": "DARC-VX208",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -382,6 +396,7 @@
         {
           "name": "S1901 EvoTRAC",
           "code": "s1901-evotrac",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -403,6 +418,7 @@
         {
           "name": "EvoTRAC-G103",
           "code": "evotrac-g103",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
@@ -419,6 +435,115 @@
                 "통합 안테나가 탑재된 802.11ac/bgn WiFi 액세스 포인트",
                 "2개의 RF 연결 및 듀얼 SIM이 있는 4G LTE+",
                 "서지 보호 및 필터링 기능이 있는 9-36 VDC 차량 전원 입력"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "edge-ai": [
+    {
+      "title": "EFCO",
+      "items": [
+        {
+          "name": "AGX ORIN",
+          "code": "AGX-ORIN",
+          "features": [
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "NVIDIA Jetson AGX Orin™ 32GB/64GB 모듈 지원",
+                "1 x GbE 포트, 1 x 10GbE 포트",
+                "1 x M.2 B-Key, 1 x M.2 E-Key, 1 x M.2 M-Key 슬롯",
+                "9~36VDC의 넓은 입력 전압 범위",
+                "작동 온도 -25°C ~ +55°C",
+                "팬리스 디자인"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AGX ORIN (PoE)",
+          "code": "AGX-ORIN(PoE)",
+          "features": [
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "NVIDIA Jetson AGX Orin™ 32GB/64GB 모듈 지원",
+                "2/4 x IEEE 802.3af GbE PSE 포트",
+                "1 x GbE 포트, 1 x 10GbE 포트",
+                "1 x M.2 B-Key, 1 x M.2 E-Key, 1 x M.2 M-Key 슬롯",
+                "9~36VDC의 넓은 입력 전압 범위",
+                "작동 온도 -25°C ~ +55°C",
+                "팬리스 디자인"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ORIN NX",
+          "code": "ORIN-NX",
+          "features": [
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "NVIDIA Jetson Orin™ NX(슈퍼 모드 지원) 모듈 지원",
+                "1 x M.2 B-Key, 1 x M.2 E-Key, 1 x M.2 M-Key(128GB 내장)",
+                "2 x RJ-45 GbE 포트",
+                "12~24VDC의 넓은 입력 전압 범위",
+                "작동 온도 -25°C ~ +55°C",
+                "팬리스 디자인"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ORIN NANO",
+          "code": "ORIN-NANO",
+          "features": [
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "NVIDIA Orin Nano™(슈퍼 모드 지원) 모듈 지원",
+                "1 x M.2 B-Key, 1 x M.2 E-Key, 1 x M.2 M-Key(128GB 내장)",
+                "2 x RJ-45 GbE 포트",
+                "12~24VDC의 넓은 입력 전압 범위",
+                "작동 온도 -25°C ~ +55°C",
+                "팬리스 디자인"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "MSI",
+      "items": [
+        {
+          "name": "MS-C913",
+          "code": "MS-C913",
+          "features": [
+            {
+              "title": "null",
+              "texts": [
+                "초저전력 팬리스 솔루션을 갖춘 NVIDIA ® Jetson Orin™ Nano/NX AI 컴퓨팅 플랫폼이 탑재된 컴팩트형 박스형 PC"
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "NVIDIA ® Jetson Orin™ Nano 4GB/8GB 또는 NX 8GB/16GB SoM",
+                "Nano 4GB: 64비트 LPDDR5 2133MHz/",
+                "Nano 8GB: 128비트 LPDDR5 2133MHz",
+                "NX 8GB/16GB: 128비트 LPDDR5 3200MHz",
+                "단일 독립 디스플레이: HDMI",
+                "RJ-45를 갖춘 2GbE LAN",
+                "1개의 M.2 E-키, 1개의 M.2 B-키, 1개의 M.2 M-키 슬롯",
+                "4개의 USB 3.2 Gen2, 1개의 Micro USB 2.0 Gen2.0, 1개의 COM, 1개의 GPIO, 1개의 CAN",
+                "안테나용으로 예약된 4개의 개구부",
+                "광전압 DC-IN 19V",
+                "팬리스 디자인의 초소형"
               ]
             }
           ]

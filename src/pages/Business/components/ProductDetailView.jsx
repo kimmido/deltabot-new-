@@ -4,7 +4,10 @@ import ProductInfoSection from "./ProductInfoSection ";
 
 function ProductDetailView({ item, currentTab }) {
   return (
-    <article className="ProductDetailView">
+    <article
+      className="ProductDetailView"
+      style={item.has && { minHeight: "90vh" }}
+    >
       <div className="pd_flex">
         <div className="pd_left">
           <img
@@ -16,8 +19,12 @@ function ProductDetailView({ item, currentTab }) {
           <ProductIntro item={item} />
         </div>
       </div>
-      <ProductInfoSection item={item} currentTab={currentTab} type="detail" />
-      <ProductInfoSection item={item} currentTab={currentTab} type="spec" />
+      {item.has && item.has.includes("detail") && (
+        <ProductInfoSection item={item} currentTab={currentTab} type="detail" />
+      )}
+      {item.has && item.has.includes("spec") && (
+        <ProductInfoSection item={item} currentTab={currentTab} type="spec" />
+      )}
     </article>
   );
 }

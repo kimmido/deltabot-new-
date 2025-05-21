@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function ProductInfoSection({ item, currentTab, type }) {
-  const [exists, setExists] = useState(true);
+  const [imgLoad, setImgLoad] = useState(false);
 
   const title = {
     spec: "SPECIFICATION",
@@ -13,26 +13,22 @@ function ProductInfoSection({ item, currentTab, type }) {
   };
 
   return (
-    exists && (
-      <div className={`ProductInfoSection ${type}`}>
-        {title[type] && <h6>{title[type]}</h6>}
-        <span
-          className="copy-prevent"
-          onContextMenu={(e) => {
-            e.preventDefault();
-          }}
-        ></span>
-        <div>
-          <img
-            src={`/images/product/${currentTab}/${item.code}_${srcKeyword[type]}.jpg`}
-            alt="상세 정보"
-            onError={() => {
-              setExists(false);
-            }}
-          />
-        </div>
+    <div className={`ProductInfoSection ${type}`}>
+      {imgLoad && title[type] && <h6>{title[type]}</h6>}
+      <span
+        className="copy-prevent"
+        onContextMenu={(e) => {
+          e.preventDefault();
+        }}
+      ></span>
+      <div>
+        <img
+          src={`/images/product/${currentTab}/${item.code}_${srcKeyword[type]}.jpg`}
+          alt={type}
+          onLoad={() => setImgLoad(true)}
+        />
       </div>
-    )
+    </div>
   );
 }
 
