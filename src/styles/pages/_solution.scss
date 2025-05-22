@@ -65,6 +65,38 @@
     }
   }
 
+  .ScrollTabs {
+    position: sticky;
+    top: 88px;
+    z-index: $z-index-floating;
+    background: white;
+    border-bottom: 1px solid #ddd;
+
+    .tab-menu {
+      z-index: 999;
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+
+      button {
+        border: none;
+        background: transparent;
+        border-bottom: 0;
+        // font-size: 1rem;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+
+        @include hover-active-underline($color-active, 2px);
+
+        &.active {
+          // color: $color-point;
+          font-weight: bold;
+          // border-bottom: 2px solid blue;
+        }
+      }
+    }
+  }
+
   .cnt-emph {
     display: block;
     margin-top: min(10vw, 130px);

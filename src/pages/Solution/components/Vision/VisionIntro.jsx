@@ -5,7 +5,7 @@ import StepFlow from "../StepFlow";
 function VisionIntro() {
   return (
     <section className="VisionIntro">
-      <div className="cnt01">
+      <div className="cnt01 container">
         {/* <strong className="cnt-emph">
           스마트 자동화를 위한 AI 기반 비전 시스템
         </strong> */}
@@ -54,7 +54,7 @@ function VisionIntro() {
         </div>
       </section>
 
-      <section className="cnt03">
+      <section className="cnt03 container">
         <StepFlow title="비전시스템 흐름 구성도" steps={cnt03} />
       </section>
     </section>
