@@ -5,7 +5,6 @@ gsap.registerPlugin(useGSAP);
 
 function SolutionHeading({ title, text, currentPath }) {
   const backgroundRef = useRef(null);
-  const titleRef = useRef(null);
 
   useGSAP(() => {
     gsap.fromTo(
@@ -22,30 +21,32 @@ function SolutionHeading({ title, text, currentPath }) {
   });
 
   return (
-    <div className="SolutionHeading PageHeading">
+    <div className="SolutionHeading">
       <div className="background">
         <div
           ref={backgroundRef}
           className={`background__img`}
           style={{
-            backgroundImage: `url(/images/heading/heading_${currentPath}.jpg)`,
+            backgroundImage: `linear-gradient(
+              to left,
+              rgba(20, 20, 20, 0) 40%,
+              rgba(20, 20, 20, 0.15) 70%,
+              rgba(20, 20, 20, 0.3) 100%
+            ), url(/images/heading/heading_${currentPath}.jpg)`,
           }}
         ></div>
       </div>
-      <div className="page__text-box overflow_hidden">
+      <div className="heading__text overflow_hidden">
         <h2
           key={currentPath}
-          ref={titleRef}
-          className="page__title"
+          className="heading__text__title"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
           {title}
         </h2>
         <h2
-          // key={currentPath}
-          ref={titleRef}
-          className="page__title"
+          className="heading__text__sub"
           data-aos="fade-up"
           data-aos-duration="1000"
         >

@@ -7,6 +7,7 @@ import Applications from "./components/Applications";
 import img1 from "../../assets/images/solution/automation(1).svg";
 import img2 from "../../assets/images/solution/automation(2).svg";
 import img3 from "../../assets/images/solution/automation(3).jpg";
+import SolutionHeading from "./components/SolutionHeading";
 
 function Automation() {
   const data = {
@@ -46,10 +47,11 @@ function Automation() {
 
   return (
     <div className="Automation solution-wrapper">
-      <div className="container">
-        <PageHeading title="automation" currentPath="automation" />
-      </div>
-      <strong className="cnt-emph">공정에 최적화된 로봇 자동화 솔루션</strong>
+      <SolutionHeading
+        title="Automation Solution"
+        text="공정에 최적화된 로봇 자동화 솔루션"
+        currentPath="automation"
+      />
       <p className="cnt-desc">
         정확한 진단부터 최적 설계, 정밀 제작·설치, 철저한 테스트, 전문 교육,
         그리고 체계적인 유지보수까지, 검증된 기술력으로 신뢰할 수 있는 자동화

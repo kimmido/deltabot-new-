@@ -1,6 +1,4 @@
 import React from "react";
-import PageHeading from "../../components/UI/PageHeading";
-
 import MachineVisionSection from "./components/Vision/MachineVisionSection";
 import VisionIntro from "./components/Vision/VisionIntro";
 import ThermalImagingSection from "./components/Vision/ThermalImagingSection";
@@ -11,13 +9,11 @@ import SolutionHeading from "./components/SolutionHeading";
 function Vision() {
   return (
     <div className="Vision solution-wrapper">
-      <div className="heading">
-        <SolutionHeading
-          title="Vision"
-          text="스마트 자동화를 위한 AI 기반 비전 시스템"
-          currentPath="vision-solution"
-        />
-      </div>
+      <SolutionHeading
+        title="Vision Solution"
+        text="스마트 자동화를 위한 AI 기반 비전 시스템"
+        currentPath="vision-solution"
+      />
       <div className="container">
         <VisionIntro />
       </div>
