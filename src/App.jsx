@@ -83,7 +83,7 @@ function App() {
                 <Route element={<BusinessLayout />}>
                   <Route index element={<Navigate to="pcr" replace />} />
                   <Route path="pcr" element={<Business />} />
-                  <Route path="uv" element={<Business />} />
+                  <Route path="uv" element={<ComingSoon />} />
                 </Route>
               </Route>
 
