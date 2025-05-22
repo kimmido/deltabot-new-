@@ -89,7 +89,7 @@
 
     .intro-img {
       display: block;
-      margin-top: 1.2em;
+      margin-top: 2.4em;
       margin-left: auto;
       margin-right: auto;
       border-radius: $radius-card-lg;
@@ -199,9 +199,7 @@
     }
 
     .app-list {
-      // @include flexBox(row, 2.4rem, stretch, space-between, wrap);
       display: grid;
-      grid-template-columns: 1fr;
       gap: 1.6rem;
 
       @include respondTo(pc-s) {
@@ -223,7 +221,7 @@
           text-align: center;
 
           strong {
-            font-size: $font-size-con-title-xs;
+            font-size: 1.5rem;
 
             @include respondTo(tablet-l) {
               font-size: $font-size-con-title-sm;
@@ -233,23 +231,12 @@
       }
 
       &.image {
-        @include respondTo(tablet-s) {
-          grid-template-columns: repeat(3, 1fr);
-        }
+        grid-template-columns: repeat(3, 1fr);
 
         .app-item {
           overflow: hidden;
-          display: flex;
           border: 1px solid $color-border;
           border-radius: $radius-card-lg;
-
-          @include respondTo(tablet-s) {
-            display: block;
-          }
-          .media-box,
-          .text-box {
-            flex: 50%;
-          }
 
           .media-box {
             aspect-ratio: 1.618 / 1;
@@ -263,9 +250,7 @@
       }
 
       &.video {
-        @include respondTo(tablet-s) {
-          grid-template-columns: repeat(2, 1fr);
-        }
+        grid-template-columns: repeat(2, 1fr);
 
         .media-box {
           border-radius: $radius-card-lg;
