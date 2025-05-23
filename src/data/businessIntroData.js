@@ -432,6 +432,7 @@ const businessIntroData = {
       ],
     }, // amr
      
+
     // =========== 비전 시스템 =========== 
     // 머신비전 카메라
     "machine-vision": {
@@ -611,23 +612,25 @@ const businessIntroData = {
     // 리싸이클링
     "recycling-robot": {
       theme: 'default',
-      title: 'PCR',
+      title: '자원순환형 재활용 로봇 시스템',
       description: [
-        ''
+        '#자원순환형 재활용 로봇 시스템은 로봇 자동화 기술과 인공지능(AI)을 융합하여, 폐기물의 자동 선별, 처리, 그리고 재자원화 과정을 지능적으로 수행하는 차세대 자원 순환 솔루션입니다.#',
+        '이 시스템은 기존의 수작업에 의존하던 비효율적인 폐기물 분류 방식을 혁신적으로 대체함으로써, #정확도는 물론 속도와 운영 효율성까지 비약적으로 향상시키는 것이 핵심 장점#입니다. AI가 축적된 데이터를 분석하여 폐기물의 유입 패턴, 재질 비율, 처리 효율 등을 지속적으로 학습하고 최적화함으로써, 운영자가 보다 정밀하고 전략적인 자원순환 관리를 수행할 수 있습니다.',
+        '자원순환형 재활용 로봇 시스템은 환경 보호를 넘어, #산업 전반의 지속가능성, 효율성, 그리고 첨단화를 동시에 추구하는 미래형 자원관리 솔루션#이라 할 수 있습니다.'
       ],
       images: ['default'],
       applications: [
         {
-          image: 'pcr-application(1).jpg',
-          title: '',
+          image: 'recycling-robot-application(1).jpg',
+          title: '플라스틱',
         },
         {
-          image: 'pcr-application(2).jpg',
-          title: '',
+          image: 'recycling-robot-application(2).jpg',
+          title: '종이',
         },
         {
-          image: 'pcr-application(3).jpg',
-          title: '',
+          image: 'recycling-robot-application(3).jpg',
+          title: '철/알루미늄',
         },
       ],
     },
@@ -655,27 +658,29 @@ const businessIntroData = {
       ],
     },
 
+
     // =========== 메디컬 =========== 
     // pcr
     "pcr": {
       theme: 'default',
-      title: 'PCR',
+      title: 'Fast, Accurate, Compact.',
       description: [
-        ''
+        '빠르고 정밀한 차세대 Real-time PCR 플랫폼',
+        '최신 자동화 분자진단 시스템은,  핵산 추출 → RT-PCR 검사 → 결과 분석까지 모든 단계를 자동화하여 정확하고 빠른 유전자 검출을 실현합니다.'
       ],
-      images: ['default'],
+      images: ['default', 'default', 'default'],
       applications: [
         {
           image: 'pcr-application(1).jpg',
-          title: '',
+          title: '질병 진단',
         },
         {
           image: 'pcr-application(2).jpg',
-          title: '',
+          title: '중앙 유전자 분석',
         },
         {
           image: 'pcr-application(3).jpg',
-          title: '',
+          title: '식품 안전 및 환경 위생',
         },
       ],
     },

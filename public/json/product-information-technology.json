@@ -466,7 +466,6 @@
         {
           "name": "AGX ORIN (PoE)",
           "code": "AGX-ORIN(PoE)",
-          "has": ["spec"],
           "features": [
             {
               "title": "FEATURE",
@@ -485,7 +484,6 @@
         {
           "name": "ORIN NX",
           "code": "ORIN-NX",
-          "has": ["spec"],
           "features": [
             {
               "title": "FEATURE",
@@ -503,7 +501,6 @@
         {
           "name": "ORIN NANO",
           "code": "ORIN-NANO",
-          "has": ["spec"],
           "features": [
             {
               "title": "FEATURE",
@@ -526,7 +523,6 @@
         {
           "name": "MS-C913",
           "code": "MS-C913",
-          "has": ["spec"],
           "features": [
             {
               "title": "null",
