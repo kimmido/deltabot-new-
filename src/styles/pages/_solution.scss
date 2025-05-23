@@ -682,10 +682,118 @@
 }
 
 .EcoAI {
-  .CleaningRobot {
+  .CleaningRobotSection {
+    .desc-bottom {
+      margin-top: 4rem;
+
+      @include respondTo(tablet-l) {
+        margin-top: 6rem;
+      }
+    }
+
     .cnt01 {
       img {
         display: block;
+      }
+    }
+
+    .cnt02 {
+      .flex-box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 3vw;
+
+        @include respondTo(tablet-l) {
+          flex-wrap: nowrap;
+        }
+
+        img {
+          width: auto;
+          max-width: 100%;
+          border-radius: 0;
+          padding: 0 50px;
+
+          @include respondTo(tablet-l) {
+            max-width: 50%;
+            padding: 0 50px;
+
+            &:last-child {
+              border-left: 1px solid $color-blue-300;
+            }
+          }
+        }
+      }
+    }
+
+    .cnt03 {
+      .HorizontalCardSlider {
+        .swiper-slide {
+          aspect-ratio: 2 / 3;
+          img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: $radius-card-md;
+          }
+        }
+      }
+    }
+
+    .cnt04 {
+      .VerticalThumbSlider {
+        @include respondTo(mobile-l) {
+          display: flex;
+          flex-flow: row nowrap;
+          height: 40vh;
+        }
+
+        @include respondTo(tablet-s) {
+          height: 52vh;
+        }
+
+        img {
+          height: 100%;
+          object-fit: cover;
+          border-radius: $radius-card-md;
+        }
+
+        &__mainSwiper {
+          @include respondTo(mobile-l) {
+            height: 100%;
+            width: 80%;
+            margin-right: 10px;
+          }
+        }
+
+        &__thumbSwiper {
+          @include respondTo(mobile-l) {
+            height: 100%;
+            width: 20%;
+          }
+
+          .swiper-wrapper {
+            @include respondTo(mobile-l) {
+              // flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+
+    .cnt05 {
+      .flex-container {
+        justify-content: space-between;
+
+        img {
+          display: block;
+          width: 49%;
+          border-radius: $radius-card-md;
+        }
+      }
+
+      .dl-item {
+        display: flex;
+        gap: 0.3em;
       }
     }
   }
