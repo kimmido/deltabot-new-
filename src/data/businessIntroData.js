@@ -557,56 +557,6 @@ const businessIntroData = {
       ],
     },
 
-    // GPU 서버
-    "gpu-server": {
-      theme: 'default',
-      title: 'AI·HPC를 위한 고성능 GPU',
-      description: [
-        'AI 인프라 통합 구축, 고성능 연구·분석 환경, 또는 기업용 AI 서비스 플랫폼의 기반으로 매우 적합한 GPU 서버입니다.',
-        '고성능 GPU와 멀티코어 CPU를 바탕으로 대규모 연산 및 딥러닝 학습을 빠르게 처리할 수 있으며, 고속 네트워킹과 확장형 I/O, 유연한 리소스 관리로 안정적인 운영이 가능합니다. AI 추론·분석부터 스토리지 모니터링까지 폭넓게 대응할 수 있어, 확장성과 통합성을 갖춘 차세대 인프라를 구현할 수 있습니다.'
-      ],
-      images: ['default'],
-      features: [
-        {
-          icon: 'icon_computer_graphics',
-          text: '고성능 GPU 지원'
-        },
-        {
-          icon: 'icon_cpu',
-          text: '멀티코어 서버 CPU'
-        },
-        {
-          icon: 'icon_io_interface',
-          text: '고속·확장형 I/O'
-        },
-        {
-          icon: 'icon_data_center',
-          text: 'AI·HPC 통합 가속'
-        },
-        {
-          icon: 'icon_puzzle',
-          text: '확장성과 유연한 구성'
-        },
-        {
-          icon: 'icon_network_transfer',
-          text: '고속 네트워킹'
-        },
-      ],
-      applications: [
-        {
-          image: 'gpu-server-application(1).jpg',
-          title: '지능형 비전 분석 시스템',
-        },
-        {
-          image: 'gpu-server-application(2).jpg',
-          title: '의료 영상 진단 보조 시스템',
-        },
-        {
-          image: 'gpu-server-application(3).jpg',
-          title: '제조 이상탐지 및 품질 분석',
-        },
-      ],
-    },
 
     // =========== 에코 프렌들리 =========== 
     // 리싸이클링
@@ -709,6 +659,57 @@ const businessIntroData = {
     },
 
     // =========== IT ==========
+    // GPU 서버
+    "gpu-server": {
+      theme: 'default',
+      title: 'AI·HPC를 위한 고성능 GPU',
+      description: [
+        'AI 인프라 통합 구축, 고성능 연구·분석 환경, 또는 기업용 AI 서비스 플랫폼의 기반으로 매우 적합한 GPU 서버입니다.',
+        '고성능 GPU와 멀티코어 CPU를 바탕으로 대규모 연산 및 딥러닝 학습을 빠르게 처리할 수 있으며, 고속 네트워킹과 확장형 I/O, 유연한 리소스 관리로 안정적인 운영이 가능합니다. AI 추론·분석부터 스토리지 모니터링까지 폭넓게 대응할 수 있어, 확장성과 통합성을 갖춘 차세대 인프라를 구현할 수 있습니다.'
+      ],
+      images: ['default'],
+      features: [
+        {
+          icon: 'icon_computer_graphics',
+          text: '고성능 GPU 지원'
+        },
+        {
+          icon: 'icon_cpu',
+          text: '멀티코어 서버 CPU'
+        },
+        {
+          icon: 'icon_io_interface',
+          text: '고속·확장형 I/O'
+        },
+        {
+          icon: 'icon_data_center',
+          text: 'AI·HPC 통합 가속'
+        },
+        {
+          icon: 'icon_puzzle',
+          text: '확장성과 유연한 구성'
+        },
+        {
+          icon: 'icon_network_transfer',
+          text: '고속 네트워킹'
+        },
+      ],
+      applications: [
+        {
+          image: 'gpu-server-application(1).jpg',
+          title: '지능형 비전 분석 시스템',
+        },
+        {
+          image: 'gpu-server-application(2).jpg',
+          title: '의료 영상 진단 보조 시스템',
+        },
+        {
+          image: 'gpu-server-application(3).jpg',
+          title: '제조 이상탐지 및 품질 분석',
+        },
+      ],
+    },
+
     // 워크스테이션
     "workstations": {
       theme: 'default',
@@ -909,6 +910,30 @@ const businessIntroData = {
         {
           image: 'vehicle-application(3).jpg',
           title: '스마트 물류 및 차량 모니터링 시스템',
+        },
+      ],
+    },
+
+    // 엣지 AI
+    "edge-ai": {
+      theme: 'default',
+      title: '실시간 AI로 움직이는 산업',
+      description: [
+        'NVIDIA® Jetson™ 기반의 고성능 엣지 서버로 스마트 팩토리부터 리테일까지, 실시간 추론과 안정성을 동시에 제공합니다. 저전력 팬리스 설계와 유연한 I/O 확장으로, 다양한 산업 환경에 맞춤형 솔루션을 제공합니다.'
+      ],
+      images: ['default', 'default', 'default', 'default'],
+      applications: [
+        {
+          image: 'edge-ai-application(1).jpg',
+          title: 'AI 비전',
+        },
+        {
+          image: 'edge-ai-application(2).jpg',
+          title: '스마트 제조/물류 자동화/엣지 제어',
+        },
+        {
+          image: 'edge-ai-application(3).jpg',
+          title: '스마트 시티',
         },
       ],
     },
