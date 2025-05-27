@@ -8,20 +8,12 @@
           "code": "single-robot",
           "features": [
             {
-              "title": "",
-              "texts": [
-                ""
-              ]
-            },
-            {
-              "title": "SPECIFICATION",
+              "title": "INTRODUCTION",
               "bullets": [
-                "Pick rate : Up to 80 ppm",
-                "Vision : AI Vision",
-                "conveyour : 1m/sec",
-                "Electric :  200~220V AC",
-                "Gripper : Suction",
-                "Size : 2100(W) x 2000(D) x 2700(H)"
+                "단일 델타 로봇을 기반으로 설계된 고속 자동 분류 시스템",
+                "AI 기반의 비전 시스템과 정밀 로봇 제어 기술이 결합된 지능형 장비",
+                "당사의 로봇은 자재 분류, 피킹, 배치 등의 물리적 작업을 지능적으로 수행하여 최대 95%의 정확도와 분당 최대 80회의 피킹을 달성",
+                "전면 투명 창을 통해 작동 상태 모니터링이 가능"
               ]
             }
           ]
@@ -31,20 +23,14 @@
           "code": "tandem-robot",
           "features": [
             {
-              "title": "",
-              "texts": [
-                ""
-              ]
-            },
-            {
-              "title": "SPECIFICATION",
+              "title": "INTRODUCTION",
               "bullets": [
-                "Pick rate : Up to 80 ppm",
-                "Vision : AI Vision",
-                "conveyour : 1m/sec",
-                "Electric :  200~220V AC",
-                "Gripper : Suction",
-                "Size : 2100(W) x 2000(D) x 2700(H)"
+                "2대의 델타 로봇 기반으로 설계되어 처리량을 크게 향상",
+                "AI 기반의 비전 시스템과 정밀 로봇 제어 기술이 결합된 지능형 장비",
+                "폐기물 분류 작업에 있어 정확도, 처리 속도, 지속 운용성을 대폭 향상",
+                "재활용률 증가와 친환경 경영을 동시에 실현할 수 있도록 설계",
+                "전면 투명 창을 통해 작동 상태 모니터링이 가능",
+                "비용이 많이 드는 개조나 운영 방식 변경 없이 라인에 즉시 투입가능"
               ]
             }
           ]
@@ -67,7 +53,7 @@
               ]
             },
             {
-              "title": "Applications",
+              "title": "APPLICATIONS",
               "bullets": [
                 "수질환경 관리 및 유지관리",
                 "생태 및 환경 보호 준설",

@@ -62,14 +62,14 @@
           ]
         },
         {
-          "name": "S2205-01",
-          "code": "S2205-01",
-          "has": ["detail", "spec"],
+          "name": "DE2-AI5X-01",
+          "code": "DE2-AI5X-01",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
               "texts": [
-                "MSI S2205는 24개의 드라이브 베이와 듀얼 소켓 5세대 Intel Xeon Scalable 프로세서를 탑재한 강력한 2U 서버 플랫폼입니다. 32개의 DDR5 DIMM 슬롯과 최대 7개의 PCIe 4.0 x16 슬롯을 통해 클라우드 컴퓨팅에 탁월한 성능을 제공합니다."
+                "DE2-AI5X-01는 24개의 드라이브 베이와 듀얼 소켓 5세대 Intel Xeon Scalable 프로세서를 탑재한 강력한 2U 서버 플랫폼입니다. 32개의 DDR5 DIMM 슬롯과 최대 7개의 PCIe 4.0 x16 슬롯을 통해 클라우드 컴퓨팅에 탁월한 성능을 제공합니다."
               ]
             },
             {
@@ -85,14 +85,14 @@
           ]
         },
         {
-          "name": "S2205-04",
-          "code": "S2205-04",
-          "has": ["detail", "spec"],
+          "name": "DE2-AI5X-04",
+          "code": "DE2-AI5X-04",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
               "texts": [
-                "MSI S2205는 24개의 드라이브 베이와 듀얼 소켓 5세대 Intel Xeon Scalable 프로세서를 탑재한 강력한 2U 서버 플랫폼입니다. 32개의 DDR5 DIMM 슬롯과 최대 7개의 PCIe 4.0 x16 슬롯을 통해 클라우드 컴퓨팅에 탁월한 성능을 제공합니다."
+                "DE2-AI5X-04는 24개의 드라이브 베이와 듀얼 소켓 5세대 Intel Xeon Scalable 프로세서를 탑재한 강력한 2U 서버 플랫폼입니다. 32개의 DDR5 DIMM 슬롯과 최대 7개의 PCIe 4.0 x16 슬롯을 통해 클라우드 컴퓨팅에 탁월한 성능을 제공합니다."
               ]
             },
             {
@@ -108,14 +108,14 @@
           ]
         },
         {
-          "name": "G4201",
-          "code": "G4201",
-          "has": ["detail", "spec"],
+          "name": "DE4-AI8X",
+          "code": "DE4-AI8X",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
               "texts": [
-                "MSI G4201은 8개의 GPU, 12개의 드라이브 베이, 그리고 듀얼 5세대 인텔 스케일러블 프로세서를 탑재한 강력한 4U 서버 플랫폼입니다. 32개의 DDR5 DIMM 슬롯과 최대 8개의 PCIe 5.0 x16 슬롯을 통해 AI 학습에 탁월한 성능을 제공합니다."
+                "DE4-AI8X은 8개의 GPU, 12개의 드라이브 베이, 그리고 듀얼 5세대 인텔 스케일러블 프로세서를 탑재한 강력한 4U 서버 플랫폼입니다. 32개의 DDR5 DIMM 슬롯과 최대 8개의 PCIe 5.0 x16 슬롯을 통해 AI 학습에 탁월한 성능을 제공합니다."
               ]
             },
             {
@@ -444,7 +444,7 @@
   ],
   "edge-ai": [
     {
-      "title": "EFCO",
+      "title": "Edge-AI",
       "items": [
         {
           "name": "AGX ORIN",
@@ -514,12 +514,7 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "MSI",
-      "items": [
+        },
         {
           "name": "MS-C913",
           "code": "MS-C913",
