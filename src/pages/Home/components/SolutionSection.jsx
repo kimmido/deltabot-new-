@@ -15,15 +15,15 @@ function SolutionSection({ aosProps }) {
       path: solutionRoutes[0].path,
       aosType: "fade-right",
     },
-    {
-      img: backImg2,
-      title: solutionRoutes[1].label,
-      path: solutionRoutes[0].path,
-      aosType: "fade-up",
-    },
+    // {
+    //   img: backImg2,
+    //   title: solutionRoutes[1].label,
+    //   path: solutionRoutes[0].path,
+    //   aosType: "fade-up",
+    // },
     {
       img: backImg3,
-      title: solutionRoutes[2].label,
+      title: solutionRoutes[1].label,
       path: solutionRoutes[0].path,
       aosType: "fade-left",
     },
@@ -53,10 +53,10 @@ function SolutionSection({ aosProps }) {
           <h2 className="section_title" data-aos="fade-up" {...aosProps}>
             Deltabot Solutions
           </h2>
-          <p data-aos="fade-right" {...aosProps}>
+          {/* <p data-aos="fade-right" {...aosProps}>
             Deltabot가 제공하는 비전 AI 로보틱스 솔루션은 업계 리딩 수준의 빠른
             작업 속도와 정확성을 인정받고 있습니다.
-          </p>
+          </p> */}
           <ul className="item-list">
             {data.map((item, i) => (
               <li

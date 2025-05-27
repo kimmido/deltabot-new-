@@ -278,7 +278,8 @@
         height: 240px;
 
         @include respondTo(tablet-s) {
-          aspect-ratio: 11 / 13;
+          // aspect-ratio: 11 / 13;
+          aspect-ratio: 13 / 11;
           height: auto;
         }
 
@@ -312,6 +313,7 @@
             width: 100%;
 
             .title {
+              font-size: 1em;
               text-align: center;
 
               @include respondTo(tablet-s) {

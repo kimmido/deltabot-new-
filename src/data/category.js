@@ -57,13 +57,13 @@ export const category = [
             { path: "edge-ai", label: "Edge-AI" },
           ],
         },
-        {
-          label: "Humanoid",
-          path: "humanoid",
-          items: [
-            { path: "humanoid1", label: "humanoid1" },
-          ],
-        },
+        // {
+        //   label: "Humanoid",
+        //   path: "humanoid",
+        //   items: [
+        //     { path: "humanoid1", label: "humanoid1" },
+        //   ],
+        // },
       ],
     },
     {
@@ -76,10 +76,10 @@ export const category = [
           label: "Automation",
           path: "automation-solution",
         },
-        {
-          label: "Eco-AI",
-          path: "eco-ai-solution",
-        },
+        // {
+        //   label: "Eco-AI",
+        //   path: "eco-ai-solution",
+        // },
         {
           label: "Vision",
           path: "vision-solution",

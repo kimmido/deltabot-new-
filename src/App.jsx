@@ -92,7 +92,7 @@ function App() {
                   <Route index element={<Navigate to="gpu-server" replace />} />
                   <Route path="gpu-server" element={<Business />} />
                   <Route path="workstations" element={<Business />} />
-                  <Route path="rack-mount" element={<Business />} />
+                  <Route path="rack-mount" element={<ComingSoon />} />
                   <Route path="military" element={<Business />} />
                   <Route path="vehicle" element={<Business />} />
                   <Route path="edge-ai" element={<Business />} />
