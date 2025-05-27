@@ -1,29 +1,39 @@
 import React from "react";
 import ExpandableVideoList from "../../../../components/UI/ExpandableVideoList";
-import img1 from "../../../../assets/images/solution/machine-cnt1.jpg";
 
+import img0 from "../../../../assets/images/solution/machine-banner.jpg";
+import img1 from "../../../../assets/images/solution/machine-cnt1.jpg";
 import img2_1 from "../../../../assets/images/solution/machine-cnt2-1.svg";
 import img2_2 from "../../../../assets/images/solution/machine-cnt2-2.svg";
 import img2_3 from "../../../../assets/images/solution/machine-cnt2-3.svg";
 import img2_4 from "../../../../assets/images/solution/machine-cnt2-4.svg";
 import img2_5 from "../../../../assets/images/solution/machine-cnt2-5.svg";
+import SectionBanner from "./SectionBanner";
 
 function MachineVisionSection() {
   return (
     <section className="MachineVisionSection">
-      <div className="cnt01 container container--s">
-        <h3 className="sec__title">머신비전</h3>
-        <img className="sec-img" src={img1} alt="머신비전" />
+      <div className="container">
+        <SectionBanner
+          sectionName="machine"
+          title1="머신비전 카메라"
+          title2="영상을 분석하여 물체를 사람처럼 인식하고 판단하는 기술"
+          src={img0}
+        />
+      </div>
 
-        <p className="cnt-desc">
+      <div className="cnt01 container container--s">
+        {/* <h3 className="sec__title">머신비전</h3> */}
+        {/* <img className="sec-img" src={img1} alt="머신비전" /> */}
+        {/* <p className="cnt-desc">
           카메라나 이미지 센서를 통해 촬영된 영상을 분석하여
           <span className="highlight">사람처럼 물체를 인식하고 판단</span>할 수
           있도록 하는 기술
-        </p>
+        </p> */}
       </div>
 
       <div className="cnt02 container">
-        <h3 className="sec__title">비전 시스템의 응용</h3>
+        <h3 className="sec__title">머신 비전 시스템의 응용</h3>
         <div className="flex-container">
           {cnt02.map((item, i) => (
             <div key={item}>

@@ -1,6 +1,7 @@
 import React from "react";
 import CircleIconList from "../../../Business/components/CircleIconList";
 
+import img0 from "../../../../assets/images/solution/thermal-banner.jpg";
 import img1 from "../../../../assets/images/solution/thermal-cnt1.jpg";
 import img2 from "../../../../assets/images/solution/thermal-cnt2.jpg";
 import img3_1 from "../../../../assets/images/solution/thermal-cnt3-1.svg";
@@ -15,14 +16,22 @@ import img6_5 from "../../../../assets/images/solution/thermal-cnt6-5.jpg";
 import img6_6 from "../../../../assets/images/solution/thermal-cnt6-6.jpg";
 import img6_7 from "../../../../assets/images/solution/thermal-cnt6-7.jpg";
 import img6_8 from "../../../../assets/images/solution/thermal-cnt6-8.jpg";
+import SectionBanner from "./SectionBanner";
 
 function ThermalImagingSection() {
   return (
-    <div className="ThermalImagingSection">
-      <section className="cnt01 container container--s">
-        <h3 className="sec__title">열화상 비전</h3>
-        <img className="sec-img" src={img1} alt="머신비전" />
+    <section className="ThermalImagingSection">
+      <div className="container">
+        <SectionBanner
+          sectionName="machine"
+          title1="열화상 카메라"
+          title2="설비 과열부터 체온 이상까지 실시간으로 감지하는 스마트 감시 기술"
+          src={img0}
+        />
+      </div>
 
+      <section className="cnt01 container container--s">
+        {/* <h3 className="sec__title">열화상 비전</h3> */}
         <p className="cnt-desc">
           <span className="break-point">
             눈에 보이지 않는
@@ -37,6 +46,8 @@ function ThermalImagingSection() {
             안전하고 효율적인 진단과 감시에 사용
           </span>
         </p>
+
+        <img className="sec-img" src={img1} alt="머신비전" />
       </section>
       <div className="cnt01 container">
         <CircleIconList features={cnt01} />
@@ -125,7 +136,7 @@ function ThermalImagingSection() {
           ))}
         </div>
       </section>
-    </div>
+    </section>
   );
 }
 const cnt01 = [

@@ -1,0 +1,261 @@
+@use "sass:color";
+
+// 비전 솔루션 페이지
+.Vision {
+  .VisionIntro {
+    .cnt02 {
+      .flex-container {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 2.5em;
+
+        @include respondTo(tablet-s) {
+          flex-wrap: nowrap;
+        }
+      }
+
+      .item {
+        flex: 50% 0 0;
+        height: auto;
+
+        @include respondTo(tablet-s) {
+          flex: 1;
+        }
+
+        svg {
+          fill: #4e88e7;
+          width: 100%;
+          height: auto;
+          aspect-ratio: 1 / 1.2176470588235293;
+        }
+
+        p {
+          margin-top: 1em;
+          text-align: center;
+          font-size: 1.2em;
+          font-weight: 700;
+          color: #4e88e7;
+        }
+
+        @for $i from 1 to 6 {
+          &:nth-child(#{$i}) {
+            .img-box {
+              background: url("@assets/images/solution/vision-cnt2-#{$i}.png")
+                center
+                32% /
+                60%
+                no-repeat;
+
+              svg {
+                filter: brightness(70% + (10% * $i));
+              }
+            }
+
+            p {
+              filter: brightness(70% + (10% * $i));
+            }
+          }
+        }
+
+        ul {
+          margin-top: 1em;
+          padding: 0 0.4em 0 0.8em;
+
+          li:last-child {
+            margin-top: 0.5em;
+          }
+        }
+      }
+    }
+  }
+
+  .MachineVisionSection,
+  .ThermalImagingSection,
+  .HyperspectralSection {
+    padding: $spacing-content-lg 0;
+  }
+
+  // 머신비전 카메라
+  .MachineVisionSection {
+    .cnt02,
+    .cnt03 {
+      margin-top: min(13vw, 160px);
+    }
+
+    .cnt02 {
+      .flex-container {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1vw;
+
+        @include respondTo(tablet-s) {
+          flex-wrap: nowrap;
+        }
+
+        div {
+          flex: calc(50% - 1em) 0 1;
+
+          @include respondTo(tablet-s) {
+            flex: 1;
+          }
+
+          img {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // 열화상 카메라
+  .ThermalImagingSection {
+    .cnt01 {
+      margin-top: min(8vw, 80px);
+
+      .cnt-desc {
+        margin: 0 auto min(5vw, 50px);
+
+        .break-point {
+          display: block;
+        }
+      }
+    }
+
+    .cnt03 {
+      .flex-box {
+        position: relative;
+        @include flexBox(column, 42px);
+        align-items: flex-start;
+
+        @include respondTo(tablet-l) {
+          flex-direction: row;
+
+          &::after {
+            @include pseudoDefault($color-border);
+            width: 1px;
+            left: 50%;
+          }
+        }
+
+        img {
+          @include respondTo(tablet-l) {
+            width: 10%;
+            flex: 1;
+          }
+        }
+      }
+    }
+
+    .cnt05 {
+      table {
+        table-layout: fixed;
+        width: 100%;
+        border-spacing: 0.6em;
+
+        caption {
+          font-size: min(2vw, 23px);
+          font-weight: 700;
+          color: $color-gray-800;
+          margin-bottom: min(2vw, 38px);
+        }
+
+        th,
+        td {
+          border-radius: $radius-card-md;
+          padding: 1.2em 0.2em;
+        }
+        thead {
+          th {
+            background-color: $color-gray-050;
+            &:nth-of-type(1) {
+              background-color: #fff2e5;
+              // border: 1px solid $color-gray-500;
+            }
+          }
+        }
+
+        tbody {
+          th {
+            background-color: #fff2e5;
+            // border: 1px solid #de8431;
+          }
+          td {
+            text-align: center;
+            background-color: #faf0ff;
+          }
+        }
+      }
+
+      img {
+        margin-top: min(2.2vw, 44px);
+      }
+    }
+
+    .cnt06 {
+      .title {
+        margin: 15px 0;
+        text-align: center;
+      }
+
+      .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-top: 15px;
+
+        @include respondTo(tablet-l) {
+          margin-top: 50px;
+        }
+
+        .item {
+          text-align: center;
+          width: 49%;
+
+          @include respondTo(tablet-l) {
+            width: 25%;
+          }
+
+          img {
+            width: auto;
+            max-width: 99%;
+          }
+
+          p {
+            margin: 15px 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  } // 열화상 카메라
+
+  .HyperspectralSection {
+    h4 {
+      margin: min(9.4vw, 80px) auto 0;
+    }
+
+    .cnt03 {
+      h4 {
+        margin-bottom: min(9.4vw, 60px);
+      }
+
+      .flex-container {
+        flex-direction: column;
+        gap: 2em;
+
+        @include respondTo(mobile-l) {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        img {
+          width: 60%;
+          @include respondTo(mobile-l) {
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+}

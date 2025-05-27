@@ -12,7 +12,7 @@ const tabs = [
   { id: "section1", label: "머신비전" },
   { id: "section2", label: "열화상" },
   { id: "section3", label: "초분광" },
-  { id: "products", label: "제품 보러가기" },
+  // { id: "products", label: "제품 보러가기" },
 ];
 
 function Vision() {
@@ -43,11 +43,11 @@ function Vision() {
         <HyperspectralSection />
       </div>
 
-      <div id={tabs[4].id} ref={getRef(tabs[4].id)}>
+      {/* <div id={tabs[4].id} ref={getRef(tabs[4].id)}>
         <section>
           <h3 className="sec__title">제품</h3>
         </section>
-      </div>
+      </div> */}
     </div>
   );
 }
