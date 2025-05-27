@@ -7,7 +7,7 @@ const businessIntroData = {
         [
           '사람과 같은 작업 공간에서 #직접 협력하며 작업할 수 있도록 설계된 산업용 로봇# 입니다. 기존 산업용 로봇과는 달리, #로봇과 인간이 동시에 하나의 작업을 수행할 수 있는 환경을# 목표로 하며, #안전성, 유연성, 사용성을# 중점으로 설계되었습니다.'
         ],
-      images: [`default`],
+      images: [`card`],
       features: [
         {
           icon: 'icon_shield-sky-blue.png',
@@ -70,7 +70,7 @@ const businessIntroData = {
       title: '모든 산업 현장에, 가장 유연한 파트너.',
       description:
         ['산업용 로봇의 매 순간과 모든 동작은 제조 전반에 걸쳐 중요하며, 다양한 작업 범위와 하중 용량, 그리고 고정밀과 고속의 완벽한 조합 덕분에 #로로딩 및 언로딩, 디버링, 테스트, 접착, 분류, 조립, 핸들링 등 모든 종류의 생산 공정에 널리 사용#되어 왔으며 #모든 산업 분야에서 탁월한 성능을 발휘# 합니다.'],
-      images: [`default`],
+      images: [`card`],
       features: [
         {
           icon: 'icon_chart_rocket-vivid-cyan.png',
@@ -135,7 +135,7 @@ const businessIntroData = {
         ['스카라 로봇은 컴팩트한 설계와 고정밀, 고속 성능을 결합하여 제한된 공간에서도 최적의 생산성을 실현할 수 있는 자동화 솔루션입니다 . 수평 다관절 구조를 기반으로 한 #정밀한 동작과 짧은 사이클 타임은 고속 조립 및 이송 공정에 최적화되어# 있으며, #설치 유연성과 유지보수 용이성 또한 탁월#합니다.',
           '고도화된 스마트 팩토리 환경에서 요구되는 속도, 정확성, 공간 효율을 모두 만족시키는 #스카라 로봇은 제조업의 경쟁력을 높이는 핵심 파트너입니다.#'
         ],
-      images: [`default`],
+      images: [`card`],
       features: [
         {
           icon: 'icon_chart_gear-cherry-pink.png',
@@ -243,7 +243,7 @@ const businessIntroData = {
       title: '고속 조립·포장의 혁신, 델타 로봇',
       description:
         ['델타 로봇(Delta Robot)은 병렬 링크 메커니즘(Parallel Kinematic Mechanism)을 기반으로 설계된 고속 고정밀 산업용 로봇입니다. 3개의 경량 링크가 삼각형 형태의 상단 프레임에 연결되어 있으며, 각각 독립적인 서보 모터에 의해 구동됩니다. 이 링크들은 공통된 플랫폼(엔드 이펙터)을 지지하며, 로봇의 공간 좌표를 고정밀하게 제어할 수 있도록 해줍니다. 델타 구조는 일반적인 직렬 구조 로봇에 비해 훨씬 빠른 응답성과 낮은 관성을 제공하므로, #초당 수백 회의 픽앤플레이스 작업을 요구하는 고속 생산 라인#라인에 특히 적합합니다. 이러한 구조적 이점 덕분에 #델타 로봇은 식음료, 제약, 전자부품, 화장품, 포장 산업 등 다양한 분야에서 널리 활용#되고 있습니다.', '#클린룸 인증(IP65 이상) 제품도 지원 가능#하므로, 위생 기준이 엄격한 환경에서도 안정적으로 작동하며, 생산 품질 향상 및 생산성 극대화에 기여할 수 있는 핵심 자동화 장비로 자리매김하고 있습니다.'],
-      images: [`default`],
+      images: [`card`],
       features: [
         {
           icon: 'icon_chart_gear-royal-blue.png',
@@ -290,7 +290,7 @@ const businessIntroData = {
         {
           video: 'deltarobot-application(1).mp4',
           poster: 'deltarobot-application(1).jpg',
-          title: '물티슈 뚜껑 부착기',
+          title: '미용 패치 부착',
         },
         {
           video: 'deltarobot-application(2).mp4',
@@ -309,7 +309,7 @@ const businessIntroData = {
           '특히 본 시스템은 #프레임형 컨베이어가 통합된 스마트 자동분류시스템으로# 표준화된 프로세스 링크를 깊이 있게 통합하고, 고속성과 높은 유연성을 지닌 병렬 로봇을 중심으로 구성되어 있습니다. 비전 시스템, 그리퍼, 제품 및 카톤 운반 모듈, 로봇 보호장치 등 전 구성요소가 유기적으로 연결되어 있어, 제품의 종류나 형상에 따라 #신속한 교체, 유연한 조정, 높은 작동 효율성을 제공#합니다.',
           '이러한 지능형 시스템은 포장 자동화의 모든 단계를 통합하여 정밀하고 빠른 분류 및 이송, 생산라인의 유연한 대응, 그리고 최적의 작업 효율성을 실현합니다.'
         ],
-      images: [`default`],
+      images: [`card`],
       features: [
         {
           icon: 'icon_robot_arm-blue-purple.png',
@@ -375,7 +375,7 @@ const businessIntroData = {
           '이러한 시스템은 단순 반복 작업부터 고정밀 조작까지 다양한 작업 환경에 적용할 수 있습니다. #자재의 흐름 관리, CNC 머신의 자동 적재 및 하역, 육안 검사(비전 검사), 장비 상태 감지 및 제어#와 같은 고도화된 작업도 무인으로 수행할 수 있습니다. 또한 다양한 작업장을 오가며 사람과 협업하거나 복잡한 공정을 하나의 로봇이 연속적으로 수행할 수 있기 때문에, #생산 효율 향상, 품질 안정화, 유연 생산 체계의 구현이 가능#합니다.',
           'AMR 시리즈는 기존 자동화 설비의 한계를 극복하고, #스마트 팩토리와 하이믹스(HI-MIX) 생산 환경에 최적화된 솔루션#으로 자리 잡고 있습니다.'
         ],
-      images: [`default`],
+      images: [`card`],
       features: [
         {
           icon: 'icon_robot_iot-teal-blue.png',
@@ -443,7 +443,7 @@ const businessIntroData = {
           '다양한 산업 환경에서 발생하는 시각 처리 문제를 해결하기 위해 설계된 AI 기반 머신 비전 시스템입니다.', 
           '딥러닝과 2D/3D 비전 알고리즘을 기반으로 다양한 작업을 정밀하고 안정적으로 수행하며, 사용자의 편의성과 확장성을 모두 고려한 시스템입니다.'
         ],
-      images: [`default`],
+      images: [`card`],
       applications: [
         {
           image: 'machine-vision-application(1).jpg',
@@ -466,7 +466,7 @@ const businessIntroData = {
       title: '온도 감지부터 이상 징후 예측까지',
       description:
         ['열화상카메라는 적외선 기반의 비접촉식 온도 감지 기술을 활용하여 사람이나 설비의 온도를 실시간으로 측정하고 모니터링할 수 있습니다. 특히 공항, 병원, 공장 등 다중 이용 시설에서 체온 이상 감지를 통해 감염병 확산을 사전에 차단하는 데 효과적으로 활용되고 있습니다. 최근에는 AI 비전 기술과 결합되어 자동으로 고온 이상 징후를 탐지하고, 위험 요인을 신속하게 경고함으로써 안전성과 효율성을 동시에 향상시키고 있습니다.', '설비 과열, 전기 누전, 기계 고장 등 산업 현장에서의 온도 기반 이상 징후도 사전에 감지하여 사고를 예방할 수 있습니다. 이러한 비접촉식 열 감지 기술은 예방 진단은 물론, 스마트 안전 관리 체계 구축에도 기여하며 다양한 분야에 폭넓게 활용되고 있습니다.'],
-      images: [`default`],
+      images: [`card`],
       extraText: '설비 과열, 누전, 체온 이상 등 온도 기반 이상 탐지 비접촉식 열 감지로 예방 진단 및 안전 모니터링 실현',
       applications: [
         {
@@ -492,7 +492,7 @@ const businessIntroData = {
         [
           '초분광카메라는 성분 분석, 이물질 검출, 품질 분류, 정량 분석 등을 비접촉 방식으로 수행하며, AI 기반 스펙트럼 분석을 통해 고정밀 자동 판단이 가능합니다.', 
         ],
-      images: [`small`, `small`],
+      images: [`default`, `card`],
       applications: [
         {
           image: 'spectral-camera-application(1).jpg',
@@ -514,7 +514,7 @@ const businessIntroData = {
       theme: 'default',
       title: 'AI 정밀 분석을 위한, 고성능 조명',
       description: ['산업용 머신비전 검사용 고정밀 LED 조명 으로, 균일한 밝기와 다양한 파장 옵션을 제공하여 정밀 영상 획득을 지원합니다.'],
-      images: ['default'],
+      images: ['card'],
       applications: [
         {
           image: 'illumination-application(1).jpg',
@@ -539,7 +539,7 @@ const businessIntroData = {
         '고성능 머신비전 솔루션을 위한 통합형 비전 컨트롤러로, 카메라, 조명, AI 분석, I/O 제어 기능을 하나의 장비에서 처리할 수 있는 올인원 플랫폼입니다.',
         '산업용 현장에서 고속 생산 라인의 정밀 검사, 분류, 제어 작업에 최적화되어 있습니다.'
       ],
-      images: ['default'],
+      images: ['card'],
       extraText: '머신비전 시스템의 중앙 제어장치로, 영상 입력 → 처리 → 결과 출력까지 통합 관리',
       applications: [
         {
@@ -568,7 +568,7 @@ const businessIntroData = {
         '이 시스템은 기존의 수작업에 의존하던 비효율적인 폐기물 분류 방식을 혁신적으로 대체함으로써, #정확도는 물론 속도와 운영 효율성까지 비약적으로 향상시키는 것이 핵심 장점#입니다. AI가 축적된 데이터를 분석하여 폐기물의 유입 패턴, 재질 비율, 처리 효율 등을 지속적으로 학습하고 최적화함으로써, 운영자가 보다 정밀하고 전략적인 자원순환 관리를 수행할 수 있습니다.',
         '자원순환형 재활용 로봇 시스템은 환경 보호를 넘어, #산업 전반의 지속가능성, 효율성, 그리고 첨단화를 동시에 추구하는 미래형 자원관리 솔루션#이라 할 수 있습니다.'
       ],
-      images: ['default'],
+      images: ['spacing-l', 'spacing-l'],
       applications: [
         {
           image: 'recycling-robot-application(1).jpg',
@@ -591,7 +591,7 @@ const businessIntroData = {
       description: [
         '도심 하천, 저수지, 인공 수로, 공원 수변 공간 등 다양한 수상 환경에서의 수질 개선과 생태계 보호를 위한 차세대 수면 관리 로봇 솔루션을 제공합니다. 수면 위의 부유 쓰레기 수거와 수중 수초 제거를 위한 각기 다른 기능의 첨단 로봇들은, 작업 효율성과 운용 안전성을 극대화하도록 설계되어 있습니다.','인력 접근이 어려운 구역에서도 정밀한 작업이 가능하며, 24시간 무인 운영, 넓은 작업 반경, 자동화된 데이터 수집 및 모니터링 기능을 통해 환경 관리의 새로운 기준을 제시합니다. 각 제품의 특화된 임무 수행 능력으로, 지속 가능한 수자원 관리, 생태계 복원, 그리고 유지보수 비용 절감이라는 핵심 가치를 실현합니다'
       ],
-      images: ['default', 'default'],
+      images: ['card', 'spacing-l'],
       applications: [
         {
           image: 'cleaning-robot-application(1).jpg',
@@ -618,7 +618,7 @@ const businessIntroData = {
         '빠르고 정밀한 차세대 Real-time PCR 플랫폼',
         '최신 자동화 분자진단 시스템은,  핵산 추출 → RT-PCR 검사 → 결과 분석까지 모든 단계를 자동화하여 정확하고 빠른 유전자 검출을 실현합니다.'
       ],
-      images: ['default', 'default', 'default'],
+      images: ['default', 'card', 'default'],
       applications: [
         {
           image: 'pcr-application(1).jpg',
@@ -667,7 +667,7 @@ const businessIntroData = {
         'AI 인프라 통합 구축, 고성능 연구·분석 환경, 또는 기업용 AI 서비스 플랫폼의 기반으로 매우 적합한 GPU 서버입니다.',
         '고성능 GPU와 멀티코어 CPU를 바탕으로 대규모 연산 및 딥러닝 학습을 빠르게 처리할 수 있으며, 고속 네트워킹과 확장형 I/O, 유연한 리소스 관리로 안정적인 운영이 가능합니다. AI 추론·분석부터 스토리지 모니터링까지 폭넓게 대응할 수 있어, 확장성과 통합성을 갖춘 차세대 인프라를 구현할 수 있습니다.'
       ],
-      images: ['default'],
+      images: ['card'],
       features: [
         {
           icon: 'icon_computer_graphics',
@@ -715,7 +715,7 @@ const businessIntroData = {
       theme: 'default',
       title: '고성능 워크스테이션 & 서버',
       description: ['AI, HPC, CAD/CAE, 머신비전, 시뮬레이션을 위한 최적화된 성능을 제공하는 고성능 워크스테이션 및 서버. 다양한 폼팩터와 최신 프로세서, 고성능 GPU, 고속 인터페이스, 원격 관리 기능을 통해 뛰어난 처리 능력과 효율성을 구현합니다.'],
-      images: ['default'],
+      images: ['card'],
       features: [
         {
           icon: 'icon_cpu',
@@ -767,7 +767,7 @@ const businessIntroData = {
         '공장 자동화, 스마트 팩토리, 머신비전, 품질검사, IoT 게이트웨이, 에지 컴퓨팅 등 고속 데이터 처리와 실시간 제어가 요구되는 환경에서 핵심 인프라로 활용됩니다.',
         '특히, 견고한 하드웨어 구성과 표준화된 폼팩터는 산업용 캐비닛이나 제어 랙에 쉽게 통합될 수 있어 유지보수 및 확장 또한 용이합니다. 또한 GPU나 고속 SSD, 고성능 네트워크 카드 등을 추가 장착하여 AI 분석, 예지 정비, 비전 시스템 등의 고부가가치 작업도 지원합니다.'
       ],
-      images: ['default'],
+      images: ['card'],
       features: [
         {
           icon: 'icon_cpu',
@@ -818,7 +818,7 @@ const businessIntroData = {
       description: [
         '혹독한 환경에서도 흔들림 없이 작동하는 서버, 그것이 바로 밀리터리 서버입니다. ','고성능 프로세싱 파워는 물론, 열과 충격, 진동에 강한 산업용 등급의 내구성, 군사 수준의 보안 아키텍처까지 갖춘 이 서버는 군 통신망, 전장 상황실, 감시 시스템, 산업 자동화 설비 등 고신뢰 환경에서 최적의 성능을 발휘합니다.','전장처럼 예측 불가능한 상황에서도 데이터를 지키고, 시스템을 유지하는 것이 곧 경쟁력입니다. 무결점 작동을 위한 선택, 밀리터리 서버로 미래의 임무를 준비하십시오.'
       ],
-      images: ['default'],
+      images: ['card'],
       features: [
         {
           icon: 'icon_cpu',
@@ -871,7 +871,7 @@ const businessIntroData = {
         '‘비히클(Vehicle)’은 단순히 자동차만을 의미하지 않습니다. 사람이나 화물을 이동시키기 위해 설계된 모든 이동 수단(자전거, 기차, 비행기, 선박 등)을 포괄하며, 각기 다른 기능과 목적을 가지고 다양한 산업 및 사회적 맥락에서 사용됩니다.',
         '오늘날 비히클은 단순한 교통수단을 넘어 경제, 물류, 관광, 환경 등 여러 분야에서 필수적인 인프라로 자리 잡고 있으며, 특히 전기차(EV) 및 친환경 이동 수단의 부상과 함께 더욱 주목받고 있습니다. S1901 EvoTRAC는 이러한 흐름 속에서, 미래 지향적이고 지속 가능한 모빌리티 생태계를 위한 기술적 기반을 제공합니다.'
       ],
-      images: ['default'],
+      images: ['card'],
       features: [
         {
           icon: 'icon_cpu',
@@ -921,7 +921,7 @@ const businessIntroData = {
       description: [
         'NVIDIA® Jetson™ 기반의 고성능 엣지 서버로 스마트 팩토리부터 리테일까지, 실시간 추론과 안정성을 동시에 제공합니다. 저전력 팬리스 설계와 유연한 I/O 확장으로, 다양한 산업 환경에 맞춤형 솔루션을 제공합니다.'
       ],
-      images: ['default', 'default', 'default', 'default'],
+      images: ['card', 'default', 'default', 'default'],
       applications: [
         {
           image: 'edge-ai-application(1).jpg',

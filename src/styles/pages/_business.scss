@@ -5,7 +5,7 @@
   .desc-box,
   .BusinessApplications,
   .ProductCatalog {
-    margin-top: $spacing-layout-sm;
+    margin-top: min(10vw, 60px);
 
     @include respondTo(tablet-l) {
       margin-top: $spacing-layout-xl;
@@ -77,6 +77,7 @@
         margin-bottom: $spacing-layout-md;
       }
     }
+
     .desc {
       font-size: 1.7rem;
       margin-top: 0.8em;
@@ -92,9 +93,20 @@
       margin-top: 2.4em;
       margin-left: auto;
       margin-right: auto;
-      border-radius: $radius-card-lg;
       width: auto;
       max-width: 100%;
+
+      &.card {
+        border-radius: $radius-card-lg;
+      }
+
+      &.spacing-l {
+        margin-top: 40px;
+
+        @include respondTo(tablet-s) {
+          margin-top: min(7vw, 100px);
+        }
+      }
     }
   } // BusinessIntroSection
 
@@ -200,10 +212,10 @@
 
     .app-list {
       display: grid;
-      gap: 1.6rem;
+      gap: 10px;
 
       @include respondTo(pc-s) {
-        gap: 4rem;
+        gap: 40px;
       }
 
       .app-item {
@@ -217,8 +229,12 @@
         }
 
         .text-box {
-          padding: $spacing-content-sm;
+          padding: 16px 12px;
           text-align: center;
+
+          @include respondTo(tablet-l) {
+            padding: $spacing-content-sm;
+          }
 
           strong {
             font-size: 1.5rem;
@@ -236,14 +252,16 @@
         .app-item {
           overflow: hidden;
           border: 1px solid $color-border;
-          border-radius: $radius-card-lg;
+          border-radius: $radius-card-md;
+          @include respondTo(tablet-l) {
+            border-radius: $radius-card-lg;
+          }
 
           .media-box {
             aspect-ratio: 1.618 / 1;
           }
 
           .text-box {
-            border-radius: $radius-card-lg;
             align-content: center;
           }
         }
@@ -253,8 +271,11 @@
         grid-template-columns: repeat(2, 1fr);
 
         .media-box {
-          border-radius: $radius-card-lg;
           aspect-ratio: 16 / 9;
+          border-radius: $radius-card-md;
+          @include respondTo(tablet-l) {
+            border-radius: $radius-card-lg;
+          }
 
           video {
             width: 100%;
@@ -520,7 +541,7 @@
         align-content: center;
 
         @include respondTo(tablet-s) {
-          padding: 5rem 0 2rem; // 모달창 닫기 버튼과 컨텐츠의 겹침 방지
+          padding: 5rem 2rem 2rem 0; // 모달창 닫기 버튼과 컨텐츠의 겹침 방지
         }
 
         .prod_name {

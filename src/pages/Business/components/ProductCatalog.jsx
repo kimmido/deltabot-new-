@@ -49,17 +49,17 @@ function ProductCatalog({ currentTab, productData = [], routes }) {
   return (
     <section className="ProductCatalog">
       <div className="catalog__title-box">
-        <div className="container">
-          <h3
-            className="catalog__title"
-            style={{
-              backgroundImage: `url(/images/business/${currentTab}-product.png)`,
-            }}
-          >
-            <span className="l">Product</span>
-            <span className="s">{route.label}</span>
-          </h3>
-        </div>
+        <h3
+          className="catalog__title"
+          style={{
+            backgroundImage: `url(/images/business/${currentTab}-catalog-banner.png)`,
+          }}
+        >
+          <span className="l">{route.label} 시리즈</span>
+          {/* <span className="s">DeltaBot이 엄선한 최적의 제품 라인업</span> */}
+          <span className="s">업계를 선도하는 고성능 제품을 만나보세요</span>
+          {/* <span className="s">Product Lineup</span> */}
+        </h3>
       </div>
 
       <div className="flex-container" ref={gsapContainerRef}>

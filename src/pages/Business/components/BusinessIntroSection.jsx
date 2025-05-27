@@ -17,7 +17,7 @@ function BusinessIntroSection({ data, currentTab }) {
           className={`intro-img ${img}`}
           key={index}
           src={`/images/business/${currentTab}(${index + 1}).jpg`}
-          alt=""
+          alt={currentTab}
         />
       ))}
 
