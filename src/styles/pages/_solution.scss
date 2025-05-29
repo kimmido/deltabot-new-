@@ -1,30 +1,24 @@
 // 솔루션 공통 요소 스타일
 .solution-wrapper {
   .cnt-emph,
-  // .cnt-desc,
-  .sec__title {
+  .cnt-title {
     text-align: center;
   }
 
-  img {
-    border-radius: $radius-card-lg;
+  .section {
+    margin-top: min(13vw, 160px);
   }
 
-  section {
-    margin-top: min(13vw, 160px);
+  .ContenttBlock {
+    margin-top: min(12vw, 140px);
+  }
 
-    .sec__title {
-      margin-bottom: min(9.4vw, 60px);
-      font-size: $font-size-section-title-sm;
-      @include respondTo(tablet-l) {
-        font-size: $font-size-section-title-md;
-      }
-    }
+  .cnt-title {
+    margin-bottom: min(9.4vw, 60px);
+    font-size: 2rem;
 
-    .sec-img {
-      display: block;
-      margin: 0 auto;
-      // max-width: 900px;
+    @include respondTo(tablet-l) {
+      font-size: $font-size-section-title-md;
     }
   }
 
@@ -83,13 +77,13 @@
 
   .ScrollTabs {
     position: sticky;
-    top: $header-sm;
+    top: calc($header-sm - 10px);
     z-index: $z-index-floating;
     background: white;
     border-bottom: 1px solid #ddd;
 
     @include respondTo(tablet-l) {
-      top: $header-md;
+      top: calc($header-md - 10px);
     }
 
     .tab-menu {
@@ -139,6 +133,7 @@
     }
   }
 
+  // 각 섹션 나누기 배너
   .SectionBanner {
     height: 34vw;
     max-height: 345px;
@@ -153,201 +148,90 @@
       align-content: center;
 
       .title1 {
-        font-weight: 400;
-        font-size: 1em;
-        @include respondTo(tablet-s) {
-          font-size: min(2.2vw, 1.8em);
-        }
+        font-weight: 600;
+        font-size: min(3vw, 40px);
       }
 
       .title2 {
         margin-top: min(2vw, 20px);
-        width: min(48vw, 600px);
-        font-weight: 600;
-        font-size: min(3vw, 40px);
-      }
-    }
-  }
-
-  .flow-wrapper {
-    @include flexBox(column, 1.6em 0, center, space-between, wrap);
-    background: #fff;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-
-    @include respondTo(tablet-s) {
-      flex-direction: row;
-    }
-
-    @include respondTo(tablet-l) {
-      flex-wrap: nowrap;
-    }
-
-    .step {
-      text-align: center;
-      width: 18vw;
-      position: relative;
-
-      svg {
-        width: 60px;
-        height: 60px;
-        fill: #2b6cb0;
-        animation: pulse 2s infinite;
-      }
-      .step-title {
-        font-weight: 600;
-        margin-top: 10px;
-        font-size: 1.8rem;
-      }
-      .step-sub {
-        margin-top: 4px;
-        font-size: 1.3rem;
-        color: $color-text-light;
-      }
-    }
-
-    .arrow-right {
-      font-size: 32px;
-      margin: 0 20px;
-      color: #aaa;
-      animation: slideDown 1.5s infinite;
-
-      @keyframes slideDown {
-        0% {
-          transform: rotate(90deg) translateX(0);
-          opacity: 0.3;
+        width: 59%;
+        font-size: 1em;
+        @include respondTo(tablet-s) {
+          width: 40%;
+          font-size: min(2.2vw, 1.4em);
         }
-        50% {
-          transform: rotate(90deg) translateX(6px);
-          opacity: 1;
-        }
-        100% {
-          transform: rotate(90deg) translateX(0);
-          opacity: 0.3;
-        }
-      }
-
-      @include respondTo(tablet-s) {
-        animation: slideRight 1.5s infinite;
-      }
-    }
-  }
-}
-
-.EcoAI {
-  .CleaningRobotSection {
-    .desc-bottom {
-      margin-top: 4rem;
-
-      @include respondTo(tablet-l) {
-        margin-top: 6rem;
-      }
-    }
-
-    .cnt01 {
-      img {
-        display: block;
-      }
-    }
-
-    .cnt02 {
-      .flex-box {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        row-gap: 3vw;
 
         @include respondTo(tablet-l) {
-          flex-wrap: nowrap;
-        }
-
-        img {
-          width: auto;
-          max-width: 100%;
-          border-radius: 0;
-          padding: 0 50px;
-
-          @include respondTo(tablet-l) {
-            max-width: 50%;
-            padding: 0 50px;
-
-            &:last-child {
-              border-left: 1px solid $color-blue-300;
-            }
-          }
+          width: min(49vw, 640px);
         }
       }
     }
+  }
 
-    .cnt03 {
-      .HorizontalCardSlider {
-        .swiper-slide {
-          aspect-ratio: 2 / 3;
-          img {
-            height: 100%;
-            object-fit: cover;
-            border-radius: $radius-card-md;
-          }
+  // 아이콘+화살표 흐름도
+  .StepFlow {
+    .flow-wrapper {
+      @include flexBox(column, 1.6em 0, center, space-between, wrap);
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+      @include respondTo(tablet-s) {
+        flex-direction: row;
+      }
+
+      @include respondTo(tablet-l) {
+        flex-wrap: nowrap;
+      }
+
+      .step {
+        text-align: center;
+        width: 18vw;
+        position: relative;
+
+        svg {
+          width: 60px;
+          height: 60px;
+          fill: #2b6cb0;
+          animation: pulse 2s infinite;
+        }
+        .step-title {
+          font-weight: 600;
+          margin-top: 10px;
+          font-size: 1.8rem;
+        }
+        .step-sub {
+          margin-top: 4px;
+          font-size: 1.3rem;
+          color: $color-text-light;
         }
       }
-    }
 
-    .cnt04 {
-      .VerticalThumbSlider {
-        @include respondTo(mobile-l) {
-          display: flex;
-          flex-flow: row nowrap;
-          height: 40vh;
+      .arrow-right {
+        font-size: 32px;
+        margin: 0 20px;
+        color: #aaa;
+        animation: slideDown 1.5s infinite;
+
+        @keyframes slideDown {
+          0% {
+            transform: rotate(90deg) translateX(0);
+            opacity: 0.3;
+          }
+          50% {
+            transform: rotate(90deg) translateX(6px);
+            opacity: 1;
+          }
+          100% {
+            transform: rotate(90deg) translateX(0);
+            opacity: 0.3;
+          }
         }
 
         @include respondTo(tablet-s) {
-          height: 52vh;
+          animation: slideRight 1.5s infinite;
         }
-
-        img {
-          height: 100%;
-          object-fit: cover;
-          border-radius: $radius-card-md;
-        }
-
-        &__mainSwiper {
-          @include respondTo(mobile-l) {
-            height: 100%;
-            width: 80%;
-            margin-right: 10px;
-          }
-        }
-
-        &__thumbSwiper {
-          @include respondTo(mobile-l) {
-            height: 100%;
-            width: 20%;
-          }
-
-          .swiper-wrapper {
-            @include respondTo(mobile-l) {
-              // flex-direction: column;
-            }
-          }
-        }
-      }
-    }
-
-    .cnt05 {
-      .flex-container {
-        justify-content: space-between;
-
-        img {
-          display: block;
-          width: 49%;
-          border-radius: $radius-card-md;
-        }
-      }
-
-      .dl-item {
-        display: flex;
-        gap: 0.3em;
       }
     }
   }

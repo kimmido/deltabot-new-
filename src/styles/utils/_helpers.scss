@@ -112,8 +112,7 @@
 }
 
 .bullets {
-  li,
-  div {
+  > * {
     position: relative;
     padding-left: 12px;
     margin-left: 0.3rem;

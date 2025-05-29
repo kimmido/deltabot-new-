@@ -1,10 +1,9 @@
 import React from "react";
 import SvgrComponent from "../../../components/icons/SvgrComponent";
 
-function StepFlow({ title, steps }) {
+function StepFlow({ steps }) {
   return (
-    <section className="StepFlow">
-      <h3 className="sec__title">{title}</h3>
+    <div className="StepFlow">
       <div className="flow-wrapper">
         {steps.map((step, idx) => (
           <React.Fragment key={step.title}>
@@ -17,7 +16,7 @@ function StepFlow({ title, steps }) {
           </React.Fragment>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
 

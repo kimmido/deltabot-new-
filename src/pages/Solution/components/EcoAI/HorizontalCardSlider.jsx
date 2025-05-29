@@ -15,7 +15,7 @@ function HorizontalCardSlider({ slideData }) {
         navigation={true}
         speed={800}
         autoplay={{
-          delay: 6000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         slidesPerView={2.5}
@@ -29,7 +29,7 @@ function HorizontalCardSlider({ slideData }) {
       >
         {slideData.map((item, idx) => (
           <SwiperSlide key={item.text}>
-            <img src={item.src} alt={item.text} />
+            <img src={item.img} alt={item.text} />
           </SwiperSlide>
         ))}
       </Swiper>

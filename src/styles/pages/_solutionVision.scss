@@ -69,10 +69,81 @@
     }
   }
 
-  .MachineVisionSection,
-  .ThermalImagingSection,
-  .HyperspectralSection {
-    padding: $spacing-content-lg 0;
+  .FadeUpTextSlider {
+    .swiper {
+      overflow: visible;
+
+      .swiper-button {
+        &-prev,
+        &-next {
+          top: 16vw;
+          color: #fff;
+          text-shadow: $text-shadow;
+          @include respondTo(tablet-s) {
+            top: 33%;
+          }
+          @include respondTo(tablet-l) {
+            top: 36%;
+          }
+          @include respondTo(pc-s) {
+            top: 40%;
+          }
+
+          @include respondTo(tablet-s) {
+            font-size: 3rem;
+            &::after {
+              font-size: 4.4rem;
+            }
+          }
+        }
+      }
+
+      .img-box {
+        aspect-ratio: 1392 / 440;
+        overflow: hidden;
+        border-radius: $radius-card-md;
+
+        @include respondTo(tablet-s) {
+          border-radius: $radius-card-lg;
+        }
+
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .txt-box {
+      max-width: 1200px;
+      margin: 2em auto 0;
+      padding: 0 2px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+
+      &.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      &.inactive {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      @include respondTo(tablet-l) {
+        margin-top: 3em;
+      }
+
+      h4 {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+        @include respondTo(tablet-l) {
+          margin-bottom: 0.8em;
+          font-size: 1.4em;
+        }
+      }
+    }
   }
 
   // 머신비전 카메라
@@ -228,11 +299,15 @@
         }
       }
     }
+
+    .cnt07 {
+    }
   } // 열화상 카메라
 
+  // 초분광
   .HyperspectralSection {
     h4 {
-      margin: min(9.4vw, 80px) auto 0;
+      margin: min(9.4vw, 120px) auto min(4.7vw, 40px);
     }
 
     .cnt03 {
@@ -254,6 +329,13 @@
           @include respondTo(mobile-l) {
             width: 30%;
           }
+        }
+      }
+    }
+    .FadeUpTextSlider {
+      .swiper {
+        .img-box {
+          aspect-ratio: 1440 / 512;
         }
       }
     }

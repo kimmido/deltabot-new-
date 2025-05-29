@@ -1,14 +1,12 @@
 import React from "react";
 import SvgrComponent from "../../../../components/icons/SvgrComponent";
 import StepFlow from "../StepFlow";
+import ContenttBlock from "../ContenttBlock";
 
 function VisionIntro() {
   return (
     <section className="VisionIntro">
-      <div className="cnt01 container">
-        {/* <strong className="cnt-emph">
-          스마트 자동화를 위한 AI 기반 비전 시스템
-        </strong> */}
+      <ContenttBlock className="cnt01" size={1100}>
         <p className="cnt-desc">
           <span className="break-point">
             비전 시스템이란, 카메라(이미지 센서)와{" "}
@@ -34,10 +32,9 @@ function VisionIntro() {
             효과를 입증하고 있습니다.
           </span>
         </p>
-      </div>
+      </ContenttBlock>
 
-      <section className="cnt02 container">
-        <h3 className="sec__title">비전 시스템 구성 요소</h3>
+      <ContenttBlock className="cnt02" title={"비전 시스템 구성 요소"}>
         <div className="flex-container">
           {cnt02.map((item) => (
             <div className="item" key={item.title}>
@@ -52,11 +49,11 @@ function VisionIntro() {
             </div>
           ))}
         </div>
-      </section>
+      </ContenttBlock>
 
-      <section className="cnt03 container">
-        <StepFlow title="비전시스템 흐름 구성도" steps={cnt03} />
-      </section>
+      <ContenttBlock className="cnt03" title="비전시스템 흐름 구성도">
+        <StepFlow steps={cnt03} />
+      </ContenttBlock>
     </section>
   );
 }

@@ -1,9 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import MachineVisionSection from "./components/Vision/MachineVisionSection";
 import VisionIntro from "./components/Vision/VisionIntro";
 import ThermalImagingSection from "./components/Vision/ThermalImagingSection";
 import HyperspectralSection from "./components/Vision/HyperspectralSection";
-import TabMenu from "../../components/UI/TabMenu";
 import SolutionHeading from "./components/SolutionHeading";
 import ScrollTabs, { useScrollTabsRefs } from "./components/ScrollTabs";
 
@@ -25,7 +24,7 @@ function Vision() {
         text="스마트 자동화를 위한 AI 기반 비전 시스템"
         currentPath="vision-solution"
       />
-      <ScrollTabs tabs={tabs} offset="88" sectionRefs={sectionRefs} />
+      <ScrollTabs tabs={tabs} offset="138" sectionRefs={sectionRefs} />
 
       <div id={tabs[0].id} ref={getRef(tabs[0].id)}>
         <VisionIntro />
@@ -45,7 +44,7 @@ function Vision() {
 
       {/* <div id={tabs[4].id} ref={getRef(tabs[4].id)}>
         <section>
-          <h3 className="sec__title">제품</h3>
+          <h3 className="cnt-title">제품</h3>
         </section>
       </div> */}
     </div>
