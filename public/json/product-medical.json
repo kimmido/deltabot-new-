@@ -6,6 +6,7 @@
         {
           "name": "Q-GEN-5",
           "code": "Q-GEN-5",
+          "has": ["spec"],
           "features": [
             {
               "title": "유연하고 통합된 분자 진단 시스템",
@@ -20,6 +21,7 @@
         {
           "name": "Q-GEN-4",
           "code": "Q-GEN-4",
+          "has": ["spec"],
           "features": [
             {
               "title": "분자 진단 시스템",
@@ -38,23 +40,16 @@
       "title": "uv",
       "items": [
         {
-          "name": "uv제품",
-          "code": "uv제품",
-          "has": ["nullnull"],
+          "name": "에어쉴드 UV",
+          "code": "AirShield-UV",
+          "has": ["detail"],
           "features": [
             {
               "title": "INTRODUCTION",
-              "texts": [
-                ""
-              ]
-            },
-            {
-              "title": "FEATURE",
-              "texts": [
-                ""
-              ],
               "bullets": [
-                ""
+                "광촉매 기술로 실내 공기를 깨끗하게 정화가능",
+                "세균, 곰팡이, 악취까지 효과적으로 제거",
+                "외부 환기 없이도 쾌적한 환경을 유지","작고 조용한 디자인으로 어디든 간편하게 설치 가능"
               ]
             }
           ]
