@@ -1,0 +1,32 @@
+.VideoPreviewPlayer {
+  .video-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: $radius-card;
+    aspect-ratio: 16 / 9;
+    cursor: pointer;
+
+    video {
+      height: 100%;
+    }
+
+    svg {
+      @include square(8.2rem);
+      @include positionCenter();
+    }
+
+    .close-btn {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      @include square(3.2rem);
+      border-radius: 50%;
+      background-color: #ffffff;
+
+      &:hover {
+        color: #fff;
+        background-color: #ffffff70;
+      }
+    }
+  }
+}

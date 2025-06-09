@@ -61,8 +61,13 @@ function HyperspectralSection() {
         </div>
       </ContenttBlock>
 
-      <ContenttBlock className={"cnt04"} title={"4.초분광 카메라 적용분야"}>
+      <ContenttBlock
+        className={"cnt04"}
+        size={1200}
+        title={"4.초분광 카메라 적용분야"}
+      >
         <FadeUpTextSlider slideData={cnt04} />
+        {/* <VerticalThumbSlider slideData={cnt04} /> */}
       </ContenttBlock>
     </section>
   );

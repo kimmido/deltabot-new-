@@ -8,7 +8,7 @@ function VideoDefault({
   loop = false,
   autoPlay = false,
   muted = false,
-  preload = "none",
+  preload = poster ? "none" : "metadata",
   type = "video/mp4",
 }) {
   return (

@@ -79,6 +79,7 @@
           top: 16vw;
           color: #fff;
           text-shadow: $text-shadow;
+
           @include respondTo(tablet-s) {
             top: 33%;
           }
@@ -135,9 +136,11 @@
         margin-top: 3em;
       }
 
-      h4 {
+      strong {
+        display: block;
         font-size: 1.2em;
         margin-bottom: 0.5em;
+        font-weight: 600;
         @include respondTo(tablet-l) {
           margin-bottom: 0.8em;
           font-size: 1.4em;
@@ -332,12 +335,71 @@
         }
       }
     }
+
     .FadeUpTextSlider {
       .swiper {
+        padding: 0 10px;
+        overflow: hidden;
+
+        .swiper-button {
+          &-prev,
+          &-next {
+            color: #fd8a00;
+          }
+        }
+
         .img-box {
-          aspect-ratio: 1440 / 512;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+          border: 1px solid $color-border;
+          aspect-ratio: 1200 / 525;
+          img {
+            object-fit: contain;
+          }
+        }
+
+        .txt-box {
+          margin-left: 1em;
         }
       }
     }
-  }
+  } // cnt03
+
+  // .VerticalThumbSlider {
+  //   @include respondTo(mobile-l) {
+  //     display: flex;
+  //     flex-flow: row nowrap;
+  //     height: 40vh;
+  //   }
+
+  //   @include respondTo(tablet-s) {
+  //     height: 52vh;
+  //   }
+
+  //   img {
+  //     height: 100%;
+  //     object-fit: cover;
+  //     border-radius: $radius-card-md;
+  //   }
+
+  //   &__mainSwiper {
+  //     @include respondTo(mobile-l) {
+  //       height: 100%;
+  //       width: 80%;
+  //       margin-right: 10px;
+  //     }
+  //   }
+
+  //   &__thumbSwiper {
+  //     @include respondTo(mobile-l) {
+  //       height: 100%;
+  //       width: 20%;
+  //     }
+
+  //     .swiper-wrapper {
+  //       @include respondTo(mobile-l) {
+  //         // flex-direction: column;
+  //       }
+  //     }
+  //   }
+  // }
 }

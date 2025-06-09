@@ -47,7 +47,7 @@ function FadeUpTextSlider({ slideData }) {
                 changed && index == idx ? "active" : "inactive"
               }`}
             >
-              <h4>{item.title}</h4>
+              <strong>{item.title}</strong>
               <p>{item.text}</p>
             </div>
           </SwiperSlide>

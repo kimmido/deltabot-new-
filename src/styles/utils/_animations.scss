@@ -60,3 +60,12 @@
     transform: scale3d(1, 1, 1);
   }
 }
+
+[data-aos="fill-up-custom"] {
+  max-width: 0;
+  transition-property: max-width;
+
+  &.aos-animate {
+    max-width: 100%;
+  }
+}

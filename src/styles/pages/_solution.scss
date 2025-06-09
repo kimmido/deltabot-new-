@@ -1,16 +1,16 @@
 // 솔루션 공통 요소 스타일
 .solution-wrapper {
-  .cnt-emph,
-  .cnt-title {
-    text-align: center;
-  }
-
   .section {
     margin-top: min(13vw, 160px);
   }
 
   .ContenttBlock {
     margin-top: min(12vw, 140px);
+  }
+
+  .cnt-emph,
+  .cnt-title {
+    text-align: center;
   }
 
   .cnt-title {
@@ -22,6 +22,32 @@
     }
   }
 
+  .cnt-emph {
+    display: block;
+    margin-top: min(10vw, 130px);
+    font-size: $font-size-display-xs;
+
+    @include respondTo(tablet-l) {
+      font-size: $font-size-display-lg;
+    }
+  }
+
+  .cnt-desc {
+    font-size: 1.7rem;
+    margin: min(9.4vw, 80px) auto 0;
+    max-width: 1100px;
+
+    @include respondTo(tablet-l) {
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+
+    .break-point {
+      display: block;
+    }
+  }
+
+  // 솔루션 전용 헤딩
   .SolutionHeading {
     position: relative;
     height: 50vh;
@@ -75,6 +101,7 @@
     }
   }
 
+  // 스크롤 탭메뉴
   .ScrollTabs {
     position: sticky;
     top: calc($header-sm - 10px);
@@ -108,28 +135,138 @@
     }
   }
 
-  .cnt-emph {
-    display: block;
-    margin-top: min(10vw, 130px);
-    font-size: $font-size-display-xs;
+  // 제품 목록
+  .ProductLines {
+    li {
+      font-size: 20px;
+      margin-top: 20px;
+      border: 1px solid #e3e3e3;
+      box-shadow: 0 3px 0 #ececec;
+      background-color: #fff;
 
-    @include respondTo(tablet-l) {
-      font-size: $font-size-display-lg;
-    }
-  }
+      @include respondTo(tablet-s) {
+        padding: 15px;
+      }
 
-  .cnt-desc {
-    font-size: 1.7rem;
-    margin: min(9.4vw, 80px) auto 0;
-    max-width: 1100px;
+      @include respondTo(tablet-l) {
+        padding: 25px;
+      }
 
-    @include respondTo(tablet-l) {
-      font-size: 2rem;
-      line-height: 1.5;
-    }
+      a.flex-container {
+        flex-direction: column;
 
-    .break-point {
-      display: block;
+        @include respondTo(tablet-s) {
+          flex-direction: row;
+        }
+
+        &:hover {
+          img {
+            transform: scale3d(1.2, 1.2, 1.2);
+          }
+        }
+
+        .img-box {
+          flex: 1 1 60%;
+          aspect-ratio: 866 / 400;
+          overflow: hidden;
+
+          @include respondTo(tablet-s) {
+            flex: 1 1 46.55172413793103%;
+            max-width: 46.55172413793103%;
+          }
+
+          @include respondTo(tablet-l) {
+            flex: 1 1 30%;
+            max-width: 30%;
+          }
+
+          img {
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+          }
+        }
+
+        .desc {
+          position: relative;
+          display: block;
+          flex: 1 1 40%;
+          padding: 30px 20px;
+
+          @include respondTo(tablet-s) {
+            flex: 1 1 53.44827586206897%;
+            max-width: 53.44827586206897%;
+            padding: 4px 0 50px 20px;
+          }
+
+          @include respondTo(tablet-l) {
+            flex: 1 1 70%;
+            max-width: 70%;
+            padding-left: 30px;
+          }
+
+          @include respondTo(pc-s) {
+            padding: 12px 0 50px 30px;
+          }
+
+          dt {
+            margin-bottom: 10px;
+            font-size: 20px;
+            line-height: 1;
+
+            @include respondTo(tablet-l) {
+              margin-bottom: 18px;
+            }
+          }
+
+          .bullets {
+            dd {
+              font-size: 14px;
+              color: $color-text-light;
+              margin-top: 0.5em;
+              line-height: 1.4;
+
+              &::before {
+                background-color: $color-text-light;
+              }
+
+              @include respondTo(tablet-s) {
+                font-size: 15px;
+              }
+            }
+          }
+
+          .link-more {
+            display: block;
+            width: fit-content;
+            font-size: 14px;
+            padding: 10px 14px;
+            margin-top: 13px;
+            margin-left: 12px;
+            line-height: 1.4;
+            color: #fff;
+            font-weight: 400;
+            background-color: $color-gray-900;
+            border-radius: 100px;
+
+            @include respondTo(tablet-s) {
+              position: absolute;
+              bottom: 2px;
+              left: 20px;
+            }
+
+            @include respondTo(tablet-l) {
+              bottom: 0;
+              left: 30px;
+            }
+
+            @include respondTo(pc-s) {
+              bottom: 8px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
     }
   }
 
