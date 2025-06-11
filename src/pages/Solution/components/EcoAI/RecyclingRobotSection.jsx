@@ -17,16 +17,22 @@ import img4_4 from "../../../../assets/images/solution/recycle-cnt4-4.jpg";
 import img4_5 from "../../../../assets/images/solution/recycle-cnt4-5.jpg";
 import img4_6 from "../../../../assets/images/solution/recycle-cnt4-6.jpg";
 import img4_7 from "../../../../assets/images/solution/recycle-cnt4-7.jpg";
-import img5_1 from "../../../../assets/images/solution/recycle-cnt5-1.svg";
-import img5_1_2 from "../../../../assets/images/solution/recycle-cnt5-1-2.jpg";
-import img5_2 from "../../../../assets/images/solution/recycle-cnt5-2.svg";
-import img5_3 from "../../../../assets/images/solution/recycle-cnt5-3.svg";
-import img5_4 from "../../../../assets/images/solution/recycle-cnt5-4.svg";
+import img5_1_2 from "../../../../assets/images/solution/recycle-cnt5-1-2.png";
+import img5_slide1 from "../../../../assets/images/solution/recycle-cnt5-slide1.svg";
+import img5_slide2 from "../../../../assets/images/solution/recycle-cnt5-slide2.svg";
+import img5_slide3 from "../../../../assets/images/solution/recycle-cnt5-slide3.svg";
+import img5_slide4 from "../../../../assets/images/solution/recycle-cnt5-slide4.svg";
 
 function RecyclingRobotSection() {
+  const aosProps = {
+    "data-aos-duration": "900",
+    "data-aos-easing": "linear",
+  };
+
   return (
     <section className="RecyclingRobotSection section">
-      <ContenttBlock className={"cnt01"} title={`"폐플라스틱을 자원으로 순환"`}>
+      <ContenttBlock className={"cnt01"}>
+        <h6 className="sec-title">"폐플라스틱을 자원으로 순환"</h6>
         <p className="cnt-desc">
           기존 사회는 폐기물의 ‘처리’에 초점을 맞췄습니다. 대부분 소각하거나
           매립하는 방식이었고, 환경 영향은 부차적인 문제로 취급됐습니다. 그러나
@@ -96,41 +102,55 @@ function RecyclingRobotSection() {
         </ul>
       </ContenttBlock>
 
-      <ContenttBlock className="cnt06" title="4.APPLICATIONS">
-        <div className="flex-container">
-          <div className="flex-l">
-            <BasicSlider slides={cnt05} />
-          </div>
-          <div className="flex-r">
-            <VideoPreviewPlayer
-              src={`/videos/sub/solution-ecoai(5).mp4`}
-              poster="/images/video_poster/solution-ecoai(5).jpg"
-            />
-          </div>
-        </div>
-        {cnt06.map((item, i) => (
-          <article key={item.title} className="flex-container">
-            <div className={`image i${i + 1} flex-l`}></div>
-            <div className="texts flex-r">
-              <strong className="title">
-                <em className="num">{`0${i + 1}`}</em>
-                {item.title}
-              </strong>
-
-              <ul className="bullets">
-                {item.bullets &&
-                  item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
-              </ul>
-
-              {item.img && <img src={item.img} alt="plastics" />}
-
-              {item.texts.map((text, i) => (
-                <p key={i}>{text}</p>
-              ))}
+      <div className="cnt06-wapper">
+        <ContenttBlock className="cnt06" title="4.APPLICATIONS">
+          <div className="flex-container">
+            <div className="flex-l" data-aos="fade-right">
+              <VideoPreviewPlayer
+                src={`/videos/sub/solution-ecoai(5).mp4`}
+                poster="/images/video_poster/solution-ecoai(5).jpg"
+              />
             </div>
-          </article>
-        ))}
-      </ContenttBlock>
+            <div className="flex-r" data-aos="fade-left">
+              <BasicSlider slides={cnt05} />
+            </div>
+          </div>
+          {cnt06.map((item, i) => (
+            <article key={item.title} className="flex-container">
+              <div className="flex-l">
+                <div
+                  className={`image i${i + 1}`}
+                  data-aos="zoom-out-custom"
+                  {...aosProps}
+                ></div>
+              </div>
+              <div
+                className="texts flex-r"
+                data-aos="fade-up-custom"
+                {...aosProps}
+              >
+                <strong className="title">
+                  <em className="num">{`0${i + 1}`}</em>
+                  {item.title}
+                </strong>
+
+                <ul className="bullets">
+                  {item.bullets &&
+                    item.bullets.map((bullet) => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                </ul>
+
+                {item.img && <img src={item.img} alt="plastics" />}
+
+                {item.texts.map((text, i) => (
+                  <p key={i}>{text}</p>
+                ))}
+              </div>
+            </article>
+          ))}
+        </ContenttBlock>
+      </div>
     </section>
   );
 }
@@ -304,10 +324,10 @@ const cnt04 = [
 ];
 
 const cnt05 = [
-  <img src={img5_1} alt="재질분류" />,
-  <img src={img5_2} alt="재질분류" />,
-  <img src={img5_3} alt="재질분류" />,
-  <img src={img5_4} alt="재질분류" />,
+  <img src={img5_slide1} alt="재질분류" />,
+  <img src={img5_slide2} alt="재질분류" />,
+  <img src={img5_slide3} alt="재질분류" />,
+  <img src={img5_slide4} alt="재질분류" />,
 ];
 
 const cnt06 = [

@@ -4,20 +4,14 @@ import styles from "./BusinessItem.module.scss";
 import { IconPlus } from "../../../components/icons";
 import useMediaQuery from "../../../hooks/useMediaQuery";
 
-import backImg1 from "../../../assets/images/page/business(1).jpg";
-import backImg2 from "../../../assets/images/page/business(2).jpg";
-import backImg3 from "../../../assets/images/page/business(3).jpg";
-import backImg4 from "../../../assets/images/page/business(4).jpg";
-import backImg5 from "../../../assets/images/page/business(5).jpg";
-import backImg6 from "../../../assets/images/page/business(6).jpg";
+import backImg1 from "../../../assets/images/main/business(1).jpg";
+import backImg2 from "../../../assets/images/main/business(2).jpg";
+import backImg3 from "../../../assets/images/main/business(3).jpg";
+import backImg4 from "../../../assets/images/main/business(4).jpg";
+import backImg5 from "../../../assets/images/main/business(5).jpg";
+import backImg6 from "../../../assets/images/main/business(6).jpg";
 
-export default function BusinessItem({
-  sub,
-  idx,
-  aosProps,
-  isExpanded,
-  setExpanded,
-}) {
+export default function BusinessItem({ sub, idx, isExpanded, setExpanded }) {
   const isMobile = useMediaQuery("(max-width: 768px)");
   const isPC = useMediaQuery("(min-width: 1280px)");
   const img = [backImg1, backImg2, backImg3, backImg4, backImg5, backImg6];
@@ -44,11 +38,7 @@ export default function BusinessItem({
         }
       }}
     >
-      <div
-        className={styles.title_box}
-        data-aos={aosList[idx % 3]}
-        {...aosProps}
-      >
+      <div className={styles.title_box} data-aos={aosList[idx % 3]}>
         <h5 className={styles.title}>{sub.label}</h5>
         {isPC ? "" : <IconPlus size={32} className={styles.icon_plus} />}
       </div>
