@@ -1,19 +1,19 @@
 import React from "react";
 import AutomationVideos from "./components/AutomationVideos";
-import StepFlow from "./components/StepFlow";
-import Applications from "./components/Applications";
-import ScrollTabs, { useScrollTabsRefs } from "./components/ScrollTabs";
+import StepFlow from "../components/StepFlow";
+import ApplicationsSection from "./ApplicationsSection";
+import ScrollTabs, { useScrollTabsRefs } from "../components/ScrollTabs";
+import SolutionHeading from "../components/SolutionHeading";
+import ContenttBlock from "../components/ContenttBlock";
+import ProductLines from "../components/ProductLines";
 
-import img1 from "../../assets/images/solution/automation(1).svg";
-import img2 from "../../assets/images/solution/automation(2).svg";
-import img3 from "../../assets/images/solution/automation(3).jpg";
-import img_products1 from "../../assets/images/solution/automation-products(1).jpg";
-import img_products2 from "../../assets/images/solution/automation-products(2).jpg";
-import img_products3 from "../../assets/images/solution/automation-products(3).jpg";
-import img_products4 from "../../assets/images/solution/automation-products(4).jpg";
-import SolutionHeading from "./components/SolutionHeading";
-import ContenttBlock from "./components/ContenttBlock";
-import ProductLines from "./components/ProductLines";
+import img1 from "../../../assets/images/solution/automation(1).svg";
+import img2 from "../../../assets/images/solution/automation(2).svg";
+import img3 from "../../../assets/images/solution/automation(3).jpg";
+import img_products1 from "../../../assets/images/solution/automation-products(1).jpg";
+import img_products2 from "../../../assets/images/solution/automation-products(2).jpg";
+import img_products3 from "../../../assets/images/solution/automation-products(3).jpg";
+import img_products4 from "../../../assets/images/solution/automation-products(4).jpg";
 
 const tabs = [
   { id: "intro", label: "자동화 솔루션" },
@@ -36,7 +36,7 @@ function Automation() {
 
       <div id={tabs[0].id} ref={getRef(tabs[0].id)}>
         <ContenttBlock className="cnt01">
-          <p className="cnt-desc">
+          <p className="intro-desc">
             정확한 진단부터 최적 설계, 정밀 제작·설치, 철저한 테스트, 전문 교육,
             그리고 체계적인 유지보수까지, 검증된 기술력으로 신뢰할 수 있는
             자동화 솔루션을 제공합니다.
@@ -80,7 +80,7 @@ function Automation() {
       <div id={tabs[1].id} ref={getRef(tabs[1].id)}>
         <div className="cnt06">
           <div className="container">
-            <Applications />
+            <ApplicationsSection />
           </div>
         </div>
       </div>

@@ -1,13 +1,13 @@
 import React from "react";
-import SvgrComponent from "../../../../components/icons/SvgrComponent";
-import StepFlow from "../StepFlow";
-import ContenttBlock from "../ContenttBlock";
+import SvgrComponent from "../../../components/icons/SvgrComponent";
+import StepFlow from "../components/StepFlow";
+import ContenttBlock from "../components/ContenttBlock";
 
 function VisionIntro() {
   return (
     <section className="VisionIntro">
-      <ContenttBlock className="cnt01" size={1100}>
-        <p className="cnt-desc">
+      <div className="container cnt01">
+        <p className="intro-desc">
           <span className="break-point">
             비전 시스템이란, 카메라(이미지 센서)와{" "}
             <span className="highlight">광원</span>, 영상 처리 알고리즘(AI
@@ -32,7 +32,7 @@ function VisionIntro() {
             효과를 입증하고 있습니다.
           </span>
         </p>
-      </ContenttBlock>
+      </div>
 
       <ContenttBlock className="cnt02" title={"비전 시스템 구성 요소"}>
         <div className="flex-container">

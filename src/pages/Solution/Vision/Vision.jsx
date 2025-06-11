@@ -1,16 +1,16 @@
 import React from "react";
-import MachineVisionSection from "./components/Vision/MachineVisionSection";
-import VisionIntro from "./components/Vision/VisionIntro";
-import ThermalImagingSection from "./components/Vision/ThermalImagingSection";
-import HyperspectralSection from "./components/Vision/HyperspectralSection";
-import SolutionHeading from "./components/SolutionHeading";
-import ScrollTabs, { useScrollTabsRefs } from "./components/ScrollTabs";
-import ProductLines from "./components/ProductLines";
-import ContenttBlock from "./components/ContenttBlock";
+import MachineVisionSection from "./MachineVisionSection";
+import VisionIntro from "./VisionIntro";
+import ThermalImagingSection from "./ThermalImagingSection";
+import HyperspectralSection from "./HyperspectralSection";
+import SolutionHeading from "../components/SolutionHeading";
+import ScrollTabs, { useScrollTabsRefs } from "../components/ScrollTabs";
+import ProductLines from "../components/ProductLines";
+import ContenttBlock from "../components/ContenttBlock";
 
-import img_products1 from "../../assets/images/solution/vision-products(1).jpg";
-import img_products2 from "../../assets/images/solution/vision-products(2).jpg";
-import img_products3 from "../../assets/images/solution/vision-products(3).jpg";
+import img_products1 from "../../../assets/images/solution/vision-products(1).jpg";
+import img_products2 from "../../../assets/images/solution/vision-products(2).jpg";
+import img_products3 from "../../../assets/images/solution/vision-products(3).jpg";
 
 const tabs = [
   { id: "intro", label: "비전 시스템이란?" },

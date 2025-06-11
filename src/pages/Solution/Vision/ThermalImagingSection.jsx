@@ -1,30 +1,30 @@
 import React from "react";
-import CircleIconList from "../../../Business/components/CircleIconList";
-import SectionBanner from "./SectionBanner";
-import FadeUpTextSlider from "./FadeUpTextSlider";
+import CircleIconList from "../../Business/components/CircleIconList";
+import SectionBanner from "./components/SectionBanner";
+import FadeUpTextSlider from "./components/FadeUpTextSlider";
+import ContenttBlock from "../components/ContenttBlock";
 
-import img0 from "../../../../assets/images/solution/thermal-banner.jpg";
-import img1 from "../../../../assets/images/solution/thermal-cnt1.jpg";
-import img2 from "../../../../assets/images/solution/thermal-cnt2.jpg";
-import img3_1 from "../../../../assets/images/solution/thermal-cnt3-1.svg";
-import img3_2 from "../../../../assets/images/solution/thermal-cnt3-2.svg";
-import img4 from "../../../../assets/images/solution/thermal-cnt4.svg";
-import img5_2 from "../../../../assets/images/solution/thermal-cnt5-2.svg";
-import img6_1 from "../../../../assets/images/solution/thermal-cnt6-1.jpg";
-import img6_2 from "../../../../assets/images/solution/thermal-cnt6-2.jpg";
-import img6_3 from "../../../../assets/images/solution/thermal-cnt6-3.jpg";
-import img6_4 from "../../../../assets/images/solution/thermal-cnt6-4.jpg";
-import img6_5 from "../../../../assets/images/solution/thermal-cnt6-5.jpg";
-import img6_6 from "../../../../assets/images/solution/thermal-cnt6-6.jpg";
-import img6_7 from "../../../../assets/images/solution/thermal-cnt6-7.jpg";
-import img6_8 from "../../../../assets/images/solution/thermal-cnt6-8.jpg";
-import img7_1 from "../../../../assets/images/solution/thermal-cnt7-1.jpg";
-import img7_2 from "../../../../assets/images/solution/thermal-cnt7-2.jpg";
-import img7_3 from "../../../../assets/images/solution/thermal-cnt7-3.jpg";
-import img7_4 from "../../../../assets/images/solution/thermal-cnt7-4.jpg";
-import img7_5 from "../../../../assets/images/solution/thermal-cnt7-5.jpg";
-import img7_6 from "../../../../assets/images/solution/thermal-cnt7-6.jpg";
-import ContenttBlock from "../ContenttBlock";
+import img0 from "../../../assets/images/solution/thermal-banner.jpg";
+import img1 from "../../../assets/images/solution/thermal-cnt1.jpg";
+import img2 from "../../../assets/images/solution/thermal-cnt2.jpg";
+import img3_1 from "../../../assets/images/solution/thermal-cnt3-1.svg";
+import img3_2 from "../../../assets/images/solution/thermal-cnt3-2.svg";
+import img4 from "../../../assets/images/solution/thermal-cnt4.svg";
+import img5_2 from "../../../assets/images/solution/thermal-cnt5-2.svg";
+import img6_1 from "../../../assets/images/solution/thermal-cnt6-1.jpg";
+import img6_2 from "../../../assets/images/solution/thermal-cnt6-2.jpg";
+import img6_3 from "../../../assets/images/solution/thermal-cnt6-3.jpg";
+import img6_4 from "../../../assets/images/solution/thermal-cnt6-4.jpg";
+import img6_5 from "../../../assets/images/solution/thermal-cnt6-5.jpg";
+import img6_6 from "../../../assets/images/solution/thermal-cnt6-6.jpg";
+import img6_7 from "../../../assets/images/solution/thermal-cnt6-7.jpg";
+import img6_8 from "../../../assets/images/solution/thermal-cnt6-8.jpg";
+import img7_1 from "../../../assets/images/solution/thermal-cnt7-1.jpg";
+import img7_2 from "../../../assets/images/solution/thermal-cnt7-2.jpg";
+import img7_3 from "../../../assets/images/solution/thermal-cnt7-3.jpg";
+import img7_4 from "../../../assets/images/solution/thermal-cnt7-4.jpg";
+import img7_5 from "../../../assets/images/solution/thermal-cnt7-5.jpg";
+import img7_6 from "../../../assets/images/solution/thermal-cnt7-6.jpg";
 
 function ThermalImagingSection() {
   return (
@@ -123,37 +123,39 @@ function ThermalImagingSection() {
         <img src={img5_2} alt="열화상 카메라 종류" />
       </ContenttBlock>
 
-      <ContenttBlock
-        className={"cnt06"}
-        size={1100}
-        title={"열화상 카메라 산업 응용 분야"}
-      >
-        <p className="title">
-          <font>
+      <div className="cnt06-wrapper">
+        <ContenttBlock
+          className={"cnt06"}
+          size={1100}
+          title={"열화상 카메라 산업 응용 분야"}
+        >
+          <p className="title">
             <font>
-              적외선 열화상 카메라, 근적외선 분광기, 중파 및 단파 적외선 카메라,
-              가스 이미징, 레이저 빔 분석
+              <font>
+                적외선 열화상 카메라, 근적외선 분광기, 중파 및 단파 적외선
+                카메라, 가스 이미징, 레이저 빔 분석
+              </font>
             </font>
-          </font>
-        </p>
-        <div className="list">
-          {cnt06.map((item) => (
-            <div
-              key={item.text}
-              className="item"
-              data-swiper-column="0"
-              data-swiper-row="0"
-            >
-              <img className="card" src={item.img} />
-              <p className="ch">
-                <font>
-                  <font>{item.text}</font>
-                </font>
-              </p>
-            </div>
-          ))}
-        </div>
-      </ContenttBlock>
+          </p>
+          <div className="list">
+            {cnt06.map((item) => (
+              <div
+                key={item.text}
+                className="item"
+                data-swiper-column="0"
+                data-swiper-row="0"
+              >
+                <img className="card" src={item.img} />
+                <p className="ch">
+                  <font>
+                    <font>{item.text}</font>
+                  </font>
+                </p>
+              </div>
+            ))}
+          </div>
+        </ContenttBlock>
+      </div>
 
       <ContenttBlock className={"cnt07"} title={"열화상 비전 특징"}>
         <FadeUpTextSlider slideData={cnt07} />
@@ -227,8 +229,8 @@ const cnt07 = [
   },
   {
     img: img7_2,
-    title: "코킹로 모니터링",
-    text: "코팅로 가열온도 600~800도를 특수 고온 열화상 카메라를 사용하여 용관로 튜브와 용광로 벽의 온도를 실시간으로 모니터링하여 용광로의 튜브의 코킹 및 열전도를 파악할수 있다.",
+    title: "코크스화로 모니터링",
+    text: "코크스를 만드는 화로(코크스화로)의 벽 온도는 보통 600~800℃ 정도입니다. 특수 열화상 카메라를 사용하면 화로 안의 배관과 벽 온도를 실시간으로 볼 수 있어, 코크스가 얼마나 잘 만들어지고 있는지, 열이 잘 전달되고 있는지를 알 수 있습니다. 이를 통해 화로가 제대로 작동하고 있는지 쉽게 확인할 수 있습니다.",
   },
   {
     img: img7_3,

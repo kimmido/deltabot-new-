@@ -1,5 +1,5 @@
 import React from "react";
-import VideoDefault from "../../../components/UI/VideoDefault";
+import VideoDefault from "../../../../components/UI/VideoDefault";
 
 function AutomationVideos() {
   return (

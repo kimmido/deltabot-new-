@@ -8,16 +8,14 @@ import img6 from "../../../assets/images/solution/automation-app(6).jpg";
 import img7 from "../../../assets/images/solution/automation-app(7).jpg";
 import img8 from "../../../assets/images/solution/automation-app(8).jpg";
 
-function Applications() {
+function ApplicationsSection() {
   const aosProps = {
-    "data-aos-offset": "100",
-    "data-aos-delay": "50",
     "data-aos-duration": "900",
     "data-aos-easing": "linear",
   };
 
   return (
-    <section className="Applications">
+    <section className="ApplicationsSection">
       <h3
         className="cnt-title"
         data-aos="fade-up"
@@ -170,4 +168,4 @@ const data = [
   },
 ];
 
-export default Applications;
+export default ApplicationsSection;

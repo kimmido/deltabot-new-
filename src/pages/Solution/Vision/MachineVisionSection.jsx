@@ -1,13 +1,13 @@
 import React from "react";
-import ExpandableVideoList from "../../../../components/UI/ExpandableVideoList";
+import ExpandableVideoList from "../../../components/UI/ExpandableVideoList";
+import SectionBanner from "./components/SectionBanner";
 
-import img0 from "../../../../assets/images/solution/machine-banner.jpg";
-import img2_1 from "../../../../assets/images/solution/machine-cnt2-1.svg";
-import img2_2 from "../../../../assets/images/solution/machine-cnt2-2.svg";
-import img2_3 from "../../../../assets/images/solution/machine-cnt2-3.svg";
-import img2_4 from "../../../../assets/images/solution/machine-cnt2-4.svg";
-import img2_5 from "../../../../assets/images/solution/machine-cnt2-5.svg";
-import SectionBanner from "./SectionBanner";
+import img0 from "../../../assets/images/solution/machine-banner.jpg";
+import img2_1 from "../../../assets/images/solution/machine-cnt2-1.svg";
+import img2_2 from "../../../assets/images/solution/machine-cnt2-2.svg";
+import img2_3 from "../../../assets/images/solution/machine-cnt2-3.svg";
+import img2_4 from "../../../assets/images/solution/machine-cnt2-4.svg";
+import img2_5 from "../../../assets/images/solution/machine-cnt2-5.svg";
 
 function MachineVisionSection() {
   return (

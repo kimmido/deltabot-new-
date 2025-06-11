@@ -8,7 +8,7 @@ function ContenttBlock({ className, size = 1440, title, children }) {
   };
 
   return (
-    <div className={`ContenttBlock ${className} container`}>
+    <div className={`ContenttBlock ${className ? className : ""} container`}>
       <div style={style}>
         {title && <h4 className="cnt-title">{title}</h4>}
         {children}

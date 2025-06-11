@@ -1,21 +1,20 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 import "swiper/scss";
-import "swiper/css/navigation";
 
 function HorizontalCardSlider({ slideData }) {
   return (
     <div className="HorizontalCardSlider">
       <Swiper
         className="HorizontalCardSlider__swiper"
-        modules={[Autoplay, Navigation]}
-        // loop={true}
-        navigation={true}
+        modules={[Autoplay]}
+        loop={true}
+        pagination={true}
         speed={800}
         autoplay={{
-          delay: 5000,
+          delay: 1000,
           disableOnInteraction: false,
         }}
         slidesPerView={2.5}

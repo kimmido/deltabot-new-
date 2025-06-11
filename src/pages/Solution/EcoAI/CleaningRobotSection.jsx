@@ -1,22 +1,22 @@
 import React from "react";
-import HorizontalCardSlider from "./HorizontalCardSlider";
+import HorizontalCardSlider from "./components/HorizontalCardSlider";
+import ContenttBlock from "../components/ContenttBlock";
+import VideoDefault from "../../../components/UI/VideoDefault";
 
-import img1 from "../../../../assets/images/solution/cleaning-cnt1.jpg";
-import img2_1 from "../../../../assets/images/solution/cleaning-cnt2-1.png";
-import img2_2 from "../../../../assets/images/solution/cleaning-cnt2-2.png";
-import img3_1 from "../../../../assets/images/solution/cleaning-cnt3-1.jpg";
-import img3_2 from "../../../../assets/images/solution/cleaning-cnt3-2.jpg";
-import img3_3 from "../../../../assets/images/solution/cleaning-cnt3-3.jpg";
-import img3_4 from "../../../../assets/images/solution/cleaning-cnt3-4.jpg";
-import img3_5 from "../../../../assets/images/solution/cleaning-cnt3-5.jpg";
-import img4 from "../../../../assets/images/solution/cleaning-cnt4.jpg";
-import img5_1 from "../../../../assets/images/solution/cleaning-cnt5-1.jpg";
-import img5_2 from "../../../../assets/images/solution/cleaning-cnt5-2.jpg";
-import img6 from "../../../../assets/images/solution/cleaning-cnt6.jpg";
-import img7_1 from "../../../../assets/images/solution/cleaning-cnt7-1.png";
-import img7_2 from "../../../../assets/images/solution/cleaning-cnt7-2.png";
-import ContenttBlock from "../ContenttBlock";
-import VideoDefault from "../../../../components/UI/VideoDefault";
+import img1 from "../../../assets/images/solution/cleaning-cnt1.jpg";
+import img2_1 from "../../../assets/images/solution/cleaning-cnt2-1.png";
+import img2_2 from "../../../assets/images/solution/cleaning-cnt2-2.png";
+import img3_1 from "../../../assets/images/solution/cleaning-cnt3-1.jpg";
+import img3_2 from "../../../assets/images/solution/cleaning-cnt3-2.jpg";
+import img3_3 from "../../../assets/images/solution/cleaning-cnt3-3.jpg";
+import img3_4 from "../../../assets/images/solution/cleaning-cnt3-4.jpg";
+import img3_5 from "../../../assets/images/solution/cleaning-cnt3-5.jpg";
+import img4 from "../../../assets/images/solution/cleaning-cnt4.jpg";
+import img5_1 from "../../../assets/images/solution/cleaning-cnt5-1.jpg";
+import img5_2 from "../../../assets/images/solution/cleaning-cnt5-2.jpg";
+import img6 from "../../../assets/images/solution/cleaning-cnt6.jpg";
+import img7_1 from "../../../assets/images/solution/cleaning-cnt7-1.png";
+import img7_2 from "../../../assets/images/solution/cleaning-cnt7-2.png";
 
 const DescBlock = ({ title, desc, children }) => {
   return (
@@ -32,13 +32,21 @@ function CleaningRobotSection() {
   return (
     <section className="CleaningRobotSection">
       <ContenttBlock className={"cnt01"} size={1100}>
-        <DescBlock {...cnt01}>
-          <img
-            className="container--s card"
-            src={img1}
-            alt="친환경 수면 정화 로봇"
-          />
-        </DescBlock>
+        <h6 className="sec-title">"친환경 수면 정화 로봇"</h6>
+        <img
+          className="container--s card"
+          src={img1}
+          alt="친환경 수면 정화 로봇"
+        />
+        <p className="cnt-desc">
+          수륙양용 차량은 다양한 보조 장비와 함께 사용할 수 있는 다기능 수중
+          환경 관리 및 유지 보수 장비입니다. 수륙양용 다목적 작전 차량은 기존
+          장비로는 접근하기 어려운 지역에서도 작업할 수 있습니다. 호수, 강,
+          습지, 늪지대, 그리고 육지와 물의 경계 지역에서 작전이 가능하며,
+          일반적으로 여러 장비가 필요한 작업을 독립적으로 수행할 수 있습니다.
+          지면 압력이 낮고 부유 하중 용량이 뛰어나 민감하고 혹독한 습지 환경에서
+          작업하기에 특히 적합합니다.
+        </p>
       </ContenttBlock>
 
       <ContenttBlock className={"cnt02"} size={1200}>

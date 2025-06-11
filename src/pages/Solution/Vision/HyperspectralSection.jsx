@@ -1,22 +1,22 @@
 import React from "react";
-import SectionBanner from "./SectionBanner";
-import FadeUpTextSlider from "./FadeUpTextSlider";
+import SectionBanner from "./components/SectionBanner";
+import FadeUpTextSlider from "./components/FadeUpTextSlider";
+import ContenttBlock from "../components/ContenttBlock";
 
-import img0 from "../../../../assets/images/solution/spectral-banner.jpg";
-import img1 from "../../../../assets/images/solution/spectral-cnt1.jpg";
-import img2 from "../../../../assets/images/solution/spectral-cnt2.jpg";
-import img3_1 from "../../../../assets/images/solution/spectral-cnt3-1.jpg";
-import img3_2 from "../../../../assets/images/solution/spectral-cnt3-2.jpg";
-import img3_3 from "../../../../assets/images/solution/spectral-cnt3-3.jpg";
-import img3_4 from "../../../../assets/images/solution/spectral-cnt3-4.jpg";
-import img4_1 from "../../../../assets/images/solution/spectral-cnt4-1.jpg";
-import img4_2 from "../../../../assets/images/solution/spectral-cnt4-2.jpg";
-import img4_3 from "../../../../assets/images/solution/spectral-cnt4-3.jpg";
-import img4_4 from "../../../../assets/images/solution/spectral-cnt4-4.jpg";
-import img4_5 from "../../../../assets/images/solution/spectral-cnt4-5.jpg";
-import img4_6 from "../../../../assets/images/solution/spectral-cnt4-6.jpg";
-import img4_7 from "../../../../assets/images/solution/spectral-cnt4-7.jpg";
-import ContenttBlock from "../ContenttBlock";
+import img0 from "../../../assets/images/solution/spectral-banner.jpg";
+import img1 from "../../../assets/images/solution/spectral-cnt1.jpg";
+import img2 from "../../../assets/images/solution/spectral-cnt2.jpg";
+import img3_1 from "../../../assets/images/solution/spectral-cnt3-1.jpg";
+import img3_2 from "../../../assets/images/solution/spectral-cnt3-2.jpg";
+import img3_3 from "../../../assets/images/solution/spectral-cnt3-3.jpg";
+import img3_4 from "../../../assets/images/solution/spectral-cnt3-4.jpg";
+import img4_1 from "../../../assets/images/solution/spectral-cnt4-1.jpg";
+import img4_2 from "../../../assets/images/solution/spectral-cnt4-2.jpg";
+import img4_3 from "../../../assets/images/solution/spectral-cnt4-3.jpg";
+import img4_4 from "../../../assets/images/solution/spectral-cnt4-4.jpg";
+import img4_5 from "../../../assets/images/solution/spectral-cnt4-5.jpg";
+import img4_6 from "../../../assets/images/solution/spectral-cnt4-6.jpg";
+import img4_7 from "../../../assets/images/solution/spectral-cnt4-7.jpg";
 
 function HyperspectralSection() {
   return (
@@ -25,7 +25,7 @@ function HyperspectralSection() {
         <SectionBanner
           sectionName="machine"
           title1="초분광 카메라"
-          title2="보이지 않는 것을 시각화 하다. -초분광 이미지 기술의 새로우 기준"
+          title2="보이지 않는 것을 보는 기술, 초분광 이미징의 새로운 기준"
           src={img0}
         />
       </div>
