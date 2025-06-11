@@ -1,5 +1,75 @@
 // Eco 솔루션 페이지
 .EcoAI {
+  $green: #3ec684;
+
+  .sec-title {
+    margin-bottom: min(9.4vw, 60px);
+    font-size: 3rem;
+    text-align: center;
+
+    @include respondTo(tablet-l) {
+      font-size: $font-size-section-title-lg;
+    }
+  }
+
+  .cnt-title {
+    margin-bottom: min(5vw, 50px);
+  }
+
+  .cnt-desc {
+    font-size: 1.7rem;
+    margin: min(5vw, 50px) auto 0;
+
+    @include respondTo(tablet-l) {
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+  }
+
+  #intro {
+    font-size: 1.7rem;
+
+    @include respondTo(tablet-l) {
+      font-size: 2rem;
+    }
+
+    p {
+      @include respondTo(tablet-l) {
+        line-height: 1.5;
+      }
+    }
+
+    .cnt02 {
+      img {
+        margin-bottom: min(4vw, 40px);
+      }
+
+      dl {
+        margin: min(4vw, 40px) auto;
+        line-height: 1.3;
+
+        dt {
+          font-weight: 600;
+        }
+        dd {
+          margin-top: 0.3em;
+          color: $color-text-body;
+        }
+
+        .dl-item {
+          &:first-child {
+            color: $color-blue-500;
+          }
+
+          &:last-child {
+            margin-top: 1em;
+            color: $green;
+          }
+        }
+      }
+    }
+  } // 에코 솔루션 인트로
+
   .CleaningRobotSection {
     .space-m {
       margin-top: 4rem;
@@ -251,7 +321,6 @@
   } // 클리닝 로봇
 
   .RecyclingRobotSection {
-    $green: #3ec684;
     .cnt02 {
       .line-box {
         padding: 3vw;
@@ -372,6 +441,7 @@
         }
 
         img {
+          display: inline;
           border-radius: $radius-card-md;
           margin-bottom: 0.5em;
           border-width: 5px;
@@ -529,10 +599,15 @@
       }
     }
 
-    .cnt05 {
-    } // cnt05
+    .cnt06-wapper {
+      color: #fff;
+      background-color: $color-background-dartk;
+    }
 
     .cnt06 {
+      padding-top: min(13vw, 140px);
+      padding-bottom: min(13vw, 140px);
+
       .flex-container {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -552,8 +627,9 @@
           padding: 5px;
         }
         .slide-item {
-          box-shadow: $floating-shadow;
+          // box-shadow: $floating-shadow;
           border-radius: $radius-card-lg;
+          background-color: $color-gray-500;
         }
 
         &-button-prev,
@@ -577,7 +653,7 @@
         }
 
         @include respondTo(tablet-s) {
-          &:nth-child(even) .image {
+          &:nth-child(2n + 1) .flex-l {
             order: 2;
           }
         }
@@ -586,21 +662,24 @@
           margin-top: 0;
         }
 
-        .image {
-          height: min(44vw, 440px);
+        .flex-l {
+          overflow: hidden;
           border-radius: $radius-card-md;
-          @include backgroundImage();
-          background-color: gainsboro;
-
-          @for $i from 1 to 7 {
-            &.i#{$i} {
-              background-image: url("@assets/images/solution/recycle-cnt5-#{$i}.jpg");
-            }
-          }
+          height: min(44vw, 440px);
 
           @include respondTo(tablet-l) {
-            width: 49%;
             height: min(40vw, 520px);
+          }
+
+          .image {
+            height: 100%;
+            @include backgroundImage();
+
+            @for $i from 1 to 7 {
+              &.i#{$i} {
+                background-image: url("@assets/images/solution/recycle-cnt5-#{$i}.jpg");
+              }
+            }
           }
         }
 

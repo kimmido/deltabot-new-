@@ -177,7 +177,7 @@
     margin-top: min(10.4vw, 74px);
     padding: min(10.4vw, 74px) 0;
     color: #fff;
-    background-color: #242426;
+    background-color: $color-background-dartk;
 
     @include respondTo(tablet-s) {
       margin-top: min(13vw, 240px);

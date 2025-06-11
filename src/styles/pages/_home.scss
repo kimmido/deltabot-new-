@@ -15,9 +15,9 @@
   .BannerSwiper__swiper {
     height: 100%;
 
-    @include respondTo(tablet-l) {
-      max-height: 805px;
-    }
+    // @include respondTo(tablet-l) {
+    //   max-height: 805px;
+    // }
 
     .swiper-slide {
       border-radius: 30px;
@@ -38,23 +38,23 @@
 
       &--0 {
         background-image: $GRADIENT,
-          url("@assets/images/page/main_slide(1).jpg");
+          url("@assets/images/main/main_slide(1).jpg");
       }
       &--1 {
         background-image: $GRADIENT,
-          url("@assets/images/page/main_slide(2).jpg");
+          url("@assets/images/main/main_slide(2).jpg");
       }
       &--2 {
         background-image: $GRADIENT,
-          url("@assets/images/page/main_slide(3).jpg");
+          url("@assets/images/main/main_slide(3).jpg");
       }
       &--3 {
         background-image: $GRADIENT,
-          url("@assets/images/page/main_slide(4).jpg");
+          url("@assets/images/main/main_slide(4).jpg");
       }
       &--4 {
         background-image: $GRADIENT,
-          url("@assets/images/page/main_slide(5).jpg");
+          url("@assets/images/main/main_slide(5).jpg");
       }
 
       .slide__text {
@@ -224,6 +224,7 @@
 
 // ====== SolutionSection ======
 .SolutionSection {
+  overflow-x: hidden;
   margin-top: $spacing-layout-sm;
 
   @include respondTo(tablet-l) {
@@ -274,12 +275,11 @@
       }
 
       .item {
-        flex: 1;
         height: 240px;
 
         @include respondTo(tablet-s) {
-          // aspect-ratio: 11 / 13;
-          aspect-ratio: 13 / 11;
+          flex: 1;
+          aspect-ratio: 11 / 13;
           height: auto;
         }
 

@@ -54,6 +54,10 @@
   }
 }
 
+.break-point {
+  display: block;
+}
+
 .section_title {
   font-size: $font-size-section-title-sm;
   margin-bottom: 24px;
@@ -127,7 +131,7 @@
     margin-left: 0.3rem;
 
     &::before {
-      @include pseudoDefault($color-text-body);
+      @include pseudoDefault(currentColor);
       top: 0.5em;
       width: 3px;
       height: 3px;

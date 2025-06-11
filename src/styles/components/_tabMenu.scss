@@ -11,7 +11,7 @@
     gap: 6px;
     overflow-x: auto;
     padding: 4px;
-    background-color: $color-background;
+    background-color: $color-background-light;
     border-radius: $radius-md;
 
     @include respondTo(tablet-s) {

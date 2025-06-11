@@ -69,32 +69,60 @@
     }
   }
 
+  // 각 섹션 나누기 배너
+  .SectionBanner {
+    height: 34vw;
+    max-height: 345px;
+    color: #fff;
+    border-radius: $radius-card-lg;
+    background-position: center;
+    background-size: cover;
+    padding: 5vw;
+
+    .text-box {
+      height: 100%;
+      align-content: center;
+
+      .title1 {
+        font-weight: 600;
+        font-size: min(3vw, 40px);
+      }
+
+      .title2 {
+        margin-top: min(2vw, 20px);
+        width: 59%;
+        font-size: 1em;
+        @include respondTo(tablet-s) {
+          width: 40%;
+          font-size: min(2.2vw, 1.4em);
+        }
+
+        @include respondTo(tablet-l) {
+          width: min(49vw, 640px);
+        }
+      }
+    }
+  }
+
   .FadeUpTextSlider {
+    position: relative;
+
     .swiper {
-      overflow: visible;
+      padding-bottom: 30px;
 
-      .swiper-button {
-        &-prev,
-        &-next {
-          top: 16vw;
-          color: #fff;
-          text-shadow: $text-shadow;
+      @include respondTo(pc-l) {
+        overflow: visible;
+      }
 
-          @include respondTo(tablet-s) {
-            top: 33%;
-          }
-          @include respondTo(tablet-l) {
-            top: 36%;
-          }
-          @include respondTo(pc-s) {
-            top: 40%;
-          }
+      .swiper-pagination-bullets {
+        bottom: 0;
 
-          @include respondTo(tablet-s) {
-            font-size: 3rem;
-            &::after {
-              font-size: 4.4rem;
-            }
+        .swiper-pagination-bullet {
+          width: 10px;
+          height: 10px;
+
+          &-active {
+            transform: scale(1.5);
           }
         }
       }
@@ -114,13 +142,16 @@
         }
       }
     }
+
     .txt-box {
+      top: 100%;
       max-width: 1200px;
       margin: 2em auto 0;
       padding: 0 2px;
       opacity: 0;
       transform: translateY(20px);
       transition: opacity 0.5s ease, transform 0.5s ease;
+      // background-color: #4e88e7;
 
       &.active {
         opacity: 1;
@@ -188,10 +219,6 @@
 
       .cnt-desc {
         margin: 0 auto min(5vw, 50px);
-
-        .break-point {
-          display: block;
-        }
       }
     }
 
@@ -243,7 +270,6 @@
             background-color: $color-gray-050;
             &:nth-of-type(1) {
               background-color: #fff2e5;
-              // border: 1px solid $color-gray-500;
             }
           }
         }
@@ -251,7 +277,6 @@
         tbody {
           th {
             background-color: #fff2e5;
-            // border: 1px solid #de8431;
           }
           td {
             text-align: center;
@@ -265,7 +290,14 @@
       }
     }
 
+    .cnt06-wrapper {
+      color: #fff;
+      background-color: $color-background-dartk;
+    }
+
     .cnt06 {
+      padding: min(10.4vw, 74px) 0;
+
       .title {
         margin: 15px 0;
         text-align: center;
@@ -297,13 +329,14 @@
 
           p {
             margin: 15px 0;
-            font-size: 20px;
+
+            @include respondTo(tablet-s) {
+              width: 25%;
+              font-size: 20px;
+            }
           }
         }
       }
-    }
-
-    .cnt07 {
     }
   } // 열화상 카메라
 
@@ -338,13 +371,13 @@
 
     .FadeUpTextSlider {
       .swiper {
-        padding: 0 10px;
+        padding-left: 10px;
+        padding-right: 10px;
         overflow: hidden;
 
-        .swiper-button {
-          &-prev,
-          &-next {
-            color: #fd8a00;
+        .swiper-pagination-bullet {
+          &-active {
+            background-color: #fd8a00;
           }
         }
 
