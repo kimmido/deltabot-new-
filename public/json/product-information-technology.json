@@ -64,7 +64,7 @@
         {
           "name": "DE2-AI5X-01",
           "code": "DE2-AI5X-01",
-          "has": ["spec"],
+          "has": ["detail", "spec"],
           "features": [
             {
               "title": "null",
@@ -87,7 +87,7 @@
         {
           "name": "DE2-AI5X-04",
           "code": "DE2-AI5X-04",
-          "has": ["spec"],
+          "has": ["detail", "spec"],
           "features": [
             {
               "title": "null",
@@ -110,7 +110,7 @@
         {
           "name": "DE4-AI8X",
           "code": "DE4-AI8X",
-          "has": ["spec"],
+          "has": ["detail", "spec"],
           "features": [
             {
               "title": "null",
@@ -222,26 +222,6 @@
                 "최대 7x PCIe 슬롯으로 유연한 I/O 가속 지원",
                 "NEBS/ETSI MIL-STD 810/167/461 인증 충족 설계",
                 "긴 수명"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "rack-mount": [
-    {
-      "title": "Rack mount",
-      "items": [
-        {
-          "name": "1U",
-          "code": "1U",
-          "has": ["spec"],
-          "features": [
-            {
-              "title": "null",
-              "texts": [
-                "컴팩트하고 견고한 미디타워 형태의 고성능 산업용 워크스테이션"
               ]
             }
           ]
@@ -449,6 +429,7 @@
         {
           "name": "AGX ORIN",
           "code": "AGX-ORIN",
+          "has": ["spec"],
           "features": [
             {
               "title": "FEATURE",
@@ -466,6 +447,7 @@
         {
           "name": "AGX ORIN (PoE)",
           "code": "AGX-ORIN(PoE)",
+          "has": ["spec"],
           "features": [
             {
               "title": "FEATURE",
@@ -484,6 +466,7 @@
         {
           "name": "ORIN NX",
           "code": "ORIN-NX",
+          "has": ["spec"],
           "features": [
             {
               "title": "FEATURE",
@@ -501,6 +484,7 @@
         {
           "name": "ORIN NANO",
           "code": "ORIN-NANO",
+          "has": ["spec"],
           "features": [
             {
               "title": "FEATURE",
@@ -518,6 +502,7 @@
         {
           "name": "MS-C913",
           "code": "MS-C913",
+          "has": ["spec"],
           "features": [
             {
               "title": "null",
