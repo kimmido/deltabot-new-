@@ -568,7 +568,7 @@ const businessIntroData = {
         '이 시스템은 기존의 수작업에 의존하던 비효율적인 폐기물 분류 방식을 혁신적으로 대체함으로써, #정확도는 물론 속도와 운영 효율성까지 비약적으로 향상시키는 것이 핵심 장점#입니다. AI가 축적된 데이터를 분석하여 폐기물의 유입 패턴, 재질 비율, 처리 효율 등을 지속적으로 학습하고 최적화함으로써, 운영자가 보다 정밀하고 전략적인 자원순환 관리를 수행할 수 있습니다.',
         '자원순환형 재활용 로봇 시스템은 환경 보호를 넘어, #산업 전반의 지속가능성, 효율성, 그리고 첨단화를 동시에 추구하는 미래형 자원관리 솔루션#이라 할 수 있습니다.'
       ],
-      images: ['spacing-l', 'spacing-l'],
+      images: ['card','spacing-l', 'spacing-l'],
       applications: [
         {
           image: 'recycling-robot-application(1).jpg',
@@ -637,23 +637,24 @@ const businessIntroData = {
     // uv
     "uv": {
       theme: 'default',
-      title: 'UV',
+      title: '눈에 보이지 않는 공기까지 살균합니다.',
       description: [
-        ''
+        '천장에 설치되는 광촉매 클린팬은 UV 365nm 자외선과 TiO₂ 광촉매 기술을 결합해 공기 중 세균, 곰팡이, 유해가스를 실시간으로 살균 및 탈취합니다.','별도 환기 없이도 CFU 수치를 99.9%까지 감소시켜, 알레르기·감염 위험을 줄이고 쾌적한 실내 공기 환경을 유지할 수 있는 병원, 요양시설, 교육기관, 공공기관 등 다중 이용시설에 최적화된 공기살균 솔루션입니다.'
       ],
-      images: ['default'],
+      images: ['default', 'spacing-l', 'spacing-l', 'spacing-l'],
+      extraText: '광촉매 클린팬은 밀폐된 실내에서도 상쾌한 공기를 유지할 수 있도록 도와줍니다. 음식이나 반려동물에서 발생하는 냄새는 물론, 공기 중 유해 세균과 곰팡이까지 강력하게 제거합니다. 외부 환기 없이도 언제나 깨끗하고 쾌적한 공간을 경험하세요',
       applications: [
         {
-          image: 'pcr-application(1).jpg',
-          title: '',
+          image: 'uv-application(1).jpg',
+          title: '산업 공간 (창고/공장)',
         },
         {
-          image: 'pcr-application(2).jpg',
-          title: '',
+          image: 'uv-application(2).jpg',
+          title: '스포츠 시설 (헬스장)',
         },
         {
-          image: 'pcr-application(3).jpg',
-          title: '',
+          image: 'uv-application(3).jpg',
+          title: '교육/놀이시설 (유치원) ',
         },
       ],
     },

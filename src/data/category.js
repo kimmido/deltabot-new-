@@ -24,7 +24,7 @@ export const category = [
           items: [
             { path: "machine-vision", label: "머신비전 카메라" },
             { path: "thermal-camera", label: "열화상 카메라" },
-            { path: "spectral-camera", label: "초분광카메라" },
+            { path: "spectral-camera", label: "초분광 카메라" },
             { path: "illumination", label: "조명" },
             { path: "vision-controller", label: "비전 컨트롤러" },
           ],
@@ -51,7 +51,7 @@ export const category = [
           items: [
             { path: "gpu-server", label: "GPU server" },
             { path: "workstations", label: "Workstations" },
-            { path: "rack-mount", label: "Rack mount" },
+            // { path: "rack-mount", label: "Rack mount" },
             { path: "military", label: "Military" },
             { path: "vehicle", label: "Vehicle" },
             { path: "edge-ai", label: "Edge-AI" },
@@ -76,13 +76,13 @@ export const category = [
           label: "Automation",
           path: "automation-solution",
         },
-        // {
-        //   label: "Eco-AI",
-        //   path: "eco-ai-solution",
-        // },
         {
           label: "Vision",
           path: "vision-solution",
+        },
+        {
+          label: "Eco-AI",
+          path: "eco-ai-solution",
         },
       ],
     },
