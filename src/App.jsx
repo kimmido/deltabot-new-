@@ -17,13 +17,19 @@ const BusinessAutomation = lazy(() =>
 );
 const SolutionLayout = lazy(() => import("./layouts/SolutionLayout"));
 const BusinessLayout = lazy(() => import("./layouts/BusinessLayout"));
-const SolutionAutomation = lazy(() => import("./pages/Solution/Automation"));
-const SolutionEcoAI = lazy(() => import("./pages/Solution/EcoAI"));
-const SolutionVision = lazy(() => import("./pages/Solution/Vision"));
+const SolutionAutomation = lazy(() =>
+  import("./pages/Solution/Automation/Automation")
+);
+const SolutionEcoAI = lazy(() => import("./pages/Solution/EcoAI/EcoAI"));
+const SolutionVision = lazy(() => import("./pages/Solution/Vision/Vision"));
 
 function App() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      offset: 100,
+      delay: 50,
+      duration: 1000,
+    });
   }, []);
 
   return (
@@ -46,10 +52,7 @@ function App() {
                     element={<BusinessAutomation />}
                   />
                   <Route path="serial-robot" element={<BusinessAutomation />} />
-                  <Route path="scara" element={<BusinessAutomation />} />
-                  <Route path="cobot" element={<BusinessAutomation />} />
                   <Route path="deltarobot" element={<BusinessAutomation />} />
-                  <Route path="case-packer" element={<BusinessAutomation />} />
                   <Route path="amr" element={<BusinessAutomation />} />
                 </Route>
               </Route>
@@ -83,7 +86,7 @@ function App() {
                 <Route element={<BusinessLayout />}>
                   <Route index element={<Navigate to="pcr" replace />} />
                   <Route path="pcr" element={<Business />} />
-                  <Route path="uv" element={<ComingSoon />} />
+                  <Route path="uv" element={<Business />} />
                 </Route>
               </Route>
 
@@ -106,7 +109,6 @@ function App() {
                 </Route>
               </Route>
 
-              {/* <Route element={<SolutionLayout />}></Route> */}
               <Route
                 path="automation-solution"
                 element={<SolutionAutomation />}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import BusinessItem from "./BusinessItem";
 import { category } from "../../../data/category";
 
-function BusinessSection({ aosProps }) {
+function BusinessSection() {
   const route = category.find((item) => item.main.label == "사업소개");
   const subRoutes = route.sub;
   const [isExpanded, setExpanded] = useState(1000);
@@ -14,7 +14,6 @@ function BusinessSection({ aosProps }) {
           id="BusinessSectionTItle"
           className="section_title"
           data-aos="fade-up"
-          {...aosProps}
         >
           사업소개
         </h2>
@@ -42,7 +41,6 @@ function BusinessSection({ aosProps }) {
                     key={sub.label}
                     sub={sub}
                     idx={idx}
-                    aosProps={aosProps}
                     isExpanded={isExpanded}
                     setExpanded={setExpanded}
                   />

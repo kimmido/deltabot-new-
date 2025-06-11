@@ -10,11 +10,6 @@ gsap.registerPlugin(useGSAP);
 
 const Home = () => {
   const gsapContainer = useRef(null);
-  const aosProps = {
-    "data-aos-offset": "100",
-    "data-aos-delay": "50",
-    "data-aos-duration": "1000",
-  };
 
   useGSAP(
     () => {
@@ -49,8 +44,8 @@ const Home = () => {
             <p className="decorative-txt">산업을 혁신하는 지능형 솔루션.</p>
           </div>
         </div>
-        <BusinessSection aosProps={aosProps} />
-        <SolutionSection aosProps={aosProps} />
+        <BusinessSection />
+        <SolutionSection />
         <VideoSection />
       </div>
     </>
