@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
 import SvgrComponents from "../icons/SvgrComponent";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { category } from "../../data/category";
 import gsap from "gsap";
+import SvgrComponent from "../icons/SvgrComponent";
 
 const MainLink = ({
   className,
@@ -39,14 +40,14 @@ const SubLink = ({
 }) => {
   return (
     <li className={className}>
-      <Link
+      <NavLink
         to={path}
         className="sub__link"
         onClick={onClick}
         onMouseOver={mouseOver}
       >
         <h5 className="sub__title">{label}</h5>
-      </Link>
+      </NavLink>
     </li>
   );
 };
@@ -68,6 +69,14 @@ const Nav = () => {
       {/* PC 메뉴 */}
       <div className="pc" onMouseLeave={() => setPcMenuIdx(null)}>
         <div className="pc__link-wrap">
+          <div
+            className="pc__link--home"
+            onMouseEnter={() => setPcMenuIdx(null)}
+          >
+            <Link to="/" className="btn">
+              <SvgrComponent name="icon_home" />
+            </Link>
+          </div>
           {category.map((category, idx) => (
             <MainLink
               key={category.main.label}

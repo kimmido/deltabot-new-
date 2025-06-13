@@ -14,7 +14,7 @@ nav.gnb {
 
     .pc__link-wrap {
       display: flex;
-      gap: calc(8rem - 4rem);
+      gap: calc(8rem - 7rem);
       padding-left: 70px;
       padding-right: 30px;
 
@@ -32,6 +32,36 @@ nav.gnb {
 
         .title {
           font-size: $font-size-lg;
+        }
+
+        &--home {
+          height: $header-md;
+          align-content: center;
+
+          .btn {
+            height: fit-content;
+            border-radius: 1000px;
+            padding: 6px 18px;
+            background-color: $color-text-body;
+            border: 2px solid $color-text-body;
+
+            transition: all 0.3s;
+
+            svg {
+              width: 24px;
+              height: 24px;
+              fill: #fff;
+              transition: all 0.3s;
+            }
+
+            &:hover {
+              background-color: transparent;
+              border-color: $color-active;
+              svg {
+                fill: $color-active;
+              }
+            }
+          }
         }
       }
     }
