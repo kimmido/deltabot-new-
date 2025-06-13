@@ -3,9 +3,9 @@ import SvgrComponent from "../../../components/icons/SvgrComponent";
 import StepFlow from "../components/StepFlow";
 import ContenttBlock from "../components/ContenttBlock";
 
-function VisionIntro() {
+function IntroSection() {
   return (
-    <section className="VisionIntro">
+    <section className="IntroSection">
       <div className="container cnt01">
         <p className="intro-desc">
           <span className="break-point">
@@ -129,4 +129,4 @@ const cnt03 = [
   },
 ];
 
-export default VisionIntro;
+export default IntroSection;

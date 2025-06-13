@@ -183,75 +183,74 @@
       margin-top: min(13vw, 240px);
       padding: min(13vw, 140px) 0;
     }
-  }
 
-  .Applications {
-    margin-top: 0;
-
-    .cnt-title {
+    .ApplicationsSection {
       margin-top: 0;
-      margin-bottom: min(10.4vw, 74px);
-
-      @include respondTo(tablet-s) {
-        margin-bottom: min(10vw, 100px);
-      }
-    }
-
-    .app__item {
-      @include flexBox(row, 0, center, space-between, wrap);
-      margin-top: min(10.4vw, 74px);
-
-      @include respondTo(tablet-s) {
-        margin-top: min(9vw, 96px);
-
-        &:nth-child(even) {
-          .img-box {
-            order: 2;
-          }
-        }
-      }
-
-      .img-box {
-        overflow: hidden;
-        width: 100%;
-        border-radius: $radius-card-lg;
-        aspect-ratio: 75 / 42;
+      .cnt-title {
+        margin-top: 0;
+        margin-bottom: min(10.4vw, 74px);
 
         @include respondTo(tablet-s) {
-          width: 42%;
+          margin-bottom: min(10vw, 100px);
+        }
+      }
+
+      .app__item {
+        @include flexBox(row, 0, center, space-between, wrap);
+        margin-top: min(10.4vw, 74px);
+
+        @include respondTo(tablet-s) {
+          margin-top: min(9vw, 96px);
+
+          &:nth-child(even) {
+            .img-box {
+              order: 2;
+            }
+          }
         }
 
-        img {
+        .img-box {
+          overflow: hidden;
+          width: 100%;
           border-radius: $radius-card-lg;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
+          aspect-ratio: 75 / 42;
 
-      .con-box {
-        margin-top: $spacing-lg;
-
-        @include respondTo(tablet-s) {
-          margin-top: 0;
-          width: 46%;
-        }
-
-        h4 {
-          font-size: $font-size-con-title-sm;
-
-          @include respondTo(pc-s) {
-            font-size: $font-size-con-title-md;
+          @include respondTo(tablet-s) {
+            width: 42%;
           }
 
-          span {
-            display: block;
+          img {
+            border-radius: $radius-card-lg;
+            height: 100%;
+            object-fit: cover;
           }
         }
 
-        .bullets {
-          margin-top: 1.5em;
-          .bullet {
-            margin: 0.5em 0;
+        .con-box {
+          margin-top: $spacing-lg;
+
+          @include respondTo(tablet-s) {
+            margin-top: 0;
+            width: 46%;
+          }
+
+          h4 {
+            font-size: $font-size-con-title-sm;
+
+            @include respondTo(pc-s) {
+              font-size: $font-size-con-title-md;
+            }
+
+            span {
+              display: block;
+            }
+          }
+
+          .bullets {
+            margin-top: 1.5em;
+            .bullet {
+              margin: 0.5em 0;
+            }
           }
         }
       }

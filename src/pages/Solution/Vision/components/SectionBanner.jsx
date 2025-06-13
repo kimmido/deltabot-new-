@@ -1,6 +1,6 @@
 import React from "react";
 
-function SectionBanner({ sectionName, title1, title2, src }) {
+function SectionBanner({ title1, title2, src }) {
   return (
     <div className="SectionBanner" style={{ backgroundImage: `url(${src})` }}>
       <div className="text-box">

@@ -22,7 +22,7 @@ function ProductLines({ data, category }) {
                     <dd key={txt}>{txt}</dd>
                   ))}
                 </div>
-                <span className="link-more">more</span>
+                <span className="link-more">제품 보러가기</span>
               </dl>
             </NavLink>
           </li>

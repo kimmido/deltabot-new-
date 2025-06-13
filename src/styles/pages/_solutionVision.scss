@@ -2,7 +2,7 @@
 
 // 비전 솔루션 페이지
 .Vision {
-  .VisionIntro {
+  .IntroSection {
     .cnt02 {
       .flex-container {
         justify-content: center;
@@ -85,7 +85,11 @@
 
       .title1 {
         font-weight: 600;
-        font-size: min(3vw, 40px);
+        font-size: 1.2em;
+
+        @include respondTo(tablet-s) {
+          font-size: min(3vw, 40px);
+        }
       }
 
       .title2 {
@@ -104,6 +108,7 @@
     }
   }
 
+  // 슬라이더
   .FadeUpTextSlider {
     position: relative;
 
@@ -296,7 +301,8 @@
     }
 
     .cnt06 {
-      padding: min(10.4vw, 74px) 0;
+      padding-top: min(10.4vw, 74px);
+      padding-bottom: min(10.4vw, 74px);
 
       .title {
         margin: 15px 0;
@@ -331,7 +337,6 @@
             margin: 15px 0;
 
             @include respondTo(tablet-s) {
-              width: 25%;
               font-size: 20px;
             }
           }
@@ -352,8 +357,7 @@
       }
 
       .flex-container {
-        flex-direction: column;
-        gap: 2em;
+        @include flexBox(column, 2em, center);
 
         @include respondTo(mobile-l) {
           flex-direction: row;
@@ -396,43 +400,4 @@
       }
     }
   } // cnt03
-
-  // .VerticalThumbSlider {
-  //   @include respondTo(mobile-l) {
-  //     display: flex;
-  //     flex-flow: row nowrap;
-  //     height: 40vh;
-  //   }
-
-  //   @include respondTo(tablet-s) {
-  //     height: 52vh;
-  //   }
-
-  //   img {
-  //     height: 100%;
-  //     object-fit: cover;
-  //     border-radius: $radius-card-md;
-  //   }
-
-  //   &__mainSwiper {
-  //     @include respondTo(mobile-l) {
-  //       height: 100%;
-  //       width: 80%;
-  //       margin-right: 10px;
-  //     }
-  //   }
-
-  //   &__thumbSwiper {
-  //     @include respondTo(mobile-l) {
-  //       height: 100%;
-  //       width: 20%;
-  //     }
-
-  //     .swiper-wrapper {
-  //       @include respondTo(mobile-l) {
-  //         // flex-direction: column;
-  //       }
-  //     }
-  //   }
-  // }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 
@@ -6,9 +6,6 @@ import "swiper/scss";
 import "swiper/css/pagination";
 
 function FadeUpTextSlider({ slideData }) {
-  const [index, setIndex] = useState(0);
-  const [changed, setChanged] = useState(true);
-
   return (
     <div className="FadeUpTextSlider">
       <Swiper
@@ -31,13 +28,6 @@ function FadeUpTextSlider({ slideData }) {
             spaceBetween: 60,
           },
         }}
-        // onSlideChange={() => {
-        //   setChanged(false);
-        // }}
-        // onSlideChangeTransitionEnd={(swiper) => {
-        //   setChanged(true);
-        //   setIndex(swiper.realIndex);
-        // }}
       >
         {slideData.map((item, idx) => (
           <SwiperSlide key={item.title}>

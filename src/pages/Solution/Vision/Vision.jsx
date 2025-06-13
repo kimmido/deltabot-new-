@@ -1,6 +1,6 @@
 import React from "react";
 import MachineVisionSection from "./MachineVisionSection";
-import VisionIntro from "./VisionIntro";
+import IntroSection from "./IntroSection";
 import ThermalImagingSection from "./ThermalImagingSection";
 import HyperspectralSection from "./HyperspectralSection";
 import SolutionHeading from "../components/SolutionHeading";
@@ -33,7 +33,7 @@ function Vision() {
       <ScrollTabs tabs={tabs} offset="138" sectionRefs={sectionRefs} />
 
       <div id={tabs[0].id} ref={getRef(tabs[0].id)}>
-        <VisionIntro />
+        <IntroSection />
       </div>
 
       <div id={tabs[1].id} ref={getRef(tabs[1].id)}>

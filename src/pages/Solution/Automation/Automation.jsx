@@ -1,19 +1,15 @@
 import React from "react";
-import AutomationVideos from "./components/AutomationVideos";
-import StepFlow from "../components/StepFlow";
 import ApplicationsSection from "./ApplicationsSection";
 import ScrollTabs, { useScrollTabsRefs } from "../components/ScrollTabs";
 import SolutionHeading from "../components/SolutionHeading";
 import ContenttBlock from "../components/ContenttBlock";
 import ProductLines from "../components/ProductLines";
 
-import img1 from "../../../assets/images/solution/automation(1).svg";
-import img2 from "../../../assets/images/solution/automation(2).svg";
-import img3 from "../../../assets/images/solution/automation(3).jpg";
 import img_products1 from "../../../assets/images/solution/automation-products(1).jpg";
 import img_products2 from "../../../assets/images/solution/automation-products(2).jpg";
 import img_products3 from "../../../assets/images/solution/automation-products(3).jpg";
 import img_products4 from "../../../assets/images/solution/automation-products(4).jpg";
+import IntroSection from "./IntroSection";
 
 const tabs = [
   { id: "intro", label: "자동화 솔루션" },
@@ -21,7 +17,7 @@ const tabs = [
   { id: "products", label: "제품 보러가기" },
 ];
 
-function Automation() {
+export default function Automation() {
   const { sectionRefs, getRef } = useScrollTabsRefs(tabs);
 
   return (
@@ -35,46 +31,7 @@ function Automation() {
       <ScrollTabs tabs={tabs} offset="138" sectionRefs={sectionRefs} />
 
       <div id={tabs[0].id} ref={getRef(tabs[0].id)}>
-        <ContenttBlock className="cnt01">
-          <p className="intro-desc">
-            정확한 진단부터 최적 설계, 정밀 제작·설치, 철저한 테스트, 전문 교육,
-            그리고 체계적인 유지보수까지, 검증된 기술력으로 신뢰할 수 있는
-            자동화 솔루션을 제공합니다.
-          </p>
-        </ContenttBlock>
-
-        <ContenttBlock
-          className="cnt02"
-          size={900}
-          title={"공장 자동화 라인 구축 절차"}
-        >
-          <img src={img1} alt="공장 자동화 라인 구축 절차" />
-        </ContenttBlock>
-
-        <ContenttBlock
-          className="cnt03"
-          size={1100}
-          title={"로봇 자동화 프로세스"}
-        >
-          <img src={img2} alt="로봇 자동화 프로세스" />
-          <p className="cnt-desc">
-            뎉타봇은 로봇, 비전, 컨베이어, AI 제어 등 첨단 기술 기반의 자동화
-            라인 구축 및, 정밀한 분석과 검증된 설계로 공장의 스마트 팩토리를
-            완성합니다.
-          </p>
-        </ContenttBlock>
-
-        <ContenttBlock
-          className="cnt03"
-          size={900}
-          title={"로봇 자동화의 이점"}
-        >
-          <img src={img3} alt="로봇 자동화의 이점" />
-        </ContenttBlock>
-
-        <ContenttBlock className="cnt05" title={"자동화 공정"}>
-          <StepFlow steps={cnt05.steps} />
-        </ContenttBlock>
+        <IntroSection />
       </div>
 
       <div id={tabs[1].id} ref={getRef(tabs[1].id)}>
@@ -132,40 +89,3 @@ const products = [
     ],
   },
 ];
-
-const cnt05 = {
-  steps: [
-    {
-      iconName: "icon_conveyor",
-      title: "원자재 투입",
-      text: "컨베어 이송",
-    },
-    {
-      iconName: "icon_robot_face",
-      title: "AMR / AGV",
-      text: "바퀴 달린 로봇 이송",
-    },
-    {
-      iconName: "icon_robot_arm",
-      title: "로봇작업",
-      text: "협동 로봇 Pick & Place",
-    },
-    {
-      iconName: "icon_gears_two",
-      title: "조립 / 작업",
-      text: "다관절 및 협동 로봇",
-    },
-    {
-      iconName: "icon_eye_solid",
-      title: "비전 검사",
-      text: "제품 상태 판정",
-    },
-    {
-      iconName: "icon_industry",
-      title: "출고",
-      text: "팔레타이징 다관절 로봇",
-    },
-  ],
-};
-
-export default Automation;
