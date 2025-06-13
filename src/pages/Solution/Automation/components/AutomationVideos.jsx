@@ -1,5 +1,5 @@
 import React from "react";
-import VideoDefault from "../../../../components/UI/VideoDefault";
+import VideoPreviewPlayer from "../../../../components/UI/VideoPreviewPlayer";
 
 function AutomationVideos() {
   return (
@@ -7,14 +7,7 @@ function AutomationVideos() {
       {videos.map((item) => (
         <article className="short" key={item.title}>
           <div className="short_l i1">
-            <VideoDefault src={item.videoSrc} />
-            {/* <iframe
-              className="video"
-              src={item.videoSrc}
-              title="YouTube video player"
-              allow="fullscreen; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe> */}
+            <VideoPreviewPlayer src={item.videoSrc} />
           </div>
           <div className="short_r">
             <div className="texts">

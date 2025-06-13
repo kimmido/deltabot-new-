@@ -40,6 +40,7 @@ function VideoPreviewPlayer(props) {
         className={`video-box`}
         ref={videoBoxRef}
         onClick={() => handlePlay(isPlaying)}
+        style={{ aspectRatio: props.ratio || 16 / 9 }}
       >
         <VideoDefault {...props} controls={isPlaying} videoRef={videoRef} />
         {!isPlaying && <IconPlayBtn color="#fff" />}

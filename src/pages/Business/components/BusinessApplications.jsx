@@ -1,5 +1,5 @@
 import React from "react";
-import VideoDefault from "../../../components/UI/VideoDefault";
+import VideoPreviewPlayer from "../../../components/UI/VideoPreviewPlayer";
 
 function BusinessApplications({ data }) {
   const type = data.applications[0].video ? "video" : "image";
@@ -17,7 +17,7 @@ function BusinessApplications({ data }) {
                   alt={`응용분야-${app.title}`}
                 />
               ) : (
-                <VideoDefault
+                <VideoPreviewPlayer
                   key={app.video}
                   src={`/videos/sub/${app.video}`}
                   poster={`/images/video_poster/${app.poster}`}

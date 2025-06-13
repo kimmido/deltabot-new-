@@ -1,7 +1,6 @@
 import React from "react";
 import HorizontalCardSlider from "./components/HorizontalCardSlider";
 import ContenttBlock from "../components/ContenttBlock";
-import VideoDefault from "../../../components/UI/VideoDefault";
 
 import img1 from "../../../assets/images/solution/cleaning-cnt1.jpg";
 import img2_1 from "../../../assets/images/solution/cleaning-cnt2-1.png";
@@ -17,6 +16,7 @@ import img5_2 from "../../../assets/images/solution/cleaning-cnt5-2.jpg";
 import img6 from "../../../assets/images/solution/cleaning-cnt6.jpg";
 import img7_1 from "../../../assets/images/solution/cleaning-cnt7-1.png";
 import img7_2 from "../../../assets/images/solution/cleaning-cnt7-2.png";
+import VideoPreviewPlayer from "../../../components/UI/VideoPreviewPlayer";
 
 const DescBlock = ({ title, desc, children }) => {
   return (
@@ -121,12 +121,11 @@ function CleaningRobotSection() {
           {cnt08.map(({ video, poster, text }, idx) => (
             <li key={text} className="app-item">
               <div className="media-box">
-                <VideoDefault
+                <VideoPreviewPlayer
                   key={video}
                   src={`/videos/sub/${video}`}
                   poster={`/images/video_poster/${poster}`}
-                  preload="auto"
-                  muted="true"
+                  ratio={16 / 11}
                 />
               </div>
               <div className="text-box">
