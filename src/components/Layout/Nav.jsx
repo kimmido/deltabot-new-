@@ -52,7 +52,7 @@ const SubLink = ({
   );
 };
 
-const Nav = () => {
+export default function Nav() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isPcMenuIdx, setPcMenuIdx] = useState(null);
   const mobileMenu = useRef(null);
@@ -121,6 +121,11 @@ const Nav = () => {
 
       {/* 모바일 메뉴 */}
       <div className="mobile">
+        {isMobileMenuOpen && (
+          <Link to="/">
+            <span className="logo-click-zone" onClick={toggleMobileMenu}></span>
+          </Link>
+        )}
         <button className="mobile__btn" onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? (
             <SvgrComponents name="icon_close" />
@@ -155,6 +160,4 @@ const Nav = () => {
       </div>
     </nav>
   );
-};
-
-export default Nav;
+}

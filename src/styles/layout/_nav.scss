@@ -148,10 +148,20 @@ nav.gnb {
 
   // === mobile ===
   .mobile {
-    display: block;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 
     @include respondTo(tablet-l) {
       display: none;
+    }
+
+    .logo-click-zone {
+      @include pseudoDefault(transparent, $size: 100px);
+      top: -2px;
+      height: 44px;
+      z-index: $z-index-header;
     }
 
     .mobile__btn {
