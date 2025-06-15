@@ -1,6 +1,6 @@
 // 특징 아이콘 리스트
 .CircleIconList {
-  @include flexBox(row, 6vw, stretch, space-evenly, wrap);
+  @include flexBox(row, 4vw, stretch, space-evenly, wrap);
   // margin: 20px 30px;
   margin-top: 20px;
 
@@ -33,7 +33,7 @@
     }
 
     .icon-box {
-      flex: 40%;
+      flex: 50%;
       aspect-ratio: 1;
       background-color: var(--color-point-background);
       border-radius: 50%;
@@ -46,8 +46,8 @@
     }
 
     p {
-      flex: 60%;
-      margin: $spacing-content-xs 1em 0;
+      flex: 50%;
+      margin: 0 1em;
 
       @include respondTo(tablet-l) {
         margin: $spacing-content-sm 1.3em 0;
