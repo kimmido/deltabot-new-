@@ -1,8 +1,12 @@
 // 특징 아이콘 리스트
 .CircleIconList {
   @include flexBox(row, 6vw, stretch, space-evenly, wrap);
-  margin: 20px 30px;
+  // margin: 20px 30px;
+  margin-top: 20px;
 
+  @include respondTo(mobile-l) {
+    margin: 20px 4vw;
+  }
   @include respondTo(tablet-s) {
     flex-wrap: nowrap;
     gap: 4%;
@@ -17,14 +21,19 @@
   }
 
   .features-item {
-    flex: 25% 0 1;
+    flex: 45% 0 1;
     text-align: center;
+
+    display: flex;
+    align-items: center;
 
     @include respondTo(tablet-s) {
       flex: 14% 0 1;
+      display: block;
     }
 
     .icon-box {
+      flex: 40%;
       aspect-ratio: 1;
       background-color: var(--color-point-background);
       border-radius: 50%;
@@ -35,7 +44,9 @@
         height: 80%;
       }
     }
+
     p {
+      flex: 60%;
       margin: $spacing-content-xs 1em 0;
 
       @include respondTo(tablet-l) {
