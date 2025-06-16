@@ -40,3 +40,4 @@ export { default as icon_lightning } from './icon_lightning.svg?react';
 export { default as icon_extinguisher } from './icon_extinguisher.svg?react';
 export { default as icon_cycle_arrow } from './icon_cycle_arrow.svg?react';
 export { default as icon_home } from './icon_home.svg?react';
+export { default as icon_check_circle } from './icon_check_circle.svg?react';
