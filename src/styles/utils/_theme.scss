@@ -14,6 +14,7 @@
 
 /* 스카이 블루 테마 */
 .Business[data-theme="sky-blue"] {
+  // 협동로봇
   --color-point: #19b0fb;
   --color-highlight: rgb(25, 176, 251);
   --color-active: rgb(25, 176, 251);
@@ -23,10 +24,16 @@
     rgba(25, 176, 251, 0.2) 60%,
     rgba(0, 0, 0, 0) 100%
   );
+
+  .img-icon {
+    filter: invert(67%) sepia(28%) saturate(6861%) hue-rotate(170deg)
+      brightness(97%) contrast(103%);
+  }
 }
 
 /* 청록 페이지 테마 */
 .Business[data-theme="vivid-cyan"] {
+  // 수직다관절
   --color-highlight: #0099cc;
   --color-point: rgb(0, 153, 204);
   --color-active: rgb(0, 153, 204);
@@ -36,10 +43,16 @@
     rgba(0, 153, 204, 0.2) 60%,
     rgba(0, 0, 0, 0) 100%
   );
+
+  .img-icon {
+    filter: invert(66%) sepia(79%) saturate(7414%) hue-rotate(172deg)
+      brightness(104%) contrast(101%);
+  }
 }
 
 /* 체리핑크 테마 */
 .Business[data-theme="cherry-pink"] {
+  // 현재 사용X
   --color-active: #fc3a64;
   --color-point: #fc3a64;
   --color-highlight: rgb(252, 58, 100);
@@ -49,10 +62,16 @@
     rgba(252, 58, 100, 0.2) 60%,
     rgba(0, 0, 0, 0) 100%
   );
+
+  .img-icon {
+    filter: invert(39%) sepia(40%) saturate(6250%) hue-rotate(326deg)
+      brightness(100%) contrast(98%);
+  }
 }
 
 /* 로얄블루 테마 */
 .Business[data-theme="royal-blue"] {
+  // 델타로봇
   --color-active: #0052f2;
   --color-point: #0052f2;
   --color-highlight: rgb(0, 82, 242);
@@ -62,10 +81,16 @@
     rgba(0, 82, 242, 0.2) 60%,
     rgba(0, 0, 0, 0) 100%
   );
+
+  .img-icon {
+    filter: invert(17%) sepia(70%) saturate(6057%) hue-rotate(219deg)
+      brightness(99%) contrast(101%);
+  }
 }
 
 /* 체리핑크 테마 */
 .Business[data-theme="blue-purple"] {
+  // 현재 사용X
   --color-active: #3e30f4;
   --color-point: #3e30f4;
   --color-highlight: rgb(62, 48, 244);
@@ -75,10 +100,16 @@
     rgba(62, 48, 244, 0.2) 60%,
     rgba(0, 0, 0, 0) 100%
   );
+
+  .img-icon {
+    filter: invert(23%) sepia(96%) saturate(6737%) hue-rotate(247deg)
+      brightness(94%) contrast(104%);
+  }
 }
 
-/* 체리핑크 테마 */
+/* 틸 블루 테마 */
 .Business[data-theme="teal-blue"] {
+  // amr
   --color-active: #49919d;
   --color-point: #49919d;
   --color-highlight: rgb(73, 145, 157);
@@ -88,4 +119,9 @@
     rgba(73, 145, 157, 0.2) 60%,
     rgba(0, 0, 0, 0) 100%
   );
+
+  .img-icon {
+    filter: invert(52%) sepia(12%) saturate(1466%) hue-rotate(141deg)
+      brightness(95%) contrast(91%);
+  }
 }
