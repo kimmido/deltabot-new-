@@ -12,10 +12,6 @@ import ComingSoon from "./pages/Business/ComingSoon";
 const Home = lazy(() => import("./pages/Home/Home"));
 const About = lazy(() => import("./pages/About/About"));
 const Business = lazy(() => import("./pages/Business/Business"));
-const BusinessAutomation = lazy(() =>
-  import("./pages/Business/AutomationPage")
-);
-const SolutionLayout = lazy(() => import("./layouts/SolutionLayout"));
 const BusinessLayout = lazy(() => import("./layouts/BusinessLayout"));
 const SolutionAutomation = lazy(() =>
   import("./pages/Solution/Automation/Automation")
@@ -47,13 +43,10 @@ function App() {
                     index
                     element={<Navigate to="collaboration" replace />}
                   />
-                  <Route
-                    path="collaboration"
-                    element={<BusinessAutomation />}
-                  />
-                  <Route path="serial-robot" element={<BusinessAutomation />} />
-                  <Route path="deltarobot" element={<BusinessAutomation />} />
-                  <Route path="amr" element={<BusinessAutomation />} />
+                  <Route path="collaboration" element={<Business />} />
+                  <Route path="serial-robot" element={<Business />} />
+                  <Route path="deltarobot" element={<Business />} />
+                  <Route path="amr" element={<Business />} />
                 </Route>
               </Route>
 

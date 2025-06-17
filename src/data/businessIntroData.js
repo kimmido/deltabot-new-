@@ -8,6 +8,7 @@ const businessIntroData = {
           '사람과 같은 작업 공간에서 #직접 협력하며 작업할 수 있도록 설계된 산업용 로봇# 입니다. 기존 산업용 로봇과는 달리, #로봇과 인간이 동시에 하나의 작업을 수행할 수 있는 환경을# 목표로 하며, #안전성, 유연성, 사용성을# 중점으로 설계되었습니다.'
         ],
       images: [`card`],
+      featureType:"card",
       features: [
         {
           icon: 'icon_shield.png',
@@ -62,6 +63,10 @@ const businessIntroData = {
           title: '종양 생검 내비게이션 및 위치 지정 로봇',
         },
       ],
+      link: {
+        label: "자동화 솔루션 자세히 보기",
+        path: "/automation-solution"
+      }
     },
     
     // 수직다관절
@@ -71,6 +76,7 @@ const businessIntroData = {
       description:
         ['산업용 로봇의 매 순간과 모든 동작은 제조 전반에 걸쳐 중요하며, 다양한 작업 범위와 하중 용량, 그리고 고정밀과 고속의 완벽한 조합 덕분에 #로로딩 및 언로딩, 디버링, 테스트, 접착, 분류, 조립, 핸들링 등 모든 종류의 생산 공정에 널리 사용#되어 왔으며 #모든 산업 분야에서 탁월한 성능을 발휘# 합니다.'],
       images: [`card`],
+      featureType:"card",
       features: [
         {
           icon: 'icon_chart_rocket.png',
@@ -134,6 +140,7 @@ const businessIntroData = {
       description:
         ['델타 로봇(Delta Robot)은 병렬 링크 메커니즘(Parallel Kinematic Mechanism)을 기반으로 설계된 고속 고정밀 산업용 로봇입니다. 3개의 경량 링크가 삼각형 형태의 상단 프레임에 연결되어 있으며, 각각 독립적인 서보 모터에 의해 구동됩니다. 이 링크들은 공통된 플랫폼(엔드 이펙터)을 지지하며, 로봇의 공간 좌표를 고정밀하게 제어할 수 있도록 해줍니다. 델타 구조는 일반적인 직렬 구조 로봇에 비해 훨씬 빠른 응답성과 낮은 관성을 제공하므로, #초당 수백 회의 픽앤플레이스 작업을 요구하는 고속 생산 라인#라인에 특히 적합합니다. 이러한 구조적 이점 덕분에 #델타 로봇은 식음료, 제약, 전자부품, 화장품, 포장 산업 등 다양한 분야에서 널리 활용#되고 있습니다.', '#클린룸 인증(IP65 이상) 제품도 지원 가능#하므로, 위생 기준이 엄격한 환경에서도 안정적으로 작동하며, 생산 품질 향상 및 생산성 극대화에 기여할 수 있는 핵심 자동화 장비로 자리매김하고 있습니다.'],
       images: [`card`],
+      featureType:"card",
       features: [
         {
           icon: 'icon_chart_gear.png',
@@ -200,6 +207,7 @@ const businessIntroData = {
           'AMR 시리즈는 기존 자동화 설비의 한계를 극복하고, #스마트 팩토리와 하이믹스(HI-MIX) 생산 환경에 최적화된 솔루션#으로 자리 잡고 있습니다.'
         ],
       images: [`card`],
+      featureType:"card",
       features: [
         {
           icon: 'icon_robot_iot.png',
@@ -282,6 +290,10 @@ const businessIntroData = {
           title: '스마트 팩토리',
         },
       ],
+      link: {
+        label: "솔루션 보러가기",
+        path: "/vision-solution#machine"
+      }
     },
     
     // 열화상 카메라
@@ -492,6 +504,7 @@ const businessIntroData = {
         '고성능 GPU와 멀티코어 CPU를 바탕으로 대규모 연산 및 딥러닝 학습을 빠르게 처리할 수 있으며, 고속 네트워킹과 확장형 I/O, 유연한 리소스 관리로 안정적인 운영이 가능합니다. AI 추론·분석부터 스토리지 모니터링까지 폭넓게 대응할 수 있어, 확장성과 통합성을 갖춘 차세대 인프라를 구현할 수 있습니다.'
       ],
       images: ['card'],
+      featureType:"circle",
       features: [
         {
           icon: 'icon_computer_graphics',
@@ -540,6 +553,7 @@ const businessIntroData = {
       title: '고성능 워크스테이션 & 서버',
       description: ['AI, HPC, CAD/CAE, 머신비전, 시뮬레이션을 위한 최적화된 성능을 제공하는 고성능 워크스테이션 및 서버. 다양한 폼팩터와 최신 프로세서, 고성능 GPU, 고속 인터페이스, 원격 관리 기능을 통해 뛰어난 처리 능력과 효율성을 구현합니다.'],
       images: ['card'],
+      featureType:"circle",
       features: [
         {
           icon: 'icon_cpu',
@@ -592,6 +606,7 @@ const businessIntroData = {
         '특히, 견고한 하드웨어 구성과 표준화된 폼팩터는 산업용 캐비닛이나 제어 랙에 쉽게 통합될 수 있어 유지보수 및 확장 또한 용이합니다. 또한 GPU나 고속 SSD, 고성능 네트워크 카드 등을 추가 장착하여 AI 분석, 예지 정비, 비전 시스템 등의 고부가가치 작업도 지원합니다.'
       ],
       images: ['card'],
+      featureType:"circle",
       features: [
         {
           icon: 'icon_cpu',
@@ -643,6 +658,7 @@ const businessIntroData = {
         '혹독한 환경에서도 흔들림 없이 작동하는 서버, 그것이 바로 밀리터리 서버입니다. ','고성능 프로세싱 파워는 물론, 열과 충격, 진동에 강한 산업용 등급의 내구성, 군사 수준의 보안 아키텍처까지 갖춘 이 서버는 군 통신망, 전장 상황실, 감시 시스템, 산업 자동화 설비 등 고신뢰 환경에서 최적의 성능을 발휘합니다.','전장처럼 예측 불가능한 상황에서도 데이터를 지키고, 시스템을 유지하는 것이 곧 경쟁력입니다. 무결점 작동을 위한 선택, 밀리터리 서버로 미래의 임무를 준비하십시오.'
       ],
       images: ['card'],
+      featureType:"circle",
       features: [
         {
           icon: 'icon_cpu',
@@ -696,6 +712,7 @@ const businessIntroData = {
         '오늘날 비히클은 단순한 교통수단을 넘어 경제, 물류, 관광, 환경 등 여러 분야에서 필수적인 인프라로 자리 잡고 있으며, 특히 전기차(EV) 및 친환경 이동 수단의 부상과 함께 더욱 주목받고 있습니다. S1901 EvoTRAC는 이러한 흐름 속에서, 미래 지향적이고 지속 가능한 모빌리티 생태계를 위한 기술적 기반을 제공합니다.'
       ],
       images: ['card'],
+      featureType:"circle",
       features: [
         {
           icon: 'icon_cpu',

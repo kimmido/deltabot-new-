@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
-function QuoteArea({ data }) {
+function QuoteArea({ title }) {
   const gsapContainer = useRef(null);
 
   useGSAP(
@@ -25,7 +25,7 @@ function QuoteArea({ data }) {
 
   return (
     <div className="QuoteArea" ref={gsapContainer}>
-      <strong className="quote-text">{data.title}</strong>
+      <strong className="quote-text">{title}</strong>
     </div>
   );
 }

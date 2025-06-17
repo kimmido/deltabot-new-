@@ -1,7 +1,13 @@
 import React from "react";
 import { HighlightText } from "../../../components/UI/HighlightText";
+import CircleIconList from "./CircleIconList";
+import FeatureCards from "./FeatureCards";
 
 function BusinessIntroSection({ data, currentTab }) {
+  const featureEl = {
+    card: <FeatureCards data={data} />,
+    circle: <CircleIconList features={data.features} />,
+  };
   return (
     <section className="BusinessIntroSection">
       <div className="desc-box">
@@ -26,6 +32,8 @@ function BusinessIntroSection({ data, currentTab }) {
           <p className="desc">{data.extraText}</p>
         </div>
       )}
+
+      {featureEl[data.featureType]}
     </section>
   );
 }
