@@ -86,9 +86,10 @@ const cnt05 = {
   ],
   videos: [
     {
-      title: "수액패킹",
+      title: "수액 패킹",
       text: "본 설비는 수직다관절로봇을 활용하여 수액봉지 6개를 동시에 집어서 박스에 적재 및 이송하는  자동화 라인입니다. 로봇은 고정밀 집게(그리퍼)를 통해 수액봉지를 안정적으로 파지하고, 지정된 위치로 박스에  적재 작업을 수행합니다. 이를 통해 생산 효율을 향상시키고 작업자의 수작업 부담을 최소화할 수 있습니다.",
       videoSrc: "/videos/sub/solution-automation(1).mp4",
+      poster: "/images/video_poster/solution-automation(1).jpg",
       effects: [
         {
           text: "분당 72개 처리",
@@ -109,9 +110,10 @@ const cnt05 = {
       ],
     },
     {
-      title: "3 Picker",
-      text: "본 설비는 델타로봇으로 이용하여  3Picker를  동시에 3개씩 집어 적재하는 자동화 시스템입니다. 델타로봇의 고속·고정밀 특성을 활용하여, 지정된 위치에 신속하고 정확하게 적재합니다. 이를 통해 전체 라인의 처리 속도를 극대화하고 작업 효율을 극대화할 수 있습니다.",
+      title: "쉴드캔",
+      text: "본 설비는 델타로봇을 이용하여 흘러나오는 제품을  3Picker를 통해서  3개씩 집어 적재하는 자동화 시스템입니다. 델타로봇의 고속·고정밀 특성을 활용하여, 지정된 위치에 신속하고 정확하게 적재합니다. 이를 통해 전체 라인의 처리 속도를 극대화하고 작업 효율을 극대화할 수 있습니다.",
       videoSrc: "/videos/sub/solution-automation(2).mp4",
+      poster: "/images/video_poster/solution-automation(2).jpg",
       effects: [
         {
           text: "분당 80개 처리",
@@ -132,9 +134,10 @@ const cnt05 = {
       ],
     },
     {
-      title: "원형 배터리 분류 스테이션",
+      title: "커피 파우치",
       text: "본 설비는 2대의 델타로봇을 이용하여 커피스틱을 각각 1개씩 집어 이송 및 적재하는 자동화 라인입니다. 델타로봇의 고속·정밀한 동작 특성을 활용하여 커피스틱을 빠르고 안정적으로 집어 처리할 수 있습니다. 두 대의 로봇이 동시에 작동하여 생산성을 높이며, 인력을 최소화해 효율적인 생산라인을 구현합니다.",
       videoSrc: "/videos/sub/solution-automation(3).mp4",
+      poster: "/images/video_poster/solution-automation(3).jpg",
       effects: [
         {
           text: "분당 85개 처리",

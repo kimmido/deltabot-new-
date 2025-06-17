@@ -7,7 +7,7 @@ function AutomationVideos({ videos }) {
       {videos.map((item) => (
         <article className="short" key={item.title}>
           <div className="short_l i1">
-            <VideoPreviewPlayer src={item.videoSrc} />
+            <VideoPreviewPlayer src={item.videoSrc} poster={item.poster} />
           </div>
           <div className="short_r">
             <div className="texts">
