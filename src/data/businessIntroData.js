@@ -10,7 +10,7 @@ const businessIntroData = {
       images: [`card`],
       features: [
         {
-          icon: 'icon_shield-sky-blue.png',
+          icon: 'icon_shield.png',
           title: '안전한 작업 환경',
           texts: [
             "충돌 감지 및 자동 정지",
@@ -20,7 +20,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_dashboard_ui-sky-blue.png',
+          icon: 'icon_dashboard_ui.png',
           title: '쉬운 사용성과 빠른 투입',
           texts: [
             "간단한 드래그 앤 드롭 방식",
@@ -30,7 +30,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_install-sky-blue.png',
+          icon: 'icon_install.png',
           title: '유연한 설치 & 공간 활용',
           texts: [
             "경량 컴팩트 구조",
@@ -40,7 +40,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_money-sky-blue.png',
+          icon: 'icon_money.png',
           title: '비용 절감 & 고효율 투자',
           texts: [
             "단순 반복 작업 자동화",
@@ -73,7 +73,7 @@ const businessIntroData = {
       images: [`card`],
       features: [
         {
-          icon: 'icon_chart_rocket-vivid-cyan.png',
+          icon: 'icon_chart_rocket.png',
           title: '고속 동작',
           texts: [
             "고속 서보 모터 탑재",
@@ -83,7 +83,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_aiming-vivid-cyan.png',
+          icon: 'icon_aiming.png',
           title: '정밀 제어',
           texts: [
             "고해상도 제어 기술 적용",
@@ -93,7 +93,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_computer_programming-vivid-cyan.png',
+          icon: 'icon_computer_programming.png',
           title: '쉬운 프로그래밍',
           texts: [
             "직관적인 티칭 펜던트 UI",
@@ -103,7 +103,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_robot_arm-vivid-cyan.png',
+          icon: 'icon_robot_arm.png',
           title: '뛰어난 확장성',
           texts: [
             "다양한 장비와 완벽 호환",
@@ -126,117 +126,7 @@ const businessIntroData = {
         },
       ],
     },
-    
-    // 스카라
-    "scara": {
-      theme: 'cherry-pink',
-      title: '고속 · 고정밀 자동화의 최적 솔루션, SCARA 로봇',
-      description:
-        ['스카라 로봇은 컴팩트한 설계와 고정밀, 고속 성능을 결합하여 제한된 공간에서도 최적의 생산성을 실현할 수 있는 자동화 솔루션입니다 . 수평 다관절 구조를 기반으로 한 #정밀한 동작과 짧은 사이클 타임은 고속 조립 및 이송 공정에 최적화되어# 있으며, #설치 유연성과 유지보수 용이성 또한 탁월#합니다.',
-          '고도화된 스마트 팩토리 환경에서 요구되는 속도, 정확성, 공간 효율을 모두 만족시키는 #스카라 로봇은 제조업의 경쟁력을 높이는 핵심 파트너입니다.#'
-        ],
-      images: [`card`],
-      features: [
-        {
-          icon: 'icon_chart_gear-cherry-pink.png',
-          title: '고속·고정밀  성능',
-          texts: [
-            "빠른 사이클 타임으로 생산성 극대화",
-            "반복 작업에 최적화된 고속 동작 구조",
-            "±0.01mm의 정밀 제어로 품질 안전",
-            "전자·정밀 조립 공정에 최적화",
-          ]
-        },
-        {
-          icon: 'icon_install-cherry-pink.png',
-          title: '컴팩트 & 유연한 설치',
-          texts: [
-            "좁은 공간에도 쉽게 설치 가능한 설계",
-            "수평 동작 기반의 슬림한 구조",
-            "설비와의 연동 및 배치 유연성 확보",
-            "소형 라인부터 대형 공정까지 적용 가능",
-          ]
-        },
-        {
-          icon: 'icon_gear_shiny-cherry-pink.png',
-          title: '간단한 구조, 쉬운 유지보수',
-          texts: [
-            "4축 기반의 단순 설계로 고장률 최소화",
-            "정비가 쉽고 유지보수 부담이 낮음",
-            "빠른 부품 교체와 운영 효율성 제공",
-            "다운타임 감소로 안정적인 생산 가능",
-          ]
-        },
-        {
-          icon: 'icon_money-cherry-pink.png',
-          title: '높은 비용 효율, 쉬운 도입',
-          texts: [
-            "합리적인 초기 투자 비용",
-            "유지·관리 비용 절감으로 비용 효율 향상",
-            "빠른 설치와 운용으로 도입 장벽 낮음",
-            "다양한 산업군에서 폭넓게 활용 가능",
-          ]
-        },
-      ],
-      applications: [
-        {
-          image: 'scara-application(1).jpg',
-          title: '경량 부품 조립',
-        },
-        {
-          image: 'scara-application(2).jpg',
-          title: '앰플정렬',
-        },
-        {
-          image: 'scara-application(3).jpg',
-          title: '혼합된 여러 작업 흐름',
-        },
-      ],
-    }, // 스카라   
 
-    // 코봇
-    "cobot": {
-      theme: 'vivid-cyan',
-      title: '',
-      description:
-        [''],
-      images: [`default`],
-      features: [
-        {
-          icon: '.png',
-          title: '',
-          texts: [
-            "",
-            "",
-            "",
-            "",
-          ]
-        },
-        {
-          icon: '.png',
-          title: '',
-          texts: [
-            "",
-            "",
-            "",
-            "",
-          ]
-        },
-      ],
-      applications: [
-        {
-          video: 'robot-application(1).mp4',
-          poster: 'robot-application(1).jpg',
-          title: '',
-        },
-        {
-          video: 'robot-application(2).mp4',
-          poster: 'robot-application(2).jpg',
-          title: '',
-        },
-      ],
-    },
-    
     // 델타로봇
     "deltarobot": {
       theme: 'royal-blue',
@@ -246,7 +136,7 @@ const businessIntroData = {
       images: [`card`],
       features: [
         {
-          icon: 'icon_chart_gear-royal-blue.png',
+          icon: 'icon_chart_gear.png',
           title: '고속·고정밀 작업 성능',
           texts: [
             "병렬 구조 기반의 초고속 동작 성능",
@@ -256,7 +146,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_install-royal-blue.png',
+          icon: 'icon_install.png',
           title: '컴팩트한 설치 구조',
           texts: [
             "상단 고정형으로 공간 절약",
@@ -266,7 +156,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_drop_gear-royal-blue.png',
+          icon: 'icon_drop_gear.png',
           title: '위생 환경 대응력',
           texts: [
             "위생 환경에 최적화된 밀폐형 구조",
@@ -276,7 +166,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_robot_arm-royal-blue.png',
+          icon: 'icon_robot_arm.png',
           title: '유연한 커스터마이징',
           texts: [
             "다양한 작업 환경에  최적 설계 가능",
@@ -290,78 +180,12 @@ const businessIntroData = {
         {
           video: 'deltarobot-application(1).mp4',
           poster: 'deltarobot-application(1).jpg',
-          title: '미용 패치 부착',
+          title: '미용 패치',
         },
         {
           video: 'deltarobot-application(2).mp4',
           poster: 'deltarobot-application(2).jpg',
           title: '초코파이 자동 적재 솔루션',
-        },
-      ],
-    },
-    
-    // 케이스 패커 -> 지능형 로봇
-    "case-packer": {
-      theme: 'blue-purple',
-      title: '차세대 포장 자동화의 완성형 솔루션',
-      description:
-        ['지능형로봇시스템(Intelligent Robotic System) 은 모듈형 설계 철학을 바탕으로 다양한 포장 및 병입 제품의 자동화된 포장 프로세스를 실현하는 차세대 로봇 솔루션입니다.',
-          '특히 본 시스템은 #프레임형 컨베이어가 통합된 스마트 자동분류시스템으로# 표준화된 프로세스 링크를 깊이 있게 통합하고, 고속성과 높은 유연성을 지닌 병렬 로봇을 중심으로 구성되어 있습니다. 비전 시스템, 그리퍼, 제품 및 카톤 운반 모듈, 로봇 보호장치 등 전 구성요소가 유기적으로 연결되어 있어, 제품의 종류나 형상에 따라 #신속한 교체, 유연한 조정, 높은 작동 효율성을 제공#합니다.',
-          '이러한 지능형 시스템은 포장 자동화의 모든 단계를 통합하여 정밀하고 빠른 분류 및 이송, 생산라인의 유연한 대응, 그리고 최적의 작업 효율성을 실현합니다.'
-        ],
-      images: [`card`],
-      features: [
-        {
-          icon: 'icon_robot_arm-blue-purple.png',
-          title: '모듈형 유연성',
-          texts: [
-            "구성품 교체 용이, 다양한 제품 대응",
-            "공정 변경 시 빠른 조정 가능",
-            "라인 확장·변경이 간편",
-            "다품종 소량 생산에 최적화",
-          ]
-        },
-        {
-          icon: 'icon_chart_gear-blue-purple.png',
-          title: '고속·정밀 작업',
-          texts: [
-            "병렬로봇으로 빠른 작업 처리",
-            "짧은 사이클 타임으로 생산성 향상",
-            "정밀 제어로 높은 포장 정확도 확보",
-            "고속 생산라인에 최적화된 성능",
-          ]
-        },
-        {
-          icon: 'icon_vision-blue-purple.png',
-          title: '스마트 비전 분류',
-          texts: [
-            "비전으로 제품 위치·형상 인식",
-            "자동 분류 및 이송 작업 지원",
-            "다양한 제품에도 정확한 대응",
-            "품질 향상 및 오류 감소",
-          ]
-        },
-        {
-          icon: 'icon_gear_shiny-blue-purple.png',
-          title: '신속 교체·효율 운영',
-          texts: [
-            "셋업 및 툴 전환이 간편",
-            "공정 전환이 빠르고 설정이 간편",
-            "유지보수가 쉬워 다운타임 최소화",
-            "무인 자동화로 안정적인 운영 가능",
-          ]
-        },
-      ],
-      applications: [
-        {
-          video: 'case-packer-application(1).mp4',
-          poster: 'case-packer-application(1).jpg',
-          title: '보존 야채 케이스 포장',
-        },
-        {
-          video: 'case-packer-application(2).mp4',
-          poster: 'case-packer-application(2).jpg',
-          title: 'PCB 보드 수집 및 적재 워크스테이션',
         },
       ],
     },
@@ -378,7 +202,7 @@ const businessIntroData = {
       images: [`card`],
       features: [
         {
-          icon: 'icon_robot_iot-teal-blue.png',
+          icon: 'icon_robot_iot.png',
           title: '유연한 자율 주행',
           texts: [
             "SLAM, LiDAR 기반의 정밀 맵핑",
@@ -388,7 +212,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_robot_arm-teal-blue.png',
+          icon: 'icon_robot_arm.png',
           title: '다기능 작업 수행',
           texts: [
             "자재 운송, 적재/하역, 비전 검사 가능",
@@ -398,7 +222,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_chart_good-teal-blue.png',
+          icon: 'icon_chart_good.png',
           title: '생산성 향상 & 비용 절감',
           texts: [
             "24시간 무인 자동 작업 가능",
@@ -408,7 +232,7 @@ const businessIntroData = {
           ]
         },
         {
-          icon: 'icon_robot_hub-teal-blue.png',
+          icon: 'icon_robot_hub.png',
           title: '스마트확장성과 협업',
           texts: [
             "Fleet 시스템으로 AMR 다중 제어",
@@ -584,6 +408,7 @@ const businessIntroData = {
         },
       ],
     },
+    
     // 클리닝 로봇
     "cleaning-robot": {
       theme: 'default',
@@ -594,16 +419,14 @@ const businessIntroData = {
       images: ['card', 'spacing-l'],
       applications: [
         {
-          image: 'cleaning-robot-application(1).jpg',
-          title: '도시 수역 유지관리',
+          video: 'solution-ecoai(1).mp4',
+          poster: 'solution-ecoai(1).jpg',
+          title: '잘라낸 수초를 모아두는 모습',
         },
         {
-          image: 'cleaning-robot-application(2).jpg',
-          title: '스마트시티 기반 환경 모니터링',
-        },
-        {
-          image: 'cleaning-robot-application(3).jpg',
-          title: '지속가능 생태계 복원 사업',
+          video: 'solution-ecoai(4).mp4',
+          poster: 'solution-ecoai(4).jpg',
+          title: '복잡하고 변화하는 수로 정밀 청소',
         },
       ],
     },

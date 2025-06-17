@@ -286,7 +286,7 @@ const cnt08 = [
   {
     video: "solution-ecoai(1).mp4",
     poster: "solution-ecoai(1).jpg",
-    text: "잘라낸 수초를 이동 쌓아놓는 모습",
+    text: "잘라낸 수초를 모아두는 모습",
   },
   {
     video: "solution-ecoai(2).mp4",
