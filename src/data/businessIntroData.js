@@ -8,6 +8,10 @@ const businessIntroData = {
           '사람과 같은 작업 공간에서 #직접 협력하며 작업할 수 있도록 설계된 산업용 로봇# 입니다. 기존 산업용 로봇과는 달리, #로봇과 인간이 동시에 하나의 작업을 수행할 수 있는 환경을# 목표로 하며, #안전성, 유연성, 사용성을# 중점으로 설계되었습니다.'
         ],
       images: [`card`],
+      link: {
+        label: "자동화 솔루션 자세히 보기",
+        path: "/automation-solution"
+      },
       featureType:"card",
       features: [
         {
@@ -63,10 +67,6 @@ const businessIntroData = {
           title: '종양 생검 내비게이션 및 위치 지정 로봇',
         },
       ],
-      link: {
-        label: "자동화 솔루션 자세히 보기",
-        path: "/automation-solution"
-      }
     },
     
     // 수직다관절
@@ -76,6 +76,10 @@ const businessIntroData = {
       description:
         ['산업용 로봇의 매 순간과 모든 동작은 제조 전반에 걸쳐 중요하며, 다양한 작업 범위와 하중 용량, 그리고 고정밀과 고속의 완벽한 조합 덕분에 #로로딩 및 언로딩, 디버링, 테스트, 접착, 분류, 조립, 핸들링 등 모든 종류의 생산 공정에 널리 사용#되어 왔으며 #모든 산업 분야에서 탁월한 성능을 발휘# 합니다.'],
       images: [`card`],
+      link: {
+        label: "자동화 솔루션 자세히 보기",
+        path: "/automation-solution"
+      },
       featureType:"card",
       features: [
         {
@@ -140,6 +144,10 @@ const businessIntroData = {
       description:
         ['델타 로봇(Delta Robot)은 병렬 링크 메커니즘(Parallel Kinematic Mechanism)을 기반으로 설계된 고속 고정밀 산업용 로봇입니다. 3개의 경량 링크가 삼각형 형태의 상단 프레임에 연결되어 있으며, 각각 독립적인 서보 모터에 의해 구동됩니다. 이 링크들은 공통된 플랫폼(엔드 이펙터)을 지지하며, 로봇의 공간 좌표를 고정밀하게 제어할 수 있도록 해줍니다. 델타 구조는 일반적인 직렬 구조 로봇에 비해 훨씬 빠른 응답성과 낮은 관성을 제공하므로, #초당 수백 회의 픽앤플레이스 작업을 요구하는 고속 생산 라인#라인에 특히 적합합니다. 이러한 구조적 이점 덕분에 #델타 로봇은 식음료, 제약, 전자부품, 화장품, 포장 산업 등 다양한 분야에서 널리 활용#되고 있습니다.', '#클린룸 인증(IP65 이상) 제품도 지원 가능#하므로, 위생 기준이 엄격한 환경에서도 안정적으로 작동하며, 생산 품질 향상 및 생산성 극대화에 기여할 수 있는 핵심 자동화 장비로 자리매김하고 있습니다.'],
       images: [`card`],
+      link: {
+        label: "자동화 솔루션 자세히 보기",
+        path: "/automation-solution"
+      },
       featureType:"card",
       features: [
         {
@@ -276,6 +284,10 @@ const businessIntroData = {
           '딥러닝과 2D/3D 비전 알고리즘을 기반으로 다양한 작업을 정밀하고 안정적으로 수행하며, 사용자의 편의성과 확장성을 모두 고려한 시스템입니다.'
         ],
       images: [`card`],
+      link: {
+        label: "솔루션 보러가기",
+        path: "/vision-solution#machine"
+      },
       applications: [
         {
           image: 'machine-vision-application(1).jpg',
@@ -290,10 +302,6 @@ const businessIntroData = {
           title: '스마트 팩토리',
         },
       ],
-      link: {
-        label: "솔루션 보러가기",
-        path: "/vision-solution#machine"
-      }
     },
     
     // 열화상 카메라
@@ -304,6 +312,10 @@ const businessIntroData = {
         ['열화상카메라는 적외선 기반의 비접촉식 온도 감지 기술을 활용하여 사람이나 설비의 온도를 실시간으로 측정하고 모니터링할 수 있습니다. 특히 공항, 병원, 공장 등 다중 이용 시설에서 체온 이상 감지를 통해 감염병 확산을 사전에 차단하는 데 효과적으로 활용되고 있습니다. 최근에는 AI 비전 기술과 결합되어 자동으로 고온 이상 징후를 탐지하고, 위험 요인을 신속하게 경고함으로써 안전성과 효율성을 동시에 향상시키고 있습니다.', '설비 과열, 전기 누전, 기계 고장 등 산업 현장에서의 온도 기반 이상 징후도 사전에 감지하여 사고를 예방할 수 있습니다. 이러한 비접촉식 열 감지 기술은 예방 진단은 물론, 스마트 안전 관리 체계 구축에도 기여하며 다양한 분야에 폭넓게 활용되고 있습니다.'],
       images: [`card`],
       extraText: '설비 과열, 누전, 체온 이상 등 온도 기반 이상 탐지 비접촉식 열 감지로 예방 진단 및 안전 모니터링 실현',
+      link: {
+        label: "솔루션 보러가기",
+        path: "/vision-solution#thermal"
+      },
       applications: [
         {
           image: 'thermal-camera-application(1).jpg',
@@ -329,6 +341,10 @@ const businessIntroData = {
           '초분광카메라는 성분 분석, 이물질 검출, 품질 분류, 정량 분석 등을 비접촉 방식으로 수행하며, AI 기반 스펙트럼 분석을 통해 고정밀 자동 판단이 가능합니다.', 
         ],
       images: [`default`, `card`],
+      link: {
+        label: "솔루션 보러가기",
+        path: "/vision-solution#spectral"
+      },
       applications: [
         {
           image: 'spectral-camera-application(1).jpg',
@@ -405,6 +421,10 @@ const businessIntroData = {
         '자원순환형 재활용 로봇 시스템은 환경 보호를 넘어, #산업 전반의 지속가능성, 효율성, 그리고 첨단화를 동시에 추구하는 미래형 자원관리 솔루션#이라 할 수 있습니다.'
       ],
       images: ['card','spacing-l', 'spacing-l'],
+      link: {
+        label: "솔루션 보러가기",
+        path: "/eco-ai-solution#recycling"
+      },
       applications: [
         {
           image: 'recycling-robot-application(1).jpg',
@@ -429,6 +449,10 @@ const businessIntroData = {
         '도심 하천, 저수지, 인공 수로, 공원 수변 공간 등 다양한 수상 환경에서의 수질 개선과 생태계 보호를 위한 차세대 수면 관리 로봇 솔루션을 제공합니다. 수면 위의 부유 쓰레기 수거와 수중 수초 제거를 위한 각기 다른 기능의 첨단 로봇들은, 작업 효율성과 운용 안전성을 극대화하도록 설계되어 있습니다.','인력 접근이 어려운 구역에서도 정밀한 작업이 가능하며, 24시간 무인 운영, 넓은 작업 반경, 자동화된 데이터 수집 및 모니터링 기능을 통해 환경 관리의 새로운 기준을 제시합니다. 각 제품의 특화된 임무 수행 능력으로, 지속 가능한 수자원 관리, 생태계 복원, 그리고 유지보수 비용 절감이라는 핵심 가치를 실현합니다'
       ],
       images: ['card', 'spacing-l'],
+      link: {
+        label: "솔루션 보러가기",
+        path: "/eco-ai-solution#cleaning"
+      },
       applications: [
         {
           video: 'solution-ecoai(1).mp4',

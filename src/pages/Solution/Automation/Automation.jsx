@@ -4,24 +4,20 @@ import ScrollTabs, { useScrollTabsRefs } from "../components/ScrollTabs";
 import SolutionHeading from "../components/SolutionHeading";
 import ContenttBlock from "../components/ContenttBlock";
 import ProductLines from "../components/ProductLines";
+import ScrollToHash from "../../../components/common/ScrollToHash";
+import IntroSection from "./IntroSection";
 
 import img_products1 from "../../../assets/images/solution/automation-products(1).jpg";
 import img_products2 from "../../../assets/images/solution/automation-products(2).jpg";
 import img_products3 from "../../../assets/images/solution/automation-products(3).jpg";
 import img_products4 from "../../../assets/images/solution/automation-products(4).jpg";
-import IntroSection from "./IntroSection";
-
-const tabs = [
-  { id: "intro", label: "자동화 솔루션" },
-  { id: "section1", label: "활용분야" },
-  { id: "products", label: "제품 보러가기" },
-];
 
 export default function Automation() {
   const { sectionRefs, getRef } = useScrollTabsRefs(tabs);
 
   return (
     <div className="Automation solution-wrapper">
+      <ScrollToHash />
       <SolutionHeading
         title="Automation Solution"
         text="공정에 최적화된 로봇 자동화 솔루션"
@@ -50,6 +46,12 @@ export default function Automation() {
     </div>
   );
 }
+
+const tabs = [
+  { id: "intro", label: "자동화 솔루션" },
+  { id: "section1", label: "활용분야" },
+  { id: "products", label: "PRODUCT LINES" },
+];
 
 const products = [
   {

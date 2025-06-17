@@ -7,24 +7,18 @@ import SolutionHeading from "../components/SolutionHeading";
 import ScrollTabs, { useScrollTabsRefs } from "../components/ScrollTabs";
 import ProductLines from "../components/ProductLines";
 import ContenttBlock from "../components/ContenttBlock";
+import ScrollToHash from "../../../components/common/ScrollToHash";
 
 import img_products1 from "../../../assets/images/solution/vision-products(1).jpg";
 import img_products2 from "../../../assets/images/solution/vision-products(2).jpg";
 import img_products3 from "../../../assets/images/solution/vision-products(3).jpg";
 
-const tabs = [
-  { id: "intro", label: "비전 시스템이란?" },
-  { id: "section1", label: "머신비전" },
-  { id: "section2", label: "열화상" },
-  { id: "section3", label: "초분광" },
-  { id: "products", label: "제품 보러가기" },
-];
-
-function Vision() {
+export default function Vision() {
   const { sectionRefs, getRef } = useScrollTabsRefs(tabs);
 
   return (
     <div className="Vision solution-wrapper">
+      <ScrollToHash />
       <SolutionHeading
         title="Vision Solution"
         text="스마트 자동화를 위한 AI 기반 비전 시스템"
@@ -57,6 +51,14 @@ function Vision() {
   );
 }
 
+const tabs = [
+  { id: "intro", label: "비전 시스템이란?" },
+  { id: "machine", label: "머신비전" },
+  { id: "thermal", label: "열화상" },
+  { id: "spectral", label: "초분광" },
+  { id: "products", label: "PRODUCT LINES" },
+];
+
 const products = [
   {
     label: "머신비전 카메라",
@@ -86,5 +88,3 @@ const products = [
     ],
   },
 ];
-
-export default Vision;

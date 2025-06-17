@@ -5,23 +5,23 @@ import RecyclingRobotSection from "./RecyclingRobotSection";
 import ScrollTabs, { useScrollTabsRefs } from "../components/ScrollTabs";
 import ProductLines from "../components/ProductLines";
 import ContenttBlock from "../components/ContenttBlock";
+import IntroSection from "./IntroSection";
+import ScrollToHash from "../../../components/common/ScrollToHash";
 
 import img_products1 from "../../../assets/images/solution/ecoai-products(1).jpg";
 import img_products2 from "../../../assets/images/solution/ecoai-products(2).jpg";
-import IntroSection from "./IntroSection";
 
 export default function EcoAI() {
   const { sectionRefs, getRef } = useScrollTabsRefs(tabs);
 
   return (
     <div className="EcoAI solution-wrapper">
-      <div className="heading">
-        <SolutionHeading
-          title="Eco-AI Solution"
-          text="친환경 로봇과 재활용 시스템이 만드는 순환의 미래"
-          currentPath="eco-ai-solution"
-        />
-      </div>
+      <ScrollToHash />
+      <SolutionHeading
+        title="Eco-AI Solution"
+        text="친환경 로봇과 재활용 시스템이 만드는 순환의 미래"
+        currentPath="eco-ai-solution"
+      />
       <ScrollTabs tabs={tabs} offset="138" sectionRefs={sectionRefs} />
 
       <div id={tabs[0].id} ref={getRef(tabs[0].id)}>
@@ -46,10 +46,10 @@ export default function EcoAI() {
 }
 
 const tabs = [
-  { id: "intro", label: "Eco AI 솔루션" },
-  { id: "section1", label: "수면 정화 로봇" },
-  { id: "section2", label: "재활용 로봇" },
-  { id: "products", label: "제품 보러가기" },
+  { id: "intro", label: "Eco-AI 솔루션" },
+  { id: "cleaning", label: "수면 정화 로봇" },
+  { id: "recycling", label: "재활용 로봇" },
+  { id: "products", label: "PRODUCT LINES" },
 ];
 
 const products = [
