@@ -1,0 +1,86 @@
+.FloatingBtn {
+  $COLOR: $color-blue-800;
+
+  position: fixed;
+  bottom: 20px;
+  right: 16px;
+  z-index: $z-index-floating;
+
+  @include respondTo(tablet-l) {
+    bottom: 36px;
+    right: 24px;
+  }
+
+  .btn {
+    @include flexBox(column, 4px);
+    background-color: transparent;
+    margin-top: 8px;
+
+    .icon-box {
+      position: relative;
+      overflow: hidden;
+      @include square(44px);
+      border: 1px solid $COLOR;
+      border-radius: 50%;
+      background-color: $COLOR;
+      box-shadow: $floating-shadow;
+      align-content: center;
+
+      @include respondTo(tablet-s) {
+        @include square(55px);
+      }
+
+      svg {
+        position: relative;
+        z-index: 10;
+        @include square(55%);
+        color: #fff;
+        fill: #fff;
+        margin-top: 2px;
+      }
+
+      .effect {
+        @include pseudoDefault(#fff);
+        left: 50%;
+        @include square(0px);
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+      }
+
+      svg,
+      .effect {
+        transition: all 0.42s ease-in-out;
+      }
+    }
+
+    .text {
+      font-size: $font-size-xs;
+      font-size: calc(1em - 2px);
+    }
+
+    &-back {
+      display: none;
+      @include respondTo(tablet-l) {
+        display: flex;
+      }
+
+      svg {
+        margin-left: 1px;
+      }
+    }
+
+    &:hover,
+    &.active {
+      .icon-box {
+        svg {
+          fill: $COLOR;
+          color: $COLOR;
+        }
+
+        .effect {
+          @include square(150px);
+        }
+      }
+    }
+  }
+}
