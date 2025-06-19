@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>https://icpmalldata.mycafe24.com/</changefreq>
+      <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/robot-automation/collaboration</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/robot-automation/serial-robot</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/robot-automation/deltarobot</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/robot-automation/amr</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/vision-system/machine-vision</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/vision-system/thermal-camera</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/vision-system/spectral-camera</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/vision-system/illumination</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/vision-system/vision-controller</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/eco-friendly-robot/recycling-robot</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com//eco-friendly-robot/cleaning-robot</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/medical/pcr</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/medical/uv</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/information-technology/gpu-serve</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/information-technology/workstations</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/information-technology/military</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/information-technology/vehicle</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/information-technology/edge-ai</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/automation-solution</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/vision-solution</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/eco-ai-solution</loc>
+      <lastmod>2025-06-19</lastmod>
+      <changefreq>quarterly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://icpmalldata.mycafe24.com/about</loc>
+      <changefreq>yearly</changefreq>
+      <priority>0.6</priority>
+   </url>
+</urlset>
