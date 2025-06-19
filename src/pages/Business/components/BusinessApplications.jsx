@@ -19,7 +19,7 @@ function BusinessApplications({ data }) {
               ) : (
                 <VideoPreviewPlayer
                   key={app.video}
-                  src={`/videos/sub/${app.video}`}
+                  src={`/videos/page/${app.video}`}
                   poster={`/images/video_poster/${app.poster}`}
                 />
               )}

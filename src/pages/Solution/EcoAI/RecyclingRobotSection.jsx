@@ -107,7 +107,7 @@ function RecyclingRobotSection() {
           <div className="flex-container">
             <div className="flex-l" data-aos="fade-right">
               <VideoPreviewPlayer
-                src={`/videos/sub/solution-ecoai(5).mp4`}
+                src={`/videos/page/solution-ecoai(5).mp4`}
                 poster="/images/video_poster/solution-ecoai(5).jpg"
               />
             </div>

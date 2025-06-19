@@ -9,7 +9,7 @@ function VideoSection() {
   const videos = [
     {
       title: "고속 정렬 자동화",
-      src: "/videos/main/main1.mp4",
+      src: "/videos/page/main1.mp4",
       poster: "/images/video_poster/main1.jpg",
       desc: [
         "델타봇의 고속 정렬 시스템은 최신 로봇 기술을 활용해 생산 공정의 효율성을 극대화합니다.",
@@ -19,7 +19,7 @@ function VideoSection() {
     },
     {
       title: "재활용 시스템",
-      src: "/videos/main/main2.mp4",
+      src: "/videos/page/main2.mp4",
       poster: "/images/video_poster/main2.jpg",
       desc: [
         "델타봇의 재활용 시스템은 최신 자동화 기술을 통해 효율적인 분류와 처리를 실현합니다.",
@@ -29,7 +29,7 @@ function VideoSection() {
     },
     {
       title: "협업 로봇을 활용한 정밀 조립 공정",
-      src: "/videos/main/main3.mp4",
+      src: "/videos/page/main3.mp4",
       poster: "/images/video_poster/main3.jpg",
       desc: [
         "통합된 2D 산업용 카메라를 탑재한 협동 로봇은 고속 결함 감지 및 보정을 수행할 수 있어, 비접촉식이면서도 손상 없이 지능형 검사를 진행하여 품질을 향상합니다.",
@@ -39,7 +39,7 @@ function VideoSection() {
     },
     {
       title: "친환경 수면 정화 로봇",
-      src: "/videos/main/main4.mp4",
+      src: "/videos/page/main4.mp4",
       poster: "/images/video_poster/main4.jpg",
       desc: [
         "수륙양용 수질 관리 차량은 하천과 호수 등 수계 환경의 유지 관리 문제를 효과적으로 해결합니다.",

@@ -45,16 +45,16 @@ const cnt03 = [
   {
     id: 1,
     title: "이종혼입방지시스템",
-    src: "/videos/sub/machine1.mp4",
-    poster: "/images/video_poster/machine1.jpg",
+    src: "/videos/page/solution-machine(1).mp4",
+    poster: "/images/video_poster/solution-machine(1).jpg",
     desc: [
       "부품 표면에 레이져 마킹되어진 ID를 읽어 들여 동일 크기의 제품들이 서로 섞여서 삽입된 것을 판별해 주는 시스템 원형 제품의 경우 제품의 각도를 추가 측정함.",
     ],
   },
   {
     title: "외관표면검사시스템",
-    src: "/videos/sub/machine2.mp4",
-    poster: "/images/video_poster/machine2.jpg",
+    src: "/videos/page/solution-machine(2).mp4",
+    poster: "/images/video_poster/solution-machine(2).jpg",
     desc: [
       "지속적으로 프레스에 의해 압력이 가해지는 툴에 대해 파손 유무를 판정해 주는 시스템.",
     ],
@@ -65,8 +65,8 @@ const cnt03 = [
   },
   {
     title: "가공 검사시스템",
-    src: "/videos/sub/machine3.mp4",
-    poster: "/images/video_poster/machine3.jpg",
+    src: "/videos/page/solution-machine(3).mp4",
+    poster: "/images/video_poster/solution-machine(3).jpg",
     desc: [
       "100개소 이상의 검사 포인트에 대해 작업자의 추가 삭제에 제한이 없도록 설계 되었음.",
     ],
@@ -79,8 +79,8 @@ const cnt03 = [
   },
   {
     title: "다관절 로봇 부착 시스템",
-    src: "/videos/sub/machine4.mp4",
-    poster: "/images/video_poster/machine4.jpg",
+    src: "/videos/page/solution-machine(4).mp4",
+    poster: "/images/video_poster/solution-machine(4).jpg",
     desc: [
       "다관절 로봇에 비젼시스템을 탑재하여 각 검사 필요 포인트별로 부품 체결  유무 / 체결 상태 / 칼라 구분 / 각도,길이등의 측정을 하도록 한 시스템",
     ],

@@ -123,7 +123,7 @@ function CleaningRobotSection() {
               <div className="media-box">
                 <VideoPreviewPlayer
                   key={video}
-                  src={`/videos/sub/${video}`}
+                  src={`/videos/page/${video}`}
                   poster={`/images/video_poster/${poster}`}
                   ratio={16 / 11}
                 />
