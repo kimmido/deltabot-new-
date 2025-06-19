@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useSearchParams } from "react-router-dom";

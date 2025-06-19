@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import PageHeading from "../components/UI/PageHeading";
 import { Outlet, useLocation } from "react-router-dom";
 import { fetchData } from "../utils/fetchData";
