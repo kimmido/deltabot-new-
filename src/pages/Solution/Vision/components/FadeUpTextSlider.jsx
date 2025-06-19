@@ -17,7 +17,7 @@ function FadeUpTextSlider({ slideData }) {
         loop={true}
         speed={800}
         autoplay={{
-          delay: 1500,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         slidesPerView={1}

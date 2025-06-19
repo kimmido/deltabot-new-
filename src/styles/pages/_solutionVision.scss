@@ -74,10 +74,14 @@
     height: 34vw;
     max-height: 345px;
     color: #fff;
-    border-radius: $radius-card-lg;
+    border-radius: $radius-card-md;
     background-position: center;
     background-size: cover;
     padding: 5vw;
+
+    @include respondTo(tablet-s) {
+      border-radius: $radius-card-lg;
+    }
 
     .text-box {
       height: 100%;
@@ -117,6 +121,7 @@
 
       @include respondTo(pc-l) {
         overflow: visible;
+        padding-bottom: 36px;
       }
 
       .swiper-pagination-bullets {
@@ -156,7 +161,12 @@
       opacity: 0;
       transform: translateY(20px);
       transition: opacity 0.5s ease, transform 0.5s ease;
-      // background-color: #4e88e7;
+      text-align: center;
+
+      @include respondTo(tablet-l) {
+        margin-top: 3em;
+        font-size: 1.8rem;
+      }
 
       &.active {
         opacity: 1;
@@ -166,10 +176,6 @@
       &.inactive {
         opacity: 0;
         transform: translateY(20px);
-      }
-
-      @include respondTo(tablet-l) {
-        margin-top: 3em;
       }
 
       strong {
@@ -297,7 +303,7 @@
 
     .cnt06-wrapper {
       color: #fff;
-      background-color: $color-background-dartk;
+      background-color: $color-background-dark;
     }
 
     .cnt06 {
