@@ -16,7 +16,7 @@ function AutomationVideos({ videos }) {
             </div>
             <ul className="effect-list">
               {item.effects.map((effect) => (
-                <li key={effect.title}>
+                <li key={effect.iconName}>
                   <div className="icon-box">
                     <img
                       src={`/images/icon/${effect.iconName}.png`}
