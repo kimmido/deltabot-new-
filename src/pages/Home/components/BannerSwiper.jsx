@@ -10,27 +10,38 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
 
+import img1 from "../../../assets/images/main/main_slide(1).jpg";
+import img2 from "../../../assets/images/main/main_slide(2).jpg";
+import img3 from "../../../assets/images/main/main_slide(3).jpg";
+import img4 from "../../../assets/images/main/main_slide(4).jpg";
+import img5 from "../../../assets/images/main/main_slide(5).jpg";
+
 function BannerSwiper() {
   const slideData = [
     {
-      alt: "메인배너1",
       text1: "ROBOT AUTOMATION",
+      text2: "사람과 AI 기술이 함께하는 미래",
+      img: img1,
     },
     {
-      alt: "메인배너2",
       text1: "VISION SYSTEM",
+      text2: "사람과 AI 기술이 함께하는 미래",
+      img: img2,
     },
     {
-      alt: "메인배너3",
       text1: "RECYCLING SYSTEM",
+      text2: "사람과 AI 기술이 함께하는 미래",
+      img: img3,
     },
     {
-      alt: "메인배너4",
       text1: "MEDICAL",
+      text2: "사람과 AI 기술이 함께하는 미래",
+      img: img4,
     },
     {
-      alt: "메인배너5",
       text1: "INFORMATION TECHNOLOGY",
+      text2: "사람과 AI 기술이 함께하는 미래",
+      img: img5,
     },
   ];
 
@@ -74,11 +85,14 @@ function BannerSwiper() {
         slidesPerView={1}
       >
         {slideData.map((item, idx) => (
-          <SwiperSlide key={item.alt}>
-            <div className={`slide slide--${idx}`}>
+          <SwiperSlide key={item.text1}>
+            <div
+              className={`slide slide--${idx}`}
+              style={{ backgroundImage: `url("${item.img}")` }}
+            >
               <div className="slide__text">
                 <p className="text">{item.text1}</p>
-                <strong className="text">사람과 AI 기술이 함께하는 미래</strong>
+                <strong className="text">{item.text2}</strong>
               </div>
             </div>
           </SwiperSlide>

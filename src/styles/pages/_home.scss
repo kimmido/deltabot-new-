@@ -15,46 +15,26 @@
   .BannerSwiper__swiper {
     height: 100%;
 
-    // @include respondTo(tablet-l) {
-    //   max-height: 805px;
-    // }
-
     .swiper-slide {
       border-radius: 30px;
       overflow: hidden;
     }
 
     .slide {
+      position: relative;
       height: 100%;
-      $GRADIENT: linear-gradient(
-        to left,
-        rgba(20, 20, 20, 0) 40%,
-        rgba(20, 20, 20, 0.15) 70%,
-        rgba(20, 20, 20, 0.3) 100%
-      );
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
 
-      &--0 {
-        background-image: $GRADIENT,
-          url("@assets/images/main/main_slide(1).jpg");
-      }
-      &--1 {
-        background-image: $GRADIENT,
-          url("@assets/images/main/main_slide(2).jpg");
-      }
-      &--2 {
-        background-image: $GRADIENT,
-          url("@assets/images/main/main_slide(3).jpg");
-      }
-      &--3 {
-        background-image: $GRADIENT,
-          url("@assets/images/main/main_slide(4).jpg");
-      }
-      &--4 {
-        background-image: $GRADIENT,
-          url("@assets/images/main/main_slide(5).jpg");
+      &::before {
+        @include pseudoDefault();
+        background: linear-gradient(
+          to left,
+          rgba(20, 20, 20, 0) 40%,
+          rgba(20, 20, 20, 0.15) 70%,
+          rgba(20, 20, 20, 0.3) 100%
+        );
       }
 
       .slide__text {
