@@ -8,23 +8,7 @@ import backImg3 from "../../../assets/images/main/main_solution(3).jpg";
 
 function SolutionSection() {
   const solutionRoutes = category[1].sub;
-  const data = [
-    {
-      img: backImg1,
-      title: solutionRoutes[0].label,
-      path: solutionRoutes[0].path,
-    },
-    {
-      img: backImg2,
-      title: solutionRoutes[1].label,
-      path: solutionRoutes[1].path,
-    },
-    {
-      img: backImg3,
-      title: solutionRoutes[2].label,
-      path: solutionRoutes[2].path,
-    },
-  ];
+  const imgList = [backImg1, backImg2, backImg3];
 
   const aosType = ["fade-right", "fade-up", "fade-left"];
 
@@ -56,12 +40,12 @@ function SolutionSection() {
             작업 속도와 정확성을 인정받고 있습니다.
           </p> */}
           <ul className="item-list">
-            {data.map((item, i) => (
-              <li className="item" key={item.title} data-aos={aosType[i]}>
+            {solutionRoutes.map((item, i) => (
+              <li className="item" key={item.label} data-aos={aosType[i % 3]}>
                 <NavLink to={`/${item.path}`}>
-                  <img src={item.img} alt={item.title} />
+                  <img src={imgList[i]} alt={item.label} />
                   <div className="title-box">
-                    <h5 className="title">{item.title}</h5>
+                    <h5 className="title">{item.label}</h5>
                   </div>
                 </NavLink>
               </li>

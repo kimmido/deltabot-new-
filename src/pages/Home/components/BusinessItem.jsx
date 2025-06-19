@@ -9,12 +9,10 @@ import backImg2 from "../../../assets/images/main/business(2).jpg";
 import backImg3 from "../../../assets/images/main/business(3).jpg";
 import backImg4 from "../../../assets/images/main/business(4).jpg";
 import backImg5 from "../../../assets/images/main/business(5).jpg";
-import backImg6 from "../../../assets/images/main/business(6).jpg";
 
 export default function BusinessItem({ sub, idx, isExpanded, setExpanded }) {
-  const isMobile = useMediaQuery("(max-width: 768px)");
   const isPC = useMediaQuery("(min-width: 1280px)");
-  const img = [backImg1, backImg2, backImg3, backImg4, backImg5, backImg6];
+  const imgList = [backImg1, backImg2, backImg3, backImg4, backImg5];
 
   const aosList = ["fade-right", "fade-up", "fade-left"];
 
@@ -26,7 +24,7 @@ export default function BusinessItem({ sub, idx, isExpanded, setExpanded }) {
 
   return (
     <div
-      style={{ backgroundImage: `url("${img[idx]}")` }}
+      style={{ backgroundImage: `url("${imgList[idx]}")` }}
       className={`${styles.BusinessItem} ${
         isExpanded == idx ? styles.active : ""
       }`}
