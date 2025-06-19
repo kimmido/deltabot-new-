@@ -604,14 +604,19 @@
     }
 
     .cnt06-wapper {
-      color: #fff;
-      background-color: $color-background-dartk;
-      overflow-x: hidden;
+      overflow: hidden;
     }
 
     .cnt06 {
       padding-top: min(13vw, 140px);
       padding-bottom: min(13vw, 140px);
+      color: #fff;
+
+      @include fullBackground($color-background-dark);
+
+      h4 {
+        position: relative;
+      }
 
       .flex-container {
         flex-wrap: wrap;
@@ -628,11 +633,7 @@
       }
 
       .swiper {
-        &-slide {
-          padding: 5px;
-        }
         .slide-item {
-          // box-shadow: $floating-shadow;
           border-radius: $radius-card-lg;
           background-color: $color-gray-500;
         }

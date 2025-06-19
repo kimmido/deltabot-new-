@@ -71,6 +71,25 @@ $breakpoints: (
   width: 100vw;
 }
 
+@mixin fullBackground($color: #000) {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: $color;
+    transform: translateX(-50%);
+    content: "";
+  }
+
+  > * {
+    position: relative;
+  }
+}
+
 // 모달 오버레이 등 사용
 @mixin fullPageLow() {
   position: fixed;
@@ -136,7 +155,6 @@ $breakpoints: (
   transition: color 0.5s ease;
 
   &:hover,
-  &:focus,
   &.active {
     color: $color;
 

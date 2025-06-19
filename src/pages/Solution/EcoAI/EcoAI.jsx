@@ -6,7 +6,7 @@ import ScrollTabs, { useScrollTabsRefs } from "../components/ScrollTabs";
 import ProductLines from "../components/ProductLines";
 import ContenttBlock from "../components/ContenttBlock";
 import IntroSection from "./IntroSection";
-import ScrollToHash from "../../../components/common/ScrollToHash";
+import ScrollToPosition from "../../../components/common/ScrollToPosition";
 
 import img_products1 from "../../../assets/images/solution/ecoai-products(1).jpg";
 import img_products2 from "../../../assets/images/solution/ecoai-products(2).jpg";
@@ -16,7 +16,7 @@ export default function EcoAI() {
 
   return (
     <div className="EcoAI solution-wrapper">
-      <ScrollToHash />
+      <ScrollToPosition />
       <SolutionHeading
         title="Eco-AI Solution"
         text="친환경 로봇과 재활용 시스템이 만드는 순환의 미래"

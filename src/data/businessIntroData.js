@@ -10,7 +10,8 @@ const businessIntroData = {
       images: [`card`],
       link: {
         label: "자동화 솔루션 자세히 보기",
-        path: "/automation-solution"
+        path: "/automation-solution",
+        posId: false
       },
       featureType:"card",
       features: [
@@ -78,7 +79,8 @@ const businessIntroData = {
       images: [`card`],
       link: {
         label: "자동화 솔루션 자세히 보기",
-        path: "/automation-solution"
+        path: "/automation-solution",
+        posId: false
       },
       featureType:"card",
       features: [
@@ -146,7 +148,8 @@ const businessIntroData = {
       images: [`card`],
       link: {
         label: "자동화 솔루션 자세히 보기",
-        path: "/automation-solution"
+        path: "/automation-solution",
+        posId: false
       },
       featureType:"card",
       features: [
@@ -285,8 +288,9 @@ const businessIntroData = {
         ],
       images: [`card`],
       link: {
-        label: "솔루션 보러가기",
-        path: "/vision-solution#machine"
+        label: "머신비전 솔루션 자세히 보기",
+        path: "/vision-solution",
+        posId: "machine"
       },
       applications: [
         {
@@ -313,8 +317,9 @@ const businessIntroData = {
       images: [`card`],
       extraText: '설비 과열, 누전, 체온 이상 등 온도 기반 이상 탐지 비접촉식 열 감지로 예방 진단 및 안전 모니터링 실현',
       link: {
-        label: "솔루션 보러가기",
-        path: "/vision-solution#thermal"
+        label: "열화상 카메라 솔루션 자세히 보기",
+        path: "/vision-solution#thermal",
+        posId: "thermal"
       },
       applications: [
         {
@@ -342,8 +347,9 @@ const businessIntroData = {
         ],
       images: [`default`, `card`],
       link: {
-        label: "솔루션 보러가기",
-        path: "/vision-solution#spectral"
+        label: "초분광 카메라 솔루션 자세히 보기",
+        path: "/vision-solution",
+        posId: "spectral"
       },
       applications: [
         {
@@ -422,8 +428,9 @@ const businessIntroData = {
       ],
       images: ['card','spacing-l', 'spacing-l'],
       link: {
-        label: "솔루션 보러가기",
-        path: "/eco-ai-solution#recycling"
+        label: "재활용 로봇 솔루션 자세히 보기",
+        path: "/eco-ai-solution",
+        posId: "recycling"
       },
       applications: [
         {
@@ -450,8 +457,9 @@ const businessIntroData = {
       ],
       images: ['card', 'spacing-l'],
       link: {
-        label: "솔루션 보러가기",
-        path: "/eco-ai-solution#cleaning"
+        label: "수면 정화 로봇 솔루션 자세히 보기",
+        path: "/eco-ai-solution",
+        posId: "cleaning"
       },
       applications: [
         {

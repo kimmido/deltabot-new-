@@ -5,6 +5,7 @@ import { Link, useOutletContext } from "react-router-dom";
 import businessIntroData from "../../data/businessIntroData";
 import BusinessApplications from "./components/BusinessApplications";
 import QuoteArea from "./components/QuoteArea";
+import { IconArrow } from "../../components/icons";
 
 function Business() {
   const { currentTab, productData = [], routes } = useOutletContext();
@@ -17,13 +18,22 @@ function Business() {
 
       <BusinessIntroSection data={data} currentTab={currentTab} />
 
-      <BusinessApplications data={data} />
+      <div className="app-wrap">
+        <BusinessApplications data={data} />
 
-      {data.link && (
-        <Link to={data.link.path} className="link-solution btn-pill">
-          {data.link.label}
-        </Link>
-      )}
+        {data.link && (
+          <div className="link-area">
+            <Link
+              to={data.link.path}
+              state={{ posId: data.link.posId }}
+              className="link-solution btn-pill"
+            >
+              <span>{data.link.label}</span>
+              <IconArrow size="20" weight="1" />
+            </Link>
+          </div>
+        )}
+      </div>
 
       <ProductCatalog
         currentTab={currentTab}

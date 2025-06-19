@@ -7,7 +7,7 @@ import SolutionHeading from "../components/SolutionHeading";
 import ScrollTabs, { useScrollTabsRefs } from "../components/ScrollTabs";
 import ProductLines from "../components/ProductLines";
 import ContenttBlock from "../components/ContenttBlock";
-import ScrollToHash from "../../../components/common/ScrollToHash";
+import ScrollToPosition from "../../../components/common/ScrollToPosition";
 
 import img_products1 from "../../../assets/images/solution/vision-products(1).jpg";
 import img_products2 from "../../../assets/images/solution/vision-products(2).jpg";
@@ -18,7 +18,7 @@ export default function Vision() {
 
   return (
     <div className="Vision solution-wrapper">
-      <ScrollToHash />
+      <ScrollToPosition />
       <SolutionHeading
         title="Vision Solution"
         text="스마트 자동화를 위한 AI 기반 비전 시스템"

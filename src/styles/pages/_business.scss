@@ -1,9 +1,7 @@
 @use "sass:color";
 
 .BusinessLayout {
-  .BusinessIntroSection,
-  .desc-box,
-  .BusinessApplications,
+  .app-wrap,
   .ProductCatalog {
     margin-top: min(10vw, 60px);
 
@@ -60,10 +58,11 @@
   }
 
   .BusinessIntroSection {
-    text-align: center;
+    margin-top: min(10vw, 100px);
 
     .desc-box {
       margin-bottom: $spacing-sm;
+      text-align: center;
 
       @include respondTo(tablet-s) {
         width: 90%;
@@ -191,137 +190,148 @@
     }
   }
 
-  .BusinessApplications {
-    text-align: center;
+  .app-wrap {
+    color: #fff;
+    padding-top: min(10.4vw, 74px);
+    padding-bottom: min(10.4vw, 100px);
+    @include fullBackground($color-background-dark);
 
-    .sec-title {
-      display: block;
-      font-size: $font-size-section-title-sm;
-      margin-bottom: $spacing-content-sm;
+    .BusinessApplications {
+      text-align: center;
 
-      @include respondTo(tablet-s) {
-        font-size: $font-size-section-title-md;
-        margin-bottom: $spacing-content-md;
-      }
+      .sec-title {
+        display: block;
+        font-size: $font-size-section-title-sm;
+        margin-bottom: $spacing-content-sm;
 
-      @include respondTo(pc-s) {
-        font-size: $font-size-section-title-lg;
-        margin-bottom: $spacing-content-lg;
-      }
-    }
-
-    .app-list {
-      display: grid;
-      gap: 10px;
-
-      @include respondTo(pc-s) {
-        gap: 40px;
-      }
-
-      .app-item {
-        .media-box {
-          overflow: hidden;
-
-          img {
-            height: 100%;
-            object-fit: cover;
-          }
+        @include respondTo(tablet-s) {
+          font-size: $font-size-section-title-md;
+          margin-bottom: $spacing-content-md;
         }
 
-        .text-box {
-          padding: 16px 12px;
-          text-align: center;
+        @include respondTo(pc-s) {
+          font-size: $font-size-section-title-lg;
+          margin-bottom: $spacing-content-lg;
+        }
+      }
 
-          @include respondTo(tablet-l) {
-            padding: $spacing-content-sm;
-          }
+      .app-list {
+        display: grid;
+        gap: 10px;
 
-          strong {
-            font-size: 1.5rem;
+        @include respondTo(pc-s) {
+          gap: 40px;
+        }
+
+        .app-item {
+          .media-box {
+            overflow: hidden;
+            border-radius: $radius-card-md;
 
             @include respondTo(tablet-l) {
-              font-size: $font-size-con-title-sm;
+              border-radius: $radius-card-lg;
+            }
+
+            img,
+            video {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .text-box {
+            padding: 16px 12px;
+            text-align: center;
+
+            @include respondTo(tablet-l) {
+              padding: $spacing-content-sm;
+            }
+
+            strong {
+              font-size: 1.5rem;
+
+              @include respondTo(tablet-l) {
+                font-size: $font-size-con-title-sm;
+              }
             }
           }
         }
-      }
 
-      &.image {
-        grid-template-columns: repeat(3, 1fr);
-
-        .app-item {
-          overflow: hidden;
-          border: 1px solid $color-border;
-          border-radius: $radius-card-md;
-          @include respondTo(tablet-l) {
-            border-radius: $radius-card-lg;
-          }
+        &.image {
+          grid-template-columns: repeat(3, 1fr);
 
           .media-box {
             aspect-ratio: 1.618 / 1;
           }
+        }
 
-          .text-box {
-            align-content: center;
+        &.video {
+          grid-template-columns: repeat(2, 1fr);
+
+          .media-box {
+            aspect-ratio: 16 / 9;
           }
         }
       }
+    } // 응용분야
 
-      &.video {
-        grid-template-columns: repeat(2, 1fr);
+    .link-area {
+      margin-top: min(5vw, 50px);
 
-        .media-box {
-          aspect-ratio: 16 / 9;
-          border-radius: $radius-card-md;
-          @include respondTo(tablet-l) {
-            border-radius: $radius-card-lg;
-          }
+      .link-solution {
+        position: relative;
+        display: flex;
+        margin-left: auto;
+        gap: 0.5em;
+        width: fit-content;
+        overflow: hidden;
+        background-color: $color-point;
 
-          video {
-            width: 100%;
-            height: 100%;
+        span,
+        svg {
+          color: #fff;
+        }
+
+        svg {
+          margin-bottom: -3px;
+          transform: rotateZ(90deg);
+        }
+
+        &:after {
+          background: #ffffff20;
+          content: "";
+          height: 155px;
+          left: -75px;
+          position: absolute;
+          top: -50px;
+          transform: rotate(35deg);
+          transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+          width: 50px;
+        }
+
+        &:hover {
+          &::after {
+            left: 120%;
+            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
           }
         }
       }
     }
-  } // 응용분야
+  }
 
   // 제품 리스트
   .ProductCatalog {
     position: relative;
-    // &::before {
-    //   @include fullContent();
-    //   top: 18rem;
-    //   content: "";
-    //   height: 100%;
-    //   background-color: $color-gray-050;
-    // }
-    // margin-top: $spacing-layout-sm;
-
-    // @include respondTo(tablet-s) {
-    //   margin-top: 20px;
-    // }
-
-    // @include respondTo(tablet-l) {
-    //   margin-top: $spacing-layout-xl;
-    // }
 
     .catalog__title-box {
-      position: relative;
-      // border-radius: $radius-card-lg;
-      // border: 1px solid $color-border;
-      // background-color: $color-blue-050;
+      @include fullBackground();
 
       &::before {
-        @include pseudoDefault();
         background: var(--gradient);
-        @include fullContent();
-        width: 100vw;
-        z-index: 0;
       }
 
       .catalog__title {
-        position: relative;
         padding: 2rem 1rem 25vw;
         background-size: 70%;
         background-repeat: no-repeat;
@@ -344,7 +354,6 @@
           font-size: $font-size-con-title-sm;
 
           &.s {
-            // color: $color-text-light;
             opacity: 50%;
             font-size: $font-size-con-title-xs;
             font-size: max(1.5rem, 2.2vw);
@@ -407,7 +416,6 @@
           border-radius: $radius-card-md;
           word-break: break-all;
           transition: all 0.3s ease;
-          // background-color: #fff;
 
           @include respondTo(tablet-s) {
             padding: 20px 28px;
@@ -486,22 +494,6 @@
       }
     }
   } // ProductCatalog
-
-  .CompactProductPage {
-    .SubTabMenu {
-      margin-bottom: 4rem;
-      @include respondTo(tablet-s) {
-        margin-top: 2rem;
-        margin-bottom: 5rem;
-      }
-      @include respondTo(tablet-l) {
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 3rem;
-        margin-bottom: 7.2rem;
-      }
-    }
-  } //CompactProductPage
 
   .ProductDetailView {
     .pd_flex {

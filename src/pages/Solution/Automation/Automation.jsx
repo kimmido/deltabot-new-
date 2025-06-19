@@ -4,7 +4,7 @@ import ScrollTabs, { useScrollTabsRefs } from "../components/ScrollTabs";
 import SolutionHeading from "../components/SolutionHeading";
 import ContenttBlock from "../components/ContenttBlock";
 import ProductLines from "../components/ProductLines";
-import ScrollToHash from "../../../components/common/ScrollToHash";
+import ScrollToPosition from "../../../components/common/ScrollToPosition";
 import IntroSection from "./IntroSection";
 
 import img_products1 from "../../../assets/images/solution/automation-products(1).jpg";
@@ -17,7 +17,7 @@ export default function Automation() {
 
   return (
     <div className="Automation solution-wrapper">
-      <ScrollToHash />
+      <ScrollToPosition />
       <SolutionHeading
         title="Automation Solution"
         text="공정에 최적화된 로봇 자동화 솔루션"
