@@ -11,10 +11,7 @@ export const category = [
           items: [
             { path: "collaboration", label: "협동로봇" },
             { path: "serial-robot", label: "수직다관절 로봇" },
-            // { path: "scara", label: "스카라" },
-            // { path: "cobot", label: "코봇" },
             { path: "deltarobot", label: "델타로봇" },
-            // { path: "case-packer", label: "지능형 로봇 시스템" },
             { path: "amr", label: "AMR" },
           ],
         },
@@ -51,19 +48,11 @@ export const category = [
           items: [
             { path: "gpu-server", label: "GPU server" },
             { path: "workstations", label: "Workstations" },
-            // { path: "rack-mount", label: "Rack mount" },
             { path: "military", label: "Military" },
             { path: "vehicle", label: "Vehicle" },
             { path: "edge-ai", label: "Edge-AI" },
           ],
         },
-        // {
-        //   label: "Humanoid",
-        //   path: "humanoid",
-        //   items: [
-        //     { path: "humanoid1", label: "humanoid1" },
-        //   ],
-        // },
       ],
     },
     {

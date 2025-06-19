@@ -3,9 +3,8 @@ import Popup from "./Popup";
 
 const popupData = [
   // {
-  //   id: "eventsfd2025",
+  //   id: "event1",
   //   image: "/images/popup/popup_event.jpg",
-  //   link: "/event/2025",
   // },
   // {
   //   id: "noticdsfeJune",
@@ -13,7 +12,7 @@ const popupData = [
   //   link: "/automation-solution",
   // },
   // {
-  //   id: "공지ef공지",
+  //   id: "hjgyjh",
   //   image: "/images/popup/popup_notice.jpg",
   //   link: "/automation-solution",
   // },

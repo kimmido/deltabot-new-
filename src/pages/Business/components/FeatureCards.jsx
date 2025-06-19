@@ -15,7 +15,8 @@ function FeatureCards({ data }) {
             <p>{ft.title}</p>
           </div>
           <ul className="txt-list bullets">
-            {ft.texts && ft.texts.map((txt) => <li>{txt}</li>)}
+            {ft.texts &&
+              ft.texts.map((txt, i) => <li key={ft.title + i}>{txt}</li>)}
           </ul>
         </div>
       ))}

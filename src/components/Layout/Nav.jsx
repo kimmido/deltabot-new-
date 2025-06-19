@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
-import SvgrComponents from "../icons/SvgrComponent";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { category } from "../../data/category";
 import gsap from "gsap";
 import SvgrComponent from "../icons/SvgrComponent";
@@ -40,14 +39,14 @@ const SubLink = ({
 }) => {
   return (
     <li className={className}>
-      <NavLink
+      <Link
         to={path}
         className="sub__link"
         onClick={onClick}
         onMouseOver={mouseOver}
       >
         <h5 className="sub__title">{label}</h5>
-      </NavLink>
+      </Link>
     </li>
   );
 };
@@ -128,9 +127,9 @@ export default function Nav() {
         )}
         <button className="mobile__btn" onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? (
-            <SvgrComponents name="icon_close" />
+            <SvgrComponent name="icon_close" />
           ) : (
-            <SvgrComponents name="icon_menu_bars" />
+            <SvgrComponent name="icon_menu_bars" />
           )}
         </button>
         <div className="mobile__list" ref={mobileMenu}>

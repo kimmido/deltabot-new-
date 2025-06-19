@@ -56,9 +56,7 @@ function ProductCatalog({ currentTab, productData = [], routes }) {
           }}
         >
           <span className="l">{route.label} 시리즈</span>
-          {/* <span className="s">DeltaBot이 엄선한 최적의 제품 라인업</span> */}
           <span className="s">업계를 선도하는 고성능 제품을 만나보세요</span>
-          {/* <span className="s">Product Lineup</span> */}
         </h3>
       </div>
 

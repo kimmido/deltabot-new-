@@ -40,31 +40,6 @@ const ScrollTabs = ({ tabs, offset = 0, sectionRefs }) => {
     };
   }, [tabs, offset]);
 
-  // const observer = useRef(null);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     let current = tabs[0].id;
-  //     for (let tab of tabs) {
-  //       const el = sectionRefs.current[tab.id];
-  //       if (el) {
-  //         const rect = el.getBoundingClientRect();
-  //         if (rect.top - offset <= 0) {
-  //           current = tab.id;
-  //         }
-  //       }
-  //     }
-  //     setActiveTab(current);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   handleScroll(); // 초기화
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, [tabs, offset]);
-
   return (
     <div className="ScrollTabs">
       <div className="container">

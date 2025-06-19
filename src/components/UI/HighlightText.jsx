@@ -1,6 +1,5 @@
 export const HighlightText = ({ text, keyChar }) => {
   const parts = text.split(keyChar);
-  console.log(parts);
 
   return (
     <>

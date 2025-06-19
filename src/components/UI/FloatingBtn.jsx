@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import IconArrow from "../icons/IconArrow";
+import { IconArrow } from "../icons";
 import { useNavigate } from "react-router-dom";
 import SvgrComponent from "../icons/SvgrComponent";
 
