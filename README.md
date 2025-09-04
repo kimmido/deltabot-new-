@@ -1,8 +1,8 @@
 ## 사용 라이브러리
-aos
-gsap
-swiper
-leaflet
+- aos   
+- gsap   
+- swiper   
+- leaflet   
 
 ## 파일구조
 📦deltabot-new-   
