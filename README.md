@@ -17,7 +17,7 @@
  ┃ ┃ ┣ 📂product   
  ┃ ┃ ┗ 📂video_poster   
  ┃ ┣ 📂json   
- ┃ ┃ ┣ 📜제품 관련 데이터 
+ ┃ ┃ ┣ 📜제품 관련 데이터   
  ┃ ┣ 📂videos   
  ┣ 📂src   
  ┃ ┣ 📂assets   
@@ -56,15 +56,15 @@
  ┃ ┃ ┗ 📜DefaultLayout.jsx   
  ┃ ┣ 📂pages   
  ┃ ┃ ┣ 📂About   
- ┃ ┃ ┃ ┣ 📂components
+ ┃ ┃ ┃ ┣ 📂components   
  ┃ ┃ ┃ ┗ 📜About.jsx   
  ┃ ┃ ┣ 📂Business   
- ┃ ┃ ┃ ┣ 📂components
+ ┃ ┃ ┃ ┣ 📂components   
  ┃ ┃ ┃ ┣ 📜Business.jsx   
  ┃ ┃ ┃ ┗ 📜ComingSoon.jsx   
  ┃ ┃ ┣ 📂Home   
- ┃ ┃ ┃ ┣ 📂components   
- ┃ ┃ ┃ ┗ 📜Home.jsx   
+ ┃ ┃ ┃ ┣ 📂components    
+ ┃ ┃ ┃ ┗ 📜Home.jsx    
  ┃ ┃ ┗ 📂Solution   
  ┃ ┃ ┃ ┣ 📂Automation   
  ┃ ┃ ┃ ┃ ┣ 📂components   
