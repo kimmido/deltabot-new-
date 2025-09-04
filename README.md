@@ -72,11 +72,7 @@
  ┃ ┃ ┃ ┃ ┣ 📜Automation.jsx   
  ┃ ┃ ┃ ┃ ┗ 📜IntroSection.jsx   
  ┃ ┃ ┃ ┣ 📂components   
- ┃ ┃ ┃ ┃ ┣ 📜ContenttBlock.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜ProductLines.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜ScrollTabs.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜SolutionHeading.jsx   
- ┃ ┃ ┃ ┃ ┗ 📜StepFlow.jsx   
+ ┃ ┃ ┃ ┃ ┣ 📜솔루션 페이지 공용 컴포넌트
  ┃ ┃ ┃ ┣ 📂EcoAI   
  ┃ ┃ ┃ ┃ ┣ 📂components   
  ┃ ┃ ┃ ┃ ┣ 📜CleaningRobotSection.jsx   
