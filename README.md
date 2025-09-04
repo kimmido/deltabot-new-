@@ -17,18 +17,8 @@
  ┃ ┃ ┣ 📂product   
  ┃ ┃ ┗ 📂video_poster   
  ┃ ┣ 📂json   
- ┃ ┃ ┣ 📜product-eco-friendly-robot.json   
- ┃ ┃ ┣ 📜product-humanoid.json   
- ┃ ┃ ┣ 📜product-information-technology.json   
- ┃ ┃ ┣ 📜product-medical.json   
- ┃ ┃ ┣ 📜product-robot-automation.json   
- ┃ ┃ ┣ 📜product-vision-system.json   
+ ┃ ┃ ┣ 📜제품 관련 데이터 
  ┃ ┣ 📂videos   
- ┃ ┃ ┣ 📂heading   
- ┃ ┃ ┗ 📂page   
- ┃ ┣ 📜.htaccess   
- ┃ ┣ 📜robots.txt   
- ┃ ┗ 📜stiemap.xml   
  ┣ 📂src   
  ┃ ┣ 📂assets   
  ┃ ┃ ┗ 📂images   
@@ -78,23 +68,14 @@
  ┃ ┃ ┃ ┃ ┣ 📜BusinessApplications.jsx   
  ┃ ┃ ┃ ┃ ┣ 📜BusinessIntroSection.jsx   
  ┃ ┃ ┃ ┃ ┣ 📜CircleIconList.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜FeatureCards.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜ProductCatalog.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜ProductDetailView.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜ProductInfoSection .jsx   
- ┃ ┃ ┃ ┃ ┣ 📜ProductIntro.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜ProductListItem.jsx   
- ┃ ┃ ┃ ┃ ┗ 📜QuoteArea.jsx   
+ ┃ ┃ ┃ ┃ ┣ ...   
  ┃ ┃ ┃ ┣ 📜Business.jsx   
  ┃ ┃ ┃ ┗ 📜ComingSoon.jsx   
  ┃ ┃ ┣ 📂Home   
  ┃ ┃ ┃ ┣ 📂components   
  ┃ ┃ ┃ ┃ ┣ 📜BannerSwiper.jsx   
  ┃ ┃ ┃ ┃ ┣ 📜BusinessItem.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜BusinessItem.module.scss   
- ┃ ┃ ┃ ┃ ┣ 📜BusinessSection.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜SolutionSection.jsx   
- ┃ ┃ ┃ ┃ ┗ 📜VideoSection.jsx   
+ ┃ ┃ ┃ ┃ ┣ ... 
  ┃ ┃ ┃ ┗ 📜Home.jsx   
  ┃ ┃ ┗ 📂Solution   
  ┃ ┃ ┃ ┣ 📂Automation   
@@ -150,10 +131,7 @@
  ┃ ┃ ┣ 📂pages   
  ┃ ┃ ┃ ┣ 📜_about.scss   
  ┃ ┃ ┃ ┣ 📜_business.scss   
- ┃ ┃ ┃ ┣ 📜_ComingSoon.scss   
- ┃ ┃ ┃ ┣ 📜_home.scss   
- ┃ ┃ ┃ ┣ 📜_solution.scss   
- ┃ ┃ ┃ ┣ 📜_solutionAutomation.scss   
+ ┃ ┃ ┃ ┣ ... 
  ┃ ┃ ┃ ┣ 📜_solutionEcoAI.scss   
  ┃ ┃ ┃ ┗ 📜_solutionVision.scss   
  ┃ ┃ ┣ 📂utils   
