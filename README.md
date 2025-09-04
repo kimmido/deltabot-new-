@@ -56,31 +56,18 @@
  ┃ ┃ ┗ 📜DefaultLayout.jsx   
  ┃ ┣ 📂pages   
  ┃ ┃ ┣ 📂About   
- ┃ ┃ ┃ ┣ 📂components   
- ┃ ┃ ┃ ┃ ┣ 📜Map.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜RecenterMap.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜RollingSlideItem.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜RollingSwiper.jsx   
- ┃ ┃ ┃ ┃ ┗ 📜ValuesSection.jsx   
+ ┃ ┃ ┃ ┣ 📂components
  ┃ ┃ ┃ ┗ 📜About.jsx   
  ┃ ┃ ┣ 📂Business   
- ┃ ┃ ┃ ┣ 📂components   
- ┃ ┃ ┃ ┃ ┣ 📜BusinessApplications.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜BusinessIntroSection.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜CircleIconList.jsx   
- ┃ ┃ ┃ ┃ ┣ ...   
+ ┃ ┃ ┃ ┣ 📂components
  ┃ ┃ ┃ ┣ 📜Business.jsx   
  ┃ ┃ ┃ ┗ 📜ComingSoon.jsx   
  ┃ ┃ ┣ 📂Home   
  ┃ ┃ ┃ ┣ 📂components   
- ┃ ┃ ┃ ┃ ┣ 📜BannerSwiper.jsx   
- ┃ ┃ ┃ ┃ ┣ 📜BusinessItem.jsx   
- ┃ ┃ ┃ ┃ ┣ ... 
  ┃ ┃ ┃ ┗ 📜Home.jsx   
  ┃ ┃ ┗ 📂Solution   
  ┃ ┃ ┃ ┣ 📂Automation   
  ┃ ┃ ┃ ┃ ┣ 📂components   
- ┃ ┃ ┃ ┃ ┃ ┗ 📜AutomationVideos.jsx   
  ┃ ┃ ┃ ┃ ┣ 📜ApplicationsSection.jsx   
  ┃ ┃ ┃ ┃ ┣ 📜Automation.jsx   
  ┃ ┃ ┃ ┃ ┗ 📜IntroSection.jsx   
@@ -92,17 +79,12 @@
  ┃ ┃ ┃ ┃ ┗ 📜StepFlow.jsx   
  ┃ ┃ ┃ ┣ 📂EcoAI   
  ┃ ┃ ┃ ┃ ┣ 📂components   
- ┃ ┃ ┃ ┃ ┃ ┣ 📜BasicSlider.jsx   
- ┃ ┃ ┃ ┃ ┃ ┣ 📜ComparisonPanel.jsx   
- ┃ ┃ ┃ ┃ ┃ ┗ 📜HorizontalCardSlider.jsx   
  ┃ ┃ ┃ ┃ ┣ 📜CleaningRobotSection.jsx   
  ┃ ┃ ┃ ┃ ┣ 📜EcoAI.jsx   
  ┃ ┃ ┃ ┃ ┣ 📜IntroSection.jsx   
  ┃ ┃ ┃ ┃ ┗ 📜RecyclingRobotSection.jsx   
  ┃ ┃ ┃ ┗ 📂Vision   
  ┃ ┃ ┃ ┃ ┣ 📂components   
- ┃ ┃ ┃ ┃ ┃ ┣ 📜FadeUpTextSlider.jsx   
- ┃ ┃ ┃ ┃ ┃ ┗ 📜SectionBanner.jsx   
  ┃ ┃ ┃ ┃ ┣ 📜HyperspectralSection.jsx   
  ┃ ┃ ┃ ┃ ┣ 📜IntroSection.jsx   
  ┃ ┃ ┃ ┃ ┣ 📜MachineVisionSection.jsx   
