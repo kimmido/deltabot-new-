@@ -5,7 +5,7 @@ swiper
 leaflet
 
 ##파일구조
-📦deltabot-new-
+>📦deltabot-new-
  ┣ 📂public
  ┃ ┣ 📂images
  ┃ ┃ ┣ 📂branding
