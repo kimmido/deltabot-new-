@@ -73,7 +73,7 @@
  ┃ ┃ ┃ ┃ ┣ 📜Automation.jsx   
  ┃ ┃ ┃ ┃ ┗ 📜IntroSection.jsx   
  ┃ ┃ ┃ ┣ 📂components   
- ┃ ┃ ┃ ┃ ┣ 📜솔루션 페이지 공용 컴포넌트
+ ┃ ┃ ┃ ┃ ┣ 📜솔루션 페이지 공용 컴포넌트   
  ┃ ┃ ┃ ┣ 📂EcoAI   
  ┃ ┃ ┃ ┃ ┣ 📂components   
  ┃ ┃ ┃ ┃ ┣ 📜CleaningRobotSection.jsx   
