@@ -14,6 +14,7 @@ function PageHeading({ title, currentPath }) {
     "serial-robot",
     "deltarobot",
     "spectral-camera",
+    "amr",
   ];
 
   useGSAP(() => {
