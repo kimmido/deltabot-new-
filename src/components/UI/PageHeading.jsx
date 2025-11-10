@@ -12,6 +12,7 @@ function PageHeading({ title, currentPath }) {
   const videoPage = [
     "collaboration",
     "serial-robot",
+    "palletizing",
     "deltarobot",
     "spectral-camera",
     "amr",

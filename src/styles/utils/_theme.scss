@@ -125,3 +125,22 @@
       brightness(95%) contrast(91%);
   }
 }
+
+/* 비비드 바이올렛 테마 */
+.Business[data-theme="vivid-violet"] {
+  // 신규 퍼플 테마
+  --color-active: #7850f2;
+  --color-point: #7950f2;
+  --color-highlight: rgb(121, 80, 242);
+  --gradient: linear-gradient(
+    to right,
+    rgba(121, 80, 242, 0.3) 0%,
+    rgba(121, 80, 242, 0.2) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  .img-icon {
+    filter: invert(46%) sepia(82%) saturate(5124%) hue-rotate(242deg)
+      brightness(94%) contrast(102%);
+  }
+}

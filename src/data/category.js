@@ -11,6 +11,7 @@ export const category = [
           items: [
             { path: "collaboration", label: "협동로봇" },
             { path: "serial-robot", label: "수직다관절 로봇" },
+            { path: "palletizing", label: "코봇팔레타이징" },
             { path: "deltarobot", label: "델타로봇" },
             { path: "amr", label: "AMR" },
           ],

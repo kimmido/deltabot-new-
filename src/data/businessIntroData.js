@@ -139,6 +139,75 @@ const businessIntroData = {
       ],
     },
 
+    // 팔레타이징로봇
+    "palletizing": {
+      theme: 'vivid-violet',
+      title: '식품부터 물류까지, 코봇 팔레타이저로 완전 자동화',
+      description:
+        ['협동로봇(Cobot) 플랫폼을 기반으로,  #생산라인의 출하 공정에서 제품 또는 박스를 자동으로 적재(Palletizing) 하는 지능형 자동화 시스템#입니다. 반복적이고 고하중의 적재 작업을 #정밀 제어 기술과 고속 알고리즘#으로 자동화합니다.  AI 기반 제어와 충돌 감지 기술을 통해 작업자와 안전하게 협업하면서  공간 효율성 및 생산성을 극대화합니다.', '식품·음료·제약·물류 등 다양한 산업 환경에 유연하게 대응하며, 기존 생산 라인과의 #손쉬운 통합 및 모듈형 설계로# 설비 투자 대비 높은 생산성 향상 효과를 제공합니다. 데이터 기반의 운영 분석을 통해 지속적인 공정 최적화가 가능한 #스마트 자동화 시스템의 핵심 솔루션#입니다.'],
+      images: [`card`],
+      link: {
+        label: "자동화 솔루션 자세히 보기",
+        path: "/automation-solution",
+        posId: false
+      },
+      featureType:"card",
+      features: [
+        {
+          icon: 'icon_shield.png',
+          title: '고정밀·고안정 구조',
+          texts: [
+            "견고한 프레임으로 진동 최소화",
+            "고하중 작업에서도 안정적 제어",
+            "반복 작업 시 위치 정확도 유지",
+            "일관된 적재 품질 확보",
+          ]
+        },
+        {
+          icon: 'icon_time_repeat.png',
+          title: '장시간 안전운전',
+          texts: [
+            "산업용 구동계로 내구성 강화",
+            "24시간 연속 운전에도 변형 최소",
+            "정기 점검 외 별도 보정 불필요",
+            "무인 자동화 환경에 최적",
+          ]
+        },
+        {
+          icon: 'icon_factory.png',
+          title: '유연한 설정',
+          texts: [
+            "박스 크기·패턴 간편 설정",
+            "노코드 방식으로 누구나 쉽게 조작",
+            "제품 변경 시에도 셋업 시간 최소화",
+            "다양한 라인에 쉽게 적용 가능",
+          ]
+        },
+        {
+          icon: 'icon_network_node.png',
+          title: '라인통합 및 연동용이',
+          texts: [
+            "MES·ERP 등 상위 시스템 연동",
+            "작업 이력·오류 로그 자동 기록",
+            "PLC·센서 통합 제어 지원",
+            "스마트 팩토리 구현에 적합",
+          ]
+        },
+      ],
+      applications: [
+        {
+          video: 'palletizing-application(1).mp4',
+          poster: 'palletizing-application(1).jpg',
+          title: 'Small palletizing robot',
+        },
+        {
+          video: 'palletizing-application(2).mp4',
+          poster: 'palletizing-application(2).jpg',
+          title: '초코파이 자동 적재 솔루션',
+        },
+      ],
+    },
+
     // 델타로봇
     "deltarobot": {
       theme: 'royal-blue',

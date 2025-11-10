@@ -45,6 +45,7 @@ function App() {
                 />
                 <Route path="collaboration" element={<Business />} />
                 <Route path="serial-robot" element={<Business />} />
+                <Route path="palletizing" element={<Business />} />
                 <Route path="deltarobot" element={<Business />} />
                 <Route path="amr" element={<Business />} />
               </Route>
