@@ -821,7 +821,7 @@
   ],
   "deltarobot": [
     {
-      "title": "DELTAROBOT Series", 
+      "title": "DRF_M series", 
       "items": [
         {
           "name": "DRF-M2D Series",
@@ -890,6 +890,24 @@
                   "Payload：2 - 25kg",
                   "Axis：3+2",
                   "Speed：180 - 400pp/min"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DRF_V series", 
+      "items": [
+        {
+          "name": "DRF-V Series",
+          "code": "DRF-V-series",
+          "has": ["spec"],
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                  "전자 제조, 하드웨어 제조, 자동차, 의료 등의 산업에서 대량 재료 트레이에 널리 사용됩니다."
               ]
             }
           ]
