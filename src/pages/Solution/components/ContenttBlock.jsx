@@ -3,8 +3,6 @@ import React from "react";
 function ContenttBlock({ className, size = 1440, title, children }) {
   const style = {
     maxWidth: `${size}px`,
-    marginLeft: "auto",
-    marginRight: "auto",
   };
 
   return (

@@ -3,35 +3,47 @@ import StepFlow from "../components/StepFlow";
 import AutomationVideos from "./components/AutomationVideos";
 import ContenttBlock from "../components/ContenttBlock";
 
-import img1 from "../../../assets/images/solution/automation(1).svg";
 import img2 from "../../../assets/images/solution/automation(2).svg";
-import img3 from "../../../assets/images/solution/automation(3).jpg";
+import img2_2 from "../../../assets/images/solution/automation(2-2).png";
+import img3 from "../../../assets/images/solution/automation(3).svg";
+import img4 from "../../../assets/images/solution/automation(4).jpg";
+import img5 from "../../../assets/images/solution/automation(5).svg";
 
 function IntroSection() {
   return (
     <div className="IntroSection">
-      <ContenttBlock className="cnt01">
+      <div className="cnt01 container">
         <p className="intro-desc">
-          정확한 진단부터 최적 설계, 정밀 제작·설치, 철저한 테스트, 전문 교육,
-          그리고 체계적인 유지보수까지, 검증된 기술력으로 신뢰할 수 있는 자동화
-          솔루션을 제공합니다.
+          <p>
+            정확한 진단과 최적의 설계를 기반으로, 정밀한 제작·설치부터 철저한
+            테스트, 전문 교육, 그리고 체계적인 유지보수에 이르기까지 당사는 전
+            과정을 아우르는 토털 자동화 솔루션을 제공합니다.
+          </p>
+          <p>
+            축적된 기술력과 풍부한 경험을 바탕으로, 로봇 자동화 시스템은 기계
+            산업의 자동화 발전에 새로운 패러다임을 제시하고 있습니다. 효율성과
+            안정성, 그리고 지속 가능한 생산 환경을 실현하는 당사의 솔루션은
+            고객의 경쟁력을 한층 높이는 신뢰받는 산업 파트너로 자리매김하고
+            있습니다.
+          </p>
         </p>
-      </ContenttBlock>
+      </div>
 
-      <ContenttBlock
-        className="cnt02"
-        size={900}
-        title={"공장 자동화 라인 구축 절차"}
-      >
-        <img src={img1} alt="공장 자동화 라인 구축 절차" />
-      </ContenttBlock>
+      <div className={`cnt02 ContenttBlock container`}>
+        <div style={{ maxWidth: `900px` }}>
+          <h4 className="cnt-title">공장 자동화 라인 구축 절차</h4>
+          <img src={img2} alt="공장 자동화 라인 구축 절차" />
+        </div>
+        <img src={img2_2} alt="공장 자동화 라인" />
+      </div>
 
       <ContenttBlock
         className="cnt03"
         size={1100}
         title={"로봇 자동화 프로세스"}
       >
-        <img src={img2} alt="로봇 자동화 프로세스" />
+        <svg src={img3}></svg>
+        <img src={img3} alt="로봇 자동화 프로세스" />
         <p className="cnt-desc">
           뎉타봇은 로봇, 비전, 컨베이어, AI 제어 등 첨단 기술 기반의 자동화 라인
           구축 및, 정밀한 분석과 검증된 설계로 공장의 스마트 팩토리를
@@ -40,18 +52,26 @@ function IntroSection() {
       </ContenttBlock>
 
       <ContenttBlock className="cnt04" size={900} title={"로봇 자동화의 이점"}>
-        <img src={img3} alt="로봇 자동화의 이점" />
+        <img src={img4} alt="로봇 자동화의 이점" />
       </ContenttBlock>
 
-      <ContenttBlock className="cnt05" title={"자동화 공정"}>
-        <StepFlow steps={cnt05.steps} />
-        <AutomationVideos videos={cnt05.videos} />
+      <ContenttBlock
+        className="cnt05"
+        size={1200}
+        title={"완전 자동화 생산/포장 설비"}
+      >
+        <img src={img5} alt="자동와 생산/포장 설비" />
+      </ContenttBlock>
+
+      <ContenttBlock className="cnt06" title={"자동화 공정"}>
+        <StepFlow steps={cnt06.steps} />
+        <AutomationVideos videos={cnt06.videos} />
       </ContenttBlock>
     </div>
   );
 }
 
-const cnt05 = {
+const cnt06 = {
   steps: [
     {
       iconName: "icon_conveyor",
@@ -77,6 +97,11 @@ const cnt05 = {
       iconName: "icon_eye_solid",
       title: "비전 검사",
       text: "제품 상태 판정",
+    },
+    {
+      iconName: "icon_palletizing",
+      title: "포장 팔레타이징",
+      text: "자동 포장",
     },
     {
       iconName: "icon_industry",
@@ -153,6 +178,54 @@ const cnt05 = {
         },
         {
           text: "투자금 회수기간(ROI) 11개월",
+          iconName: "icon_hourglass",
+        },
+      ],
+    },
+    {
+      title: "제조, 물류, 의료 등  산업 전반 활용",
+      text: "반복적인 작업이나 무거운 하중 처리, 정밀 작업 수행, 또는 서비스 산업에서 고객과의 상호작용에도 사용할 수 있습니다. 코봇의 유연성과 적응력은 현대의 작업 환경에서 매우 가치 있는 자산으로, 효율성을 높이고, 안전성을 강화하며, 새로운 수준의 자동화를 실현할 수 있게 합니다.",
+      videoSrc: "/videos/page/solution-automation(4).mp4",
+      poster: "/images/video_poster/solution-automation(4).jpg",
+      effects: [
+        {
+          text: "분당 85개 처리",
+          iconName: "icon_timer",
+        },
+        {
+          text: "로봇 1대당 인력 3명 절감 효과",
+          iconName: "icon_labors",
+        },
+        {
+          text: "생산 효율성 100% 증가",
+          iconName: "icon_chart",
+        },
+        {
+          text: "투자금 회수기간(ROI) 6개월",
+          iconName: "icon_hourglass",
+        },
+      ],
+    },
+    {
+      title: "소형 델타로봇",
+      text: "소형 델타로봇 설명~~~~~~~~~~",
+      videoSrc: "/videos/page/solution-automation(5).mp4",
+      poster: "/images/video_poster/solution-automation(5).jpg",
+      effects: [
+        {
+          text: "분당 85개 처리",
+          iconName: "icon_timer",
+        },
+        {
+          text: "로봇 1대당 인력 3명 절감 효과",
+          iconName: "icon_labors",
+        },
+        {
+          text: "생산 효율성 100% 증가",
+          iconName: "icon_chart",
+        },
+        {
+          text: "투자금 회수기간(ROI) 6개월",
           iconName: "icon_hourglass",
         },
       ],

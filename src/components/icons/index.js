@@ -42,3 +42,4 @@ export { default as icon_cycle_arrow } from './icon_cycle_arrow.svg?react';
 export { default as icon_home } from './icon_home.svg?react';
 export { default as icon_check_circle } from './icon_check_circle.svg?react';
 export { default as icon_arrow_rotate_left_solid } from './icon_arrow-rotate-left-solid.svg?react';
+export { default as icon_palletizing } from './icon_palletizing.svg?react';

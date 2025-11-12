@@ -7,6 +7,7 @@ import img5 from "../../../assets/images/solution/automation-app(5).jpg";
 import img6 from "../../../assets/images/solution/automation-app(6).jpg";
 import img7 from "../../../assets/images/solution/automation-app(7).jpg";
 import img8 from "../../../assets/images/solution/automation-app(8).jpg";
+import img9 from "../../../assets/images/solution/automation-app(9).jpg";
 
 function ApplicationsSection() {
   const aosProps = {
@@ -164,6 +165,19 @@ const data = [
       "불량 자동 감지 및 배출",
       "생산 속도 향상 + 균일 품질 유지",
       "소형 공간 로봇 활용",
+    ],
+  },
+  {
+    title: "하드웨어 /의료",
+    subTitle: "",
+    img: img9,
+    texts: [
+      "고정밀 델타 로봇 탑재",
+      "비전/공급 모듈 통합",
+      "다양한 정밀 작업 수행",
+      "다분야 산업 광범위 적용",
+      "모듈식 표준화 설계 채택",
+      "비용 절감 및 효율 증대",
     ],
   },
 ];

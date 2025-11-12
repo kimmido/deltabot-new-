@@ -21,6 +21,10 @@
 
   .ContenttBlock {
     margin-top: min(12vw, 140px);
+    > div {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .cnt-emph,
