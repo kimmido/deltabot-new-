@@ -198,12 +198,12 @@ const businessIntroData = {
         {
           video: 'palletizing-application(1).mp4',
           poster: 'palletizing-application(1).jpg',
-          title: 'Small palletizing robot',
+          title: '박스 포장 적재 솔루션',
         },
         {
           video: 'palletizing-application(2).mp4',
           poster: 'palletizing-application(2).jpg',
-          title: '초코파이 자동 적재 솔루션',
+          title: '품목별 맞춤 적재 솔루션',
         },
       ],
     },
