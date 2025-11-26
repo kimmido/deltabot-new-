@@ -10,6 +10,19 @@
     }
   }
 
+  .Business {
+    --color-point: var(--theme-main);
+    --color-highlight: var(--theme-main);
+    --color-active: var(--theme-main);
+
+    --gradient: linear-gradient(
+      to right,
+      rgba(var(--theme-main-rgb), 0.3) 0%,
+      rgba(var(--theme-main-rgb), 0.2) 60%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
   // 강조 문구
   .QuoteArea {
     text-align: center;

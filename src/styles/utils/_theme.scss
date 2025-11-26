@@ -12,18 +12,22 @@
   );
 }
 
+// 페트롤 블루 계열 테마
+div[data-theme="petrol-blue"] {
+  --theme-main: rgb(38, 82, 122);
+  --theme-point: rgb(81, 158, 179);
+
+  .img-icon {
+    filter: invert(29%) sepia(13%) saturate(1684%) hue-rotate(177deg)
+      brightness(93%) contrast(96%);
+  }
+}
+
 /* 스카이 블루 테마 */
 .Business[data-theme="sky-blue"] {
   // 협동로봇
-  --color-point: #19b0fb;
-  --color-highlight: rgb(25, 176, 251);
-  --color-active: rgb(25, 176, 251);
-  --gradient: linear-gradient(
-    to right,
-    rgba(25, 176, 251, 0.3) 0%,
-    rgba(25, 176, 251, 0.2) 60%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  --theme-main: #19b0fb;
+  --theme-main-rgb: 25, 176, 251;
 
   .img-icon {
     filter: invert(67%) sepia(28%) saturate(6861%) hue-rotate(170deg)
@@ -34,15 +38,8 @@
 /* 청록 페이지 테마 */
 .Business[data-theme="vivid-cyan"] {
   // 수직다관절
-  --color-highlight: #0099cc;
-  --color-point: rgb(0, 153, 204);
-  --color-active: rgb(0, 153, 204);
-  --gradient: linear-gradient(
-    to right,
-    rgba(0, 153, 204, 0.3) 0%,
-    rgba(0, 153, 204, 0.2) 60%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  --theme-main: rgb(0, 153, 204);
+  --theme-main-rgb: 0, 153, 204;
 
   .img-icon {
     filter: invert(66%) sepia(79%) saturate(7414%) hue-rotate(172deg)
@@ -50,37 +47,11 @@
   }
 }
 
-/* 체리핑크 테마 */
-.Business[data-theme="cherry-pink"] {
-  // 현재 사용X
-  --color-active: #fc3a64;
-  --color-point: #fc3a64;
-  --color-highlight: rgb(252, 58, 100);
-  --gradient: linear-gradient(
-    to right,
-    rgba(252, 58, 100, 0.3) 0%,
-    rgba(252, 58, 100, 0.2) 60%,
-    rgba(0, 0, 0, 0) 100%
-  );
-
-  .img-icon {
-    filter: invert(39%) sepia(40%) saturate(6250%) hue-rotate(326deg)
-      brightness(100%) contrast(98%);
-  }
-}
-
 /* 로얄블루 테마 */
 .Business[data-theme="royal-blue"] {
   // 델타로봇
-  --color-active: #0052f2;
-  --color-point: #0052f2;
-  --color-highlight: rgb(0, 82, 242);
-  --gradient: linear-gradient(
-    to right,
-    rgba(0, 82, 242, 0.3) 0%,
-    rgba(0, 82, 242, 0.2) 60%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  --theme-main: #0052f2;
+  --theme-main-rgb: 0, 82, 242;
 
   .img-icon {
     filter: invert(17%) sepia(70%) saturate(6057%) hue-rotate(219deg)
@@ -88,18 +59,10 @@
   }
 }
 
-/* 체리핑크 테마 */
+/* 블루퍼플 테마 */
 .Business[data-theme="blue-purple"] {
-  // 현재 사용X
-  --color-active: #3e30f4;
-  --color-point: #3e30f4;
-  --color-highlight: rgb(62, 48, 244);
-  --gradient: linear-gradient(
-    to right,
-    rgba(62, 48, 244, 0.3) 0%,
-    rgba(62, 48, 244, 0.2) 60%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  --theme-main: #3e30f4;
+  --theme-main-rgb: 62, 48, 244;
 
   .img-icon {
     filter: invert(23%) sepia(96%) saturate(6737%) hue-rotate(247deg)
@@ -110,15 +73,8 @@
 /* 틸 블루 테마 */
 .Business[data-theme="teal-blue"] {
   // amr
-  --color-active: #49919d;
-  --color-point: #49919d;
-  --color-highlight: rgb(73, 145, 157);
-  --gradient: linear-gradient(
-    to right,
-    rgba(73, 145, 157, 0.3) 0%,
-    rgba(73, 145, 157, 0.2) 60%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  --theme-main: #49919d;
+  --theme-main-rgb: 73, 145, 157;
 
   .img-icon {
     filter: invert(52%) sepia(12%) saturate(1466%) hue-rotate(141deg)
@@ -128,16 +84,8 @@
 
 /* 비비드 바이올렛 테마 */
 .Business[data-theme="vivid-violet"] {
-  // 신규 퍼플 테마
-  --color-active: #7850f2;
-  --color-point: #7950f2;
-  --color-highlight: rgb(121, 80, 242);
-  --gradient: linear-gradient(
-    to right,
-    rgba(121, 80, 242, 0.3) 0%,
-    rgba(121, 80, 242, 0.2) 60%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  --theme-main: #7850f2;
+  --theme-main-rgb: 120, 80, 242;
 
   .img-icon {
     filter: invert(46%) sepia(82%) saturate(5124%) hue-rotate(242deg)

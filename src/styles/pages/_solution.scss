@@ -1,5 +1,9 @@
 // 솔루션 공통 요소 스타일
 .solution-wrapper {
+  --color-highlight: var(--theme-main);
+  --color-title: var(--theme-main);
+  --color-subtitle: var(--theme-point);
+
   img {
     display: inline-block;
   }
