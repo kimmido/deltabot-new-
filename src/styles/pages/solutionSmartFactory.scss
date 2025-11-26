@@ -1,0 +1,33 @@
+.SmartFactory {
+  .sec-title {
+    font-weight: 400;
+    color: var(--color-title);
+    margin-bottom: min(6vw, 60px);
+    font-size: 20px;
+
+    @include respondTo(tablet-l) {
+      font-size: $font-size-section-title-md;
+    }
+  }
+
+  .sub-title {
+    position: relative;
+    font-weight: 400;
+    margin-bottom: min(4.6vw, 56px);
+    padding-left: 0.8em;
+    color: var(--color-subtitle);
+
+    @include respondTo(tablet-l) {
+      font-size: $font-size-section-title-sm;
+    }
+
+    &::before {
+      @include pseudoDefault(var(--color-subtitle));
+      width: 4px;
+    }
+  }
+
+  .cnt05 {
+    background-color: $color-background-light;
+  }
+}

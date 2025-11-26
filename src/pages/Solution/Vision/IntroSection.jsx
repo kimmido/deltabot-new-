@@ -8,7 +8,7 @@ function IntroSection() {
     <section className="IntroSection">
       <div className="container cnt01">
         <p className="intro-desc">
-          <span className="break-point">
+          <p>
             비전 시스템이란, 카메라(이미지 센서)와{" "}
             <span className="highlight">광원</span>, 영상 처리 알고리즘(AI
             포함)을 이용하여 사람의 눈처럼{" "}
@@ -17,8 +17,8 @@ function IntroSection() {
               기술
             </span>
             로, 공정의 눈이자 두뇌 역할을 수행하는 스마트 자동화 핵심 시스템
-          </span>
-          <span className="break-point">
+          </p>
+          <p>
             당사의 로봇 시스템은{" "}
             <span className="highlight">
               비전시스템을 기반으로하여 제품을 인식하는 통합 자동화 솔루션
@@ -30,7 +30,7 @@ function IntroSection() {
             하며, 다양한 산업 분야에서{" "}
             <span className="highlight">품질 안정과 인건비 절감</span>
             효과를 입증하고 있습니다.
-          </span>
+          </p>
         </p>
       </div>
 

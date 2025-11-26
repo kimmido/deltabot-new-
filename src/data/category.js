@@ -74,6 +74,10 @@ export const category = [
           label: "Eco-AI",
           path: "eco-ai-solution",
         },
+        {
+          label: "Smart Factory",
+          path: "smart-factory-solution",
+        },
       ],
     },
     {

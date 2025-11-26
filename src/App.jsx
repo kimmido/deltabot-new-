@@ -19,6 +19,9 @@ const SolutionAutomation = lazy(() =>
 );
 const SolutionEcoAI = lazy(() => import("./pages/Solution/EcoAI/EcoAI"));
 const SolutionVision = lazy(() => import("./pages/Solution/Vision/Vision"));
+const SolutionSmartFactory = lazy(() =>
+  import("./pages/Solution/SmartFactory/SmartFactory")
+);
 
 function App() {
   useEffect(() => {
@@ -101,6 +104,10 @@ function App() {
             />
             <Route path="eco-ai-solution" element={<SolutionEcoAI />} />
             <Route path="vision-solution" element={<SolutionVision />} />
+            <Route
+              path="smart-factory-solution"
+              element={<SolutionSmartFactory />}
+            />
 
             <Route path="about" element={<About />} />
           </Route>
