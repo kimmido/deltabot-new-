@@ -208,16 +208,16 @@ const cnt06 = {
     },
     {
       title: "소형 델타로봇",
-      text: "소형 델타로봇 설명~~~~~~~~~~",
+      text: "전자 제조, 하드웨어 제조, 자동차, 의료 등의 산업에서 대량 재료 트레이에 널리 사용됩니다. 소형 델타 로봇은 고속 픽 앤 플레이스 작업에 이상적이며, 작은 부품을 신속하고 정확하게 처리할 수 있습니다. 이 로봇은 생산 라인의 효율성을 크게 향상시키고, 인건비를 절감하며, 제품 품질을 높이는 데 기여합니다.",
       videoSrc: "/videos/page/solution-automation(5).mp4",
       poster: "/images/video_poster/solution-automation(5).jpg",
       effects: [
         {
-          text: "분당 85개 처리",
+          text: "분당 75개 처리",
           iconName: "icon_timer",
         },
         {
-          text: "로봇 1대당 인력 3명 절감 효과",
+          text: "로봇 1대당 인력 2명 절감 효과",
           iconName: "icon_labors",
         },
         {
