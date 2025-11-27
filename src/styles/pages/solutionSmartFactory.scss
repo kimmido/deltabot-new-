@@ -43,4 +43,45 @@
   // .cnt-desc {
   //   text-align: center;
   // }
+
+  .step-box {
+    @include flexBox(column, 4px, center, space-between);
+    margin-top: min(2.6vw, 30px);
+    border-radius: $radius-card;
+    background-color: rgb(217, 240, 243);
+    padding: max(2vw, 16px);
+
+    @include respondTo(mobile-l) {
+      flex-direction: row;
+    }
+
+    .step-item {
+      position: relative;
+      width: 90%;
+      padding: max(1vw, 10px) max(1vw, 12px);
+      border-radius: $radius-card-md;
+      background-color: rgb(242, 242, 242);
+      text-align: center;
+      border: $color-point 1px solid;
+
+      @include respondTo(mobile-l) {
+        flex-direction: row;
+        width: 28%;
+      }
+
+      p {
+        word-break: break-all;
+      }
+    }
+
+    svg {
+      transform: rotateZ(180deg);
+      fill: yellow;
+      color: yellow;
+
+      @include respondTo(mobile-l) {
+        transform: rotateZ(90deg);
+      }
+    }
+  }
 }
