@@ -1,15 +1,18 @@
 .SmartFactory {
   --color-highlight: var(--theme-point);
 
+  @mixin emph-size() {
+    font-size: 20px;
+    @include respondTo(tablet-l) {
+      font-size: $font-size-section-title-md;
+    }
+  }
+
   .sec-title {
     font-weight: 400;
     color: var(--color-title);
     margin-bottom: min(6vw, 60px);
-    font-size: 20px;
-
-    @include respondTo(tablet-l) {
-      font-size: $font-size-section-title-md;
-    }
+    @include emph-size();
   }
 
   .sub-box {
@@ -76,11 +79,50 @@
 
     svg {
       transform: rotateZ(180deg);
-      fill: yellow;
-      color: yellow;
+      fill: rgb(255, 230, 0);
+      color: rgb(255, 230, 0);
 
       @include respondTo(mobile-l) {
         transform: rotateZ(90deg);
+      }
+    }
+  }
+
+  .EndSection {
+    .cnt03 {
+      padding-bottom: 0;
+
+      .grid-block {
+        &__title {
+          text-align: left;
+        }
+      }
+
+      .example-box {
+        margin-top: min(6vw, 60px);
+        padding: min(6.6vw, 80px) 0 min(6vw, 60px) 0;
+        @include fullBackground($color-background-dark);
+
+        &__title {
+          color: #fff;
+          margin-bottom: min(4.6vw, 56px);
+          @include emph-size();
+          text-align: center;
+        }
+
+        .slide-box {
+          padding: 0 min(6.6vw, 80px);
+
+          img {
+            border-radius: $radius-card-md;
+            @include respondTo(tablet-l) {
+              border-radius: $radius-card-lg;
+            }
+          }
+          .swiper-button-prev {
+            right: 100%;
+          }
+        }
       }
     }
   }

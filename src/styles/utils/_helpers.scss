@@ -54,10 +54,14 @@
   }
 
   &--three-col {
-    grid-template-columns: repeat(3, 1fr);
-
     .grid-block__thumb {
       aspect-ratio: 16 / 9;
+    }
+    @include respondTo(mobile-l) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include respondTo(tablet-s) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
