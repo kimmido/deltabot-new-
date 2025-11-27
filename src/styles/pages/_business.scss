@@ -227,66 +227,6 @@
           margin-bottom: $spacing-content-lg;
         }
       }
-
-      .app-list {
-        display: grid;
-        gap: 10px;
-
-        @include respondTo(pc-s) {
-          gap: 40px;
-        }
-
-        .app-item {
-          .media-box {
-            overflow: hidden;
-            border-radius: $radius-card-md;
-
-            @include respondTo(tablet-l) {
-              border-radius: $radius-card-lg;
-            }
-
-            img,
-            video {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-          }
-
-          .text-box {
-            padding: 16px 12px;
-            text-align: center;
-
-            @include respondTo(tablet-l) {
-              padding: $spacing-content-sm;
-            }
-
-            strong {
-              font-size: 1.5rem;
-
-              @include respondTo(tablet-l) {
-                font-size: $font-size-con-title-sm;
-              }
-            }
-          }
-        }
-
-        &.image {
-          grid-template-columns: repeat(3, 1fr);
-
-          .media-box {
-            aspect-ratio: 1.618 / 1;
-          }
-        }
-
-        &.video {
-          grid-template-columns: repeat(2, 1fr);
-
-          .media-box {
-            aspect-ratio: 16 / 9;
-          }
-        }
-      }
     } // 응용분야
 
     .link-area {

@@ -41,6 +41,64 @@
   display: flex;
 }
 
+.grid-block {
+  display: grid;
+  gap: 10px;
+
+  @include respondTo(pc-s) {
+    gap: 40px;
+  }
+
+  &--two-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &--three-col {
+    grid-template-columns: repeat(3, 1fr);
+
+    .grid-block__thumb {
+      aspect-ratio: 16 / 9;
+    }
+  }
+
+  &__thumb {
+    overflow: hidden;
+
+    img,
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text-box {
+    padding: 16px 12px;
+
+    @include respondTo(tablet-l) {
+      padding: $spacing-content-sm;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+
+    @include respondTo(tablet-l) {
+      font-size: $font-size-con-title-sm;
+    }
+  }
+
+  &__list {
+    margin-top: 0.8em;
+    li {
+      font-size: calc(1em - 2px);
+      margin-top: 0.4em;
+    }
+  }
+}
+
 .overflow_hidden {
   overflow: hidden;
 }
@@ -83,7 +141,10 @@
 }
 
 .card {
-  border-radius: $radius-card-lg;
+  border-radius: $radius-card-md;
+  @include respondTo(tablet-l) {
+    border-radius: $radius-card-lg;
+  }
 }
 
 .radius-pill {

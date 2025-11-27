@@ -7,10 +7,14 @@ function BusinessApplications({ data }) {
   return (
     <div className="BusinessApplications">
       <strong className="sec-title">Applications</strong>
-      <ul className={`app-list ${type}`}>
+      <ul
+        className={`app-list grid-block ${
+          type == "image" ? "grid-block--three-col" : "grid-block--two-col"
+        }`}
+      >
         {data.applications.map((app, idx) => (
-          <li key={idx} className="app-item">
-            <div className="media-box">
+          <li key={idx} className="grid-block__item">
+            <div className="grid-block__thumb card">
               {type == "image" ? (
                 <img
                   src={`/images/business/${app.image}`}
@@ -21,11 +25,12 @@ function BusinessApplications({ data }) {
                   key={app.video}
                   src={`/videos/page/${app.video}`}
                   poster={`/images/video_poster/${app.poster}`}
+                  ratio={1.618 / 1}
                 />
               )}
             </div>
-            <div className="text-box">
-              <strong>{app.title}</strong>
+            <div className="grid-block__text-box">
+              <strong className="grid-block__title">{app.title}</strong>
             </div>
           </li>
         ))}

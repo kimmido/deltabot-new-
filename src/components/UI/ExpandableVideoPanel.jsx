@@ -102,7 +102,7 @@ function ExpandableVideoPanel({ title, src, poster, desc, bullets }) {
   return (
     <div className="ExpandableVideoPanel" ref={containerRef}>
       <div
-        className={`video-box ${isMobile ? "mobile" : "pc"}`}
+        className={`video-box card ${isMobile ? "mobile" : "pc"}`}
         ref={videoBoxRef}
         onClick={() => handlePlay(isMobile, isExpanded)}
       >

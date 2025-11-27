@@ -117,10 +117,10 @@ function CleaningRobotSection() {
       </ContenttBlock>
 
       <ContenttBlock className={"cnt08"}>
-        <ul className={`video-list`}>
+        <ul className={`grid-block grid-block--two-col`}>
           {cnt08.map(({ video, poster, text }, idx) => (
-            <li key={text} className="app-item">
-              <div className="media-box">
+            <li key={text} className="grid-block__item">
+              <div className="grid-block__thumb card">
                 <VideoPreviewPlayer
                   key={video}
                   src={`/videos/page/${video}`}
@@ -128,8 +128,8 @@ function CleaningRobotSection() {
                   ratio={16 / 11}
                 />
               </div>
-              <div className="text-box">
-                <p>{text}</p>
+              <div className="grid-block__text-box">
+                <strong className="grid-block__title">{text}</strong>
               </div>
             </li>
           ))}
