@@ -1,4 +1,6 @@
 .SmartFactory {
+  --color-highlight: var(--theme-point);
+
   .sec-title {
     font-weight: 400;
     color: var(--color-title);
@@ -10,7 +12,17 @@
     }
   }
 
-  .sub-title {
+  .sub-box {
+    margin-top: min(6vw, 60px);
+    margin-bottom: min(6vw, 60px);
+
+    &.background-light {
+      @include fullBackground($color-background-light);
+      padding: min(6vw, 60px) 0 min(6vw, 60px) 0;
+    }
+  }
+
+  .sub-box__title {
     position: relative;
     font-weight: 400;
     margin-bottom: min(4.6vw, 56px);
@@ -27,7 +39,8 @@
     }
   }
 
-  .cnt05 {
-    background-color: $color-background-light;
-  }
+  // .intro-desc,
+  // .cnt-desc {
+  //   text-align: center;
+  // }
 }

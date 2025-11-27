@@ -15,3 +15,10 @@ export const HighlightText = ({ text, keyChar }) => {
     </>
   );
 };
+
+// example usage:
+// {texts.map((text, idx) => (
+//   <p key={idx}>
+//     <HighlightText text={text} keyChar="#" />
+//   </p>
+// ))}
