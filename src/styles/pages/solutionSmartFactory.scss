@@ -1,5 +1,8 @@
 .SmartFactory {
   --color-highlight: var(--theme-point);
+  --gap-lg: min(6vw, 60px);
+  --gap-md: min(4.6vw, 56px);
+  --gap-sm: min(2.6vw, 30px);
 
   @mixin emph-size() {
     font-size: 20px;
@@ -11,24 +14,24 @@
   .sec-title {
     font-weight: 400;
     color: var(--color-title);
-    margin-bottom: min(6vw, 60px);
+    margin-bottom: var(--gap-lg);
     @include emph-size();
   }
 
   .sub-box {
-    margin-top: min(6vw, 60px);
-    margin-bottom: min(6vw, 60px);
+    margin-top: var(--gap-lg);
+    margin-bottom: var(--gap-lg);
 
     &.background-light {
       @include fullBackground($color-background-light);
-      padding: min(6vw, 60px) 0 min(6vw, 60px) 0;
+      padding: var(--gap-lg) 0 var(--gap-lg) 0;
     }
   }
 
   .sub-box__title {
     position: relative;
     font-weight: 400;
-    margin-bottom: min(4.6vw, 56px);
+    margin-bottom: var(--gap-md);
     padding-left: 0.8em;
     color: var(--color-subtitle);
 
@@ -49,7 +52,7 @@
 
   .step-box {
     @include flexBox(column, 4px, center, space-between);
-    margin-top: min(2.6vw, 30px);
+    margin-top: var(--gap-sm);
     border-radius: $radius-card;
     background-color: rgb(217, 240, 243);
     padding: max(2vw, 16px);
@@ -89,23 +92,32 @@
   }
 
   .EndSection {
+    .cnt02 {
+      .emph {
+        margin: var(--gap-lg) 0 var(--gap-sm);
+        text-align: center;
+        font-size: $font-size-section-title-sm;
+      }
+    }
+
     .cnt03 {
       padding-bottom: 0;
 
       .grid-block {
+        margin-top: var(--gap-sm);
         &__title {
           text-align: left;
         }
       }
 
       .example-box {
-        margin-top: min(6vw, 60px);
-        padding: min(6.6vw, 80px) 0 min(6vw, 60px) 0;
+        margin-top: var(--gap-lg);
+        padding: min(6.6vw, 80px) 0 var(--gap-lg) 0;
         @include fullBackground($color-background-dark);
 
         &__title {
           color: #fff;
-          margin-bottom: min(4.6vw, 56px);
+          margin-bottom: var(--gap-md);
           @include emph-size();
           text-align: center;
         }

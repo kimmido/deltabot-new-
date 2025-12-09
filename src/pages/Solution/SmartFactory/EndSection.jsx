@@ -1,5 +1,6 @@
 import React from "react";
 import BasicSlider from "../EcoAI/components/BasicSlider";
+import { HighlightText } from "../../../components/UI/HighlightText";
 import { IconArrow } from "../../../components/icons";
 
 import img05_1 from "../../../assets/images/solution/smart_factory/smart_factory(5-1).svg";
@@ -66,9 +67,12 @@ export default function EndSection() {
               </li>
             </ul>
 
-            <p>
-              "공장 진단 결과를 기반으로 정부 승인률을 높이는 로봇 시스템
-              제안서를 마련하여, 단계별 성장을 확실하게 지원합니다."
+            <p className="emph">
+              <HighlightText
+                text='"공장 #진단 결과#를 기반으로 #정부 승인률을 높이는 로봇 시스템
+              제안#서를 마련하여, #단계별 성장을 확실하게 지원#합니다."'
+                keyChar="#"
+              />
             </p>
             <img className="card" src={img05_1} alt="스마트팩토리 공정도" />
           </div>
@@ -79,9 +83,9 @@ export default function EndSection() {
             </h4>
             <p className="cnt-desc">
               스마트공장 정부 지원 사업의 성공은 단순히 솔루션을 도입하는 것을
-              넘어, 로봇 자동화와 사업 성과의 명확한 제시가 핵심입니다. 델타
-              봇은 로봇 자동화 공장 정부 지원 사업의 성공률을 높이는 든든한
-              파트너가 되어 드립니다
+              넘어, 로봇 자동화와 사업 성과의 명확한 제시가 핵심입니다. <br />
+              델타 봇은 로봇 자동화 공장 정부 지원 사업의 성공률을 높이는 든든한
+              파트너가 되어 드립니다.
             </p>
             <ul className="grid-block grid-block--three-col">
               {cnt03.gridList.map((item) => (
