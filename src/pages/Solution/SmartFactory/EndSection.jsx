@@ -123,14 +123,14 @@ export default function EndSection() {
             </div>
           </div>
 
-          <div className="sub-box cnt04">
-            <ul className="grid-block grid-block--three-col" id="anchor">
+          <div className="sub-box cnt04" id="anchor">
+            <ul className="grid-block grid-block--three-col">
               {cnt04.map((item, idx) => (
                 <li
                   key={idx}
                   className="grid-block__item"
-                  data-aos="fade-up"
-                  data-aos-anchor="#anchor"
+                  data-aos="fade-up-custom"
+                  data-aos-anchor-placement="top-bottom"
                   data-aos-delay={400 * idx}
                 >
                   {item}
