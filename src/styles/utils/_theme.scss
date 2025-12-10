@@ -24,7 +24,7 @@ div[data-theme="petrol-blue"] {
 }
 
 /* 스카이 블루 테마 */
-.Business[data-theme="sky-blue"] {
+div[data-theme="sky-blue"] {
   // 협동로봇
   --theme-main: #19b0fb;
   --theme-main-rgb: 25, 176, 251;
@@ -36,7 +36,7 @@ div[data-theme="petrol-blue"] {
 }
 
 /* 청록 페이지 테마 */
-.Business[data-theme="vivid-cyan"] {
+div[data-theme="vivid-cyan"] {
   // 수직다관절
   --theme-main: rgb(0, 153, 204);
   --theme-main-rgb: 0, 153, 204;
@@ -48,7 +48,7 @@ div[data-theme="petrol-blue"] {
 }
 
 /* 로얄블루 테마 */
-.Business[data-theme="royal-blue"] {
+div[data-theme="royal-blue"] {
   // 델타로봇
   --theme-main: #0052f2;
   --theme-main-rgb: 0, 82, 242;
@@ -60,7 +60,7 @@ div[data-theme="petrol-blue"] {
 }
 
 /* 블루퍼플 테마 */
-.Business[data-theme="blue-purple"] {
+div[data-theme="blue-purple"] {
   --theme-main: #3e30f4;
   --theme-main-rgb: 62, 48, 244;
 
@@ -71,7 +71,7 @@ div[data-theme="petrol-blue"] {
 }
 
 /* 틸 블루 테마 */
-.Business[data-theme="teal-blue"] {
+div[data-theme="teal-blue"] {
   // amr
   --theme-main: #49919d;
   --theme-main-rgb: 73, 145, 157;
@@ -83,7 +83,7 @@ div[data-theme="petrol-blue"] {
 }
 
 /* 비비드 바이올렛 테마 */
-.Business[data-theme="vivid-violet"] {
+div[data-theme="vivid-violet"] {
   --theme-main: #7850f2;
   --theme-main-rgb: 120, 80, 242;
 
