@@ -10,26 +10,26 @@ export default function IntroSection() {
   return (
     <section className="IntroSection">
       <section className="cnt01 container">
-        <p className="intro-desc">
+        <div className="intro-desc">
           {cnt01.texts.map((text, idx) => (
             <p key={idx}>
               <HighlightText text={text} keyChar="#" />
             </p>
           ))}
-        </p>
+        </div>
       </section>
 
       <section className="section cnt02 container">
         <h3 className="sec-title">
           1. 스마트 공장 <b>정의 & 비전</b>
         </h3>
-        <p className="cnt-desc">
+        <div className="cnt-desc">
           {cnt02.texts.map((text, idx) => (
             <p key={idx}>
               <HighlightText text={text} keyChar="#" />
             </p>
           ))}
-        </p>
+        </div>
         <img src={img01} alt="스마트팩토리 기술, 방식, 목표" />
       </section>
 
@@ -48,13 +48,13 @@ export default function IntroSection() {
           <h4 className="sub-box__title">주요 시스템의 역할과 구성</h4>
           <img className="card" src={img03} alt="스마트팩토리 공정도" />
         </div>
-        <p className="cnt-desc">
+        <div className="cnt-desc">
           {cnt04.texts.map((text, idx) => (
             <p key={idx}>
               <HighlightText text={text} keyChar="#" />
             </p>
           ))}
-        </p>
+        </div>
       </section>
 
       <section className="section cnt05">

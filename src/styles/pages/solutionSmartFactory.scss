@@ -1,5 +1,6 @@
 .SmartFactory {
   --color-highlight: var(--theme-point);
+  --color-point: var(--theme-point);
   --gap-lg: min(6vw, 60px);
   --gap-md: min(4.6vw, 56px);
   --gap-sm: min(2.6vw, 30px);
@@ -14,8 +15,9 @@
   .sec-title {
     font-weight: 400;
     color: var(--color-title);
-    margin-bottom: var(--gap-lg);
+    margin-bottom: min(6vw, 70px);
     @include emph-size();
+    text-align: center;
   }
 
   .sub-box {
@@ -26,35 +28,31 @@
       @include fullBackground($color-background-light);
       padding: var(--gap-lg) 0 var(--gap-lg) 0;
     }
-  }
 
-  .sub-box__title {
-    position: relative;
-    font-weight: 400;
-    margin-bottom: var(--gap-md);
-    padding-left: 0.8em;
-    color: var(--color-subtitle);
+    &__title {
+      position: relative;
+      margin-bottom: var(--gap-md);
+      padding-left: 0.8em;
+      font-weight: 400;
+      font-size: calc(1em + 2px);
+      color: var(--color-subtitle);
 
-    @include respondTo(tablet-l) {
-      font-size: $font-size-section-title-sm;
+      @include respondTo(tablet-l) {
+        font-size: $font-size-section-title-sm;
+      }
+
+      &::before {
+        @include pseudoDefault(var(--color-subtitle));
+        width: 4px;
+      }
     }
-
-    &::before {
-      @include pseudoDefault(var(--color-subtitle));
-      width: 4px;
-    }
   }
-
-  // .intro-desc,
-  // .cnt-desc {
-  //   text-align: center;
-  // }
 
   .step-box {
     @include flexBox(column, 4px, center, space-between);
     margin-top: var(--gap-sm);
     border-radius: $radius-card;
-    background-color: rgb(217, 240, 243);
+    background-color: rgb(233, 245, 247);
     padding: max(2vw, 16px);
 
     @include respondTo(mobile-l) {
@@ -66,9 +64,8 @@
       width: 90%;
       padding: max(1vw, 10px) max(1vw, 12px);
       border-radius: $radius-card-md;
-      background-color: rgb(242, 242, 242);
-      text-align: center;
-      border: $color-point 1px solid;
+      background-color: #fff;
+      border: var(--color-point) 1px solid;
 
       @include respondTo(mobile-l) {
         flex-direction: row;
@@ -76,14 +73,17 @@
       }
 
       p {
+        font-weight: 600;
+        color: var(--color-point);
+        text-align: center;
         word-break: break-all;
       }
     }
 
     svg {
       transform: rotateZ(180deg);
-      fill: rgb(255, 230, 0);
-      color: rgb(255, 230, 0);
+      fill: rgb(245 161 10);
+      color: rgb(245 161 10);
 
       @include respondTo(mobile-l) {
         transform: rotateZ(90deg);
@@ -96,7 +96,16 @@
       .emph {
         margin: var(--gap-lg) 0 var(--gap-sm);
         text-align: center;
-        font-size: $font-size-section-title-sm;
+        font-size: calc(1em + 2px);
+
+        @include respondTo(tablet-l) {
+          font-size: $font-size-section-title-sm;
+        }
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 1300px;
       }
     }
 
@@ -105,8 +114,10 @@
 
       .grid-block {
         margin-top: var(--gap-sm);
-        &__title {
-          text-align: left;
+        &__list {
+          width: fit-content;
+          margin: 0.8em auto;
+          transform: translateX(-15px);
         }
       }
 
@@ -123,7 +134,9 @@
         }
 
         .slide-box {
-          padding: 0 min(6.6vw, 80px);
+          @include respondTo(tablet-l) {
+            padding: 0 min(6.6vw, 80px);
+          }
 
           img {
             border-radius: $radius-card-md;
@@ -131,8 +144,55 @@
               border-radius: $radius-card-lg;
             }
           }
-          .swiper-button-prev {
-            right: 100%;
+
+          .swiper-button {
+            &-prev,
+            &-next {
+              border-radius: 50%;
+              background-color: var(--color-point);
+              @include square(3em);
+
+              @include respondTo(tablet-l) {
+                @include square(60px);
+              }
+
+              &::after {
+                color: #fff;
+                font-weight: 600;
+                font-size: 1.8em;
+
+                @include respondTo(tablet-l) {
+                  font-size: 36px;
+                }
+              }
+            }
+
+            &-prev {
+              left: 0.2em;
+
+              &::after {
+                transform: translateX(-2px);
+              }
+            }
+
+            &-next {
+              right: 0.2em;
+
+              &::after {
+                transform: translateX(2px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .cnt04 {
+      .grid-block {
+        &__item {
+          padding: 0.5em 2em;
+          @include respondTo(mobile-l) {
+            padding: 0;
           }
         }
       }
