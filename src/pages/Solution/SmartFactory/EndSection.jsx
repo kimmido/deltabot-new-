@@ -1,4 +1,3 @@
-import React from "react";
 import BasicSlider from "../EcoAI/components/BasicSlider";
 import { HighlightText } from "../../../components/UI/HighlightText";
 import { IconArrow } from "../../../components/icons";
@@ -7,20 +6,28 @@ import img05_1 from "../../../assets/images/solution/smart_factory/smart_factory
 import img03_1 from "../../../assets/images/solution/smart_factory/end-cnt(3-1).jpg";
 import img03_2 from "../../../assets/images/solution/smart_factory/end-cnt(3-2).jpg";
 import img03_3 from "../../../assets/images/solution/smart_factory/end-cnt(3-3).jpg";
-import img3_slide1 from "../../../assets/images/solution/smart_factory/end-cnt(3)-slide(1).png";
-import img3_slide2 from "../../../assets/images/solution/smart_factory/end-cnt(3)-slide(2).png";
-import img3_slide3 from "../../../assets/images/solution/smart_factory/end-cnt(3)-slide(3).png";
-import img3_slide4 from "../../../assets/images/solution/smart_factory/end-cnt(3)-slide(4).png";
-import img3_slide5 from "../../../assets/images/solution/smart_factory/end-cnt(3)-slide(5).png";
-import img3_slide6 from "../../../assets/images/solution/smart_factory/end-cnt(3)-slide(6).png";
+import img3_slide1 from "../../../assets/images/solution/smart_factory/end-cnt(3)-slide(1).jpg";
+import img3_slide2 from "../../../assets/images/solution/smart_factory/end-cnt(3)-slide(2).jpg";
+import img3_slide3 from "../../../assets/images/solution/smart_factory/end-cnt(3)-slide(3).jpg";
+import img3_slide4 from "../../../assets/images/solution/smart_factory/end-cnt(3)-slide(4).jpg";
+import img3_slide5 from "../../../assets/images/solution/smart_factory/end-cnt(3)-slide(5).jpg";
+import img3_slide6 from "../../../assets/images/solution/smart_factory/end-cnt(3)-slide(6).jpg";
 import img4_1 from "../../../assets/images/solution/smart_factory/end-cnt(4-1).svg";
 import img4_2 from "../../../assets/images/solution/smart_factory/end-cnt(4-2).svg";
 import img4_3 from "../../../assets/images/solution/smart_factory/end-cnt(4-3).svg";
 import img4_4 from "../../../assets/images/solution/smart_factory/end-cnt(4-4).svg";
 import img4_5 from "../../../assets/images/solution/smart_factory/end-cnt(4-5).svg";
 import img4_6 from "../../../assets/images/solution/smart_factory/end-cnt(4-6).svg";
+import useScrollReveal from "../../../hooks/useScrollReveal";
 
 export default function EndSection() {
+  useScrollReveal(".fade-up", {
+    trigger: "#trigger",
+    stagger: 400, // 요소 순차 등장 간격
+    threshold: 0.2,
+    once: false,
+  });
+
   return (
     <section className="EndSection">
       <section className="section">
@@ -127,16 +134,10 @@ export default function EndSection() {
             </div>
           </div>
 
-          <div className="sub-box cnt04" id="anchor">
+          <div className="sub-box cnt04" id="trigger">
             <ul className="grid-block grid-block--three-col">
               {cnt04.map((item, idx) => (
-                <li
-                  key={idx}
-                  className="grid-block__item"
-                  data-aos="fade-up-custom"
-                  data-aos-anchor-placement="top-bottom"
-                  data-aos-delay={400 * idx}
-                >
+                <li key={idx} className="grid-block__item fade-up">
                   {item}
                 </li>
               ))}
