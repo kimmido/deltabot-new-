@@ -1,6 +1,6 @@
 .About {
   .intro-section,
-  .LoopSwiper,
+  .RollingSwiper,
   .contact-section {
     margin-top: $spacing-layout-md;
 
@@ -150,18 +150,18 @@
     }
   }
 
-  .LoopSwiper {
+  .RollingSwiper {
     @include respondTo(tablet-s) {
       margin-top: 20rem;
     }
 
-    .swiper-wrapper {
-      transition-timing-function: linear;
-    }
-
     .swiper-slide {
+      width: calc((100% - 8px) / 2);
       @include respondTo(tablet-s) {
-        width: calc((476px / 1392px) * 100%);
+        width: calc((100% - 48px) / 3);
+      }
+      @include respondTo(pc-s) {
+        width: calc((100% - 72px) / 4);
       }
 
       figure {
