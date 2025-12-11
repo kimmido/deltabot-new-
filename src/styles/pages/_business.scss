@@ -17,8 +17,8 @@
 
     --gradient: linear-gradient(
       to right,
-      rgba(var(--theme-main-rgb), 0.3) 0%,
-      rgba(var(--theme-main-rgb), 0.2) 60%,
+      rgba(var(--theme-gradient-rgb), 0.3) 0%,
+      rgba(var(--theme-gradient-rgb), 0.2) 60%,
       rgba(0, 0, 0, 0) 100%
     );
   }

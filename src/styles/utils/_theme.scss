@@ -1,13 +1,22 @@
 // src/styles/theme.scss
 :root {
-  --color-point: #1d56bc;
-  --color-highlight: #246beb;
-  --color-active: #1d56bc;
-  --color-point-background: #f2f7ff;
+  --theme-main: #1d56bc;
+  --theme-point: #1d56bc;
+  --theme-highlight: #246beb;
+  --theme-active: #1d56bc;
+  --theme-point-background: #f2f7ff;
+
+  --color-main: var(--theme-main);
+  --color-point: var(--theme-main);
+  --color-highlight: var(--theme-highlight);
+  --color-active: var(--theme-main);
+  --color-point-background: var(--color-point-background);
+
+  --theme-gradient-rgb: 124, 166, 243;
   --gradient: linear-gradient(
     to right,
-    rgba(124, 166, 243, 0.3) 0%,
-    rgba(124, 166, 243, 0.2) 60%,
+    rgba(var(--theme-gradient-rgb), 0.3) 0%,
+    rgba(var(--theme-gradient-rgb), 0.2) 60%,
     rgba(0, 0, 0, 0) 100%
   );
 }
@@ -15,6 +24,7 @@
 // 페트롤 블루 계열 테마
 div[data-theme="petrol-blue"] {
   --theme-main: rgb(38, 82, 122);
+  --theme-gradient-rgb: 38, 82, 122;
   --theme-point: rgb(81, 158, 179);
 
   .img-icon {
@@ -27,7 +37,7 @@ div[data-theme="petrol-blue"] {
 div[data-theme="sky-blue"] {
   // 협동로봇
   --theme-main: #19b0fb;
-  --theme-main-rgb: 25, 176, 251;
+  --theme-gradient-rgb: 25, 176, 251;
 
   .img-icon {
     filter: invert(67%) sepia(28%) saturate(6861%) hue-rotate(170deg)
@@ -39,7 +49,7 @@ div[data-theme="sky-blue"] {
 div[data-theme="vivid-cyan"] {
   // 수직다관절
   --theme-main: rgb(0, 153, 204);
-  --theme-main-rgb: 0, 153, 204;
+  --theme-gradient-rgb: 0, 153, 204;
 
   .img-icon {
     filter: invert(66%) sepia(79%) saturate(7414%) hue-rotate(172deg)
@@ -51,7 +61,7 @@ div[data-theme="vivid-cyan"] {
 div[data-theme="royal-blue"] {
   // 델타로봇
   --theme-main: #0052f2;
-  --theme-main-rgb: 0, 82, 242;
+  --theme-gradient-rgb: 0, 82, 242;
 
   .img-icon {
     filter: invert(17%) sepia(70%) saturate(6057%) hue-rotate(219deg)
@@ -62,7 +72,7 @@ div[data-theme="royal-blue"] {
 /* 블루퍼플 테마 */
 div[data-theme="blue-purple"] {
   --theme-main: #3e30f4;
-  --theme-main-rgb: 62, 48, 244;
+  --theme-gradient-rgb: 62, 48, 244;
 
   .img-icon {
     filter: invert(23%) sepia(96%) saturate(6737%) hue-rotate(247deg)
@@ -74,7 +84,7 @@ div[data-theme="blue-purple"] {
 div[data-theme="teal-blue"] {
   // amr
   --theme-main: #49919d;
-  --theme-main-rgb: 73, 145, 157;
+  --theme-gradient-rgb: 73, 145, 157;
 
   .img-icon {
     filter: invert(52%) sepia(12%) saturate(1466%) hue-rotate(141deg)
@@ -85,7 +95,7 @@ div[data-theme="teal-blue"] {
 /* 비비드 바이올렛 테마 */
 div[data-theme="vivid-violet"] {
   --theme-main: #7850f2;
-  --theme-main-rgb: 120, 80, 242;
+  --theme-gradient-rgb: 120, 80, 242;
 
   .img-icon {
     filter: invert(46%) sepia(82%) saturate(5124%) hue-rotate(242deg)
