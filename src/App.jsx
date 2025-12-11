@@ -12,6 +12,7 @@ const About = lazy(() => import("./pages/About/About"));
 
 const BusinessLayout = lazy(() => import("./layouts/BusinessLayout"));
 const Business = lazy(() => import("./pages/Business/Business"));
+const Logistics = lazy(() => import("./pages/Business/Logistics.jsx"));
 const ComingSoon = lazy(() => import("./pages/Business/ComingSoon"));
 
 const SolutionAutomation = lazy(() =>
@@ -40,6 +41,8 @@ function App() {
           <Route path="/" element={<DefaultLayout />}>
             <Route index element={<Home />} />
 
+            {/* ========= 사업소개 카테고리 ========= */}
+            {/* 로봇 자동화 */}
             <Route path="robot-automation">
               <Route element={<BusinessLayout />}>
                 <Route
@@ -54,6 +57,7 @@ function App() {
               </Route>
             </Route>
 
+            {/* 비전 */}
             <Route path="vision-system">
               <Route element={<BusinessLayout />}>
                 <Route
@@ -68,6 +72,19 @@ function App() {
               </Route>
             </Route>
 
+            {/* 로지스틱 */}
+            <Route path="logistics">
+              <Route element={<BusinessLayout />}>
+                <Route index element={<Navigate to="i-robot" replace />} />
+                <Route path="i-robot" element={<Logistics />} />
+                <Route
+                  path="automated-sorting-system"
+                  element={<Logistics />}
+                />
+              </Route>
+            </Route>
+
+            {/* 에코 프렌들리 */}
             <Route path="eco-friendly-robot">
               <Route element={<BusinessLayout />}>
                 <Route
@@ -79,6 +96,7 @@ function App() {
               </Route>
             </Route>
 
+            {/* 의료 */}
             <Route path="medical">
               <Route element={<BusinessLayout />}>
                 <Route index element={<Navigate to="pcr" replace />} />
@@ -87,6 +105,7 @@ function App() {
               </Route>
             </Route>
 
+            {/* IT */}
             <Route path="information-technology">
               <Route element={<BusinessLayout />}>
                 <Route index element={<Navigate to="gpu-server" replace />} />
@@ -98,6 +117,7 @@ function App() {
               </Route>
             </Route>
 
+            {/* ========= 솔루션 카테고리 ========= */}
             <Route
               path="automation-solution"
               element={<SolutionAutomation />}

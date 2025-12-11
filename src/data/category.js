@@ -28,6 +28,14 @@ export const category = [
           ],
         },
         {
+          label: "Logistics",
+          path: "logistics",
+          items: [
+            { path: "i-robot", label: "i-Robot" },
+            { path: "automated-sorting-system", label: "자동분류시스템" },
+          ],
+        },
+        {
           label: "Eco-friendly Robot",
           path: "eco-friendly-robot",
           items: [

@@ -6,13 +6,14 @@ import useMediaQuery from "../../../hooks/useMediaQuery";
 
 import backImg1 from "../../../assets/images/main/business(1).jpg";
 import backImg2 from "../../../assets/images/main/business(2).jpg";
-import backImg3 from "../../../assets/images/main/business(3).jpg";
-import backImg4 from "../../../assets/images/main/business(4).jpg";
-import backImg5 from "../../../assets/images/main/business(5).jpg";
+import backImg3 from "../../../assets/images/main/logistics.jpg";
+import backImg4 from "../../../assets/images/main/business(3).jpg";
+import backImg5 from "../../../assets/images/main/business(4).jpg";
+import backImg6 from "../../../assets/images/main/business(5).jpg";
 
 export default function BusinessItem({ sub, idx, isExpanded, setExpanded }) {
   const isPC = useMediaQuery("(min-width: 1280px)");
-  const imgList = [backImg1, backImg2, backImg3, backImg4, backImg5];
+  const imgList = [backImg1, backImg2, backImg3, backImg4, backImg5, backImg6];
 
   const aosList = ["fade-right", "fade-up", "fade-left"];
 

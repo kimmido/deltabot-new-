@@ -8,10 +8,10 @@ import "swiper/scss";
 import "swiper/scss/autoplay";
 import businessImg1 from "../../../assets/images/main/business(1).jpg";
 import businessImg2 from "../../../assets/images/main/business(2).jpg";
-import businessImg3 from "../../../assets/images/main/business(3).jpg";
-import businessImg4 from "../../../assets/images/main/business(4).jpg";
-import businessImg5 from "../../../assets/images/main/business(5).jpg";
-import businessImg6 from "../../../assets/images/main/business(6).jpg";
+import businessImg3 from "../../../assets/images/main/logistics.jpg";
+import businessImg4 from "../../../assets/images/main/business(3).jpg";
+import businessImg5 from "../../../assets/images/main/business(4).jpg";
+import businessImg6 from "../../../assets/images/main/business(5).jpg";
 
 function LoopSwiper() {
   const routeBusiness = category.find((item) => item.main.label == "사업소개");
