@@ -289,6 +289,11 @@ const businessIntroData = {
           'AMR 시리즈는 기존 자동화 설비의 한계를 극복하고, #스마트 팩토리와 하이믹스(HI-MIX) 생산 환경에 최적화된 솔루션#으로 자리 잡고 있습니다.'
         ],
       images: [`card`],
+      link: {
+        label: "자동화 솔루션 자세히 보기",
+        path: "/automation-solution",
+        posId: false
+      },
       featureType:"card",
       features: [
         {
@@ -486,6 +491,87 @@ const businessIntroData = {
       ],
     },
 
+
+    // =========== 로지스틱 =========== 
+    // 아이로봇
+    "i-robot": {
+      theme: 'indigo-navy',
+      title: '미래 물류의 기준, 자율지능형 물류 혁신, i-Robot',
+      description: [
+        '#자율 주행, 적재·하역, 감압 케이지# 처리까지~ 인간의 반복 작업을 대체하는 #디지털 블루칼라 로봇 솔루션#',
+        '#머신 비전, 레이더 내비게이션, 머신러닝# 기반의 지능형 제어 기술을 결합하여 물류, 제조, 식음료, 제약 등 다양한 산업 현장에서 #자율 주행·적재·하역·팔레타이징#을 완벽히 수행합니다. 사람 대신 복잡한 작업을 정밀하고 안전하게 수행하며, 데이터 기반의 학습을 통해 스스로 발전하는 “사용할수록 더 스마트한 로봇”을 구현합니다.',
+        '#i-Robot#은 단순한 자동화를 넘어, #인간과 협력하는 차세대 산업 파트너#로서 #생산성과 효율성을 극대화#합니다.'
+      ],
+      images: ['spacing-l'],
+      slides: [
+        '/images/business/i-robot-slide(1).svg', 
+        '/images/business/logistics-slide-arrow.svg', 
+        '/images/business/i-robot-slide(2).svg', 
+        '/images/business/logistics-slide-arrow.svg', 
+        '/images/business/i-robot-slide(3).svg', 
+        '/images/business/logistics-slide-arrow.svg', 
+        '/images/business/i-robot-slide(4).svg', 
+        '/images/business/logistics-slide-arrow.svg', 
+        '/images/business/i-robot-slide(5).svg', 
+        '/images/business/logistics-slide-arrow.svg', 
+      ],
+      link: {
+        label: "i-Robot 솔루션 자세히 보기",
+        path: "/eco-ai-solution",
+        posId: "cleaning"
+      },
+      applications: [
+        {
+          video: 'i-robot-application(1).mp4',
+          poster: 'i-robot-application(1).jpg',
+          title: '로봇을 이용하여 완제품을 상자에 채워 팔레트 위에 정해진 순서대로 적재하는 장비',
+        },
+        {
+          video: 'i-robot-application(2).mp4',
+          poster: 'i-robot-application(2).jpg',
+          title: 'I-Robot M 로봇이 컨테이너 안에 물류 하차 / I-Robot P 로봇이 상자를 팔레트위에 순서대로 적재',
+        },
+      ],
+    },
+    
+    // 자동분류시스템
+    "automated-sorting-system": {
+      theme: 'indigo-navy',
+      title: '효율성과 정확도를 극대화한 차세대 스마트 자동물류 시스템',
+      description: [
+        '#물류 로봇# 시스템의 핵심 인 #자동화된 로봇 시스템의 가동률, 로봇 운영을 위해# 구현된 프로세스, 그리고 #AI 기반 제어 기술# 등 다양한 요인에 따라 좌우됩니다.',
+        '자동 분류 및 검색 시스템은 유통 물류 프로세스를 획기적으로 간소화하는 핵심 솔루션입니다. 기업은 운영 #효율성#을 높이고, 처리량을 증대시키며, #오류를 최소화#하고, #관리의 정확성#을 최고 수준으로 향상할 수 있습니다.',
+        '현대 유통 물류 시장에서 성공의 필수 요소는 #속도, 정확성, 유연성#입니다.  물류 관리자가 직면한 이 모든 중요한 과제를 해결할 수 있도록 지원합니다. 본 시스템은 지능적인 자재 흐름 #최적화#, 신속하고 정확한 주문 이행 간소화, 그리고 투명한 관리 #개선#을 통해 기업의 경쟁력을 높입니다.'
+      ],
+      images: ['spacing-l'],
+      slides: [
+        '/images/business/sorting-slide(1).svg', 
+        '/images/business/logistics-slide-arrow.svg', 
+        '/images/business/sorting-slide(2).svg', 
+        '/images/business/logistics-slide-arrow.svg', 
+        '/images/business/sorting-slide(3).svg', 
+        '/images/business/logistics-slide-arrow.svg', 
+        '/images/business/sorting-slide(4).svg', 
+        '/images/business/logistics-slide-arrow.svg', 
+      ],
+      link: {
+        label: "자동물류 시스템 솔루션 자세히 보기",
+        path: "/eco-ai-solution",
+        posId: "cleaning"
+      },
+      applications: [
+        {
+          video: 'sorting-application(1).mp4',
+          poster: 'sorting-application(1).jpg',
+          title: 'DWS 지능형  자동 분류 시스템',
+        },
+        {
+          video: 'sorting-application(2).mp4',
+          poster: 'sorting-application(2).jpg',
+          title: '자동 소포 스캔 바코드 스캐너',
+        },
+      ],
+    },
 
     // =========== 에코 프렌들리 =========== 
     // 리싸이클링

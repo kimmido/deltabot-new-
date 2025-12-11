@@ -1,0 +1,20 @@
+.Logistics {
+  .RollingSwiper {
+    .swiper-wrapper {
+      align-items: center;
+
+      .swiper-slide {
+        //   padding-right: 4vw;
+        width: calc((100% - 8px) / 2); // 기본: 2개 보이기
+
+        @include respondTo(tablet-s) {
+          width: calc((100% - 48px) / 3); // 3개 보이기
+        }
+
+        @include respondTo(pc-s) {
+          width: calc((100% - 120px) / 6); // 4개 보이기
+        }
+      }
+    }
+  }
+}

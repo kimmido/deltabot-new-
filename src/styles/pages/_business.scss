@@ -99,28 +99,28 @@
         line-height: 1.5;
       }
     }
+  } // BusinessIntroSection
 
-    .intro-img {
-      display: block;
-      margin-top: 2.4em;
-      margin-left: auto;
-      margin-right: auto;
-      width: auto;
-      max-width: 100%;
+  .intro-img {
+    display: block;
+    margin-top: 2.4em;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 100%;
 
-      &.card {
-        border-radius: $radius-card-lg;
-      }
+    &.card {
+      border-radius: $radius-card-lg;
+    }
 
-      &.spacing-l {
-        margin-top: 40px;
+    &.spacing-l {
+      margin-top: 40px;
 
-        @include respondTo(tablet-s) {
-          margin-top: min(7vw, 100px);
-        }
+      @include respondTo(tablet-s) {
+        margin-top: min(7vw, 100px);
       }
     }
-  } // BusinessIntroSection
+  }
 
   // 특징 카드리스트
   .FeatureCards {
