@@ -1,76 +1,86 @@
 import React from "react";
-import BusinessIntroSection from "./components/BusinessIntroSection";
 import ProductCatalog from "./components/ProductCatalog";
-import { Link, useOutletContext } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 import businessIntroData from "../../data/businessIntroData";
-import BusinessApplications from "./components/BusinessApplications";
 import QuoteArea from "./components/QuoteArea";
-import { IconArrow } from "../../components/icons";
 import RollingSwiper from "../../components/UI/RollingSwiper";
 import { SwiperSlide } from "swiper/react";
 import { HighlightText } from "../../components/UI/HighlightText";
+import VideoPreviewPlayer from "../../components/UI/VideoPreviewPlayer";
+import ApplicationsSection from "./components/ApplicationsSection";
 
 function Business() {
   const { currentTab, productData = [], routes } = useOutletContext();
   const data = businessIntroData[currentTab];
   if (!data) return null;
 
+  const slideData = data.slideData;
+
   return (
     <div className="Logistics Business" data-theme={data.theme}>
       <QuoteArea title={data.title} />
 
-      {/* <BusinessIntroSection data={data} currentTab={currentTab} /> */}
-
       <section className="BusinessIntroSection">
+        {/* 소개글 영역 */}
         <div className="desc-box">
-          {data.description.map((txt, idx) => (
+          {data.desc.map((txt, idx) => (
             <p key={idx} className="desc">
               <HighlightText text={txt} keyChar="#" />
             </p>
           ))}
         </div>
 
-        {data.images.map((img, index) => (
-          <img
-            className={`intro-img ${img}`}
-            key={index}
-            src={`/images/business/${currentTab}(${index + 1}).jpg`}
-            alt={currentTab}
-          />
-        ))}
+        {/* 롤링 스와이퍼 */}
+        <div className="cnt-box">
+          <div className="text-box">
+            <h4 className="cnt-title">{slideData.title}</h4>
+            {slideData.desc && <p className="desc">{slideData.desc}</p>}
+          </div>
+          <RollingSwiper>
+            {slideData.slides.map((item, i) => (
+              <SwiperSlide key={"도입의 이점" + (i + 1)}>
+                <img src={item} alt={"도입의 이점" + (i + 1)} />
+              </SwiperSlide>
+            ))}
+          </RollingSwiper>
+        </div>
 
-        {data.extraText && (
-          <div className="desc-box">
-            <p className="desc">{data.extraText}</p>
+        {/* 비디오가 있는 경우 */}
+        {data.video && (
+          <div className="cnt-box">
+            <div className="video-box ">
+              <VideoPreviewPlayer
+                src={data.video.src}
+                poster={data.video.poster}
+              />
+            </div>
           </div>
         )}
+
+        {/* 이미지 영역 */}
+        <div className="cnt-box">
+          <div className="text-box">
+            {data.cnt01.title && (
+              <h4 className="cnt-title">{data.cnt01.title}</h4>
+            )}
+            {data.cnt01.desc && (
+              <p className="desc">
+                <HighlightText text={data.cnt01.desc} keyChar="#" />
+              </p>
+            )}
+          </div>
+          <img
+            className={`intro-img`}
+            src={data.cnt01.img}
+            alt={data.cnt01.title}
+          />
+        </div>
       </section>
 
-      <RollingSwiper>
-        {data.slides.map((item, i) => (
-          <SwiperSlide key={"도입의 이점" + (i + 1)}>
-            <img src={item} alt={"도입의 이점" + (i + 1)} />
-          </SwiperSlide>
-        ))}
-      </RollingSwiper>
+      {/* 응용분야 */}
+      <ApplicationsSection data={data.app} />
 
-      <div className="app-wrap">
-        <BusinessApplications data={data} />
-
-        {data.link && (
-          <div className="link-area">
-            <Link
-              to={data.link.path}
-              state={{ posId: data.link.posId }}
-              className="link-solution btn-pill"
-            >
-              <span>{data.link.label}</span>
-              <IconArrow size="20" weight="1" />
-            </Link>
-          </div>
-        )}
-      </div>
-
+      {/* 제품 목록 */}
       <ProductCatalog
         currentTab={currentTab}
         productData={productData}

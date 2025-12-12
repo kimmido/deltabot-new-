@@ -120,6 +120,7 @@
   display: block;
 }
 
+// 섹션 제목
 .section_title {
   font-size: $font-size-section-title-sm;
   margin-bottom: 24px;
@@ -127,6 +128,17 @@
   @include respondTo(tablet-l) {
     font-size: $font-size-section-title-lg;
     margin-bottom: 40px;
+  }
+}
+
+// 컨텐츠 제목
+.cnt-title {
+  margin-bottom: min(9.4vw, 60px);
+  font-size: 20px;
+  text-align: center;
+
+  @include respondTo(tablet-l) {
+    font-size: $font-size-section-title-md;
   }
 }
 
