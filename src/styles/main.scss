@@ -1,13 +1,20 @@
 // main.scss
+// 1. 설정 & 유틸리티 (Variables, Mixins, Functions)
 @import "./base/variables";
 @import "./base/mixins";
+@import "./utils/helpers";
+@import "./utils/theme";
+
+// 2. 기본 스타일
 @import "./base/reset";
 // @use './base/typography';
 
+// 3. 레이아웃
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/nav";
 
+// 4. 컴포넌트
 @import "./components/pageHeading";
 @import "./components/floatingBtn";
 @import "./components/tabMenu";
@@ -20,6 +27,7 @@
 @import "./components/CircleIconList";
 @import "./components/RollingSwiper";
 
+// 5. 페이지별 스타일
 @import "./pages/home";
 @import "./pages/business";
 @import "./pages/business/logistics";
@@ -31,8 +39,6 @@
 @import "./pages/about";
 @import "./pages/ComingSoon";
 
-@import "./utils/helpers";
-@import "./utils/theme";
+// 6. 애니메이션
 @import "./utils/animations";
 // @use './utils/z-index';
-// @use './utils/animations';
