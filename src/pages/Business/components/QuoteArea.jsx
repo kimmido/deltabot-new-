@@ -11,8 +11,8 @@ function QuoteArea({ title }) {
       gsap.to(".quote-text", {
         scrollTrigger: {
           trigger: ".quote-text",
-          start: "bottom 86%",
-          end: "bottom 48%",
+          start: "center 88%",
+          end: "top 48%",
           scrub: 1, // 스크롤에 따라 부드럽게
           markers: false,
         },
