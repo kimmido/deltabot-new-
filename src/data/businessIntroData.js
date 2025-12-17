@@ -531,12 +531,12 @@ const businessIntroData = {
           {
             video: 'i-robot-application(1).mp4',
             poster: 'i-robot-application(1).jpg',
-            title: '로봇을 이용하여 완제품을 상자에 채워 팔레트 위에 정해진 순서대로 적재하는 장비',
+            title: '제품을 상자에 채워 팔레트 위에 정해진 순서대로 적재',
           },
           {
             video: 'i-robot-application(2).mp4',
             poster: 'i-robot-application(2).jpg',
-            title: 'I-Robot M 로봇이 컨테이너 안에 물류 하차 / I-Robot P 로봇이 상자를 팔레트위에 순서대로 적재',
+            title: '로봇이 컨테이너의 물류를 하차하고 팔레트위에 순서대로 적재',
           },
         ],
         link: {
@@ -589,7 +589,7 @@ const businessIntroData = {
           {
             video: 'sorting-application(2).mp4',
             poster: 'sorting-application(2).jpg',
-            title: '자동 소포 스캔 바코드 스캐너',
+            title: '휠소타 분류',
           },
         ],
         link: {
