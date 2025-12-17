@@ -5,12 +5,11 @@ import { SwiperSlide } from "swiper/react";
 import RollingSwiper from "../../components/UI/RollingSwiper";
 import RollingSlideItem from "./components/RollingSlideItem";
 import Map from "./components/Map";
-import businessImg1 from "../../assets/images/main/business(1).jpg";
-import businessImg2 from "../../assets/images/main/business(2).jpg";
+import businessImg1 from "../../assets/images/main/robot_automation.jpg";
+import businessImg2 from "../../assets/images/main/vision.jpg";
 import businessImg3 from "../../assets/images/main/logistics.jpg";
-import businessImg4 from "../../assets/images/main/business(3).jpg";
-import businessImg5 from "../../assets/images/main/business(4).jpg";
-import businessImg6 from "../../assets/images/main/business(5).jpg";
+import businessImg4 from "../../assets/images/main/eco.jpg";
+import businessImg5 from "../../assets/images/main/it.jpg";
 import { category } from "../../data/category";
 
 function About() {
@@ -23,7 +22,6 @@ function About() {
     businessImg3,
     businessImg4,
     businessImg5,
-    businessImg6,
   ];
 
   return (
