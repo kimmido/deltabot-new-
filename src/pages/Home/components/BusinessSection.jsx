@@ -6,6 +6,18 @@ function BusinessSection() {
   const route = category.find((item) => item.main.label == "사업소개");
   const subRoutes = route.sub;
   const [isExpanded, setExpanded] = useState(1000);
+  console.log(subRoutes.length);
+  console.log(subRoutes.length % 3);
+  console.log(subRoutes.length / 3);
+  console.log(Math.floor(subRoutes.length / 3));
+
+  const grid = [
+    ["col", "col", "col"],
+    ["col", "col"],
+  ];
+
+  // flex-box 생성
+  let routeIndex = -1;
 
   return (
     <section className="BusinessSection">
@@ -18,35 +30,25 @@ function BusinessSection() {
           사업소개
         </h2>
 
-        <div className={"business__list"}>
-          <div className="flex-box">
-            {subRoutes.map(
-              (sub, idx) =>
-                idx < 3 && ( // 3개씩 flex-box로 묶음
+        <div className="business__list">
+          {grid.map((row, i) => (
+            <div className="flex-box" key={i}>
+              {row.map((col, j) => {
+                routeIndex++;
+                const item = subRoutes[routeIndex];
+
+                return (
                   <BusinessItem
-                    key={sub.label}
-                    sub={sub}
-                    idx={idx}
+                    key={item.label}
+                    sub={item}
+                    idx={routeIndex}
                     isExpanded={isExpanded}
                     setExpanded={setExpanded}
                   />
-                )
-            )}
-          </div>
-          <div className="flex-box">
-            {subRoutes.map(
-              (sub, idx) =>
-                idx >= 3 && ( // 3개씩 flex-box로 묶음
-                  <BusinessItem
-                    key={sub.label}
-                    sub={sub}
-                    idx={idx}
-                    isExpanded={isExpanded}
-                    setExpanded={setExpanded}
-                  />
-                )
-            )}
-          </div>
+                );
+              })}
+            </div>
+          ))}
         </div>
       </div>
     </section>
