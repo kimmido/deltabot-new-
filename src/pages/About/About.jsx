@@ -1,10 +1,31 @@
 import React from "react";
 import PageHeading from "../../components/UI/PageHeading";
 import ValuesSection from "./components/ValuesSection";
-import RollingSwiper from "./components/RollingSwiper";
+import { SwiperSlide } from "swiper/react";
+import RollingSwiper from "../../components/UI/RollingSwiper";
+import RollingSlideItem from "./components/RollingSlideItem";
 import Map from "./components/Map";
+import businessImg1 from "../../assets/images/main/business(1).jpg";
+import businessImg2 from "../../assets/images/main/business(2).jpg";
+import businessImg3 from "../../assets/images/main/logistics.jpg";
+import businessImg4 from "../../assets/images/main/business(3).jpg";
+import businessImg5 from "../../assets/images/main/business(4).jpg";
+import businessImg6 from "../../assets/images/main/business(5).jpg";
+import { category } from "../../data/category";
 
 function About() {
+  const routeBusiness = category.find((item) => item.main.label == "사업소개");
+  const businessSub = routeBusiness.sub;
+
+  const businessImg = [
+    businessImg1,
+    businessImg2,
+    businessImg3,
+    businessImg4,
+    businessImg5,
+    businessImg6,
+  ];
+
   return (
     <div className="About">
       <div className="container">
@@ -46,7 +67,17 @@ function About() {
         </section>
       </div>
 
-      <RollingSwiper />
+      <RollingSwiper>
+        {businessSub.map((item, idx) => (
+          <SwiperSlide key={item.label}>
+            <RollingSlideItem
+              src={businessImg[idx]}
+              alt={item.label}
+              caption={item.label}
+            />
+          </SwiperSlide>
+        ))}
+      </RollingSwiper>
 
       <div className="container">
         <section

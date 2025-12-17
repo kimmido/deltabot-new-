@@ -31,20 +31,6 @@
     }
   }
 
-  .cnt-emph,
-  .cnt-title {
-    text-align: center;
-  }
-
-  .cnt-title {
-    margin-bottom: min(9.4vw, 60px);
-    font-size: 20px;
-
-    @include respondTo(tablet-l) {
-      font-size: $font-size-section-title-md;
-    }
-  }
-
   .cnt-desc {
     margin-top: min(5vw, 50px);
     margin-left: auto;
@@ -60,6 +46,7 @@
     display: block;
     margin-top: min(10vw, 130px);
     font-size: $font-size-display-xs;
+    text-align: center;
 
     @include respondTo(tablet-l) {
       font-size: $font-size-display-lg;

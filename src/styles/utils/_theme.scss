@@ -102,3 +102,14 @@ div[data-theme="vivid-violet"] {
       brightness(94%) contrast(102%);
   }
 }
+
+/* 인디고 네이비 테마 */
+.Business[data-theme="indigo-navy"] {
+  --theme-main: #1a2f67;
+  --theme-main-rgb: 26, 47, 103;
+
+  .img-icon {
+    filter: invert(21%) sepia(32%) saturate(1572%) hue-rotate(197deg)
+      brightness(89%) contrast(93%);
+  }
+}

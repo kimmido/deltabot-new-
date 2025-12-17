@@ -28,6 +28,14 @@ export const category = [
           ],
         },
         {
+          label: "Logistics",
+          path: "logistics",
+          items: [
+            { path: "i-robot", label: "i-Robot" },
+            { path: "automated-sorting-system", label: "자동분류시스템" },
+          ],
+        },
+        {
           label: "Eco-friendly Robot",
           path: "eco-friendly-robot",
           items: [
@@ -35,14 +43,14 @@ export const category = [
             { path: "cleaning-robot", label: "Cleaning Robot" },
           ],
         },
-        {
-          label: "Medical",
-          path: "medical",
-          items: [
-            { path: "pcr", label: "PCR" },
-            { path: "uv", label: "UV" },
-          ],
-        },
+        // {
+        //   label: "Medical",
+        //   path: "medical",
+        //   items: [
+        //     { path: "pcr", label: "PCR" },
+        //     { path: "uv", label: "UV" },
+        //   ],
+        // },
         {
           label: "Information Technology",
           path: "information-technology",
@@ -53,7 +61,7 @@ export const category = [
             { path: "vehicle", label: "Vehicle" },
             { path: "edge-ai", label: "Edge-AI" },
           ],
-        },
+        }
       ],
     },
     {
