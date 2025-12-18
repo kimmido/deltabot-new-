@@ -2,10 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { category } from "../../../data/category";
 
-import backImg1 from "../../../assets/images/main/main_solution(1).jpg";
-import backImg2 from "../../../assets/images/main/main_solution(2).jpg";
-import backImg3 from "../../../assets/images/main/main_solution(3).jpg";
-import backImg4 from "../../../assets/images/main/main_solution(4).jpg";
+import backImg1 from "../../../assets/images/main/main__automation.jpg";
+import backImg2 from "../../../assets/images/main/main__vision.jpg";
+import backImg3 from "../../../assets/images/main/main__smart-factory.jpg";
+import backImg4 from "../../../assets/images/main/main__eco-ai.jpg";
 
 function SolutionSection() {
   const solutionRoutes = category[1].sub;
