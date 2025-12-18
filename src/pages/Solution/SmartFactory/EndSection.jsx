@@ -21,13 +21,13 @@ import img4_6 from "../../../assets/images/solution/smart_factory/end-cnt(4-6).s
 import useScrollReveal from "../../../hooks/useScrollReveal";
 
 export default function EndSection() {
-  useScrollReveal(".grid-block__item", {
+  useScrollReveal(".cnt04 .grid-block__item", {
     trigger: "#trigger",
     stagger: 400, // 요소 순차 등장 간격
-    threshold: 0.2,
     once: false,
-    duration: 600,
+    duration: 500,
     timingFunction: "ease",
+    rootMargin: "-10%",
   });
 
   return (
