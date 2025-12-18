@@ -13,7 +13,7 @@ function IntroSection() {
   return (
     <div className="IntroSection">
       <div className="cnt01 container">
-        <p className="intro-desc">
+        <div className="intro-desc">
           <p>
             정확한 진단과 최적의 설계를 기반으로, 정밀한 제작·설치부터 철저한
             테스트, 전문 교육, 그리고 체계적인 유지보수에 이르기까지 당사는 전
@@ -26,7 +26,7 @@ function IntroSection() {
             고객의 경쟁력을 한층 높이는 신뢰받는 산업 파트너로 자리매김하고
             있습니다.
           </p>
-        </p>
+        </div>
       </div>
 
       <div className={`cnt02 ContenttBlock container`}>
