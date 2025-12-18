@@ -125,8 +125,9 @@ export default function EndSection() {
                 <BasicSlider
                   slides={cnt03.slides}
                   loop={true}
+                  allowTouchMove={false}
                   autoplay={{
-                    delay: 2600,
+                    delay: 5000,
                     disableOnInteraction: true,
                   }}
                 />
