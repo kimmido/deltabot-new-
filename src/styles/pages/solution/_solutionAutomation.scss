@@ -144,7 +144,7 @@
       }
 
       .app__item {
-        @include flexBox(row, 0, center, space-between, wrap);
+        @include flexBox(row, 0, stretch, space-between, wrap);
         margin-top: min(10.4vw, 74px);
 
         @include respondTo(tablet-s) {
@@ -176,6 +176,7 @@
 
         .con-box {
           margin-top: $spacing-lg;
+          align-content: center;
 
           @include respondTo(tablet-s) {
             margin-top: 0;
