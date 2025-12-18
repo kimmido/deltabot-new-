@@ -21,11 +21,13 @@ import img4_6 from "../../../assets/images/solution/smart_factory/end-cnt(4-6).s
 import useScrollReveal from "../../../hooks/useScrollReveal";
 
 export default function EndSection() {
-  useScrollReveal(".fade-up", {
+  useScrollReveal(".grid-block__item", {
     trigger: "#trigger",
     stagger: 400, // 요소 순차 등장 간격
     threshold: 0.2,
     once: false,
+    duration: 600,
+    timingFunction: "ease",
   });
 
   return (
@@ -138,7 +140,7 @@ export default function EndSection() {
           <div className="sub-box cnt04" id="trigger">
             <ul className="grid-block grid-block--three-col">
               {cnt04.map((item, idx) => (
-                <li key={idx} className="grid-block__item fade-up">
+                <li key={idx} className="grid-block__item" data-usr="fade-up">
                   {item}
                 </li>
               ))}

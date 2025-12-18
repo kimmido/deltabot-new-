@@ -8,38 +8,46 @@ import img6 from "../../../assets/images/solution/automation-app(6).jpg";
 import img7 from "../../../assets/images/solution/automation-app(7).jpg";
 import img8 from "../../../assets/images/solution/automation-app(8).jpg";
 import img9 from "../../../assets/images/solution/automation-app(9).jpg";
+import useScrollReveal from "../../../hooks/useScrollReveal";
 
 function ApplicationsSection() {
-  const aosProps = {
-    "data-aos-duration": "900",
-    "data-aos-easing": "linear",
-  };
+  useScrollReveal(".cnt-title", {
+    threshold: 0,
+    rootMargin: "-100px",
+    once: false,
+    duration: 300,
+    timingFunction: "linear",
+  });
+  useScrollReveal(".con-box", {
+    threshold: 0,
+    rootMargin: "-80px",
+    once: false,
+    duration: 600,
+    timingFunction: "linear",
+  });
+  useScrollReveal(".img-box > img", {
+    threshold: 0.2,
+    rootMargin: "-80px",
+    once: false,
+    duration: 600,
+    timingFunction: "linear",
+  });
 
   return (
     <section className="ApplicationsSection">
-      <h3
-        className="cnt-title"
-        data-aos="fade-up"
-        {...aosProps}
-        data-aos-offset="50"
-      >
+      <h3 className="cnt-title" data-usr="fade-up">
         APPLICATIONS
       </h3>
       <ul>
         {data.map((data) => (
           <li key={data.title} className="app__item">
             <div className="img-box">
-              <img
-                src={data.img}
-                alt={data.title}
-                data-aos="zoom-out-custom"
-                {...aosProps}
-              />
+              <img src={data.img} alt={data.title} data-usr="zoom-out" />
             </div>
-            <div className="con-box" data-aos="fade-up-custom" {...aosProps}>
+            <div className="con-box" data-usr="fade-up">
               <h4>
                 <span>{data.title}</span>
-                <span className="h--s">{data.subTitle}</span>
+                <span>{data.subTitle}</span>
               </h4>
               <ul className="bullets">
                 {data.texts.map((text, idx) => (

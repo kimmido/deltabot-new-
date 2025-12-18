@@ -22,12 +22,23 @@ import img5_slide1 from "../../../assets/images/solution/recycle-cnt5-slide1.svg
 import img5_slide2 from "../../../assets/images/solution/recycle-cnt5-slide2.svg";
 import img5_slide3 from "../../../assets/images/solution/recycle-cnt5-slide3.svg";
 import img5_slide4 from "../../../assets/images/solution/recycle-cnt5-slide4.svg";
+import useScrollReveal from "../../../hooks/useScrollReveal";
 
 function RecyclingRobotSection() {
-  const aosProps = {
-    "data-aos-duration": "900",
-    "data-aos-easing": "linear",
-  };
+  useScrollReveal(".texts", {
+    threshold: 0,
+    rootMargin: "-80px",
+    once: false,
+    duration: 600,
+    timingFunction: "linear",
+  });
+  useScrollReveal(".image", {
+    threshold: 0.2,
+    rootMargin: "-80px",
+    once: false,
+    duration: 600,
+    timingFunction: "linear",
+  });
 
   return (
     <section className="RecyclingRobotSection section">
@@ -118,17 +129,9 @@ function RecyclingRobotSection() {
           {cnt06.map((item, i) => (
             <article key={item.title} className="flex-container">
               <div className="flex-l">
-                <div
-                  className={`image i${i + 1}`}
-                  data-aos="zoom-out-custom"
-                  {...aosProps}
-                ></div>
+                <div className={`image i${i + 1}`} data-usr="zoom-out"></div>
               </div>
-              <div
-                className="texts flex-r"
-                data-aos="fade-up-custom"
-                {...aosProps}
-              >
+              <div className="texts flex-r" data-usr="fade-up">
                 <strong className="title">
                   <em className="num">{`0${i + 1}`}</em>
                   {item.title}
