@@ -5,7 +5,7 @@ import ContenttBlock from "../components/ContenttBlock";
 
 import img2 from "../../../assets/images/solution/automation(2).svg";
 import img2_2 from "../../../assets/images/solution/automation(2-2).png";
-import img3 from "../../../assets/images/solution/automation(3).svg";
+import img3 from "../../../assets/images/solution/automation(3).jpg";
 import img4 from "../../../assets/images/solution/automation(4).jpg";
 import img5 from "../../../assets/images/solution/automation(5).svg";
 
@@ -42,7 +42,6 @@ function IntroSection() {
         size={1100}
         title={"로봇 자동화 프로세스"}
       >
-        <svg src={img3}></svg>
         <img src={img3} alt="로봇 자동화 프로세스" />
         <p className="cnt-desc">
           뎉타봇은 로봇, 비전, 컨베이어, AI 제어 등 첨단 기술 기반의 자동화 라인
@@ -141,11 +140,11 @@ const cnt06 = {
       poster: "/images/video_poster/solution-automation(2).jpg",
       effects: [
         {
-          text: "분당 80개 처리",
+          text: "분당 125개 처리",
           iconName: "icon_timer",
         },
         {
-          text: "로봇 1대당 인력 4명 절감 효과",
+          text: "로봇 1대당 인력 3명 절감 효과",
           iconName: "icon_labors",
         },
         {
@@ -165,7 +164,7 @@ const cnt06 = {
       poster: "/images/video_poster/solution-automation(3).jpg",
       effects: [
         {
-          text: "분당 85개 처리",
+          text: "분당 75개 처리",
           iconName: "icon_timer",
         },
         {
@@ -189,11 +188,11 @@ const cnt06 = {
       poster: "/images/video_poster/solution-automation(4).jpg",
       effects: [
         {
-          text: "분당 85개 처리",
+          text: "분당 12개 처리",
           iconName: "icon_timer",
         },
         {
-          text: "로봇 1대당 인력 3명 절감 효과",
+          text: "로봇 1대당 인력 2명 절감 효과",
           iconName: "icon_labors",
         },
         {
@@ -213,11 +212,11 @@ const cnt06 = {
       poster: "/images/video_poster/solution-automation(5).jpg",
       effects: [
         {
-          text: "분당 75개 처리",
+          text: "분당 60개 처리",
           iconName: "icon_timer",
         },
         {
-          text: "로봇 1대당 인력 2명 절감 효과",
+          text: "로봇 1대당 인력 1.5명 절감 효과",
           iconName: "icon_labors",
         },
         {
