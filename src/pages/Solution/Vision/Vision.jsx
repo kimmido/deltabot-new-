@@ -56,7 +56,7 @@ const tabs = [
   { id: "machine", label: "머신비전" },
   { id: "thermal", label: "열화상" },
   { id: "spectral", label: "초분광" },
-  { id: "products", label: "제품 보기" },
+  { id: "products", label: "제품 소개" },
 ];
 
 const products = [

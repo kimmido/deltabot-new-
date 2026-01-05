@@ -51,7 +51,7 @@ export default function Automation() {
 const tabs = [
   { id: "intro", label: "자동화 솔루션" },
   { id: "section1", label: "활용분야" },
-  { id: "products", label: "제품 보기" },
+  { id: "products", label: "제품 소개" },
 ];
 
 const products = [

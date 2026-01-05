@@ -49,7 +49,7 @@ const tabs = [
   { id: "intro", label: "Eco-AI 솔루션" },
   { id: "cleaning", label: "수면 정화 로봇" },
   { id: "recycling", label: "재활용 로봇" },
-  { id: "products", label: "제품 보기" },
+  { id: "products", label: "제품 소개" },
 ];
 
 const products = [
