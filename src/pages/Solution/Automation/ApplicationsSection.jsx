@@ -1,13 +1,13 @@
 import React from "react";
-import img1 from "../../../assets/images/solution/automation-app(1).jpg";
-import img2 from "../../../assets/images/solution/automation-app(2).jpg";
-import img3 from "../../../assets/images/solution/automation-app(3).jpg";
-import img4 from "../../../assets/images/solution/automation-app(4).jpg";
-import img5 from "../../../assets/images/solution/automation-app(5).jpg";
-import img6 from "../../../assets/images/solution/automation-app(6).jpg";
-import img7 from "../../../assets/images/solution/automation-app(7).jpg";
-import img8 from "../../../assets/images/solution/automation-app(8).jpg";
-import img9 from "../../../assets/images/solution/automation-app(9).jpg";
+import img1 from "../../../assets/images/solution/automation/automation-app(1).jpg";
+import img2 from "../../../assets/images/solution/automation/automation-app(2).jpg";
+import img3 from "../../../assets/images/solution/automation/automation-app(3).jpg";
+import img4 from "../../../assets/images/solution/automation/automation-app(4).jpg";
+import img5 from "../../../assets/images/solution/automation/automation-app(5).jpg";
+import img6 from "../../../assets/images/solution/automation/automation-app(6).jpg";
+import img7 from "../../../assets/images/solution/automation/automation-app(7).jpg";
+import img8 from "../../../assets/images/solution/automation/automation-app(8).jpg";
+import img9 from "../../../assets/images/solution/automation/automation-app(9).jpg";
 import useScrollReveal from "../../../hooks/useScrollReveal";
 
 function ApplicationsSection() {

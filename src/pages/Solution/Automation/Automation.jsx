@@ -7,11 +7,11 @@ import ProductLines from "../components/ProductLines";
 import ScrollToPosition from "../../../components/common/ScrollToPosition";
 import IntroSection from "./IntroSection";
 
-import img_products1 from "../../../assets/images/solution/automation-products(1).jpg";
-import img_products2 from "../../../assets/images/solution/automation-products(2).jpg";
-import img_products3 from "../../../assets/images/solution/automation-products(3).jpg";
-import img_products4 from "../../../assets/images/solution/automation-products(4).jpg";
-import img_products5 from "../../../assets/images/solution/automation-products(5).jpg";
+import img_products1 from "../../../assets/images/solution/automation/automation-products(1).jpg";
+import img_products2 from "../../../assets/images/solution/automation/automation-products(2).jpg";
+import img_products3 from "../../../assets/images/solution/automation/automation-products(3).jpg";
+import img_products4 from "../../../assets/images/solution/automation/automation-products(4).jpg";
+import img_products5 from "../../../assets/images/solution/automation/automation-products(5).jpg";
 
 export default function Automation() {
   const { sectionRefs, getRef } = useScrollTabsRefs(tabs);

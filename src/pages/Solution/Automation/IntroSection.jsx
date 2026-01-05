@@ -3,11 +3,11 @@ import StepFlow from "../components/StepFlow";
 import AutomationVideos from "./components/AutomationVideos";
 import ContenttBlock from "../components/ContenttBlock";
 
-import img2 from "../../../assets/images/solution/automation(2).svg";
-import img2_2 from "../../../assets/images/solution/automation(2-2).png";
-import img3 from "../../../assets/images/solution/automation(3).jpg";
-import img4 from "../../../assets/images/solution/automation(4).jpg";
-import img5 from "../../../assets/images/solution/automation(5).svg";
+import img2 from "../../../assets/images/solution/automation/automation(2).svg";
+import img2_2 from "../../../assets/images/solution/automation/automation(2-2).jpg";
+import img3 from "../../../assets/images/solution/automation/automation(3).jpg";
+import img4 from "../../../assets/images/solution/automation/automation(4).jpg";
+import img5 from "../../../assets/images/solution/automation/automation(5).svg";
 
 function IntroSection() {
   return (
