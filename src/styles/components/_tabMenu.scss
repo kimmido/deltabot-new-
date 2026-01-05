@@ -1,11 +1,11 @@
 .TabMenu {
   position: sticky;
-  top: $header-sm + 2px;
+  top: $header-sm;
   margin-top: 20px;
   z-index: $z-index-floating;
 
   @include respondTo(tablet-l) {
-    top: $header-md + 2px;
+    top: $header-md;
     margin-top: 24px;
   }
 
