@@ -1,7 +1,11 @@
 .TabMenu {
+  position: sticky;
+  top: $header-sm + 2px;
   margin-top: 20px;
+  z-index: $z-index-floating;
 
   @include respondTo(tablet-l) {
+    top: $header-md + 2px;
     margin-top: 24px;
   }
 
@@ -64,8 +68,11 @@
       .TabMenu__label {
         display: inline-block;
         transition: all 0.3s;
-        font-size: 1em;
         font-weight: inherit;
+
+        @include respondTo(pc-s) {
+          font-size: calc(1em + 2px);
+        }
       }
     }
   }

@@ -15,7 +15,8 @@ function TabMenu({ routes, currentCategory, currentPath }) {
           <div
             className="TabMenu__box"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-offset="0"
+            data-aos-once="true"
           >
             {routes.items.map((route) => (
               <button
