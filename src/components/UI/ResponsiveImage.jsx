@@ -1,4 +1,4 @@
-import { BREAKPOINTS } from "@/data/breakpoints";
+import { BREAKPOINTS } from "@data/breakpoints";
 
 export default function ResponsiveImage({
   srcMobile = "",

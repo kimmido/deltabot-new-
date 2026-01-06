@@ -23,6 +23,9 @@ const SolutionVision = lazy(() => import("./pages/Solution/Vision/Vision"));
 const SolutionSmartFactory = lazy(() =>
   import("./pages/Solution/SmartFactory/SmartFactory")
 );
+const SolutionSmartLogistics = lazy(() =>
+  import("./pages/Solution/Logistics/Logistics")
+);
 
 function App() {
   useEffect(() => {
@@ -127,6 +130,10 @@ function App() {
             <Route
               path="smart-factory-solution"
               element={<SolutionSmartFactory />}
+            />
+            <Route
+              path="logistics-solution"
+              element={<SolutionSmartLogistics />}
             />
 
             <Route path="about" element={<About />} />

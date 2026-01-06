@@ -65,6 +65,14 @@
     }
   }
 
+  &--four-col {
+    grid-template-columns: repeat(2, 1fr);
+
+    @include respondTo(tablet-s) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
   &__thumb {
     overflow: hidden;
 

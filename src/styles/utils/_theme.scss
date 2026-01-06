@@ -7,10 +7,10 @@
   --theme-point-background: #f2f7ff;
 
   --color-main: var(--theme-main);
-  --color-point: var(--theme-main);
+  --color-point: var(--theme-point);
   --color-highlight: var(--theme-highlight);
   --color-active: var(--theme-main);
-  --color-point-background: var(--color-point-background);
+  --color-point-background: var(--theme-point-background);
 
   --theme-gradient-rgb: 124, 166, 243;
   --gradient: linear-gradient(
@@ -19,6 +19,20 @@
     rgba(var(--theme-gradient-rgb), 0.2) 60%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+
+/* Trust Sky Blue 테마 */
+div[data-theme="trust-sky-blue"] {
+  --theme-main: rgb(105, 158, 210); /* #699ed2 */
+  --theme-gradient-rgb: 105, 158, 210;
+  --theme-point: rgb(105, 158, 210);
+  --theme-highlight: rgb(105, 158, 210);
+  --theme-point-background: #eff6ff;
+
+  .img-icon {
+    filter: invert(45%) sepia(20%) saturate(900%) hue-rotate(185deg)
+      brightness(98%) contrast(95%);
+  }
 }
 
 // 페트롤 블루 계열 테마
