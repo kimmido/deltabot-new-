@@ -33,7 +33,7 @@ export default function FactorySection() {
         </p>
       </section>
 
-      <section className="cnt02 bg-section-light">
+      <section className="cnt02 bg-section-light bg-section--py-lg">
         <div className="container container--m">
           <h3 className="cnt-title">스마트 공장 구축을 위한 핵심 전략</h3>
           <p className="cnt-desc">

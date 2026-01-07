@@ -10,13 +10,27 @@
     width: 100%;
   }
 
+  // 헬퍼
   .bg-section-light {
-    @include fullBackground(var(--color-point-background));
+    @include fullBackground(var(--theme-point-background));
+  }
+
+  .bg-section--py-lg {
     padding: $gap-lg 0 $gap-lg 0;
     margin-top: $gap-lg;
     margin-bottom: $gap-lg;
   }
 
+  .cnt-title {
+    margin-bottom: $gap-sm;
+  }
+
+  .cnt-desc {
+    text-align: center;
+    margin-bottom: $gap-sm;
+  }
+
+  // 컴포넌트
   // 각 섹션 나누기 배너
   .SectionBanner {
     height: 34vw;
@@ -55,6 +69,41 @@
     }
   }
 
+  .CalloutBox {
+    padding: $spacing-content-sm;
+    background-color: #fff;
+    border-radius: $radius-card-md;
+    text-align: center;
+    border: 1px solid var(--theme-point);
+
+    @include respondTo(tablet-l) {
+      // font-size: 1.4em;
+    }
+
+    &__title {
+      color: #1a2f67;
+      font-size: 1.2em;
+    }
+
+    &__desc {
+      margin-top: min(2vw, 20px);
+      margin-bottom: min(2vw, 20px);
+    }
+
+    &__actions {
+      @include flexBox(row, min(0.8vw, 12px), stretch, center);
+
+      li {
+        color: var(--color-point);
+        // font-size: 1.1em;
+        background-color: var(--theme-point-background);
+        border-radius: 8px;
+        padding: 8px 12px;
+        align-content: center;
+      }
+    }
+  }
+
   // 로지스틱 소개
   .IntroSection {
     .cnt02 {
@@ -77,14 +126,13 @@
       &__list {
         display: grid;
         justify-content: center;
-        grid-auto-columns: max-content;
         padding: 8px 12px 11px;
-        border: 1px solid var(--color-point);
-        background-color: var(--color-point-background);
+        border: 1px solid var(--theme-point);
+        background-color: var(--theme-point-background);
         border-radius: $radius-card-md;
 
         li {
-          color: var(--color-point);
+          color: var(--theme-point);
         }
       }
     }
@@ -104,18 +152,20 @@
             transition: all 0.3s ease;
           }
 
-          &:nth-of-type(1),
-          &:nth-of-type(2) {
-            position: relative;
+          @include respondTo(pc-s) {
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+              position: relative;
 
-            &::after {
-              @include pseudoDefault(rgba(0, 0, 0, 0), 40px);
-              top: 50%;
-              left: calc(100% + 30px);
-              background-image: url("@components/icons/icon_chevron_double.svg");
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: contain;
+              &::after {
+                @include pseudoDefault(rgba(0, 0, 0, 0), 40px);
+                top: 50%;
+                left: calc(100% + 30px);
+                background-image: url("@components/icons/icon_chevron_double.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+              }
             }
           }
         }

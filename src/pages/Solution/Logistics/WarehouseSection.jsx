@@ -2,6 +2,7 @@ import React from "react";
 import SectionBanner from "./components/SectionBanner";
 import { HighlightText } from "@components/UI/HighlightText";
 import VideoDefault from "@components/UI/VideoDefault";
+import CalloutBox from "./components/CalloutBox";
 
 import img0 from "@assets/images/solution/logistics/warehouse-banner.jpg";
 import img2_1 from "@assets/images/solution/logistics/warehouse-cnt(2-1).svg";
@@ -29,7 +30,7 @@ export default function WarehouseSection() {
         </p>
       </section>
 
-      <section className="cnt02 bg-section-light">
+      <section className="cnt02 bg-section-light bg-section--py-lg">
         <div className="container">
           <h3 className="cnt-title">
             재고, 공간, 인력 효율을 위한스마트 창고 시스템 구축
@@ -42,14 +43,23 @@ export default function WarehouseSection() {
               </li>
             ))}
           </ul>
+          <CalloutBox
+            title="데이터 기반 스마트 물류 솔루션: 공정 최적화부터 선제적 대응까지"
+            description="WMS(창고 관리 시스템) 도입을 통해 재고 데이터와 작업 프로세스를 표준화하고, 인력 배치의 유연성을 확보하여 운영의 복잡성을 해소합니다. 수요 예측 기반의 선제적 대응 체계를 구축함으로써 창고 공간 활용을 극대화하고 물류 운영의 효율을 완성합니다."
+            actions={[
+              "공정 최적화 및 검토",
+              "유형별 프로세스 의사결정",
+              "운영 복잡성 해소 및 대안",
+            ]}
+          />
         </div>
       </section>
 
       <section className="cnt3">
         <div className="container">
-          <h3 className="cnt-title">스마트 공장 프로세스</h3>
+          <h3 className="cnt-title">스마트 창고 프로세스</h3>
           <VideoDefault
-            src="/videos/page/solution-logistics(1).mp4"
+            src="/videos/page/solution-logistics(2).mp4"
             controls={false}
             loop={true}
             autoPlay={true}

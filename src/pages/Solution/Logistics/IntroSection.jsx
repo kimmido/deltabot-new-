@@ -25,11 +25,9 @@ export default function IntroSection() {
       <section className="section cnt02 bg-section--py-lg">
         <div className="container">
           <h3 className="cnt-title">솔루션 도입효과</h3>
-          <div className="cnt-desc">
-            <p>
-              효율, 안전, 유연 — 물류의 새로운 기준을 제시하는 차세대 솔루션
-            </p>
-          </div>
+          <p className="cnt-desc">
+            효율, 안전, 유연 — 물류의 새로운 기준을 제시하는 차세대 솔루션
+          </p>
           <div className="grid-block grid-block--four-col">
             <img src={img01_1} alt="운영 효율성 극대화" />
             <img src={img01_2} alt="안전성 최고 수준 확보" />
