@@ -1,16 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { category } from "../../../data/category";
+import { category } from "@data/category";
 
-import backImg1 from "../../../assets/images/main/main__automation.jpg";
-import backImg2 from "../../../assets/images/main/main__vision.jpg";
-import backImg3 from "../../../assets/images/main/main__smart-factory.jpg";
-import backImg4 from "../../../assets/images/main/main__eco-ai.jpg";
+import backImg1 from "@assets/images/main/main__automation.jpg";
+import backImg2 from "@assets/images/main/main__vision.jpg";
+import backImg3 from "@assets/images/main/main_logistics.jpg";
+import backImg4 from "@assets/images/main/main__smart-factory.jpg";
+import backImg5 from "@assets/images/main/main__eco-ai.jpg";
 
 function SolutionSection() {
   const solutionRoutes = category[1].sub;
-  const imgList = [backImg1, backImg2, backImg3, backImg4];
-
+  const imgList = [backImg1, backImg2, backImg3, backImg4, backImg5];
   const aosType = ["fade-right", "fade-up", "fade-left"];
 
   return (
