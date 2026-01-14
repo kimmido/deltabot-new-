@@ -9,9 +9,10 @@ import WarehouseSection from "./WarehouseSection";
 import FulfillmentSection from "./FulfillmentSection";
 import ProductLines from "../components/ProductLines";
 
-import img_products1 from "@assets/images/solution/vision-products(1).jpg";
-import img_products2 from "@assets/images/solution/vision-products(2).jpg";
-import img_products3 from "@assets/images/solution/vision-products(3).jpg";
+import img_products1 from "@assets/images/solution/logistics/logistics-products(1).jpg";
+import img_products2 from "@assets/images/solution/logistics/logistics-products(2).jpg";
+import img_products3 from "@assets/images/solution/logistics/logistics-products(3).jpg";
+import img_products4 from "@assets/images/solution/logistics/logistics-products(4).jpg";
 
 export default function Logistics() {
   const { sectionRefs, getRef } = useScrollTabsRefs(tabs);
@@ -61,30 +62,44 @@ const tabs = [
 
 const products = [
   {
-    label: "머신비전 카메라",
+    label: "i ROBOT-M",
     img: img_products1,
-    path: `machine-vision`,
+    path: "i-robot",
     texts: [
-      "다양한 산업 환경에서 발생하는 시각 처리 문제를 해결하기 위해  설계된 AI 기반 머신 비전 시스템.",
-      "딥러닝과 2D/3D 비전 알고리즘을 기반으로 다양한 작업을 정밀하고 안정적으로 수행하며, 사용자의 편의성과 확장성을 모두 고려한 시스템.",
+      "첨단 4D 비전 및 레이더 기반의 자율 구동:",
+      "다양한 물품과 규격에 대한 높은 적합성:",
+      "현장 조건 변화에 유연한 확장성",
     ],
   },
   {
-    label: "열화상 카메라",
+    label: "i ROBOT-P",
     img: img_products2,
-    path: `thermal-camera`,
+    path: "i-robot",
     texts: [
-      "열화상카메라는 적외선 기반의 비접촉식 온도 감지 기술을 활용하여 사람이나 설비의 온도를 실시간으로 측정하고 모니터링 가능.",
-      "AI 비전 기술과 결합되어 자동으로 고온 이상 징후를 탐지하고, 위험 요인을 신속하게 경고함으로써 안전성과 효율성을 동시에 향상",
+      "플랫폼 및 지능형 코봇을 통해 맞춤형 협업과 원격 패키징을 지원합니다.",
+      "초정밀 지능형 코봇은 신속성, 고정밀, 청결 등의 강점을 바탕으로 물류 및 재고 관리 분야에서 높은 수요를 보입니다.",
+      "코봇은 자율 주행 기술과 결합하여 고난도 작업 및 정밀 제어가 가능합니다.",
     ],
   },
   {
-    label: "초분광 카메라",
+    label: "i ROBOT-X",
     img: img_products3,
-    path: `spectral-camera`,
+    path: "i-robot",
     texts: [
-      "초분광카메라는 성분 분석, 이물질 검출, 품질 분류, 정량 분석 등을 비접촉 방식으로 수행",
-      "AI 기반 스펙트럼 분석을 통해 고정밀 자동 판단이 가능",
+      "물류 특화 고하중 로봇: 물류 시나리오를 위해 설계된 고하중을 다루는 휴머노이드 로봇입니다.",
+      "엔드 투 엔드 자율 학습: 스스로 기술을 습득하고 성능을 점진적으로 개선합니다.",
+      "다양한 산업 적용: 물류, 제조, 의료 등 폭넓은 분야에서 자동화를 증진합니다.",
+    ],
+  },
+  {
+    label: "DWS",
+    img: img_products4,
+    path: "automated-sorting-system",
+    texts: [
+      "동적 바코드 판독, 무게 측정 및 용량 감지 장비(DWS)",
+      "융합된 첨단 머신 비전 기술로 바코드/계량/부피를 동시 측정합니다.",
+      "뛰어난 처리 속도 및 데이터 수집 성능으로 시간당 7,200개 이상 처리하여 데이터 수집의 효율성을 높입니다.",
+      "고성능 바코드 판독 시스템으로 Code 128, EAN 등을 포함한 광범위한 바코드 유형을 판독합니다.",
     ],
   },
 ];
