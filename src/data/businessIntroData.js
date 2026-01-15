@@ -393,7 +393,7 @@ const businessIntroData = {
       images: [`card`],
       extraText: '설비 과열, 누전, 체온 이상 등 온도 기반 이상 탐지 비접촉식 열 감지로 예방 진단 및 안전 모니터링 실현',
       link: {
-        label: "열화상 카메라 솔루션 자세히 보기",
+        label: "열화상 솔루션 자세히 보기",
         path: "/vision-solution#thermal",
         posId: "thermal"
       },
@@ -423,7 +423,7 @@ const businessIntroData = {
         ],
       images: [`default`, `card`],
       link: {
-        label: "초분광 카메라 솔루션 자세히 보기",
+        label: "초분광 솔루션 자세히 보기",
         path: "/vision-solution",
         posId: "spectral"
       },
