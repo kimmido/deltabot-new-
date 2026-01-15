@@ -539,11 +539,11 @@ const businessIntroData = {
             title: '로봇이 컨테이너의 물류를 하차하고 팔레트위에 순서대로 적재',
           },
         ],
-        // link: {
-        //   label: "i-Robot 솔루션 자세히 보기",
-        //   path: "/eco-ai-solution",
-        //   posId: "cleaning"
-        // },
+        link: {
+          label: "i-Robot 솔루션 자세히 보기",
+          path: "/logistics-solution",
+          posId: false
+        },
       } 
     },
     
@@ -592,11 +592,11 @@ const businessIntroData = {
             title: '휠소타 분류',
           },
         ],
-        // link: {
-        //   label: "자동물류 시스템 솔루션 자세히 보기",
-        //   path: "/eco-ai-solution",
-        //   posId: "cleaning"
-        // },
+         link: {
+          label: "자동분류시스템 솔루션 자세히 보기",
+          path: "/logistics-solution",
+          posId: false
+        },
       } 
     },
 
