@@ -58,7 +58,7 @@ export default function FulfillmentSection() {
         <div className="container">
           <h3 className="cnt-title">스마트 물류 프로세스</h3>
           <VideoDefault
-            src="/videos/page/solution-logistics(1).mp4"
+            src="/videos/page/solution-logistics(3).mp4"
             controls={false}
             loop={true}
             autoPlay={true}
