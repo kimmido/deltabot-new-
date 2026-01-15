@@ -9,6 +9,8 @@ import ProductListItem from "./ProductListItem";
 import Modal from "../../../components/UI/Modal";
 
 function ProductCatalog({ currentTab, productData = [], routes }) {
+  if (productData.length === 0) return null;
+
   const [currentIdx, setCurrentIdx] = useState(0);
   const [prodIdx, setProdIdx] = useState(0);
   const [isModalOpen, setModalOpen] = useState(false);
