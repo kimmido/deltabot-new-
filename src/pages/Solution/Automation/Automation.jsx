@@ -95,7 +95,7 @@ const products = [
   {
     label: "AMR",
     img: img_products5,
-    path: `amr`,
+    path: `palletizing`,
     texts: [
       "스스로 주변 환경을 인식하고, 경로를 계획해서 목적지까지 이동할 수 있는 자율주행 이동 로봇",
       "공장, 창고, 병원, 사무실 등 다양한 환경에서 물건을 운반하거나 특정 작업을 수행할 수 있도록 설계된 로봇",
