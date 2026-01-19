@@ -7,10 +7,10 @@
   --theme-point-background: #f2f7ff;
 
   --color-main: var(--theme-main);
-  --color-point: var(--theme-main);
+  --color-point: var(--theme-point);
   --color-highlight: var(--theme-highlight);
   --color-active: var(--theme-main);
-  --color-point-background: var(--color-point-background);
+  --color-point-background: var(--theme-point-background);
 
   --theme-gradient-rgb: 124, 166, 243;
   --gradient: linear-gradient(
@@ -21,10 +21,25 @@
   );
 }
 
+/* Trust Sky Blue 테마 */
+[data-theme="trust-sky-blue"] {
+  --theme-main: rgb(105, 158, 210); /* #699ed2 */
+  --theme-gradient-rgb: 105, 158, 210;
+  --theme-point: rgb(105, 158, 210);
+  --theme-highlight: rgb(105, 158, 210);
+  --theme-point-background: #eff6ff;
+
+  .img-icon {
+    filter: invert(45%) sepia(20%) saturate(900%) hue-rotate(185deg)
+      brightness(98%) contrast(95%);
+  }
+}
+
 // 페트롤 블루 계열 테마
-div[data-theme="petrol-blue"] {
+[data-theme="petrol-blue"] {
   --theme-main: rgb(38, 82, 122);
   --theme-gradient-rgb: 38, 82, 122;
+  --theme-highlight: rgb(38, 82, 122);
   --theme-point: rgb(81, 158, 179);
 
   .img-icon {
@@ -34,7 +49,7 @@ div[data-theme="petrol-blue"] {
 }
 
 /* 스카이 블루 테마 */
-div[data-theme="sky-blue"] {
+[data-theme="sky-blue"] {
   // 협동로봇
   --theme-main: #19b0fb;
   --theme-gradient-rgb: 25, 176, 251;
@@ -46,7 +61,7 @@ div[data-theme="sky-blue"] {
 }
 
 /* 청록 페이지 테마 */
-div[data-theme="vivid-cyan"] {
+[data-theme="vivid-cyan"] {
   // 수직다관절
   --theme-main: rgb(0, 153, 204);
   --theme-gradient-rgb: 0, 153, 204;
@@ -58,7 +73,7 @@ div[data-theme="vivid-cyan"] {
 }
 
 /* 로얄블루 테마 */
-div[data-theme="royal-blue"] {
+[data-theme="royal-blue"] {
   // 델타로봇
   --theme-main: #0052f2;
   --theme-gradient-rgb: 0, 82, 242;
@@ -70,7 +85,7 @@ div[data-theme="royal-blue"] {
 }
 
 /* 블루퍼플 테마 */
-div[data-theme="blue-purple"] {
+[data-theme="blue-purple"] {
   --theme-main: #3e30f4;
   --theme-gradient-rgb: 62, 48, 244;
 
@@ -81,7 +96,7 @@ div[data-theme="blue-purple"] {
 }
 
 /* 틸 블루 테마 */
-div[data-theme="teal-blue"] {
+[data-theme="teal-blue"] {
   // amr
   --theme-main: #49919d;
   --theme-gradient-rgb: 73, 145, 157;
@@ -93,7 +108,7 @@ div[data-theme="teal-blue"] {
 }
 
 /* 비비드 바이올렛 테마 */
-div[data-theme="vivid-violet"] {
+[data-theme="vivid-violet"] {
   --theme-main: #7850f2;
   --theme-gradient-rgb: 120, 80, 242;
 
@@ -104,7 +119,7 @@ div[data-theme="vivid-violet"] {
 }
 
 /* 인디고 네이비 테마 */
-.Business[data-theme="indigo-navy"] {
+[data-theme="indigo-navy"] {
   --theme-main: #1a2f67;
   --theme-main-rgb: 26, 47, 103;
 

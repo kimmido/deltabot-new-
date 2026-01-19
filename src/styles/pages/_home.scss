@@ -240,14 +240,17 @@
   .list-area {
     color: #fff;
     background-color: #000;
+    $gap: 32px;
+    $col: 3;
 
     .item-list {
       position: relative;
-      @include flexBox(column, 32px, stretch, space-between);
+      @include flexBox(column, $gap, stretch, stretch);
       padding-top: 22px;
 
       @include respondTo(tablet-s) {
         flex-direction: row;
+        flex-wrap: wrap;
       }
 
       @include respondTo(pc-s) {
@@ -258,7 +261,8 @@
         height: 240px;
 
         @include respondTo(tablet-s) {
-          flex: 1;
+          // flex: 1;
+          width: calc((100% - ($col - 1) * $gap) / $col);
           aspect-ratio: 11 / 13;
           height: auto;
         }

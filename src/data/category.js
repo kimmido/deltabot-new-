@@ -79,6 +79,10 @@ export const category = [
           path: "vision-solution",
         },
         {
+          label: "Logistics",
+          path: "logistics-solution",
+        },
+        {
           label: "Smart Factory",
           path: "smart-factory-solution",
         },
