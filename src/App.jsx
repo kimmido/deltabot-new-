@@ -15,16 +15,16 @@ const Business = lazy(() => import("./pages/Business/Business"));
 const Logistics = lazy(() => import("./pages/Business/Logistics.jsx"));
 const ComingSoon = lazy(() => import("./pages/Business/ComingSoon"));
 
-const SolutionAutomation = lazy(() =>
-  import("./pages/Solution/Automation/Automation")
+const SolutionAutomation = lazy(
+  () => import("./pages/Solution/Automation/Automation"),
 );
 const SolutionEcoAI = lazy(() => import("./pages/Solution/EcoAI/EcoAI"));
 const SolutionVision = lazy(() => import("./pages/Solution/Vision/Vision"));
-const SolutionSmartFactory = lazy(() =>
-  import("./pages/Solution/SmartFactory/SmartFactory")
+const SolutionSmartFactory = lazy(
+  () => import("./pages/Solution/SmartFactory/SmartFactory"),
 );
-const SolutionSmartLogistics = lazy(() =>
-  import("./pages/Solution/Logistics/Logistics")
+const SolutionSmartLogistics = lazy(
+  () => import("./pages/Solution/Logistics/Logistics"),
 );
 
 function App() {
@@ -56,7 +56,6 @@ function App() {
                 <Route path="serial-robot" element={<Business />} />
                 <Route path="palletizing" element={<Business />} />
                 <Route path="deltarobot" element={<Business />} />
-                <Route path="amr" element={<Business />} />
               </Route>
             </Route>
 
@@ -96,15 +95,6 @@ function App() {
                 />
                 <Route path="recycling-robot" element={<Business />} />
                 <Route path="cleaning-robot" element={<Business />} />
-              </Route>
-            </Route>
-
-            {/* 의료 */}
-            <Route path="medical">
-              <Route element={<BusinessLayout />}>
-                <Route index element={<Navigate to="pcr" replace />} />
-                <Route path="pcr" element={<Business />} />
-                <Route path="uv" element={<Business />} />
               </Route>
             </Route>
 

@@ -13,7 +13,6 @@ export const category = [
             { path: "serial-robot", label: "수직다관절 로봇" },
             { path: "palletizing", label: "코봇팔레타이징" },
             { path: "deltarobot", label: "델타로봇" },
-            // { path: "amr", label: "AMR" },
           ],
         },
         {
@@ -43,14 +42,6 @@ export const category = [
             { path: "cleaning-robot", label: "Cleaning Robot" },
           ],
         },
-        // {
-        //   label: "Medical",
-        //   path: "medical",
-        //   items: [
-        //     { path: "pcr", label: "PCR" },
-        //     { path: "uv", label: "UV" },
-        //   ],
-        // },
         {
           label: "Information Technology",
           path: "information-technology",
