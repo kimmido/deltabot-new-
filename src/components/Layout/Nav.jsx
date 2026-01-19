@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { category } from "../../data/category";
 import gsap from "gsap";
 import SvgrComponent from "../icons/SvgrComponent";
@@ -55,6 +55,18 @@ export default function Nav() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isPcMenuIdx, setPcMenuIdx] = useState(null);
   const mobileMenu = useRef(null);
+  const location = useLocation();
+  const pathSegments = location.pathname
+    .replace(/^\/+/, "")
+    .split("/")
+    .filter(Boolean);
+  const rootSegment = pathSegments[0] || "";
+
+  const isCategoryActive = (item) => {
+    if (!rootSegment) return false;
+    if (item.main?.path === rootSegment) return true;
+    return item.sub?.some((sub) => sub.path === rootSegment) ?? false;
+  };
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -79,7 +91,12 @@ export default function Nav() {
           {category.map((category, idx) => (
             <MainLink
               key={category.main.label}
-              className={`pc__link ${isPcMenuIdx == idx ? "active" : ""}`}
+              className={`pc__link ${
+                isPcMenuIdx == idx ||
+                (isPcMenuIdx == null && isCategoryActive(category))
+                  ? "active"
+                  : ""
+              }`}
               main={category.main}
               mouseOver={() => setPcMenuIdx(idx)}
             />
