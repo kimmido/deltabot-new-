@@ -356,32 +356,34 @@ const businessIntroData = {
     // 머신비전 카메라
     "machine-vision": {
       theme: 'default',
-      title: '지능형 머신 비전',
-      description:
-        [
-          '다양한 산업 환경에서 발생하는 시각 처리 문제를 해결하기 위해 설계된 AI 기반 머신 비전 시스템입니다.', 
-          '딥러닝과 2D/3D 비전 알고리즘을 기반으로 다양한 작업을 정밀하고 안정적으로 수행하며, 사용자의 편의성과 확장성을 모두 고려한 시스템입니다.'
-        ],
-      images: [`card`],
-      link: {
-        label: "머신비전 솔루션 자세히 보기",
-        path: "/vision-solution",
-        posId: "machine"
+      title: '초정밀 AI 눈으로 구현하는 완벽한 공정',
+      desc: [
+        '#딥러닝 기반의 2D/3D 알고리즘#을 통해 사물의 깊이와 형태, 질감을 입체적으로 정밀하게 분석',
+        '사람이 육안으로 확인하기 어려운 미세한 결함이나 비정형 오류까지 실시간으로 식별하여 공정의 품질 안정성을 극대화',
+        '#로봇 및 컨베이어 시스템과 즉각적으로 연동#되어 최적화된 통합 솔루션'
+      ],
+      cnt01: {
+        title: '머신비전 시스템 구성요소',
+        img: `/images/business/vision/machine-vision(1).jpg`
       },
-      applications: [
-        {
+      app: {
+        col: 'two',
+        type: 'video',
+        list: [
+          {
           image: 'machine-vision-application(1).jpg',
           title: '제조/포장 검수',
-        },
-        {
-          image: 'machine-vision-application(2).jpg',
+          },
+          {
+            image: 'i-robot-application(2).jpg',
           title: '물류 식별·분류',
-        },
-        {
-          image: 'machine-vision-application(3).jpg',
+          },
+          {
+            image: 'i-robot-application(3).jpg',
           title: '스마트 팩토리',
-        },
-      ],
+          }
+        ]
+      } 
     },
     
     // 열화상 카메라
@@ -441,6 +443,7 @@ const businessIntroData = {
           title: '재활용품/폐기물 선별·분류',
         },
       ],
+      
     },
   
     // 조명

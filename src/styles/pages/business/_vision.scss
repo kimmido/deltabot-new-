@@ -1,0 +1,43 @@
+.Vision {
+  .BusinessIntroSection {
+    .desc-box {
+      text-align: left;
+    }
+
+    .desc {
+      position: relative;
+      margin-top: 0.8em;
+      padding-left: max(20px, 1em);
+
+      &::before {
+        @include pseudoDefault(rgba(0, 0, 0, 0), 0.8em);
+        top: 0.3em;
+
+        @include backgroundImage(
+          $pos: center,
+          $size: contain,
+          $url: url("/src/components/icons/icon_bullet_chevron.svg")
+        );
+
+        filter: brightness(0) saturate(100%) invert(86%) sepia(0%) saturate(0%)
+          hue-rotate(0deg);
+      }
+    }
+
+    .cnt-box {
+      margin-top: min(12vw, 130px);
+    }
+
+    .text-box {
+      margin-bottom: min(3vw, 40px);
+
+      .cnt-title {
+        margin-bottom: 0;
+      }
+      .desc {
+        margin-top: min(2vw, 30px);
+        text-align: center;
+      }
+    }
+  }
+}
