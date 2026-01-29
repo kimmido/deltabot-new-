@@ -69,9 +69,10 @@
         display: inline-block;
         transition: all 0.3s;
         font-weight: inherit;
+        font-size: 1.7rem;
 
-        @include respondTo(pc-s) {
-          font-size: calc(1em + 2px);
+        @include respondTo(tablet-l) {
+          font-size: 2.5rem;
         }
       }
     }
