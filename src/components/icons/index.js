@@ -44,3 +44,4 @@ export { default as icon_check_circle } from './icon_check_circle.svg?react';
 export { default as icon_arrow_rotate_left_solid } from './icon_arrow-rotate-left-solid.svg?react';
 export { default as icon_palletizing } from './icon_palletizing.svg?react';
 export { default as icon_chevron_double } from './icon_chevron_double.svg?react';
+export { default as icon_bullet_chevron } from './icon_bullet_chevron.svg?react';
