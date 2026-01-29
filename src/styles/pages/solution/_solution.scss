@@ -131,6 +131,7 @@
         padding: 0.4em 1.2em;
         background-color: $color-background-light;
         border-radius: 1000px;
+        font-size: 1.7rem;
 
         transition: all 0.3s;
 
@@ -140,6 +141,10 @@
 
         @include respondTo(tablet-s) {
           padding: 0.8em 1.2em;
+        }
+
+        @include respondTo(tablet-l) {
+          font-size: 2rem;
         }
 
         &:hover,
@@ -210,13 +215,17 @@
           &::before {
             border-top-color: $color-point;
             border-right-color: $color-point;
-            transition: width 0.3s linear, height 0.3s linear 0.3s;
+            transition:
+              width 0.3s linear,
+              height 0.3s linear 0.3s;
           }
 
           &::after {
             border-bottom-color: $color-point;
             border-left-color: $color-point;
-            transition: border-color 0s linear 0.6s, width 0.3s linear 0.6s,
+            transition:
+              border-color 0s linear 0.6s,
+              width 0.3s linear 0.6s,
               height 0.3s linear 0.9s;
           }
 
