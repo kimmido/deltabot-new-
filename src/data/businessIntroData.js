@@ -279,78 +279,6 @@ const businessIntroData = {
       ],
     },
     
-    // amr
-    "amr": {
-      theme: 'teal-blue',
-      title: 'AI 기반 자율주행 로봇, AMR로 스마트하게',
-      description:
-        ["#AMR 시리즈 모바일 매니퓰레이터는 '손, 눈, 발, 두뇌'가 유기적으로 협응하는 자율주행 이동 로봇 시스템으로, 인간의 작업 방식을 모사하며 생산 현장의 다양한 요구에 유연하게 대응합니다.#",
-          '이러한 시스템은 단순 반복 작업부터 고정밀 조작까지 다양한 작업 환경에 적용할 수 있습니다. #자재의 흐름 관리, CNC 머신의 자동 적재 및 하역, 육안 검사(비전 검사), 장비 상태 감지 및 제어#와 같은 고도화된 작업도 무인으로 수행할 수 있습니다. 또한 다양한 작업장을 오가며 사람과 협업하거나 복잡한 공정을 하나의 로봇이 연속적으로 수행할 수 있기 때문에, #생산 효율 향상, 품질 안정화, 유연 생산 체계의 구현이 가능#합니다.',
-          'AMR 시리즈는 기존 자동화 설비의 한계를 극복하고, #스마트 팩토리와 하이믹스(HI-MIX) 생산 환경에 최적화된 솔루션#으로 자리 잡고 있습니다.'
-        ],
-      images: [`card`],
-      link: {
-        label: "자동화 솔루션 자세히 보기",
-        path: "/automation-solution",
-        posId: false
-      },
-      featureType:"card",
-      features: [
-        {
-          icon: 'icon_robot_iot.png',
-          title: '유연한 자율 주행',
-          texts: [
-            "SLAM, LiDAR 기반의 정밀 맵핑",
-            "별도 마커/라인 없는 유연한 주행",
-            "장애물 회피 및 실시간 경로 변경",
-            "복잡한 환경에서도 안정적 운용",
-          ]
-        },
-        {
-          icon: 'icon_robot_arm.png',
-          title: '다기능 작업 수행',
-          texts: [
-            "자재 운송, 적재/하역, 비전 검사 가능",
-            "로봇팔 + AMR + 센서 통합 시스템",
-            "다양한 툴체인지 및 그리퍼 적용 가능",
-            "현장 맞춤형 커스터마이징 지원",
-          ]
-        },
-        {
-          icon: 'icon_chart_good.png',
-          title: '생산성 향상 & 비용 절감',
-          texts: [
-            "24시간 무인 자동 작업 가능",
-            "반복 작업 자동화로 인건비 절감",
-            "작업 정확도 향상으로 품질 안정화",
-            "빠른 투자 회수(ROI) 실현",
-          ]
-        },
-        {
-          icon: 'icon_robot_hub.png',
-          title: '스마트확장성과 협업',
-          texts: [
-            "Fleet 시스템으로 AMR 다중 제어",
-            "실시간 데이터 수집 및 공정 최적화",
-            "MES/ERP 등과의 연동 확장 가능",
-            "충돌 감지 기반의 안전한 협업 가능",
-          ]
-        },
-      ],
-      applications: [
-        {
-          video: 'amr-application(1).mp4',
-          poster: 'amr-application(1).jpg',
-          title: '복합 로봇 3D 프린팅 스마트 팩토리 자동화',
-        },
-        {
-          video: 'amr-application(2).mp4',
-          poster: 'amr-application(2).jpg',
-          title: '스마트하고 적응 가능한 생산을 위한 솔루션',
-        },
-      ],
-    }, // amr
-     
 
     // =========== 비전 시스템 =========== 
     // 머신비전 카메라
@@ -659,56 +587,6 @@ const businessIntroData = {
       ],
     },
 
-
-    // =========== 메디컬 =========== 
-    // pcr
-    "pcr": {
-      theme: 'default',
-      title: 'Fast, Accurate, Compact.',
-      description: [
-        '빠르고 정밀한 차세대 Real-time PCR 플랫폼',
-        '최신 자동화 분자진단 시스템은,  핵산 추출 → RT-PCR 검사 → 결과 분석까지 모든 단계를 자동화하여 정확하고 빠른 유전자 검출을 실현합니다.'
-      ],
-      images: ['default', 'card', 'default'],
-      applications: [
-        {
-          image: 'pcr-application(1).jpg',
-          title: '질병 진단',
-        },
-        {
-          image: 'pcr-application(2).jpg',
-          title: '중앙 유전자 분석',
-        },
-        {
-          image: 'pcr-application(3).jpg',
-          title: '식품 안전 및 환경 위생',
-        },
-      ],
-    },
-    // uv
-    "uv": {
-      theme: 'default',
-      title: '눈에 보이지 않는 공기까지 살균합니다.',
-      description: [
-        '천장에 설치되는 광촉매 클린팬은 UV 365nm 자외선과 TiO₂ 광촉매 기술을 결합해 공기 중 세균, 곰팡이, 유해가스를 실시간으로 살균 및 탈취합니다.','별도 환기 없이도 CFU 수치를 99.9%까지 감소시켜, 알레르기·감염 위험을 줄이고 쾌적한 실내 공기 환경을 유지할 수 있는 병원, 요양시설, 교육기관, 공공기관 등 다중 이용시설에 최적화된 공기살균 솔루션입니다.'
-      ],
-      images: ['default', 'spacing-l', 'spacing-l', 'spacing-l'],
-      extraText: '광촉매 클린팬은 밀폐된 실내에서도 상쾌한 공기를 유지할 수 있도록 도와줍니다. 음식이나 반려동물에서 발생하는 냄새는 물론, 공기 중 유해 세균과 곰팡이까지 강력하게 제거합니다. 외부 환기 없이도 언제나 깨끗하고 쾌적한 공간을 경험하세요',
-      applications: [
-        {
-          image: 'uv-application(1).jpg',
-          title: '산업 공간 (창고/공장)',
-        },
-        {
-          image: 'uv-application(2).jpg',
-          title: '스포츠 시설 (헬스장)',
-        },
-        {
-          image: 'uv-application(3).jpg',
-          title: '교육/놀이시설 (유치원) ',
-        },
-      ],
-    },
 
     // =========== IT ==========
     // GPU 서버
