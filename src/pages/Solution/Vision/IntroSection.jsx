@@ -1,6 +1,6 @@
 import React from "react";
 import SvgrComponent from "../../../components/icons/SvgrComponent";
-import StepFlow from "../components/StepFlow";
+import StepFlow from "@components/UI/StepFlow";
 import ContenttBlock from "../components/ContenttBlock";
 
 function IntroSection() {

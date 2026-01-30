@@ -1,6 +1,7 @@
 import React from "react";
-import SvgrComponent from "../../../components/icons/SvgrComponent";
+import SvgrComponent from "../icons/SvgrComponent";
 
+// 아이콘+화살표 흐름도
 function StepFlow({ steps }) {
   return (
     <div className="StepFlow">
