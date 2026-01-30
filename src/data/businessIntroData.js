@@ -366,6 +366,41 @@ const businessIntroData = {
         title: '머신비전 시스템 구성요소',
         img: `/images/business/vision/machine-vision(1).jpg`
       },
+      cnt02 : {
+        title: '머신비전 시스템 흐름 구성도',
+        stepFlowData: [
+          {
+            iconName: "icon_lightbulb_solid",
+            title: "조명",
+            text: "제품 인식 정확도 향상을 위한 광원",
+          },
+          {
+            iconName: "icon_camera_solid",
+            title: "카메라 + 렌즈",
+            text: "제품 이미지 촬영 및 초점 조정",
+          },
+          {
+            iconName: "icon_microchip_solid",
+            title: "영상처리기",
+            text: "이미지 분석 및 특징 인식",
+          },
+          {
+            iconName: "icon_brain_solid",
+            title: "판단 결과",
+            text: "OK/NG 판정 또는 정보 추출",
+          },
+          {
+            iconName: "icon_robot_face",
+            title: "로봇 / PLC 제어",
+            text: "로봇이 피킹, 리젝트 등 수행",
+          },
+        ],
+        img: `/images/business/vision/machine-vision(2).jpg`
+      },
+      cnt03: {
+        title: '완벽한 형상 판독',
+        img: `/images/business/vision/machine-vision(3).jpg`
+      },
       app: {
         col: 'two',
         type: 'video',

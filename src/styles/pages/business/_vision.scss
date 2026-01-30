@@ -1,4 +1,6 @@
 .Vision {
+  --gap-lg: min(6vw, 60px);
+
   .BusinessIntroSection {
     .desc-box {
       text-align: left;
@@ -38,6 +40,11 @@
         margin-top: min(2vw, 30px);
         text-align: center;
       }
+    }
+
+    .system-flow-sec {
+      @include fullBackground(#f6f7fb);
+      padding: var(--gap-lg) 0 var(--gap-lg) 0;
     }
   }
 }

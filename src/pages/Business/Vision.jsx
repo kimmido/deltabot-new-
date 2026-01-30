@@ -6,6 +6,20 @@ import QuoteArea from "./components/QuoteArea";
 import { SwiperSlide } from "swiper/react";
 import { HighlightText } from "../../components/UI/HighlightText";
 import ApplicationsSection from "./components/ApplicationsSection";
+import StepFlow from "@components/UI/StepFlow";
+
+const TitleImageSection = ({ title, img }) => {
+  {
+    return (
+      <div className="TitleImageSection cnt-box">
+        <div className="text-box">
+          <h4 className="cnt-title">{title}</h4>
+        </div>
+        <img className={`intro-img`} src={img} alt={title} />
+      </div>
+    );
+  }
+};
 
 function Vision() {
   const { currentTab, productData = [], routes } = useOutletContext();
@@ -19,8 +33,8 @@ function Vision() {
     <div className="Vision Business" data-theme={data.theme}>
       <QuoteArea title={data.title} />
 
+      {/* 소개글 영역 */}
       <section className="BusinessIntroSection">
-        {/* 소개글 영역 */}
         <div className="desc-box">
           {data.desc.map((txt, idx) => (
             <p key={idx} className="desc">
@@ -29,18 +43,21 @@ function Vision() {
           ))}
         </div>
 
-        <div className="cnt-box">
+        <TitleImageSection title={data.cnt01.title} img={data.cnt01.img} />
+
+        <div className="system-flow-sec cnt-box">
           <div className="text-box">
-            {data.cnt01.title && (
-              <h4 className="cnt-title">{data.cnt01.title}</h4>
-            )}
+            <h4 className="cnt-title">{data.cnt02.title}</h4>
           </div>
+          <StepFlow steps={data.cnt02.stepFlowData} />
           <img
             className={`intro-img`}
-            src={data.cnt01.img}
-            alt={data.cnt01.title}
+            src={data.cnt02.img}
+            alt={data.cnt02.title}
           />
         </div>
+
+        <TitleImageSection title={data.cnt03.title} img={data.cnt03.img} />
       </section>
 
       {/* 응용분야 */}

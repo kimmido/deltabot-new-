@@ -12,6 +12,7 @@ const About = lazy(() => import("./pages/About/About"));
 
 const BusinessLayout = lazy(() => import("./layouts/BusinessLayout"));
 const Business = lazy(() => import("./pages/Business/Business"));
+const Vision = lazy(() => import("./pages/Business/Vision.jsx"));
 const Logistics = lazy(() => import("./pages/Business/Logistics.jsx"));
 const ComingSoon = lazy(() => import("./pages/Business/ComingSoon"));
 
@@ -66,9 +67,9 @@ function App() {
                   index
                   element={<Navigate to="machine-vision" replace />}
                 />
-                <Route path="machine-vision" element={<Business />} />
-                <Route path="thermal-camera" element={<Business />} />
-                <Route path="spectral-camera" element={<Business />} />
+                <Route path="machine-vision" element={<Vision />} />
+                <Route path="thermal-camera" element={<Vision />} />
+                <Route path="spectral-camera" element={<Vision />} />
                 <Route path="illumination" element={<Business />} />
                 <Route path="vision-controller" element={<Business />} />
               </Route>
