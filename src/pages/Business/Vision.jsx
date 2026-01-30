@@ -28,8 +28,6 @@ function Vision() {
   console.log(data);
   if (!data) return null;
 
-  const slideData = data.slideData;
-
   return (
     <div className="Vision Business" data-theme={data.theme}>
       <QuoteArea title={data.title} />
@@ -61,7 +59,8 @@ function Vision() {
         <TitleImageSection title={data.cnt03.title} img={data.cnt03.img} />
 
         <FadeUpTextSlider slideData={data.slideData} />
-        <div className="cnt-box"></div>
+
+        <TitleImageSection title={data.cnt04.title} img={data.cnt04.img} />
       </section>
 
       {/* 응용분야 */}
