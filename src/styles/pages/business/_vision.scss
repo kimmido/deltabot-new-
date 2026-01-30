@@ -26,22 +26,6 @@
       }
     }
 
-    .cnt-box {
-      margin-top: min(12vw, 130px);
-    }
-
-    .text-box {
-      margin-bottom: min(3vw, 40px);
-
-      .cnt-title {
-        margin-bottom: 0;
-      }
-      .desc {
-        margin-top: min(2vw, 30px);
-        text-align: center;
-      }
-    }
-
     .system-flow-sec {
       @include fullBackground(#f6f7fb);
       padding: var(--gap-lg) 0 var(--gap-lg) 0;
