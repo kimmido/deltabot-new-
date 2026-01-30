@@ -611,10 +611,9 @@
     }
 
     &__cnt {
-      text-align: center;
-
       .sec-title {
         display: block;
+        text-align: center;
         font-size: $font-size-section-title-sm;
         margin-bottom: $spacing-content-sm;
 
@@ -628,8 +627,22 @@
           margin-bottom: $spacing-content-lg;
         }
       }
-    } // 응용분야
 
+      .grid-block {
+        row-gap: min(7vw, 80px);
+
+        &__list {
+          margin-top: 1.2em;
+          gap: 0.5em;
+
+          li {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+
+    // 솔루션 이동 링크
     &__link {
       position: relative;
       display: flex;

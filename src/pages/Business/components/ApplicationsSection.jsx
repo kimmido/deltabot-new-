@@ -31,7 +31,7 @@ function ApplicationsSection({ data }) {
 
                 {/* ✅ 불렛 설명 추가 */}
                 {data.type == "bullet" && (
-                  <ul className="grid-block__bullets">
+                  <ul className="grid-block__list bullets">
                     {app.texts.map((line, i) => (
                       <li key={i} className="grid-block__bullet">
                         {line}
