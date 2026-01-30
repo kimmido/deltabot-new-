@@ -1,13 +1,15 @@
 .StepFlow {
   .flow-wrapper {
     @include flexBox(column, 1.6em 0, center, space-between, wrap);
+    gap: 10px;
     background: #fff;
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 
-    @include respondTo(tablet-s) {
+    @include respondTo(mobile-l) {
       flex-direction: row;
+      row-gap: 1.2em;
     }
 
     @include respondTo(tablet-l) {
@@ -16,30 +18,40 @@
 
     .step {
       text-align: center;
-      width: 18vw;
+      width: min(100%, 360px);
       position: relative;
+
+      @include respondTo(mobile-l) {
+        flex: 1 1 140px;
+      }
+
+      @include respondTo(tablet-s) {
+        flex: 1 1 220px;
+      }
 
       svg {
         width: 60px;
         height: 60px;
+        margin-bottom: 2px;
         fill: #2b6cb0;
         animation: pulse 2s infinite;
       }
       .step-title {
         font-weight: 600;
         margin-top: 10px;
-        font-size: 1.8rem;
+        font-size: clamp(1.5rem, 1.2vw, 1.8rem);
       }
       .step-sub {
         margin-top: 4px;
-        font-size: 1.3rem;
+        font-size: clamp(1.2rem, 1vw, 1.4rem);
         color: $color-text-light;
       }
     }
 
     .arrow-right {
       font-size: 32px;
-      margin: 0 20px;
+      margin: 0;
+      line-height: 1;
       color: #aaa;
       animation: slideDown 1.5s infinite;
 
@@ -58,7 +70,8 @@
         }
       }
 
-      @include respondTo(tablet-s) {
+      @include respondTo(mobile-l) {
+        // margin: 0 12px;
         animation: slideRight 1.5s infinite;
       }
     }
