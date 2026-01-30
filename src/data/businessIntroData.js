@@ -401,6 +401,10 @@ const businessIntroData = {
         title: '완벽한 형상 판독',
         img: `/images/business/vision/machine-vision(3).jpg`
       },
+      cnt04: {
+        title: '머신 비전 시스템의 응용',
+        img: `/images/business/vision/machine-vision(4).jpg`
+      },
       slideData: [
         {
           img: `/images/business/vision/machine-vision-slide(1).jpg`,
@@ -435,19 +439,48 @@ const businessIntroData = {
       ],
       app: {
         col: 'two',
-        type: 'video',
+        media: 'video',
+        type: 'bullet',
         list: [
           {
-          image: 'machine-vision-application(1).jpg',
-          title: '제조/포장 검수',
+            video: 'machine-app(1).mp4',
+            poster: 'machine-app(1).jpg',
+            title: '이종혼입방지시스템',
+            texts: [
+              '부품 표면에 각인된 레이저 마킹 ID를 실시간으로 스캔하여 고유 정보를 식별',
+              '외형이 같은 부품의 오삽입을 실시간으로 판별해 제품 혼입을 완벽히 방지',
+              '원형 제품의 식별과 회전 각도 측정으로 더욱 정밀한 공정 제어를 지원',
+            ]
           },
           {
-            image: 'i-robot-application(2).jpg',
-          title: '물류 식별·분류',
+            video: 'machine-app(2).mp4',
+            poster: 'machine-app(2).jpg',
+            title: '외관표면검사시스템',
+            texts: [
+              '프레스 압력을 받는 툴의 파손 유무를 실시간 판정하여 공정 사고를 미연에 방지.',
+              '소모된 툴의 교체 주기를 자동으로 파악하고 통보하여 최적의 작업 조건을 유지',
+              '단일 시스템으로 최대 4대의 설비를 동시에 관리할 수 있어 운영 효율을 극대화',
+            ]
           },
           {
-            image: 'i-robot-application(3).jpg',
-          title: '스마트 팩토리',
+            video: 'machine-app(3).mp4',
+            poster: 'machine-app(3).jpg',
+            title: '가공 검사시스템',
+            texts: [
+              '작업 환경에 맞춰 100개소 이상의 검사 포인트를 자유롭게 구성하고 실시간으로 편집',
+              '직육면체 알루미늄 블록의 홀, 탭, 단차 등 표면 가공 상태를 빈틈없이 정밀하게 검사',
+              '딥러닝 기반 검사로 홀 내부 이물질을 판별하고 표면 마킹 및 문자까지 정확히 구분',
+            ]
+          },
+          {
+            video: 'machine-app(4).mp4',
+            poster: 'machine-app(4).jpg',
+            title: '다관절 로봇 부착 시스템',
+            texts: [
+              '다관절 로봇에 비전을 탑재해 체결 상태, 컬러, 각도 등 복합적인 항목을 정밀하게 측정',
+              '단순 반복 검사 포인트가 많은 공정에 유용하며, 로봇의 유연한 움직임으로 검사 효율을 높입',
+              '0.5초당 1개소씩 검사하는 압도적인 속도로 다량의 검사 포인트를 신속하고 정밀하게 완료',
+            ]
           }
         ]
       } 
@@ -596,7 +629,8 @@ const businessIntroData = {
       },
       app: {
         col: 'two',
-        type: 'video',
+        media: 'video',
+        type: 'title',
         list: [
           {
             video: 'i-robot-application(1).mp4',
@@ -649,7 +683,8 @@ const businessIntroData = {
       },
       app: {
         col: 'two',
-        type: 'video',
+        media: 'video',
+        type: 'title',
         list: [
           {
             video: 'sorting-application(1).mp4',
