@@ -7,6 +7,7 @@ import { SwiperSlide } from "swiper/react";
 import { HighlightText } from "../../components/UI/HighlightText";
 import ApplicationsSection from "./components/ApplicationsSection";
 import StepFlow from "@components/UI/StepFlow";
+import FadeUpTextSlider from "./components/FadeUpTextSlider";
 
 const TitleImageSection = ({ title, img }) => {
   {
@@ -58,6 +59,9 @@ function Vision() {
         </div>
 
         <TitleImageSection title={data.cnt03.title} img={data.cnt03.img} />
+
+        <FadeUpTextSlider slideData={data.slideData} />
+        <div className="cnt-box"></div>
       </section>
 
       {/* 응용분야 */}
