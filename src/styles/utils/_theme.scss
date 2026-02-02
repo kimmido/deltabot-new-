@@ -11,6 +11,8 @@
   --color-highlight: var(--theme-highlight);
   --color-active: var(--theme-main);
   --color-point-background: var(--theme-point-background);
+  --filter: invert(35%) sepia(44%) saturate(2643%) hue-rotate(207deg)
+    brightness(95%) contrast(90%);
 
   --theme-gradient-rgb: 124, 166, 243;
   --gradient: linear-gradient(
@@ -28,11 +30,8 @@
   --theme-point: rgb(105, 158, 210);
   --theme-highlight: rgb(105, 158, 210);
   --theme-point-background: #eff6ff;
-
-  .img-icon {
-    filter: invert(45%) sepia(20%) saturate(900%) hue-rotate(185deg)
-      brightness(98%) contrast(95%);
-  }
+  --filter: invert(45%) sepia(20%) saturate(900%) hue-rotate(185deg)
+    brightness(98%) contrast(95%);
 }
 
 // 페트롤 블루 계열 테마
@@ -41,11 +40,8 @@
   --theme-gradient-rgb: 38, 82, 122;
   --theme-highlight: rgb(38, 82, 122);
   --theme-point: rgb(81, 158, 179);
-
-  .img-icon {
-    filter: invert(29%) sepia(13%) saturate(1684%) hue-rotate(177deg)
-      brightness(93%) contrast(96%);
-  }
+  --filter: invert(29%) sepia(13%) saturate(1684%) hue-rotate(177deg)
+    brightness(93%) contrast(96%);
 }
 
 /* 스카이 블루 테마 */
@@ -53,11 +49,8 @@
   // 협동로봇
   --theme-main: #19b0fb;
   --theme-gradient-rgb: 25, 176, 251;
-
-  .img-icon {
-    filter: invert(67%) sepia(28%) saturate(6861%) hue-rotate(170deg)
-      brightness(97%) contrast(103%);
-  }
+  --filter: invert(67%) sepia(28%) saturate(6861%) hue-rotate(170deg)
+    brightness(97%) contrast(103%);
 }
 
 /* 청록 페이지 테마 */
@@ -65,11 +58,8 @@
   // 수직다관절
   --theme-main: rgb(0, 153, 204);
   --theme-gradient-rgb: 0, 153, 204;
-
-  .img-icon {
-    filter: invert(66%) sepia(79%) saturate(7414%) hue-rotate(172deg)
-      brightness(104%) contrast(101%);
-  }
+  --filter: invert(66%) sepia(79%) saturate(7414%) hue-rotate(172deg)
+    brightness(104%) contrast(101%);
 }
 
 /* 로얄블루 테마 */
@@ -77,11 +67,8 @@
   // 델타로봇
   --theme-main: #0052f2;
   --theme-gradient-rgb: 0, 82, 242;
-
-  .img-icon {
-    filter: invert(17%) sepia(70%) saturate(6057%) hue-rotate(219deg)
-      brightness(99%) contrast(101%);
-  }
+  --filter: invert(17%) sepia(70%) saturate(6057%) hue-rotate(219deg)
+    brightness(99%) contrast(101%);
 }
 
 /* 틸 블루 테마 */
@@ -89,11 +76,8 @@
   // amr
   --theme-main: #49919d;
   --theme-gradient-rgb: 73, 145, 157;
-
-  .img-icon {
-    filter: invert(52%) sepia(12%) saturate(1466%) hue-rotate(141deg)
-      brightness(95%) contrast(91%);
-  }
+  --filter: invert(52%) sepia(12%) saturate(1466%) hue-rotate(141deg)
+    brightness(95%) contrast(91%);
 }
 
 /* 크림슨 레드 테마 */
@@ -101,11 +85,8 @@
   // 열화상
   --theme-main: #e63946;
   --theme-gradient-rgb: 230, 57, 70;
-
-  .img-icon {
-    filter: invert(32%) sepia(96%) saturate(3865%) hue-rotate(340deg)
-      brightness(95%) contrast(105%);
-  }
+  --filter: invert(32%) sepia(96%) saturate(3865%) hue-rotate(340deg)
+    brightness(95%) contrast(105%);
 }
 
 /* 비비드 바이올렛 테마 */
@@ -113,20 +94,14 @@
   // 코봇, 초분광
   --theme-main: #7850f2;
   --theme-gradient-rgb: 120, 80, 242;
-
-  .img-icon {
-    filter: invert(46%) sepia(82%) saturate(5124%) hue-rotate(242deg)
-      brightness(94%) contrast(102%);
-  }
+  --filter: invert(46%) sepia(82%) saturate(5124%) hue-rotate(242deg)
+    brightness(94%) contrast(102%);
 }
 
 /* 인디고 네이비 테마 */
 [data-theme="indigo-navy"] {
   --theme-main: #1a2f67;
   --theme-main-rgb: 26, 47, 103;
-
-  .img-icon {
-    filter: invert(21%) sepia(32%) saturate(1572%) hue-rotate(197deg)
-      brightness(89%) contrast(93%);
-  }
+  --filter: invert(21%) sepia(32%) saturate(1572%) hue-rotate(197deg)
+    brightness(89%) contrast(93%);
 }

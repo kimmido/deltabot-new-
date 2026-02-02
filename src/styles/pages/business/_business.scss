@@ -163,7 +163,8 @@
         }
 
         img {
-          fill: var(--color-point);
+          // fill: var(--color-point);
+          filter: var(--filter);
           @include square(3.6em);
         }
 
