@@ -703,7 +703,7 @@ const businessIntroData = {
           },
           {
             image: 'vision/spectral-app(2).jpg',
-            title: "의약품 측정·감별",
+            title: "의료/간 조직 모니터링 고주파 소작술",
             texts: [
               '간암 절제술의 효과를 정량화하여 치료 정밀도를 입증',
               '간 조직 절제술의 정량적 데이터를 분석하여 치료 효과를 증명',
