@@ -84,17 +84,6 @@
   }
 }
 
-/* 블루퍼플 테마 */
-[data-theme="blue-purple"] {
-  --theme-main: #3e30f4;
-  --theme-gradient-rgb: 62, 48, 244;
-
-  .img-icon {
-    filter: invert(23%) sepia(96%) saturate(6737%) hue-rotate(247deg)
-      brightness(94%) contrast(104%);
-  }
-}
-
 /* 틸 블루 테마 */
 [data-theme="teal-blue"] {
   // amr
@@ -107,8 +96,21 @@
   }
 }
 
+/* 크림슨 레드 테마 */
+[data-theme="crimson-red"] {
+  // 열화상
+  --theme-main: #e63946;
+  --theme-gradient-rgb: 230, 57, 70;
+
+  .img-icon {
+    filter: invert(32%) sepia(96%) saturate(3865%) hue-rotate(340deg)
+      brightness(95%) contrast(105%);
+  }
+}
+
 /* 비비드 바이올렛 테마 */
 [data-theme="vivid-violet"] {
+  // 코봇, 초분광
   --theme-main: #7850f2;
   --theme-gradient-rgb: 120, 80, 242;
 
