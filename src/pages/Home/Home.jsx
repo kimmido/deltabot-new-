@@ -25,7 +25,7 @@ const Home = () => {
         ease: "none",
       });
     },
-    { scope: gsapContainer }
+    { scope: gsapContainer },
   );
 
   return (
@@ -35,7 +35,7 @@ const Home = () => {
         <BannerSwiper />
         <div className="container">
           <div className="decorative-area" ref={gsapContainer}>
-            <p className="decorative-txt">산업을 혁신하는 지능형 솔루션.</p>
+            <p className="decorative-txt">산업을 혁신하는 지능형 시스템.</p>
           </div>
         </div>
         <BusinessSection />
