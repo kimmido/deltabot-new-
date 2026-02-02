@@ -526,7 +526,7 @@ const businessIntroData = {
         img: `/images/business/vision/thermal(2).png`
       },
       cnt03: {
-        title: '완벽한 형상 판독',
+        title: '산업 현장의 안전과 효율을 극대화 하는 3대 핵심 비전 기술',
         img: `/images/business/vision/thermal(3).jpg`
       },
       cnt04: {
@@ -601,18 +601,18 @@ const businessIntroData = {
     // 초분광 카메라
     "spectral-camera": {
       theme: 'vivid-violet',
-      title: '초정밀 AI 눈으로 구현하는 완벽한 공정',
+      title: '눈에 보이지 않는 데이터까지 완벽하게, AI 초분광 토탈 시스템',
       desc: [
-        '#딥러닝 기반의 2D/3D 알고리즘#을 통해 사물의 깊이와 형태, 질감을 입체적으로 정밀하게 분석',
-        '사람이 육안으로 확인하기 어려운 미세한 결함이나 비정형 오류까지 실시간으로 식별하여 공정의 품질 안정성을 극대화',
-        '#로봇 및 컨베이어 시스템과 즉각적으로 연동#되어 최적화된 통합 솔루션'
+        '#초분광 카메라#로 빛의 파장을 분석해 육안으로 힘든 #성분 판별#과 #미세 이물질#을 완벽하게 검출합니다.',
+        '#AI 딥러닝# 기반 알고리즘이 방대한 데이터를 분석하여 제품의 #품질 등급#을 #실시간으로 분류#하여 최적화합니다.',
+        '#데이터 기반#의 객관적 판독으로 #수동 검사 오차#를 줄이고 #품질 관리 표준화#와 #공정 효율#을 획기적으로 높입니다.'
       ],
       cnt01: {
-        title: '머신비전 시스템 구성요소',
-        img: `/images/business/vision/machine-vision(1).jpg`
+        title: '초분광 비전 시스템 구성요소',
+        img: `/images/business/vision/spectral(1).jpg`
       },
       cnt02 : {
-        title: '머신비전 시스템 흐름 구성도',
+        title: '초분광 비전 시스템 흐름도',
         stepFlowData: [
           {
             iconName: "icon_lightbulb_solid",
@@ -640,93 +640,85 @@ const businessIntroData = {
             text: "로봇이 피킹, 리젝트 등 수행",
           },
         ],
-        img: `/images/business/vision/machine-vision(2).jpg`
+        img: `/images/business/vision/spectral(2).jpg`
       },
       cnt03: {
-        title: '완벽한 형상 판독',
-        img: `/images/business/vision/machine-vision(3).jpg`
+        title: '성분의 투명한 분석',
+        img: `/images/business/vision/spectral(3).jpg`
       },
       cnt04: {
-        title: '머신 비전 시스템의 응용',
-        img: `/images/business/vision/machine-vision(4).jpg`
+        title: '초분광 이미징 시스템',
+        img: `/images/business/vision/spectral(4).jpg`
       },
       slideData: [
         {
-          img: `/images/business/vision/machine-vision-slide(1).jpg`,
-          title: "외곽선 (아웃라인)",
-          text: "제품의 형태 및 테두리 인식 기술",
+          img: `/images/business/vision/spectral-slide(1).jpg`,
+          title: "스마트 농업",
+          text: "감자와 찰흙의 다른 스펙트럼을 이용하여 분리하는 자동화공정 적용",
         },
         {
-          img: `/images/business/vision/machine-vision-slide(2).jpg`,
-          title: "유무 검사",
-          text: "부품의 누락이나 요소 존재 여부 판별",
+          img: `/images/business/vision/spectral-slide(2).jpg`,
+          title: "제약",
+          text: "포장 캡슐안에 빈 공간이 있거나 , 결함 혹은 다른약이 포함되었는지 여부 확인가능!",
         },
         {
-          img: `/images/business/vision/machine-vision-slide(3).jpg`,
-          title: "그레이스케일 면적",
-          text: "명암 차를 이용한 결함 면적 분석",
+          img: `/images/business/vision/spectral-slide(3).jpg`,
+          title: "건축 인프라",
+          text: "제지 공정에서 종이의 수분함량 확인 및 모니터링!",
         },
         {
-          img: `/images/business/vision/machine-vision-slide(4).jpg`,
-          title: "컬러 면적",
-          text: "특정 색상의 분포 및 면적 측정",
+          img: `/images/business/vision/spectral-slide(4).jpg`,
+          title: "식품",
+          text: "아몬드와 아몬드 껍질의 다른 Spectra를 이용하여 자동화 분리과정 적용",
         },
         {
-          img: `/images/business/vision/machine-vision-slide(5).jpg`,
-          title: "문자 인식 (OCR)",
-          text: "각인된 문자 및 숫자의 자동 판독",
+          img: `/images/business/vision/spectral-slide(5).jpg`,
+          title: "녹조",
+          text: "유해조류 분석 및 구별, 녹조 발생 모니터링 및 중국발 외래종 ‘괭생이 모자반‘ 모니터링등!",
         },
         {
-          img: `/images/business/vision/machine-vision-slide(6).jpg`,
-          title: "피치 (간격)",
-          text: "요소 간의 일정 거리/간격 측정",
+          img: `/images/business/vision/spectral-slide(6).jpg`,
+          title: "환경",
+          text: "초분광카메라로 흰색 스펙트럼이 나타난 부분을 통해 기름이 유출된 위치 확인",
+        },
+        {
+          img: `/images/business/vision/spectral-slide(7).jpg`,
+          title: "국방",
+          text: "항공에서의 적의 정확한 위치 확인, 군용차량, 지뢰탐지, 급조폭발물, 표적 추적·지시용 사용",
         },
       ],
       app: {
-        col: 'two',
-        media: 'video',
+        col: 'three',
+        media: 'image',
         type: 'bullet',
         list: [
           {
-            video: 'machine-app(1).mp4',
-            poster: 'machine-app(1).jpg',
-            title: '이종혼입방지시스템',
+            image: 'vision/spectral-app(1).jpg',
+            title: "전자소재 품질관리",
             texts: [
-              '부품 표면에 각인된 레이저 마킹 ID를 실시간으로 스캔하여 고유 정보를 식별',
-              '외형이 같은 부품의 오삽입을 실시간으로 판별해 제품 혼입을 완벽히 방지',
-              '원형 제품의 식별과 회전 각도 측정으로 더욱 정밀한 공정 제어를 지원',
+              '초분광 카메라로 납땜 파장을 분석해 품질 성분을 정밀 판정',
+              'AI 알고리즘이 분광 데이터를 분석하여 납땜 등급을 자동 분류',
+              '미세 결함을 정밀 검출하여 납땜 공정의 품질과 효율을 극대화'
             ]
           },
           {
-            video: 'machine-app(2).mp4',
-            poster: 'machine-app(2).jpg',
-            title: '외관표면검사시스템',
+            image: 'vision/spectral-app(2).jpg',
+            title: "의약품 측정·감별",
             texts: [
-              '프레스 압력을 받는 툴의 파손 유무를 실시간 판정하여 공정 사고를 미연에 방지.',
-              '소모된 툴의 교체 주기를 자동으로 파악하고 통보하여 최적의 작업 조건을 유지',
-              '단일 시스템으로 최대 4대의 설비를 동시에 관리할 수 있어 운영 효율을 극대화',
+              '간암 절제술의 효과를 정량화하여 치료 정밀도를 입증',
+              '간 조직 절제술의 정량적 데이터를 분석하여 치료 효과를 증명',
+              '간암 치료에 필수적인 절제술을 정량화하여 기술력을 입증'
             ]
           },
           {
-            video: 'machine-app(3).mp4',
-            poster: 'machine-app(3).jpg',
-            title: '가공 검사시스템',
+            image: 'vision/spectral-app(3).jpg',
+            title: "재활용품/폐기물 선별·분류",
             texts: [
-              '작업 환경에 맞춰 100개소 이상의 검사 포인트를 자유롭게 구성하고 실시간으로 편집',
-              '직육면체 알루미늄 블록의 홀, 탭, 단차 등 표면 가공 상태를 빈틈없이 정밀하게 검사',
-              '딥러닝 기반 검사로 홀 내부 이물질을 판별하고 표면 마킹 및 문자까지 정확히 구분',
+              '해안가 플라스틱 폐기물을 자율적으로 추적하고 실시간 식별',
+              '해안 환경에서 폐기물을 스스로 탐색하여 정확하게 식별 및 관리',
+              '자율 탐사로 해안의 플라스틱 쓰레기를 찾아내고 정밀하게 판별'
             ]
           },
-          {
-            video: 'machine-app(4).mp4',
-            poster: 'machine-app(4).jpg',
-            title: '다관절 로봇 부착 시스템',
-            texts: [
-              '다관절 로봇에 비전을 탑재해 체결 상태, 컬러, 각도 등 복합적인 항목을 정밀하게 측정',
-              '단순 반복 검사 포인트가 많은 공정에 유용하며, 로봇의 유연한 움직임으로 검사 효율을 높입',
-              '0.5초당 1개소씩 검사하는 압도적인 속도로 다량의 검사 포인트를 신속하고 정밀하게 완료',
-            ]
-          }
         ]
       } 
     },
