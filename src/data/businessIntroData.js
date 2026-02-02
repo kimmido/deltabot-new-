@@ -198,12 +198,12 @@ const businessIntroData = {
         {
           video: 'palletizing-application(1).mp4',
           poster: 'palletizing-application(1).jpg',
-          title: '품목별 맞춤 적재 솔루션',
+          title: ' 평행/핑거 그리퍼로 박스 적재',
         },
         {
           video: 'palletizing-application(2).mp4',
           poster: 'palletizing-application(2).jpg',
-          title: '박스 포장 적재 솔루션',
+          title: '공압 그리퍼/진공 그리퍼로 물건 적재',
         },
       ],
     },
