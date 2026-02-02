@@ -188,7 +188,7 @@ const cnt06 = {
       poster: "/images/video_poster/solution-automation(4).jpg",
       effects: [
         {
-          text: "분당 12개 처리",
+          text: "분당 10개 처리",
           iconName: "icon_timer",
         },
         {
