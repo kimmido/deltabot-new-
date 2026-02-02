@@ -2,10 +2,11 @@
   .video-box {
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
     border-radius: $radius-card;
     cursor: pointer;
-    text-align: center;
-    background-color: #000;
 
     video {
       height: 100%;
