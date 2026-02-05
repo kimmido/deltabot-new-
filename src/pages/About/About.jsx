@@ -34,8 +34,9 @@ function About() {
         <section
           className="intro-section"
           data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
+          data-aos-easing="ease-out-cubic"
           data-aos-duration="9000"
+          data-aos-offset="120"
         >
           <p>
             델타봇은 로봇 자동화, 비전 시스템, 재활용 시스템, 의료, IT 등{" "}
@@ -81,7 +82,8 @@ function About() {
         <section
           className="contact-section"
           data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
+          data-aos-anchor-placement="top-center"
+          data-aos-easing="ease-out-cubic"
           data-aos-duration="9000"
         >
           <div className="flex-box">
