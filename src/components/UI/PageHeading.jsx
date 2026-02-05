@@ -2,14 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
-import usePathSegments from "../../hooks/usePathSegments";
 
-function PageHeading({ title }) {
+function PageHeading({ title, currentPath }) {
   const backgroundRef = useRef(null);
   const titleRef = useRef(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [isTitle, setTitle] = useState("");
-  const { subSegment } = usePathSegments();
 
   const videoPage = [
     "collaboration",
@@ -20,8 +18,7 @@ function PageHeading({ title }) {
     "amr",
     "automated-sorting-system",
   ];
-
-  const isVideoPage = videoPage.includes(subSegment);
+  const isVideoPage = videoPage.includes(currentPath);
 
   useGSAP(() => {
     if (isVideoPage) return;
@@ -36,7 +33,7 @@ function PageHeading({ title }) {
         ease: "none",
       },
     );
-  }, [subSegment]);
+  }, [currentPath]);
 
   const formatWord = (word) => {
     return word.replace(/\b\w/g, (char) => char.toUpperCase()); // 각 단어의 첫 글자를 대문자로 변환
@@ -44,7 +41,7 @@ function PageHeading({ title }) {
 
   useEffect(() => {
     setVideoLoaded(false);
-  }, [subSegment]);
+  }, [currentPath]);
 
   useEffect(() => {
     setTitle(formatWord(title));
@@ -57,12 +54,12 @@ function PageHeading({ title }) {
           ref={backgroundRef}
           className={`background__img`}
           style={{
-            backgroundImage: `url(/images/heading/heading_${subSegment}.jpg)`,
+            backgroundImage: `url(/images/heading/heading_${currentPath}.jpg)`,
           }}
         ></div>
         {isVideoPage && (
           <video
-            key={subSegment}
+            key={currentPath}
             muted
             loop
             autoPlay
@@ -73,7 +70,7 @@ function PageHeading({ title }) {
             onLoadedData={() => setVideoLoaded(true)}
           >
             <source
-              src={`/videos/heading/${subSegment}.mp4`}
+              src={`/videos/heading/${currentPath}.mp4`}
               type="video/mp4"
             />
           </video>
@@ -81,7 +78,7 @@ function PageHeading({ title }) {
       </div>
       <div className="page__text-box overflow_hidden">
         <h2
-          key={subSegment}
+          key={currentPath}
           ref={titleRef}
           className="page__title"
           data-aos="fade-up"

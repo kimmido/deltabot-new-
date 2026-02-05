@@ -42,7 +42,7 @@ function BusinessLayout() {
   return (
     <div className="BusinessLayout">
       <div className="container">
-        <PageHeading title={routes.label} />
+        <PageHeading title={routes.label} currentPath={subSegment} />
         <TabMenu routes={routes} />
         <Outlet context={outletContext} />
       </div>
