@@ -45,14 +45,14 @@
 
       .swiper {
         $btn-s: 2.7em;
-        $btn-l: 44px;
+        $btn-l: 40px;
 
         padding: 10px 10px calc($btn-s + 1.2em);
         overflow: hidden;
         max-width: 1200px;
 
         @include respondTo(pc-l) {
-          padding-bottom: calc($btn-l + 2em);
+          padding-bottom: calc($btn-l + 1.4em);
         }
 
         .swiper-button {
@@ -80,7 +80,7 @@
           }
 
           &-prev {
-            left: calc(50% - $btn-s - 10px);
+            left: calc(50% - $btn-s - 6px);
 
             &::after {
               transform: translateX(-2px);
@@ -88,7 +88,7 @@
           }
 
           &-next {
-            right: calc(50% - $btn-s - 10px);
+            right: calc(50% - $btn-s - 6px);
 
             &::after {
               transform: translateX(2px);
@@ -135,7 +135,7 @@
           margin-bottom: 0.5em;
           font-weight: 600;
           @include respondTo(tablet-l) {
-            margin-bottom: 0.8em;
+            margin-bottom: 0.7em;
             font-size: 1.4em;
           }
         }
