@@ -111,7 +111,7 @@ function App() {
                 <Route path="workstations" element={<It />} />
                 <Route path="military" element={<It />} />
                 <Route path="vehicle" element={<It />} />
-                <Route path="edge-ai" element={<It />} />
+                <Route path="edge-ai" element={<Business />} />
               </Route>
             </Route>
 
