@@ -152,30 +152,34 @@
 
 // ====== decorative ======
 .decorative-area {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin: 10vh 0 10vh;
   font-weight: 700;
-  font-size: $font-size-display-sm;
+  font-size: $font-size-display-xs;
 
   @include respondTo(tablet-l) {
     margin: 16vh 0;
     line-height: 80px;
-    font-size: $font-size-display-lg;
+    font-size: calc($font-size-display-md + 6px);
   }
 
   .decorative-txt {
     position: relative;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.2);
-    max-width: 66%;
     background: linear-gradient(to right, $color-text-title, $color-text-title)
       no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 0%;
+    text-align: center;
 
     @include respondTo(mobile-l) {
       width: max-content;
+    }
+    @include respondTo(tablet-l) {
+      max-width: 76%;
     }
   }
 }
@@ -207,34 +211,32 @@
   overflow-x: hidden;
   margin-top: $spacing-layout-sm;
 
+  @include respondTo(tablet-s) {
+    overflow-x: visible;
+  }
+
   @include respondTo(tablet-l) {
     margin-top: $spacing-layout-lg;
-    overflow-x: visible;
   }
 
   .intro-area,
   .list-area {
-    padding: 52px 0;
+    padding-top: 20px;
+    padding-bottom: 52px;
 
     @include respondTo(tablet-s) {
-      padding: 92px 0;
+      padding-top: 40px;
+      padding-bottom: 104px;
     }
   }
 
   .intro-area {
     text-align: center;
 
-    strong {
-      font-size: 2.9rem;
-    }
-
+    strong,
     p {
-      margin-top: 22px;
-      color: $color-text-light;
-
-      @include respondTo(tablet-s) {
-        margin-top: 32px;
-      }
+      font-size: clamp(16px, 2.4vw, 24px);
+      line-height: 1.5;
     }
   }
 
