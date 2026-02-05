@@ -1,7 +1,7 @@
 import React from "react";
 import ContenttBlock from "../components/ContenttBlock";
 
-import img_cnt02 from "../../../assets/images/solution/eco-ai(1).svg";
+import img_cnt02 from "../../../assets/images/solution/eco_ai/eco-ai(1).svg";
 
 function IntroSection() {
   return (

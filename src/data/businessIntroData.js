@@ -515,27 +515,27 @@ const businessIntroData = {
         type: 'title',
         list: [
           {
-            image: 'vision/thermal-app(1).jpg',
+            image: 'vision-system/thermal-app(1).jpg',
             title: "전기 | 새로운 에너지",
           },
           {
-            image: 'vision/thermal-app(2).jpg',
+            image: 'vision-system/thermal-app(2).jpg',
             title: "광석 | 야금학 | 가마",
           },
           {
-            image: 'vision/thermal-app(3).jpg',
+            image: 'vision-system/thermal-app(3).jpg',
             title: "섬유 | 석유화학 | 환경 보호",
           },
           {
-            image: 'vision/thermal-app(4).jpg',
+            image: 'vision-system/thermal-app(4).jpg',
             title: "레이저 | 반도체",
           },
           {
-            image: 'vision/thermal-app(5).jpg',
+            image: 'vision-system/thermal-app(5).jpg',
             title: "곡물과 기름 | 의학 | 번식",
           },
           {
-            image: 'vision/thermal-app(6).jpg',
+            image: 'vision-system/thermal-app(6).jpg',
             title: "철도 교통 | 자동차",
           }
         ]
@@ -637,7 +637,7 @@ const businessIntroData = {
         type: 'bullet',
         list: [
           {
-            image: 'vision/spectral-app(1).jpg',
+            image: 'vision-system/spectral-app(1).jpg',
             title: "전자소재 품질관리",
             texts: [
               '초분광 카메라로 납땜 파장을 분석해 품질 성분을 정밀 판정',
@@ -646,7 +646,7 @@ const businessIntroData = {
             ]
           },
           {
-            image: 'vision/spectral-app(2).jpg',
+            image: 'vision-system/spectral-app(2).jpg',
             title: "의료/간 조직 모니터링 고주파 소작술",
             texts: [
               '간암 절제술의 효과를 정량화하여 치료 정밀도를 입증',
@@ -655,7 +655,7 @@ const businessIntroData = {
             ]
           },
           {
-            image: 'vision/spectral-app(3).jpg',
+            image: 'vision-system/spectral-app(3).jpg',
             title: "재활용품/폐기물 선별·분류",
             texts: [
               '해안가 플라스틱 폐기물을 자율적으로 추적하고 실시간 식별',

@@ -591,7 +591,7 @@
 
             @for $i from 1 to 7 {
               &.i#{$i} {
-                background-image: url("@assets/images/solution/recycle-cnt5-#{$i}.jpg");
+                background-image: url("@assets/images/solution/eco_ai/recycle-cnt5-#{$i}.jpg");
               }
             }
           }

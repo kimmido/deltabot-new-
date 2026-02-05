@@ -2,20 +2,20 @@ import React from "react";
 import HorizontalCardSlider from "./components/HorizontalCardSlider";
 import ContenttBlock from "../components/ContenttBlock";
 
-import img1 from "../../../assets/images/solution/cleaning-cnt1.jpg";
-import img2_1 from "../../../assets/images/solution/cleaning-cnt2-1.png";
-import img2_2 from "../../../assets/images/solution/cleaning-cnt2-2.png";
-import img3_1 from "../../../assets/images/solution/cleaning-cnt3-1.jpg";
-import img3_2 from "../../../assets/images/solution/cleaning-cnt3-2.jpg";
-import img3_3 from "../../../assets/images/solution/cleaning-cnt3-3.jpg";
-import img3_4 from "../../../assets/images/solution/cleaning-cnt3-4.jpg";
-import img3_5 from "../../../assets/images/solution/cleaning-cnt3-5.jpg";
-import img4 from "../../../assets/images/solution/cleaning-cnt4.jpg";
-import img5_1 from "../../../assets/images/solution/cleaning-cnt5-1.jpg";
-import img5_2 from "../../../assets/images/solution/cleaning-cnt5-2.jpg";
-import img6 from "../../../assets/images/solution/cleaning-cnt6.jpg";
-import img7_1 from "../../../assets/images/solution/cleaning-cnt7-1.png";
-import img7_2 from "../../../assets/images/solution/cleaning-cnt7-2.png";
+import img1 from "../../../assets/images/solution/eco_ai/cleaning-cnt1.jpg";
+import img2_1 from "../../../assets/images/solution/eco_ai/cleaning-cnt2-1.png";
+import img2_2 from "../../../assets/images/solution/eco_ai/cleaning-cnt2-2.png";
+import img3_1 from "../../../assets/images/solution/eco_ai/cleaning-cnt3-1.jpg";
+import img3_2 from "../../../assets/images/solution/eco_ai/cleaning-cnt3-2.jpg";
+import img3_3 from "../../../assets/images/solution/eco_ai/cleaning-cnt3-3.jpg";
+import img3_4 from "../../../assets/images/solution/eco_ai/cleaning-cnt3-4.jpg";
+import img3_5 from "../../../assets/images/solution/eco_ai/cleaning-cnt3-5.jpg";
+import img4 from "../../../assets/images/solution/eco_ai/cleaning-cnt4.jpg";
+import img5_1 from "../../../assets/images/solution/eco_ai/cleaning-cnt5-1.jpg";
+import img5_2 from "../../../assets/images/solution/eco_ai/cleaning-cnt5-2.jpg";
+import img6 from "../../../assets/images/solution/eco_ai/cleaning-cnt6.jpg";
+import img7_1 from "../../../assets/images/solution/eco_ai/cleaning-cnt7-1.png";
+import img7_2 from "../../../assets/images/solution/eco_ai/cleaning-cnt7-2.png";
 import VideoPreviewPlayer from "../../../components/UI/VideoPreviewPlayer";
 
 const DescBlock = ({ title, desc, children }) => {

@@ -8,8 +8,8 @@ import ContenttBlock from "../components/ContenttBlock";
 import IntroSection from "./IntroSection";
 import ScrollToPosition from "../../../components/common/ScrollToPosition";
 
-import img_products1 from "../../../assets/images/solution/ecoai-products(1).jpg";
-import img_products2 from "../../../assets/images/solution/ecoai-products(2).jpg";
+import img_products1 from "../../../assets/images/solution/eco_ai/ecoai-products(1).jpg";
+import img_products2 from "../../../assets/images/solution/eco_ai/ecoai-products(2).jpg";
 
 export default function EcoAI() {
   const { sectionRefs, getRef } = useScrollTabsRefs(tabs);
@@ -29,11 +29,11 @@ export default function EcoAI() {
       </div>
 
       <div id={tabs[1].id} ref={getRef(tabs[1].id)}>
-        <CleaningRobotSection />
+        <RecyclingRobotSection />
       </div>
 
       <div id={tabs[2].id} ref={getRef(tabs[2].id)}>
-        <RecyclingRobotSection />
+        <CleaningRobotSection />
       </div>
 
       <div id={tabs[3].id} ref={getRef(tabs[3].id)}>
@@ -47,12 +47,20 @@ export default function EcoAI() {
 
 const tabs = [
   { id: "intro", label: "Eco-AI 솔루션" },
-  { id: "cleaning", label: "수면 정화 로봇" },
   { id: "recycling", label: "재활용 로봇" },
+  { id: "cleaning", label: "수면 정화 로봇" },
   { id: "products", label: "제품 소개" },
 ];
 
 const products = [
+  {
+    label: "Recycling Robot",
+    img: img_products2,
+    path: `recycling-robot`,
+    texts: [
+      "자원순환형 재활용 로봇 시스템은 로봇 자동화 기술과 인공지능(AI)을 융합하여, 폐기물의 자동 선별, 처리, 재자원화 과정을 지능적으로 수행하는 차세대 자원 순환 솔루션",
+    ],
+  },
   {
     label: "Cleaning Robot",
     img: img_products1,
@@ -60,14 +68,6 @@ const products = [
     texts: [
       "도심 하천, 저수지, 인공 수로, 공원 수변 공간 등 다양한 수상 환경에서의 수질 개선과 생태계 보호를 위한 차세대 수면 관리 로봇 솔루션",
       "수면 위의 부유 쓰레기 수거와 수중 수초 제거를 위한 각기 다른 기능의 첨단 로봇들은, 작업 효율성과 운용 안전성을 극대화하도록 설계함.",
-    ],
-  },
-  {
-    label: "Recycling Robot",
-    img: img_products2,
-    path: `recycling-robot`,
-    texts: [
-      "자원순환형 재활용 로봇 시스템은 로봇 자동화 기술과 인공지능(AI)을 융합하여, 폐기물의 자동 선별, 처리, 재자원화 과정을 지능적으로 수행하는 차세대 자원 순환 솔루션",
     ],
   },
 ];
