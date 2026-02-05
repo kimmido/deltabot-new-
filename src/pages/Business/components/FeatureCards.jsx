@@ -1,20 +1,16 @@
 import React from "react";
+import style from "./FeatureCards.module.scss";
 
 function FeatureCards({ data }) {
-  if (!data.features || data.features[0].title === "") return;
   return (
-    <div className="FeatureCards">
-      {data.features.map((ft) => (
-        <div key={ft.icon} className="features-item card">
-          <div className="icon-box card">
-            <img
-              src={`/images/icon/${ft.icon}`}
-              alt={ft.title}
-              className="img-icon"
-            />
+    <div className={style.FeatureCards}>
+      {data.map((ft) => (
+        <div key={ft.icon} className={style["features-item"] + " card"}>
+          <div className={style["icon-box"] + " card"}>
+            <img src={`/images/icon/${ft.icon}`} alt={ft.title} />
             <p>{ft.title}</p>
           </div>
-          <ul className="txt-list bullets">
+          <ul className={style["txt-list"] + " bullets"}>
             {ft.texts &&
               ft.texts.map((txt, i) => <li key={ft.title + i}>{txt}</li>)}
           </ul>

@@ -1,15 +1,17 @@
 import React from "react";
-import ProductCatalog from "./components/ProductCatalog";
 import { useOutletContext } from "react-router-dom";
 import businessIntroData from "../../data/businessIntroData";
+
 import QuoteArea from "./components/QuoteArea";
+import { HighlightText } from "../../components/UI/HighlightText";
 import RollingSwiper from "../../components/UI/RollingSwiper";
 import { SwiperSlide } from "swiper/react";
-import { HighlightText } from "../../components/UI/HighlightText";
 import VideoPreviewPlayer from "../../components/UI/VideoPreviewPlayer";
 import ApplicationsSection from "./components/ApplicationsSection";
+import ProductCatalog from "./components/ProductCatalog";
+import IntroLead from "./components/IntroLead";
 
-function Business() {
+function Logistics() {
   const { currentTab, productData = [], routes } = useOutletContext();
   const data = businessIntroData[currentTab];
   if (!data) return null;
@@ -20,15 +22,9 @@ function Business() {
     <div className="Logistics Business" data-theme={data.theme}>
       <QuoteArea title={data.title} />
 
+      {/* 소개글 영역 */}
       <section className="BusinessIntroSection">
-        {/* 소개글 영역 */}
-        <div className="desc-box">
-          {data.desc.map((txt, idx) => (
-            <p key={idx} className="desc">
-              <HighlightText text={txt} keyChar="#" />
-            </p>
-          ))}
-        </div>
+        <IntroLead data={data.desc} />
 
         {/* 롤링 스와이퍼 */}
         <div className="cnt-box">
@@ -90,4 +86,4 @@ function Business() {
   );
 }
 
-export default Business;
+export default Logistics;

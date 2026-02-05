@@ -1,41 +1,33 @@
 import React from "react";
-import BusinessIntroSection from "./components/BusinessIntroSection";
-import ProductCatalog from "./components/ProductCatalog";
 import { useOutletContext } from "react-router-dom";
 import businessIntroData from "../../data/businessIntroData";
+
 import QuoteArea from "./components/QuoteArea";
 import IntroLead from "./components/IntroLead";
+import CircleIconList from "./components/CircleIconList";
 import ApplicationsSection from "./components/ApplicationsSection";
-import usePathSegments from "../../hooks/usePathSegments";
+import ProductCatalog from "./components/ProductCatalog";
 
-function Business() {
+function It() {
   const { currentTab, productData = [], routes } = useOutletContext();
   const data = businessIntroData[currentTab];
   if (!data) return null;
-  const { rootSegment } = usePathSegments();
 
   return (
-    <div className="Business" data-theme={data.theme}>
+    <div className="It Business" data-theme={data.theme}>
       <QuoteArea title={data.title} />
 
       {/* 소개글 영역 */}
       <section className="BusinessIntroSection">
         <IntroLead data={data.desc} />
 
-        {data.images.map((img, index) => (
-          <img
-            className={`intro-img ${img}`}
-            key={index}
-            src={`/images/business/${rootSegment}/${currentTab}(${index + 1}).jpg`}
-            alt={currentTab}
-          />
-        ))}
+        <img
+          className={`intro-img ${data.images[0]}`}
+          src={`/images/business/it/${currentTab}(1).jpg`}
+          alt={currentTab}
+        />
 
-        {data.extraText && (
-          <div className="desc-box">
-            <p className="desc">{data.extraText}</p>
-          </div>
-        )}
+        <CircleIconList features={data.features} />
       </section>
 
       {/* 응용분야 */}
@@ -51,4 +43,4 @@ function Business() {
   );
 }
 
-export default Business;
+export default It;

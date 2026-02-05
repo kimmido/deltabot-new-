@@ -3,11 +3,11 @@ import ProductCatalog from "./components/ProductCatalog";
 import { useOutletContext } from "react-router-dom";
 import businessIntroData from "../../data/businessIntroData";
 import QuoteArea from "./components/QuoteArea";
-import { SwiperSlide } from "swiper/react";
 import { HighlightText } from "../../components/UI/HighlightText";
 import ApplicationsSection from "./components/ApplicationsSection";
 import StepFlow from "@components/UI/StepFlow";
 import FadeUpTextSlider from "./components/FadeUpTextSlider";
+import IntroLead from "./components/IntroLead";
 
 const TitleImageSection = ({ title, img }) => {
   {
@@ -34,13 +34,7 @@ function Vision() {
 
       {/* 소개글 영역 */}
       <section className="BusinessIntroSection">
-        <div className="desc-box">
-          {data.desc.map((txt, idx) => (
-            <p key={idx} className="desc">
-              <HighlightText text={txt} keyChar="#" />
-            </p>
-          ))}
-        </div>
+        <IntroLead data={data.desc} />
 
         <TitleImageSection title={data.cnt01.title} img={data.cnt01.img} />
 

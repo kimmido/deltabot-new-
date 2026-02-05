@@ -12,8 +12,12 @@ const About = lazy(() => import("./pages/About/About"));
 
 const BusinessLayout = lazy(() => import("./layouts/BusinessLayout"));
 const Business = lazy(() => import("./pages/Business/Business"));
+const RobotAutomation = lazy(
+  () => import("./pages/Business/RobotAutomation.jsx"),
+);
 const Vision = lazy(() => import("./pages/Business/Vision.jsx"));
 const Logistics = lazy(() => import("./pages/Business/Logistics.jsx"));
+const It = lazy(() => import("./pages/Business/It.jsx"));
 const ComingSoon = lazy(() => import("./pages/Business/ComingSoon"));
 
 const SolutionAutomation = lazy(
@@ -52,10 +56,10 @@ function App() {
                   index
                   element={<Navigate to="collaboration" replace />}
                 />
-                <Route path="collaboration" element={<Business />} />
-                <Route path="serial-robot" element={<Business />} />
-                <Route path="palletizing" element={<Business />} />
-                <Route path="deltarobot" element={<Business />} />
+                <Route path="collaboration" element={<RobotAutomation />} />
+                <Route path="serial-robot" element={<RobotAutomation />} />
+                <Route path="palletizing" element={<RobotAutomation />} />
+                <Route path="deltarobot" element={<RobotAutomation />} />
               </Route>
             </Route>
 
@@ -99,14 +103,14 @@ function App() {
             </Route>
 
             {/* IT */}
-            <Route path="information-technology">
+            <Route path="it">
               <Route element={<BusinessLayout />}>
                 <Route index element={<Navigate to="gpu-server" replace />} />
-                <Route path="gpu-server" element={<Business />} />
-                <Route path="workstations" element={<Business />} />
-                <Route path="military" element={<Business />} />
-                <Route path="vehicle" element={<Business />} />
-                <Route path="edge-ai" element={<Business />} />
+                <Route path="gpu-server" element={<It />} />
+                <Route path="workstations" element={<It />} />
+                <Route path="military" element={<It />} />
+                <Route path="vehicle" element={<It />} />
+                <Route path="edge-ai" element={<It />} />
               </Route>
             </Route>
 

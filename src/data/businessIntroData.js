@@ -3,7 +3,7 @@ const businessIntroData = {
     "collaboration": {
       theme: 'sky-blue',
       title: '사람과 함께 일하는 스마트 로봇',
-      description:
+      desc:
         [
           '사람과 같은 작업 공간에서 #직접 협력하며 작업할 수 있도록 설계된 산업용 로봇# 입니다. 기존 산업용 로봇과는 달리, #로봇과 인간이 동시에 하나의 작업을 수행할 수 있는 환경을# 목표로 하며, #안전성, 유연성, 사용성을# 중점으로 설계되었습니다.'
         ],
@@ -13,7 +13,6 @@ const businessIntroData = {
         path: "/automation-solution",
         posId: false
       },
-      featureType:"card",
       features: [
         {
           icon: 'icon_shield.png',
@@ -56,25 +55,30 @@ const businessIntroData = {
           ]
         }
       ],
-      applications: [
-        {
-          video: 'collaboration-application(1).mp4',
-          poster: 'collaboration-application(1).jpg',
-          title: '기어박스 정밀 조립',
-        },
-        {
-          video: 'collaboration-application(2).mp4',
-          poster: 'collaboration-application(2).jpg',
-          title: '종양 생검 내비게이션 및 위치 지정 로봇',
-        },
-      ],
+      app: {
+        col: 'two',
+        media: 'video',
+        type: 'title',
+        list: [
+          {
+            video: 'collaboration-application(1).mp4',
+            poster: 'collaboration-application(1).jpg',
+            title: '기어박스 정밀 조립',
+          },
+          {
+            video: 'collaboration-application(2).mp4',
+            poster: 'collaboration-application(2).jpg',
+            title: '종양 생검 내비게이션 및 위치 지정 로봇',
+          },
+        ]
+      },
     },
     
     // 수직다관절
     "serial-robot": {
       theme: 'vivid-cyan',
       title: '모든 산업 현장에, 가장 유연한 파트너.',
-      description:
+      desc:
         ['산업용 로봇의 매 순간과 모든 동작은 제조 전반에 걸쳐 중요하며, 다양한 작업 범위와 하중 용량, 그리고 고정밀과 고속의 완벽한 조합 덕분에 #로로딩 및 언로딩, 디버링, 테스트, 접착, 분류, 조립, 핸들링 등 모든 종류의 생산 공정에 널리 사용#되어 왔으며 #모든 산업 분야에서 탁월한 성능을 발휘# 합니다.'],
       images: [`card`],
       link: {
@@ -82,7 +86,6 @@ const businessIntroData = {
         path: "/automation-solution",
         posId: false
       },
-      featureType:"card",
       features: [
         {
           icon: 'icon_chart_rocket.png',
@@ -125,25 +128,30 @@ const businessIntroData = {
           ]
         },
       ],
-      applications: [
-        {
-          video: 'serial-robot-application(1).mp4',
-          poster: 'serial-robot-application(1).jpg',
-          title: '피스톤 연삭  및 디버링 생산 라인',
-        },
-        {
-          video: 'serial-robot-application(2).mp4',
-          poster: 'serial-robot-application(2).jpg',
-          title: '배터리 냉각 플레이트 샌딩',
-        },
-      ],
+      app: {
+        col: 'two',
+        media: 'video',
+        type: 'title',
+        list: [
+          {
+            video: 'serial-robot-application(1).mp4',
+            poster: 'serial-robot-application(1).jpg',
+            title: '피스톤 연삭  및 디버링 생산 라인',
+          },
+          {
+            video: 'serial-robot-application(2).mp4',
+            poster: 'serial-robot-application(2).jpg',
+            title: '배터리 냉각 플레이트 샌딩',
+          },
+        ],
+      },
     },
 
     // 팔레타이징로봇
     "palletizing": {
       theme: 'vivid-violet',
       title: '식품부터 물류까지, 코봇 팔레타이저로 완전 자동화',
-      description:
+      desc:
         ['협동로봇(Cobot) 플랫폼을 기반으로,  #생산라인의 출하 공정에서 제품 또는 박스를 자동으로 적재(Palletizing) 하는 지능형 자동화 시스템#입니다. 반복적이고 고하중의 적재 작업을 #정밀 제어 기술과 고속 알고리즘#으로 자동화합니다.  AI 기반 제어와 충돌 감지 기술을 통해 작업자와 안전하게 협업하면서  공간 효율성 및 생산성을 극대화합니다.', '식품·음료·제약·물류 등 다양한 산업 환경에 유연하게 대응하며, 기존 생산 라인과의 #손쉬운 통합은 물론, 각 환경에 꼭 맞게 구성할 수 있는 유연한 설계 방식#으로 설비 투자 대비 높은 생산성 향상 효과를 제공합니다. 데이터 기반의 운영 분석을 통해 지속적인 공정 최적화가 가능한 #스마트 자동화 시스템의 핵심 솔루션#입니다.'],
       images: [`card`],
       link: {
@@ -151,7 +159,6 @@ const businessIntroData = {
         path: "/automation-solution",
         posId: false
       },
-      featureType:"card",
       features: [
         {
           icon: 'icon_shield.png',
@@ -194,25 +201,30 @@ const businessIntroData = {
           ]
         },
       ],
-      applications: [
-        {
-          video: 'palletizing-application(1).mp4',
-          poster: 'palletizing-application(1).jpg',
-          title: ' 평행/핑거 그리퍼로 박스 적재',
-        },
-        {
-          video: 'palletizing-application(2).mp4',
-          poster: 'palletizing-application(2).jpg',
-          title: '공압 그리퍼/진공 그리퍼로 물건 적재',
-        },
-      ],
+      app: {
+        col: 'two',
+        media: 'video',
+        type: 'title',
+        list: [
+          {
+            video: 'palletizing-application(1).mp4',
+            poster: 'palletizing-application(1).jpg',
+            title: ' 평행/핑거 그리퍼로 박스 적재',
+          },
+          {
+            video: 'palletizing-application(2).mp4',
+            poster: 'palletizing-application(2).jpg',
+            title: '공압 그리퍼/진공 그리퍼로 물건 적재',
+          },
+        ],
+      },
     },
 
     // 델타로봇
     "deltarobot": {
       theme: 'royal-blue',
       title: '고속 조립·포장의 혁신, 델타 로봇',
-      description:
+      desc:
         ['델타 로봇(Delta Robot)은 병렬 링크 메커니즘(Parallel Kinematic Mechanism)을 기반으로 설계된 고속 고정밀 산업용 로봇입니다. 3개의 경량 링크가 삼각형 형태의 상단 프레임에 연결되어 있으며, 각각 독립적인 서보 모터에 의해 구동됩니다. 이 링크들은 공통된 플랫폼(엔드 이펙터)을 지지하며, 로봇의 공간 좌표를 고정밀하게 제어할 수 있도록 해줍니다. 델타 구조는 일반적인 직렬 구조 로봇에 비해 훨씬 빠른 응답성과 낮은 관성을 제공하므로, #초당 수백 회의 픽앤플레이스 작업을 요구하는 고속 생산 라인#라인에 특히 적합합니다. 이러한 구조적 이점 덕분에 #델타 로봇은 식음료, 제약, 전자부품, 화장품, 포장 산업 등 다양한 분야에서 널리 활용#되고 있습니다.', '#클린룸 인증(IP65 이상) 제품도 지원 가능#하므로, 위생 기준이 엄격한 환경에서도 안정적으로 작동하며, 생산 품질 향상 및 생산성 극대화에 기여할 수 있는 핵심 자동화 장비로 자리매김하고 있습니다.',
         'DRF_ V 시리즈 차세대 플렉시블 워크스테이션은 #고성능 비전 카메라와  정밀 진동 바이브레이터를 통합#한 고정밀 델타 병렬 로봇을 탑재하고 있습니다. 이를 통해 #초소형 부품의 고정밀 트레이 배치, 신속한 검사 및 분류, 그리고 정밀 부착 작업을 자동으로 수행#합니다. 이 워크스테이션은 #다양한 첨단 산업 분야에서 핵심 공정 장비#로 널리 활용됩니다.'
         ],
@@ -222,7 +234,6 @@ const businessIntroData = {
         path: "/automation-solution",
         posId: false
       },
-      featureType:"card",
       features: [
         {
           icon: 'icon_chart_gear.png',
@@ -265,18 +276,23 @@ const businessIntroData = {
           ]
         },
       ],
-      applications: [
-        {
-          video: 'deltarobot-application(1).mp4',
-          poster: 'deltarobot-application(1).jpg',
-          title: '미용 패치',
-        },
-        {
-          video: 'deltarobot-application(2).mp4',
-          poster: 'deltarobot-application(2).jpg',
-          title: '초코파이 자동 적재 솔루션',
-        },
-      ],
+      app: {
+        col: 'two',
+        media: 'video',
+        type: 'title',
+        list: [
+          {
+            video: 'deltarobot-application(1).mp4',
+            poster: 'deltarobot-application(1).jpg',
+            title: '미용 패치',
+          },
+          {
+            video: 'deltarobot-application(2).mp4',
+            poster: 'deltarobot-application(2).jpg',
+            title: '초코파이 자동 적재 솔루션',
+          },
+        ],
+      },
     },
     
 
@@ -292,7 +308,7 @@ const businessIntroData = {
       ],
       cnt01: {
         title: '머신비전 시스템 구성요소',
-        img: `/images/business/vision/machine-vision(1).jpg`
+        img: `/images/business/vision-system/machine-vision(1).jpg`
       },
       cnt02 : {
         title: '머신비전 시스템 흐름도',
@@ -323,44 +339,44 @@ const businessIntroData = {
             text: "로봇이 피킹, 리젝트 등 수행",
           },
         ],
-        img: `/images/business/vision/machine-vision(2).jpg`
+        img: `/images/business/vision-system/machine-vision(2).jpg`
       },
       cnt03: {
         title: '완벽한 형상 판독',
-        img: `/images/business/vision/machine-vision(3).jpg`
+        img: `/images/business/vision-system/machine-vision(3).jpg`
       },
       cnt04: {
         title: '머신 비전 시스템의 응용',
-        img: `/images/business/vision/machine-vision(4).jpg`
+        img: `/images/business/vision-system/machine-vision(4).jpg`
       },
       slideData: [
         {
-          img: `/images/business/vision/machine-vision-slide(1).jpg`,
+          img: `/images/business/vision-system/machine-vision-slide(1).jpg`,
           title: "외곽선 (아웃라인)",
           text: "제품의 형태 및 테두리 인식 기술",
         },
         {
-          img: `/images/business/vision/machine-vision-slide(2).jpg`,
+          img: `/images/business/vision-system/machine-vision-slide(2).jpg`,
           title: "유무 검사",
           text: "부품의 누락이나 요소 존재 여부 판별",
         },
         {
-          img: `/images/business/vision/machine-vision-slide(3).jpg`,
+          img: `/images/business/vision-system/machine-vision-slide(3).jpg`,
           title: "그레이스케일 면적",
           text: "명암 차를 이용한 결함 면적 분석",
         },
         {
-          img: `/images/business/vision/machine-vision-slide(4).jpg`,
+          img: `/images/business/vision-system/machine-vision-slide(4).jpg`,
           title: "컬러 면적",
           text: "특정 색상의 분포 및 면적 측정",
         },
         {
-          img: `/images/business/vision/machine-vision-slide(5).jpg`,
+          img: `/images/business/vision-system/machine-vision-slide(5).jpg`,
           title: "문자 인식 (OCR)",
           text: "각인된 문자 및 숫자의 자동 판독",
         },
         {
-          img: `/images/business/vision/machine-vision-slide(6).jpg`,
+          img: `/images/business/vision-system/machine-vision-slide(6).jpg`,
           title: "피치 (간격)",
           text: "요소 간의 일정 거리/간격 측정",
         },
@@ -425,7 +441,7 @@ const businessIntroData = {
       ],
       cnt01: {
         title: '열화상 비전 시스템 구성요소',
-        img: `/images/business/vision/thermal(1).jpg`
+        img: `/images/business/vision-system/thermal(1).jpg`
       },
       cnt02 : {
         title: '열화상 비전 시스템 흐름도',
@@ -451,44 +467,44 @@ const businessIntroData = {
             text: "로봇이 피킹, 리젝트 등 수행",
           },
         ],
-        img: `/images/business/vision/thermal(2).png`
+        img: `/images/business/vision-system/thermal(2).png`
       },
       cnt03: {
         title: '산업 현장의 안전과 효율을 극대화 하는 3대 핵심 비전 기술',
-        img: `/images/business/vision/thermal(3).jpg`
+        img: `/images/business/vision-system/thermal(3).jpg`
       },
       cnt04: {
         title: '적외선 감지를 통한 가스 감지기술',
-        img: `/images/business/vision/thermal(4).jpg`
+        img: `/images/business/vision-system/thermal(4).jpg`
       },
       slideData: [
         {
-          img: `/images/business/vision/thermal-slide(1).jpg`,
+          img: `/images/business/vision-system/thermal-slide(1).jpg`,
           title: "제철소 소결기 모니터링",
           text: "소결공정은 1000~1300도 이며, 고온열화상 카메라는 재료의 표면 온도를 모니터링 할수 있고, 소격의 연소과정을 모니터링 하여다양한 품질을 확인할수 있다.",
         },
         {
-          img: `/images/business/vision/thermal-slide(2).jpg`,
+          img: `/images/business/vision-system/thermal-slide(2).jpg`,
           title: "코크스화로 모니터링",
           text: "코크스를 만드는 화로(코크스화로)의 벽 온도는 보통 600~800℃ 정도입니다. 특수 열화상 카메라를 사용하면 화로 안의 배관과 벽 온도를 실시간으로 볼 수 있어, 코크스가 얼마나 잘 만들어지고 있는지, 열이 잘 전달되고 있는지를 알 수 있습니다. 이를 통해 화로가 제대로 작동하고 있는지 쉽게 확인할 수 있습니다.",
         },
         {
-          img: `/images/business/vision/thermal-slide(3).jpg`,
+          img: `/images/business/vision-system/thermal-slide(3).jpg`,
           title: "듀얼 라이트 자동 검사",
           text: "주 변압기 회로 본체, 전압변압기, 부싱, 와이어클램프 등 핵심 부품에 대해 고해상도 열화상 카메라로 자동검사. 실시간으로 모니터링을 하며 구성요소의 온도를 감시하여 위험발생시 알람을 발생.",
         },
         {
-          img: `/images/business/vision/thermal-slide(4).jpg`,
+          img: `/images/business/vision-system/thermal-slide(4).jpg`,
           title: "증기 파이프라인 및 용관로 단열층 상태 관찰",
           text: "석유화학 생산공정에서는 많은 수의 파이프라인과 열장비를 단열해야함. 단열효과는 운영비용과 직접적 연관이 있고, 사용기간이 길수록 노후화 되고 단열효과는 감소됨.",
         },
         {
-          img: `/images/business/vision/thermal-slide(5).jpg`,
+          img: `/images/business/vision-system/thermal-slide(5).jpg`,
           title: "엔진 작동 온도 및 탱크 내 유체 수준",
           text: "열화상 카메라로 관찰하면 단열츨의 상태와 효과를 정확하게 파악할수 있어 적절한 시기에 수리작업이 용이함. 또한 저장탱크의 액체 수위를 관찰하는 돗에도 사용되어 생산작업에 중요한 시점을 제공",
         },
         {
-          img: `/images/business/vision/thermal-slide(6).jpg`,
+          img: `/images/business/vision-system/thermal-slide(6).jpg`,
           title: "가축 체온 측정 및 전염병 예방",
           text: "가축의 의 체표면 온도 분포를 활용하여 질병을 미리 확인 할수 있는 지표를 만들수 있다. 이상행동식별과 발달상태를 평가, 염증을 감지하고, 돼지열병, 광견병, 청색귀병,돼지 패스트, 구제역등 발영증상을 동반한 주요 전염병를 미리 감지를 할수 있다. 또한, 젖소에게 흔한 질병인 유방염을 유방의 온도를 확인하여 조기에 진단할수 있다",
         },
@@ -537,7 +553,7 @@ const businessIntroData = {
       ],
       cnt01: {
         title: '초분광 비전 시스템 구성요소',
-        img: `/images/business/vision/spectral(1).jpg`
+        img: `/images/business/vision-system/spectral(1).jpg`
       },
       cnt02 : {
         title: '초분광 비전 시스템 흐름도',
@@ -568,49 +584,49 @@ const businessIntroData = {
             text: "로봇이 피킹, 리젝트 등 수행",
           },
         ],
-        img: `/images/business/vision/spectral(2).jpg`
+        img: `/images/business/vision-system/spectral(2).jpg`
       },
       cnt03: {
         title: '성분의 투명한 분석',
-        img: `/images/business/vision/spectral(3).jpg`
+        img: `/images/business/vision-system/spectral(3).jpg`
       },
       cnt04: {
         title: '초분광 이미징 시스템',
-        img: `/images/business/vision/spectral(4).jpg`
+        img: `/images/business/vision-system/spectral(4).jpg`
       },
       slideData: [
         {
-          img: `/images/business/vision/spectral-slide(1).jpg`,
+          img: `/images/business/vision-system/spectral-slide(1).jpg`,
           title: "스마트 농업",
           text: "감자와 찰흙의 다른 스펙트럼을 이용하여 분리하는 자동화공정 적용",
         },
         {
-          img: `/images/business/vision/spectral-slide(2).jpg`,
+          img: `/images/business/vision-system/spectral-slide(2).jpg`,
           title: "제약",
           text: "포장 캡슐안에 빈 공간이 있거나 , 결함 혹은 다른약이 포함되었는지 여부 확인가능!",
         },
         {
-          img: `/images/business/vision/spectral-slide(3).jpg`,
+          img: `/images/business/vision-system/spectral-slide(3).jpg`,
           title: "건축 인프라",
           text: "제지 공정에서 종이의 수분함량 확인 및 모니터링!",
         },
         {
-          img: `/images/business/vision/spectral-slide(4).jpg`,
+          img: `/images/business/vision-system/spectral-slide(4).jpg`,
           title: "식품",
           text: "아몬드와 아몬드 껍질의 다른 Spectra를 이용하여 자동화 분리과정 적용",
         },
         {
-          img: `/images/business/vision/spectral-slide(5).jpg`,
+          img: `/images/business/vision-system/spectral-slide(5).jpg`,
           title: "녹조",
           text: "유해조류 분석 및 구별, 녹조 발생 모니터링 및 중국발 외래종 ‘괭생이 모자반‘ 모니터링등!",
         },
         {
-          img: `/images/business/vision/spectral-slide(6).jpg`,
+          img: `/images/business/vision-system/spectral-slide(6).jpg`,
           title: "환경",
           text: "초분광카메라로 흰색 스펙트럼이 나타난 부분을 통해 기름이 유출된 위치 확인",
         },
         {
-          img: `/images/business/vision/spectral-slide(7).jpg`,
+          img: `/images/business/vision-system/spectral-slide(7).jpg`,
           title: "국방",
           text: "항공에서의 적의 정확한 위치 확인, 군용차량, 지뢰탐지, 급조폭발물, 표적 추적·지시용 사용",
         },
@@ -655,48 +671,58 @@ const businessIntroData = {
     "illumination": {
       theme: 'default',
       title: 'AI 정밀 분석을 위한, 고성능 조명',
-      description: ['산업용 머신비전 검사용 고정밀 LED 조명 으로, 균일한 밝기와 다양한 파장 옵션을 제공하여 정밀 영상 획득을 지원합니다.'],
+      desc: ['산업용 머신비전 검사용 고정밀 LED 조명 으로, 균일한 밝기와 다양한 파장 옵션을 제공하여 정밀 영상 획득을 지원합니다.'],
       images: ['card'],
-      applications: [
-        {
-          image: 'illumination-application(1).jpg',
-          title: '반도체전자 부품 검사', 
-        },
-        {
-          image: 'illumination-application(2).jpg',
-          title: '의약품 외관 검사',
-        },
-        {
-          image: 'illumination-application(3).jpg',
-          title: '물류 패키지 인식 및 코드 스캔 지원',
-        },
-      ],
+      app: {
+        col: 'three',
+        media: 'image',
+        type: 'title',
+        list: [
+          {
+            image: 'vision-system/illumination-application(1).jpg',
+            title: '반도체전자 부품 검사', 
+          },
+          {
+            image: 'vision-system/illumination-application(2).jpg',
+            title: '의약품 외관 검사',
+          },
+          {
+            image: 'vision-system/illumination-application(3).jpg',
+            title: '물류 패키지 인식 및 코드 스캔 지원',
+          },
+        ]
+      }
     },
   
     // 비전 컨트롤러
     "vision-controller": {
       theme: 'default',
       title: '스마트 제조를 위한 핵심 비전 처리 장치',
-      description: [
+      desc: [
         '고성능 머신비전 솔루션을 위한 통합형 비전 컨트롤러로, 카메라, 조명, AI 분석, I/O 제어 기능을 하나의 장비에서 처리할 수 있는 올인원 플랫폼입니다.',
         '산업용 현장에서 고속 생산 라인의 정밀 검사, 분류, 제어 작업에 최적화되어 있습니다.'
       ],
       images: ['card'],
       extraText: '머신비전 시스템의 중앙 제어장치로, 영상 입력 → 처리 → 결과 출력까지 통합 관리',
-      applications: [
-        {
-          image: 'vision-controller-application(1).jpg',
-          title: '전자/반도체 공정',
-        },
-        {
-          image: 'vision-controller-application(2).jpg',
-          title: '자동차 부품 검사',
-        },
-        {
-          image: 'vision-controller-application(3).jpg',
-          title: '물류 패키징 검수',
-        },
-      ],
+       app: {
+        col: 'three',
+        media: 'image',
+        type: 'title',
+        list: [
+          {
+            image: 'vision-system/vision-controller-application(1).jpg',
+            title: '전자/반도체 공정',
+          },
+          {
+            image: 'vision-system/vision-controller-application(2).jpg',
+            title: '자동차 부품 검사',
+          },
+          {
+            image: 'vision-system/vision-controller-application(3).jpg',
+            title: '물류 패키징 검수',
+          },
+        ],
+      }
     },
 
 
@@ -713,23 +739,23 @@ const businessIntroData = {
       cnt01: {
         title: '물류 로봇 시스템 구성 요소',
         desc: '스마트 물류 환경을 완성하는 핵심 기술이 하나로 연결됩니다.',
-        img: '/images/business/i-robot(1).jpg'
+        img: '/images/business/logistics/i-robot(1).jpg'
       },
       slideData: {
         title: 'I-ROBOT 도입의 이점',
         desc: '첨단 AI와 로봇이 24시간 정확하게 물류를 처리하여, 기업의 생산성과 지속 가능한 성장을 동시에 실현합니다.',
         slides: 
         [
-          '/images/business/i-robot-slide(1).svg', 
-          '/images/business/logistics-slide-arrow.svg', 
-          '/images/business/i-robot-slide(2).svg', 
-          '/images/business/logistics-slide-arrow.svg', 
-          '/images/business/i-robot-slide(3).svg', 
-          '/images/business/logistics-slide-arrow.svg', 
-          '/images/business/i-robot-slide(4).svg', 
-          '/images/business/logistics-slide-arrow.svg', 
-          '/images/business/i-robot-slide(5).svg', 
-          '/images/business/logistics-slide-arrow.svg', 
+          '/images/business/logistics/i-robot-slide(1).svg', 
+          '/images/business/logistics/logistics-slide-arrow.svg', 
+          '/images/business/logistics/i-robot-slide(2).svg', 
+          '/images/business/logistics/logistics-slide-arrow.svg', 
+          '/images/business/logistics/i-robot-slide(3).svg', 
+          '/images/business/logistics/logistics-slide-arrow.svg', 
+          '/images/business/logistics/i-robot-slide(4).svg', 
+          '/images/business/logistics/logistics-slide-arrow.svg', 
+          '/images/business/logistics/i-robot-slide(5).svg', 
+          '/images/business/logistics/logistics-slide-arrow.svg', 
         ],
       },
       app: {
@@ -771,19 +797,19 @@ const businessIntroData = {
       },
       cnt01: {
         desc: '당사의 물류 자동화 장비 시리즈는 복잡한 물류 환경에서도 #빠른 처리·정확한 분류·지능형 제어#를 실현합니다.',
-        img: '/images/business/automated-sorting-system(1).jpg'
+        img: '/images/business/logistics/automated-sorting-system(1).jpg'
       },
       slideData: {
         title: '기능 및 이점',
         slides: [
-          '/images/business/sorting-slide(1).svg', 
-          '/images/business/logistics-slide-arrow.svg', 
-          '/images/business/sorting-slide(2).svg', 
-          '/images/business/logistics-slide-arrow.svg', 
-          '/images/business/sorting-slide(3).svg', 
-          '/images/business/logistics-slide-arrow.svg', 
-          '/images/business/sorting-slide(4).svg', 
-          '/images/business/logistics-slide-arrow.svg', 
+          '/images/business/logistics/sorting-slide(1).svg', 
+          '/images/business/logistics/logistics-slide-arrow.svg', 
+          '/images/business/logistics/sorting-slide(2).svg', 
+          '/images/business/logistics/logistics-slide-arrow.svg', 
+          '/images/business/logistics/sorting-slide(3).svg', 
+          '/images/business/logistics/logistics-slide-arrow.svg', 
+          '/images/business/logistics/sorting-slide(4).svg', 
+          '/images/business/logistics/logistics-slide-arrow.svg', 
         ]
       },
       app: {
@@ -815,58 +841,68 @@ const businessIntroData = {
     "recycling-robot": {
       theme: 'default',
       title: '자원순환형 재활용 로봇 시스템',
-      description: [
+      desc: [
         '#자원순환형 재활용 로봇 시스템은 로봇 자동화 기술과 인공지능(AI)을 융합하여, 폐기물의 자동 선별, 처리, 그리고 재자원화 과정을 지능적으로 수행하는 차세대 자원 순환 솔루션입니다.#',
         '이 시스템은 기존의 수작업에 의존하던 비효율적인 폐기물 분류 방식을 혁신적으로 대체함으로써, #정확도는 물론 속도와 운영 효율성까지 비약적으로 향상시키는 것이 핵심 장점#입니다. AI가 축적된 데이터를 분석하여 폐기물의 유입 패턴, 재질 비율, 처리 효율 등을 지속적으로 학습하고 최적화함으로써, 운영자가 보다 정밀하고 전략적인 자원순환 관리를 수행할 수 있습니다.',
         '자원순환형 재활용 로봇 시스템은 환경 보호를 넘어, #산업 전반의 지속가능성, 효율성, 그리고 첨단화를 동시에 추구하는 미래형 자원관리 솔루션#이라 할 수 있습니다.'
       ],
       images: ['card','spacing-l', 'spacing-l'],
-      link: {
-        label: "재활용 로봇 솔루션 자세히 보기",
-        path: "/eco-ai-solution",
-        posId: "recycling"
-      },
-      applications: [
-        {
-          image: 'recycling-robot-application(1).jpg',
-          title: '플라스틱',
+      app: {
+        col: 'three',
+        media: 'image',
+        type: 'title',
+        list: [
+          {
+            image: 'eco-friendly-robot/recycling-robot-application(1).jpg',
+            title: '플라스틱',
+          },
+          {
+            image: 'eco-friendly-robot/recycling-robot-application(2).jpg',
+            title: '종이',
+          },
+          {
+            image: 'eco-friendly-robot/recycling-robot-application(3).jpg',
+            title: '철/알루미늄',
+          },
+        ],
+        link: {
+          label: "재활용 로봇 솔루션 자세히 보기",
+          path: "/eco-ai-solution",
+          posId: "recycling"
         },
-        {
-          image: 'recycling-robot-application(2).jpg',
-          title: '종이',
-        },
-        {
-          image: 'recycling-robot-application(3).jpg',
-          title: '철/알루미늄',
-        },
-      ],
+      }
     },
     
     // 클리닝 로봇
     "cleaning-robot": {
       theme: 'default',
       title: '지속가능한 수면 환경을 위한 스마트 워터 로보틱스 솔루션',
-      description: [
+      desc: [
         '도심 하천, 저수지, 인공 수로, 공원 수변 공간 등 다양한 수상 환경에서의 수질 개선과 생태계 보호를 위한 차세대 수면 관리 로봇 솔루션을 제공합니다. 수면 위의 부유 쓰레기 수거와 수중 수초 제거를 위한 각기 다른 기능의 첨단 로봇들은, 작업 효율성과 운용 안전성을 극대화하도록 설계되어 있습니다.','인력 접근이 어려운 구역에서도 정밀한 작업이 가능하며, 24시간 무인 운영, 넓은 작업 반경, 자동화된 데이터 수집 및 모니터링 기능을 통해 환경 관리의 새로운 기준을 제시합니다. 각 제품의 특화된 임무 수행 능력으로, 지속 가능한 수자원 관리, 생태계 복원, 그리고 유지보수 비용 절감이라는 핵심 가치를 실현합니다'
       ],
       images: ['card', 'spacing-l'],
-      link: {
-        label: "수면 정화 로봇 솔루션 자세히 보기",
-        path: "/eco-ai-solution",
-        posId: "cleaning"
-      },
-      applications: [
-        {
-          video: 'solution-ecoai(1).mp4',
-          poster: 'solution-ecoai(1).jpg',
-          title: '잘라낸 수초를 모아두는 모습',
+      app: {
+        col: 'two',
+        media: 'video',
+        type: 'title',
+        list: [
+          {
+            video: 'solution-ecoai(1).mp4',
+            poster: 'solution-ecoai(1).jpg',
+            title: '잘라낸 수초를 모아두는 모습',
+          },
+          {
+            video: 'solution-ecoai(4).mp4',
+            poster: 'solution-ecoai(4).jpg',
+            title: '복잡하고 변화하는 수로 정밀 청소',
+          },
+        ],
+        link: {
+          label: "수면 정화 로봇 솔루션 자세히 보기",
+          path: "/eco-ai-solution",
+          posId: "cleaning"
         },
-        {
-          video: 'solution-ecoai(4).mp4',
-          poster: 'solution-ecoai(4).jpg',
-          title: '복잡하고 변화하는 수로 정밀 청소',
-        },
-      ],
+      }
     },
 
 
@@ -875,12 +911,11 @@ const businessIntroData = {
     "gpu-server": {
       theme: 'default',
       title: 'AI·HPC를 위한 고성능 GPU',
-      description: [
+      desc: [
         'AI 인프라 통합 구축, 고성능 연구·분석 환경, 또는 기업용 AI 서비스 플랫폼의 기반으로 매우 적합한 GPU 서버입니다.',
         '고성능 GPU와 멀티코어 CPU를 바탕으로 대규모 연산 및 딥러닝 학습을 빠르게 처리할 수 있으며, 고속 네트워킹과 확장형 I/O, 유연한 리소스 관리로 안정적인 운영이 가능합니다. AI 추론·분석부터 스토리지 모니터링까지 폭넓게 대응할 수 있어, 확장성과 통합성을 갖춘 차세대 인프라를 구현할 수 있습니다.'
       ],
       images: ['card'],
-      featureType:"circle",
       features: [
         {
           icon: 'icon_computer_graphics',
@@ -907,29 +942,33 @@ const businessIntroData = {
           text: '고속 네트워킹'
         },
       ],
-      applications: [
-        {
-          image: 'gpu-server-application(1).jpg',
-          title: '지능형 비전 분석 시스템',
-        },
-        {
-          image: 'gpu-server-application(2).jpg',
-          title: '의료 영상 진단 보조 시스템',
-        },
-        {
-          image: 'gpu-server-application(3).jpg',
-          title: '제조 이상탐지 및 품질 분석',
-        },
-      ],
+      app: {
+        col: 'three',
+        media: 'image',
+        type: 'title',
+        list: [
+          {
+            image: 'it/gpu-server-application(1).jpg',
+            title: '지능형 비전 분석 시스템',
+          },
+          {
+            image: 'it/gpu-server-application(2).jpg',
+            title: '의료 영상 진단 보조 시스템',
+          },
+          {
+            image: 'it/gpu-server-application(3).jpg',
+            title: '제조 이상탐지 및 품질 분석',
+          },
+        ],
+      }
     },
 
     // 워크스테이션
     "workstations": {
       theme: 'default',
       title: '고성능 워크스테이션 & 서버',
-      description: ['AI, HPC, CAD/CAE, 머신비전, 시뮬레이션을 위한 최적화된 성능을 제공하는 고성능 워크스테이션 및 서버. 다양한 폼팩터와 최신 프로세서, 고성능 GPU, 고속 인터페이스, 원격 관리 기능을 통해 뛰어난 처리 능력과 효율성을 구현합니다.'],
+      desc: ['AI, HPC, CAD/CAE, 머신비전, 시뮬레이션을 위한 최적화된 성능을 제공하는 고성능 워크스테이션 및 서버. 다양한 폼팩터와 최신 프로세서, 고성능 GPU, 고속 인터페이스, 원격 관리 기능을 통해 뛰어난 처리 능력과 효율성을 구현합니다.'],
       images: ['card'],
-      featureType:"circle",
       features: [
         {
           icon: 'icon_cpu',
@@ -956,33 +995,37 @@ const businessIntroData = {
           text: '보안 & 원격 관리'
         },
       ],
-      applications: [
-        {
-          image: 'workstations-application(1).jpg',
-          title: 'AI 및 고성능 연산',
-        },
-        {
-          image: 'workstations-application(2).jpg',
-          title: '산업용 영상 분석 및 자동화',
-        },
-        {
-          image: 'workstations-application(3).jpg',
-          title: '설계 및 시뮬레이션',
-        },
-      ],
+      app: {
+        col: 'three',
+        media: 'image',
+        type: 'title',
+        list: [
+          {
+            image: 'it/workstations-application(1).jpg',
+            title: 'AI 및 고성능 연산',
+          },
+          {
+            image: 'it/workstations-application(2).jpg',
+            title: '산업용 영상 분석 및 자동화',
+          },
+          {
+            image: 'it/workstations-application(3).jpg',
+            title: '설계 및 시뮬레이션',
+          },
+        ],
+      }
     },
 
     // 랙마운트
     "rack-mount": {
       theme: 'default',
       title: '산업 현장을 위한 컴퓨팅 솔루션',
-      description: [
+      desc: [
         'Rack Mount 서버는 산업 환경에서도 안정적인 성능과 확장성을 기반으로 다양한 분야에 적용되고 있습니다.',
         '공장 자동화, 스마트 팩토리, 머신비전, 품질검사, IoT 게이트웨이, 에지 컴퓨팅 등 고속 데이터 처리와 실시간 제어가 요구되는 환경에서 핵심 인프라로 활용됩니다.',
         '특히, 견고한 하드웨어 구성과 표준화된 폼팩터는 산업용 캐비닛이나 제어 랙에 쉽게 통합될 수 있어 유지보수 및 확장 또한 용이합니다. 또한 GPU나 고속 SSD, 고성능 네트워크 카드 등을 추가 장착하여 AI 분석, 예지 정비, 비전 시스템 등의 고부가가치 작업도 지원합니다.'
       ],
       images: ['card'],
-      featureType:"circle",
       features: [
         {
           icon: 'icon_cpu',
@@ -1010,31 +1053,35 @@ const businessIntroData = {
         },
       ],
       extraText: "Rack Mount 서버는 데이터 센터와 서버실에서 효율적으로 공간을 활용할 수 있도록 설계된 서버로, 여러 대의 서버를 수직으로 쌓아 설치할 수 있는 구조를 가지고 있습니다. 이러한 서버는 높은 밀도의 컴퓨팅 파워를 제공하며, 관리 및 유지보수의 용이성 덕분에 많은 기업에서 선호되고 있습니다.",
-      applications: [
-        {
-          image: 'rack-mount-application(1).jpg',
-          title: '대규모 데이터 처리/저장',
-        },
-        {
-          image: 'rack-mount-application(2).jpg',
-          title: '기업용 서버 관리',
-        },
-        {
-          image: 'rack-mount-application(3).jpg',
-          title: '클라우드 서비스 인프라 구축',
-        },
-      ],
+      app: {
+        col: 'three',
+        media: 'image',
+        type: 'title',
+        list: [
+          {
+            image: 'it/rack-mount-application(1).jpg',
+            title: '대규모 데이터 처리/저장',
+          },
+          {
+            image: 'it/rack-mount-application(2).jpg',
+            title: '기업용 서버 관리',
+          },
+          {
+            image: 'it/rack-mount-application(3).jpg',
+            title: '클라우드 서비스 인프라 구축',
+          },
+        ],
+      }
     },
 
     // 밀리터리
     "military": {
       theme: 'default',
       title: '고신뢰성 미션 컴퓨팅 서버',
-      description: [
+      desc: [
         '혹독한 환경에서도 흔들림 없이 작동하는 서버, 그것이 바로 밀리터리 서버입니다. ','고성능 프로세싱 파워는 물론, 열과 충격, 진동에 강한 산업용 등급의 내구성, 군사 수준의 보안 아키텍처까지 갖춘 이 서버는 군 통신망, 전장 상황실, 감시 시스템, 산업 자동화 설비 등 고신뢰 환경에서 최적의 성능을 발휘합니다.','전장처럼 예측 불가능한 상황에서도 데이터를 지키고, 시스템을 유지하는 것이 곧 경쟁력입니다. 무결점 작동을 위한 선택, 밀리터리 서버로 미래의 임무를 준비하십시오.'
       ],
       images: ['card'],
-      featureType:"circle",
       features: [
         {
           icon: 'icon_cpu',
@@ -1062,33 +1109,37 @@ const businessIntroData = {
         },
       ],
       extraText: "고신뢰성 미션 컴퓨팅 서버 솔루션은 차세대 항공전자 시스템과 방위산업 분야에서 요구되는 극한의 작전 환경에서도 안정적이고 지속 가능한 고성능 연산 및 실시간 데이터 처리 기능을 제공하는 임무 중심형(Server-class) 컴퓨팅 플랫폼입니다.",
-      applications: [
-        {
-          image: 'military-application(1).jpg',
-          title: '무인 항공기(UAV) 탑재',
-        },
-        {
-          image: 'military-application(2).jpg',
-          title: '전술 지상 차량(Tactical Ground Vehicle)',
-        },
-        {
-          image: 'military-application(3).jpg',
-          title: '항공기 탑재 임무 컴퓨터',
-        },
-      ],
+      app: {
+        col: 'three',
+        media: 'image',
+        type: 'title',
+        list: [
+          {
+            image: 'it/military-application(1).jpg',
+            title: '무인 항공기(UAV) 탑재',
+          },
+          {
+            image: 'it/military-application(2).jpg',
+            title: '전술 지상 차량(Tactical Ground Vehicle)',
+          },
+          {
+            image: 'it/military-application(3).jpg',
+            title: '항공기 탑재 임무 컴퓨터',
+          },
+        ],
+      }
     },
 
     // 비히클
     "vehicle": {
       theme: 'default',
       title: '차량의 두뇌를 진화시키다.',
-      description: [
+      desc: [
         '자율주행과 차량통신(V2X)을 위한 고신뢰 비히클 서버로, 미래 모빌리티 환경에 최적화된 솔루션을 제공합니다. 고성능 프로세싱, 뛰어난 안정성, 유연한 확장성을 바탕으로 한 차원 높은 인텔리전스를 구현하며, 스마트 모빌리티의 중심에서 핵심 역할을 수행합니다.',
         '‘비히클(Vehicle)’은 단순히 자동차만을 의미하지 않습니다. 사람이나 화물을 이동시키기 위해 설계된 모든 이동 수단(자전거, 기차, 비행기, 선박 등)을 포괄하며, 각기 다른 기능과 목적을 가지고 다양한 산업 및 사회적 맥락에서 사용됩니다.',
         '오늘날 비히클은 단순한 교통수단을 넘어 경제, 물류, 관광, 환경 등 여러 분야에서 필수적인 인프라로 자리 잡고 있으며, 특히 전기차(EV) 및 친환경 이동 수단의 부상과 함께 더욱 주목받고 있습니다. S1901 EvoTRAC는 이러한 흐름 속에서, 미래 지향적이고 지속 가능한 모빌리티 생태계를 위한 기술적 기반을 제공합니다.'
       ],
       images: ['card'],
-      featureType:"circle",
       features: [
         {
           icon: 'icon_cpu',
@@ -1115,44 +1166,54 @@ const businessIntroData = {
           text: '보안 인증'
         },
       ],
-      applications: [
-        {
-          image: 'vehicle-application(1).jpg',
-          title: '자율주행차량 제어 서버',
-        },
-        {
-          image: 'vehicle-application(2).jpg',
-          title: 'V2X 기반 도로 인프라 연동 시스템',
-        },
-        {
-          image: 'vehicle-application(3).jpg',
-          title: '스마트 물류 및 차량 모니터링 시스템',
-        },
-      ],
+      app: {
+        col: 'three',
+        media: 'image',
+        type: 'title',
+        list: [
+          {
+            image: 'it/vehicle-application(1).jpg',
+            title: '자율주행차량 제어 서버',
+          },
+          {
+            image: 'it/vehicle-application(2).jpg',
+            title: 'V2X 기반 도로 인프라 연동 시스템',
+          },
+          {
+            image: 'it/vehicle-application(3).jpg',
+            title: '스마트 물류 및 차량 모니터링 시스템',
+          },
+        ],
+      }
     },
 
     // 엣지 AI
     "edge-ai": {
       theme: 'default',
       title: '실시간 AI로 움직이는 산업',
-      description: [
+      desc: [
         'NVIDIA® Jetson™ 기반의 고성능 엣지 서버로 스마트 팩토리부터 리테일까지, 실시간 추론과 안정성을 동시에 제공합니다. 저전력 팬리스 설계와 유연한 I/O 확장으로, 다양한 산업 환경에 맞춤형 솔루션을 제공합니다.'
       ],
       images: ['card', 'default', 'default', 'default'],
-      applications: [
-        {
-          image: 'edge-ai-application(1).jpg',
-          title: 'AI 비전',
-        },
-        {
-          image: 'edge-ai-application(2).jpg',
-          title: '스마트 제조/물류 자동화/엣지 제어',
-        },
-        {
-          image: 'edge-ai-application(3).jpg',
-          title: '스마트 시티',
-        },
-      ],
+      app: {
+        col: 'three',
+        media: 'image',
+        type: 'title',
+        list: [
+          {
+            image: 'it/edge-ai-application(1).jpg',
+            title: 'AI 비전',
+          },
+          {
+            image: 'it/edge-ai-application(2).jpg',
+            title: '스마트 제조/물류 자동화/엣지 제어',
+          },
+          {
+            image: 'it/edge-ai-application(3).jpg',
+            title: '스마트 시티',
+          },
+        ],
+      }
     },
   };
   

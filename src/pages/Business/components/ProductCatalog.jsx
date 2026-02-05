@@ -37,10 +37,10 @@ function ProductCatalog({ currentTab, productData = [], routes }) {
           opacity: 1,
           duration: 1,
           ease: "sine.out",
-        }
+        },
       );
     },
-    { dependencies: [currentTab], scope: gsapContainerRef }
+    { dependencies: [currentTab], scope: gsapContainerRef },
   );
 
   const openModal = (num) => {
@@ -54,7 +54,7 @@ function ProductCatalog({ currentTab, productData = [], routes }) {
         <h3
           className="catalog__title"
           style={{
-            backgroundImage: `url(/images/business/${currentTab}-catalog-banner.png)`,
+            backgroundImage: `url(/images/business/prod_banner/${currentTab}-catalog-banner.png)`,
           }}
         >
           <span className="l">{route.label} 시리즈</span>
