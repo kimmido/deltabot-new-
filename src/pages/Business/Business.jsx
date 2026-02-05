@@ -1,5 +1,4 @@
 import React from "react";
-import BusinessIntroSection from "./components/BusinessIntroSection";
 import ProductCatalog from "./components/ProductCatalog";
 import { useOutletContext } from "react-router-dom";
 import businessIntroData from "../../data/businessIntroData";
