@@ -71,10 +71,10 @@
             &::after {
               color: #fff;
               font-weight: 600;
-              font-size: calc($btn-s - 1em);
+              font-size: calc($btn-s - 20px);
 
               @include respondTo(tablet-l) {
-                font-size: calc($btn-l - 1em);
+                font-size: calc($btn-l - 20px);
               }
             }
           }
