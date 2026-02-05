@@ -20,8 +20,7 @@
             $url: url("/src/components/icons/icon_bullet_chevron.svg")
           );
 
-          filter: brightness(0) saturate(100%) invert(86%) sepia(0%)
-            saturate(0%) hue-rotate(0deg);
+          filter: var(--filter);
         }
       }
     }
@@ -45,23 +44,54 @@
       margin-top: min(5vw, 60px);
 
       .swiper {
-        padding: 10px 10px 30px;
+        $btn-s: 2.7em;
+        $btn-l: 44px;
+
+        padding: 10px 10px calc($btn-s + 1.2em);
         overflow: hidden;
+        max-width: 1200px;
 
         @include respondTo(pc-l) {
-          padding-bottom: 36px;
+          padding-bottom: calc($btn-l + 2em);
         }
 
-        .swiper-pagination-bullets {
-          bottom: 0;
+        .swiper-button {
+          &-prev,
+          &-next {
+            top: auto;
+            bottom: 0;
+            border-radius: 50%;
+            background-color: $color-point;
+            @include square($btn-s);
 
-          .swiper-pagination-bullet {
-            width: 10px;
-            height: 10px;
+            @include respondTo(tablet-l) {
+              @include square($btn-l);
+            }
 
-            &-active {
-              transform: scale(1.5);
-              background-color: var(--color-point);
+            &::after {
+              color: #fff;
+              font-weight: 600;
+              font-size: calc($btn-s - 1em);
+
+              @include respondTo(tablet-l) {
+                font-size: calc($btn-l - 1em);
+              }
+            }
+          }
+
+          &-prev {
+            left: calc(50% - $btn-s - 10px);
+
+            &::after {
+              transform: translateX(-2px);
+            }
+          }
+
+          &-next {
+            right: calc(50% - $btn-s - 10px);
+
+            &::after {
+              transform: translateX(2px);
             }
           }
         }
@@ -80,14 +110,14 @@
       .txt-box {
         top: 100%;
         max-width: 1200px;
-        margin: 2em auto 0;
+        margin: 1.8em auto 0;
         padding: 0 2px;
         opacity: 0;
         transform: translateY(20px);
         text-align: center;
 
         @include respondTo(tablet-l) {
-          margin-top: 3em;
+          margin-top: 2em;
           font-size: 1.8rem;
         }
 

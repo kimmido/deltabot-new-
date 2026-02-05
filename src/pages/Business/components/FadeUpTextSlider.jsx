@@ -1,19 +1,17 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 import "swiper/scss";
-import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 function FadeUpTextSlider({ slideData }) {
   return (
     <div className="FadeUpTextSlider">
       <Swiper
         className="FadeUpTextSlider__swiper"
-        modules={[Autoplay, Pagination]}
-        pagination={{
-          clickable: true,
-        }}
+        modules={[Autoplay, Navigation]}
+        navigation={true}
         loop={true}
         speed={800}
         autoplay={{
