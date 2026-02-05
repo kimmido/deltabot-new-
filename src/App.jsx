@@ -30,6 +30,7 @@ const SolutionSmartFactory = lazy(
 const SolutionSmartLogistics = lazy(
   () => import("./pages/Solution/Logistics/Logistics"),
 );
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
   useEffect(() => {
@@ -130,6 +131,7 @@ function App() {
             />
 
             <Route path="about" element={<About />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </Suspense>

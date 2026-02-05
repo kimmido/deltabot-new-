@@ -1,0 +1,47 @@
+.NotFound {
+  padding: min(12vw, 120px) 0;
+  background: linear-gradient(180deg, #f6f7fb 0%, #ffffff 70%);
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35em 0.8em;
+    font-weight: 700;
+    font-size: min(7vw, 70px);
+    letter-spacing: 0.08em;
+    color: $color-point;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 999px;
+    background: #fff;
+  }
+
+  &__title {
+    margin-top: 0.6em;
+    font-size: min(5vw, 42px);
+    font-weight: 700;
+    color: $color-text-title;
+  }
+
+  &__text {
+    margin-top: 0.8em;
+    color: $color-gray-700;
+    line-height: 1.6;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 2em;
+    flex-wrap: wrap;
+
+    .btn {
+      min-width: 160px;
+    }
+  }
+}
