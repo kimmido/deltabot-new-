@@ -35,7 +35,10 @@ const Home = () => {
         <BannerSwiper />
         <div className="container">
           <div className="decorative-area" ref={gsapContainer}>
-            <p className="decorative-txt">산업을 혁신하는 지능형 시스템.</p>
+            <p className="decorative-txt">
+              인공지능(AI)과 3D 비전, 로봇 가이던스 기술의 융합을 통해 지능화된
+              로봇 자동화 솔루션을 구현하는 Deltabot
+            </p>
           </div>
         </div>
         <BusinessSection />

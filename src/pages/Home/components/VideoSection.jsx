@@ -18,7 +18,7 @@ function VideoSection() {
       ],
     },
     {
-      title: "코봇 팔레타이징: 멀티 피킹 시스템",
+      title: "코봇 팔레타이징 멀티 피킹 시스템",
       src: "/videos/page/main2.mp4",
       poster: "/images/video_poster/main2.jpg",
       desc: [

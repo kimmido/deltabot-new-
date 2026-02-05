@@ -6,6 +6,7 @@ import backImg1 from "@assets/images/main/main__automation.jpg";
 import backImg2 from "@assets/images/main/main_logistics.jpg";
 import backImg3 from "@assets/images/main/main__smart-factory.jpg";
 import backImg4 from "@assets/images/main/main__eco-ai.jpg";
+import { HighlightText } from "../../../components/UI/HighlightText";
 
 function SolutionSection() {
   const solutionRoutes = category[1].sub;
@@ -15,18 +16,21 @@ function SolutionSection() {
   return (
     <section className="SolutionSection">
       <div className="intro-area container">
-        <strong data-aos="fade-up">
-          인공지능(AI)과 3D 비전, 로봇 가이던스 기술의 융합을 통해
-          <br />
-          지능화된 로봇 자동화 솔루션을 구현하는 Deltabot
-        </strong>
         <p data-aos="fade-up">
-          불가능이라 여겨지던 비정형 수작업 공정들에 대한 자동화를 실현하고,
+          <HighlightText
+            text="불가능이라 여겨지던 비정형 수작업 공정들에 대한 #자동화를 실현#하고,"
+            keyChar="#"
+          />
           <br />
-          글로벌 기업들의 생산 현장에 적용하여 양산성과 안정성을 입증해온
-          Deltabot은
-          <br />각 산업 공정 및 프로세스, 작업환경에 최적화된 Cell 단위의
-          솔루션을 직접 설계·제작하여 제공합니다.
+          <HighlightText
+            text="글로벌 기업들의 #생산 현장에 적용#하여 양산성과 안정성을 입증해온 Deltabot은,"
+            keyChar="#"
+          />
+          <br />
+          <HighlightText
+            text="각 산업 공정 및 프로세스, 작업환경에 최적화된 Cell 단위의 #솔루션을 직접 설계·제작#하여 제공합니다."
+            keyChar="#"
+          />
         </p>
       </div>
 
