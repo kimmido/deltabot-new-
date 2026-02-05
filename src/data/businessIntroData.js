@@ -551,7 +551,7 @@ const businessIntroData = {
         },
         {
           img: `/images/business/vision/thermal-slide(4).jpg`,
-          title: "증기 파이프라인 및 용관로 단열츨 상태 관찰",
+          title: "증기 파이프라인 및 용관로 단열층 상태 관찰",
           text: "석유화학 생산공정에서는 많은 수의 파이프라인과 열장비를 단열해야함. 단열효과는 운영비용과 직접적 연관이 있고, 사용기간이 길수록 노후화 되고 단열효과는 감소됨.",
         },
         {
