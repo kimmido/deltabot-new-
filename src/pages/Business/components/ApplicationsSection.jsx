@@ -12,7 +12,7 @@ function ApplicationsSection({ data }) {
           {data.list.map((app, idx) => (
             <li key={idx} className="grid-block__item">
               <div className="grid-block__thumb card">
-                {data.type == "image" ? (
+                {data.media == "image" ? (
                   <img
                     src={`/images/business/${app.image}`}
                     alt={`응용분야-${app.title}`}
@@ -28,6 +28,17 @@ function ApplicationsSection({ data }) {
               </div>
               <div className="grid-block__text-box">
                 <strong className="grid-block__title">{app.title}</strong>
+
+                {/* ✅ 불렛 설명 추가 */}
+                {data.type == "bullet" && (
+                  <ul className="grid-block__list bullets">
+                    {app.texts.map((line, i) => (
+                      <li key={i} className="grid-block__bullet">
+                        {line}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </li>
           ))}

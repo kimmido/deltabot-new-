@@ -1,5 +1,5 @@
 import React from "react";
-import StepFlow from "../components/StepFlow";
+import StepFlow from "@components/UI/StepFlow";
 import AutomationVideos from "./components/AutomationVideos";
 import ContenttBlock from "../components/ContenttBlock";
 
@@ -188,7 +188,7 @@ const cnt06 = {
       poster: "/images/video_poster/solution-automation(4).jpg",
       effects: [
         {
-          text: "분당 12개 처리",
+          text: "분당 10개 처리",
           iconName: "icon_timer",
         },
         {

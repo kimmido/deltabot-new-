@@ -94,10 +94,10 @@ function RecyclingRobotSection() {
           src={img4_1}
           alt="위험한 환경에서 로봇의 이점"
         />
-        <ul className="list grid-block grid-block--three-col">
+        <ul className="grid-block grid-block--three-col">
           {cnt04.map(({ img, title, texts }, idx) => (
-            <li key={title} className="item card">
-              <div className="media-box grid-block__thumb">
+            <li key={title} className="grid-block__item card">
+              <div className="grid-block__thumb">
                 <img src={img} alt={`이점-${title}`} />
               </div>
               <div className="grid-block__text-box">

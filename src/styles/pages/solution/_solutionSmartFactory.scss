@@ -115,8 +115,6 @@
       .grid-block {
         margin-top: var(--gap-sm);
         &__list {
-          width: fit-content;
-          margin: 0.8em auto;
           transform: translateX(-15px);
         }
       }

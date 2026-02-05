@@ -493,21 +493,20 @@
         display: block;
       }
 
-      .list {
-        grid-template-columns: repeat(2, 1fr);
+      .grid-block {
         margin-top: min(4.4vw, 70px);
 
-        @include respondTo(tablet-s) {
-          grid-template-columns: repeat(3, 1fr);
-        }
-
-        .item {
+        &__item {
           overflow: hidden;
           border: 1px solid $color-border;
+        }
 
-          .media-box {
-            aspect-ratio: 1.618 / 1;
-          }
+        &__thumb {
+          aspect-ratio: 1.618 / 1;
+        }
+
+        &__list {
+          justify-content: start;
         }
       }
     }

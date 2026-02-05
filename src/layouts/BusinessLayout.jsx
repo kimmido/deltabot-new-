@@ -7,18 +7,22 @@ import { category } from "../data/category";
 
 function BusinessLayout() {
   const { pathname } = useLocation();
-  const [routes, setRoutes] = useState({ label: "", items: [] });
-  const [currentCategory, setCurrentCategory] = useState("");
-  const [currentTab, setCurrentTab] = useState("");
   const [productData, setProductData] = useState({});
 
-  useEffect(() => {
-    const pathSegments = pathname.split("/").filter((segment) => segment);
-    console.log("패스변경");
-    setRoutes(category[0].sub.find((sub) => sub.path == pathSegments[0]));
-    setCurrentCategory(pathSegments[0]);
-    setCurrentTab(pathSegments[1]);
-  }, [pathname]);
+  const pathSegments = useMemo(
+    () => pathname.split("/").filter((segment) => segment),
+    [pathname]
+  );
+
+  const currentCategory = pathSegments[0] ?? "";
+  const currentTab = pathSegments[1] ?? "";
+
+  const routes = useMemo(() => {
+    return category[0].sub.find((sub) => sub.path == currentCategory) ?? {
+      label: "",
+      items: [],
+    };
+  }, [currentCategory]);
 
   useEffect(() => {
     if (!currentCategory) return;

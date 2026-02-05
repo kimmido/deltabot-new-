@@ -26,14 +26,15 @@
 @import "./components/ExpandableVideoList";
 @import "./components/CircleIconList";
 @import "./components/RollingSwiper";
+@import "./components/StepFlow";
 
 // 5. 페이지별 스타일
 @import "./pages/home";
 @import "./pages/business/business";
+@import "./pages/business/vision";
 @import "./pages/business/logistics";
 @import "./pages/solution/solution";
 @import "./pages/solution/solutionAutomation";
-@import "./pages/solution/solutionVision";
 @import "./pages/solution/_solutionLogistics";
 @import "./pages/solution/solutionEcoAI";
 @import "./pages/solution/solutionSmartFactory";

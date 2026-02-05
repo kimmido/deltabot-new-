@@ -1,0 +1,169 @@
+.Vision {
+  --gap-lg: min(6vw, 60px);
+
+  .BusinessIntroSection {
+    .desc-box {
+      text-align: left;
+
+      .desc {
+        position: relative;
+        margin-top: 0.8em;
+        padding-left: max(20px, 1em);
+
+        &::before {
+          @include pseudoDefault(rgba(0, 0, 0, 0), 0.8em);
+          top: 0.3em;
+
+          @include backgroundImage(
+            $pos: center,
+            $size: contain,
+            $url: url("/src/components/icons/icon_bullet_chevron.svg")
+          );
+
+          filter: var(--filter);
+        }
+      }
+    }
+
+    .system-flow-sec {
+      @include fullBackground(#f6f7fb);
+      padding: var(--gap-lg) 0 var(--gap-lg) 0;
+
+      .StepFlow {
+        .step {
+          svg {
+            fill: var(--color-point);
+          }
+        }
+      }
+    }
+
+    // 슬라이더
+    .FadeUpTextSlider {
+      position: relative;
+      margin-top: min(5vw, 60px);
+
+      .swiper {
+        $btn-s: 2.7em;
+        $btn-l: 40px;
+
+        padding: 10px 10px calc($btn-s + 1.2em);
+        overflow: hidden;
+        max-width: 1200px;
+
+        @include respondTo(pc-l) {
+          padding-bottom: calc($btn-l + 1.4em);
+        }
+
+        .swiper-button {
+          &-prev,
+          &-next {
+            top: auto;
+            bottom: 0;
+            border-radius: 50%;
+            background-color: $color-point;
+            @include square($btn-s);
+
+            @include respondTo(tablet-l) {
+              @include square($btn-l);
+            }
+
+            &::after {
+              color: #fff;
+              font-weight: 600;
+              font-size: calc($btn-s - 1em);
+
+              @include respondTo(tablet-l) {
+                font-size: calc($btn-l - 1em);
+              }
+            }
+          }
+
+          &-prev {
+            left: calc(50% - $btn-s - 6px);
+
+            &::after {
+              transform: translateX(-2px);
+            }
+          }
+
+          &-next {
+            right: calc(50% - $btn-s - 6px);
+
+            &::after {
+              transform: translateX(2px);
+            }
+          }
+        }
+
+        .img-box {
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+          overflow: hidden;
+          border-radius: $radius-card-md;
+
+          @include respondTo(tablet-s) {
+            border-radius: $radius-card-lg;
+          }
+        }
+      }
+
+      .txt-box {
+        top: 100%;
+        max-width: 1200px;
+        margin: 1.8em auto 0;
+        padding: 0 2px;
+        opacity: 0;
+        transform: translateY(20px);
+        text-align: center;
+
+        @include respondTo(tablet-l) {
+          margin-top: 2em;
+          font-size: 1.8rem;
+        }
+
+        &.active {
+          animation: fadeUpText 0.6s ease 0.4s both;
+        }
+
+        &.inactive {
+          animation: fadeDownText 0.4s ease 0s both;
+        }
+
+        strong {
+          display: block;
+          font-size: 1.2em;
+          margin-bottom: 0.5em;
+          font-weight: 600;
+          @include respondTo(tablet-l) {
+            margin-bottom: 0.7em;
+            font-size: 1.4em;
+          }
+        }
+      }
+
+      @keyframes fadeUpText {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeDownText {
+        from {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        to {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+      }
+    }
+  }
+}

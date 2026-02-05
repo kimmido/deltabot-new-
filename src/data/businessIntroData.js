@@ -198,12 +198,12 @@ const businessIntroData = {
         {
           video: 'palletizing-application(1).mp4',
           poster: 'palletizing-application(1).jpg',
-          title: '품목별 맞춤 적재 솔루션',
+          title: ' 평행/핑거 그리퍼로 박스 적재',
         },
         {
           video: 'palletizing-application(2).mp4',
           poster: 'palletizing-application(2).jpg',
-          title: '박스 포장 적재 솔루션',
+          title: '공압 그리퍼/진공 그리퍼로 물건 적재',
         },
       ],
     },
@@ -284,91 +284,371 @@ const businessIntroData = {
     // 머신비전 카메라
     "machine-vision": {
       theme: 'default',
-      title: '지능형 머신 비전',
-      description:
-        [
-          '다양한 산업 환경에서 발생하는 시각 처리 문제를 해결하기 위해 설계된 AI 기반 머신 비전 시스템입니다.', 
-          '딥러닝과 2D/3D 비전 알고리즘을 기반으로 다양한 작업을 정밀하고 안정적으로 수행하며, 사용자의 편의성과 확장성을 모두 고려한 시스템입니다.'
-        ],
-      images: [`card`],
-      link: {
-        label: "머신비전 솔루션 자세히 보기",
-        path: "/vision-solution",
-        posId: "machine"
+      title: '초정밀 AI 눈으로 구현하는 완벽한 공정',
+      desc: [
+        '#딥러닝 기반의 2D/3D 알고리즘#을 통해 사물의 깊이와 형태, 질감을 입체적으로 정밀하게 분석',
+        '사람이 육안으로 확인하기 어려운 미세한 결함이나 비정형 오류까지 실시간으로 식별하여 공정의 품질 안정성을 극대화',
+        '#로봇 및 컨베이어 시스템과 즉각적으로 연동#되어 최적화된 통합 솔루션'
+      ],
+      cnt01: {
+        title: '머신비전 시스템 구성요소',
+        img: `/images/business/vision/machine-vision(1).jpg`
       },
-      applications: [
+      cnt02 : {
+        title: '머신비전 시스템 흐름도',
+        stepFlowData: [
+          {
+            iconName: "icon_lightbulb_solid",
+            title: "조명",
+            text: "제품 인식 정확도 향상을 위한 광원",
+          },
+          {
+            iconName: "icon_camera_solid",
+            title: "카메라 + 렌즈",
+            text: "제품 이미지 촬영 및 초점 조정",
+          },
+          {
+            iconName: "icon_microchip_solid",
+            title: "영상처리기",
+            text: "이미지 분석 및 특징 인식",
+          },
+          {
+            iconName: "icon_brain_solid",
+            title: "판단 결과",
+            text: "OK/NG 판정 또는 정보 추출",
+          },
+          {
+            iconName: "icon_robot_face",
+            title: "로봇 / PLC 제어",
+            text: "로봇이 피킹, 리젝트 등 수행",
+          },
+        ],
+        img: `/images/business/vision/machine-vision(2).jpg`
+      },
+      cnt03: {
+        title: '완벽한 형상 판독',
+        img: `/images/business/vision/machine-vision(3).jpg`
+      },
+      cnt04: {
+        title: '머신 비전 시스템의 응용',
+        img: `/images/business/vision/machine-vision(4).jpg`
+      },
+      slideData: [
         {
-          image: 'machine-vision-application(1).jpg',
-          title: '제조/포장 검수',
+          img: `/images/business/vision/machine-vision-slide(1).jpg`,
+          title: "외곽선 (아웃라인)",
+          text: "제품의 형태 및 테두리 인식 기술",
         },
         {
-          image: 'machine-vision-application(2).jpg',
-          title: '물류 식별·분류',
+          img: `/images/business/vision/machine-vision-slide(2).jpg`,
+          title: "유무 검사",
+          text: "부품의 누락이나 요소 존재 여부 판별",
         },
         {
-          image: 'machine-vision-application(3).jpg',
-          title: '스마트 팩토리',
+          img: `/images/business/vision/machine-vision-slide(3).jpg`,
+          title: "그레이스케일 면적",
+          text: "명암 차를 이용한 결함 면적 분석",
+        },
+        {
+          img: `/images/business/vision/machine-vision-slide(4).jpg`,
+          title: "컬러 면적",
+          text: "특정 색상의 분포 및 면적 측정",
+        },
+        {
+          img: `/images/business/vision/machine-vision-slide(5).jpg`,
+          title: "문자 인식 (OCR)",
+          text: "각인된 문자 및 숫자의 자동 판독",
+        },
+        {
+          img: `/images/business/vision/machine-vision-slide(6).jpg`,
+          title: "피치 (간격)",
+          text: "요소 간의 일정 거리/간격 측정",
         },
       ],
+      app: {
+        col: 'two',
+        media: 'video',
+        type: 'bullet',
+        list: [
+          {
+            video: 'machine-app(1).mp4',
+            poster: 'machine-app(1).jpg',
+            title: '이종혼입방지시스템',
+            texts: [
+              '부품 표면에 각인된 레이저 마킹 ID를 실시간으로 스캔하여 고유 정보를 식별',
+              '외형이 같은 부품의 오삽입을 실시간으로 판별해 제품 혼입을 완벽히 방지',
+              '원형 제품의 식별과 회전 각도 측정으로 더욱 정밀한 공정 제어를 지원',
+            ]
+          },
+          {
+            video: 'machine-app(2).mp4',
+            poster: 'machine-app(2).jpg',
+            title: '외관표면검사시스템',
+            texts: [
+              '프레스 압력을 받는 툴의 파손 유무를 실시간 판정하여 공정 사고를 미연에 방지.',
+              '소모된 툴의 교체 주기를 자동으로 파악하고 통보하여 최적의 작업 조건을 유지',
+              '단일 시스템으로 최대 4대의 설비를 동시에 관리할 수 있어 운영 효율을 극대화',
+            ]
+          },
+          {
+            video: 'machine-app(3).mp4',
+            poster: 'machine-app(3).jpg',
+            title: '가공 검사시스템',
+            texts: [
+              '작업 환경에 맞춰 100개소 이상의 검사 포인트를 자유롭게 구성하고 실시간으로 편집',
+              '직육면체 알루미늄 블록의 홀, 탭, 단차 등 표면 가공 상태를 빈틈없이 정밀하게 검사',
+              '딥러닝 기반 검사로 홀 내부 이물질을 판별하고 표면 마킹 및 문자까지 정확히 구분',
+            ]
+          },
+          {
+            video: 'machine-app(4).mp4',
+            poster: 'machine-app(4).jpg',
+            title: '다관절 로봇 부착 시스템',
+            texts: [
+              '다관절 로봇에 비전을 탑재해 체결 상태, 컬러, 각도 등 복합적인 항목을 정밀하게 측정',
+              '단순 반복 검사 포인트가 많은 공정에 유용하며, 로봇의 유연한 움직임으로 검사 효율을 높입',
+              '0.5초당 1개소씩 검사하는 압도적인 속도로 다량의 검사 포인트를 신속하고 정밀하게 완료',
+            ]
+          }
+        ]
+      } 
     },
-    
+
     // 열화상 카메라
     "thermal-camera": {
-      theme: 'default',
-      title: '온도 감지부터 이상 징후 예측까지',
-      description:
-        ['열화상카메라는 적외선 기반의 비접촉식 온도 감지 기술을 활용하여 사람이나 설비의 온도를 실시간으로 측정하고 모니터링할 수 있습니다. 특히 공항, 병원, 공장 등 다중 이용 시설에서 체온 이상 감지를 통해 감염병 확산을 사전에 차단하는 데 효과적으로 활용되고 있습니다. 최근에는 AI 비전 기술과 결합되어 자동으로 고온 이상 징후를 탐지하고, 위험 요인을 신속하게 경고함으로써 안전성과 효율성을 동시에 향상시키고 있습니다.', '설비 과열, 전기 누전, 기계 고장 등 산업 현장에서의 온도 기반 이상 징후도 사전에 감지하여 사고를 예방할 수 있습니다. 이러한 비접촉식 열 감지 기술은 예방 진단은 물론, 스마트 안전 관리 체계 구축에도 기여하며 다양한 분야에 폭넓게 활용되고 있습니다.'],
-      images: [`card`],
-      extraText: '설비 과열, 누전, 체온 이상 등 온도 기반 이상 탐지 비접촉식 열 감지로 예방 진단 및 안전 모니터링 실현',
-      link: {
-        label: "열화상 솔루션 자세히 보기",
-        path: "/vision-solution#thermal",
-        posId: "thermal"
+      theme: 'crimson-red',
+      title: '보이지 않는 온도로 미래를 진단하는 스마트 열화상 시스템',
+      desc: [
+        '#실시간 적외선# 열 에너지 감지로 #온도 분포와 이상 징후#를 즉각 파악하여 산업 현장의 #안전성#과 #생산성#을 동시에 혁신합니다.',
+        '#MWIR·SWIR# 다파장 기술과 #AI 분석#을 결합하여 #고온 공정 모니터링#부터 #미세 결함 검출# 및 #가스 누출#까지 정밀하게 응용됩니다.',
+        '자동화 시스템과 연동된 #열화상 데이터#는 제조, 에너지, 플랜트 등 다양한 분야에서 #예측 유지보수#와 #신뢰성 높은 의사결정#을 지원합니다.'
+      ],
+      cnt01: {
+        title: '열화상 비전 시스템 구성요소',
+        img: `/images/business/vision/thermal(1).jpg`
       },
-      applications: [
+      cnt02 : {
+        title: '열화상 비전 시스템 흐름도',
+        stepFlowData: [
+          {
+            iconName: "icon_camera_solid",
+            title: "카메라 + 렌즈",
+            text: "제품 이미지 촬영 및 초점 조정",
+          },
+          {
+            iconName: "icon_microchip_solid",
+            title: "영상처리기",
+            text: "이미지 분석 및 특징 인식",
+          },
+          {
+            iconName: "icon_brain_solid",
+            title: "판단 결과",
+            text: "OK/NG 판정 또는 정보 추출",
+          },
+          {
+            iconName: "icon_robot_face",
+            title: "로봇 / PLC 제어",
+            text: "로봇이 피킹, 리젝트 등 수행",
+          },
+        ],
+        img: `/images/business/vision/thermal(2).png`
+      },
+      cnt03: {
+        title: '산업 현장의 안전과 효율을 극대화 하는 3대 핵심 비전 기술',
+        img: `/images/business/vision/thermal(3).jpg`
+      },
+      cnt04: {
+        title: '적외선 감지를 통한 가스 감지기술',
+        img: `/images/business/vision/thermal(4).jpg`
+      },
+      slideData: [
         {
-          image: 'thermal-camera-application(1).jpg',
-          title: '체온 이상 감지로 감염 예방',
+          img: `/images/business/vision/thermal-slide(1).jpg`,
+          title: "제철소 소결기 모니터링",
+          text: "소결공정은 1000~1300도 이며, 고온열화상 카메라는 재료의 표면 온도를 모니터링 할수 있고, 소격의 연소과정을 모니터링 하여다양한 품질을 확인할수 있다.",
         },
         {
-          image: 'thermal-camera-application(2).jpg',
-          title: '전기 설비 발열 점검',
+          img: `/images/business/vision/thermal-slide(2).jpg`,
+          title: "코크스화로 모니터링",
+          text: "코크스를 만드는 화로(코크스화로)의 벽 온도는 보통 600~800℃ 정도입니다. 특수 열화상 카메라를 사용하면 화로 안의 배관과 벽 온도를 실시간으로 볼 수 있어, 코크스가 얼마나 잘 만들어지고 있는지, 열이 잘 전달되고 있는지를 알 수 있습니다. 이를 통해 화로가 제대로 작동하고 있는지 쉽게 확인할 수 있습니다.",
         },
         {
-          image: 'thermal-camera-application(3).jpg',
-          title: '스마트 빌딩 화재 예방',
+          img: `/images/business/vision/thermal-slide(3).jpg`,
+          title: "듀얼 라이트 자동 검사",
+          text: "주 변압기 회로 본체, 전압변압기, 부싱, 와이어클램프 등 핵심 부품에 대해 고해상도 열화상 카메라로 자동검사. 실시간으로 모니터링을 하며 구성요소의 온도를 감시하여 위험발생시 알람을 발생.",
+        },
+        {
+          img: `/images/business/vision/thermal-slide(4).jpg`,
+          title: "증기 파이프라인 및 용관로 단열층 상태 관찰",
+          text: "석유화학 생산공정에서는 많은 수의 파이프라인과 열장비를 단열해야함. 단열효과는 운영비용과 직접적 연관이 있고, 사용기간이 길수록 노후화 되고 단열효과는 감소됨.",
+        },
+        {
+          img: `/images/business/vision/thermal-slide(5).jpg`,
+          title: "엔진 작동 온도 및 탱크 내 유체 수준",
+          text: "열화상 카메라로 관찰하면 단열츨의 상태와 효과를 정확하게 파악할수 있어 적절한 시기에 수리작업이 용이함. 또한 저장탱크의 액체 수위를 관찰하는 돗에도 사용되어 생산작업에 중요한 시점을 제공",
+        },
+        {
+          img: `/images/business/vision/thermal-slide(6).jpg`,
+          title: "가축 체온 측정 및 전염병 예방",
+          text: "가축의 의 체표면 온도 분포를 활용하여 질병을 미리 확인 할수 있는 지표를 만들수 있다. 이상행동식별과 발달상태를 평가, 염증을 감지하고, 돼지열병, 광견병, 청색귀병,돼지 패스트, 구제역등 발영증상을 동반한 주요 전염병를 미리 감지를 할수 있다. 또한, 젖소에게 흔한 질병인 유방염을 유방의 온도를 확인하여 조기에 진단할수 있다",
         },
       ],
+      app: {
+        col: 'three',
+        media: 'image',
+        type: 'title',
+        list: [
+          {
+            image: 'vision/thermal-app(1).jpg',
+            title: "전기 | 새로운 에너지",
+          },
+          {
+            image: 'vision/thermal-app(2).jpg',
+            title: "광석 | 야금학 | 가마",
+          },
+          {
+            image: 'vision/thermal-app(3).jpg',
+            title: "섬유 | 석유화학 | 환경 보호",
+          },
+          {
+            image: 'vision/thermal-app(4).jpg',
+            title: "레이저 | 반도체",
+          },
+          {
+            image: 'vision/thermal-app(5).jpg',
+            title: "곡물과 기름 | 의학 | 번식",
+          },
+          {
+            image: 'vision/thermal-app(6).jpg',
+            title: "철도 교통 | 자동차",
+          }
+        ]
+      } 
     },
-    
+
     // 초분광 카메라
     "spectral-camera": {
-      theme: 'default',
-      title: '초분광 영상 기술',
-      description:
-        [
-          '초분광카메라는 성분 분석, 이물질 검출, 품질 분류, 정량 분석 등을 비접촉 방식으로 수행하며, AI 기반 스펙트럼 분석을 통해 고정밀 자동 판단이 가능합니다.', 
-        ],
-      images: [`default`, `card`],
-      link: {
-        label: "초분광 솔루션 자세히 보기",
-        path: "/vision-solution",
-        posId: "spectral"
+      theme: 'vivid-violet',
+      title: '눈에 보이지 않는 데이터까지 완벽하게, AI 초분광 토탈 시스템',
+      desc: [
+        '#초분광 카메라#로 빛의 파장을 분석해 육안으로 힘든 #성분 판별#과 #미세 이물질#을 완벽하게 검출합니다.',
+        '#AI 딥러닝# 기반 알고리즘이 방대한 데이터를 분석하여 제품의 #품질 등급#을 #실시간으로 분류#하여 최적화합니다.',
+        '#데이터 기반#의 객관적 판독으로 #수동 검사 오차#를 줄이고 #품질 관리 표준화#와 #공정 효율#을 획기적으로 높입니다.'
+      ],
+      cnt01: {
+        title: '초분광 비전 시스템 구성요소',
+        img: `/images/business/vision/spectral(1).jpg`
       },
-      applications: [
+      cnt02 : {
+        title: '초분광 비전 시스템 흐름도',
+        stepFlowData: [
+          {
+            iconName: "icon_lightbulb_solid",
+            title: "조명",
+            text: "제품 인식 정확도 향상을 위한 광원",
+          },
+          {
+            iconName: "icon_camera_solid",
+            title: "카메라 + 렌즈",
+            text: "제품 이미지 촬영 및 초점 조정",
+          },
+          {
+            iconName: "icon_microchip_solid",
+            title: "영상처리기",
+            text: "이미지 분석 및 특징 인식",
+          },
+          {
+            iconName: "icon_brain_solid",
+            title: "판단 결과",
+            text: "OK/NG 판정 또는 정보 추출",
+          },
+          {
+            iconName: "icon_robot_face",
+            title: "로봇 / PLC 제어",
+            text: "로봇이 피킹, 리젝트 등 수행",
+          },
+        ],
+        img: `/images/business/vision/spectral(2).jpg`
+      },
+      cnt03: {
+        title: '성분의 투명한 분석',
+        img: `/images/business/vision/spectral(3).jpg`
+      },
+      cnt04: {
+        title: '초분광 이미징 시스템',
+        img: `/images/business/vision/spectral(4).jpg`
+      },
+      slideData: [
         {
-          image: 'spectral-camera-application(1).jpg',
-          title: '전자소재 품질관리',
+          img: `/images/business/vision/spectral-slide(1).jpg`,
+          title: "스마트 농업",
+          text: "감자와 찰흙의 다른 스펙트럼을 이용하여 분리하는 자동화공정 적용",
         },
         {
-          image: 'spectral-camera-application(2).jpg',
-          title: '의약품 측정·감별',
+          img: `/images/business/vision/spectral-slide(2).jpg`,
+          title: "제약",
+          text: "포장 캡슐안에 빈 공간이 있거나 , 결함 혹은 다른약이 포함되었는지 여부 확인가능!",
         },
         {
-          image: 'spectral-camera-application(3).jpg',
-          title: '재활용품/폐기물 선별·분류',
+          img: `/images/business/vision/spectral-slide(3).jpg`,
+          title: "건축 인프라",
+          text: "제지 공정에서 종이의 수분함량 확인 및 모니터링!",
+        },
+        {
+          img: `/images/business/vision/spectral-slide(4).jpg`,
+          title: "식품",
+          text: "아몬드와 아몬드 껍질의 다른 Spectra를 이용하여 자동화 분리과정 적용",
+        },
+        {
+          img: `/images/business/vision/spectral-slide(5).jpg`,
+          title: "녹조",
+          text: "유해조류 분석 및 구별, 녹조 발생 모니터링 및 중국발 외래종 ‘괭생이 모자반‘ 모니터링등!",
+        },
+        {
+          img: `/images/business/vision/spectral-slide(6).jpg`,
+          title: "환경",
+          text: "초분광카메라로 흰색 스펙트럼이 나타난 부분을 통해 기름이 유출된 위치 확인",
+        },
+        {
+          img: `/images/business/vision/spectral-slide(7).jpg`,
+          title: "국방",
+          text: "항공에서의 적의 정확한 위치 확인, 군용차량, 지뢰탐지, 급조폭발물, 표적 추적·지시용 사용",
         },
       ],
+      app: {
+        col: 'three',
+        media: 'image',
+        type: 'bullet',
+        list: [
+          {
+            image: 'vision/spectral-app(1).jpg',
+            title: "전자소재 품질관리",
+            texts: [
+              '초분광 카메라로 납땜 파장을 분석해 품질 성분을 정밀 판정',
+              'AI 알고리즘이 분광 데이터를 분석하여 납땜 등급을 자동 분류',
+              '미세 결함을 정밀 검출하여 납땜 공정의 품질과 효율을 극대화'
+            ]
+          },
+          {
+            image: 'vision/spectral-app(2).jpg',
+            title: "의료/간 조직 모니터링 고주파 소작술",
+            texts: [
+              '간암 절제술의 효과를 정량화하여 치료 정밀도를 입증',
+              '간 조직 절제술의 정량적 데이터를 분석하여 치료 효과를 증명',
+              '간암 치료에 필수적인 절제술을 정량화하여 기술력을 입증'
+            ]
+          },
+          {
+            image: 'vision/spectral-app(3).jpg',
+            title: "재활용품/폐기물 선별·분류",
+            texts: [
+              '해안가 플라스틱 폐기물을 자율적으로 추적하고 실시간 식별',
+              '해안 환경에서 폐기물을 스스로 탐색하여 정확하게 식별 및 관리',
+              '자율 탐사로 해안의 플라스틱 쓰레기를 찾아내고 정밀하게 판별'
+            ]
+          },
+        ]
+      } 
     },
   
     // 조명
@@ -454,7 +734,8 @@ const businessIntroData = {
       },
       app: {
         col: 'two',
-        type: 'video',
+        media: 'video',
+        type: 'title',
         list: [
           {
             video: 'i-robot-application(1).mp4',
@@ -507,7 +788,8 @@ const businessIntroData = {
       },
       app: {
         col: 'two',
-        type: 'video',
+        media: 'video',
+        type: 'title',
         list: [
           {
             video: 'sorting-application(1).mp4',
