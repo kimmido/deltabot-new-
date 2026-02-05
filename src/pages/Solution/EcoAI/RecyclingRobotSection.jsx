@@ -41,7 +41,7 @@ function RecyclingRobotSection() {
   });
 
   return (
-    <section className="RecyclingRobotSection section">
+    <section className="RecyclingRobotSection">
       <ContenttBlock className={"cnt01"}>
         <h6 className="sec-title">"폐플라스틱을 자원으로 순환"</h6>
         <p className="cnt-desc">
