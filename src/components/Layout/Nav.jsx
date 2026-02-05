@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { category } from "../../data/category";
 import gsap from "gsap";
 import SvgrComponent from "../icons/SvgrComponent";
+import usePathSegments from "../../hooks/usePathSegments";
 
 const MainLink = ({
   className,
@@ -55,12 +56,7 @@ export default function Nav() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isPcMenuIdx, setPcMenuIdx] = useState(null);
   const mobileMenu = useRef(null);
-  const location = useLocation();
-  const pathSegments = location.pathname
-    .replace(/^\/+/, "")
-    .split("/")
-    .filter(Boolean);
-  const rootSegment = pathSegments[0] || "";
+  const { rootSegment } = usePathSegments();
 
   const isCategoryActive = (item) => {
     if (!rootSegment) return false;

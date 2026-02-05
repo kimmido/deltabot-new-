@@ -1,11 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import usePathSegments from "../../hooks/usePathSegments";
 
-function TabMenu({ routes, currentCategory, currentPath }) {
+function TabMenu({ routes }) {
   const navigate = useNavigate();
+  const { rootSegment, subSegment } = usePathSegments();
 
-  const handleTabChange = (currentCategory, path) => {
-    navigate(`/${currentCategory}/${path}`);
+  const handleTabChange = (rootSegment, subSegment) => {
+    navigate(`/${rootSegment}/${subSegment}`);
   };
 
   return (
@@ -22,9 +24,9 @@ function TabMenu({ routes, currentCategory, currentPath }) {
               <button
                 key={route.path}
                 className={`TabMenu__item ${
-                  currentPath === route.path ? "active" : ""
+                  subSegment === route.path ? "active" : ""
                 }`}
-                onClick={() => handleTabChange(currentCategory, route.path)}
+                onClick={() => handleTabChange(rootSegment, route.path)}
               >
                 <strong className="TabMenu__label">{route.label}</strong>
               </button>

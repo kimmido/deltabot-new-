@@ -1,37 +1,30 @@
 import React, { useEffect, useMemo, useState } from "react";
 import PageHeading from "../components/UI/PageHeading";
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { fetchData } from "../utils/fetchData";
 import TabMenu from "../components/UI/TabMenu";
 import { category } from "../data/category";
+import usePathSegments from "../hooks/usePathSegments";
 
 function BusinessLayout() {
-  const { pathname } = useLocation();
+  const { rootSegment, subSegment } = usePathSegments();
   const [productData, setProductData] = useState({});
 
-  const pathSegments = useMemo(
-    () => pathname.split("/").filter((segment) => segment),
-    [pathname]
-  );
-
-  const currentCategory = pathSegments[0] ?? "";
-  const currentTab = pathSegments[1] ?? "";
-
   const routes = useMemo(() => {
-    return category[0].sub.find((sub) => sub.path == currentCategory) ?? {
-      label: "",
-      items: [],
-    };
-  }, [currentCategory]);
+    return (
+      category[0].sub.find((sub) => sub.path == rootSegment) ?? {
+        label: "",
+        items: [],
+      }
+    );
+  }, [rootSegment]);
 
   useEffect(() => {
-    if (!currentCategory) return;
+    if (!rootSegment) return;
 
     const getData = async () => {
       try {
-        const jsonData = await fetchData(
-          `/json/product-${currentCategory}.json`
-        ); // public 폴더의 JSON 경로
+        const jsonData = await fetchData(`/json/product-${rootSegment}.json`); // public 폴더의 JSON 경로
         setProductData(jsonData);
       } catch (error) {
         console.error("Failed to load data:", error);
@@ -39,22 +32,18 @@ function BusinessLayout() {
     };
 
     getData();
-  }, [currentCategory]);
+  }, [rootSegment]);
 
   const outletContext = useMemo(() => {
-    const data = productData[currentTab];
-    return { currentTab, productData: data, routes };
-  }, [currentTab, productData, routes]);
+    const data = productData[subSegment];
+    return { currentTab: subSegment, productData: data, routes };
+  }, [subSegment, productData, routes]);
 
   return (
     <div className="BusinessLayout">
       <div className="container">
-        <PageHeading title={routes.label} currentPath={currentTab} />
-        <TabMenu
-          routes={routes}
-          currentCategory={currentCategory}
-          currentPath={currentTab}
-        />
+        <PageHeading title={routes.label} />
+        <TabMenu routes={routes} />
         <Outlet context={outletContext} />
       </div>
     </div>
