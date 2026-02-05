@@ -209,6 +209,7 @@
 
   @include respondTo(tablet-l) {
     margin-top: $spacing-layout-lg;
+    overflow-x: visible;
   }
 
   .intro-area,
