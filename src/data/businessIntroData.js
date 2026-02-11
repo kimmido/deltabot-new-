@@ -352,33 +352,33 @@ const businessIntroData = {
       slideData: [
         {
           img: `/images/business/vision-system/machine-vision-slide(1).jpg`,
-          title: "외곽선 (아웃라인)",
-          text: "제품의 형태 및 테두리 인식 기술",
-        },
-        {
-          img: `/images/business/vision-system/machine-vision-slide(2).jpg`,
           title: "유무 검사",
           text: "부품의 누락이나 요소 존재 여부 판별",
         },
         {
-          img: `/images/business/vision-system/machine-vision-slide(3).jpg`,
+          img: `/images/business/vision-system/machine-vision-slide(2).jpg`,
           title: "그레이스케일 면적",
           text: "명암 차를 이용한 결함 면적 분석",
         },
         {
-          img: `/images/business/vision-system/machine-vision-slide(4).jpg`,
+          img: `/images/business/vision-system/machine-vision-slide(3).jpg`,
           title: "컬러 면적",
           text: "특정 색상의 분포 및 면적 측정",
         },
         {
-          img: `/images/business/vision-system/machine-vision-slide(5).jpg`,
+          img: `/images/business/vision-system/machine-vision-slide(4).jpg`,
           title: "문자 인식 (OCR)",
           text: "각인된 문자 및 숫자의 자동 판독",
         },
         {
-          img: `/images/business/vision-system/machine-vision-slide(6).jpg`,
+          img: `/images/business/vision-system/machine-vision-slide(5).jpg`,
           title: "피치 (간격)",
           text: "요소 간의 일정 거리/간격 측정",
+        },
+        {
+          img: `/images/business/vision-system/machine-vision-slide(6).jpg`,
+          title: "외곽선 (아웃라인)",
+          text: "제품의 형태 및 테두리 인식 기술",
         },
       ],
       app: {
