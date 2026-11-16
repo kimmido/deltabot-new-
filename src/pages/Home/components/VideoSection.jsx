@@ -48,6 +48,16 @@ function VideoSection() {
       ],
     },
     {
+      title: "i-Robot-M 컨테이너 자동 상·하차 로봇",
+      src: "/videos/page/main_i-robot.mp4",
+      poster: "/images/video_poster/main_i-robot.jpg",
+      desc: [
+        "컨테이너 안에서 박스를 자동으로 싣고 내리는  i-Robot M의 작동 영상입니다.",
+        "i-Robot M은 로봇 암과 이동 플랫폼을 결합한 자율 상·하차 로봇입니다. 컨베이어로 이송되는 박스를 하나씩 집어 정해진 위치에 적재하고, 반대로 쌓인 박스를 내려 컨베이어로 보내는 작업까지 사람 없이 수행합니다.",
+        "힘들고 반복적인 상·하차 작업을 자동화하면 작업자의 부담은 줄이고 물류 효율은 높일 수 있습니다.",
+      ],
+    },
+    {
       title: "친환경 수면 정화 로봇",
       src: "/videos/page/main5.mp4?v=20260205",
       poster: "/images/video_poster/main5.jpg",
