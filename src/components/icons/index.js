@@ -5,6 +5,7 @@ export { default as IconSafety } from "./IconSafety";
 export { default as IconLightBulb } from "./IconLightBulb";
 export { default as IconReport } from "./IconReport";
 export { default as IconPlayBtn } from "./IconPlayBtn";
+export { default as IconTriangle } from "./IconTriangle";
 
 export { default as icon_menu_bars } from './icon_menu_bars.svg?react';
 export { default as icon_cpu } from './icon_cpu.svg?react';

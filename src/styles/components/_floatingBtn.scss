@@ -20,6 +20,7 @@
       position: relative;
       overflow: hidden;
       @include square(44px);
+      color: $COLOR;
       border: 1px solid $COLOR;
       border-radius: 50%;
       background-color: $COLOR;
@@ -58,6 +59,24 @@
       font-size: calc(1em - 2px);
     }
 
+    &-youtube {
+      .icon-box {
+        color: $color-red;
+        background-color: $color-red;
+        border-color: $color-red;
+        border-radius: $radius-xs;
+        height: 36px;
+
+        @include respondTo(tablet-s) {
+          height: 40px;
+        }
+
+        svg {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
     &-back {
       display: none;
       @include respondTo(tablet-l) {
@@ -73,8 +92,8 @@
     &.active {
       .icon-box {
         svg {
-          fill: $COLOR;
-          color: $COLOR;
+          color: inherit;
+          fill: currentColor;
         }
 
         .effect {

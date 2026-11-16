@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { IconArrow } from "../icons";
+import { IconArrow, IconTriangle } from "../icons";
 import { useNavigate } from "react-router-dom";
 import SvgrComponent from "../icons/SvgrComponent";
 
@@ -15,26 +15,35 @@ function FloatingBtn() {
     });
   };
 
+  function Btn({ children, onClick, text, className }) {
+    return (
+      <button className={`btn ${className}`} onClick={onClick}>
+        <div className="icon-box">
+          {children}
+          <span className="effect"></span>
+        </div>
+        <span className="text">{text}</span>
+      </button>
+    );
+  }
+
   return (
     <div className="FloatingBtn" ref={btnRef}>
-      <button
-        className={`btn btn-back radius-pill `}
-        onClick={() => navigate(-1)}
+      <Btn
+        text="Youtube"
+        className="btn-youtube"
+        onClick={() => window.open("https://www.youtube.com/@델타봇", "_blank")}
       >
-        <div className="icon-box">
-          <SvgrComponent name="icon_arrow_rotate_left_solid" />
-          <span className="effect"></span>
-        </div>
-        <span className="text">Back</span>
-      </button>
+        <IconTriangle className="player" />
+      </Btn>
 
-      <button className={`btn btn-top radius-pill`} onClick={onClick}>
-        <div className="icon-box">
-          <IconArrow size="24" weight="1" />
-          <span className="effect"></span>
-        </div>
-        <span className="text">Top</span>
-      </button>
+      <Btn text="Back" className="btn-back" onClick={() => navigate(-1)}>
+        <SvgrComponent name="icon_arrow_rotate_left_solid" />
+      </Btn>
+
+      <Btn text="Top" className="btn-top" onClick={onClick}>
+        <IconArrow weight="1" />
+      </Btn>
     </div>
   );
 }
