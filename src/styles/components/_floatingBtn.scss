@@ -15,12 +15,12 @@
     @include flexBox(column, 4px);
     background-color: transparent;
     margin-top: 8px;
+    color: $COLOR;
 
     .icon-box {
       position: relative;
       overflow: hidden;
       @include square(44px);
-      color: $COLOR;
       border: 1px solid $COLOR;
       border-radius: 50%;
       background-color: $COLOR;
@@ -29,6 +29,11 @@
 
       @include respondTo(tablet-s) {
         @include square(55px);
+      }
+
+      svg,
+      .effect {
+        transition: all 0.42s ease-in-out;
       }
 
       svg {
@@ -46,11 +51,6 @@
         @include square(0px);
         transform: translate(-50%, -50%);
         border-radius: 50%;
-      }
-
-      svg,
-      .effect {
-        transition: all 0.42s ease-in-out;
       }
     }
 

@@ -30,7 +30,7 @@ function FloatingBtn() {
   return (
     <div className="FloatingBtn" ref={btnRef}>
       <Btn
-        text="Youtube"
+        text="유튜브"
         className="btn-youtube"
         onClick={() => window.open("https://www.youtube.com/@델타봇", "_blank")}
       >
