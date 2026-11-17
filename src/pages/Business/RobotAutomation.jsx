@@ -7,11 +7,13 @@ import IntroLead from "./components/IntroLead";
 import FeatureCards from "./components/FeatureCards";
 import ApplicationsSection from "./components/ApplicationsSection";
 import ProductCatalog from "./components/ProductCatalog";
+import usePathSegments from "../../hooks/usePathSegments";
 
 function RobotAutomation() {
   const { currentTab, productData = [], routes } = useOutletContext();
   const data = businessIntroData[currentTab];
   if (!data) return null;
+  const { rootSegment } = usePathSegments();
 
   return (
     <div className="RobotAutomation Business" data-theme={data.theme}>
@@ -21,11 +23,14 @@ function RobotAutomation() {
       <section className="BusinessIntroSection">
         <IntroLead data={data.desc} />
 
-        <img
-          className={`intro-img ${data.images[0]}`}
-          src={`/images/business/robot-automation/${currentTab}(1).jpg`}
-          alt={currentTab}
-        />
+        {data.images.map((img, index) => (
+          <img
+            className={`intro-img ${img}`}
+            key={index}
+            src={`/images/business/${rootSegment}/${currentTab}(${index + 1}).jpg`}
+            alt={currentTab}
+          />
+        ))}
 
         <FeatureCards data={data.features} />
       </section>
