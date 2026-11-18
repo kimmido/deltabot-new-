@@ -110,6 +110,54 @@ const cnt06 = {
   ],
   videos: [
     {
+      title: "건강식품 액체 파우치 패킹",
+      text: "본 설비는 델타로봇을 활용하여 건강식품 액체 파우치를 고속으로 집어 트레이에 정렬 적재하는 자동화 라인입니다. 로봇은 비전 인식과 전용 그리퍼로 파우치를 손상 없이 안정적으로 파지하고, 트레이 칸마다 오차 없이 정확하게 안착시킵니다. 이를 통해 생산 효율을 높이고 작업자의 반복 수작업 부담을 줄일 수 있습니다.",
+      videoSrc: "/videos/page/solution-automation(01).mp4",
+      poster: "/images/video_poster/solution-automation(01).jpg",
+      effects: [
+        {
+          text: "분당 100개 처리",
+          iconName: "icon_timer",
+        },
+        {
+          text: "로봇 1대당 인력 1명 절감 효과",
+          iconName: "icon_labors",
+        },
+        {
+          text: "생산 효율성 100% 증가",
+          iconName: "icon_chart",
+        },
+        {
+          text: "투자금 회수기간(ROI) 12개월",
+          iconName: "icon_hourglass",
+        },
+      ],
+    },
+    {
+      title: "고중량 박스 팔레타이징",
+      text: "본 설비는 협동로봇을 활용하여 고양이 모래 3팩(약 18kg)이 담긴 박스를 집어 팔레트에 정렬 적재하는 자동화 라인입니다. 로봇은 전용 그리퍼로 고중량 박스를 안정적으로 파지하고, 설정된 적재 패턴에 따라 단마다 오차 없이 정확하게 안착시킵니다. 이를 통해 생산 효율을 높이고 작업자의 중량물 운반 부담을 줄일 수 있습니다.",
+      videoSrc: "/videos/page/solution-automation(02).mp4",
+      poster: "/images/video_poster/solution-automation(02).jpg",
+      effects: [
+        {
+          text: "분당 7개 처리",
+          iconName: "icon_timer",
+        },
+        {
+          text: "로봇 1대당 인력 2명 절감 효과",
+          iconName: "icon_labors",
+        },
+        {
+          text: "생산 효율성 100% 증가",
+          iconName: "icon_chart",
+        },
+        {
+          text: "투자금 회수기간(ROI) 7개월",
+          iconName: "icon_hourglass",
+        },
+      ],
+    },
+    {
       title: "수액 패킹",
       text: "본 설비는 수직다관절로봇을 활용하여 수액봉지 6개를 동시에 집어서 박스에 적재 및 이송하는  자동화 라인입니다. 로봇은 고정밀 집게(그리퍼)를 통해 수액봉지를 안정적으로 파지하고, 지정된 위치로 박스에  적재 작업을 수행합니다. 이를 통해 생산 효율을 향상시키고 작업자의 수작업 부담을 최소화할 수 있습니다.",
       videoSrc: "/videos/page/solution-automation(1).mp4",
