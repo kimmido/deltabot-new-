@@ -492,7 +492,7 @@
       margin: 4rem auto 0;
 
       &.detail {
-        max-width: 860px;
+        max-width: 1000px;
       }
 
       @include respondTo(tablet-l) {
