@@ -824,6 +824,32 @@
       "title": "CPR-H series",
       "items": [
         {
+          "name": "CPR-H70",
+          "code": "CPR-H70",
+          "thumb": "CPR-H70-thumb",
+          "has": ["spec"],
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "CPR-H70 협동 팔레타이징 로봇은 고하중 작업과 정밀 팔레타이징을 동시에 수행하는지능형 자동화 솔루션입니다.",
+                "최대 70kg의 하중을 처리하며 분당 5~6개의 박스를 안정적으로 적재할 수 있고, 기본 매개변수 입력만으로 자동 정렬이 가능하며, 복잡한 수동 설정 없이 효율적인 팔레타이징을 실현합니다. 기계적 충돌 방지 기능과 가드레일 옵션으로 안전성이 높고, 팔레타이징 높이에 따라 자동 리프팅이 가능합니다.",
+                "하루 종일 안정적인 운영으로 시간과 인력을 절감하며, 식품·생활용품·제약·전자 등 다양한 산업 분야에서 폭넓게 활용됩니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "Maximum load  :  70KG",
+                "Working radius   : 2050mm",
+                "Maximum palletizing time  : 6PCS/min",
+                "Maximum stacking height  : 1800mm" 
+              ]
+        
+            }
+          ]
+        },
+        {
           "name": "CPR-H50",
           "code": "CPR-H50",
           "thumb": "CPR-H50-thumb",
@@ -1034,25 +1060,51 @@
       "title": "CPR-M series",
       "items": [
         {
-          "name": "CPR-M25",
-          "code": "CPR-M25",
-          "thumb": "CPR-M25-thumb",
+          "name": "CPR-M50",
+          "code": "CPR-M50",
+          "thumb": "CPR-M50-thumb",
           "has": ["spec"],
           "features": [
             {
               "title": "INTRODUCTION",
               "texts": [
-                "CPR-M25 협동 포장 로봇 워크스테이션은 사람과 함께 안전하게 작업할 수 있는 지능형 자동화 포장 솔루션입니다.",
-                "최대 25kg의 하중과 높은 반복 정밀도를 갖춰 균일한 포장 품질을 구현하며, 충돌 감지 센서로 별도 안전 펜스 없이도 협업이 가능합니다.",
-                "비주얼 프로그래밍으로 제품 변경 시 빠르게 대응할 수 있어, 물류·식품·생활용품 등 다양한 산업 현장에서 효율적이고 안정적인 포장 자동화를 실현합니다."
+                "CPR-M50 협동 로봇 포장 워크스테이션은 협동로봇과 포장 설비를 하나로 통합한 자동화 솔루션입니다.",
+                "간결한 구조로 유지보수와 조작이 쉽고 버튼 한 번으로 바로 가동할 수 있으며, 다양한 제품의 포장에 적합합니다. 로봇 팔과 통합된 시스템으로 자동화 수준이 높아 수작업 인력을 크게 줄여 줍니다.",
+                "모델은 탄소강 재질이며, 고객 요구에 따라 맞춤 제작할 수 있습니다."
               ]
             },
             {
               "title": "FEATURE",
               "bullets": [
-                "load : 25kg",
-                "Robot maximum travel : 1680mm",
-                "Packing time : 10 PCS / min"
+                "Maximum load : 50KG",
+                "Maximum travel distance of the robot : 1780mm",
+                "Packaging rate : ≤8PCS/min",
+                "Carton dimensions : L600 × W500 × H450mm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CPR-M30",
+          "code": "CPR-M30",
+          "thumb": "CPR-M30-thumb",
+          "has": ["spec"],
+          "features": [
+            {
+              "title": "INTRODUCTION",
+              "texts": [
+                "CPR-M30 협동 로봇 포장 워크스테이션은 협동로봇과 포장 설비를 하나로 통합한 자동화 솔루션입니다.",
+                "간결한 구조로 유지보수와 조작이 쉽고 버튼 한 번으로 바로 가동할 수 있으며, 다양한 제품의 포장에 적합합니다. 로봇 팔과 통합된 시스템으로 자동화 수준이 높아 수작업 인력을 크게 줄여 줍니다.",
+                "모델은 탄소강 재질이며, 고객 요구에 따라 맞춤 제작할 수 있습니다."
+              ]
+            },
+            {
+              "title": "FEATURE",
+              "bullets": [
+                "Maximum load : 30KG",
+                "Maximum travel distance of the robot : 1680mm",
+                "Packaging rate : ≤15PCS/min",
+                "Carton dimensions : L600 × W500 × H450mm"
               ]
             }
           ]
